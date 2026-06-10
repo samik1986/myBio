@@ -1,0 +1,110 @@
+.about-page {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.about-content {
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-avatar-placeholder {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(56, 189, 248, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border: 2px solid var(--accent-color);
+}
+
+.about-header-text h1 {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.about-role {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.about-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.about-contact span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-body h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.about-body p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+}
+
+.about-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-outline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--accent-color);
+  color: #0f172a;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .about-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .about-contact {
+    justify-content: center;
+  }
+  
+  .about-socials {
+    justify-content: center;
+  }
+}

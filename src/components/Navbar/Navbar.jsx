@@ -32,6 +32,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="nav-menu">
           <Link to="/" className="nav-link">Home</Link>
+          <Link to="/about" className="nav-link">About</Link>
           <Link to="/timeline" className="nav-link">Timeline</Link>
           <Link to="/experience" className="nav-link">Experience</Link>
           <Link to="/projects" className="nav-link">Projects</Link>
@@ -56,6 +57,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="nav-mobile-menu glass">
           <Link to="/" className="nav-mobile-link">Home</Link>
+          <Link to="/about" className="nav-mobile-link">About</Link>
           <Link to="/timeline" className="nav-mobile-link">Timeline</Link>
           <Link to="/experience" className="nav-mobile-link">Experience</Link>
           <Link to="/projects" className="nav-mobile-link">Projects</Link>

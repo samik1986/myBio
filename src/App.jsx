@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
+import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Experience from './components/Experience/Experience';
 import ExperienceDetail from './components/Experience/ExperienceDetail';
@@ -42,6 +43,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/experience/:id" element={<ExperienceDetail />} />
