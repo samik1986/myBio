@@ -12,6 +12,8 @@ const GeminiAssistant = () => {
   ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
+  const [showFilters, setShowFilters] = useState(false);
+  const [selectedFilters, setSelectedFilters] = useState([]);
   
   const messagesEndRef = useRef(null);
 
@@ -39,8 +41,11 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
   const handleSend = async (e) => {
     e?.preventDefault();
     if (!input.trim()) return;
+    await processMessage(input);
+  };
 
-    const userMessage = { role: 'user', text: input };
+  const processMessage = async (text) => {
+    const userMessage = { role: 'user', text };
     setMessages(prev => [...prev, userMessage]);
     setInput('');
     setLoading(true);
@@ -78,6 +83,26 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
     } finally {
       setLoading(false);
     }
+  };
+
+  const filterOptions = [
+    "Python", "PyTorch", "C++", "JavaScript", "MATLAB",
+    "Deep Learning", "Computer Vision", "Neuroscience", 
+    "3D Imaging", "Bioinformatics"
+  ];
+
+  const toggleFilter = (filter) => {
+    setSelectedFilters(prev => 
+      prev.includes(filter) ? prev.filter(f => f !== filter) : [...prev, filter]
+    );
+  };
+
+  const handleFilterSearch = () => {
+    if (selectedFilters.length === 0) return;
+    const query = `Find projects or publications related to: ${selectedFilters.join(', ')}`;
+    setShowFilters(false);
+    setSelectedFilters([]);
+    processMessage(query);
   };
 
   const renderText = (text) => {
@@ -135,10 +160,49 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
         </div>
 
         <div className="gemini-quick-actions" style={{ display: 'flex', gap: '8px', padding: '0 16px 12px', overflowX: 'auto', flexShrink: 0 }}>
+            <button className="btn btn-outline" style={{ fontSize: '0.8rem', padding: '6px 12px', whiteSpace: 'nowrap' }} onClick={() => setShowFilters(!showFilters)}>
+              {showFilters ? '✕ Close Filters' : '⚡ Quick Search'}
+            </button>
             <Link to="/github" className="btn btn-outline" style={{ fontSize: '0.8rem', padding: '6px 12px', whiteSpace: 'nowrap' }} onClick={() => setIsOpen(false)}>
-              🔍 Search GitHub Repos
+              🔍 View GitHub Repos
             </Link>
+        </div>
+
+        {showFilters && (
+          <div className="gemini-filters-panel" style={{ padding: '0 16px 12px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+            <p style={{ fontSize: '0.8rem', marginBottom: '8px', opacity: 0.8 }}>Select fields/tools to search:</p>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '10px' }}>
+              {filterOptions.map(opt => (
+                <button 
+                  key={opt}
+                  type="button"
+                  onClick={() => toggleFilter(opt)}
+                  style={{ 
+                    fontSize: '0.75rem', 
+                    padding: '4px 8px', 
+                    borderRadius: '12px', 
+                    border: '1px solid var(--accent-color)',
+                    background: selectedFilters.includes(opt) ? 'var(--accent-color)' : 'transparent',
+                    color: selectedFilters.includes(opt) ? '#fff' : 'inherit',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s'
+                  }}
+                >
+                  {opt}
+                </button>
+              ))}
+            </div>
+            {selectedFilters.length > 0 && (
+              <button 
+                className="btn btn-primary" 
+                style={{ width: '100%', fontSize: '0.85rem', padding: '8px' }}
+                onClick={handleFilterSearch}
+              >
+                Search Selected ({selectedFilters.length})
+              </button>
+            )}
           </div>
+        )}
 
         <form className="gemini-input-area" onSubmit={handleSend}>
           <input 
