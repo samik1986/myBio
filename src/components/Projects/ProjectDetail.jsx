@@ -1,14 +1,14 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Code } from 'lucide-react';
-import { featuredProjects, githubProjects } from '../../data/projectsData';
+import { projectsData, githubProjects } from '../../data/projectsData';
 import './ProjectDetail.css';
 
 const ProjectDetail = () => {
   const { id } = useParams();
   
   // Look in both arrays
-  let project = featuredProjects.find(p => p.id === id);
+  let project = projectsData.find(p => p.id === id);
   let isFeatured = true;
   if (!project) {
     project = githubProjects.find(p => p.id === parseInt(id));
@@ -30,8 +30,8 @@ const ProjectDetail = () => {
         <Link to="/projects" className="back-link"><ArrowLeft size={20} /> Back to Projects</Link>
         
         <div className="proj-detail-header glass">
-          <h1 className="proj-detail-title">{project.name}</h1>
-          <p className="proj-detail-lang"><Code size={18} /> {project.language}</p>
+          <h1 className="proj-detail-title">{project.title || project.name}</h1>
+          <p className="proj-detail-lang"><Code size={18} /> {project.language || (project.technologies && project.technologies.join(', '))}</p>
           
           {(project.link || project.githubUrl) && (
             <a href={project.link || project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary detail-btn mt-3">
@@ -42,7 +42,7 @@ const ProjectDetail = () => {
 
         {isFeatured && project.image && (
           <div className="proj-detail-image-container glass">
-            <img src={project.image} alt={project.name} className="proj-detail-img" />
+            <img src={project.image} alt={project.title || project.name} className="proj-detail-img" />
           </div>
         )}
 
