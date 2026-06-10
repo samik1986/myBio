@@ -1,0 +1,130 @@
+.publications-summary {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.summary-card {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+}
+
+.summary-icon {
+  color: var(--accent-color);
+  opacity: 0.5;
+}
+
+.summary-stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.publication-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.publication-item:hover {
+  transform: translateX(10px);
+  border-left: 4px solid var(--accent-color);
+}
+
+.pub-icon-container {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pub-icon {
+  color: var(--accent-color);
+}
+
+.pub-content {
+  flex-grow: 1;
+}
+
+.pub-title {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.pub-authors {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.pub-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.pub-journal {
+  font-style: italic;
+  color: var(--accent-color);
+}
+
+.pub-link {
+  color: var(--text-secondary);
+  transition: color 0.2s;
+  align-self: flex-start;
+}
+
+.pub-link:hover {
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .summary-card {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .publication-item {
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .pub-link {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+}
