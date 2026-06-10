@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
+import ResearchGraph from './components/ResearchGraph/ResearchGraph';
 import Experience from './components/Experience/Experience';
 import ExperienceDetail from './components/Experience/ExperienceDetail';
 import Projects from './components/Projects/Projects';
@@ -13,6 +14,7 @@ import PublicationDetail from './components/Publications/PublicationDetail';
 import Education from './components/Education/Education';
 import EducationDetail from './components/Education/EducationDetail';
 import CareerTimeline from './components/CareerTimeline/CareerTimeline';
+import GitHubStats from './components/GitHubStats/GitHubStats';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
@@ -27,9 +29,11 @@ const ScrollToTop = () => {
 const HomePage = () => (
   <>
     <Hero />
+    <ResearchGraph />
     <Skills />
     <Experience limit={2} />
     <Projects limit={2} />
+    <GitHubStats />
     <Publications limit={2} />
     <Education limit={2} />
   </>
