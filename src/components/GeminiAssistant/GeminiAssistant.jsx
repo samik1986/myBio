@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageSquare, X, Send, Bot, User, Key } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { projectsData } from '../../data/projectsData';
 import { publications } from '../../data/publicationsData';
 import './GeminiAssistant.css';
@@ -133,7 +134,11 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
           <div ref={messagesEndRef} />
         </div>
 
-
+        <div className="gemini-quick-actions" style={{ display: 'flex', gap: '8px', padding: '0 16px 12px', overflowX: 'auto', flexShrink: 0 }}>
+            <Link to="/github" className="btn btn-outline" style={{ fontSize: '0.8rem', padding: '6px 12px', whiteSpace: 'nowrap' }} onClick={() => setIsOpen(false)}>
+              🔍 Search GitHub Repos
+            </Link>
+          </div>
 
         <form className="gemini-input-area" onSubmit={handleSend}>
           <input 

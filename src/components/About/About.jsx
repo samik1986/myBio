@@ -31,12 +31,12 @@ const About = () => {
           <div className="about-body">
             <h3>Professional Summary</h3>
             <p>
-              Post-Doctoral Researcher with 6+ years of experience in computational neuroscience, machine learning, and computer vision. Proven track record of developing state-of-the-art algorithms for 3D multimodal brain mapping and cellular segmentation. Adept at processing terabyte-scale histological datasets and bridging single-cell data with neuro-radiology. Seeking to leverage expertise in deep learning and large-scale data analysis to drive innovations in AI/ML applications.
+              Post-Doctoral Researcher and Ph.D. with over 12+ years of experience in Machine Learning and Deep Learning. Proven track record of developing state-of-the-art algorithms for 3D multimodal brain mapping and cellular segmentation. Adept at processing terabyte-scale histological datasets and bridging single-cell data with neuro-radiology. Seeking to leverage deep expertise in ML applications to drive innovations in AI and biological sciences.
             </p>
 
             <h3>Research Focus</h3>
             <p>
-              My research lies at the intersection of computer vision and neuroscience. I specialize in designing scalable pipelines to detect neuronal connectivity across multiple species, aligning single-cell data with neuropathology. By employing modern Deep Learning frameworks (PyTorch, TensorFlow) alongside traditional image processing algorithms, I aim to unravel the complex connectivity mapping within the brain.
+              My research lies at the intersection of deep learning, computer vision, and neuroscience. I specialize in designing scalable pipelines to detect neuronal connectivity across multiple species, aligning single-cell data with neuropathology. By employing modern Deep Learning frameworks (PyTorch, TensorFlow) alongside traditional image processing algorithms, I unravel the complex connectivity mapping within the brain.
             </p>
 
             <div className="about-socials">

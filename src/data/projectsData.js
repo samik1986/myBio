@@ -18,6 +18,9 @@ export const projectsData = [
     image: img_0,
     description: "Developing automated, scalable computational pipelines for the BRAIN CONNECTS initiative to detect mammalian neuronal connectivity across PB-scale whole-brain imaging datasets.",
     technologies: ["Python", "PyTorch", "AWS", "Fiji", "MATLAB"],
+    tools: ["PyTorch", "AWS", "Fiji", "MATLAB"],
+    field: "Computational Neuroanatomy",
+    funding: "NIH BRAIN Initiative",
     link: "https://brainconnects.org",
     github: "https://github.com/samik1986"
   },
@@ -29,6 +32,9 @@ export const projectsData = [
     image: img_3,
     description: "Led the computational development of the first cell census atlas of the mammalian primary motor cortex. Utilized deep learning for precise cell counting and registration, bridging single-cell data with neuro-radiology.",
     technologies: ["C++", "Python", "ITK", "SimpleITK"],
+    tools: ["ITK", "SimpleITK", "Python", "C++"],
+    field: "3D Imaging & Histology",
+    funding: "Internal CSHL",
     link: "https://cshl.edu",
     github: "https://github.com/samik1986/brain_atlas"
   },
@@ -62,6 +68,9 @@ export const projectsData = [
     image: img_1,
     description: "Spearheaded integration of transcriptomic (RNA-seq) and genetic barcode data to map cell-type specific connections. Built automated deep learning pipelines to segment enhancer expressions.",
     technologies: ["PyTorch", "OpenCV", "CUDA", "Neuroglancer"],
+    tools: ["PyTorch", "OpenCV", "CUDA", "Neuroglancer"],
+    field: "Multi-omics & Computer Vision",
+    funding: "NIH BRAIN Initiative",
     link: "#",
     github: "https://github.com/samik1986"
   },

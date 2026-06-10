@@ -6,7 +6,7 @@ import './PublicationDetail.css';
 
 const PublicationDetail = () => {
   const { id } = useParams();
-  const publication = publications.find(p => p.id === parseInt(id));
+  const publication = publications.find(p => p.id === id);
 
   if (!publication) {
     return (
@@ -20,7 +20,7 @@ const PublicationDetail = () => {
   return (
     <div className="pub-detail-container section">
       <div className="container">
-        <Link to="/" className="back-link"><ArrowLeft size={20} /> Back to Home</Link>
+        <Link to="/publications" className="back-link"><ArrowLeft size={20} /> Back to Publications</Link>
         
         <div className="pub-detail-header glass">
           <h1 className="pub-detail-title">{publication.title}</h1>
@@ -36,23 +36,20 @@ const PublicationDetail = () => {
           </a>
         </div>
 
+        {publication.image && (
+          <div className="pub-detail-gallery">
+            <h2>Result Highlights & Architecture</h2>
+            <div className="gallery-grid">
+              <div className="gallery-item glass" style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}>
+                <img src={publication.image} alt="Publication result or architecture" style={{ width: '100%', borderRadius: '8px' }} />
+              </div>
+            </div>
+          </div>
+        )}
+
         <div className="pub-detail-content glass">
           <h2>Overview</h2>
-          <p className="pub-detail-text">{publication.overview}</p>
-          
-          <h2>Details</h2>
-          <p className="pub-detail-text">{publication.details}</p>
-        </div>
-
-        <div className="pub-detail-gallery">
-          <h2>Result Highlights</h2>
-          <div className="gallery-grid">
-            {publication.images.map((img, index) => (
-              <div key={index} className="gallery-item glass">
-                <img src={img} alt={`Result highlight ${index + 1}`} />
-              </div>
-            ))}
-          </div>
+          <p className="pub-detail-text">{publication.abstract || publication.overview}</p>
         </div>
       </div>
     </div>

@@ -5,18 +5,28 @@ import { githubProjects } from '../../data/projectsData';
 import './GithubRepos.css';
 
 const GithubRepos = () => {
-  // 1. Group the repos logically
-  const dlVision = githubProjects.filter(p => ['Python', 'Jupyter Notebook'].includes(p.language) || (p.name && (p.name.includes('GAN') || p.name.includes('Seg') || p.name.includes('ML_'))));
-  const coreAlgo = githubProjects.filter(p => ['C++', 'MATLAB'].includes(p.language) && !dlVision.includes(p));
-  const webPlatforms = githubProjects.filter(p => (['JavaScript', 'TypeScript'].includes(p.language) || (p.name && (p.name.includes('app') || p.name.includes('Bio')))) && !dlVision.includes(p) && !coreAlgo.includes(p));
+  // 1. Group the repos logically with overlapping categories
+  const bionformatics = githubProjects.filter(p => (p.name && (p.name.includes('Brain') || p.name.includes('Cell') || p.name.includes('Bio'))) || p.description.includes('Brain') || p.description.includes('Cell'));
+  const imaging3D = githubProjects.filter(p => p.name.includes('3D') || p.description.includes('3D') || p.name.includes('volume') || p.name.includes('DM'));
+  const imageProcessing = githubProjects.filter(p => (p.name && (p.name.includes('Seg') || p.name.includes('Crop') || p.name.includes('Detect'))) || p.description.includes('Image') || p.description.includes('Segmentation') || p.description.includes('Detection'));
+  const deepLearning = githubProjects.filter(p => ['Python', 'Jupyter Notebook'].includes(p.language) || (p.name && (p.name.includes('GAN') || p.name.includes('TCNN') || p.name.includes('ML_') || p.name.includes('net') || p.name.includes('NET'))) || p.description.includes('GAN') || p.description.includes('Deep Learning'));
+  const webPlatforms = githubProjects.filter(p => ['JavaScript', 'TypeScript'].includes(p.language) || (p.name && (p.name.includes('app') || p.name.includes('myBio'))));
   
-  const misc = githubProjects.filter(p => !dlVision.includes(p) && !coreAlgo.includes(p) && !webPlatforms.includes(p));
+  const misc = githubProjects.filter(p => 
+    !bionformatics.includes(p) && 
+    !imaging3D.includes(p) && 
+    !imageProcessing.includes(p) && 
+    !deepLearning.includes(p) && 
+    !webPlatforms.includes(p)
+  );
 
   const groups = [
-    { title: "Deep Learning & Computer Vision", repos: dlVision },
-    { title: "Core Algorithms & Geometry", repos: coreAlgo },
-    { title: "Web Platforms & UI", repos: webPlatforms },
-    { title: "Miscellaneous Experiments", repos: misc }
+    { title: "Bioinformatics & Neuroscience", repos: bionformatics },
+    { title: "3D Imaging", repos: imaging3D },
+    { title: "Image Processing", repos: imageProcessing },
+    { title: "Deep Learning & Vision", repos: deepLearning },
+    { title: "Web Platforms", repos: webPlatforms },
+    { title: "Miscellaneous", repos: misc }
   ];
 
   return (

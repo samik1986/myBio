@@ -18,6 +18,8 @@ import GitHubStats from './components/GitHubStats/GitHubStats';
 import GithubRepos from './components/GithubRepos/GithubRepos';
 import GeminiAssistant from './components/GeminiAssistant/GeminiAssistant';
 import Footer from './components/Footer/Footer';
+import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from '@vercel/analytics/react';
 import './App.css';
 
 const ScrollToTop = () => {
@@ -64,6 +66,8 @@ function App() {
         </Routes>
       </main>
       <GeminiAssistant />
+      <SpeedInsights />
+      <Analytics />
       <Footer />
     </div>
   );
