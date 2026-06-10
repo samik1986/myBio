@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, ExternalLink, Github, Folder, Briefcase, Server } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Folder, Briefcase, Server } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 import { projectsData, githubProjects } from '../../data/projectsData';
 import './ProjectDetail.css';
 
@@ -45,7 +46,7 @@ const ProjectDetail = () => {
             )}
             {project.github && project.github !== "#" && (
               <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-outline detail-btn">
-                View on GitHub <Github size={18} />
+                View on GitHub <FaGithub size={18} />
               </a>
             )}
           </div>
