@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, BookOpen } from 'lucide-react';
+import { Menu, X, BookOpen } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -29,8 +30,11 @@ const Navbar = () => {
         </div>
 
         <div className="nav-socials desktop-only">
-          <a href="https://github.com/samik1986/" target="_blank" rel="noopener noreferrer"><Github size={20} /></a>
-          <a href="https://www.linkedin.com/in/samik-banerjee" target="_blank" rel="noopener noreferrer"><Linkedin size={20} /></a>
+          <a href="https://github.com/samik1986/" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={20} />
+          </a>
+          <a href="https://www.linkedin.com/in/samik-banerjee" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin size={20} /></a>
           <a href="https://scholar.google.com/citations?user=XbMnDucAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><BookOpen size={20} /></a>
         </div>
 

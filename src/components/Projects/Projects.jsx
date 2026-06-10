@@ -1,5 +1,6 @@
 import React from 'react';
-import { Github, ExternalLink, Star, GitFork } from 'lucide-react';
+import { ExternalLink, Star, GitFork } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 import './Projects.css';
 
 const Projects = () => {
@@ -51,7 +52,7 @@ const Projects = () => {
           {projects.map(project => (
             <div key={project.id} className="glass project-card">
               <div className="project-header">
-                <Github size={28} className="project-icon" />
+                <FaGithub size={28} className="project-icon" />
                 <div className="project-links">
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink size={20} />
