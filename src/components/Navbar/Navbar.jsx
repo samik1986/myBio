@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, BookOpen } from 'lucide-react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaResearchgate } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -35,6 +35,8 @@ const Navbar = () => {
           </a>
           <a href="https://www.linkedin.com/in/samik-banerjee" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={20} /></a>
+          <a href="https://www.researchgate.net/profile/Samik-Banerjee" target="_blank" rel="noopener noreferrer">
+            <FaResearchgate size={20} /></a>
           <a href="https://scholar.google.com/citations?user=XbMnDucAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><BookOpen size={20} /></a>
         </div>
 

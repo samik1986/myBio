@@ -18,7 +18,7 @@ const Hero = () => {
             <a href="mailto:samik.banerjee1986@gmail.com" className="btn btn-primary">
               Contact Me <ChevronRight size={18} />
             </a>
-            <a href="#" className="btn btn-secondary">
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
               <Download size={18} /> Download Resume
             </a>
           </div>

@@ -1,57 +1,57 @@
 import React from 'react';
-import { Briefcase, Calendar } from 'lucide-react';
+import { Briefcase, Calendar, MapPin } from 'lucide-react';
 import './Experience.css';
 
-const Experience = () => {
-  const experiences = [
-    {
-      id: 1,
-      title: "Computational Science Analyst",
-      company: "Cold Spring Harbor Laboratory, NY",
-      date: "Present",
-      description: "Working on cutting-edge research involving Machine Learning, Computer Vision, and Bioinformatics. Developing robust algorithms and pipelines for complex biological data.",
-      skills: ["Machine Learning", "Computer Vision", "Python", "Bioinformatics"]
-    },
-    {
-      id: 2,
-      title: "Researcher",
-      company: "MitraLab Organization",
-      date: "Previous",
-      description: "Contributed to 2D Skeletonization, cell detection algorithms, and calculation of Sensitivity/Specificity for enhancer-based images.",
-      skills: ["C++", "MATLAB", "Image Processing", "Algorithms"]
-    }
-  ];
+const experiences = [
+  {
+    id: 1,
+    role: "Computational Science Analyst",
+    company: "Cold Spring Harbor Laboratory",
+    location: "New York, USA",
+    period: "Sep 2018 - Present",
+    description: "Developing algorithms to automatically detect neuronal connectivity in the brains of different mammalian species. Working on NIH-funded projects with the Data Core team."
+  },
+  {
+    id: 2,
+    role: "Project Officer",
+    company: "Industrial Consultancy & Sponsored Research, IIT Madras",
+    location: "Chennai, India",
+    period: "Jul 2012 - Jul 2018",
+    description: "Led multiple projects including Scene Understanding for Identification of Covert Geo Locations and Localization and Identification of Targets in Satellite Images using Computer Vision techniques."
+  },
+  {
+    id: 3,
+    role: "Assistant Professor",
+    company: "Heritage Institute of Technology",
+    location: "Kolkata, India",
+    period: "Sep 2010 - Jul 2012",
+    description: "Taught undergraduate courses in Computer Science and Engineering, mentoring students in various technical projects."
+  }
+];
 
+const Experience = () => {
   return (
     <section id="experience" className="section experience-section">
       <div className="container">
-        <h2 className="section-title">Experience</h2>
-        
+        <h2 className="section-title">Professional Experience</h2>
         <div className="timeline">
           {experiences.map((exp, index) => (
             <div key={exp.id} className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="glass timeline-content">
-                <div className="timeline-header">
-                  <h3 className="timeline-title">{exp.title}</h3>
-                  <div className="timeline-date">
-                    <Calendar size={16} />
-                    <span>{exp.date}</span>
-                  </div>
+              <div className="timeline-dot">
+                <Briefcase size={20} />
+              </div>
+              <div className={`timeline-content glass ${index % 2 === 0 ? 'left' : 'right'}`}>
+                <h3 className="exp-role">{exp.role}</h3>
+                <h4 className="exp-company">{exp.company}</h4>
+                <div className="exp-meta">
+                  <span className="exp-period">
+                    <Calendar size={16} /> {exp.period}
+                  </span>
+                  <span className="exp-location">
+                    <MapPin size={16} /> {exp.location}
+                  </span>
                 </div>
-                
-                <div className="timeline-company">
-                  <Briefcase size={16} />
-                  <span>{exp.company}</span>
-                </div>
-                
-                <p className="timeline-desc">{exp.description}</p>
-                
-                <div className="timeline-skills">
-                  {exp.skills.map((skill, i) => (
-                    <span key={i} className="skill-tag">{skill}</span>
-                  ))}
-                </div>
+                <p className="exp-description">{exp.description}</p>
               </div>
             </div>
           ))}

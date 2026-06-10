@@ -1,7 +1,17 @@
+.projects-section {
+  padding-top: 100px;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2.5rem;
 }
 
 .project-card {
@@ -9,13 +19,40 @@
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-  border-color: rgba(56, 189, 248, 0.3);
+}
+
+.featured-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.project-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.featured-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .project-header {
@@ -31,6 +68,7 @@
 
 .project-links a {
   color: var(--text-secondary);
+  transition: color 0.3s;
 }
 
 .project-links a:hover {
@@ -38,52 +76,68 @@
 }
 
 .project-title {
-  font-size: 1.25rem;
   color: var(--text-primary);
+  font-size: 1.25rem;
   margin-bottom: 1rem;
-  word-break: break-word;
 }
 
 .project-desc {
   color: var(--text-secondary);
   font-size: 0.95rem;
   line-height: 1.6;
-  margin-bottom: 2rem;
   flex-grow: 1;
+  margin-bottom: 1.5rem;
 }
 
 .project-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.85rem;
-  color: var(--text-secondary);
+  margin-top: auto;
 }
 
 .project-lang {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
 }
 
 .lang-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #8b949e;
+  background-color: var(--accent-color);
 }
 
 .lang-dot.jupyter-notebook { background-color: #DA5B0B; }
 .lang-dot.c\+\+ { background-color: #f34b7d; }
 .lang-dot.matlab { background-color: #e16737; }
+.lang-dot.python { background-color: #3572A5; }
 
 .project-stats {
   display: flex;
   gap: 1rem;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
 }
 
 .project-stats span {
   display: flex;
   align-items: center;
   gap: 0.25rem;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: #fff;
 }
