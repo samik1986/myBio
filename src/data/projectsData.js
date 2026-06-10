@@ -111,6 +111,36 @@ export const projectsData = [
   }
 ];
 
+export const featuredProjects = [
+  {
+    id: "brain-connects",
+    name: "BRAIN CONNECTS (BICAN)",
+    description: "Development of a pipeline to detect neuronal connectivity in human and non-human primates across different scales.",
+    details: "This NIH-funded project focuses on mapping neuronal connectivity globally across mammalian brains.",
+    language: "Python / C++",
+    image: "src/assets/project_brain.png",
+    link: "https://brainseer.org/"
+  },
+  {
+    id: "human-brain-atlas",
+    name: "3D Multimodal Micron-Scale Human Brain",
+    description: "A 3D multimodal histological cell atlas bridging single cell data, neuropathology and neuroradiology.",
+    details: "Working towards a 3D atlas of the human brain that integrates various modalities.",
+    language: "MATLAB / Python",
+    image: "src/assets/project_atlas.png",
+    link: "#"
+  },
+  {
+    id: "marmoset-enhancers",
+    name: "Marmoset Enhancers Mapping",
+    description: "Developing cell type-specific enhancers and connectivity mapping pipelines for marmoset brains.",
+    details: "This project maps genetic barcodes to track enhancers in marmoset brains.",
+    language: "Python / TS",
+    image: "src/assets/project_marmoset.png",
+    link: "https://marmosetconnects.org/"
+  }
+];
+
 export const githubProjects = [
   {
     id: 1,
