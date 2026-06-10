@@ -11,8 +11,6 @@ const GeminiAssistant = () => {
   ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
-  const [apiKey, setApiKey] = useState(import.meta.env.VITE_GEMINI_API_KEY || '');
-  const [showKeyInput, setShowKeyInput] = useState(!import.meta.env.VITE_GEMINI_API_KEY);
   
   const messagesEndRef = useRef(null);
 
@@ -41,19 +39,13 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
     e?.preventDefault();
     if (!input.trim()) return;
 
-    if (!apiKey) {
-      setMessages(prev => [...prev, { role: 'assistant', text: "Please provide a Gemini API Key to chat!" }]);
-      setShowKeyInput(true);
-      return;
-    }
-
     const userMessage = { role: 'user', text: input };
     setMessages(prev => [...prev, userMessage]);
     setInput('');
     setLoading(true);
 
     try {
-      const history = messages.slice(1).filter(m => !m.text.includes("API Key")).map(m => ({
+      const history = messages.slice(1).map(m => ({
         role: m.role === 'assistant' ? 'model' : 'user',
         parts: [{ text: m.text }]
       }));
@@ -66,7 +58,7 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
         ]
       };
 
-      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
+      const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -80,7 +72,6 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
 
       const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || "Sorry, I couldn't generate a response.";
       setMessages(prev => [...prev, { role: 'assistant', text: reply }]);
-      setShowKeyInput(false);
     } catch (err) {
       setMessages(prev => [...prev, { role: 'assistant', text: `Error: ${err.message}` }]);
     } finally {
@@ -142,18 +133,7 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
           <div ref={messagesEndRef} />
         </div>
 
-        {showKeyInput && (
-          <div className="gemini-key-input">
-            <Key size={14} className="key-icon" />
-            <input 
-              type="password" 
-              placeholder="Enter Gemini API Key..." 
-              value={apiKey}
-              onChange={(e) => setApiKey(e.target.value)}
-            />
-            <button onClick={() => setShowKeyInput(false)} className="save-key-btn">Save</button>
-          </div>
-        )}
+
 
         <form className="gemini-input-area" onSubmit={handleSend}>
           <input 
