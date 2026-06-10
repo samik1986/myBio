@@ -38,6 +38,7 @@ const Navbar = () => {
           <Link to="/projects" className="nav-link">Projects</Link>
           <Link to="/publications" className="nav-link">Publications</Link>
           <Link to="/education" className="nav-link">Education</Link>
+          <Link to="/github" className="nav-link">GitHub Repos</Link>
         </div>
 
         <div className="nav-socials">

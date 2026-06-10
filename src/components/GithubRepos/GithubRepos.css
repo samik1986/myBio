@@ -1,0 +1,109 @@
+.github-repos-page {
+  padding-top: 120px;
+  min-height: 100vh;
+}
+
+.repo-group-container {
+  margin-bottom: 4rem;
+  background: rgba(10, 15, 30, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.repo-group-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.repo-count {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.repo-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.repo-grid.featured {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-bottom: 1.5rem;
+}
+
+.repo-grid.remaining {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.repo-grid.remaining.expanded {
+  max-height: 5000px; /* large enough to fit content */
+  opacity: 1;
+  margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.repo-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.repo-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.repo-featured {
+  border-left: 3px solid var(--accent);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.repo-standard {
+  padding: 1.2rem;
+}
+
+.repo-standard .project-title {
+  font-size: 1.1rem;
+}
+
+.repo-standard .project-desc {
+  font-size: 0.85rem;
+}
+
+.btn-expand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  color: var(--text-primary);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-expand:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--accent);
+  color: var(--accent);
+}

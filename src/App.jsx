@@ -15,6 +15,7 @@ import Education from './components/Education/Education';
 import EducationDetail from './components/Education/EducationDetail';
 import CareerTimeline from './components/CareerTimeline/CareerTimeline';
 import GitHubStats from './components/GitHubStats/GitHubStats';
+import GithubRepos from './components/GithubRepos/GithubRepos';
 import GeminiAssistant from './components/GeminiAssistant/GeminiAssistant';
 import Footer from './components/Footer/Footer';
 import './App.css';
@@ -59,6 +60,7 @@ function App() {
           <Route path="/education" element={<Education />} />
           <Route path="/education/:id" element={<EducationDetail />} />
           <Route path="/timeline" element={<CareerTimeline />} />
+          <Route path="/github" element={<GithubRepos />} />
         </Routes>
       </main>
       <GeminiAssistant />
