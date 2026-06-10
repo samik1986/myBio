@@ -1,3 +1,33 @@
+import img_0 from '../assets/drive_gtcx1.png';
+import img_1 from '../assets/drive_Deep_Domain_Adaptation_for_Face_Recognition_using_.jpeg';
+import img_2 from '../assets/drive_A_threedimensional_histological_cell_atlas_of_the_.png';
+import img_3 from '../assets/drive_Skeletonization_of_neuronal_processes_using_Discre.png';
+import img_4 from '../assets/drive_Solving_the_where_problem_and_quantifying_geometri.png';
+import img_5 from '../assets/drive_Cellular_anatomy_of_the_mouse_primary_motor_cortex.png';
+import img_6 from '../assets/drive_A_guide_to_the_BRAIN_Initiative_Cell_Census_Networ.jpeg';
+import img_7 from '../assets/drive_PosIXGAN_Generating_multiple_poses_using_GAN_for_p.png';
+import img_8 from '../assets/drive_Kernel_selection_using_multiple_kernel_learning_an.png';
+import img_9 from '../assets/drive_Unsupervised_method_of_domain_adaptation_on_repres.png';
+import img_10 from '../assets/drive_High_precision_automated_detection_of_labeled_nucl.jpeg';
+import img_11 from '../assets/drive_MakeUpMirror_Mirroring_makeups_and_verifying_faces.jpeg';
+import img_12 from '../assets/drive_Detection_and_skeletonization_of_single_neurons_an.jpeg';
+import img_13 from '../assets/drive_SpoofNET_Resolving_Facial_Makeup_based_Spoofs.png';
+import img_14 from '../assets/drive_Reversible_Data_Encryption_Algorithm.jpeg';
+import img_15 from '../assets/drive_Semantic_segmentation_of_microscopic_neuroanatomic.png';
+import img_16 from '../assets/drive_LRGAN_for_Degraded_Face_Recognition.png';
+import img_17 from '../assets/drive_Secure_scan_design_with_Isomorphic_registers.jpeg';
+import img_18 from '../assets/drive_Detecting_aircrafts_from_satellite_images_using_sa.jpeg';
+import img_19 from '../assets/drive_Face_recognition_in_surveillance_conditions_with_b.png';
+import img_20 from '../assets/drive_Mutual_variation_of_information_on_TransferCNN_for.jpeg';
+import img_21 from '../assets/drive_Eigen_Domain_Transformation_for_Softmargin_Multipl.png';
+import img_22 from '../assets/drive_SoftMargin_Learning_for_Multiple_FeatureKernel_Com.jpeg';
+import img_23 from '../assets/drive_Domain_Adaptation_with_Softmargin_multiple_feature.png';
+import img_24 from '../assets/drive_Reversible_masking_a_novel_faultdiagnosed.jpeg';
+import img_25 from '../assets/drive_A_multimodal_cell_census_and_atlas_of_the_mammalia.jpeg';
+import img_26 from '../assets/drive_DPGAN_Dual_Pathway_Generative_Adversarial_Network_.png';
+import img_27 from '../assets/drive_3D_multimodal_histological_atlas_and_coordinate_fr.jpeg';
+import img_28 from '../assets/drive_Performance_of_Deep_Learning_Algorithms_vs_Shallow.jpeg';
+
 export const publications = [
   {
     id: "pub-1",
@@ -6,7 +36,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_3D_multimodal_histological_atlas_and_coordinate_fr.jpeg",
+    image: img_27,
     abstract: "Read the full paper for more details."
   },
   {
@@ -16,7 +46,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_A_guide_to_the_BRAIN_Initiative_Cell_Census_Networ.jpeg",
+    image: img_6,
     abstract: "Read the full paper for more details."
   },
   {
@@ -26,7 +56,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_A_multimodal_cell_census_and_atlas_of_the_mammalia.jpeg",
+    image: img_25,
     abstract: "Read the full paper for more details."
   },
   {
@@ -36,7 +66,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_A_threedimensional_histological_cell_atlas_of_the_.png",
+    image: img_2,
     abstract: "Read the full paper for more details."
   },
   {
@@ -46,7 +76,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Cellular_anatomy_of_the_mouse_primary_motor_cortex.png",
+    image: img_5,
     abstract: "Read the full paper for more details."
   },
   {
@@ -56,7 +86,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Deep_Domain_Adaptation_for_Face_Recognition_using_.jpeg",
+    image: img_1,
     abstract: "Read the full paper for more details."
   },
   {
@@ -66,7 +96,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Detecting_aircrafts_from_satellite_images_using_sa.jpeg",
+    image: img_18,
     abstract: "Read the full paper for more details."
   },
   {
@@ -76,7 +106,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Detection_and_skeletonization_of_single_neurons_an.jpeg",
+    image: img_12,
     abstract: "Read the full paper for more details."
   },
   {
@@ -86,7 +116,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Domain_Adaptation_with_Softmargin_multiple_feature.png",
+    image: img_23,
     abstract: "Read the full paper for more details."
   },
   {
@@ -96,7 +126,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_DPGAN_Dual_Pathway_Generative_Adversarial_Network_.png",
+    image: img_26,
     abstract: "Read the full paper for more details."
   },
   {
@@ -106,7 +136,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Eigen_Domain_Transformation_for_Softmargin_Multipl.png",
+    image: img_21,
     abstract: "Read the full paper for more details."
   },
   {
@@ -116,7 +146,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Face_recognition_in_surveillance_conditions_with_b.png",
+    image: img_19,
     abstract: "Read the full paper for more details."
   },
   {
@@ -126,7 +156,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_gtcx1.png",
+    image: img_0,
     abstract: "Read the full paper for more details."
   },
   {
@@ -136,7 +166,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_High_precision_automated_detection_of_labeled_nucl.jpeg",
+    image: img_10,
     abstract: "Read the full paper for more details."
   },
   {
@@ -146,7 +176,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Kernel_selection_using_multiple_kernel_learning_an.png",
+    image: img_8,
     abstract: "Read the full paper for more details."
   },
   {
@@ -156,7 +186,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_LRGAN_for_Degraded_Face_Recognition.png",
+    image: img_16,
     abstract: "Read the full paper for more details."
   },
   {
@@ -166,7 +196,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_MakeUpMirror_Mirroring_makeups_and_verifying_faces.jpeg",
+    image: img_11,
     abstract: "Read the full paper for more details."
   },
   {
@@ -176,7 +206,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Mutual_variation_of_information_on_TransferCNN_for.jpeg",
+    image: img_20,
     abstract: "Read the full paper for more details."
   },
   {
@@ -186,7 +216,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Performance_of_Deep_Learning_Algorithms_vs_Shallow.jpeg",
+    image: img_28,
     abstract: "Read the full paper for more details."
   },
   {
@@ -196,7 +226,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_PosIXGAN_Generating_multiple_poses_using_GAN_for_p.png",
+    image: img_7,
     abstract: "Read the full paper for more details."
   },
   {
@@ -206,7 +236,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Reversible_Data_Encryption_Algorithm.jpeg",
+    image: img_14,
     abstract: "Read the full paper for more details."
   },
   {
@@ -216,7 +246,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Reversible_masking_a_novel_faultdiagnosed.jpeg",
+    image: img_24,
     abstract: "Read the full paper for more details."
   },
   {
@@ -226,7 +256,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Secure_scan_design_with_Isomorphic_registers.jpeg",
+    image: img_17,
     abstract: "Read the full paper for more details."
   },
   {
@@ -236,7 +266,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Semantic_segmentation_of_microscopic_neuroanatomic.png",
+    image: img_15,
     abstract: "Read the full paper for more details."
   },
   {
@@ -246,7 +276,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Skeletonization_of_neuronal_processes_using_Discre.png",
+    image: img_3,
     abstract: "Read the full paper for more details."
   },
   {
@@ -256,7 +286,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_SoftMargin_Learning_for_Multiple_FeatureKernel_Com.jpeg",
+    image: img_22,
     abstract: "Read the full paper for more details."
   },
   {
@@ -266,7 +296,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Solving_the_where_problem_and_quantifying_geometri.png",
+    image: img_4,
     abstract: "Read the full paper for more details."
   },
   {
@@ -276,7 +306,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Solving_the_where_problem_and_quantifying_geometri.png",
+    image: img_4,
     abstract: "Read the full paper for more details."
   },
   {
@@ -286,7 +316,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_SpoofNET_Resolving_Facial_Makeup_based_Spoofs.png",
+    image: img_13,
     abstract: "Read the full paper for more details."
   },
   {
@@ -306,7 +336,7 @@ export const publications = [
     journal: "Publication",
     year: 2024,
     link: "#",
-    image: "src/assets/drive_Unsupervised_method_of_domain_adaptation_on_repres.png",
+    image: img_9,
     abstract: "Read the full paper for more details."
   },
 ];

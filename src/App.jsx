@@ -15,6 +15,8 @@ import Education from './components/Education/Education';
 import EducationDetail from './components/Education/EducationDetail';
 import CareerTimeline from './components/CareerTimeline/CareerTimeline';
 import GitHubStats from './components/GitHubStats/GitHubStats';
+import GeminiAssistant from './components/GeminiAssistant/GeminiAssistant';
+import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
@@ -60,6 +62,7 @@ function App() {
           <Route path="/timeline" element={<CareerTimeline />} />
         </Routes>
       </main>
+      <GeminiAssistant />
       <Footer />
     </div>
   );
