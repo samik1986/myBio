@@ -29,6 +29,7 @@ const ScrollToTop = () => {
 const HomePage = () => (
   <>
     <Hero />
+    <About />
     <ResearchGraph />
     <Skills />
     <Experience limit={2} />
@@ -47,7 +48,6 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/experience/:id" element={<ExperienceDetail />} />
