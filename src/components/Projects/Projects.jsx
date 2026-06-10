@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ExternalLink, Star, GitFork, Link as LinkIcon, ArrowRight } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
-import { featuredProjects, githubProjects } from '../../data/projectsData';
+import { projectsData, githubProjects } from '../../data/projectsData';
 import './Projects.css';
 
 const Projects = ({ limit }) => {
-  const displayFeatured = limit ? featuredProjects.slice(0, limit) : featuredProjects;
+  const displayFeatured = limit ? projectsData.slice(0, limit) : projectsData;
   const displayGithub = limit ? githubProjects.slice(0, limit) : githubProjects;
 
   return (
@@ -28,12 +28,12 @@ const Projects = ({ limit }) => {
                 <img src={project.image} alt={project.name} className="project-image" />
               </div>
               <div className="project-content">
-                <h3 className="project-title">{project.name}</h3>
+                <h3 className="project-title">{project.title || project.name}</h3>
                 <p className="project-desc">{project.description}</p>
                 <div className="project-footer">
                   <span className="project-lang">
                     <span className="lang-dot python"></span>
-                    {project.language}
+                    {project.language || (project.technologies && project.technologies[0])}
                   </span>
                   {project.link !== "#" && (
                     <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link" onClick={(e) => e.stopPropagation()}>

@@ -111,53 +111,366 @@ export const projectsData = [
   }
 ];
 
-export const featuredProjects = [
-  {
-    id: "brain-connects",
-    name: "BRAIN CONNECTS (BICAN)",
-    description: "Development of a pipeline to detect neuronal connectivity in human and non-human primates across different scales.",
-    details: "This NIH-funded project focuses on mapping neuronal connectivity globally across mammalian brains.",
-    language: "Python / C++",
-    image: "src/assets/project_brain.png",
-    link: "https://brainseer.org/"
-  },
-  {
-    id: "human-brain-atlas",
-    name: "3D Multimodal Micron-Scale Human Brain",
-    description: "A 3D multimodal histological cell atlas bridging single cell data, neuropathology and neuroradiology.",
-    details: "Working towards a 3D atlas of the human brain that integrates various modalities.",
-    language: "MATLAB / Python",
-    image: "src/assets/project_atlas.png",
-    link: "#"
-  },
-  {
-    id: "marmoset-enhancers",
-    name: "Marmoset Enhancers Mapping",
-    description: "Developing cell type-specific enhancers and connectivity mapping pipelines for marmoset brains.",
-    details: "This project maps genetic barcodes to track enhancers in marmoset brains.",
-    language: "Python / TS",
-    image: "src/assets/project_marmoset.png",
-    link: "https://marmosetconnects.org/"
-  }
-];
 
 export const githubProjects = [
   {
     id: 1,
+    name: "3d-centroid-proofreader",
+    description: "",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/3d-centroid-proofreader"
+  },
+  {
+    id: 2,
+    name: "3D_Developing_brain",
+    description: "Code for Comparison of Cell Detection in 3D Histological Developing Brain",
+    language: "Jupyter Notebook",
+    stars: 1,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/3D_Developing_brain"
+  },
+  {
+    id: 3,
+    name: "3_MET_TCNN",
+    description: "For Paper in NeuroComputing 2018",
+    language: "Python",
+    stars: 2,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/3_MET_TCNN"
+  },
+  {
+    id: 4,
+    name: "Cropping_NZ",
+    description: "",
+    language: "MATLAB",
+    stars: 1,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/Cropping_NZ"
+  },
+  {
+    id: 5,
+    name: "cw_graph_tools",
+    description: "",
+    language: "MATLAB",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/cw_graph_tools"
+  },
+  {
+    id: 6,
+    name: "DKCell",
+    description: "",
+    language: "Python",
+    stars: 1,
+    forks: 1,
+    githubUrl: "https://github.com/samik1986/DKCell"
+  },
+  {
+    id: 7,
+    name: "DM_2D",
+    description: "",
+    language: "C++",
+    stars: 1,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/DM_2D"
+  },
+  {
+    id: 8,
+    name: "DM_3D",
+    description: "",
+    language: "C++",
+    stars: 1,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/DM_3D"
+  },
+  {
+    id: 9,
+    name: "DM_Lucas",
+    description: "",
+    language: "C++",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/DM_Lucas"
+  },
+  {
+    id: 10,
+    name: "DM_MG",
+    description: "Morse GAN",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/DM_MG"
+  },
+  {
+    id: 11,
+    name: "DM_net",
+    description: "",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/DM_net"
+  },
+  {
+    id: 12,
+    name: "GFP-Cell-Detection",
+    description: "",
+    language: "MATLAB",
+    stars: 1,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/GFP-Cell-Detection"
+  },
+  {
+    id: 13,
+    name: "Github_test",
+    description: "",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/Github_test"
+  },
+  {
+    id: 14,
+    name: "github_test2",
+    description: "Just for Test",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/github_test2"
+  },
+  {
+    id: 15,
+    name: "HF_learn",
+    description: "",
+    language: "Jupyter Notebook",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/HF_learn"
+  },
+  {
+    id: 16,
+    name: "HG2PD",
+    description: "",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/HG2PD"
+  },
+  {
+    id: 17,
+    name: "injDet",
+    description: "",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/injDet"
+  },
+  {
+    id: 18,
+    name: "keras-survGAN",
+    description: "Surveillance Face generartion",
+    language: "",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/keras-survGAN"
+  },
+  {
+    id: 19,
+    name: "makemore_Samik",
+    description: "",
+    language: "Jupyter Notebook",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/makemore_Samik"
+  },
+  {
+    id: 20,
+    name: "MakeUPMirror",
+    description: "",
+    language: "Python",
+    stars: 2,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/MakeUPMirror"
+  },
+  {
+    id: 21,
+    name: "Mediar_4_devBrain",
+    description: "",
+    language: "Python",
+    stars: 1,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/Mediar_4_devBrain"
+  },
+  {
+    id: 22,
+    name: "ML_Semantic-Segmenation-2020",
+    description: "",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/ML_Semantic-Segmenation-2020"
+  },
+  {
+    id: 23,
     name: "ML_Semantic_Segmenation_NMI",
-    description: "Semantic segmentation implementation for NMI images.",
+    description: "",
     language: "Jupyter Notebook",
     stars: 20,
     forks: 5,
     githubUrl: "https://github.com/samik1986/ML_Semantic_Segmenation_NMI"
   },
   {
-    id: 2,
-    name: "2D-Skeletonization",
-    description: "Skeletonization and Summarization of Tracer Injected Data.",
-    language: "C++",
+    id: 24,
+    name: "MoP_boundary",
+    description: "",
+    language: "MATLAB",
     stars: 1,
-    forks: 1,
-    githubUrl: "https://github.com/MitraLab-Organization/2D-Skeletonization"
-  }
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/MoP_boundary"
+  },
+  {
+    id: 25,
+    name: "MorseGAN_git",
+    description: "Morse",
+    language: "",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/MorseGAN_git"
+  },
+  {
+    id: 26,
+    name: "mouse-marmoset-comparison-app",
+    description: "",
+    language: "TypeScript",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/mouse-marmoset-comparison-app"
+  },
+  {
+    id: 27,
+    name: "MultiStreamCellSeg_4_devBrain",
+    description: "",
+    language: "Python",
+    stars: 1,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/MultiStreamCellSeg_4_devBrain"
+  },
+  {
+    id: 28,
+    name: "myBio",
+    description: "",
+    language: "JavaScript",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/myBio"
+  },
+  {
+    id: 29,
+    name: "Myelin-Conversion",
+    description: "",
+    language: "MATLAB",
+    stars: 1,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/Myelin-Conversion"
+  },
+  {
+    id: 30,
+    name: "neetcode-gpt",
+    description: "GPT built from scratch — assembled from my NeetCode ML course submissions",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/neetcode-gpt"
+  },
+  {
+    id: 31,
+    name: "neetcode-submissions-samik1986",
+    description: "My NeetCode.io problem submissions",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/neetcode-submissions-samik1986"
+  },
+  {
+    id: 32,
+    name: "newTCNN",
+    description: "",
+    language: "",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/newTCNN"
+  },
+  {
+    id: 33,
+    name: "newWiNN",
+    description: "",
+    language: "",
+    stars: 1,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/newWiNN"
+  },
+  {
+    id: 34,
+    name: "samik1986",
+    description: "Config files for my GitHub profile.",
+    language: "",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/samik1986"
+  },
+  {
+    id: 35,
+    name: "siamDA",
+    description: "",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/siamDA"
+  },
+  {
+    id: 36,
+    name: "tf_lddmm",
+    description: "",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/tf_lddmm"
+  },
+  {
+    id: 37,
+    name: "tranferNET",
+    description: "DA_SIAM",
+    language: "",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/tranferNET"
+  },
+  {
+    id: 38,
+    name: "transferNET",
+    description: "",
+    language: "",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/transferNET"
+  },
+  {
+    id: 39,
+    name: "um1_3d_volume",
+    description: "",
+    language: "JavaScript",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/um1_3d_volume"
+  },
+  {
+    id: 40,
+    name: "wiNN",
+    description: "Initial Commit",
+    language: "Python",
+    stars: 1,
+    forks: 0,
+    githubUrl: "https://github.com/samik1986/wiNN"
+  },
 ];
