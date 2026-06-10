@@ -11,6 +11,7 @@ import Publications from './components/Publications/Publications';
 import PublicationDetail from './components/Publications/PublicationDetail';
 import Education from './components/Education/Education';
 import EducationDetail from './components/Education/EducationDetail';
+import CareerTimeline from './components/CareerTimeline/CareerTimeline';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
@@ -50,6 +51,7 @@ function App() {
           <Route path="/publication/:id" element={<PublicationDetail />} />
           <Route path="/education" element={<Education />} />
           <Route path="/education/:id" element={<EducationDetail />} />
+          <Route path="/timeline" element={<CareerTimeline />} />
         </Routes>
       </main>
       <Footer />

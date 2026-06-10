@@ -1,0 +1,79 @@
+.timeline-page {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.timeline-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+}
+
+.timeline-chart-container {
+  padding: 1rem 1rem 1rem 0;
+  border-radius: 1rem;
+  overflow-x: auto;
+}
+
+.timeline-tooltip {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.tooltip-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+
+.tooltip-cat {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.tooltip-time {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.tooltip-desc {
+  font-size: 0.95rem;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.timeline-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.legend-color {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+/* Make Y axis labels responsive */
+@media (max-width: 768px) {
+  .timeline-chart-container {
+    min-width: 800px; /* Force scroll on very small devices to keep chart readable */
+  }
+}
