@@ -8,7 +8,10 @@ const Hero = () => {
       <div className="container hero-container">
         <div className="hero-content">
           <h2 className="greeting">Hello, I'm</h2>
-          <h1 className="name">Samik Banerjee</h1>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '10px' }}>
+            <img src="https://github.com/samik1986.png" alt="Samik Banerjee" style={{ width: '80px', height: '80px', borderRadius: '50%', border: '2px solid var(--accent-color)', boxShadow: '0 4px 10px rgba(0,0,0,0.2)' }} />
+            <h1 className="name" style={{ margin: 0 }}>Samik Banerjee</h1>
+          </div>
           <h3 className="title">Computational Science Analyst</h3>
           <p className="description">
             Specializing in Machine Learning, Computer Vision, Computational Neuroscience, and Bioinformatics. 
