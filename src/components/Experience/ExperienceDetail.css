@@ -1,0 +1,78 @@
+.exp-detail-container {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.exp-detail-header {
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.exp-icon-large {
+  color: var(--accent-color);
+  background: rgba(144, 100, 255, 0.1);
+  padding: 2rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.exp-detail-title {
+  font-size: 2.2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.exp-detail-company {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.exp-meta-large {
+  display: flex;
+  gap: 2rem;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.exp-meta-large span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.exp-detail-content {
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.exp-detail-content h2 {
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.exp-detail-content h2:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.exp-detail-text {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.exp-detail-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.exp-detail-list li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

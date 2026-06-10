@@ -1,85 +1,29 @@
 import React from 'react';
-import { ExternalLink, Star, GitFork, Link as LinkIcon } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ExternalLink, Star, GitFork, Link as LinkIcon, ArrowRight } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
-import imgBrainConnects from '../../assets/project_brain.png';
-import imgAtlas from '../../assets/project_atlas.png';
-import imgMarmoset from '../../assets/project_marmoset.png';
+import { featuredProjects, githubProjects } from '../../data/projectsData';
 import './Projects.css';
 
-const Projects = () => {
-  const featuredProjects = [
-    {
-      id: "p1",
-      name: "BRAIN CONNECTS (BICAN)",
-      description: "Development of a pipeline to detect neuronal connectivity in human and non-human primates across different scales.",
-      language: "Python / C++",
-      image: imgBrainConnects,
-      link: "https://brainseer.org/"
-    },
-    {
-      id: "p2",
-      name: "3D Multimodal Micron-Scale Human Brain",
-      description: "A 3D multimodal histological cell atlas bridging single cell data, neuropathology and neuroradiology.",
-      language: "MATLAB / Python",
-      image: imgAtlas,
-      link: "#"
-    },
-    {
-      id: "p3",
-      name: "Marmoset Enhancers Mapping",
-      description: "Developing cell type-specific enhancers and connectivity mapping pipelines for marmoset brains.",
-      language: "Python / TS",
-      image: imgMarmoset,
-      link: "https://marmosetconnects.org/"
-    }
-  ];
-
-  const githubProjects = [
-    {
-      id: 1,
-      name: "ML_Semantic_Segmenation_NMI",
-      description: "Semantic segmentation implementation for NMI images. Features deep learning architectures and metrics evaluation.",
-      language: "Jupyter Notebook",
-      stars: 20,
-      forks: 5,
-      githubUrl: "https://github.com/samik1986/ML_Semantic_Segmenation_NMI"
-    },
-    {
-      id: 2,
-      name: "2D-Skeletonization",
-      description: "Skeletonization and Summarization of Tracer Injected Data.",
-      language: "C++",
-      stars: 1,
-      forks: 1,
-      githubUrl: "https://github.com/MitraLab-Organization/2D-Skeletonization"
-    },
-    {
-      id: 3,
-      name: "Sensitivity-and-Specificity-Calculation",
-      description: "Calculation of Sensitivity and Specificity Calculation for Enhancer based images.",
-      language: "MATLAB",
-      stars: 1,
-      forks: 0,
-      githubUrl: "https://github.com/MitraLab-Organization/Sensitivity-and-Specificity-Calculation"
-    },
-    {
-      id: 4,
-      name: "3D_Developing_brain",
-      description: "Code for Comparison of Cell Detection in 3D Histological Developing Brain.",
-      language: "Jupyter Notebook",
-      stars: 1,
-      forks: 0,
-      githubUrl: "https://github.com/samik1986/3D_Developing_brain"
-    }
-  ];
+const Projects = ({ limit }) => {
+  const displayFeatured = limit ? featuredProjects.slice(0, limit) : featuredProjects;
+  const displayGithub = limit ? githubProjects.slice(0, limit) : githubProjects;
 
   return (
     <section id="projects" className="section projects-section">
       <div className="container">
-        <h2 className="section-title">Major Research Projects</h2>
+        <div className="section-header">
+          <h2 className="section-title">Major Research Projects</h2>
+          {limit && (
+            <Link to="/projects" className="view-all-link">
+              View All <ArrowRight size={16} />
+            </Link>
+          )}
+        </div>
+        
         <div className="featured-grid">
-          {featuredProjects.map(project => (
-            <div key={project.id} className="glass project-card featured-card">
+          {displayFeatured.map(project => (
+            <Link to={`/project/${project.id}`} key={project.id} className="glass project-card featured-card" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="project-image-container">
                 <img src={project.image} alt={project.name} className="project-image" />
               </div>
@@ -92,24 +36,24 @@ const Projects = () => {
                     {project.language}
                   </span>
                   {project.link !== "#" && (
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link" onClick={(e) => e.stopPropagation()}>
                       <LinkIcon size={18} /> Portal
                     </a>
                   )}
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
         <h2 className="section-title" style={{ marginTop: '4rem' }}>GitHub Repositories</h2>
         <div className="projects-grid">
-          {githubProjects.map(project => (
-            <div key={project.id} className="glass project-card">
+          {displayGithub.map(project => (
+            <Link to={`/project/${project.id}`} key={project.id} className="glass project-card" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="project-header">
                 <FaGithub size={28} className="project-icon" />
                 <div className="project-links">
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
                     <ExternalLink size={20} />
                   </a>
                 </div>
@@ -128,7 +72,7 @@ const Projects = () => {
                   <span><GitFork size={14} /> {project.forks}</span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

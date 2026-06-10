@@ -1,0 +1,73 @@
+.edu-detail-container {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.edu-detail-header {
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.edu-icon-large {
+  color: var(--accent-color);
+  background: rgba(144, 100, 255, 0.1);
+  padding: 2rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.edu-detail-title {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.edu-detail-inst {
+  font-size: 1.3rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.edu-meta-large {
+  display: flex;
+  gap: 2rem;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.edu-meta-large span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.edu-detail-content {
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.edu-detail-content h2 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.edu-detail-text {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.grade-badge {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: rgba(144, 100, 255, 0.2);
+  color: var(--accent-color);
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}

@@ -66,3 +66,31 @@ a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.section-header .section-title {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.view-all-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.view-all-link:hover {
+  text-decoration: none;
+  transform: translateX(5px);
+  color: #fff;
+}

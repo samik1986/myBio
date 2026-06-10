@@ -2,10 +2,15 @@ import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
+import Skills from './components/Skills/Skills';
 import Experience from './components/Experience/Experience';
+import ExperienceDetail from './components/Experience/ExperienceDetail';
 import Projects from './components/Projects/Projects';
+import ProjectDetail from './components/Projects/ProjectDetail';
 import Publications from './components/Publications/Publications';
 import PublicationDetail from './components/Publications/PublicationDetail';
+import Education from './components/Education/Education';
+import EducationDetail from './components/Education/EducationDetail';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
@@ -20,9 +25,11 @@ const ScrollToTop = () => {
 const HomePage = () => (
   <>
     <Hero />
-    <Experience />
-    <Projects />
-    <Publications />
+    <Skills />
+    <Experience limit={2} />
+    <Projects limit={2} />
+    <Publications limit={2} />
+    <Education limit={2} />
   </>
 );
 
@@ -34,7 +41,15 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/experience/:id" element={<ExperienceDetail />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<ProjectDetail />} />
+          <Route path="/publications" element={<Publications />} />
           <Route path="/publication/:id" element={<PublicationDetail />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/education/:id" element={<EducationDetail />} />
         </Routes>
       </main>
       <Footer />

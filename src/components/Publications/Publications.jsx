@@ -1,14 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BookOpen, ExternalLink, Quote } from 'lucide-react';
+import { BookOpen, ExternalLink, Quote, ArrowRight } from 'lucide-react';
 import { publications } from '../../data/publicationsData';
 import './Publications.css';
 
-const Publications = () => {
+const Publications = ({ limit }) => {
+  const displayPubs = limit ? publications.slice(0, limit) : publications;
+
   return (
     <section id="publications" className="section publications-section">
       <div className="container">
-        <h2 className="section-title">Selected Publications</h2>
+        <div className="section-header">
+          <h2 className="section-title">Selected Publications</h2>
+          {limit && (
+            <Link to="/publications" className="view-all-link">
+              View All <ArrowRight size={16} />
+            </Link>
+          )}
+        </div>
         <div className="publications-summary">
           <div className="glass summary-card">
             <Quote size={32} className="summary-icon" />
@@ -23,7 +32,7 @@ const Publications = () => {
         </div>
 
         <div className="publications-list">
-          {publications.map(pub => (
+          {displayPubs.map(pub => (
             <Link to={`/publication/${pub.id}`} key={pub.id} className="glass publication-item" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="pub-image-container">
                 <img src={pub.image} alt="Publication result" className="pub-image" />
