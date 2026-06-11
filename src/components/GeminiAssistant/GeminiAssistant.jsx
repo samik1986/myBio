@@ -85,11 +85,9 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
     }
   };
 
-  const filterOptions = [
-    "Python", "PyTorch", "C++", "JavaScript", "MATLAB",
-    "Deep Learning", "Computer Vision", "Neuroscience", 
-    "3D Imaging", "Bioinformatics"
-  ];
+  const uniqueYears = [...new Set(publications.map(p => p.year?.toString()).filter(Boolean))].sort((a, b) => b - a);
+  const uniqueCategories = [...new Set(publications.flatMap(p => p.categories || []))].sort();
+  const uniqueSubCategories = [...new Set(publications.flatMap(p => p.subCategories || []))].sort();
 
   const toggleFilter = (filter) => {
     setSelectedFilters(prev => 
@@ -170,22 +168,57 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
 
         {showFilters && (
           <div className="gemini-filters-panel" style={{ padding: '0 16px 12px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-            <p style={{ fontSize: '0.8rem', marginBottom: '8px', opacity: 0.8 }}>Select fields/tools to search:</p>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '10px' }}>
-              {filterOptions.map(opt => (
+            
+            <p style={{ fontSize: '0.8rem', marginBottom: '6px', opacity: 0.8, marginTop: '8px' }}>Filter by Year:</p>
+            <div className="gemini-filter-row" style={{ display: 'flex', overflowX: 'auto', gap: '6px', marginBottom: '10px', paddingBottom: '4px' }}>
+              {uniqueYears.map(opt => (
                 <button 
                   key={opt}
                   type="button"
                   onClick={() => toggleFilter(opt)}
                   style={{ 
-                    fontSize: '0.75rem', 
-                    padding: '4px 8px', 
-                    borderRadius: '12px', 
-                    border: '1px solid var(--accent-color)',
+                    fontSize: '0.75rem', padding: '4px 8px', borderRadius: '12px', border: '1px solid var(--accent-color)',
                     background: selectedFilters.includes(opt) ? 'var(--accent-color)' : 'transparent',
-                    color: selectedFilters.includes(opt) ? '#fff' : 'inherit',
-                    cursor: 'pointer',
-                    transition: 'all 0.2s'
+                    color: selectedFilters.includes(opt) ? '#fff' : 'inherit', cursor: 'pointer', transition: 'all 0.2s',
+                    whiteSpace: 'nowrap', flexShrink: 0
+                  }}
+                >
+                  {opt}
+                </button>
+              ))}
+            </div>
+
+            <p style={{ fontSize: '0.8rem', marginBottom: '6px', opacity: 0.8 }}>Filter by Category:</p>
+            <div className="gemini-filter-row" style={{ display: 'flex', overflowX: 'auto', gap: '6px', marginBottom: '10px', paddingBottom: '4px' }}>
+              {uniqueCategories.map(opt => (
+                <button 
+                  key={opt}
+                  type="button"
+                  onClick={() => toggleFilter(opt)}
+                  style={{ 
+                    fontSize: '0.75rem', padding: '4px 8px', borderRadius: '12px', border: '1px solid var(--accent-color)',
+                    background: selectedFilters.includes(opt) ? 'var(--accent-color)' : 'transparent',
+                    color: selectedFilters.includes(opt) ? '#fff' : 'inherit', cursor: 'pointer', transition: 'all 0.2s',
+                    whiteSpace: 'nowrap', flexShrink: 0
+                  }}
+                >
+                  {opt}
+                </button>
+              ))}
+            </div>
+
+            <p style={{ fontSize: '0.8rem', marginBottom: '6px', opacity: 0.8 }}>Filter by Sub-Category:</p>
+            <div className="gemini-filter-row" style={{ display: 'flex', overflowX: 'auto', gap: '6px', marginBottom: '12px', paddingBottom: '4px' }}>
+              {uniqueSubCategories.map(opt => (
+                <button 
+                  key={opt}
+                  type="button"
+                  onClick={() => toggleFilter(opt)}
+                  style={{ 
+                    fontSize: '0.75rem', padding: '4px 8px', borderRadius: '12px', border: '1px solid var(--accent-color)',
+                    background: selectedFilters.includes(opt) ? 'var(--accent-color)' : 'transparent',
+                    color: selectedFilters.includes(opt) ? '#fff' : 'inherit', cursor: 'pointer', transition: 'all 0.2s',
+                    whiteSpace: 'nowrap', flexShrink: 0
                   }}
                 >
                   {opt}

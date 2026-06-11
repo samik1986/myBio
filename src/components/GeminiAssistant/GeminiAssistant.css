@@ -281,3 +281,11 @@
     border-radius: 0;
   }
 }
+
+.gemini-filter-row::-webkit-scrollbar {
+  display: none;
+}
+.gemini-filter-row {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
