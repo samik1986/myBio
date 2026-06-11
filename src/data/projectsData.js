@@ -2,6 +2,34 @@ import { projectsImageDatabase } from './projectsImageDatabase';
 
 export const projectsData = [
 {
+    id: "bican",
+    title: "BRAIN Initiative Cell Atlas Network (BICAN)",
+    date: "2023 - Present",
+    category: "Neuroscience & 3D Brain Atlases",
+    image: projectsImageDatabase["bican"],
+    description: "Contributing to the mission to construct a complete reference atlas of the mammalian brain. Developing cutting-edge computational frameworks to integrate single-cell and spatial data at unprecedented scale.",
+    technologies: ["Cloud Computing", "Deep Learning", "Python"],
+    tools: ["Cloud Computing", "Deep Learning", "Python"],
+    field: "Neuroanatomy & Multi-omics",
+    funding: "NIH BRAIN Initiative",
+    link: "https://braininitiative.nih.gov/brain-programs/cell-census-network-biccn",
+    github: "https://github.com/samik1986"
+  },
+{
+    id: "biccn",
+    title: "BRAIN Initiative Cell Census Network (BICCN)",
+    date: "2018 - 2023",
+    category: "Neuroscience & Single-Cell",
+    image: projectsImageDatabase["biccn"],
+    description: "Participated in the BICCN to provide a comprehensive reference of cell types in the brain. Contributed to building the data ecosystem and computational tools for mapping the mammalian primary motor cortex.",
+    technologies: ["Single-Cell RNA-seq", "Spatial Transcriptomics", "Python", "R"],
+    tools: ["Single-Cell RNA-seq", "Spatial Transcriptomics", "Python", "R"],
+    field: "Single-Cell Analysis",
+    funding: "NIH BRAIN Initiative",
+    link: "https://biccn.org/",
+    github: "https://github.com/samik1986"
+  },
+{
     id: "brain-connects",
     title: "BRAIN CONNECTS: Multimodal Brain Mapping",
     date: "2023 - Present",

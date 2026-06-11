@@ -10,6 +10,8 @@ import proj_img_8 from '../assets/MakeUpMirror_page7_1.jpeg';
 import proj_img_9 from '../assets/drive_Detecting_aircrafts_from_satellite_images_using_sa.jpeg';
 import generic_img from '../assets/project_brain.png';
 import proj_img_10 from '../assets/RevData_page4_3.jpeg';
+import proj_img_11 from '../assets/drive_A_guide_to_the_BRAIN_Initiative_Cell_Census_Networ.jpeg';
+import proj_img_12 from '../assets/drive_A_threedimensional_histological_cell_atlas_of_the_.png';
 
 export const projectsImageDatabase = {
   "brain-connects": proj_img_0,
@@ -23,4 +25,6 @@ export const projectsImageDatabase = {
   "makeup-mirror": proj_img_8,
   "drdo-satellite": proj_img_9,
   "quantum-computing": proj_img_10,
+  "biccn": proj_img_11,
+  "bican": proj_img_12,
 };
