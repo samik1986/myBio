@@ -28,6 +28,6 @@ export const projectsImageDatabase = {
   "drdo-satellite": proj_img_9,
   "quantum-computing": proj_img_10,
   "biccn": proj_img_11,
-  "bican": bican_thumb,
+  "bican": proj_img_3,
   "3d-developing-brain": proj_img_12,
 };
