@@ -289,3 +289,43 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.gemini-dropdown {
+  width: 100%;
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+.gemini-dropdown option {
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.gemini-selected-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.gemini-tag {
+  background: var(--accent-color);
+  color: var(--bg-dark);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.gemini-tag:hover {
+  opacity: 0.8;
+}

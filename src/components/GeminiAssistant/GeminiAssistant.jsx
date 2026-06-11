@@ -176,70 +176,36 @@ ${githubProjects.map(r => `- ${r.name} (${r.language})`).join('\n')}
             <button className="btn btn-outline" style={{ fontSize: '0.8rem', padding: '6px 12px', whiteSpace: 'nowrap' }} onClick={() => setActiveSearchType(activeSearchType === 'repos' ? null : 'repos')}>
               {activeSearchType === 'repos' ? '✕ Close Repos' : '⚡ Repo Search'}
             </button>
-            <Link to="/github" className="btn btn-outline" style={{ fontSize: '0.8rem', padding: '6px 12px', whiteSpace: 'nowrap' }} onClick={() => setIsOpen(false)}>
-              🔍 View GitHub Repos
-            </Link>
         </div>
 
         {activeSearchType === 'pubs' && (
           <div className="gemini-filters-panel" style={{ padding: '0 16px 12px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
             
             <p style={{ fontSize: '0.8rem', marginBottom: '6px', opacity: 0.8, marginTop: '8px' }}>Filter by Year:</p>
-            <div className="gemini-filter-row" style={{ display: 'flex', overflowX: 'auto', gap: '6px', marginBottom: '10px', paddingBottom: '4px' }}>
-              {uniqueYears.map(opt => (
-                <button 
-                  key={opt}
-                  type="button"
-                  onClick={() => toggleFilter(opt)}
-                  style={{ 
-                    fontSize: '0.75rem', padding: '4px 8px', borderRadius: '12px', border: '1px solid var(--accent-color)',
-                    background: selectedFilters.includes(opt) ? 'var(--accent-color)' : 'transparent',
-                    color: selectedFilters.includes(opt) ? '#fff' : 'inherit', cursor: 'pointer', transition: 'all 0.2s',
-                    whiteSpace: 'nowrap', flexShrink: 0
-                  }}
-                >
-                  {opt}
-                </button>
-              ))}
-            </div>
+            <select className="gemini-dropdown" defaultValue="" onChange={(e) => { if (e.target.value && !selectedFilters.includes(e.target.value)) toggleFilter(e.target.value); e.target.value = ""; }}>
+              <option value="" disabled>Select Year...</option>
+              {uniqueYears.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+            </select>
 
             <p style={{ fontSize: '0.8rem', marginBottom: '6px', opacity: 0.8 }}>Filter by Category:</p>
-            <div className="gemini-filter-row" style={{ display: 'flex', overflowX: 'auto', gap: '6px', marginBottom: '10px', paddingBottom: '4px' }}>
-              {uniqueCategories.map(opt => (
-                <button 
-                  key={opt}
-                  type="button"
-                  onClick={() => toggleFilter(opt)}
-                  style={{ 
-                    fontSize: '0.75rem', padding: '4px 8px', borderRadius: '12px', border: '1px solid var(--accent-color)',
-                    background: selectedFilters.includes(opt) ? 'var(--accent-color)' : 'transparent',
-                    color: selectedFilters.includes(opt) ? '#fff' : 'inherit', cursor: 'pointer', transition: 'all 0.2s',
-                    whiteSpace: 'nowrap', flexShrink: 0
-                  }}
-                >
-                  {opt}
-                </button>
-              ))}
-            </div>
+            <select className="gemini-dropdown" defaultValue="" onChange={(e) => { if (e.target.value && !selectedFilters.includes(e.target.value)) toggleFilter(e.target.value); e.target.value = ""; }}>
+              <option value="" disabled>Select Category...</option>
+              {uniqueCategories.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+            </select>
 
             <p style={{ fontSize: '0.8rem', marginBottom: '6px', opacity: 0.8 }}>Filter by Sub-Category:</p>
-            <div className="gemini-filter-row" style={{ display: 'flex', overflowX: 'auto', gap: '6px', marginBottom: '12px', paddingBottom: '4px' }}>
-              {uniqueSubCategories.map(opt => (
-                <button 
-                  key={opt}
-                  type="button"
-                  onClick={() => toggleFilter(opt)}
-                  style={{ 
-                    fontSize: '0.75rem', padding: '4px 8px', borderRadius: '12px', border: '1px solid var(--accent-color)',
-                    background: selectedFilters.includes(opt) ? 'var(--accent-color)' : 'transparent',
-                    color: selectedFilters.includes(opt) ? '#fff' : 'inherit', cursor: 'pointer', transition: 'all 0.2s',
-                    whiteSpace: 'nowrap', flexShrink: 0
-                  }}
-                >
-                  {opt}
-                </button>
-              ))}
-            </div>
+            <select className="gemini-dropdown" defaultValue="" onChange={(e) => { if (e.target.value && !selectedFilters.includes(e.target.value)) toggleFilter(e.target.value); e.target.value = ""; }}>
+              <option value="" disabled>Select Sub-Category...</option>
+              {uniqueSubCategories.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+            </select>
+
+            {selectedFilters.length > 0 && (
+              <div className="gemini-selected-tags">
+                {selectedFilters.map(f => (
+                  <span key={f} className="gemini-tag" onClick={() => toggleFilter(f)}>{f} ✕</span>
+                ))}
+              </div>
+            )}
             {selectedFilters.length > 0 && (
               <button 
                 className="btn btn-primary" 
@@ -256,43 +222,24 @@ ${githubProjects.map(r => `- ${r.name} (${r.language})`).join('\n')}
           <div className="gemini-filters-panel" style={{ padding: '0 16px 12px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
             
             <p style={{ fontSize: '0.8rem', marginBottom: '6px', opacity: 0.8, marginTop: '8px' }}>Filter by Category:</p>
-            <div className="gemini-filter-row" style={{ display: 'flex', overflowX: 'auto', gap: '6px', marginBottom: '10px', paddingBottom: '4px' }}>
-              {uniqueProjCategories.map(opt => (
-                <button 
-                  key={opt}
-                  type="button"
-                  onClick={() => toggleFilter(opt)}
-                  style={{ 
-                    fontSize: '0.75rem', padding: '4px 8px', borderRadius: '12px', border: '1px solid var(--accent-color)',
-                    background: selectedFilters.includes(opt) ? 'var(--accent-color)' : 'transparent',
-                    color: selectedFilters.includes(opt) ? '#fff' : 'inherit', cursor: 'pointer', transition: 'all 0.2s',
-                    whiteSpace: 'nowrap', flexShrink: 0
-                  }}
-                >
-                  {opt}
-                </button>
-              ))}
-            </div>
+            <select className="gemini-dropdown" defaultValue="" onChange={(e) => { if (e.target.value && !selectedFilters.includes(e.target.value)) toggleFilter(e.target.value); e.target.value = ""; }}>
+              <option value="" disabled>Select Category...</option>
+              {uniqueProjCategories.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+            </select>
 
             <p style={{ fontSize: '0.8rem', marginBottom: '6px', opacity: 0.8 }}>Filter by Technologies:</p>
-            <div className="gemini-filter-row" style={{ display: 'flex', overflowX: 'auto', gap: '6px', marginBottom: '12px', paddingBottom: '4px' }}>
-              {uniqueProjTechs.map(opt => (
-                <button 
-                  key={opt}
-                  type="button"
-                  onClick={() => toggleFilter(opt)}
-                  style={{ 
-                    fontSize: '0.75rem', padding: '4px 8px', borderRadius: '12px', border: '1px solid var(--accent-color)',
-                    background: selectedFilters.includes(opt) ? 'var(--accent-color)' : 'transparent',
-                    color: selectedFilters.includes(opt) ? '#fff' : 'inherit', cursor: 'pointer', transition: 'all 0.2s',
-                    whiteSpace: 'nowrap', flexShrink: 0
-                  }}
-                >
-                  {opt}
-                </button>
-              ))}
-            </div>
+            <select className="gemini-dropdown" defaultValue="" onChange={(e) => { if (e.target.value && !selectedFilters.includes(e.target.value)) toggleFilter(e.target.value); e.target.value = ""; }}>
+              <option value="" disabled>Select Technology...</option>
+              {uniqueProjTechs.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+            </select>
 
+            {selectedFilters.length > 0 && (
+              <div className="gemini-selected-tags">
+                {selectedFilters.map(f => (
+                  <span key={f} className="gemini-tag" onClick={() => toggleFilter(f)}>{f} ✕</span>
+                ))}
+              </div>
+            )}
             {selectedFilters.length > 0 && (
               <button 
                 className="btn btn-primary" 
@@ -309,24 +256,18 @@ ${githubProjects.map(r => `- ${r.name} (${r.language})`).join('\n')}
           <div className="gemini-filters-panel" style={{ padding: '0 16px 12px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
             
             <p style={{ fontSize: '0.8rem', marginBottom: '6px', opacity: 0.8, marginTop: '8px' }}>Filter by Language:</p>
-            <div className="gemini-filter-row" style={{ display: 'flex', overflowX: 'auto', gap: '6px', marginBottom: '10px', paddingBottom: '4px' }}>
-              {uniqueRepoLanguages.map(opt => (
-                <button 
-                  key={opt}
-                  type="button"
-                  onClick={() => toggleFilter(opt)}
-                  style={{ 
-                    fontSize: '0.75rem', padding: '4px 8px', borderRadius: '12px', border: '1px solid var(--accent-color)',
-                    background: selectedFilters.includes(opt) ? 'var(--accent-color)' : 'transparent',
-                    color: selectedFilters.includes(opt) ? '#fff' : 'inherit', cursor: 'pointer', transition: 'all 0.2s',
-                    whiteSpace: 'nowrap', flexShrink: 0
-                  }}
-                >
-                  {opt}
-                </button>
-              ))}
-            </div>
+            <select className="gemini-dropdown" defaultValue="" onChange={(e) => { if (e.target.value && !selectedFilters.includes(e.target.value)) toggleFilter(e.target.value); e.target.value = ""; }}>
+              <option value="" disabled>Select Language...</option>
+              {uniqueRepoLanguages.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+            </select>
 
+            {selectedFilters.length > 0 && (
+              <div className="gemini-selected-tags">
+                {selectedFilters.map(f => (
+                  <span key={f} className="gemini-tag" onClick={() => toggleFilter(f)}>{f} ✕</span>
+                ))}
+              </div>
+            )}
             {selectedFilters.length > 0 && (
               <button 
                 className="btn btn-primary" 
