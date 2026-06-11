@@ -17,6 +17,7 @@ export const rawTimelineData = [
   { name: 'Marmoset Enhancers', category: 'Projects', time: [2022, 2026], description: "Cell type-specific enhancers and connectivity mapping (CSHL)." },
 
   // Fields
+  { name: 'Quantum Computing', category: 'Fields', time: [2008, 2016], description: "Hardware security, secure scan design, and reversible logic." },
   { name: 'Computer Vision', category: 'Fields', time: [2012, 2026], description: "Image processing, object detection, semantic segmentation." },
   { name: 'Machine Learning', category: 'Fields', time: [2014, 2026], description: "Deep learning architectures and statistical learning." },
   { name: 'Neuroscience', category: 'Fields', time: [2018, 2026], description: "Brain connectivity, micro-scale brain mapping." },

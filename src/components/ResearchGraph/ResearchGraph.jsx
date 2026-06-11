@@ -3,6 +3,7 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import './ResearchGraph.css';
 
 const researchData = [
+  { year: '2010', impact: 5, projects: 2, field: 'Quantum Computing' },
   { year: '2012', impact: 10, projects: 1, field: 'Early CV' },
   { year: '2014', impact: 25, projects: 2, field: 'Deep Learning' },
   { year: '2016', impact: 40, projects: 4, field: 'Face Recognition' },
