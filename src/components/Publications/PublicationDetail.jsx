@@ -41,7 +41,7 @@ const PublicationDetail = () => {
             <h2>Result Highlights & Architecture</h2>
             <div className="gallery-grid">
               <div className="gallery-item glass" style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}>
-                <img src={publication.image} alt="Publication result or architecture" style={{ width: '100%', borderRadius: '8px' }} />
+                <img src={publication.image} alt="Publication result or architecture" style={{ width: '100%', borderRadius: '8px' }} loading="lazy" />
               </div>
             </div>
           </div>

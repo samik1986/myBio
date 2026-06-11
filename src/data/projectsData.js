@@ -1,21 +1,43 @@
-import img_0 from '../assets/drive_A_guide_to_the_BRAIN_Initiative_Cell_Census_Networ.jpeg';
-import img_1 from '../assets/drive_A_multimodal_cell_census_and_atlas_of_the_mammalia.jpeg';
-import img_2 from '../assets/drive_Semantic_segmentation_of_microscopic_neuroanatomic.png';
-import img_3 from '../assets/drive_A_threedimensional_histological_cell_atlas_of_the_.png';
-import img_4 from '../assets/drive_Cellular_anatomy_of_the_mouse_primary_motor_cortex.png';
-import img_5 from '../assets/drive_PosIXGAN_Generating_multiple_poses_using_GAN_for_p.png';
-import img_6 from '../assets/drive_LRGAN_for_Degraded_Face_Recognition.png';
+import generic_img from '../assets/project_brain.png';
+import img_1 from '../assets/drive_3D_multimodal_histological_atlas_and_coordinate_fr.jpeg';
+import img_2 from '../assets/drive_A_guide_to_the_BRAIN_Initiative_Cell_Census_Networ.jpeg';
+import img_3 from '../assets/drive_A_multimodal_cell_census_and_atlas_of_the_mammalia.jpeg';
+import img_4 from '../assets/drive_A_threedimensional_histological_cell_atlas_of_the_.png';
+import img_5 from '../assets/drive_Cellular_anatomy_of_the_mouse_primary_motor_cortex.png';
+import img_6 from '../assets/drive_Deep_Domain_Adaptation_for_Face_Recognition_using_.jpeg';
 import img_7 from '../assets/drive_Detecting_aircrafts_from_satellite_images_using_sa.jpeg';
-import img_8 from '../assets/drive_Unsupervised_method_of_domain_adaptation_on_repres.png';
-import img_9 from '../assets/drive_MakeUpMirror_Mirroring_makeups_and_verifying_faces.jpeg';
+import img_8 from '../assets/drive_Detection_and_skeletonization_of_single_neurons_an.jpeg';
+import img_9 from '../assets/drive_Domain_Adaptation_with_Softmargin_multiple_feature.png';
+import img_10 from '../assets/drive_DPGAN_Dual_Pathway_Generative_Adversarial_Network_.png';
+import img_11 from '../assets/drive_Eigen_Domain_Transformation_for_Softmargin_Multipl.png';
+import img_12 from '../assets/drive_Face_recognition_in_surveillance_conditions_with_b.png';
+import img_13 from '../assets/drive_gtcx1.png';
+import img_14 from '../assets/drive_High_precision_automated_detection_of_labeled_nucl.jpeg';
+import img_15 from '../assets/drive_Kernel_selection_using_multiple_kernel_learning_an.png';
+import img_16 from '../assets/drive_LRGAN_for_Degraded_Face_Recognition.png';
+import img_17 from '../assets/drive_MakeUpMirror_Mirroring_makeups_and_verifying_faces.jpeg';
+import img_18 from '../assets/drive_Mutual_variation_of_information_on_TransferCNN_for.jpeg';
+import img_19 from '../assets/drive_Performance_of_Deep_Learning_Algorithms_vs_Shallow.jpeg';
+import img_20 from '../assets/drive_PosIXGAN_Generating_multiple_poses_using_GAN_for_p.png';
+import img_21 from '../assets/drive_Reversible_Data_Encryption_Algorithm.jpeg';
+import img_22 from '../assets/drive_Reversible_masking_a_novel_faultdiagnosed.jpeg';
+import img_23 from '../assets/drive_Secure_scan_design_with_Isomorphic_registers.jpeg';
+import img_24 from '../assets/drive_Semantic_segmentation_of_microscopic_neuroanatomic.png';
+import img_25 from '../assets/drive_Skeletonization_of_neuronal_processes_using_Discre.png';
+import img_26 from '../assets/drive_SoftMargin_Learning_for_Multiple_FeatureKernel_Com.jpeg';
+import img_27 from '../assets/drive_Solving_the_where_problem_and_quantifying_geometri.png';
+import img_28 from '../assets/drive_SpoofNET_Resolving_Facial_Makeup_based_Spoofs.png';
+import img_29 from '../assets/drive_Unsupervised_method_of_domain_adaptation_on_repres.png';
+import img_30 from '../assets/pub_diffeomorphic.png';
+import img_31 from '../assets/pub_skeletonization.png';
 
 export const projectsData = [
-  {
+{
     id: "brain-connects",
     title: "BRAIN CONNECTS: Multimodal Brain Mapping",
     date: "2023 - Present",
     category: "Neuroscience",
-    image: img_0,
+    image: img_30,
     description: "Developing automated, scalable computational pipelines for the BRAIN CONNECTS initiative to detect mammalian neuronal connectivity across PB-scale whole-brain imaging datasets.",
     technologies: ["Python", "PyTorch", "AWS", "Fiji", "MATLAB"],
     tools: ["PyTorch", "AWS", "Fiji", "MATLAB"],
@@ -24,12 +46,12 @@ export const projectsData = [
     link: "https://brainconnects.org",
     github: "https://github.com/samik1986"
   },
-  {
+{
     id: "human-brain-atlas",
     title: "3D Histological Cell Atlas",
     date: "2020 - 2023",
     category: "Neuroanatomy",
-    image: img_3,
+    image: img_1,
     description: "Led the computational development of the first cell census atlas of the mammalian primary motor cortex. Utilized deep learning for precise cell counting and registration, bridging single-cell data with neuro-radiology.",
     technologies: ["C++", "Python", "ITK", "SimpleITK"],
     tools: ["ITK", "SimpleITK", "Python", "C++"],
@@ -38,34 +60,34 @@ export const projectsData = [
     link: "https://cshl.edu",
     github: "https://github.com/samik1986/brain_atlas"
   },
-  {
+{
     id: "semseg-framework",
     title: "SemSeg: Semantic Segmentation Framework",
     date: "2018 - 2020",
     category: "Deep Learning",
-    image: img_2,
+    image: img_24,
     description: "Formulated 'SemSeg,' a deep learning semantic segmentation framework achieving state-of-the-art accuracy in identifying neuroanatomical structures in high-resolution microscopic data.",
     technologies: ["PyTorch", "TensorFlow", "Keras"],
     link: "#",
     github: "https://github.com/samik1986"
   },
-  {
+{
     id: "interactive-visualization",
     title: "Interactive Web Visualization Platform",
     date: "2020 - Present",
     category: "Full Stack",
-    image: img_4,
+    image: img_31,
     description: "Developed an interactive web-based visualization platform used by international collaborators to visualize mammalian data (mouse, marmoset, human) at sub-micron resolution on AWS.",
     technologies: ["Angular", "Node.js", "TypeScript", "AWS EC2"],
     link: "#",
     github: "https://github.com/samik1986"
   },
-  {
+{
     id: "marmoset-enhancers",
     title: "Multi-omics Marmoset Enhancers",
     date: "2022 - Present",
     category: "Genomics & Vision",
-    image: img_1,
+    image: img_3,
     description: "Spearheaded integration of transcriptomic (RNA-seq) and genetic barcode data to map cell-type specific connections. Built automated deep learning pipelines to segment enhancer expressions.",
     technologies: ["PyTorch", "OpenCV", "CUDA", "Neuroglancer"],
     tools: ["PyTorch", "OpenCV", "CUDA", "Neuroglancer"],
@@ -74,51 +96,51 @@ export const projectsData = [
     link: "#",
     github: "https://github.com/samik1986"
   },
-  {
+{
     id: "lr-sd-gan",
     title: "LR-GAN & SD-GAN for Image Restoration",
     date: "2016 - 2019",
     category: "Generative AI",
-    image: img_6,
+    image: img_16,
     description: "Designed LR-GAN to hallucinate high-resolution faces and SD-GAN to recover facial parts from occluded images using structural constraint losses on surveillance-grade inputs.",
     technologies: ["Python", "TensorFlow", "Generative Adversarial Networks"],
     link: "#",
     github: "https://github.com/samik1986"
   },
-  {
+{
     id: "posix-gan",
     title: "PosIX-GAN: Pose-Invariant Generation",
     date: "2016 - 2018",
     category: "Generative AI",
-    image: img_5,
+    image: img_20,
     description: "Developed PosIX-GAN to generate multi-view face images from single monocular inputs, robustly handling extreme pose variations for identity verification.",
     technologies: ["PyTorch", "GANs", "Computer Vision"],
     link: "#",
     github: "https://github.com/samik1986"
   },
-  {
+{
     id: "transfer-cnn",
     title: "Transfer-CNN: Domain Adaptation",
     date: "2017 - 2019",
     category: "Deep Learning",
-    image: img_8,
+    image: img_18,
     description: "Pioneered an unsupervised Domain Adaptation technique using Mutual Variation of Information to align surveillance face data with gallery images, boosting recognition rates by 15%.",
     technologies: ["CNNs", "Scikit-Learn", "Python", "MATLAB"],
     link: "#",
     github: "https://github.com/samik1986"
   },
-  {
+{
     id: "makeup-mirror",
     title: "MakeUpMirror: Siamese CNN Architecture",
     date: "2015 - 2017",
     category: "Computer Vision",
-    image: img_9,
+    image: img_17,
     description: "Engineered MakeUpMirror, a specialized Siamese CNN architecture designed to verify faces across heavy cosmetic changes by learning makeup-invariant features.",
     technologies: ["C++", "OpenCV", "Deep Learning"],
     link: "#",
     github: "https://github.com/samik1986"
   },
-  {
+{
     id: "drdo-satellite",
     title: "DRDO Target Localization",
     date: "2012 - 2015",
@@ -129,8 +151,8 @@ export const projectsData = [
     link: "#",
     github: "https://github.com/samik1986"
   }
-];
 
+];
 
 export const githubProjects = [
   {

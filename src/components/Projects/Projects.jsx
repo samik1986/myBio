@@ -24,7 +24,7 @@ const Projects = ({ limit }) => {
           {displayFeatured.map(project => (
             <Link to={`/project/${project.id}`} key={project.id} className="glass project-card featured-card" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="project-image-container">
-                <img src={project.image} alt={project.name} className="project-image" />
+                <img src={project.image} alt={project.name} className="project-image" loading="lazy" />
               </div>
               <div className="project-content">
                 <h3 className="project-title">{project.title || project.name}</h3>

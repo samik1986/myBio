@@ -14,7 +14,7 @@ const About = () => {
         <div className="about-content glass">
           <div className="about-header">
             <div className="about-avatar-placeholder" style={{ overflow: 'hidden', padding: 0, background: 'transparent' }}>
-              <img src="https://github.com/samik1986.png" alt="Samik Banerjee" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src="https://github.com/samik1986.png" alt="Samik Banerjee" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
             </div>
             <div className="about-header-text">
               <h1>Samik Banerjee</h1>

@@ -14,7 +14,7 @@ const Footer = () => {
             <a href="https://scholar.google.com/citations?user=XbMnDucAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
           </div>
           <div className="footer-visitor-count" style={{ marginTop: '1rem', display: 'flex', justifyContent: 'center' }}>
-            <img src="https://visitor-badge.laobi.icu/badge?page_id=samik1986.mybio" alt="Visitor Count" />
+            <img src="https://visitor-badge.laobi.icu/badge?page_id=samik1986.mybio" alt="Visitor Count" loading="lazy" />
           </div>
         </div>
       </div>

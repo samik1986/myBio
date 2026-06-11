@@ -18,7 +18,7 @@ const Publications = ({ limit }) => {
   const renderPublication = (pub) => (
     <Link to={`/publication/${pub.id}`} key={pub.id} className="glass publication-item" style={{ textDecoration: 'none', color: 'inherit' }}>
       <div className="pub-image-container">
-        {pub.image ? <img src={pub.image} alt="Publication result" className="pub-image" /> : <div className="pub-image-placeholder"><BookOpen size={48} opacity={0.2} /></div>}
+        {pub.image ? <img src={pub.image} alt="Publication result" className="pub-image" loading="lazy" /> : <div className="pub-image-placeholder"><BookOpen size={48} opacity={0.2} /></div>}
       </div>
       <div className="pub-content">
         <h3 className="pub-title">{pub.title}</h3>

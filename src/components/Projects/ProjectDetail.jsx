@@ -54,7 +54,7 @@ const ProjectDetail = () => {
 
         {isFeatured && project.image && (
           <div className="proj-detail-image-container glass">
-            <img src={project.image} alt={project.title || project.name} className="proj-detail-img" />
+            <img src={project.image} alt={project.title || project.name} className="proj-detail-img" loading="lazy" />
           </div>
         )}
 
