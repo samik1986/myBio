@@ -39,24 +39,36 @@ const About = () => {
               My research lies at the intersection of deep learning, computer vision, and neuroscience. I specialize in designing scalable pipelines to detect neuronal connectivity across multiple species, aligning single-cell data with neuropathology. By employing modern Deep Learning frameworks (PyTorch, TensorFlow) alongside traditional image processing algorithms, I unravel the complex connectivity mapping within the brain.
             </p>
 
-            <h3>Awards & Recognitions</h3>
+            <h3>Awards & Achievements</h3>
             <ul className="about-awards" style={{ listStyle: 'none', padding: 0, margin: '1rem 0 2rem' }}>
               <li style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '10px' }}>
                 <span style={{ color: 'var(--accent-color)', marginRight: '10px', marginTop: '2px' }}>★</span>
                 <div>
-                  <strong>Excellence in Research Award</strong> - <span style={{ opacity: 0.8 }}>For outstanding contributions to 3D Multimodal Brain Mapping (Placeholder)</span>
+                  <strong>FlyTxt Fellowship Award</strong> - <span style={{ opacity: 0.8 }}>PReMI Conference (2017)</span>
                 </div>
               </li>
               <li style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '10px' }}>
                 <span style={{ color: 'var(--accent-color)', marginRight: '10px', marginTop: '2px' }}>★</span>
                 <div>
-                  <strong>Best Paper Award</strong> - <span style={{ opacity: 0.8 }}>Deep Domain Adaptation for Face Recognition (Placeholder)</span>
+                  <strong>Pan-India Winner</strong> - <span style={{ opacity: 0.8 }}>Samsung Challenge on SMS Classification (2017)</span>
                 </div>
               </li>
               <li style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '10px' }}>
                 <span style={{ color: 'var(--accent-color)', marginRight: '10px', marginTop: '2px' }}>★</span>
                 <div>
-                  <strong>NIH Grant / Fellowship</strong> - <span style={{ opacity: 0.8 }}>BRAIN Initiative Cell Census Network (Placeholder)</span>
+                  <strong>Regional Winner</strong> - <span style={{ opacity: 0.8 }}>Microsoft Code.Fun.Do Hackathon (2014 & 2016)</span>
+                </div>
+              </li>
+              <li style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '10px' }}>
+                <span style={{ color: 'var(--accent-color)', marginRight: '10px', marginTop: '2px' }}>★</span>
+                <div>
+                  <strong>Star-TA Award</strong> - <span style={{ opacity: 0.8 }}>IIT Madras (2017)</span>
+                </div>
+              </li>
+              <li style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '10px' }}>
+                <span style={{ color: 'var(--accent-color)', marginRight: '10px', marginTop: '2px' }}>★</span>
+                <div>
+                  <strong>Top 10% Oral Presentation</strong> - <span style={{ opacity: 0.8 }}>ICVGIP (2014)</span>
                 </div>
               </li>
             </ul>

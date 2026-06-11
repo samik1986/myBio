@@ -1,42 +1,12 @@
 import img_0 from '../assets/drive_gtcx1.png';
-import img_new_0 from '../assets/drive_3D_multimodal_histological_atlas_and_coordinate_fr.jpeg';
-import img_new_1 from '../assets/drive_A_guide_to_the_BRAIN_Initiative_Cell_Census_Networ.jpeg';
-import img_new_2 from '../assets/drive_A_multimodal_cell_census_and_atlas_of_the_mammalia.jpeg';
-import img_new_3 from '../assets/drive_A_threedimensional_histological_cell_atlas_of_the_.png';
-import img_new_4 from '../assets/drive_Cellular_anatomy_of_the_mouse_primary_motor_cortex.png';
-import img_new_5 from '../assets/drive_Deep_Domain_Adaptation_for_Face_Recognition_using_.jpeg';
-import img_new_6 from '../assets/drive_Detecting_aircrafts_from_satellite_images_using_sa.jpeg';
-import img_new_7 from '../assets/drive_Detection_and_skeletonization_of_single_neurons_an.jpeg';
-import img_new_8 from '../assets/drive_Domain_Adaptation_with_Softmargin_multiple_feature.png';
-import img_new_9 from '../assets/drive_DPGAN_Dual_Pathway_Generative_Adversarial_Network_.png';
-import img_new_10 from '../assets/drive_Eigen_Domain_Transformation_for_Softmargin_Multipl.png';
-import img_new_11 from '../assets/drive_Face_recognition_in_surveillance_conditions_with_b.png';
-import img_new_12 from '../assets/drive_gtcx1.png';
-import img_new_13 from '../assets/drive_High_precision_automated_detection_of_labeled_nucl.jpeg';
-import img_new_14 from '../assets/drive_Kernel_selection_using_multiple_kernel_learning_an.png';
-import img_new_15 from '../assets/drive_LRGAN_for_Degraded_Face_Recognition.png';
-import img_new_16 from '../assets/drive_MakeUpMirror_Mirroring_makeups_and_verifying_faces.jpeg';
-import img_new_17 from '../assets/drive_Mutual_variation_of_information_on_TransferCNN_for.jpeg';
-import img_new_18 from '../assets/drive_Performance_of_Deep_Learning_Algorithms_vs_Shallow.jpeg';
-import img_new_19 from '../assets/drive_PosIXGAN_Generating_multiple_poses_using_GAN_for_p.png';
-import img_new_20 from '../assets/drive_Reversible_Data_Encryption_Algorithm.jpeg';
-import img_new_21 from '../assets/drive_Reversible_masking_a_novel_faultdiagnosed.jpeg';
-import img_new_22 from '../assets/drive_Secure_scan_design_with_Isomorphic_registers.jpeg';
-import img_new_23 from '../assets/drive_Semantic_segmentation_of_microscopic_neuroanatomic.png';
-import img_new_24 from '../assets/drive_Skeletonization_of_neuronal_processes_using_Discre.png';
-import img_new_25 from '../assets/drive_SoftMargin_Learning_for_Multiple_FeatureKernel_Com.jpeg';
-import img_new_26 from '../assets/drive_Solving_the_where_problem_and_quantifying_geometri.png';
-import img_new_27 from '../assets/drive_Solving_the_where_problem_and_quantifying_geometri.png';
-import img_new_28 from '../assets/drive_SpoofNET_Resolving_Facial_Makeup_based_Spoofs.png';
-import img_new_29 from '../assets/drive_Unsupervised_method_of_domain_adaptation_on_repres.png';
 
 export const publications = [
   {
     id: "pub-1",
     title: "3D multimodal histological atlas and coordinate framework for the mouse brain and head",
     authors: "Samik Banerjee et al.",
-    journal: "bioRxiv",
-    year: 2023,
+    journal: "bioRxiv (Under Review in Nature Neuroscience)",
+    year: 2025,
     isPreprint: true,
     link: "#",
     image: img_new_0,
@@ -46,8 +16,8 @@ export const publications = [
     id: "pub-2",
     title: "A guide to the BRAIN Initiative Cell Census Network data ecosystem",
     authors: "Samik Banerjee et al.",
-    journal: "Nature",
-    year: 2021,
+    journal: "PLoS Biology",
+    year: 2023,
     isPreprint: false,
     link: "#",
     image: img_new_1,
@@ -68,8 +38,8 @@ export const publications = [
     id: "pub-4",
     title: "A three-dimensional histological cell atlas of the developing human brain",
     authors: "Samik Banerjee et al.",
-    journal: "bioRxiv",
-    year: 2023,
+    journal: "bioRxiv (Under Review in Nature)",
+    year: 2024,
     isPreprint: true,
     link: "#",
     image: img_new_3,
@@ -200,8 +170,8 @@ export const publications = [
     id: "pub-16",
     title: "LRGAN for Degraded Face Recognition",
     authors: "Samik Banerjee et al.",
-    journal: "IEEE / Computer Vision Conference",
-    year: 2019,
+    journal: "Pattern Recognition Letters",
+    year: 2018,
     isPreprint: false,
     link: "#",
     image: img_new_15,
@@ -211,8 +181,8 @@ export const publications = [
     id: "pub-17",
     title: "MakeUpMirror- Mirroring make-ups and verifying faces post make-up",
     authors: "Samik Banerjee et al.",
-    journal: "Journal / Conference",
-    year: 2020,
+    journal: "IET Biometrics",
+    year: 2018,
     isPreprint: false,
     link: "#",
     image: img_new_16,
@@ -222,8 +192,8 @@ export const publications = [
     id: "pub-18",
     title: "Mutual variation of information on Transfer-CNN for Face Recognition with degraded probe samples",
     authors: "Samik Banerjee et al.",
-    journal: "IEEE / Computer Vision Conference",
-    year: 2019,
+    journal: "Neurocomputing",
+    year: 2018,
     isPreprint: false,
     link: "#",
     image: img_new_17,
@@ -244,8 +214,8 @@ export const publications = [
     id: "pub-20",
     title: "PosIX-GAN- Generating multiple poses using GAN for pose-invariant face recognition",
     authors: "Samik Banerjee et al.",
-    journal: "IEEE / Computer Vision Conference",
-    year: 2019,
+    journal: "ECCV Workshop",
+    year: 2018,
     isPreprint: false,
     link: "#",
     image: img_new_19,
@@ -288,8 +258,8 @@ export const publications = [
     id: "pub-24",
     title: "Semantic segmentation of microscopic neuroanatomical data by combining topological priors with encoder–decoder deep networks",
     authors: "Samik Banerjee et al.",
-    journal: "Medical Image Analysis / Bioinformatics",
-    year: 2022,
+    journal: "Nature Machine Intelligence",
+    year: 2020,
     isPreprint: false,
     link: "#",
     image: img_new_23,
@@ -299,9 +269,9 @@ export const publications = [
     id: "pub-25",
     title: "Skeletonization of neuronal processes using Discrete Morse techniques from computational topology",
     authors: "Samik Banerjee et al.",
-    journal: "Medical Image Analysis / Bioinformatics",
-    year: 2022,
-    isPreprint: false,
+    journal: "arXiv preprint (Under Review in Nature Communications)",
+    year: 2025,
+    isPreprint: true,
     link: "#",
     image: img_new_24,
     abstract: "Read the full paper for more details."
@@ -310,8 +280,8 @@ export const publications = [
     id: "pub-26",
     title: "Soft-Margin Learning for Multiple Feature-Kernel Combinations With Domain Adaptation, for Recognition in Surveillance Face Dataset ",
     authors: "Samik Banerjee et al.",
-    journal: "IEEE / Computer Vision Conference",
-    year: 2019,
+    journal: "CVPR Workshop on Biometrics",
+    year: 2016,
     isPreprint: false,
     link: "#",
     image: img_new_25,
@@ -321,8 +291,8 @@ export const publications = [
     id: "pub-27",
     title: "Solving the where problem and quantifying geometric variation in neuroanatomy using generative diffeomorphic mapping - Supplementary",
     authors: "Samik Banerjee et al.",
-    journal: "Journal / Conference",
-    year: 2020,
+    journal: "Nature Communications",
+    year: 2025,
     isPreprint: false,
     link: "#",
     image: img_new_26,
@@ -332,8 +302,8 @@ export const publications = [
     id: "pub-28",
     title: "Solving the where problem and quantifying geometric variation in neuroanatomy using generative diffeomorphic mapping",
     authors: "Samik Banerjee et al.",
-    journal: "Journal / Conference",
-    year: 2020,
+    journal: "Nature Communications",
+    year: 2025,
     isPreprint: false,
     link: "#",
     image: img_new_27,
@@ -354,9 +324,9 @@ export const publications = [
     id: "pub-30",
     title: "Survey of loss functions for training deep-learning models in computer vision, categorized based on tasks, metric-forms and learning paradigms",
     authors: "Samik Banerjee et al.",
-    journal: "Journal / Conference",
-    year: 2020,
-    isPreprint: false,
+    journal: "SSRN (Under Review in CVIU)",
+    year: 2025,
+    isPreprint: true,
     link: "#",
     image: "",
     abstract: "Read the full paper for more details."
