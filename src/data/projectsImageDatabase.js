@@ -9,6 +9,7 @@ import proj_img_7 from '../assets/drive_Mutual_variation_of_information_on_Trans
 import proj_img_8 from '../assets/MakeUpMirror_page7_1.jpeg';
 import proj_img_9 from '../assets/drive_Detecting_aircrafts_from_satellite_images_using_sa.jpeg';
 import generic_img from '../assets/project_brain.png';
+import proj_img_10 from '../assets/RevData_page4_3.jpeg';
 
 export const projectsImageDatabase = {
   "brain-connects": proj_img_0,
@@ -21,4 +22,5 @@ export const projectsImageDatabase = {
   "transfer-cnn": proj_img_7,
   "makeup-mirror": proj_img_8,
   "drdo-satellite": proj_img_9,
+  "quantum-computing": proj_img_10,
 };

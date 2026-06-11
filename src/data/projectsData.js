@@ -119,6 +119,17 @@ export const projectsData = [
     technologies: ["MATLAB", "Image Processing", "Object Tracking"],
     link: "#",
     github: "https://github.com/samik1986"
+  },
+{
+    id: "quantum-computing",
+    title: "Quantum Computing & Reversible Logic",
+    date: "2011 - 2012",
+    category: "Hardware Security",
+    image: projectsImageDatabase["quantum-computing"],
+    description: "Developed and simulated reversible logic circuits and secure scan designs to enhance hardware security and reduce power dissipation, with applications in quantum computing.",
+    technologies: ["Hardware Description Languages", "Simulation Tools", "Quantum Computing"],
+    link: "#",
+    github: "https://github.com/samik1986"
   }
 
 ];
