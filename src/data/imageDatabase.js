@@ -17,7 +17,7 @@ import img_15 from '../assets/drive_LRGAN_for_Degraded_Face_Recognition.png';
 import img_16 from '../assets/makeup_mirror_faces.jpeg';
 import img_17 from '../assets/drive_Mutual_variation_of_information_on_TransferCNN_for.jpeg';
 import img_18 from '../assets/drive_Performance_of_Deep_Learning_Algorithms_vs_Shallow.jpeg';
-import img_19 from '../assets/posix_gan_faces.png';
+import img_19 from '../assets/posix_gan_faces.jpeg';
 import img_20 from '../assets/reversible_encryption_circuit.jpeg';
 import img_21 from '../assets/reversible_masking_circuit.jpeg';
 import img_22 from '../assets/secure_scan_circuit.jpeg';

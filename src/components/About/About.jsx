@@ -2,6 +2,7 @@ import React from 'react';
 import { User, Mail, MapPin, Briefcase } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaGoogle, FaResearchgate } from 'react-icons/fa';
 import './About.css';
+import profileImage from '../../assets/Neuro_page16_1.jpeg';
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
         <div className="about-content glass">
           <div className="about-header">
             <div className="about-avatar-placeholder" style={{ overflow: 'hidden', padding: 0, background: 'transparent' }}>
-              <img src="https://github.com/samik1986.png" alt="Samik Banerjee" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+              <img src={profileImage} alt="Samik Banerjee" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
             </div>
             <div className="about-header-text">
               <h1>Samik Banerjee</h1>
