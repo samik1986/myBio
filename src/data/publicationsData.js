@@ -160,10 +160,10 @@ export const publications = [
   },
 {
     id: "pub-13",
-    title: "gtcx1",
+    title: "Poster",
     authors: "Samik Banerjee et al.",
     journal: "NVIDIA GTC India Poster",
-    year: 2020,
+    year: 2016,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=gtcx1",
     image: imageDatabase["pub-13"],
