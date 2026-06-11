@@ -30,6 +30,16 @@ const PublicationDetail = () => {
             <span className="meta-item"><BookOpen size={16} /> {publication.journal}</span>
             <span className="meta-item"><Calendar size={16} /> {publication.year}</span>
           </div>
+          {(publication.categories?.length > 0 || publication.subCategories?.length > 0) && (
+            <div className="pub-categories" style={{ marginTop: '1rem', display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'center' }}>
+              {publication.categories && publication.categories.map((cat, idx) => (
+                <span key={`cat-${idx}`} className="category-badge">{cat}</span>
+              ))}
+              {publication.subCategories && publication.subCategories.map((subcat, idx) => (
+                <span key={`subcat-${idx}`} className="subcategory-badge">{subcat}</span>
+              ))}
+            </div>
+          )}
           
           <a href={publication.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary detail-btn">
             View on Google Scholar <ExternalLink size={18} />

@@ -30,6 +30,16 @@ const Publications = ({ limit }) => {
             <span className="pub-citations">{pub.citations} Citations</span>
           )}
         </div>
+        {(pub.categories?.length > 0 || pub.subCategories?.length > 0) && (
+          <div className="pub-categories" style={{ marginTop: '10px', display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+            {pub.categories && pub.categories.map((cat, idx) => (
+              <span key={`cat-${idx}`} className="category-badge">{cat}</span>
+            ))}
+            {pub.subCategories && pub.subCategories.map((subcat, idx) => (
+              <span key={`subcat-${idx}`} className="subcategory-badge">{subcat}</span>
+            ))}
+          </div>
+        )}
         <p className="pub-overview">{pub.abstract || pub.overview}</p>
       </div>
       <a href={pub.link} target="_blank" rel="noopener noreferrer" className="pub-link" onClick={(e) => e.stopPropagation()}>

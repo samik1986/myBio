@@ -11,6 +11,8 @@ export const publications = [
     isPreprint: true,
     link: "https://scholar.google.com/scholar?q=3D%20multimodal%20histological%20atlas%20and%20coordinate%20framework%20for%20the%20mouse%20brain%20and%20head",
     image: imageDatabase["pub-1"],
+    categories: ["Neuroscience"],
+    subCategories: ["3D Brain Atlases"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -22,6 +24,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=A%20guide%20to%20the%20BRAIN%20Initiative%20Cell%20Census%20Network%20data%20ecosystem",
     image: imageDatabase["pub-2"],
+    categories: ["Neuroscience"],
+    subCategories: ["Single-Cell & Topology"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -33,6 +37,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=A%20multimodal%20cell%20census%20and%20atlas%20of%20the%20mammalian%20primary%20motor%20cortex",
     image: imageDatabase["pub-3"],
+    categories: ["Neuroscience"],
+    subCategories: ["3D Brain Atlases"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -44,6 +50,8 @@ export const publications = [
     isPreprint: true,
     link: "https://scholar.google.com/scholar?q=A%20three-dimensional%20histological%20cell%20atlas%20of%20the%20developing%20human%20brain",
     image: imageDatabase["pub-4"],
+    categories: ["Neuroscience"],
+    subCategories: ["3D Brain Atlases"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -55,6 +63,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Cellular%20anatomy%20of%20the%20mouse%20primary%20motor%20cortex",
     image: imageDatabase["pub-5"],
+    categories: ["Neuroscience"],
+    subCategories: ["3D Brain Atlases"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -66,6 +76,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Deep%20Domain%20Adaptation%20for%20Face%20Recognition%20using%20images%20captured%20from%20surveillance%20cameras",
     image: imageDatabase["pub-6"],
+    categories: ["Computer Vision"],
+    subCategories: ["Face Recognition", "Domain Adaptation"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -77,17 +89,21 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Detecting%20aircrafts%20from%20satellite%20images%20using%20saliency%20and%20conical%20pyramid%20based%20template%20representation",
     image: imageDatabase["pub-7"],
+    categories: ["Remote Sensing", "Computer Vision"],
+    subCategories: ["Object Tracking", "Image Processing"],
     abstract: "Read the full paper for more details."
   },
 {
     id: "pub-8",
     title: "Detection and skeletonization of single neurons and tracer injections using topological methods",
     authors: "Samik Banerjee et al.",
-    journal: "Medical Image Analysis / Bioinformatics",
+    journal: "arXiv preprint",
     year: 2020,
-    isPreprint: false,
+    isPreprint: true,
     link: "https://scholar.google.com/scholar?q=Detection%20and%20skeletonization%20of%20single%20neurons%20and%20tracer%20injections%20using%20topological%20methods",
     image: imageDatabase["pub-8"],
+    categories: ["Neuroscience"],
+    subCategories: ["Single-Cell & Topology"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -99,6 +115,8 @@ export const publications = [
     isPreprint: true,
     link: "https://scholar.google.com/scholar?q=Domain%20Adaptation%20with%20Soft-margin%20multiple%20feature-kernel%20learning%20beats%20Deep%20Learning%20for%20surveillance%20face%20recognition",
     image: imageDatabase["pub-9"],
+    categories: ["Computer Vision"],
+    subCategories: ["Face Recognition", "Domain Adaptation"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -110,6 +128,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=DP-GAN-%20Dual%20Pathway%20Generative%20Adversarial%20Network%20for%20Face%20Recognition%20in%20Degraded%20Scenarios",
     image: imageDatabase["pub-10"],
+    categories: ["Computer Vision"],
+    subCategories: ["Generative AI & Restoration"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -121,6 +141,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Eigen%20Domain%20Transformation%20for%20Soft-margin%20Multiple%20Feature-Kernel%20Learning%20for%20Surveillance%20Face%20Recognition",
     image: imageDatabase["pub-11"],
+    categories: ["Computer Vision"],
+    subCategories: ["Face Recognition", "Domain Adaptation"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -132,17 +154,21 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Face%20recognition%20in%20surveillance%20conditions%20with%20bag-of-words%2C%20using%20unsupervised%20domain%20adaptation",
     image: imageDatabase["pub-12"],
+    categories: ["Computer Vision"],
+    subCategories: ["Face Recognition", "Domain Adaptation"],
     abstract: "Read the full paper for more details."
   },
 {
     id: "pub-13",
     title: "gtcx1",
     authors: "Samik Banerjee et al.",
-    journal: "Journal / Conference",
+    journal: "NVIDIA GTC India Poster",
     year: 2020,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=gtcx1",
     image: imageDatabase["pub-13"],
+    categories: ["Conferences & Presentations"],
+    subCategories: ["Posters"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -154,6 +180,8 @@ export const publications = [
     isPreprint: true,
     link: "https://scholar.google.com/scholar?q=High%20precision%20automated%20detection%20of%20labeled%20nuclei%20in%20Gigapixel%20resolution%20image%20data%20of%20Mouse%20Brain",
     image: imageDatabase["pub-14"],
+    categories: ["Neuroscience"],
+    subCategories: ["Single-Cell & Topology"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -165,6 +193,8 @@ export const publications = [
     isPreprint: true,
     link: "https://scholar.google.com/scholar?q=Kernel%20selection%20using%20multiple%20kernel%20learning%20and%20domain%20adaptation%20in%20reproducing%20kernel%20hilbert%20space%2C%20for%20face%20recognition%20under%20surveillance%20scenario",
     image: imageDatabase["pub-15"],
+    categories: ["Computer Vision"],
+    subCategories: ["Face Recognition", "Domain Adaptation"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -176,6 +206,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=LRGAN%20for%20Degraded%20Face%20Recognition",
     image: imageDatabase["pub-16"],
+    categories: ["Computer Vision"],
+    subCategories: ["Generative AI & Restoration"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -187,6 +219,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=MakeUpMirror-%20Mirroring%20make-ups%20and%20verifying%20faces%20post%20make-up",
     image: imageDatabase["pub-17"],
+    categories: ["Computer Vision"],
+    subCategories: ["Generative AI & Restoration"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -198,6 +232,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Mutual%20variation%20of%20information%20on%20Transfer-CNN%20for%20Face%20Recognition%20with%20degraded%20probe%20samples",
     image: imageDatabase["pub-18"],
+    categories: ["Computer Vision"],
+    subCategories: ["Face Recognition"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -209,6 +245,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Performance%20of%20Deep%20Learning%20Algorithms%20vs.%20Shallow%20Models%2C%20in%20Extreme%20Conditions%20-%20Some%20Empirical%20Studies",
     image: imageDatabase["pub-19"],
+    categories: ["Computer Vision"],
+    subCategories: ["Face Recognition"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -220,6 +258,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=PosIX-GAN-%20Generating%20multiple%20poses%20using%20GAN%20for%20pose-invariant%20face%20recognition",
     image: imageDatabase["pub-20"],
+    categories: ["Computer Vision"],
+    subCategories: ["Generative AI & Restoration"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -231,6 +271,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Reversible%20Data%20Encryption%20Algorithm",
     image: imageDatabase["pub-21"],
+    categories: ["Hardware Security", "Cryptography"],
+    subCategories: ["Reversible Logic", "Quantum Computing"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -242,6 +284,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Reversible%20masking-%20a%20novel%20fault-diagnosed",
     image: imageDatabase["pub-22"],
+    categories: ["Hardware Security"],
+    subCategories: ["Reversible Logic", "Quantum Computing"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -253,6 +297,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Secure%20scan%20design%20with%20Isomorphic%20registers",
     image: imageDatabase["pub-23"],
+    categories: ["Hardware Security"],
+    subCategories: ["Secure Scan Design", "Quantum Computing"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -264,6 +310,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Semantic%20segmentation%20of%20microscopic%20neuroanatomical%20data%20by%20combining%20topological%20priors%20with%20encoder%E2%80%93decoder%20deep%20networks",
     image: imageDatabase["pub-24"],
+    categories: ["Neuroscience", "Computer Vision"],
+    subCategories: ["Single-Cell & Topology", "Image Segmentation"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -275,6 +323,8 @@ export const publications = [
     isPreprint: true,
     link: "https://scholar.google.com/scholar?q=Skeletonization%20of%20neuronal%20processes%20using%20Discrete%20Morse%20techniques%20from%20computational%20topology",
     image: imageDatabase["pub-25"],
+    categories: ["Neuroscience"],
+    subCategories: ["Single-Cell & Topology"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -286,6 +336,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Soft-Margin%20Learning%20for%20Multiple%20Feature-Kernel%20Combinations%20With%20Domain%20Adaptation%2C%20for%20Recognition%20in%20Surveillance%20Face%20Dataset%20",
     image: imageDatabase["pub-26"],
+    categories: ["Computer Vision"],
+    subCategories: ["Face Recognition", "Domain Adaptation"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -297,6 +349,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Solving%20the%20where%20problem%20and%20quantifying%20geometric%20variation%20in%20neuroanatomy%20using%20generative%20diffeomorphic%20mapping",
     image: imageDatabase["pub-28"],
+    categories: ["Neuroscience"],
+    subCategories: ["3D Brain Atlases"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -308,6 +362,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=SpoofNET-%20Resolving%20Facial%20Makeup%20based%20Spoofs",
     image: imageDatabase["pub-29"],
+    categories: ["Computer Vision"],
+    subCategories: ["Generative AI & Restoration"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -319,6 +375,8 @@ export const publications = [
     isPreprint: true,
     link: "https://scholar.google.com/scholar?q=Survey%20of%20loss%20functions%20for%20training%20deep-learning%20models%20in%20computer%20vision%2C%20categorized%20based%20on%20tasks%2C%20metric-forms%20and%20learning%20paradigms",
     image: imageDatabase["pub-30"],
+    categories: ["Computer Vision"],
+    subCategories: ["General AI & Methodology"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -330,6 +388,8 @@ export const publications = [
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Unsupervised%20method%20of%20domain%20adaptation%20on%20representation%20of%20discriminatory%20regions%20of%20the%20face%20image%20for%20surveillance%20face%20datasets",
     image: imageDatabase["pub-31"],
+    categories: ["Computer Vision"],
+    subCategories: ["Face Recognition", "Domain Adaptation"],
     abstract: "Read the full paper for more details."
   }
 
