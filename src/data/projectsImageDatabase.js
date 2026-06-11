@@ -27,4 +27,5 @@ export const projectsImageDatabase = {
   "quantum-computing": proj_img_10,
   "biccn": proj_img_11,
   "bican": proj_img_12,
+  "3d-developing-brain": proj_img_12,
 };

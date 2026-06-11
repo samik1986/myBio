@@ -30,6 +30,20 @@ export const projectsData = [
     github: "https://github.com/samik1986"
   },
 {
+    id: "3d-developing-brain",
+    title: "3D Histological Atlas of the Developing Brain",
+    date: "2023 - 2024",
+    category: "Neuroanatomy & Development",
+    image: projectsImageDatabase["3d-developing-brain"],
+    description: "Developed a three-dimensional histological cell atlas of the developing human brain. Built deep learning frameworks for automated cell detection and comparison in 3D histological datasets.",
+    technologies: ["Python", "Jupyter Notebook", "Deep Learning", "Computer Vision"],
+    tools: ["Python", "Jupyter Notebook", "Deep Learning", "Computer Vision"],
+    field: "Neurodevelopment",
+    funding: "NIH",
+    link: "https://scholar.google.com/scholar?q=A%20three-dimensional%20histological%20cell%20atlas%20of%20the%20developing%20human%20brain",
+    github: "https://github.com/samik1986/3D_Developing_brain"
+  },
+{
     id: "brain-connects",
     title: "BRAIN CONNECTS: Multimodal Brain Mapping",
     date: "2023 - Present",
