@@ -1,3 +1,4 @@
+import generic_img from '../assets/project_brain.png';
 import img_0 from '../assets/drive_3D_multimodal_histological_atlas_and_coordinate_fr.jpeg';
 import img_1 from '../assets/drive_Eigen_Domain_Transformation_for_Softmargin_Multipl.png';
 import img_2 from '../assets/drive_MakeUpMirror_Mirroring_makeups_and_verifying_faces.jpeg';
@@ -104,7 +105,7 @@ export const publications = [
     year: 2016,
     isPreprint: false,
     link: "#",
-    image: img_8,
+    image: generic_img,
     abstract: "Read the full paper for more details."
   },
   {
@@ -115,7 +116,7 @@ export const publications = [
     year: 2018,
     isPreprint: false,
     link: "#",
-    image: img_9,
+    image: generic_img,
     abstract: "Read the full paper for more details."
   },
   {
@@ -137,7 +138,7 @@ export const publications = [
     year: 2014,
     isPreprint: false,
     link: "#",
-    image: img_11,
+    image: generic_img,
     abstract: "Read the full paper for more details."
   },
   {
@@ -148,7 +149,7 @@ export const publications = [
     year: 2020,
     isPreprint: false,
     link: "#",
-    image: img_12,
+    image: generic_img,
     abstract: "Read the full paper for more details."
   },
   {
@@ -159,7 +160,7 @@ export const publications = [
     year: 2019,
     isPreprint: false,
     link: "#",
-    image: img_13,
+    image: generic_img,
     abstract: "Read the full paper for more details."
   },
   {
@@ -170,7 +171,7 @@ export const publications = [
     year: 2016,
     isPreprint: false,
     link: "#",
-    image: img_14,
+    image: generic_img,
     abstract: "Read the full paper for more details."
   },
   {
@@ -181,7 +182,7 @@ export const publications = [
     year: 2018,
     isPreprint: false,
     link: "#",
-    image: img_15,
+    image: generic_img,
     abstract: "Read the full paper for more details."
   },
   {
@@ -214,7 +215,7 @@ export const publications = [
     year: 2017,
     isPreprint: false,
     link: "#",
-    image: img_18,
+    image: generic_img,
     abstract: "Read the full paper for more details."
   },
   {
@@ -269,7 +270,7 @@ export const publications = [
     year: 2020,
     isPreprint: false,
     link: "#",
-    image: img_23,
+    image: generic_img,
     abstract: "Read the full paper for more details."
   },
   {
@@ -280,7 +281,7 @@ export const publications = [
     year: 2025,
     isPreprint: true,
     link: "#",
-    image: img_24,
+    image: generic_img,
     abstract: "Read the full paper for more details."
   },
   {
@@ -291,7 +292,7 @@ export const publications = [
     year: 2016,
     isPreprint: false,
     link: "#",
-    image: img_25,
+    image: generic_img,
     abstract: "Read the full paper for more details."
   },
   {
@@ -302,7 +303,7 @@ export const publications = [
     year: 2024,
     isPreprint: false,
     link: "#",
-    image: img_26,
+    image: generic_img,
     abstract: "Read the full paper for more details."
   },
   {
@@ -313,7 +314,7 @@ export const publications = [
     year: 2024,
     isPreprint: false,
     link: "#",
-    image: img_27,
+    image: generic_img,
     abstract: "Read the full paper for more details."
   },
   {
@@ -346,7 +347,7 @@ export const publications = [
     year: 2015,
     isPreprint: false,
     link: "#",
-    image: img_29,
+    image: generic_img,
     abstract: "Read the full paper for more details."
   }
 ];
