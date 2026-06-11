@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     const payload = req.body;
     
     if (payload.system_instruction && payload.system_instruction.parts && payload.system_instruction.parts.length > 0) {
-      payload.system_instruction.parts[0].text += `\n\nHere is a database of extracted functions from his repositories. If the user asks a technical or research question, explicitly refer to these functions and repositories to help them:\n\n${repoData}`;
+      payload.system_instruction.parts[0].text += `\n\nHere is a database of extracted functions from his repositories. If the user asks a technical or research question, explicitly refer to these functions and repositories to help them. IMPORTANT INSTRUCTION: When you mention a function or file, you MUST provide a clickable Markdown link pointing directly to the file on GitHub. Use the format: [function_name](<GitHub_URL>/blob/master/<file_path>). For example: [compute_morse_complex](https://github.com/samik1986/DM_3D/blob/master/src/core/main.cpp):\n\n${repoData}`;
     }
     // Forward the request to Google's Gemini API
     const geminiRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
