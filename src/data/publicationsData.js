@@ -29,6 +29,7 @@ import img_27 from '../assets/drive_Solving_the_where_problem_and_quantifying_ge
 import img_28 from '../assets/drive_SpoofNET_Resolving_Facial_Makeup_based_Spoofs.png';
 import img_29 from '../assets/drive_Unsupervised_method_of_domain_adaptation_on_repres.png';
 
+
 export const publications = [
 {
     id: "pub-1",
@@ -37,7 +38,7 @@ export const publications = [
     journal: "bioRxiv (Under Review in Nature Neuroscience)",
     year: 2025,
     isPreprint: true,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=3D%20multimodal%20histological%20atlas%20and%20coordinate%20framework%20for%20the%20mouse%20brain%20and%20head",
     image: img_1,
     abstract: "Read the full paper for more details."
   },
@@ -48,7 +49,7 @@ export const publications = [
     journal: "PLoS Biology",
     year: 2023,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=A%20guide%20to%20the%20BRAIN%20Initiative%20Cell%20Census%20Network%20data%20ecosystem",
     image: img_2,
     abstract: "Read the full paper for more details."
   },
@@ -59,7 +60,7 @@ export const publications = [
     journal: "Nature",
     year: 2021,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=A%20multimodal%20cell%20census%20and%20atlas%20of%20the%20mammalian%20primary%20motor%20cortex",
     image: img_3,
     abstract: "Read the full paper for more details."
   },
@@ -70,7 +71,7 @@ export const publications = [
     journal: "bioRxiv (Under Review in Nature)",
     year: 2024,
     isPreprint: true,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=A%20three-dimensional%20histological%20cell%20atlas%20of%20the%20developing%20human%20brain",
     image: img_4,
     abstract: "Read the full paper for more details."
   },
@@ -81,7 +82,7 @@ export const publications = [
     journal: "Nature",
     year: 2021,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Cellular%20anatomy%20of%20the%20mouse%20primary%20motor%20cortex",
     image: img_5,
     abstract: "Read the full paper for more details."
   },
@@ -92,7 +93,7 @@ export const publications = [
     journal: "BioSIG, ACM, Darmstadt, Germany, December",
     year: 2018,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Deep%20Domain%20Adaptation%20for%20Face%20Recognition%20using%20images%20captured%20from%20surveillance%20cameras",
     image: img_6,
     abstract: "Read the full paper for more details."
   },
@@ -103,7 +104,7 @@ export const publications = [
     journal: "Sādhanā (Academy Proceedings in Engineering Science), Springer, Vol. 41(10), Pages 1155–71, October",
     year: 2016,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Detecting%20aircrafts%20from%20satellite%20images%20using%20saliency%20and%20conical%20pyramid%20based%20template%20representation",
     image: img_7,
     abstract: "Read the full paper for more details."
   },
@@ -112,9 +113,9 @@ export const publications = [
     title: "Detection and skeletonization of single neurons and tracer injections using topological methods",
     authors: "Samik Banerjee et al.",
     journal: "Medical Image Analysis / Bioinformatics",
-    year: 2004,
+    year: 2020,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Detection%20and%20skeletonization%20of%20single%20neurons%20and%20tracer%20injections%20using%20topological%20methods",
     image: img_8,
     abstract: "Read the full paper for more details."
   },
@@ -124,8 +125,8 @@ export const publications = [
     authors: "Samik Banerjee et al.",
     journal: "arXiv preprint, arXiv:1610.01374, October",
     year: 2016,
-    isPreprint: false,
-    link: "#",
+    isPreprint: true,
+    link: "https://scholar.google.com/scholar?q=Domain%20Adaptation%20with%20Soft-margin%20multiple%20feature-kernel%20learning%20beats%20Deep%20Learning%20for%20surveillance%20face%20recognition",
     image: img_9,
     abstract: "Read the full paper for more details."
   },
@@ -136,7 +137,7 @@ export const publications = [
     journal: "Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP), ACM, IIIT Hyderabad, India, December",
     year: 2018,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=DP-GAN-%20Dual%20Pathway%20Generative%20Adversarial%20Network%20for%20Face%20Recognition%20in%20Degraded%20Scenarios",
     image: img_10,
     abstract: "Read the full paper for more details."
   },
@@ -147,7 +148,7 @@ export const publications = [
     journal: "Workshop on Computer Vision Applications (WCVA),  9th Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP), Springer, pp. 180-191, IIT Guwahati, Assam, India",
     year: 2016,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Eigen%20Domain%20Transformation%20for%20Soft-margin%20Multiple%20Feature-Kernel%20Learning%20for%20Surveillance%20Face%20Recognition",
     image: img_11,
     abstract: "Read the full paper for more details."
   },
@@ -158,7 +159,7 @@ export const publications = [
     journal: "9th Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP), IISc. Bangalore, India, ACM, pp. 50",
     year: 2014,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Face%20recognition%20in%20surveillance%20conditions%20with%20bag-of-words%2C%20using%20unsupervised%20domain%20adaptation",
     image: img_12,
     abstract: "Read the full paper for more details."
   },
@@ -169,7 +170,7 @@ export const publications = [
     journal: "Journal / Conference",
     year: 2020,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=gtcx1",
     image: img_13,
     abstract: "Read the full paper for more details."
   },
@@ -179,8 +180,8 @@ export const publications = [
     authors: "Samik Banerjee et al.",
     journal: "bioRxiv 252247, Cold Spring Harbor Laboratory, USA, January",
     year: 2019,
-    isPreprint: false,
-    link: "#",
+    isPreprint: true,
+    link: "https://scholar.google.com/scholar?q=High%20precision%20automated%20detection%20of%20labeled%20nuclei%20in%20Gigapixel%20resolution%20image%20data%20of%20Mouse%20Brain",
     image: img_14,
     abstract: "Read the full paper for more details."
   },
@@ -190,8 +191,8 @@ export const publications = [
     authors: "Samik Banerjee et al.",
     journal: "arXiv preprint, arXiv:1610.00660, October",
     year: 2016,
-    isPreprint: false,
-    link: "#",
+    isPreprint: true,
+    link: "https://scholar.google.com/scholar?q=Kernel%20selection%20using%20multiple%20kernel%20learning%20and%20domain%20adaptation%20in%20reproducing%20kernel%20hilbert%20space%2C%20for%20face%20recognition%20under%20surveillance%20scenario",
     image: img_15,
     abstract: "Read the full paper for more details."
   },
@@ -202,7 +203,7 @@ export const publications = [
     journal: "Pattern Recognition Letters",
     year: 2018,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=LRGAN%20for%20Degraded%20Face%20Recognition",
     image: img_16,
     abstract: "Read the full paper for more details."
   },
@@ -213,7 +214,7 @@ export const publications = [
     journal: "IET Biometrics",
     year: 2018,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=MakeUpMirror-%20Mirroring%20make-ups%20and%20verifying%20faces%20post%20make-up",
     image: img_17,
     abstract: "Read the full paper for more details."
   },
@@ -224,7 +225,7 @@ export const publications = [
     journal: "Neurocomputing",
     year: 2018,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Mutual%20variation%20of%20information%20on%20Transfer-CNN%20for%20Face%20Recognition%20with%20degraded%20probe%20samples",
     image: img_18,
     abstract: "Read the full paper for more details."
   },
@@ -235,7 +236,7 @@ export const publications = [
     journal: "7th  Perception and Machine Intelligence (PReMI), ACM, ISI Kolkata, India",
     year: 2017,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Performance%20of%20Deep%20Learning%20Algorithms%20vs.%20Shallow%20Models%2C%20in%20Extreme%20Conditions%20-%20Some%20Empirical%20Studies",
     image: img_19,
     abstract: "Read the full paper for more details."
   },
@@ -246,7 +247,7 @@ export const publications = [
     journal: "ECCV Workshop",
     year: 2018,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=PosIX-GAN-%20Generating%20multiple%20poses%20using%20GAN%20for%20pose-invariant%20face%20recognition",
     image: img_20,
     abstract: "Read the full paper for more details."
   },
@@ -257,7 +258,7 @@ export const publications = [
     journal: "Advances in Computer Science (ACEEE), pp. 40-43, AET-ACS",
     year: 2012,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Reversible%20Data%20Encryption%20Algorithm",
     image: img_21,
     abstract: "Read the full paper for more details."
   },
@@ -268,7 +269,7 @@ export const publications = [
     journal: "Advances in Recent Technologies in Communication and Computing (ARTCOM), IEEE, pp. 67-71",
     year: 2011,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Reversible%20masking-%20a%20novel%20fault-diagnosed",
     image: img_22,
     abstract: "Read the full paper for more details."
   },
@@ -279,7 +280,7 @@ export const publications = [
     journal: "Advances in Recent Technologies in Communication and Computing (ARTCOM), IEEE, pp. 67-71",
     year: 2011,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Secure%20scan%20design%20with%20Isomorphic%20registers",
     image: img_23,
     abstract: "Read the full paper for more details."
   },
@@ -290,7 +291,7 @@ export const publications = [
     journal: "Nature Machine Intelligence",
     year: 2020,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Semantic%20segmentation%20of%20microscopic%20neuroanatomical%20data%20by%20combining%20topological%20priors%20with%20encoder%E2%80%93decoder%20deep%20networks",
     image: img_24,
     abstract: "Read the full paper for more details."
   },
@@ -301,7 +302,7 @@ export const publications = [
     journal: "arXiv preprint (Under Review in Nature Communications)",
     year: 2025,
     isPreprint: true,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Skeletonization%20of%20neuronal%20processes%20using%20Discrete%20Morse%20techniques%20from%20computational%20topology",
     image: img_25,
     abstract: "Read the full paper for more details."
   },
@@ -312,19 +313,8 @@ export const publications = [
     journal: "CVPR Workshop on Biometrics",
     year: 2016,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Soft-Margin%20Learning%20for%20Multiple%20Feature-Kernel%20Combinations%20With%20Domain%20Adaptation%2C%20for%20Recognition%20in%20Surveillance%20Face%20Dataset%20",
     image: img_26,
-    abstract: "Read the full paper for more details."
-  },
-{
-    id: "pub-27",
-    title: "Solving the where problem and quantifying geometric variation in neuroanatomy using generative diffeomorphic mapping - Supplementary",
-    authors: "Samik Banerjee et al.",
-    journal: "Nature Communications",
-    year: 2024,
-    isPreprint: false,
-    link: "#",
-    image: img_27,
     abstract: "Read the full paper for more details."
   },
 {
@@ -334,7 +324,7 @@ export const publications = [
     journal: "Nature Communications",
     year: 2024,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Solving%20the%20where%20problem%20and%20quantifying%20geometric%20variation%20in%20neuroanatomy%20using%20generative%20diffeomorphic%20mapping",
     image: img_27,
     abstract: "Read the full paper for more details."
   },
@@ -345,7 +335,7 @@ export const publications = [
     journal: "Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP), ACM, IIIT Hyderabad, India, December",
     year: 2018,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=SpoofNET-%20Resolving%20Facial%20Makeup%20based%20Spoofs",
     image: img_28,
     abstract: "Read the full paper for more details."
   },
@@ -354,9 +344,9 @@ export const publications = [
     title: "Survey of loss functions for training deep-learning models in computer vision, categorized based on tasks, metric-forms and learning paradigms",
     authors: "Samik Banerjee et al.",
     journal: "SSRN (Under Review in CVIU)",
-    year: 2006,
+    year: 2025,
     isPreprint: true,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Survey%20of%20loss%20functions%20for%20training%20deep-learning%20models%20in%20computer%20vision%2C%20categorized%20based%20on%20tasks%2C%20metric-forms%20and%20learning%20paradigms",
     image: generic_img,
     abstract: "Read the full paper for more details."
   },
@@ -367,9 +357,10 @@ export const publications = [
     journal: "2nd  Perception and Machine Intelligence (PerMIn), IISc. Kolkata, India, ACM, pp. 123-130",
     year: 2015,
     isPreprint: false,
-    link: "#",
+    link: "https://scholar.google.com/scholar?q=Unsupervised%20method%20of%20domain%20adaptation%20on%20representation%20of%20discriminatory%20regions%20of%20the%20face%20image%20for%20surveillance%20face%20datasets",
     image: img_29,
     abstract: "Read the full paper for more details."
   }
+
 
 ];
