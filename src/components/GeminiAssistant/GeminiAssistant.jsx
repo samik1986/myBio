@@ -12,7 +12,7 @@ const GeminiAssistant = () => {
   ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
-  const [showFilters, setShowFilters] = useState(false);
+  const [activeSearchType, setActiveSearchType] = useState(null);
   const [selectedFilters, setSelectedFilters] = useState([]);
   
   const messagesEndRef = useRef(null);
@@ -89,6 +89,9 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
   const uniqueCategories = [...new Set(publications.flatMap(p => p.categories || []))].sort();
   const uniqueSubCategories = [...new Set(publications.flatMap(p => p.subCategories || []))].sort();
 
+  const uniqueProjCategories = [...new Set(projectsData.map(p => p.category).filter(Boolean))].sort();
+  const uniqueProjTechs = [...new Set(projectsData.flatMap(p => p.technologies || []))].sort();
+
   const toggleFilter = (filter) => {
     setSelectedFilters(prev => 
       prev.includes(filter) ? prev.filter(f => f !== filter) : [...prev, filter]
@@ -97,8 +100,9 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
 
   const handleFilterSearch = () => {
     if (selectedFilters.length === 0) return;
-    const query = `Find projects or publications related to: ${selectedFilters.join(', ')}`;
-    setShowFilters(false);
+    const typeLabel = activeSearchType === 'pubs' ? 'publications' : 'projects';
+    const query = `Find ${typeLabel} related to: ${selectedFilters.join(', ')}`;
+    setActiveSearchType(null);
     setSelectedFilters([]);
     processMessage(query);
   };
@@ -158,15 +162,18 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
         </div>
 
         <div className="gemini-quick-actions" style={{ display: 'flex', gap: '8px', padding: '0 16px 12px', overflowX: 'auto', flexShrink: 0 }}>
-            <button className="btn btn-outline" style={{ fontSize: '0.8rem', padding: '6px 12px', whiteSpace: 'nowrap' }} onClick={() => setShowFilters(!showFilters)}>
-              {showFilters ? '✕ Close Filters' : '⚡ Quick Search'}
+            <button className="btn btn-outline" style={{ fontSize: '0.8rem', padding: '6px 12px', whiteSpace: 'nowrap' }} onClick={() => setActiveSearchType(activeSearchType === 'pubs' ? null : 'pubs')}>
+              {activeSearchType === 'pubs' ? '✕ Close Pubs' : '⚡ Pubs Search'}
+            </button>
+            <button className="btn btn-outline" style={{ fontSize: '0.8rem', padding: '6px 12px', whiteSpace: 'nowrap' }} onClick={() => setActiveSearchType(activeSearchType === 'projects' ? null : 'projects')}>
+              {activeSearchType === 'projects' ? '✕ Close Proj' : '⚡ Proj Search'}
             </button>
             <Link to="/github" className="btn btn-outline" style={{ fontSize: '0.8rem', padding: '6px 12px', whiteSpace: 'nowrap' }} onClick={() => setIsOpen(false)}>
               🔍 View GitHub Repos
             </Link>
         </div>
 
-        {showFilters && (
+        {activeSearchType === 'pubs' && (
           <div className="gemini-filters-panel" style={{ padding: '0 16px 12px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
             
             <p style={{ fontSize: '0.8rem', marginBottom: '6px', opacity: 0.8, marginTop: '8px' }}>Filter by Year:</p>
@@ -225,6 +232,59 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
                 </button>
               ))}
             </div>
+            {selectedFilters.length > 0 && (
+              <button 
+                className="btn btn-primary" 
+                style={{ width: '100%', fontSize: '0.85rem', padding: '8px' }}
+                onClick={handleFilterSearch}
+              >
+                Search Selected ({selectedFilters.length})
+              </button>
+            )}
+          </div>
+        )}
+
+        {activeSearchType === 'projects' && (
+          <div className="gemini-filters-panel" style={{ padding: '0 16px 12px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+            
+            <p style={{ fontSize: '0.8rem', marginBottom: '6px', opacity: 0.8, marginTop: '8px' }}>Filter by Category:</p>
+            <div className="gemini-filter-row" style={{ display: 'flex', overflowX: 'auto', gap: '6px', marginBottom: '10px', paddingBottom: '4px' }}>
+              {uniqueProjCategories.map(opt => (
+                <button 
+                  key={opt}
+                  type="button"
+                  onClick={() => toggleFilter(opt)}
+                  style={{ 
+                    fontSize: '0.75rem', padding: '4px 8px', borderRadius: '12px', border: '1px solid var(--accent-color)',
+                    background: selectedFilters.includes(opt) ? 'var(--accent-color)' : 'transparent',
+                    color: selectedFilters.includes(opt) ? '#fff' : 'inherit', cursor: 'pointer', transition: 'all 0.2s',
+                    whiteSpace: 'nowrap', flexShrink: 0
+                  }}
+                >
+                  {opt}
+                </button>
+              ))}
+            </div>
+
+            <p style={{ fontSize: '0.8rem', marginBottom: '6px', opacity: 0.8 }}>Filter by Technologies:</p>
+            <div className="gemini-filter-row" style={{ display: 'flex', overflowX: 'auto', gap: '6px', marginBottom: '12px', paddingBottom: '4px' }}>
+              {uniqueProjTechs.map(opt => (
+                <button 
+                  key={opt}
+                  type="button"
+                  onClick={() => toggleFilter(opt)}
+                  style={{ 
+                    fontSize: '0.75rem', padding: '4px 8px', borderRadius: '12px', border: '1px solid var(--accent-color)',
+                    background: selectedFilters.includes(opt) ? 'var(--accent-color)' : 'transparent',
+                    color: selectedFilters.includes(opt) ? '#fff' : 'inherit', cursor: 'pointer', transition: 'all 0.2s',
+                    whiteSpace: 'nowrap', flexShrink: 0
+                  }}
+                >
+                  {opt}
+                </button>
+              ))}
+            </div>
+
             {selectedFilters.length > 0 && (
               <button 
                 className="btn btn-primary" 
