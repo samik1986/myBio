@@ -8,6 +8,22 @@ import './Projects.css';
 const Projects = ({ limit }) => {
   const displayFeatured = limit ? projectsData.slice(0, limit) : projectsData;
 
+  const getTags = (project) => {
+    const tags = [];
+    if (project.category) tags.push({ type: 'category', value: project.category });
+    if (project.language) tags.push({ type: 'language', value: project.language });
+    
+    const tech = project.tools || project.technologies || [];
+    tech.forEach(t => {
+      if (!tags.some(existing => existing.value === t)) {
+        if (tags.length < 3) {
+          tags.push({ type: 'tech', value: t });
+        }
+      }
+    });
+    return tags.slice(0, 3);
+  };
+
   return (
     <section id="projects" className="section projects-section">
       <div className="container">
@@ -29,11 +45,17 @@ const Projects = ({ limit }) => {
               <div className="project-content">
                 <h3 className="project-title">{project.title || project.name}</h3>
                 <p className="project-desc">{project.description}</p>
+                
+                <div className="project-tags">
+                  {getTags(project).map((tag, idx) => (
+                    <span key={idx} className={`project-tag ${tag.type}-tag`}>
+                      {tag.value}
+                    </span>
+                  ))}
+                </div>
+
                 <div className="project-footer">
-                  <span className="project-lang">
-                    <span className="lang-dot python"></span>
-                    {project.language || (project.technologies && project.technologies[0])}
-                  </span>
+                  <span></span>
                   {project.link !== "#" && (
                     <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link" onClick={(e) => e.stopPropagation()}>
                       <LinkIcon size={18} /> Portal
