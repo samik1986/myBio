@@ -1,19 +1,90 @@
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { BookOpen, ExternalLink, Quote, ArrowRight } from 'lucide-react';
+import { BookOpen, ExternalLink, Quote, ArrowRight, Search, X } from 'lucide-react';
 import { publications } from '../../data/publicationsData';
+import MultiSelectDropdown from './MultiSelectDropdown';
 import './Publications.css';
 
 const Publications = ({ limit }) => {
-  // Sort all publications by year descending
-  const sortedPubs = [...publications].sort((a, b) => b.year - a.year);
-  
-  // Group them
-  const peerReviewed = sortedPubs.filter(p => !p.isPreprint);
-  const preprints = sortedPubs.filter(p => p.isPreprint);
+  // Filter States
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedYears, setSelectedYears] = useState([]);
+  const [selectedCategories, setSelectedCategories] = useState([]);
+  const [selectedSubCategories, setSelectedSubCategories] = useState([]);
+  const [selectedJournals, setSelectedJournals] = useState([]);
 
-  const displayPeerReviewed = limit ? peerReviewed.slice(0, limit) : peerReviewed;
-  const displayPreprints = limit ? preprints.slice(0, limit) : preprints;
+  // Extract unique options for dropdowns dynamically
+  const filterOptions = useMemo(() => {
+    const years = new Set();
+    const categories = new Set();
+    const subCategories = new Set();
+    const journals = new Set();
+
+    publications.forEach(pub => {
+      if (pub.year) years.add(pub.year.toString());
+      if (pub.journal) journals.add(pub.journal);
+      if (pub.categories) pub.categories.forEach(c => categories.add(c));
+      if (pub.subCategories) pub.subCategories.forEach(c => subCategories.add(c));
+    });
+
+    return {
+      years: Array.from(years).sort((a, b) => b - a),
+      categories: Array.from(categories).sort(),
+      subCategories: Array.from(subCategories).sort(),
+      journals: Array.from(journals).sort()
+    };
+  }, []);
+
+  // Filter the publications based on active states
+  const filteredPubs = useMemo(() => {
+    return publications.filter(pub => {
+      // Free text search
+      if (searchQuery) {
+        const query = searchQuery.toLowerCase();
+        const matchesTitle = pub.title?.toLowerCase().includes(query);
+        const matchesAbstract = pub.abstract?.toLowerCase().includes(query) || pub.overview?.toLowerCase().includes(query);
+        const matchesAuthors = pub.authors?.toLowerCase().includes(query);
+        if (!matchesTitle && !matchesAbstract && !matchesAuthors) return false;
+      }
+
+      // Multi-select filters (OR within category, AND across categories)
+      if (selectedYears.length > 0 && !selectedYears.includes(pub.year?.toString())) return false;
+      if (selectedJournals.length > 0 && !selectedJournals.includes(pub.journal)) return false;
+      
+      if (selectedCategories.length > 0) {
+        if (!pub.categories || !pub.categories.some(c => selectedCategories.includes(c))) return false;
+      }
+      
+      if (selectedSubCategories.length > 0) {
+        if (!pub.subCategories || !pub.subCategories.some(c => selectedSubCategories.includes(c))) return false;
+      }
+
+      return true;
+    }).sort((a, b) => b.year - a.year);
+  }, [searchQuery, selectedYears, selectedCategories, selectedSubCategories, selectedJournals]);
+
+  // Determine if any filters are active
+  const hasActiveFilters = searchQuery !== '' || 
+                           selectedYears.length > 0 || 
+                           selectedCategories.length > 0 || 
+                           selectedSubCategories.length > 0 || 
+                           selectedJournals.length > 0;
+
+  // Group into Peer-Reviewed and Preprints
+  const peerReviewed = filteredPubs.filter(p => !p.isPreprint);
+  const preprints = filteredPubs.filter(p => p.isPreprint);
+
+  // If there's a limit AND no active filters, slice the arrays. Otherwise, show all filtered results.
+  const displayPeerReviewed = (limit && !hasActiveFilters) ? peerReviewed.slice(0, limit) : peerReviewed;
+  const displayPreprints = (limit && !hasActiveFilters) ? preprints.slice(0, limit) : preprints;
+
+  const clearFilters = () => {
+    setSearchQuery('');
+    setSelectedYears([]);
+    setSelectedCategories([]);
+    setSelectedSubCategories([]);
+    setSelectedJournals([]);
+  };
 
   const renderPublication = (pub) => (
     <Link to={`/publication/${pub.id}`} key={pub.id} className="glass publication-item" style={{ textDecoration: 'none', color: 'inherit' }}>
@@ -53,7 +124,7 @@ const Publications = ({ limit }) => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Publications</h2>
-          {limit && (
+          {limit && !hasActiveFilters && (
             <Link to="/publications" className="view-all-link">
               View All <ArrowRight size={16} />
             </Link>
@@ -73,12 +144,74 @@ const Publications = ({ limit }) => {
           </div>
         </div>
 
-        <div className="publications-group">
-          <h3 className="group-title" style={{ marginTop: '2rem', marginBottom: '1.5rem', color: 'var(--text-color)', borderBottom: '2px solid var(--accent-color)', display: 'inline-block' }}>Peer-Reviewed Publications</h3>
-          <div className="publications-list">
-            {displayPeerReviewed.map(renderPublication)}
+        {/* --- FILTER BAR --- */}
+        <div className="glass filter-bar-container">
+          <div className="filter-search-row">
+            <div className="search-input-wrapper">
+              <Search size={18} className="search-icon" />
+              <input 
+                type="text" 
+                className="search-input" 
+                placeholder="Search titles, authors, keywords..." 
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+              {searchQuery && (
+                <button className="clear-search-btn" onClick={() => setSearchQuery('')}>
+                  <X size={16} />
+                </button>
+              )}
+            </div>
+            {hasActiveFilters && (
+              <button className="clear-all-btn" onClick={clearFilters}>
+                Clear All Filters
+              </button>
+            )}
           </div>
+          
+          <div className="filter-dropdowns-row">
+            <MultiSelectDropdown 
+              placeholder="Year" 
+              options={filterOptions.years} 
+              selectedValues={selectedYears} 
+              onChange={setSelectedYears} 
+            />
+            <MultiSelectDropdown 
+              placeholder="Category" 
+              options={filterOptions.categories} 
+              selectedValues={selectedCategories} 
+              onChange={setSelectedCategories} 
+            />
+            <MultiSelectDropdown 
+              placeholder="Sub-Category" 
+              options={filterOptions.subCategories} 
+              selectedValues={selectedSubCategories} 
+              onChange={setSelectedSubCategories} 
+            />
+            <MultiSelectDropdown 
+              placeholder="Journal/Venue" 
+              options={filterOptions.journals} 
+              selectedValues={selectedJournals} 
+              onChange={setSelectedJournals} 
+            />
+          </div>
+          
+          {hasActiveFilters && (
+            <div className="filter-results-count">
+              Showing {filteredPubs.length} result{filteredPubs.length !== 1 && 's'}
+            </div>
+          )}
         </div>
+        {/* --- END FILTER BAR --- */}
+
+        {displayPeerReviewed.length > 0 && (
+          <div className="publications-group">
+            <h3 className="group-title" style={{ marginTop: '2rem', marginBottom: '1.5rem', color: 'var(--text-color)', borderBottom: '2px solid var(--accent-color)', display: 'inline-block' }}>Peer-Reviewed Publications</h3>
+            <div className="publications-list">
+              {displayPeerReviewed.map(renderPublication)}
+            </div>
+          </div>
+        )}
 
         {displayPreprints.length > 0 && (
           <div className="publications-group" style={{ marginTop: '3rem' }}>
@@ -88,6 +221,14 @@ const Publications = ({ limit }) => {
             </div>
           </div>
         )}
+
+        {filteredPubs.length === 0 && (
+          <div className="no-results-message">
+            <p>No publications match your selected filters.</p>
+            <button className="btn btn-primary" onClick={clearFilters} style={{ marginTop: '1rem' }}>Clear Filters</button>
+          </div>
+        )}
+
       </div>
     </section>
   );
