@@ -10,18 +10,30 @@ const Projects = ({ limit }) => {
 
   const getTags = (project) => {
     const tags = [];
-    if (project.category) tags.push({ type: 'category', value: project.category });
-    if (project.language) tags.push({ type: 'language', value: project.language });
+    
+    if (project.category) {
+      const categories = Array.isArray(project.category) 
+        ? project.category 
+        : project.category.split(/&|,/).map(c => c.trim());
+      
+      categories.slice(0, 2).forEach(c => {
+        if (c) tags.push({ type: 'category', value: c });
+      });
+    }
+
+    if (project.language) {
+      tags.push({ type: 'language', value: project.language });
+    }
     
     const tech = project.tools || project.technologies || [];
     tech.forEach(t => {
       if (!tags.some(existing => existing.value === t)) {
-        if (tags.length < 3) {
+        if (tags.length < 5) {
           tags.push({ type: 'tech', value: t });
         }
       }
     });
-    return tags.slice(0, 3);
+    return tags.slice(0, 5);
   };
 
   return (
