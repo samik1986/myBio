@@ -12,12 +12,14 @@ import generic_img from '../assets/project_brain.png';
 import proj_img_10 from '../assets/RevData_page4_3.jpeg';
 import proj_img_11 from '../assets/drive_A_guide_to_the_BRAIN_Initiative_Cell_Census_Networ.jpeg';
 import proj_img_12 from '../assets/drive_A_threedimensional_histological_cell_atlas_of_the_.png';
+import bican_thumb from '../assets/bican_thumbnail.webp';
+import interactive_vis_thumb from '../assets/interactive_vis_snapshot.webp';
 
 export const projectsImageDatabase = {
   "brain-connects": proj_img_0,
   "human-brain-atlas": proj_img_1,
   "semseg-framework": proj_img_2,
-  "interactive-visualization": proj_img_3,
+  "interactive-visualization": interactive_vis_thumb,
   "marmoset-enhancers": proj_img_4,
   "lr-sd-gan": proj_img_5,
   "posix-gan": proj_img_6,
@@ -26,6 +28,6 @@ export const projectsImageDatabase = {
   "drdo-satellite": proj_img_9,
   "quantum-computing": proj_img_10,
   "biccn": proj_img_11,
-  "bican": proj_img_12,
+  "bican": bican_thumb,
   "3d-developing-brain": proj_img_12,
 };
