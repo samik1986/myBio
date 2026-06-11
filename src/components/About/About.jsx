@@ -39,6 +39,28 @@ const About = () => {
               My research lies at the intersection of deep learning, computer vision, and neuroscience. I specialize in designing scalable pipelines to detect neuronal connectivity across multiple species, aligning single-cell data with neuropathology. By employing modern Deep Learning frameworks (PyTorch, TensorFlow) alongside traditional image processing algorithms, I unravel the complex connectivity mapping within the brain.
             </p>
 
+            <h3>Awards & Recognitions</h3>
+            <ul className="about-awards" style={{ listStyle: 'none', padding: 0, margin: '1rem 0 2rem' }}>
+              <li style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '10px' }}>
+                <span style={{ color: 'var(--accent-color)', marginRight: '10px', marginTop: '2px' }}>★</span>
+                <div>
+                  <strong>Excellence in Research Award</strong> - <span style={{ opacity: 0.8 }}>For outstanding contributions to 3D Multimodal Brain Mapping (Placeholder)</span>
+                </div>
+              </li>
+              <li style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '10px' }}>
+                <span style={{ color: 'var(--accent-color)', marginRight: '10px', marginTop: '2px' }}>★</span>
+                <div>
+                  <strong>Best Paper Award</strong> - <span style={{ opacity: 0.8 }}>Deep Domain Adaptation for Face Recognition (Placeholder)</span>
+                </div>
+              </li>
+              <li style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '10px' }}>
+                <span style={{ color: 'var(--accent-color)', marginRight: '10px', marginTop: '2px' }}>★</span>
+                <div>
+                  <strong>NIH Grant / Fellowship</strong> - <span style={{ opacity: 0.8 }}>BRAIN Initiative Cell Census Network (Placeholder)</span>
+                </div>
+              </li>
+            </ul>
+
             <div className="about-socials">
               <a href="https://github.com/samik1986" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
                 <FaGithub /> GitHub
