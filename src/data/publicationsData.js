@@ -10,7 +10,7 @@ export const publications = [
     year: 2025,
     isPreprint: true,
     link: "https://scholar.google.com/scholar?q=3D%20multimodal%20histological%20atlas%20and%20coordinate%20framework%20for%20the%20mouse%20brain%20and%20head",
-    image: imageDatabase["img_1"],
+    image: imageDatabase["pub-1"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -21,7 +21,7 @@ export const publications = [
     year: 2023,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=A%20guide%20to%20the%20BRAIN%20Initiative%20Cell%20Census%20Network%20data%20ecosystem",
-    image: imageDatabase["img_2"],
+    image: imageDatabase["pub-2"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -32,7 +32,7 @@ export const publications = [
     year: 2021,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=A%20multimodal%20cell%20census%20and%20atlas%20of%20the%20mammalian%20primary%20motor%20cortex",
-    image: imageDatabase["img_3"],
+    image: imageDatabase["pub-3"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -43,7 +43,7 @@ export const publications = [
     year: 2024,
     isPreprint: true,
     link: "https://scholar.google.com/scholar?q=A%20three-dimensional%20histological%20cell%20atlas%20of%20the%20developing%20human%20brain",
-    image: imageDatabase["img_4"],
+    image: imageDatabase["pub-4"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -54,7 +54,7 @@ export const publications = [
     year: 2021,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Cellular%20anatomy%20of%20the%20mouse%20primary%20motor%20cortex",
-    image: imageDatabase["img_5"],
+    image: imageDatabase["pub-5"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -65,7 +65,7 @@ export const publications = [
     year: 2018,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Deep%20Domain%20Adaptation%20for%20Face%20Recognition%20using%20images%20captured%20from%20surveillance%20cameras",
-    image: imageDatabase["img_6"],
+    image: imageDatabase["pub-6"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -76,7 +76,7 @@ export const publications = [
     year: 2016,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Detecting%20aircrafts%20from%20satellite%20images%20using%20saliency%20and%20conical%20pyramid%20based%20template%20representation",
-    image: imageDatabase["img_7"],
+    image: imageDatabase["pub-7"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -87,7 +87,7 @@ export const publications = [
     year: 2020,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Detection%20and%20skeletonization%20of%20single%20neurons%20and%20tracer%20injections%20using%20topological%20methods",
-    image: imageDatabase["img_8"],
+    image: imageDatabase["pub-8"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -98,7 +98,7 @@ export const publications = [
     year: 2016,
     isPreprint: true,
     link: "https://scholar.google.com/scholar?q=Domain%20Adaptation%20with%20Soft-margin%20multiple%20feature-kernel%20learning%20beats%20Deep%20Learning%20for%20surveillance%20face%20recognition",
-    image: imageDatabase["img_9"],
+    image: imageDatabase["pub-9"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -109,7 +109,7 @@ export const publications = [
     year: 2018,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=DP-GAN-%20Dual%20Pathway%20Generative%20Adversarial%20Network%20for%20Face%20Recognition%20in%20Degraded%20Scenarios",
-    image: imageDatabase["img_10"],
+    image: imageDatabase["pub-10"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -120,7 +120,7 @@ export const publications = [
     year: 2016,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Eigen%20Domain%20Transformation%20for%20Soft-margin%20Multiple%20Feature-Kernel%20Learning%20for%20Surveillance%20Face%20Recognition",
-    image: imageDatabase["img_11"],
+    image: imageDatabase["pub-11"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -131,7 +131,7 @@ export const publications = [
     year: 2014,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Face%20recognition%20in%20surveillance%20conditions%20with%20bag-of-words%2C%20using%20unsupervised%20domain%20adaptation",
-    image: imageDatabase["img_12"],
+    image: imageDatabase["pub-12"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -142,7 +142,7 @@ export const publications = [
     year: 2020,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=gtcx1",
-    image: imageDatabase["img_13"],
+    image: imageDatabase["pub-13"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -153,7 +153,7 @@ export const publications = [
     year: 2019,
     isPreprint: true,
     link: "https://scholar.google.com/scholar?q=High%20precision%20automated%20detection%20of%20labeled%20nuclei%20in%20Gigapixel%20resolution%20image%20data%20of%20Mouse%20Brain",
-    image: imageDatabase["img_14"],
+    image: imageDatabase["pub-14"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -164,7 +164,7 @@ export const publications = [
     year: 2016,
     isPreprint: true,
     link: "https://scholar.google.com/scholar?q=Kernel%20selection%20using%20multiple%20kernel%20learning%20and%20domain%20adaptation%20in%20reproducing%20kernel%20hilbert%20space%2C%20for%20face%20recognition%20under%20surveillance%20scenario",
-    image: imageDatabase["img_15"],
+    image: imageDatabase["pub-15"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -175,7 +175,7 @@ export const publications = [
     year: 2018,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=LRGAN%20for%20Degraded%20Face%20Recognition",
-    image: imageDatabase["img_16"],
+    image: imageDatabase["pub-16"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -186,7 +186,7 @@ export const publications = [
     year: 2018,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=MakeUpMirror-%20Mirroring%20make-ups%20and%20verifying%20faces%20post%20make-up",
-    image: imageDatabase["img_17"],
+    image: imageDatabase["pub-17"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -197,7 +197,7 @@ export const publications = [
     year: 2018,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Mutual%20variation%20of%20information%20on%20Transfer-CNN%20for%20Face%20Recognition%20with%20degraded%20probe%20samples",
-    image: imageDatabase["img_18"],
+    image: imageDatabase["pub-18"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -208,7 +208,7 @@ export const publications = [
     year: 2017,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Performance%20of%20Deep%20Learning%20Algorithms%20vs.%20Shallow%20Models%2C%20in%20Extreme%20Conditions%20-%20Some%20Empirical%20Studies",
-    image: imageDatabase["img_19"],
+    image: imageDatabase["pub-19"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -219,7 +219,7 @@ export const publications = [
     year: 2018,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=PosIX-GAN-%20Generating%20multiple%20poses%20using%20GAN%20for%20pose-invariant%20face%20recognition",
-    image: imageDatabase["img_20"],
+    image: imageDatabase["pub-20"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -230,7 +230,7 @@ export const publications = [
     year: 2012,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Reversible%20Data%20Encryption%20Algorithm",
-    image: imageDatabase["img_21"],
+    image: imageDatabase["pub-21"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -241,7 +241,7 @@ export const publications = [
     year: 2011,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Reversible%20masking-%20a%20novel%20fault-diagnosed",
-    image: imageDatabase["img_22"],
+    image: imageDatabase["pub-22"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -252,7 +252,7 @@ export const publications = [
     year: 2011,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Secure%20scan%20design%20with%20Isomorphic%20registers",
-    image: imageDatabase["img_23"],
+    image: imageDatabase["pub-23"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -263,7 +263,7 @@ export const publications = [
     year: 2020,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Semantic%20segmentation%20of%20microscopic%20neuroanatomical%20data%20by%20combining%20topological%20priors%20with%20encoder%E2%80%93decoder%20deep%20networks",
-    image: imageDatabase["img_24"],
+    image: imageDatabase["pub-24"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -274,7 +274,7 @@ export const publications = [
     year: 2025,
     isPreprint: true,
     link: "https://scholar.google.com/scholar?q=Skeletonization%20of%20neuronal%20processes%20using%20Discrete%20Morse%20techniques%20from%20computational%20topology",
-    image: imageDatabase["img_25"],
+    image: imageDatabase["pub-25"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -285,7 +285,7 @@ export const publications = [
     year: 2016,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Soft-Margin%20Learning%20for%20Multiple%20Feature-Kernel%20Combinations%20With%20Domain%20Adaptation%2C%20for%20Recognition%20in%20Surveillance%20Face%20Dataset%20",
-    image: imageDatabase["img_26"],
+    image: imageDatabase["pub-26"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -296,7 +296,7 @@ export const publications = [
     year: 2024,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Solving%20the%20where%20problem%20and%20quantifying%20geometric%20variation%20in%20neuroanatomy%20using%20generative%20diffeomorphic%20mapping",
-    image: imageDatabase["img_27"],
+    image: imageDatabase["pub-28"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -307,7 +307,7 @@ export const publications = [
     year: 2018,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=SpoofNET-%20Resolving%20Facial%20Makeup%20based%20Spoofs",
-    image: imageDatabase["img_28"],
+    image: imageDatabase["pub-29"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -318,7 +318,7 @@ export const publications = [
     year: 2025,
     isPreprint: true,
     link: "https://scholar.google.com/scholar?q=Survey%20of%20loss%20functions%20for%20training%20deep-learning%20models%20in%20computer%20vision%2C%20categorized%20based%20on%20tasks%2C%20metric-forms%20and%20learning%20paradigms",
-    image: imageDatabase["generic_img"],
+    image: imageDatabase["pub-30"],
     abstract: "Read the full paper for more details."
   },
 {
@@ -329,7 +329,7 @@ export const publications = [
     year: 2015,
     isPreprint: false,
     link: "https://scholar.google.com/scholar?q=Unsupervised%20method%20of%20domain%20adaptation%20on%20representation%20of%20discriminatory%20regions%20of%20the%20face%20image%20for%20surveillance%20face%20datasets",
-    image: imageDatabase["img_29"],
+    image: imageDatabase["pub-31"],
     abstract: "Read the full paper for more details."
   }
 
