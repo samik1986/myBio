@@ -180,7 +180,7 @@ export const githubProjects = [
   {
     id: 1,
     name: "3d-centroid-proofreader",
-    description: "",
+    description: "[Extracted 20 functions/classes across 2 files for research plug-and-play].",
     language: "Python",
     stars: 0,
     forks: 0,
@@ -207,7 +207,7 @@ export const githubProjects = [
   {
     id: 4,
     name: "Cropping_NZ",
-    description: "",
+    description: "[Extracted 27 functions/classes across 18 files for research plug-and-play].",
     language: "MATLAB",
     stars: 1,
     forks: 0,
@@ -216,7 +216,7 @@ export const githubProjects = [
   {
     id: 5,
     name: "cw_graph_tools",
-    description: "",
+    description: "[Extracted 13 functions/classes across 11 files for research plug-and-play].",
     language: "MATLAB",
     stars: 0,
     forks: 0,
@@ -225,7 +225,7 @@ export const githubProjects = [
   {
     id: 6,
     name: "DKCell",
-    description: "",
+    description: "[Extracted 296 functions/classes across 72 files for research plug-and-play].",
     language: "Python",
     stars: 1,
     forks: 1,
@@ -234,7 +234,7 @@ export const githubProjects = [
   {
     id: 7,
     name: "DM_2D",
-    description: "",
+    description: "[Extracted 185 functions/classes across 55 files for research plug-and-play].",
     language: "C++",
     stars: 1,
     forks: 0,
@@ -243,7 +243,7 @@ export const githubProjects = [
   {
     id: 8,
     name: "DM_3D",
-    description: "",
+    description: "[Extracted 282 functions/classes across 48 files for research plug-and-play].",
     language: "C++",
     stars: 1,
     forks: 0,
@@ -252,7 +252,7 @@ export const githubProjects = [
   {
     id: 9,
     name: "DM_Lucas",
-    description: "",
+    description: "[Extracted 364 functions/classes across 129 files for research plug-and-play].",
     language: "C++",
     stars: 0,
     forks: 0,
@@ -261,7 +261,7 @@ export const githubProjects = [
   {
     id: 10,
     name: "DM_MG",
-    description: "Morse GAN",
+    description: "Morse GAN [Extracted 14 functions/classes across 1 files for research plug-and-play].",
     language: "Python",
     stars: 0,
     forks: 0,
@@ -270,7 +270,7 @@ export const githubProjects = [
   {
     id: 11,
     name: "DM_net",
-    description: "",
+    description: "[Extracted 10111 functions/classes across 465 files for research plug-and-play].",
     language: "Python",
     stars: 0,
     forks: 0,
@@ -279,7 +279,7 @@ export const githubProjects = [
   {
     id: 12,
     name: "GFP-Cell-Detection",
-    description: "",
+    description: "[Extracted 47 functions/classes across 29 files for research plug-and-play].",
     language: "MATLAB",
     stars: 1,
     forks: 0,
@@ -315,7 +315,7 @@ export const githubProjects = [
   {
     id: 16,
     name: "HG2PD",
-    description: "",
+    description: "[Extracted 5043 functions/classes across 227 files for research plug-and-play].",
     language: "Python",
     stars: 0,
     forks: 0,
@@ -324,7 +324,7 @@ export const githubProjects = [
   {
     id: 17,
     name: "injDet",
-    description: "",
+    description: "[Extracted 7660 functions/classes across 333 files for research plug-and-play].",
     language: "Python",
     stars: 0,
     forks: 0,
@@ -342,7 +342,7 @@ export const githubProjects = [
   {
     id: 19,
     name: "makemore_Samik",
-    description: "",
+    description: "[Extracted 63 functions/classes across 2 files for research plug-and-play].",
     language: "Jupyter Notebook",
     stars: 0,
     forks: 0,
@@ -351,7 +351,7 @@ export const githubProjects = [
   {
     id: 20,
     name: "MakeUPMirror",
-    description: "",
+    description: "[Extracted 4 functions/classes across 1 files for research plug-and-play].",
     language: "Python",
     stars: 2,
     forks: 0,
@@ -360,7 +360,7 @@ export const githubProjects = [
   {
     id: 21,
     name: "Mediar_4_devBrain",
-    description: "",
+    description: "[Extracted 132 functions/classes across 23 files for research plug-and-play].",
     language: "Python",
     stars: 1,
     forks: 0,
@@ -369,7 +369,7 @@ export const githubProjects = [
   {
     id: 22,
     name: "ML_Semantic-Segmenation-2020",
-    description: "",
+    description: "[Extracted 21 functions/classes across 9 files for research plug-and-play].",
     language: "Python",
     stars: 0,
     forks: 0,
@@ -378,7 +378,7 @@ export const githubProjects = [
   {
     id: 23,
     name: "ML_Semantic_Segmenation_NMI",
-    description: "",
+    description: "[Extracted 1296 functions/classes across 123 files for research plug-and-play].",
     language: "Jupyter Notebook",
     stars: 20,
     forks: 5,
@@ -387,7 +387,7 @@ export const githubProjects = [
   {
     id: 24,
     name: "MoP_boundary",
-    description: "",
+    description: "[Extracted 5 functions/classes across 5 files for research plug-and-play].",
     language: "MATLAB",
     stars: 1,
     forks: 0,
@@ -414,7 +414,7 @@ export const githubProjects = [
   {
     id: 27,
     name: "MultiStreamCellSeg_4_devBrain",
-    description: "",
+    description: "[Extracted 668 functions/classes across 42 files for research plug-and-play].",
     language: "Python",
     stars: 1,
     forks: 0,
@@ -423,7 +423,7 @@ export const githubProjects = [
   {
     id: 28,
     name: "myBio",
-    description: "",
+    description: "[Extracted 11 functions/classes across 9 files for research plug-and-play].",
     language: "JavaScript",
     stars: 0,
     forks: 0,
@@ -432,7 +432,7 @@ export const githubProjects = [
   {
     id: 29,
     name: "Myelin-Conversion",
-    description: "",
+    description: "[Extracted 1 functions/classes across 1 files for research plug-and-play].",
     language: "MATLAB",
     stars: 1,
     forks: 0,
@@ -441,7 +441,7 @@ export const githubProjects = [
   {
     id: 30,
     name: "neetcode-gpt",
-    description: "GPT built from scratch — assembled from my NeetCode ML course submissions",
+    description: "GPT built from scratch — assembled from my NeetCode ML course submissions [Extracted 50 functions/classes across 19 files for research plug-and-play].",
     language: "Python",
     stars: 0,
     forks: 0,
@@ -450,7 +450,7 @@ export const githubProjects = [
   {
     id: 31,
     name: "neetcode-submissions-samik1986",
-    description: "My NeetCode.io problem submissions",
+    description: "My NeetCode.io problem submissions [Extracted 131 functions/classes across 60 files for research plug-and-play].",
     language: "Python",
     stars: 0,
     forks: 0,
@@ -486,7 +486,7 @@ export const githubProjects = [
   {
     id: 35,
     name: "siamDA",
-    description: "",
+    description: "[Extracted 10 functions/classes across 2 files for research plug-and-play].",
     language: "Python",
     stars: 0,
     forks: 0,
@@ -495,7 +495,7 @@ export const githubProjects = [
   {
     id: 36,
     name: "tf_lddmm",
-    description: "",
+    description: "[Extracted 2 functions/classes across 1 files for research plug-and-play].",
     language: "Python",
     stars: 0,
     forks: 0,
@@ -522,7 +522,7 @@ export const githubProjects = [
   {
     id: 39,
     name: "um1_3d_volume",
-    description: "",
+    description: "[Extracted 266 functions/classes across 111 files for research plug-and-play].",
     language: "JavaScript",
     stars: 0,
     forks: 0,
@@ -531,7 +531,7 @@ export const githubProjects = [
   {
     id: 40,
     name: "wiNN",
-    description: "Initial Commit",
+    description: "Initial Commit [Extracted 7568 functions/classes across 332 files for research plug-and-play].",
     language: "Python",
     stars: 1,
     forks: 0,
