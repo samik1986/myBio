@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageSquare, X, Send, Bot, User, Key } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { projectsData } from '../../data/projectsData';
+import { projectsData, githubProjects } from '../../data/projectsData';
 import { publications } from '../../data/publicationsData';
 import './GeminiAssistant.css';
 
@@ -35,6 +35,9 @@ ${projectsData.map(p => `- ${p.title || p.name}: ${p.description}`).join('\n')}
 
 Publications:
 ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
+
+GitHub Repos:
+${githubProjects.map(r => `- ${r.name} (${r.language})`).join('\n')}
 `;
   };
 
@@ -92,6 +95,8 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
   const uniqueProjCategories = [...new Set(projectsData.map(p => p.category).filter(Boolean))].sort();
   const uniqueProjTechs = [...new Set(projectsData.flatMap(p => p.technologies || []))].sort();
 
+  const uniqueRepoLanguages = [...new Set(githubProjects.map(r => r.language).filter(Boolean))].sort();
+
   const toggleFilter = (filter) => {
     setSelectedFilters(prev => 
       prev.includes(filter) ? prev.filter(f => f !== filter) : [...prev, filter]
@@ -100,7 +105,7 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
 
   const handleFilterSearch = () => {
     if (selectedFilters.length === 0) return;
-    const typeLabel = activeSearchType === 'pubs' ? 'publications' : 'projects';
+    const typeLabel = activeSearchType === 'pubs' ? 'publications' : activeSearchType === 'projects' ? 'projects' : 'github repositories';
     const query = `Find ${typeLabel} related to: ${selectedFilters.join(', ')}`;
     setActiveSearchType(null);
     setSelectedFilters([]);
@@ -167,6 +172,9 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
             </button>
             <button className="btn btn-outline" style={{ fontSize: '0.8rem', padding: '6px 12px', whiteSpace: 'nowrap' }} onClick={() => setActiveSearchType(activeSearchType === 'projects' ? null : 'projects')}>
               {activeSearchType === 'projects' ? '✕ Close Proj' : '⚡ Proj Search'}
+            </button>
+            <button className="btn btn-outline" style={{ fontSize: '0.8rem', padding: '6px 12px', whiteSpace: 'nowrap' }} onClick={() => setActiveSearchType(activeSearchType === 'repos' ? null : 'repos')}>
+              {activeSearchType === 'repos' ? '✕ Close Repos' : '⚡ Repo Search'}
             </button>
             <Link to="/github" className="btn btn-outline" style={{ fontSize: '0.8rem', padding: '6px 12px', whiteSpace: 'nowrap' }} onClick={() => setIsOpen(false)}>
               🔍 View GitHub Repos
@@ -269,6 +277,40 @@ ${publications.map(p => `- ${p.title} (${p.year})`).join('\n')}
             <p style={{ fontSize: '0.8rem', marginBottom: '6px', opacity: 0.8 }}>Filter by Technologies:</p>
             <div className="gemini-filter-row" style={{ display: 'flex', overflowX: 'auto', gap: '6px', marginBottom: '12px', paddingBottom: '4px' }}>
               {uniqueProjTechs.map(opt => (
+                <button 
+                  key={opt}
+                  type="button"
+                  onClick={() => toggleFilter(opt)}
+                  style={{ 
+                    fontSize: '0.75rem', padding: '4px 8px', borderRadius: '12px', border: '1px solid var(--accent-color)',
+                    background: selectedFilters.includes(opt) ? 'var(--accent-color)' : 'transparent',
+                    color: selectedFilters.includes(opt) ? '#fff' : 'inherit', cursor: 'pointer', transition: 'all 0.2s',
+                    whiteSpace: 'nowrap', flexShrink: 0
+                  }}
+                >
+                  {opt}
+                </button>
+              ))}
+            </div>
+
+            {selectedFilters.length > 0 && (
+              <button 
+                className="btn btn-primary" 
+                style={{ width: '100%', fontSize: '0.85rem', padding: '8px' }}
+                onClick={handleFilterSearch}
+              >
+                Search Selected ({selectedFilters.length})
+              </button>
+            )}
+          </div>
+        )}
+
+        {activeSearchType === 'repos' && (
+          <div className="gemini-filters-panel" style={{ padding: '0 16px 12px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+            
+            <p style={{ fontSize: '0.8rem', marginBottom: '6px', opacity: 0.8, marginTop: '8px' }}>Filter by Language:</p>
+            <div className="gemini-filter-row" style={{ display: 'flex', overflowX: 'auto', gap: '6px', marginBottom: '10px', paddingBottom: '4px' }}>
+              {uniqueRepoLanguages.map(opt => (
                 <button 
                   key={opt}
                   type="button"
