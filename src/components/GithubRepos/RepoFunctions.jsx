@@ -208,11 +208,6 @@ const RepoFunctions = () => {
                 
                 const fileSubtitle = (
                   <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-                    {isGpu && (
-                      <span style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#ecc94b', fontWeight: 'bold', fontSize: '0.85rem' }}>
-                        ⚡ GPU
-                      </span>
-                    )}
                     {updatedAt && (
                       <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                         <Clock size={12}/> {new Date(updatedAt).toLocaleDateString()}
@@ -225,7 +220,16 @@ const RepoFunctions = () => {
                   <Collapsible 
                     key={filepath} 
                     level={2} 
-                    title={displayFilepath} 
+                    title={
+                      <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        {displayFilepath}
+                        {isGpu && (
+                          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', color: '#ecc94b', backgroundColor: 'rgba(236,201,75,0.1)', padding: '2px 6px', borderRadius: '12px', fontSize: '0.7rem', fontWeight: 'bold' }}>
+                            ⚡ GPU
+                          </span>
+                        )}
+                      </span>
+                    }
                     icon={<FileCode size={20} color="var(--primary)" />}
                     subtitle={fileSubtitle}
                   >
