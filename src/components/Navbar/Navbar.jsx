@@ -32,13 +32,12 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="nav-menu">
           <Link to="/" className="nav-link">Home</Link>
-
           <Link to="/timeline" className="nav-link">Timeline</Link>
-          <Link to="/experience" className="nav-link">Experience</Link>
           <Link to="/projects" className="nav-link">Projects</Link>
-          <Link to="/publications" className="nav-link">Publications</Link>
-          <Link to="/education" className="nav-link">Education</Link>
           <Link to="/github" className="nav-link">GitHub Repos</Link>
+          <Link to="/publications" className="nav-link">Publications</Link>
+          <Link to="/experience" className="nav-link">Experience</Link>
+          <Link to="/education" className="nav-link">Education</Link>
         </div>
 
         <div className="nav-socials">
@@ -58,11 +57,11 @@ const Navbar = () => {
       {isOpen && (
         <div className="nav-mobile-menu glass">
           <Link to="/" className="nav-mobile-link">Home</Link>
-
           <Link to="/timeline" className="nav-mobile-link">Timeline</Link>
-          <Link to="/experience" className="nav-mobile-link">Experience</Link>
           <Link to="/projects" className="nav-mobile-link">Projects</Link>
+          <Link to="/github" className="nav-mobile-link">GitHub Repos</Link>
           <Link to="/publications" className="nav-mobile-link">Publications</Link>
+          <Link to="/experience" className="nav-mobile-link">Experience</Link>
           <Link to="/education" className="nav-mobile-link">Education</Link>
         </div>
       )}
