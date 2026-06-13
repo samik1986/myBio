@@ -874,5 +874,99 @@
       "size": 1911,
       "summary": "Handles model training routines and loops."
     }
+  },
+  "file_metadata": {
+    "evaluate.py": {
+      "summary": "Key capabilities: main",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "generate_mapping.py": {
+      "summary": "Key capabilities: public_paths_labeled, official_paths_labeled, official_paths_tuning, add_mapping_to_json, and more",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "main.py": {
+      "summary": "Key capabilities: _get_setups",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "predict.py": {
+      "summary": "Key capabilities: main",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "core\\BasePredictor.py": {
+      "summary": "Key capabilities: BasePredictor, conduct_prediction, write_pred_mask, _setups, and more",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "core\\BaseTrainer.py": {
+      "summary": "Key capabilities: BaseTrainer, train, _epoch_phase, _tuningset_evaluation, and more",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "core\\utils.py": {
+      "summary": "Key capabilities: print_learning_device, print_with_logging",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "core\\Baseline\\Predictor.py": {
+      "summary": "Key capabilities: Predictor, _inference, _post_process",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "core\\Baseline\\Trainer.py": {
+      "summary": "Key capabilities: Trainer, _epoch_phase, _post_process, _get_f1_metric",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "core\\Baseline\\utils.py": {
+      "summary": "Key capabilities: identify_instances_from_classmap, create_interior_onehot",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "core\\MEDIAR\\EnsemblePredictor.py": {
+      "summary": "Key capabilities: EnsemblePredictor, _inference",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "core\\MEDIAR\\Predictor.py": {
+      "summary": "Key capabilities: Predictor, hflip, vflip, DualTransform, and more",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "core\\MEDIAR\\Trainer.py": {
+      "summary": "Key capabilities: Trainer, mediar_criterion, _epoch_phase, _inference, and more",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "core\\MEDIAR\\utils.py": {
+      "summary": "Key capabilities: labels_to_flows, compute_masks, _extend_centers_gpu, diameters, and more",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "train_tools\\measures.py": {
+      "summary": "Key capabilities: evaluate_f1_score_cellseg, evaluate_f1_score, _remove_boundary_cells, get_confusion, and more",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "train_tools\\utils.py": {
+      "summary": "Key capabilities: ConfLoader, directory_setter, random_seeder, pprint_config, and more",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "train_tools\\data_utils\\datasetter.py": {
+      "summary": "Key capabilities: get_dataloaders_labeled, get_dataloaders_public, get_dataloaders_unlabeled, get_dataloaders_unlabeled_psuedo",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "train_tools\\data_utils\\transforms.py": {
+      "summary": "Key capabilities: get_pred_transforms",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "train_tools\\data_utils\\utils.py": {
+      "summary": "Key capabilities: split_train_valid, path_decoder",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "train_tools\\data_utils\\custom\\CellAware.py": {
+      "summary": "Key capabilities: BoundaryExclusion, IntensityDiversification, __call__, __call__",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "train_tools\\data_utils\\custom\\LoadImage.py": {
+      "summary": "Key capabilities: CustomLoadImage, CustomLoadImaged, UnifiedITKReader, verify_suffix, and more",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "train_tools\\data_utils\\custom\\NormalizeImage.py": {
+      "summary": "Key capabilities: CustomNormalizeImage, CustomNormalizeImaged, _normalize, __call__, and more",
+      "updated_at": "2025-08-11T19:55:38Z"
+    },
+    "train_tools\\models\\MEDIARFormer.py": {
+      "summary": "Key capabilities: MEDIARFormer, DeepSegmentationHead, _convert_activations, forward",
+      "updated_at": "2025-08-11T19:55:38Z"
+    }
   }
 }

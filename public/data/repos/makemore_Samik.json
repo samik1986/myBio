@@ -401,5 +401,15 @@
       "size": 57668,
       "summary": "Defines deep learning model architectures or networks."
     }
+  },
+  "file_metadata": {
+    "bigram_samik.py": {
+      "summary": "Key capabilities: get_batch, estimate_loss, BigramLanguageModel, forward, and more",
+      "updated_at": "2025-09-24T21:24:02Z"
+    },
+    "makemore.py": {
+      "summary": "Key capabilities: ModelConfig, NewGELU, CausalSelfAttention, Block, and more",
+      "updated_at": "2025-09-19T21:57:59Z"
+    }
   }
 }

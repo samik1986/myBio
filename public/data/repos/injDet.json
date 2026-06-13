@@ -38998,5 +38998,1339 @@
       "size": 7115,
       "summary": "Core application logic or configuration."
     }
+  },
+  "file_metadata": {
+    "venv\\lib\\python2.7\\site.py": {
+      "summary": "Key capabilities: makepath, abs__file__, removeduppaths, addbuilddir, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\distutils\\__init__.py": {
+      "summary": "Key capabilities: find_config_files, sysconfig_get_python_inc, sysconfig_get_python_lib, sysconfig_get_config_vars, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\build_env.py": {
+      "summary": "Key capabilities: _Prefix, BuildEnvironment, NoOpBuildEnvironment, __enter__, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\cache.py": {
+      "summary": "Key capabilities: Cache, SimpleWheelCache, EphemWheelCache, WheelCache, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\configuration.py": {
+      "summary": "Key capabilities: _normalize_name, _disassemble_key, Configuration, load, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\download.py": {
+      "summary": "Key capabilities: user_agent, MultiDomainBasicAuth, LocalFSAdapter, SafeFileCache, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\exceptions.py": {
+      "summary": "Key capabilities: PipError, ConfigurationError, InstallationError, UninstallationError, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\index.py": {
+      "summary": "Key capabilities: _match_vcs_scheme, _is_url_like_archive, _NotHTML, _ensure_html_header, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\locations.py": {
+      "summary": "Key capabilities: write_delete_marker_file, running_under_virtualenv, virtualenv_no_global, distutils_scheme",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\pep425tags.py": {
+      "summary": "Key capabilities: get_config_var, get_abbr_impl, get_impl_ver, get_impl_version_info, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\pyproject.py": {
+      "summary": "Key capabilities: _is_list_of_str, make_pyproject_path, load_pyproject_toml",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\resolve.py": {
+      "summary": "Key capabilities: Resolver, resolve, _is_upgrade_allowed, _set_req_to_reinstall, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\wheel.py": {
+      "summary": "Key capabilities: normpath, rehash, open_for_csv, replace_python_tag, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\__init__.py": {
+      "summary": "Key capabilities: main",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\cli\\autocompletion.py": {
+      "summary": "Key capabilities: autocomplete, get_path_completion_type, auto_complete_paths",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\cli\\base_command.py": {
+      "summary": "Key capabilities: Command, RequirementCommand, run, _build_session, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\cli\\cmdoptions.py": {
+      "summary": "Key capabilities: raise_option_error, make_option_group, check_install_build_global, check_dist_restriction, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\cli\\main_parser.py": {
+      "summary": "Key capabilities: create_main_parser, parse_command",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\cli\\parser.py": {
+      "summary": "Key capabilities: PrettyHelpFormatter, UpdatingDefaultsHelpFormatter, CustomOptionParser, ConfigOptionParser, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\commands\\check.py": {
+      "summary": "Key capabilities: CheckCommand, run",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\commands\\completion.py": {
+      "summary": "Key capabilities: CompletionCommand, run",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\commands\\configuration.py": {
+      "summary": "Key capabilities: ConfigurationCommand, run, _determine_file, list_values, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\commands\\download.py": {
+      "summary": "Key capabilities: DownloadCommand, run",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\commands\\freeze.py": {
+      "summary": "Key capabilities: FreezeCommand, run",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\commands\\hash.py": {
+      "summary": "Key capabilities: HashCommand, _hash_of_file, run",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\commands\\help.py": {
+      "summary": "Key capabilities: HelpCommand, run",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\commands\\install.py": {
+      "summary": "Key capabilities: InstallCommand, get_lib_location_guesses, create_env_error_message, run, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\commands\\list.py": {
+      "summary": "Key capabilities: ListCommand, tabulate, format_for_columns, format_for_json, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\commands\\search.py": {
+      "summary": "Key capabilities: SearchCommand, transform_hits, print_results, highest_version, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\commands\\show.py": {
+      "summary": "Key capabilities: ShowCommand, search_packages_info, print_results, run",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\commands\\uninstall.py": {
+      "summary": "Key capabilities: UninstallCommand, run",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\commands\\wheel.py": {
+      "summary": "Key capabilities: WheelCommand, run",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\commands\\__init__.py": {
+      "summary": "Key capabilities: get_summaries, get_similar_commands, _sort_commands, keyfn",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\models\\candidate.py": {
+      "summary": "Key capabilities: InstallationCandidate, __repr__",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\models\\format_control.py": {
+      "summary": "Key capabilities: FormatControl, __eq__, __ne__, __repr__, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\models\\index.py": {
+      "summary": "Key capabilities: PackageIndex, _url_for_path",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\models\\link.py": {
+      "summary": "Key capabilities: Link, __str__, __repr__, filename, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\operations\\check.py": {
+      "summary": "Key capabilities: create_package_set_from_installed, check_package_set, check_install_conflicts, _simulate_installation_of, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\operations\\freeze.py": {
+      "summary": "Key capabilities: freeze, get_requirement_info, FrozenRequirement, from_dist, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\operations\\prepare.py": {
+      "summary": "Key capabilities: make_abstract_dist, DistAbstraction, IsWheel, IsSDist, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\req\\constructors.py": {
+      "summary": "Key capabilities: _strip_extras, parse_editable, deduce_helpful_msg, install_req_from_editable, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\req\\req_file.py": {
+      "summary": "Key capabilities: parse_requirements, preprocess, process_line, break_args_options, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\req\\req_install.py": {
+      "summary": "Key capabilities: InstallRequirement, __str__, __repr__, populate_link, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\req\\req_set.py": {
+      "summary": "Key capabilities: RequirementSet, __str__, __repr__, add_requirement, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\req\\req_tracker.py": {
+      "summary": "Key capabilities: RequirementTracker, __enter__, __exit__, _entry_path, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\req\\req_uninstall.py": {
+      "summary": "Key capabilities: _script_names, _unique, uninstallation_paths, compact, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\req\\__init__.py": {
+      "summary": "Key capabilities: install_given_reqs",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\utils\\appdirs.py": {
+      "summary": "Key capabilities: user_cache_dir, user_data_dir, user_config_dir, site_config_dirs, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\utils\\compat.py": {
+      "summary": "Key capabilities: console_to_str, get_path_uid, expanduser, samefile, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\utils\\deprecation.py": {
+      "summary": "Key capabilities: PipDeprecationWarning, _showwarning, install_warning_logger, deprecated",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\utils\\encoding.py": {
+      "summary": "Key capabilities: auto_decode",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\utils\\filesystem.py": {
+      "summary": "Key capabilities: check_path_owner",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\utils\\glibc.py": {
+      "summary": "Key capabilities: glibc_version_string, check_glibc_version, have_compatible_glibc, libc_ver",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\utils\\hashes.py": {
+      "summary": "Key capabilities: Hashes, MissingHashes, check_against_chunks, _raise, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\utils\\logging.py": {
+      "summary": "Key capabilities: BrokenStdoutLoggingError, indent_log, get_indentation, IndentingFormatter, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\utils\\misc.py": {
+      "summary": "Key capabilities: ensure_dir, get_prog, rmtree, rmtree_errorhandler, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\utils\\models.py": {
+      "summary": "Key capabilities: KeyBasedCompareMixin, __hash__, __lt__, __le__, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\utils\\outdated.py": {
+      "summary": "Key capabilities: SelfCheckState, was_installed_by_pip, pip_version_check, save",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\utils\\packaging.py": {
+      "summary": "Key capabilities: check_requires_python, get_metadata, check_dist_requires_python, get_installer",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\utils\\temp_dir.py": {
+      "summary": "Key capabilities: TempDirectory, AdjacentTempDirectory, __repr__, __enter__, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\utils\\ui.py": {
+      "summary": "Key capabilities: _select_progress_class, InterruptibleMixin, SilentBar, BlueEmojiBar, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\vcs\\bazaar.py": {
+      "summary": "Key capabilities: Bazaar, get_base_rev_args, export, fetch_new, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\vcs\\git.py": {
+      "summary": "Key capabilities: looks_like_hash, Git, get_base_rev_args, get_git_version, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\vcs\\mercurial.py": {
+      "summary": "Key capabilities: Mercurial, get_base_rev_args, export, fetch_new, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\vcs\\subversion.py": {
+      "summary": "Key capabilities: Subversion, get_base_rev_args, export, fetch_new, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_internal\\vcs\\__init__.py": {
+      "summary": "Key capabilities: RemoteNotFoundError, RevOptions, VcsSupport, VersionControl, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\appdirs.py": {
+      "summary": "Key capabilities: user_data_dir, site_data_dir, user_config_dir, site_config_dir, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distro.py": {
+      "summary": "Key capabilities: linux_distribution, id, name, version, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\ipaddress.py": {
+      "summary": "Key capabilities: _compat_to_bytes, _compat_range, _TotalOrderingMixin, AddressValueError, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\pyparsing.py": {
+      "summary": "Key capabilities: _xml_escape, ParseBaseException, ParseException, ParseFatalException, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\retrying.py": {
+      "summary": "Key capabilities: retry, Retrying, Attempt, RetryError, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\six.py": {
+      "summary": "Key capabilities: _add_doc, _import_module, _LazyDescr, MovedModule, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\__init__.py": {
+      "summary": "Key capabilities: vendored",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\cachecontrol\\adapter.py": {
+      "summary": "Key capabilities: CacheControlAdapter, send, build_response, close, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\cachecontrol\\cache.py": {
+      "summary": "Key capabilities: BaseCache, DictCache, get, set, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\cachecontrol\\controller.py": {
+      "summary": "Key capabilities: parse_uri, CacheController, _urlnorm, cache_url, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\cachecontrol\\filewrapper.py": {
+      "summary": "Key capabilities: CallbackFileWrapper, __getattr__, __is_fp_closed, _close, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\cachecontrol\\heuristics.py": {
+      "summary": "Key capabilities: expire_after, datetime_to_header, BaseHeuristic, OneDayCache, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\cachecontrol\\serialize.py": {
+      "summary": "Key capabilities: _b64_decode_bytes, _b64_decode_str, Serializer, dumps, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\cachecontrol\\wrapper.py": {
+      "summary": "Key capabilities: CacheControl",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\cachecontrol\\_cmd.py": {
+      "summary": "Key capabilities: setup_logging, get_session, get_args",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\cachecontrol\\caches\\file_cache.py": {
+      "summary": "Key capabilities: _secure_open_write, FileCache, url_to_file_path, encode, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\cachecontrol\\caches\\redis_cache.py": {
+      "summary": "Key capabilities: RedisCache, get, set, delete, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\certifi\\core.py": {
+      "summary": "Key capabilities: where",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\big5prober.py": {
+      "summary": "Key capabilities: Big5Prober, charset_name, language",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\chardistribution.py": {
+      "summary": "Key capabilities: CharDistributionAnalysis, EUCTWDistributionAnalysis, EUCKRDistributionAnalysis, GB2312DistributionAnalysis, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\charsetgroupprober.py": {
+      "summary": "Key capabilities: CharSetGroupProber, reset, charset_name, language, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\charsetprober.py": {
+      "summary": "Key capabilities: CharSetProber, reset, charset_name, feed, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\codingstatemachine.py": {
+      "summary": "Key capabilities: CodingStateMachine, reset, next_state, get_current_charlen, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\cp949prober.py": {
+      "summary": "Key capabilities: CP949Prober, charset_name, language",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\enums.py": {
+      "summary": "Key capabilities: InputState, LanguageFilter, ProbingState, MachineState, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\escprober.py": {
+      "summary": "Key capabilities: EscCharSetProber, reset, charset_name, language, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\eucjpprober.py": {
+      "summary": "Key capabilities: EUCJPProber, reset, charset_name, language, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\euckrprober.py": {
+      "summary": "Key capabilities: EUCKRProber, charset_name, language",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\euctwprober.py": {
+      "summary": "Key capabilities: EUCTWProber, charset_name, language",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\gb2312prober.py": {
+      "summary": "Key capabilities: GB2312Prober, charset_name, language",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\hebrewprober.py": {
+      "summary": "Key capabilities: HebrewProber, reset, set_model_probers, is_final, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\jpcntx.py": {
+      "summary": "Key capabilities: JapaneseContextAnalysis, SJISContextAnalysis, EUCJPContextAnalysis, reset, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\latin1prober.py": {
+      "summary": "Key capabilities: Latin1Prober, reset, charset_name, language, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\mbcharsetprober.py": {
+      "summary": "Key capabilities: MultiByteCharSetProber, reset, charset_name, language, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\mbcsgroupprober.py": {
+      "summary": "Key capabilities: MBCSGroupProber",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\sbcharsetprober.py": {
+      "summary": "Key capabilities: SingleByteCharSetProber, reset, charset_name, language, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\sbcsgroupprober.py": {
+      "summary": "Key capabilities: SBCSGroupProber",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\sjisprober.py": {
+      "summary": "Key capabilities: SJISProber, reset, charset_name, language, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\universaldetector.py": {
+      "summary": "Key capabilities: UniversalDetector, reset, feed, close",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\utf8prober.py": {
+      "summary": "Key capabilities: UTF8Prober, reset, charset_name, language, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\__init__.py": {
+      "summary": "Key capabilities: detect",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\chardet\\cli\\chardetect.py": {
+      "summary": "Key capabilities: description_of",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\colorama\\ansi.py": {
+      "summary": "Key capabilities: code_to_chars, set_title, clear_screen, clear_line, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\colorama\\ansitowin32.py": {
+      "summary": "Key capabilities: StreamWrapper, AnsiToWin32, __getattr__, __enter__, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\colorama\\initialise.py": {
+      "summary": "Key capabilities: reset_all, init, deinit, colorama_text, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\colorama\\win32.py": {
+      "summary": "Key capabilities: CONSOLE_SCREEN_BUFFER_INFO, _winapi_test, winapi_test, GetConsoleScreenBufferInfo, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\colorama\\winterm.py": {
+      "summary": "Key capabilities: WinColor, WinStyle, WinTerm, get_attrs, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\compat.py": {
+      "summary": "Key capabilities: quote, splituser, ZipExtFile, ZipFile, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\database.py": {
+      "summary": "Key capabilities: _Cache, DistributionPath, Distribution, BaseInstalledDistribution, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\index.py": {
+      "summary": "Key capabilities: PackageIndex, _get_pypirc_command, read_configuration, save_configuration, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\locators.py": {
+      "summary": "Key capabilities: get_all_distribution_names, RedirectHandler, Locator, PyPIRPCLocator, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\manifest.py": {
+      "summary": "Key capabilities: Manifest, findall, add, add_many, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\markers.py": {
+      "summary": "Key capabilities: _is_literal, Evaluator, default_context, interpret, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\metadata.py": {
+      "summary": "Key capabilities: MetadataMissingError, MetadataConflictError, MetadataUnrecognizedVersionError, MetadataInvalidError, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\resources.py": {
+      "summary": "Key capabilities: ResourceCache, ResourceBase, Resource, ResourceContainer, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\scripts.py": {
+      "summary": "Key capabilities: _enquote_executable, ScriptMaker, _get_alternate_executable, _build_shebang, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\util.py": {
+      "summary": "Key capabilities: parse_marker, parse_requirement, get_resources_dests, in_venv, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\version.py": {
+      "summary": "Key capabilities: UnsupportedVersionError, Version, Matcher, _pep_440_key, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\wheel.py": {
+      "summary": "Key capabilities: Mounter, Wheel, compatible_tags, is_compatible, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\__init__.py": {
+      "summary": "Key capabilities: DistlibException, NullHandler, handle, emit, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\_backport\\misc.py": {
+      "summary": "Key capabilities: cache_from_source, callable, fsencode",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\_backport\\shutil.py": {
+      "summary": "Key capabilities: Error, SpecialFileError, ExecError, ReadError, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\_backport\\sysconfig.py": {
+      "summary": "Key capabilities: _safe_realpath, is_python_build, _ensure_cfg_read, _expand_globals, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\distlib\\_backport\\tarfile.py": {
+      "summary": "Key capabilities: stn, nts, nti, itn, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\constants.py": {
+      "summary": "Key capabilities: DataLossWarning, _ReparseException",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\html5parser.py": {
+      "summary": "Key capabilities: parse, parseFragment, method_decorator_metaclass, HTMLParser, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\serializer.py": {
+      "summary": "Key capabilities: htmlentityreplace_errors, serialize, HTMLSerializer, SerializeError, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\_ihatexml.py": {
+      "summary": "Key capabilities: charStringToList, normaliseCharList, missingRanges, listToRegexpStr, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\_inputstream.py": {
+      "summary": "Key capabilities: BufferedStream, HTMLInputStream, HTMLUnicodeInputStream, HTMLBinaryInputStream, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\_tokenizer.py": {
+      "summary": "Key capabilities: HTMLTokenizer, __iter__, consumeNumberEntity, consumeEntity, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\_utils.py": {
+      "summary": "Key capabilities: MethodDispatcher, isSurrogatePair, surrogatePairToCodepoint, moduleFactoryFactory, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\filters\\alphabeticalattributes.py": {
+      "summary": "Key capabilities: _attr_key, Filter, __iter__",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\filters\\base.py": {
+      "summary": "Key capabilities: Filter, __iter__, __getattr__",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\filters\\inject_meta_charset.py": {
+      "summary": "Key capabilities: Filter, __iter__",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\filters\\lint.py": {
+      "summary": "Key capabilities: Filter, __iter__",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\filters\\optionaltags.py": {
+      "summary": "Key capabilities: Filter, slider, __iter__, is_optional_start, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\filters\\sanitizer.py": {
+      "summary": "Key capabilities: Filter, __iter__, sanitize_token, allowed_token, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\filters\\whitespace.py": {
+      "summary": "Key capabilities: Filter, collapse_spaces, __iter__",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\treeadapters\\genshi.py": {
+      "summary": "Key capabilities: to_genshi",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\treeadapters\\sax.py": {
+      "summary": "Key capabilities: to_sax",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\treebuilders\\base.py": {
+      "summary": "Key capabilities: Node, ActiveFormattingElements, TreeBuilder, __str__, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\treebuilders\\dom.py": {
+      "summary": "Key capabilities: getDomBuilder, AttrList, NodeBuilder, TreeBuilder, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\treebuilders\\etree.py": {
+      "summary": "Key capabilities: getETreeBuilder, Element, Comment, DocumentType, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\treebuilders\\etree_lxml.py": {
+      "summary": "Key capabilities: DocumentType, Document, testSerializer, tostring, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\treebuilders\\__init__.py": {
+      "summary": "Key capabilities: getTreeBuilder",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\treewalkers\\base.py": {
+      "summary": "Key capabilities: TreeWalker, NonRecursiveTreeWalker, __iter__, error, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\treewalkers\\dom.py": {
+      "summary": "Key capabilities: TreeWalker, getNodeDetails, getFirstChild, getNextSibling, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\treewalkers\\etree.py": {
+      "summary": "Key capabilities: getETreeBuilder, TreeWalker, getNodeDetails, getFirstChild, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\treewalkers\\etree_lxml.py": {
+      "summary": "Key capabilities: ensure_str, Root, Doctype, FragmentRoot, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\treewalkers\\genshi.py": {
+      "summary": "Key capabilities: TreeWalker, __iter__, tokens",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\treewalkers\\__init__.py": {
+      "summary": "Key capabilities: getTreeWalker, concatenateCharacterTokens, pprint",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\_trie\\datrie.py": {
+      "summary": "Key capabilities: Trie, __contains__, __len__, __iter__, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\_trie\\py.py": {
+      "summary": "Key capabilities: Trie, __contains__, __len__, __iter__, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\html5lib\\_trie\\_base.py": {
+      "summary": "Key capabilities: Trie, keys, has_keys_with_prefix, longest_prefix, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\idna\\codec.py": {
+      "summary": "Key capabilities: Codec, IncrementalEncoder, IncrementalDecoder, StreamWriter, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\idna\\compat.py": {
+      "summary": "Key capabilities: ToASCII, ToUnicode, nameprep",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\idna\\core.py": {
+      "summary": "Key capabilities: IDNAError, IDNABidiError, InvalidCodepoint, InvalidCodepointContext, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\idna\\intranges.py": {
+      "summary": "Key capabilities: intranges_from_list, _encode_range, _decode_range, intranges_contain",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\idna\\uts46data.py": {
+      "summary": "Key capabilities: _seg_0, _seg_1, _seg_2, _seg_3, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\lockfile\\linklockfile.py": {
+      "summary": "Key capabilities: LinkLockFile, acquire, release, is_locked, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\lockfile\\mkdirlockfile.py": {
+      "summary": "Key capabilities: MkdirLockFile, acquire, release, is_locked, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\lockfile\\pidlockfile.py": {
+      "summary": "Key capabilities: PIDLockFile, read_pid_from_pidfile, write_pid_to_pidfile, remove_existing_pidfile, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\lockfile\\sqlitelockfile.py": {
+      "summary": "Key capabilities: SQLiteLockFile, acquire, release, _who_is_locking, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\lockfile\\symlinklockfile.py": {
+      "summary": "Key capabilities: SymlinkLockFile, acquire, release, is_locked, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\lockfile\\__init__.py": {
+      "summary": "Key capabilities: Error, LockError, LockTimeout, AlreadyLocked, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\msgpack\\exceptions.py": {
+      "summary": "Key capabilities: UnpackException, BufferFull, OutOfData, UnpackValueError, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\msgpack\\fallback.py": {
+      "summary": "Key capabilities: _check_type_strict, _get_data_from_buffer, unpack, unpackb, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\msgpack\\__init__.py": {
+      "summary": "Key capabilities: ExtType, pack, packb, unpack, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\packaging\\markers.py": {
+      "summary": "Key capabilities: InvalidMarker, UndefinedComparison, UndefinedEnvironmentName, Node, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\packaging\\requirements.py": {
+      "summary": "Key capabilities: InvalidRequirement, Requirement, __str__, __repr__",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\packaging\\specifiers.py": {
+      "summary": "Key capabilities: InvalidSpecifier, BaseSpecifier, _IndividualSpecifier, LegacySpecifier, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\packaging\\utils.py": {
+      "summary": "Key capabilities: canonicalize_name, canonicalize_version",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\packaging\\version.py": {
+      "summary": "Key capabilities: parse, InvalidVersion, _BaseVersion, LegacyVersion, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\packaging\\_compat.py": {
+      "summary": "Key capabilities: with_metaclass, metaclass, __new__",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\packaging\\_structures.py": {
+      "summary": "Key capabilities: Infinity, NegativeInfinity, __repr__, __hash__, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\pep517\\build.py": {
+      "summary": "Key capabilities: tempdir, _do_build, mkdir_p, build",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\pep517\\check.py": {
+      "summary": "Key capabilities: check_build_sdist, check_build_wheel, check, ansi",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\pep517\\colorlog.py": {
+      "summary": "Key capabilities: _stderr_supports_color, LogFormatter, enable_colourful_output, formatMessage",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\pep517\\compat.py": {
+      "summary": "Key capabilities: write_json, read_json, write_json, read_json",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\pep517\\envbuild.py": {
+      "summary": "Key capabilities: _load_pyproject, BuildEnvironment, build_wheel, build_sdist, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\pep517\\wrappers.py": {
+      "summary": "Key capabilities: tempdir, BackendUnavailable, UnsupportedOperation, default_subprocess_runner, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\pep517\\_in_process.py": {
+      "summary": "Key capabilities: BackendUnavailable, _build_backend, get_requires_for_build_wheel, prepare_metadata_for_build_wheel, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\pkg_resources\\py31compat.py": {
+      "summary": "Key capabilities: _makedirs_31",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\pkg_resources\\__init__.py": {
+      "summary": "Key capabilities: PEP440Warning, parse_version, _declare_state, __getstate__, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\progress\\bar.py": {
+      "summary": "Key capabilities: Bar, ChargingBar, FillingSquaresBar, FillingCirclesBar, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\progress\\counter.py": {
+      "summary": "Key capabilities: Counter, Countdown, Stack, Pie, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\progress\\helpers.py": {
+      "summary": "Key capabilities: WriteMixin, WritelnMixin, SigIntMixin, write, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\progress\\spinner.py": {
+      "summary": "Key capabilities: Spinner, PieSpinner, MoonSpinner, LineSpinner, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\progress\\__init__.py": {
+      "summary": "Key capabilities: Infinite, Progress, __getitem__, elapsed, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\pytoml\\core.py": {
+      "summary": "Key capabilities: TomlError, __str__, __repr__",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\pytoml\\parser.py": {
+      "summary": "Key capabilities: load, loads, _Source, _p_ews, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\pytoml\\test.py": {
+      "summary": "Key capabilities: translate_to_test",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\pytoml\\utils.py": {
+      "summary": "Key capabilities: parse_rfc3339, parse_rfc3339_re, format_rfc3339, _TimeZone, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\pytoml\\writer.py": {
+      "summary": "Key capabilities: dumps, _escape_string, _escape_id, _format_value, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\requests\\adapters.py": {
+      "summary": "Key capabilities: BaseAdapter, HTTPAdapter, send, close, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\requests\\api.py": {
+      "summary": "Key capabilities: request, get, options, head, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\requests\\auth.py": {
+      "summary": "Key capabilities: _basic_auth_str, AuthBase, HTTPBasicAuth, HTTPProxyAuth, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\requests\\cookies.py": {
+      "summary": "Key capabilities: MockRequest, MockResponse, extract_cookies_to_jar, get_cookie_header, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\requests\\exceptions.py": {
+      "summary": "Key capabilities: RequestException, HTTPError, ConnectionError, ProxyError, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\requests\\help.py": {
+      "summary": "Key capabilities: _implementation, info",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\requests\\hooks.py": {
+      "summary": "Key capabilities: default_hooks, dispatch_hook",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\requests\\models.py": {
+      "summary": "Key capabilities: RequestEncodingMixin, RequestHooksMixin, Request, PreparedRequest, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\requests\\sessions.py": {
+      "summary": "Key capabilities: merge_setting, merge_hooks, SessionRedirectMixin, Session, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\requests\\status_codes.py": {
+      "summary": "Key capabilities: _init, doc",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\requests\\structures.py": {
+      "summary": "Key capabilities: CaseInsensitiveDict, LookupDict, __setitem__, __getitem__, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\requests\\utils.py": {
+      "summary": "Key capabilities: dict_to_sequence, super_len, get_netrc_auth, guess_filename, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\requests\\_internal_utils.py": {
+      "summary": "Key capabilities: to_native_string, unicode_is_ascii",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\requests\\__init__.py": {
+      "summary": "Key capabilities: check_compatibility, _check_cryptography",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\connection.py": {
+      "summary": "Key capabilities: DummyConnection, HTTPConnection, HTTPSConnection, VerifiedHTTPSConnection, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\connectionpool.py": {
+      "summary": "Key capabilities: ConnectionPool, HTTPConnectionPool, HTTPSConnectionPool, connection_from_url, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\exceptions.py": {
+      "summary": "Key capabilities: HTTPError, HTTPWarning, PoolError, RequestError, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\fields.py": {
+      "summary": "Key capabilities: guess_content_type, format_header_param, RequestField, from_tuples, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\filepost.py": {
+      "summary": "Key capabilities: choose_boundary, iter_field_objects, iter_fields, encode_multipart_formdata",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\poolmanager.py": {
+      "summary": "Key capabilities: _default_key_normalizer, PoolManager, ProxyManager, proxy_from_url, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\request.py": {
+      "summary": "Key capabilities: RequestMethods, urlopen, request, request_encode_url, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\response.py": {
+      "summary": "Key capabilities: DeflateDecoder, GzipDecoderState, GzipDecoder, MultiDecoder, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\_collections.py": {
+      "summary": "Key capabilities: RecentlyUsedContainer, HTTPHeaderDict, __getitem__, __setitem__, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\__init__.py": {
+      "summary": "Key capabilities: add_stderr_logger, disable_warnings",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\contrib\\appengine.py": {
+      "summary": "Key capabilities: AppEnginePlatformWarning, AppEnginePlatformError, AppEngineManager, __enter__, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\contrib\\ntlmpool.py": {
+      "summary": "Key capabilities: NTLMConnectionPool, _new_conn, urlopen",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\contrib\\pyopenssl.py": {
+      "summary": "Key capabilities: inject_into_urllib3, extract_from_urllib3, _validate_dependencies_met, _dnsname_to_stdlib, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\contrib\\securetransport.py": {
+      "summary": "Key capabilities: inject_into_urllib3, extract_from_urllib3, _read_callback, _write_callback, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\contrib\\socks.py": {
+      "summary": "Key capabilities: SOCKSConnection, SOCKSHTTPSConnection, SOCKSHTTPConnectionPool, SOCKSHTTPSConnectionPool, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\contrib\\_appengine_environ.py": {
+      "summary": "Key capabilities: is_appengine, is_appengine_sandbox, is_local_appengine, is_prod_appengine, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\contrib\\_securetransport\\bindings.py": {
+      "summary": "Key capabilities: CFConst, SecurityConst",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\contrib\\_securetransport\\low_level.py": {
+      "summary": "Key capabilities: _cf_data_from_bytes, _cf_dictionary_from_tuples, _cf_string_to_unicode, _assert_no_error, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\packages\\six.py": {
+      "summary": "Key capabilities: _add_doc, _import_module, _LazyDescr, MovedModule, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\packages\\backports\\makefile.py": {
+      "summary": "Key capabilities: backport_makefile",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\packages\\ssl_match_hostname\\_implementation.py": {
+      "summary": "Key capabilities: CertificateError, _dnsname_match, _to_unicode, _ipaddress_match, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\util\\connection.py": {
+      "summary": "Key capabilities: is_connection_dropped, create_connection, _set_socket_options, allowed_gai_family, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\util\\queue.py": {
+      "summary": "Key capabilities: LifoQueue, _init, _qsize, _put, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\util\\request.py": {
+      "summary": "Key capabilities: make_headers, set_file_position, rewind_body",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\util\\response.py": {
+      "summary": "Key capabilities: is_fp_closed, assert_header_parsing, is_response_to_head",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\util\\retry.py": {
+      "summary": "Key capabilities: Retry, new, from_int, get_backoff_time, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\util\\ssl_.py": {
+      "summary": "Key capabilities: _const_compare_digest_backport, assert_fingerprint, resolve_cert_reqs, resolve_ssl_version, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\util\\timeout.py": {
+      "summary": "Key capabilities: Timeout, __str__, _validate_timeout, from_float, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\util\\url.py": {
+      "summary": "Key capabilities: Url, split_first, parse_url, get_host, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\urllib3\\util\\wait.py": {
+      "summary": "Key capabilities: NoWayToWaitForSocketError, select_wait_for_socket, poll_wait_for_socket, null_wait_for_socket, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\webencodings\\mklabels.py": {
+      "summary": "Key capabilities: assert_lower, generate",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\webencodings\\tests.py": {
+      "summary": "Key capabilities: assert_raises, test_labels, test_all_labels, test_invalid_label, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\webencodings\\x_user_defined.py": {
+      "summary": "Key capabilities: Codec, IncrementalEncoder, IncrementalDecoder, StreamWriter, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pip\\_vendor\\webencodings\\__init__.py": {
+      "summary": "Key capabilities: ascii_lower, lookup, _get_encoding, Encoding, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pkg_resources\\py31compat.py": {
+      "summary": "Key capabilities: _makedirs_31",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pkg_resources\\__init__.py": {
+      "summary": "Key capabilities: PEP440Warning, parse_version, _declare_state, __getstate__, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pkg_resources\\extern\\__init__.py": {
+      "summary": "Key capabilities: VendorImporter, search_path, find_module, load_module, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pkg_resources\\_vendor\\appdirs.py": {
+      "summary": "Key capabilities: user_data_dir, site_data_dir, user_config_dir, site_config_dir, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pkg_resources\\_vendor\\pyparsing.py": {
+      "summary": "Key capabilities: _xml_escape, _Constants, ParseBaseException, ParseException, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pkg_resources\\_vendor\\six.py": {
+      "summary": "Key capabilities: _add_doc, _import_module, _LazyDescr, MovedModule, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py": {
+      "summary": "Key capabilities: InvalidMarker, UndefinedComparison, UndefinedEnvironmentName, Node, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py": {
+      "summary": "Key capabilities: InvalidRequirement, Requirement, __str__, __repr__",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py": {
+      "summary": "Key capabilities: InvalidSpecifier, BaseSpecifier, _IndividualSpecifier, LegacySpecifier, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py": {
+      "summary": "Key capabilities: canonicalize_name",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py": {
+      "summary": "Key capabilities: parse, InvalidVersion, _BaseVersion, LegacyVersion, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py": {
+      "summary": "Key capabilities: with_metaclass, metaclass, __new__",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py": {
+      "summary": "Key capabilities: Infinity, NegativeInfinity, __repr__, __hash__, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\archive_util.py": {
+      "summary": "Key capabilities: UnrecognizedFormat, default_filter, unpack_archive, unpack_directory, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\build_meta.py": {
+      "summary": "Key capabilities: SetupRequirementsError, Distribution, _to_str, _get_immediate_subdirectories, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\config.py": {
+      "summary": "Key capabilities: read_configuration, _get_option, configuration_to_dict, parse_configuration, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\depends.py": {
+      "summary": "Key capabilities: Require, find_module, get_module_constant, extract_constant, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\dep_util.py": {
+      "summary": "Key capabilities: newer_pairwise_group",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\dist.py": {
+      "summary": "Key capabilities: _get_unpatched, get_metadata_version, read_pkg_file, write_pkg_file, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\extension.py": {
+      "summary": "Key capabilities: _have_cython, Extension, Library, _convert_pyx_sources_to_lang",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\glibc.py": {
+      "summary": "Key capabilities: glibc_version_string, check_glibc_version, have_compatible_glibc, libc_ver",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\glob.py": {
+      "summary": "Key capabilities: glob, iglob, _iglob, glob1, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\launch.py": {
+      "summary": "Key capabilities: run",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\lib2to3_ex.py": {
+      "summary": "Key capabilities: DistutilsRefactoringTool, Mixin2to3, log_error, log_message, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\monkey.py": {
+      "summary": "Key capabilities: _get_mro, get_unpatched, get_unpatched_class, patch_all, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\msvc.py": {
+      "summary": "Key capabilities: msvc9_find_vcvarsall, msvc9_query_vcvarsall, msvc14_get_vc_env, msvc14_gen_lib_options, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\namespaces.py": {
+      "summary": "Key capabilities: Installer, DevelopInstaller, install_namespaces, uninstall_namespaces, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\package_index.py": {
+      "summary": "Key capabilities: parse_requirement_arg, parse_bdist_wininst, egg_info_for_url, distros_for_url, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\pep425tags.py": {
+      "summary": "Key capabilities: get_config_var, get_abbr_impl, get_impl_ver, get_impl_version_info, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\py27compat.py": {
+      "summary": "Key capabilities: get_all_headers, get_all_headers",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\py31compat.py": {
+      "summary": "Key capabilities: TemporaryDirectory, __enter__, __exit__",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\py33compat.py": {
+      "summary": "Key capabilities: Bytecode_compat, __iter__",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\sandbox.py": {
+      "summary": "Key capabilities: _execfile, save_argv, save_path, override_temp, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\site-patch.py": {
+      "summary": "Key capabilities: __boot",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\ssl_support.py": {
+      "summary": "Key capabilities: VerifyingHTTPSHandler, VerifyingHTTPSConn, opener_for, once, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\unicode_utils.py": {
+      "summary": "Key capabilities: decompose, filesys_decode, try_encode, detect_encoding",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\wheel.py": {
+      "summary": "Key capabilities: unpack, Wheel, tags, is_compatible, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\windows_support.py": {
+      "summary": "Key capabilities: windows_only, hide_file",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\_deprecation_warning.py": {
+      "summary": "Key capabilities: SetuptoolsDeprecationWarning",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\__init__.py": {
+      "summary": "Key capabilities: PackageFinder, PEP420PackageFinder, _install_setup_requires, setup, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\alias.py": {
+      "summary": "Key capabilities: shquote, alias, format_alias, initialize_options, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\bdist_egg.py": {
+      "summary": "Key capabilities: strip_module, sorted_walk, write_stub, bdist_egg, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\bdist_rpm.py": {
+      "summary": "Key capabilities: bdist_rpm, run, _make_spec_file",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\bdist_wininst.py": {
+      "summary": "Key capabilities: bdist_wininst, reinitialize_command, run",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\build_clib.py": {
+      "summary": "Key capabilities: build_clib, build_libraries",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\build_ext.py": {
+      "summary": "Key capabilities: _customize_compiler_for_shlib, get_abi3_suffix, build_ext, run, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\build_py.py": {
+      "summary": "Key capabilities: build_py, _unique_everseen, assert_relative, finalize_options, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\develop.py": {
+      "summary": "Key capabilities: develop, VersionlessRequirement, run, initialize_options, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\dist_info.py": {
+      "summary": "Key capabilities: dist_info, initialize_options, finalize_options, run",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\easy_install.py": {
+      "summary": "Key capabilities: is_64bit, samefile, easy_install, _pythonpath, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\egg_info.py": {
+      "summary": "Key capabilities: translate_pattern, InfoCommon, egg_info, FileList, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\install.py": {
+      "summary": "Key capabilities: install, initialize_options, finalize_options, handle_extra_path, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\install_egg_info.py": {
+      "summary": "Key capabilities: install_egg_info, initialize_options, finalize_options, run, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\install_lib.py": {
+      "summary": "Key capabilities: install_lib, run, get_exclusions, _exclude_pkg_path, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\install_scripts.py": {
+      "summary": "Key capabilities: install_scripts, initialize_options, run, write_script",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\py36compat.py": {
+      "summary": "Key capabilities: sdist_add_defaults, add_defaults, _cs_path_exists, _add_defaults_standards, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\register.py": {
+      "summary": "Key capabilities: register, run",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\rotate.py": {
+      "summary": "Key capabilities: rotate, initialize_options, finalize_options, run",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\saveopts.py": {
+      "summary": "Key capabilities: saveopts, run",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\sdist.py": {
+      "summary": "Key capabilities: walk_revctrl, sdist, run, initialize_options, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\setopt.py": {
+      "summary": "Key capabilities: config_file, edit_config, option_base, setopt, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\test.py": {
+      "summary": "Key capabilities: ScanningLoader, NonDataProperty, test, loadTestsFromModule, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\upload.py": {
+      "summary": "Key capabilities: upload, run, finalize_options, upload_file, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\command\\upload_docs.py": {
+      "summary": "Key capabilities: _encode, upload_docs, has_sphinx, initialize_options, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\extern\\__init__.py": {
+      "summary": "Key capabilities: VendorImporter, search_path, find_module, load_module, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\_vendor\\pyparsing.py": {
+      "summary": "Key capabilities: _xml_escape, _Constants, ParseBaseException, ParseException, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\_vendor\\six.py": {
+      "summary": "Key capabilities: _add_doc, _import_module, _LazyDescr, MovedModule, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\_vendor\\packaging\\markers.py": {
+      "summary": "Key capabilities: InvalidMarker, UndefinedComparison, UndefinedEnvironmentName, Node, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\_vendor\\packaging\\requirements.py": {
+      "summary": "Key capabilities: InvalidRequirement, Requirement, __str__, __repr__",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py": {
+      "summary": "Key capabilities: InvalidSpecifier, BaseSpecifier, _IndividualSpecifier, LegacySpecifier, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\_vendor\\packaging\\utils.py": {
+      "summary": "Key capabilities: canonicalize_name",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\_vendor\\packaging\\version.py": {
+      "summary": "Key capabilities: parse, InvalidVersion, _BaseVersion, LegacyVersion, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\_vendor\\packaging\\_compat.py": {
+      "summary": "Key capabilities: with_metaclass, metaclass, __new__",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py": {
+      "summary": "Key capabilities: Infinity, NegativeInfinity, __repr__, __hash__, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\wheel\\bdist_wheel.py": {
+      "summary": "Key capabilities: safer_name, safer_version, bdist_wheel, initialize_options, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\wheel\\metadata.py": {
+      "summary": "Key capabilities: requires_to_requires_dist, convert_requirements, generate_requirements, pkginfo_to_metadata, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\wheel\\pep425tags.py": {
+      "summary": "Key capabilities: get_config_var, get_abbr_impl, get_impl_ver, get_impl_version_info, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\wheel\\pkginfo.py": {
+      "summary": "Key capabilities: read_pkg_info_bytes, read_pkg_info, write_pkg_info, read_pkg_info_bytes, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\wheel\\util.py": {
+      "summary": "Key capabilities: urlsafe_b64encode, urlsafe_b64decode, as_unicode, as_bytes, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\wheel\\wheelfile.py": {
+      "summary": "Key capabilities: get_zipinfo_datetime, WheelFile, open, write_files, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\wheel\\__main__.py": {
+      "summary": "Key capabilities: main",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\wheel\\cli\\convert.py": {
+      "summary": "Key capabilities: _bdist_wheel_tag, egg2wheel, parse_wininst_info, wininst2wheel, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\wheel\\cli\\pack.py": {
+      "summary": "Key capabilities: pack",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\wheel\\cli\\unpack.py": {
+      "summary": "Key capabilities: unpack",
+      "updated_at": "2019-03-29T17:58:18Z"
+    },
+    "venv\\lib\\python2.7\\site-packages\\wheel\\cli\\__init__.py": {
+      "summary": "Key capabilities: require_pkgresources, WheelError, unpack_f, pack_f, and more",
+      "updated_at": "2019-03-29T17:58:18Z"
+    }
   }
 }

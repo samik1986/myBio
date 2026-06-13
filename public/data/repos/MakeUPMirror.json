@@ -114,5 +114,11 @@
       "size": 1501,
       "summary": "Data loading and preprocessing pipeline."
     }
+  },
+  "file_metadata": {
+    "LRN.py": {
+      "summary": "Key capabilities: LRN, call, get_config",
+      "updated_at": "2017-07-17T04:34:12Z"
+    }
   }
 }
