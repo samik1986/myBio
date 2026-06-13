@@ -18,25 +18,23 @@ const Experience = ({ limit }) => {
             </Link>
           )}
         </div>
-        <div className="timeline">
-          {displayExp.map((exp, index) => (
-            <Link to={`/experience/${exp.id}`} key={exp.id} className="timeline-item" style={{ textDecoration: 'none' }}>
-              <div className="timeline-dot">
-                <Briefcase size={20} />
-              </div>
-              <div className={`timeline-content glass ${index % 2 === 0 ? 'left' : 'right'}`}>
-                <h3 className="exp-role">{exp.role}</h3>
-                <h4 className="exp-company">{exp.company}</h4>
-                <div className="exp-meta">
-                  <span className="exp-period">
-                    <Calendar size={16} /> {exp.period}
-                  </span>
-                  <span className="exp-location">
-                    <MapPin size={16} /> {exp.location}
-                  </span>
+        <div className="exp-row">
+          {displayExp.map((exp) => (
+            <Link to={`/experience/${exp.id}`} key={exp.id} className="exp-card glass">
+              <div className="exp-card-header">
+                <div className="exp-card-icon">
+                  <Briefcase size={18} />
                 </div>
-                <p className="exp-description">{exp.description}</p>
+                <div>
+                  <h3 className="exp-role">{exp.role}</h3>
+                  <h4 className="exp-company">{exp.company}</h4>
+                </div>
               </div>
+              <div className="exp-meta">
+                <span><Calendar size={13} /> {exp.period}</span>
+                <span><MapPin size={13} /> {exp.location}</span>
+              </div>
+              <p className="exp-description">{exp.description}</p>
             </Link>
           ))}
         </div>
