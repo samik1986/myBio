@@ -7,27 +7,32 @@
     "docs/conf.py": {
       "filepath": "docs/conf.py",
       "size": 1663,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "source/notebooks/example.ipynb": {
       "filepath": "source/notebooks/example.ipynb",
       "size": 2550,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "source/notebooks/register_spine_v04_spinal_cord_4_atlas_to_reflection_points_lines.ipynb": {
       "filepath": "source/notebooks/register_spine_v04_spinal_cord_4_atlas_to_reflection_points_lines.ipynb",
       "size": 68722,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "source/scripts/spine_reg.py": {
       "filepath": "source/scripts/spine_reg.py",
       "size": 6517,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "source/scripts/spine_reg_pipeline.py": {
       "filepath": "source/scripts/spine_reg_pipeline.py",
       "size": 37041,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     }
   },
   "repo_insight": "This spine_registration project provides a holistic capability for automated anatomical registration of spinal cord imaging data, primarily focusing on aligning individual subject scans to a standardized spinal cord atlas, likely leveraging specific anatomical landmarks or features. Hailing from the biomedical imaging and neuroscience domain, specifically for research from the Dong Lab, its purpose is to enable quantitative comparisons and analyses across different datasets by normalizing spinal cord anatomy. The repository is intended to be used by researchers and scientists who need to process spinal cord images; users would typically begin by interacting with the Jupyter notebooks, such as 'example.ipynb' and 'register_spine_v04_spinal_cord_4_atlas_to_reflection_points_lines.ipynb', to explore the methodology, visualize intermediate steps, and adapt parameters for specific datasets. For more automated or batch processing, the standalone Python scripts like 'spine_reg_pipeline.py' would then orchestrate the end-to-end registration workflow. Architecturally, the core algorithmic highlights, likely implemented in 'spine_reg.py', include feature-based registration approaches that use 'reflection points' and 'lines' for robust alignment, potentially serving as initial fiducial registrations before or in conjunction with intensity-based methods to map individual spinal cords to an atlas. The pipeline script would manage data loading, pre-processing, calling these registration functions, and post-processing steps, reflecting a structured approach to complex image alignment tasks, while 'docs/conf.py' suggests an intention for comprehensive documentation."

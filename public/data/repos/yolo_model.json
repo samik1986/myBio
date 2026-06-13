@@ -7,77 +7,92 @@
     "docs/conf.py": {
       "filepath": "docs/conf.py",
       "size": 1623,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "docs/notebooks/load_h5_data.ipynb": {
       "filepath": "docs/notebooks/load_h5_data.ipynb",
       "size": 452343,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "docs/notebooks/yolo_3d.ipynb": {
       "filepath": "docs/notebooks/yolo_3d.ipynb",
       "size": 6498236,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "docs/notebooks/yolo_3d_scratch.ipynb": {
       "filepath": "docs/notebooks/yolo_3d_scratch.ipynb",
       "size": 1687795,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "docs/notebooks/yolo_example.ipynb": {
       "filepath": "docs/notebooks/yolo_example.ipynb",
       "size": 742486,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "docs/notebooks/yolo_example_3D.ipynb": {
       "filepath": "docs/notebooks/yolo_example_3D.ipynb",
       "size": 742486,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "docs/notebooks/yolo_extra_comp.ipynb": {
       "filepath": "docs/notebooks/yolo_extra_comp.ipynb",
       "size": 635933,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "docs/notebooks/yolo_pipeline.ipynb": {
       "filepath": "docs/notebooks/yolo_pipeline.ipynb",
       "size": 1128492,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "docs/notebooks/yolo_preprocessing.ipynb": {
       "filepath": "docs/notebooks/yolo_preprocessing.ipynb",
       "size": 3292357,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "docs/scripts/ds_yolo_output.py": {
       "filepath": "docs/scripts/ds_yolo_output.py",
       "size": 5859,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "docs/scripts/yolo_avg_prec.py": {
       "filepath": "docs/scripts/yolo_avg_prec.py",
       "size": 4119,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "docs/scripts/yolo_help.py": {
       "filepath": "docs/scripts/yolo_help.py",
       "size": 35788,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "docs/scripts/yolo_help_3D.py": {
       "filepath": "docs/scripts/yolo_help_3D.py",
       "size": 32913,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "docs/scripts/yolo_post_help.py": {
       "filepath": "docs/scripts/yolo_post_help.py",
       "size": 18200,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "docs/scripts/yolo_tiles.py": {
       "filepath": "docs/scripts/yolo_tiles.py",
       "size": 20820,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     }
   },
   "repo_insight": "This repository offers a holistic capability for automated object segmentation and quantification specifically tailored for microscopy images, venturing into the critical domain of bioimage analysis where precise detection of structures within complex, often volumetric, data is paramount for scientific discovery. The project's deep specialization in 3D object detection, as evidenced by files like 'yolo_3d.ipynb' and 'yolo_help_3D.py', positions it as a powerful tool for analyzing 3D microscopy datasets, enabling researchers to count, locate, and measure objects in three dimensions. The repository is primarily intended to be used by researchers and developers who need to apply state-of-the-art object detection techniques to their microscopy data. Users are expected to leverage the interactive Jupyter notebooks, such as 'yolo_preprocessing.ipynb' for preparing their image data, 'load_h5_data.ipynb' for handling common data formats, and 'yolo_3d.ipynb' or 'yolo_example_3D.ipynb' for training 3D YOLO models or performing inference on new images. The utility scripts in 'docs/scripts/' offer modular functionalities like 'yolo_tiles.py' for managing large image sizes, 'yolo_post_help.py' for refining detection outputs, and 'yolo_avg_prec.py' for robust model evaluation, which can be integrated into custom pipelines or executed independently. Key architectural and algorithmic highlights include the robust adaptation of the YOLO algorithm for 3D volumetric data, a significant advancement for microscopy; the pragmatic handling of high-resolution images through a tiling strategy ('yolo_tiles.py') to overcome memory constraints; and a comprehensive pipeline encompassing preprocessing, training, inference, and rigorous evaluation using metrics like average precision, ensuring a complete and scientifically sound framework for object quantification in biological imaging."

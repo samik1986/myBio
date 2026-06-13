@@ -3448,282 +3448,338 @@
     "cellseg_time_eval.py": {
       "filepath": "cellseg_time_eval.py",
       "size": 4341,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "classification/train_classification.py": {
       "filepath": "classification/train_classification.py",
       "size": 5879,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "classification/unsup_classification.py": {
       "filepath": "classification/unsup_classification.py",
       "size": 2735,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "classifiers.py": {
       "filepath": "classifiers.py",
       "size": 9339,
-      "summary": "Key capabilities: conv3x3, conv1x1, BasicBlock, and more"
+      "summary": "Key capabilities: conv3x3, conv1x1, BasicBlock, and more",
+      "is_gpu": false
     },
     "compute_metric.py": {
       "filepath": "compute_metric.py",
       "size": 6725,
-      "summary": "Key capabilities: _intersection_over_union, _label_overlap, _true_positive, and more"
+      "summary": "Key capabilities: _intersection_over_union, _label_overlap, _true_positive, and more",
+      "is_gpu": false
     },
     "finetune_convnext_stardist.py": {
       "filepath": "finetune_convnext_stardist.py",
       "size": 16148,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/classifiers.py": {
       "filepath": "fintune_on_newdataset/classifiers.py",
       "size": 9339,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/compute_metric.py": {
       "filepath": "fintune_on_newdataset/compute_metric.py",
       "size": 6725,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/fintune.ipynb": {
       "filepath": "fintune_on_newdataset/fintune.ipynb",
       "size": 456944,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/models/__init__.py": {
       "filepath": "fintune_on_newdataset/models/__init__.py",
       "size": 114,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/models/convnext.py": {
       "filepath": "fintune_on_newdataset/models/convnext.py",
       "size": 10333,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/models/flexible_unet.py": {
       "filepath": "fintune_on_newdataset/models/flexible_unet.py",
       "size": 12438,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/models/flexible_unet_convext.py": {
       "filepath": "fintune_on_newdataset/models/flexible_unet_convext.py",
       "size": 18465,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/models/flexible_unet_convnext.py": {
       "filepath": "fintune_on_newdataset/models/flexible_unet_convnext.py",
       "size": 18120,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/overlay.py": {
       "filepath": "fintune_on_newdataset/overlay.py",
       "size": 3992,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/stardist_pkg/__init__.py": {
       "filepath": "fintune_on_newdataset/stardist_pkg/__init__.py",
       "size": 1285,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/stardist_pkg/big.py": {
       "filepath": "fintune_on_newdataset/stardist_pkg/big.py",
       "size": 24538,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/stardist_pkg/bioimageio_utils.py": {
       "filepath": "fintune_on_newdataset/stardist_pkg/bioimageio_utils.py",
       "size": 19960,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/stardist_pkg/geometry/__init__.py": {
       "filepath": "fintune_on_newdataset/stardist_pkg/geometry/__init__.py",
       "size": 335,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/stardist_pkg/geometry/geom2d.py": {
       "filepath": "fintune_on_newdataset/stardist_pkg/geometry/geom2d.py",
       "size": 7541,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/stardist_pkg/matching.py": {
       "filepath": "fintune_on_newdataset/stardist_pkg/matching.py",
       "size": 19917,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/stardist_pkg/models/__init__.py": {
       "filepath": "fintune_on_newdataset/stardist_pkg/models/__init__.py",
       "size": 1891,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/stardist_pkg/models/base.py": {
       "filepath": "fintune_on_newdataset/stardist_pkg/models/base.py",
       "size": 56828,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/stardist_pkg/models/model2d.py": {
       "filepath": "fintune_on_newdataset/stardist_pkg/models/model2d.py",
       "size": 27768,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/stardist_pkg/nms.py": {
       "filepath": "fintune_on_newdataset/stardist_pkg/nms.py",
       "size": 13152,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/stardist_pkg/rays3d.py": {
       "filepath": "fintune_on_newdataset/stardist_pkg/rays3d.py",
       "size": 11981,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/stardist_pkg/sample_patches.py": {
       "filepath": "fintune_on_newdataset/stardist_pkg/sample_patches.py",
       "size": 2843,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/stardist_pkg/utils.py": {
       "filepath": "fintune_on_newdataset/stardist_pkg/utils.py",
       "size": 15656,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "fintune_on_newdataset/stardist_pkg/version.py": {
       "filepath": "fintune_on_newdataset/stardist_pkg/version.py",
       "size": 23,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "models/__init__.py": {
       "filepath": "models/__init__.py",
       "size": 114,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "models/convnext.py": {
       "filepath": "models/convnext.py",
       "size": 10333,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "models/flexible_unet.py": {
       "filepath": "models/flexible_unet.py",
       "size": 12438,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "models/flexible_unet_convext.py": {
       "filepath": "models/flexible_unet_convext.py",
       "size": 18465,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "models/flexible_unet_convnext.py": {
       "filepath": "models/flexible_unet_convnext.py",
       "size": 18114,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "overlay.py": {
       "filepath": "overlay.py",
       "size": 3992,
-      "summary": "Key capabilities: get_bounding_box, colorize, random_colors, and more"
+      "summary": "Key capabilities: get_bounding_box, colorize, random_colors, and more",
+      "is_gpu": false
     },
     "predict.py": {
       "filepath": "predict.py",
       "size": 7767,
-      "summary": "Key capabilities: normalize_channel"
+      "summary": "Key capabilities: normalize_channel",
+      "is_gpu": false
     },
     "predict_unet_convnext.py": {
       "filepath": "predict_unet_convnext.py",
       "size": 5158,
-      "summary": "Key capabilities: normalize_channel"
+      "summary": "Key capabilities: normalize_channel",
+      "is_gpu": false
     },
     "run.ipynb": {
       "filepath": "run.ipynb",
       "size": 48705,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "stardist_pkg/__init__.py": {
       "filepath": "stardist_pkg/__init__.py",
       "size": 1285,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "stardist_pkg/big.py": {
       "filepath": "stardist_pkg/big.py",
       "size": 24538,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "stardist_pkg/bioimageio_utils.py": {
       "filepath": "stardist_pkg/bioimageio_utils.py",
       "size": 19960,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "stardist_pkg/geometry/__init__.py": {
       "filepath": "stardist_pkg/geometry/__init__.py",
       "size": 335,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "stardist_pkg/geometry/geom2d.py": {
       "filepath": "stardist_pkg/geometry/geom2d.py",
       "size": 7541,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "stardist_pkg/matching.py": {
       "filepath": "stardist_pkg/matching.py",
       "size": 19917,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "stardist_pkg/models/__init__.py": {
       "filepath": "stardist_pkg/models/__init__.py",
       "size": 1891,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "stardist_pkg/models/base.py": {
       "filepath": "stardist_pkg/models/base.py",
       "size": 56828,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "stardist_pkg/models/model2d.py": {
       "filepath": "stardist_pkg/models/model2d.py",
       "size": 27768,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "stardist_pkg/nms.py": {
       "filepath": "stardist_pkg/nms.py",
       "size": 13152,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "stardist_pkg/rays3d.py": {
       "filepath": "stardist_pkg/rays3d.py",
       "size": 11981,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "stardist_pkg/sample_patches.py": {
       "filepath": "stardist_pkg/sample_patches.py",
       "size": 2843,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "stardist_pkg/utils.py": {
       "filepath": "stardist_pkg/utils.py",
       "size": 15656,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "stardist_pkg/version.py": {
       "filepath": "stardist_pkg/version.py",
       "size": 23,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "train_convnext_hover..py": {
       "filepath": "train_convnext_hover..py",
       "size": 20814,
-      "summary": "Key capabilities: rm_n_mkdir, HoverDataset, valid_step, and more"
+      "summary": "Key capabilities: rm_n_mkdir, HoverDataset, valid_step, and more",
+      "is_gpu": false
     },
     "train_convnext_stardist.py": {
       "filepath": "train_convnext_stardist.py",
       "size": 16989,
-      "summary": "Key capabilities: main"
+      "summary": "Key capabilities: main",
+      "is_gpu": false
     },
     "utils.py": {
       "filepath": "utils.py",
       "size": 35675,
-      "summary": "Key capabilities: normalize, fix_mirror_padding, get_bounding_box, and more"
+      "summary": "Key capabilities: normalize, fix_mirror_padding, get_bounding_box, and more",
+      "is_gpu": false
     },
     "utils_modify.py": {
       "filepath": "utils_modify.py",
       "size": 33630,
-      "summary": "Key capabilities: normalize, fix_mirror_padding, get_bounding_box, and more"
+      "summary": "Key capabilities: normalize, fix_mirror_padding, get_bounding_box, and more",
+      "is_gpu": false
     }
   },
   "file_metadata": {

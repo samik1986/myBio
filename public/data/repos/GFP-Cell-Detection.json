@@ -317,182 +317,218 @@
     "GFP_Cell_Detection/Euclidean_Signature.m": {
       "filepath": "GFP_Cell_Detection/Euclidean_Signature.m",
       "size": 2316,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/Evaluation/Ground_truth_labelling.m": {
       "filepath": "GFP_Cell_Detection/Evaluation/Ground_truth_labelling.m",
       "size": 1122,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/Evaluation/pr_recall.m": {
       "filepath": "GFP_Cell_Detection/Evaluation/pr_recall.m",
       "size": 1776,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/Evaluation/weighted_pr_recall.m": {
       "filepath": "GFP_Cell_Detection/Evaluation/weighted_pr_recall.m",
       "size": 2486,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/Vessels.m": {
       "filepath": "GFP_Cell_Detection/Vessels.m",
       "size": 1022,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/cell_filling.m": {
       "filepath": "GFP_Cell_Detection/cell_filling.m",
       "size": 1676,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/circfit.m": {
       "filepath": "GFP_Cell_Detection/circfit.m",
       "size": 589,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/cluster.m": {
       "filepath": "GFP_Cell_Detection/cluster.m",
       "size": 949,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/edge_layers.m": {
       "filepath": "GFP_Cell_Detection/edge_layers.m",
       "size": 1293,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/eval_pts.m": {
       "filepath": "GFP_Cell_Detection/eval_pts.m",
       "size": 874,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/fit_circles.m": {
       "filepath": "GFP_Cell_Detection/fit_circles.m",
       "size": 1454,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/frangi_filter_version2a/FrangiFilter2D.m": {
       "filepath": "GFP_Cell_Detection/frangi_filter_version2a/FrangiFilter2D.m",
       "size": 4024,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/frangi_filter_version2a/FrangiFilter3D.m": {
       "filepath": "GFP_Cell_Detection/frangi_filter_version2a/FrangiFilter3D.m",
       "size": 5657,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/frangi_filter_version2a/Hessian2D.m": {
       "filepath": "GFP_Cell_Detection/frangi_filter_version2a/Hessian2D.m",
       "size": 1025,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/frangi_filter_version2a/Hessian3D.m": {
       "filepath": "GFP_Cell_Detection/frangi_filter_version2a/Hessian3D.m",
       "size": 1938,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/frangi_filter_version2a/eig2image.m": {
       "filepath": "GFP_Cell_Detection/frangi_filter_version2a/eig2image.m",
       "size": 1036,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/frangi_filter_version2a/eig3volume.c": {
       "filepath": "GFP_Cell_Detection/frangi_filter_version2a/eig3volume.c",
       "size": 12432,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/frangi_filter_version2a/imgaussian.c": {
       "filepath": "GFP_Cell_Detection/frangi_filter_version2a/imgaussian.c",
       "size": 22500,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/frangi_filter_version2a/imgaussian.m": {
       "filepath": "GFP_Cell_Detection/frangi_filter_version2a/imgaussian.m",
       "size": 2073,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/frangi_filter_version2a/main_ridge.m": {
       "filepath": "GFP_Cell_Detection/frangi_filter_version2a/main_ridge.m",
       "size": 1095,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/frangi_filter_version2a/nonmaxsup.m": {
       "filepath": "GFP_Cell_Detection/frangi_filter_version2a/nonmaxsup.m",
       "size": 7429,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/gaussFun.m": {
       "filepath": "GFP_Cell_Detection/gaussFun.m",
       "size": 507,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/gfp_main.m": {
       "filepath": "GFP_Cell_Detection/gfp_main.m",
       "size": 1282,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/main.m": {
       "filepath": "GFP_Cell_Detection/main.m",
       "size": 2885,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/main_bam.m": {
       "filepath": "GFP_Cell_Detection/main_bam.m",
       "size": 4682,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/normal.m": {
       "filepath": "GFP_Cell_Detection/normal.m",
       "size": 657,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/phase1.m": {
       "filepath": "GFP_Cell_Detection/phase1.m",
       "size": 2852,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/phase2.m": {
       "filepath": "GFP_Cell_Detection/phase2.m",
       "size": 1712,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/pre_proc.m": {
       "filepath": "GFP_Cell_Detection/pre_proc.m",
       "size": 629,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/residue.m": {
       "filepath": "GFP_Cell_Detection/residue.m",
       "size": 1676,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/residue1.m": {
       "filepath": "GFP_Cell_Detection/residue1.m",
       "size": 2024,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/run_script.sh": {
       "filepath": "GFP_Cell_Detection/run_script.sh",
       "size": 124,
-      "summary": "Shell script for automation or deployment."
+      "summary": "Shell script for automation or deployment.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/swap.m": {
       "filepath": "GFP_Cell_Detection/swap.m",
       "size": 120,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/weighted_pr_recall_gfp.m": {
       "filepath": "GFP_Cell_Detection/weighted_pr_recall_gfp.m",
       "size": 4348,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "GFP_Cell_Detection/zcc.m": {
       "filepath": "GFP_Cell_Detection/zcc.m",
       "size": 554,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "run_script.sh": {
       "filepath": "run_script.sh",
       "size": 126,
-      "summary": "Shell script for automation or deployment."
+      "summary": "Shell script for automation or deployment.",
+      "is_gpu": false
     }
   },
   "file_metadata": {

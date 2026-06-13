@@ -42,77 +42,92 @@
     "LRN.py": {
       "filepath": "LRN.py",
       "size": 2113,
-      "summary": "Key capabilities: LRN, call, get_config"
+      "summary": "Key capabilities: LRN, call, get_config",
+      "is_gpu": false
     },
     "VMU/__init__.py": {
       "filepath": "VMU/__init__.py",
       "size": 0,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "VMU/dataPrep.py": {
       "filepath": "VMU/dataPrep.py",
       "size": 2530,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "VMU/tripletData.py": {
       "filepath": "VMU/tripletData.py",
       "size": 1299,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "YMU/__init__.py": {
       "filepath": "YMU/__init__.py",
       "size": 0,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "YMU/dataPrep.py": {
       "filepath": "YMU/dataPrep.py",
       "size": 1146,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "YMU/tripletData.py": {
       "filepath": "YMU/tripletData.py",
       "size": 1501,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "custom_merge.py": {
       "filepath": "custom_merge.py",
       "size": 11175,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "dataPrep.py": {
       "filepath": "dataPrep.py",
       "size": 2117,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "discriminate.py": {
       "filepath": "discriminate.py",
       "size": 0,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "image_save.m": {
       "filepath": "image_save.m",
       "size": 1895,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "network.py": {
       "filepath": "network.py",
       "size": 4537,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "test.py": {
       "filepath": "test.py",
       "size": 1778,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "tetsing.py": {
       "filepath": "tetsing.py",
       "size": 2143,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "tripletData.py": {
       "filepath": "tripletData.py",
       "size": 1501,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     }
   },
   "file_metadata": {

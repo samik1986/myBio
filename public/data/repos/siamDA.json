@@ -70,52 +70,62 @@
     "ae.py": {
       "filepath": "ae.py",
       "size": 4006,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "aeData.py": {
       "filepath": "aeData.py",
       "size": 1108,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "customLayer.py": {
       "filepath": "customLayer.py",
       "size": 9518,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "modelBuild.py": {
       "filepath": "modelBuild.py",
       "size": 7544,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "newLayer.py": {
       "filepath": "newLayer.py",
       "size": 784,
-      "summary": "Key capabilities: MyLayer, build, call, and more"
+      "summary": "Key capabilities: MyLayer, build, call, and more",
+      "is_gpu": false
     },
     "prepareDataFRS.py": {
       "filepath": "prepareDataFRS.py",
       "size": 1650,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "showFig.py": {
       "filepath": "showFig.py",
       "size": 1668,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "siamDataIITM.py": {
       "filepath": "siamDataIITM.py",
       "size": 1227,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "siamese.py": {
       "filepath": "siamese.py",
       "size": 4992,
-      "summary": "Key capabilities: euclidean_distance, contrastive_loss, create_pairs, and more"
+      "summary": "Key capabilities: euclidean_distance, contrastive_loss, create_pairs, and more",
+      "is_gpu": false
     },
     "test.py": {
       "filepath": "test.py",
       "size": 322,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     }
   },
   "repo_insight": "The siamDA repository provides a comprehensive deep learning framework for domain-adaptive face recognition and metric learning, specifically targeting Face Recognition Systems (FRS) through the integration of Siamese neural networks and Autoencoders. Operating in the domain of transfer learning, computer vision, and representation learning, the codebase enables researchers to learn domain-invariant and highly discriminative feature representations, which is particularly useful for challenging datasets like the IITM face database. To utilize this repository, a user first prepares and pre-processes face image datasets using data preparation scripts such as prepareDataFRS.py and siamDataIITM.py, then configures and builds the joint deep learning architecture via modelBuild.py, trains the model using the specialized training logic in siamese.py and ae.py (supported by data loaders in aeData.py), and finally evaluates performance and visualizes high-dimensional embeddings or reconstructed inputs through test.py and showFig.py. Architecturally, the project is characterized by its use of custom TensorFlow/Keras layers (such as MyLayer in customLayer.py and newLayer.py) which define specialized forward passes (call), weight initializations (build), and shape computations (compute_output_shape) to calculate customized distance metrics like Euclidean distance directly within the computational graph. By coupling unsupervised reconstruction objectives from autoencoders with supervised contrastive or distance-based losses from Siamese networks, the system enforces a latent space that is robust to domain shifts (such as variations in lighting, pose, or sensor quality) while maintaining high class separability, making it an advanced pipeline for robust, domain-adapted biometric verification."

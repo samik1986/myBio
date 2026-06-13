@@ -1728,277 +1728,332 @@
     "DiMo3d/__init__.py": {
       "filepath": "DiMo3d/__init__.py",
       "size": 18759,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/dipha-output/ComputeGraphReconstruction.cpp": {
       "filepath": "DiMo3d/code/dipha-output/ComputeGraphReconstruction.cpp",
       "size": 12882,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/matlab/dipha_input_gen.m": {
       "filepath": "DiMo3d/code/matlab/dipha_input_gen.m",
       "size": 431,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/matlab/load_persistence_diagram.m": {
       "filepath": "DiMo3d/code/matlab/load_persistence_diagram.m",
       "size": 1778,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/matlab/parallel_dipha_input.m": {
       "filepath": "DiMo3d/code/matlab/parallel_dipha_input.m",
       "size": 437,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/matlab/save_3d_image_data.m": {
       "filepath": "DiMo3d/code/matlab/save_3d_image_data.m",
       "size": 2006,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "DiMo3d/code/merge/combine.cpp": {
       "filepath": "DiMo3d/code/merge/combine.cpp",
       "size": 20405,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/merge/hash.cpp": {
       "filepath": "DiMo3d/code/merge/hash.cpp",
       "size": 1631,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/merge/hash.h": {
       "filepath": "DiMo3d/code/merge/hash.h",
       "size": 1646,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/merge/merge.cpp": {
       "filepath": "DiMo3d/code/merge/merge.cpp",
       "size": 833,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/merge/merge_graph.cpp": {
       "filepath": "DiMo3d/code/merge/merge_graph.cpp",
       "size": 15255,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/DiMoSC.cpp": {
       "filepath": "DiMo3d/code/spt_cpp/DiMoSC.cpp",
       "size": 7600,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/DiscreteVField.h": {
       "filepath": "DiMo3d/code/spt_cpp/DiscreteVField.h",
       "size": 1480,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/Simplex.h": {
       "filepath": "DiMo3d/code/spt_cpp/Simplex.h",
       "size": 4430,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/Simplicial2Complex.h": {
       "filepath": "DiMo3d/code/spt_cpp/Simplicial2Complex.h",
       "size": 64822,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/graph_spt.h": {
       "filepath": "DiMo3d/code/spt_cpp/graph_spt.h",
       "size": 7659,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/graph_spt_list.h": {
       "filepath": "DiMo3d/code/spt_cpp/graph_spt_list.h",
       "size": 7616,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/persistence.h": {
       "filepath": "DiMo3d/code/spt_cpp/persistence.h",
       "size": 7392,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/addons/alpha_3.cpp": {
       "filepath": "DiMo3d/code/spt_cpp/phat/addons/alpha_3.cpp",
       "size": 12710,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/addons/rips.cpp": {
       "filepath": "DiMo3d/code/spt_cpp/phat/addons/rips.cpp",
       "size": 2738,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/fps.cpp": {
       "filepath": "DiMo3d/code/spt_cpp/phat/fps.cpp",
       "size": 6568,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/fps.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/fps.h",
       "size": 2512,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/algorithms/chunk_reduction.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/algorithms/chunk_reduction.h",
       "size": 11322,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/algorithms/row_reduction.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/algorithms/row_reduction.h",
       "size": 2574,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/algorithms/spectral_sequence_reduction.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/algorithms/spectral_sequence_reduction.h",
       "size": 4286,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/algorithms/standard_reduction.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/algorithms/standard_reduction.h",
       "size": 1813,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/algorithms/twist_reduction.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/algorithms/twist_reduction.h",
       "size": 2170,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/boundary_matrix.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/boundary_matrix.h",
       "size": 14741,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/compute_persistence_pairs.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/compute_persistence_pairs.h",
       "size": 5955,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/helpers/dualize.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/helpers/dualize.h",
       "size": 2990,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/helpers/misc.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/helpers/misc.h",
       "size": 2077,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/helpers/thread_local_storage.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/helpers/thread_local_storage.h",
       "size": 1693,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/persistence_pairs.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/persistence_pairs.h",
       "size": 5400,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/representations/abstract_pivot_column.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/representations/abstract_pivot_column.h",
       "size": 3768,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/representations/bit_tree_pivot_column.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/representations/bit_tree_pivot_column.h",
       "size": 5862,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/representations/full_pivot_column.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/representations/full_pivot_column.h",
       "size": 2873,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/representations/heap_pivot_column.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/representations/heap_pivot_column.h",
       "size": 3622,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/representations/sparse_pivot_column.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/representations/sparse_pivot_column.h",
       "size": 2184,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/representations/vector_heap.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/representations/vector_heap.h",
       "size": 5464,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/representations/vector_list.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/representations/vector_list.h",
       "size": 3464,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/representations/vector_set.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/representations/vector_set.h",
       "size": 3290,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/include/phat/representations/vector_vector.h": {
       "filepath": "DiMo3d/code/spt_cpp/phat/include/phat/representations/vector_vector.h",
       "size": 3600,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/src/benchmark.cpp": {
       "filepath": "DiMo3d/code/spt_cpp/phat/src/benchmark.cpp",
       "size": 18606,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/src/convert.cpp": {
       "filepath": "DiMo3d/code/spt_cpp/phat/src/convert.cpp",
       "size": 3441,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/src/info.cpp": {
       "filepath": "DiMo3d/code/spt_cpp/phat/src/info.cpp",
       "size": 3283,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/src/phat.cpp": {
       "filepath": "DiMo3d/code/spt_cpp/phat/src/phat.cpp",
       "size": 10083,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/src/relative_example.cpp": {
       "filepath": "DiMo3d/code/spt_cpp/phat/src/relative_example.cpp",
       "size": 17537,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/src/self_test.cpp": {
       "filepath": "DiMo3d/code/spt_cpp/phat/src/self_test.cpp",
       "size": 10228,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/phat/src/simple_example.cpp": {
       "filepath": "DiMo3d/code/spt_cpp/phat/src/simple_example.cpp",
       "size": 5058,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo3d/code/spt_cpp/spt.h": {
       "filepath": "DiMo3d/code/spt_cpp/spt.h",
       "size": 246,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "dipha_input_gen.m": {
       "filepath": "dipha_input_gen.m",
       "size": 431,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "load_persistence_diagram.m": {
       "filepath": "load_persistence_diagram.m",
       "size": 1778,
-      "summary": "Key capabilities: load_persistence_diagram"
+      "summary": "Key capabilities: load_persistence_diagram",
+      "is_gpu": false
     },
     "package_testing.py": {
       "filepath": "package_testing.py",
       "size": 1029,
-      "summary": "Key capabilities: test_3d_func"
+      "summary": "Key capabilities: test_3d_func",
+      "is_gpu": false
     },
     "parallel_dipha_input.m": {
       "filepath": "parallel_dipha_input.m",
       "size": 437,
-      "summary": "Key capabilities: parallel_dipha_input"
+      "summary": "Key capabilities: parallel_dipha_input",
+      "is_gpu": false
     },
     "save_3d_image_data.m": {
       "filepath": "save_3d_image_data.m",
       "size": 2006,
-      "summary": "Key capabilities: save_3d_image_data"
+      "summary": "Key capabilities: save_3d_image_data",
+      "is_gpu": false
     }
   },
   "repo_insight": "The DM_3D repository is a sophisticated codebase designed for distributed and parallel topological data analysis (TDA) of 3D volumetric image data, primarily focusing on persistent homology. Its holistic capability is to extract robust topological features\u2014such as connected components, loops, and voids\u2014from complex 3D datasets by constructing and analyzing their underlying topological structures, represented as persistence diagrams. This project operates in the domain of scientific computing, image analysis, and advanced data exploration, likely for applications in fields like medical imaging, materials science, or astrophysics, where understanding the intrinsic shape and connectivity of data is critical. The repository is intended to be used as a hybrid system where MATLAB scripts (e.g., dipha_input_gen.m, parallel_dipha_input.m) serve as the primary user interface for data preparation, orchestrating distributed computations, and loading/visualizing persistence diagrams, while the heavy-duty computational tasks are handled by highly optimized C++ executables. Users would typically prepare their 3D image data in MATLAB, use provided scripts to generate input suitable for distributed persistent homology computation (possibly using a 'split-compute-merge' paradigm for large datasets, indicated by functions like split_domain and the merge module), execute the C++ components (e.g., DiMoSC.cpp, ComputeGraphReconstruction.cpp which might integrate with the PHAT library), and then return to MATLAB for post-processing and analysis of the resulting persistence diagrams and reconstructed graph structures. Key architectural and algorithmic highlights include a strong reliance on Persistent Homology (via the integrated PHAT library, offering various reduction algorithms and pivot column representations for efficiency), a clear design for distributed and parallel processing to scale to large 3D volumes (evidenced by 'dipha' integration and explicit 'merge' functionality), and the systematic construction and manipulation of simplicial complexes and discrete vector fields for accurately representing and analyzing the topology of the input data. The combination of efficient C++ for core algorithms and MATLAB for ease of use provides a powerful platform for advanced topological data analysis."

@@ -149,57 +149,68 @@
     "add_tree.m": {
       "filepath": "add_tree.m",
       "size": 2223,
-      "summary": "Key capabilities: add_tree"
+      "summary": "Key capabilities: add_tree",
+      "is_gpu": false
     },
     "create_forest_from_json.m": {
       "filepath": "create_forest_from_json.m",
       "size": 1632,
-      "summary": "Key capabilities: create_forest_from_json"
+      "summary": "Key capabilities: create_forest_from_json",
+      "is_gpu": false
     },
     "delete_tree.m": {
       "filepath": "delete_tree.m",
       "size": 2536,
-      "summary": "Key capabilities: delete_tree"
+      "summary": "Key capabilities: delete_tree",
+      "is_gpu": false
     },
     "edit_cw_json.m": {
       "filepath": "edit_cw_json.m",
       "size": 2705,
-      "summary": "Key capabilities: edit_cw_json"
+      "summary": "Key capabilities: edit_cw_json",
+      "is_gpu": false
     },
     "edit_graph.m": {
       "filepath": "edit_graph.m",
       "size": 2295,
-      "summary": "Key capabilities: edit_graph"
+      "summary": "Key capabilities: edit_graph",
+      "is_gpu": false
     },
     "export_forest_to_json.m": {
       "filepath": "export_forest_to_json.m",
       "size": 2134,
-      "summary": "Key capabilities: export_forest_to_json"
+      "summary": "Key capabilities: export_forest_to_json",
+      "is_gpu": false
     },
     "find_loops.m": {
       "filepath": "find_loops.m",
       "size": 4158,
-      "summary": "Key capabilities: find_loops"
+      "summary": "Key capabilities: find_loops",
+      "is_gpu": false
     },
     "find_mst.m": {
       "filepath": "find_mst.m",
       "size": 2749,
-      "summary": "Key capabilities: find_mst, find_dt, union_dt"
+      "summary": "Key capabilities: find_mst, find_dt, union_dt",
+      "is_gpu": false
     },
     "load_cw_json.m": {
       "filepath": "load_cw_json.m",
       "size": 473,
-      "summary": "Key capabilities: load_cw_json"
+      "summary": "Key capabilities: load_cw_json",
+      "is_gpu": false
     },
     "plot_cw_complex.m": {
       "filepath": "plot_cw_complex.m",
       "size": 2694,
-      "summary": "Key capabilities: plot_cw_complex"
+      "summary": "Key capabilities: plot_cw_complex",
+      "is_gpu": false
     },
     "save_cw_json.m": {
       "filepath": "save_cw_json.m",
       "size": 605,
-      "summary": "Key capabilities: save_cw_json"
+      "summary": "Key capabilities: save_cw_json",
+      "is_gpu": false
     }
   },
   "repo_insight": "The 'cw_graph_tools' MATLAB repository provides a specialized toolkit for the computational manipulation, analysis, and visualization of structures related to CW complexes, a concept from algebraic topology, or a similar graph-theoretic framework denoted by the \"cw\" prefix. Its holistic capability centers on managing complex topological data, likely representing the 0- and 1-skeletons (vertices and edges) of such structures, through a robust set of functions for creation, modification, analysis, and persistence. Users are intended to interact with this repository by first loading or generating a CW complex structure, typically from a JSON file using functions like create_forest_from_json or load_cw_json, indicating a data-driven approach. They would then proceed to modify these structures using dedicated functions such as add_tree, delete_tree, and edit_graph, which allow for granular control over the constituent components, likely trees within a larger forest or graph. Analytical insights can be derived through algorithms like find_loops for cycle detection and find_mst for identifying minimum spanning trees, highlighting a strong reliance on graph theory principles for structural understanding. Finally, visualization is facilitated by plot_cw_complex, providing a graphical representation of the complex, and the results or modified structures can be persistently stored back to JSON format via export_forest_to_json or save_cw_json. Architecturally, the repository emphasizes JSON as its core data serialization format, ensuring interoperability and data persistence, and leverages a modular design for its graph and tree operations. Key algorithmic highlights include the integration of standard graph theory algorithms (e.g., MST, loop detection) within a specialized \"cw\" context, suggesting optimized or tailored implementations for this specific domain, alongside an essential visualization component to aid user comprehension."

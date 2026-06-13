@@ -25689,12 +25689,14 @@
     "train.py": {
       "filepath": "train.py",
       "size": 20911,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "train_prot.py": {
       "filepath": "train_prot.py",
       "size": 22946,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     }
   },
   "file_metadata": {

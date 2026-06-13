@@ -101,432 +101,518 @@
     "api/chat.js": {
       "filepath": "api/chat.js",
       "size": 1664,
-      "summary": "API routes and backend controllers."
+      "summary": "API routes and backend controllers.",
+      "is_gpu": false
     },
     "api/repo_data.js": {
       "filepath": "api/repo_data.js",
       "size": 613107,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": true
     },
     "append_css.py": {
       "filepath": "append_css.py",
       "size": 907,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "apply_categories.py": {
       "filepath": "apply_categories.py",
       "size": 4205,
-      "summary": "Key capabilities: get_cat"
+      "summary": "Key capabilities: get_cat",
+      "is_gpu": false
     },
     "apply_categories_arrays.py": {
       "filepath": "apply_categories_arrays.py",
       "size": 4486,
-      "summary": "Key capabilities: get_cat"
+      "summary": "Key capabilities: get_cat",
+      "is_gpu": false
     },
     "apply_choices.py": {
       "filepath": "apply_choices.py",
       "size": 2261,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "apply_hardware_images.py": {
       "filepath": "apply_hardware_images.py",
       "size": 676,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "build_image_db.py": {
       "filepath": "build_image_db.py",
       "size": 3692,
-      "summary": "Key capabilities: get_largest_image"
+      "summary": "Key capabilities: get_largest_image",
+      "is_gpu": false
     },
     "eslint.config.js": {
       "filepath": "eslint.config.js",
       "size": 568,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "extract_figures.py": {
       "filepath": "extract_figures.py",
       "size": 1843,
-      "summary": "Key capabilities: find_pdf, find_fig_bbox"
+      "summary": "Key capabilities: find_pdf, find_fig_bbox",
+      "is_gpu": false
     },
     "extract_more_images.py": {
       "filepath": "extract_more_images.py",
       "size": 2412,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "extract_neuro.py": {
       "filepath": "extract_neuro.py",
       "size": 1608,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "extract_pdf_images.py": {
       "filepath": "extract_pdf_images.py",
       "size": 1846,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "fetch_scholar.py": {
       "filepath": "fetch_scholar.py",
       "size": 1270,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "fix_build.py": {
       "filepath": "fix_build.py",
       "size": 506,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "fix_data_final.py": {
       "filepath": "fix_data_final.py",
       "size": 1813,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "fix_posix.py": {
       "filepath": "fix_posix.py",
       "size": 1676,
-      "summary": "Key capabilities: get_largest_image"
+      "summary": "Key capabilities: get_largest_image",
+      "is_gpu": false
     },
     "fix_pub_images.py": {
       "filepath": "fix_pub_images.py",
       "size": 818,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "fix_pubs.js": {
       "filepath": "fix_pubs.js",
       "size": 1764,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "fix_pubs.py": {
       "filepath": "fix_pubs.py",
       "size": 763,
-      "summary": "Key capabilities: replace_image"
+      "summary": "Key capabilities: replace_image",
+      "is_gpu": false
     },
     "gemini_search.py": {
       "filepath": "gemini_search.py",
       "size": 867,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "generate_options.py": {
       "filepath": "generate_options.py",
       "size": 1422,
-      "summary": "Key capabilities: get_images"
+      "summary": "Key capabilities: get_images",
+      "is_gpu": false
     },
     "get_cites.py": {
       "filepath": "get_cites.py",
       "size": 457,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "index.html": {
       "filepath": "index.html",
       "size": 357,
-      "summary": "Frontend layout and styling templates."
+      "summary": "Frontend layout and styling templates.",
+      "is_gpu": false
     },
     "match_all_images.py": {
       "filepath": "match_all_images.py",
       "size": 5779,
-      "summary": "Key capabilities: get_import_var, clean_str"
+      "summary": "Key capabilities: get_import_var, clean_str",
+      "is_gpu": false
     },
     "parse_local_scholar.py": {
       "filepath": "parse_local_scholar.py",
       "size": 1162,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "parse_scholar.py": {
       "filepath": "parse_scholar.py",
       "size": 708,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "refactor_imports.py": {
       "filepath": "refactor_imports.py",
       "size": 2884,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "refactor_projects.py": {
       "filepath": "refactor_projects.py",
       "size": 1843,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scratch_update.py": {
       "filepath": "scratch_update.py",
       "size": 2194,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/App.css": {
       "filepath": "src/App.css",
       "size": 319,
-      "summary": "Frontend layout and styling templates."
+      "summary": "Frontend layout and styling templates.",
+      "is_gpu": false
     },
     "src/App.jsx": {
       "filepath": "src/App.jsx",
       "size": 2958,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/components/About/About.css": {
       "filepath": "src/components/About/About.css",
       "size": 1832,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/About/About.jsx": {
       "filepath": "src/components/About/About.jsx",
       "size": 5579,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": true
     },
     "src/components/CareerTimeline/CareerTimeline.css": {
       "filepath": "src/components/CareerTimeline/CareerTimeline.css",
       "size": 1273,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/CareerTimeline/CareerTimeline.jsx": {
       "filepath": "src/components/CareerTimeline/CareerTimeline.jsx",
       "size": 3730,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Education/Education.css": {
       "filepath": "src/components/Education/Education.css",
       "size": 896,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Education/Education.jsx": {
       "filepath": "src/components/Education/Education.jsx",
       "size": 1610,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Education/EducationDetail.css": {
       "filepath": "src/components/Education/EducationDetail.css",
       "size": 1211,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Education/EducationDetail.jsx": {
       "filepath": "src/components/Education/EducationDetail.jsx",
       "size": 1621,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Experience/Experience.css": {
       "filepath": "src/components/Experience/Experience.css",
       "size": 1789,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Experience/Experience.jsx": {
       "filepath": "src/components/Experience/Experience.jsx",
       "size": 1791,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Experience/ExperienceDetail.css": {
       "filepath": "src/components/Experience/ExperienceDetail.css",
       "size": 1241,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Experience/ExperienceDetail.jsx": {
       "filepath": "src/components/Experience/ExperienceDetail.jsx",
       "size": 1863,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Footer/Footer.css": {
       "filepath": "src/components/Footer/Footer.css",
       "size": 652,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Footer/Footer.jsx": {
       "filepath": "src/components/Footer/Footer.jsx",
       "size": 1176,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/GeminiAssistant/GeminiAssistant.css": {
       "filepath": "src/components/GeminiAssistant/GeminiAssistant.css",
       "size": 6276,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/GeminiAssistant/GeminiAssistant.jsx": {
       "filepath": "src/components/GeminiAssistant/GeminiAssistant.jsx",
       "size": 13088,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/GitHubStats/GitHubStats.css": {
       "filepath": "src/components/GitHubStats/GitHubStats.css",
       "size": 2648,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/GitHubStats/GitHubStats.jsx": {
       "filepath": "src/components/GitHubStats/GitHubStats.jsx",
       "size": 5440,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/GithubRepos/GithubRepos.css": {
       "filepath": "src/components/GithubRepos/GithubRepos.css",
       "size": 2052,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/GithubRepos/GithubRepos.jsx": {
       "filepath": "src/components/GithubRepos/GithubRepos.jsx",
       "size": 7900,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/GithubRepos/RepoFunctions.css": {
       "filepath": "src/components/GithubRepos/RepoFunctions.css",
       "size": 3015,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/GithubRepos/RepoFunctions.jsx": {
       "filepath": "src/components/GithubRepos/RepoFunctions.jsx",
       "size": 6218,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": true
     },
     "src/components/Hero/Hero.css": {
       "filepath": "src/components/Hero/Hero.css",
       "size": 2762,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Hero/Hero.jsx": {
       "filepath": "src/components/Hero/Hero.jsx",
       "size": 2330,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Navbar/Navbar.css": {
       "filepath": "src/components/Navbar/Navbar.css",
       "size": 2155,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Navbar/Navbar.jsx": {
       "filepath": "src/components/Navbar/Navbar.jsx",
       "size": 2889,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Projects/ProjectDetail.css": {
       "filepath": "src/components/Projects/ProjectDetail.css",
       "size": 1517,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Projects/ProjectDetail.jsx": {
       "filepath": "src/components/Projects/ProjectDetail.jsx",
       "size": 2965,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Projects/Projects.css": {
       "filepath": "src/components/Projects/Projects.css",
       "size": 3018,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Projects/Projects.jsx": {
       "filepath": "src/components/Projects/Projects.jsx",
       "size": 3015,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Publications/PublicationDetail.css": {
       "filepath": "src/components/Publications/PublicationDetail.css",
       "size": 2219,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Publications/PublicationDetail.jsx": {
       "filepath": "src/components/Publications/PublicationDetail.jsx",
       "size": 2892,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Publications/Publications.css": {
       "filepath": "src/components/Publications/Publications.css",
       "size": 2806,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Publications/Publications.jsx": {
       "filepath": "src/components/Publications/Publications.jsx",
       "size": 4415,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/ResearchGraph/ResearchGraph.css": {
       "filepath": "src/components/ResearchGraph/ResearchGraph.css",
       "size": 643,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/ResearchGraph/ResearchGraph.jsx": {
       "filepath": "src/components/ResearchGraph/ResearchGraph.jsx",
       "size": 2885,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Skills/Skills.css": {
       "filepath": "src/components/Skills/Skills.css",
       "size": 457,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/components/Skills/Skills.jsx": {
       "filepath": "src/components/Skills/Skills.jsx",
       "size": 3951,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "src/data/educationData.js": {
       "filepath": "src/data/educationData.js",
       "size": 1245,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "src/data/experienceData.js": {
       "filepath": "src/data/experienceData.js",
       "size": 2067,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "src/data/imageDatabase.js": {
       "filepath": "src/data/imageDatabase.js",
       "size": 3073,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "src/data/projectsData.js": {
       "filepath": "src/data/projectsData.js",
       "size": 33224,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": true
     },
     "src/data/projectsImageDatabase.js": {
       "filepath": "src/data/projectsImageDatabase.js",
       "size": 1754,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "src/data/publicationsData.js": {
       "filepath": "src/data/publicationsData.js",
       "size": 18479,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "src/data/skillsData.js": {
       "filepath": "src/data/skillsData.js",
       "size": 1020,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": true
     },
     "src/data/timelineData.js": {
       "filepath": "src/data/timelineData.js",
       "size": 3790,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "src/index.css": {
       "filepath": "src/index.css",
       "size": 1865,
-      "summary": "Frontend layout and styling templates."
+      "summary": "Frontend layout and styling templates.",
+      "is_gpu": false
     },
     "src/main.jsx": {
       "filepath": "src/main.jsx",
       "size": 312,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "update_db.py": {
       "filepath": "update_db.py",
       "size": 595,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "update_db_names.py": {
       "filepath": "update_db_names.py",
       "size": 3811,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "update_from_tex.py": {
       "filepath": "update_from_tex.py",
       "size": 6251,
-      "summary": "Key capabilities: get_or_create_import"
+      "summary": "Key capabilities: get_or_create_import",
+      "is_gpu": false
     },
     "update_publications.py": {
       "filepath": "update_publications.py",
       "size": 3117,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "update_pubs_from_resume.py": {
       "filepath": "update_pubs_from_resume.py",
       "size": 4935,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "vite.config.js": {
       "filepath": "vite.config.js",
       "size": 160,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     }
   },
   "file_metadata": {

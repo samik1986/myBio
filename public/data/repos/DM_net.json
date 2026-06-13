@@ -51509,112 +51509,134 @@
     "createBlack.py": {
       "filepath": "createBlack.py",
       "size": 4705,
-      "summary": "Key capabilities: readImagesTwice"
+      "summary": "Key capabilities: readImagesTwice",
+      "is_gpu": false
     },
     "createData.py": {
       "filepath": "createData.py",
       "size": 9037,
-      "summary": "Key capabilities: readImagesTwice, clipped_zoom, imageLoader"
+      "summary": "Key capabilities: readImagesTwice, clipped_zoom, imageLoader",
+      "is_gpu": false
     },
     "createDataA.py": {
       "filepath": "createDataA.py",
       "size": 2676,
-      "summary": "Key capabilities: readImagesTwice"
+      "summary": "Key capabilities: readImagesTwice",
+      "is_gpu": false
     },
     "createDataFT.py": {
       "filepath": "createDataFT.py",
       "size": 2677,
-      "summary": "Key capabilities: readImagesTwice"
+      "summary": "Key capabilities: readImagesTwice",
+      "is_gpu": false
     },
     "createDataTest.py": {
       "filepath": "createDataTest.py",
       "size": 3719,
-      "summary": "Key capabilities: readImagesTwice, imageLoader"
+      "summary": "Key capabilities: readImagesTwice, imageLoader",
+      "is_gpu": false
     },
     "createNETa.py": {
       "filepath": "createNETa.py",
       "size": 6839,
-      "summary": "Key capabilities: jaccard_distance, dmnet"
+      "summary": "Key capabilities: jaccard_distance, dmnet",
+      "is_gpu": false
     },
     "createNEt.py": {
       "filepath": "createNEt.py",
       "size": 6738,
-      "summary": "Key capabilities: jaccard_distance, dmnet"
+      "summary": "Key capabilities: jaccard_distance, dmnet",
+      "is_gpu": false
     },
     "createNEt_U.py": {
       "filepath": "createNEt_U.py",
       "size": 6034,
-      "summary": "Key capabilities: jaccard_distance, dmnetU"
+      "summary": "Key capabilities: jaccard_distance, dmnetU",
+      "is_gpu": false
     },
     "createNEt_long.py": {
       "filepath": "createNEt_long.py",
       "size": 5999,
-      "summary": "Key capabilities: jaccard_distance, dmnetLong"
+      "summary": "Key capabilities: jaccard_distance, dmnetLong",
+      "is_gpu": false
     },
     "data.py": {
       "filepath": "data.py",
       "size": 6452,
-      "summary": "Key capabilities: adjustData, trainGenerator, validateGenerator, and more"
+      "summary": "Key capabilities: adjustData, trainGenerator, validateGenerator, and more",
+      "is_gpu": false
     },
     "eval_metric.m": {
       "filepath": "eval_metric.m",
       "size": 1679,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "fullModel.py": {
       "filepath": "fullModel.py",
       "size": 9620,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "fullModelA.py": {
       "filepath": "fullModelA.py",
       "size": 9626,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "fullModelFT.py": {
       "filepath": "fullModelFT.py",
       "size": 1878,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "fullModelLong.py": {
       "filepath": "fullModelLong.py",
       "size": 9630,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "fullModel_2Img.py": {
       "filepath": "fullModel_2Img.py",
       "size": 9626,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "fullModel_U.py": {
       "filepath": "fullModel_U.py",
       "size": 9621,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "modelUnet.py": {
       "filepath": "modelUnet.py",
       "size": 5158,
-      "summary": "Key capabilities: jaccard_distance, unet"
+      "summary": "Key capabilities: jaccard_distance, unet",
+      "is_gpu": false
     },
     "new_tst.py": {
       "filepath": "new_tst.py",
       "size": 1804,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "thresh4eval.m": {
       "filepath": "thresh4eval.m",
       "size": 718,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "tsting.py": {
       "filepath": "tsting.py",
       "size": 3598,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "tsting_singleIP.py": {
       "filepath": "tsting_singleIP.py",
       "size": 3594,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     }
   },
   "file_metadata": {

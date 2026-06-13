@@ -304,112 +304,134 @@
     "data/__init__.py": {
       "filepath": "data/__init__.py",
       "size": 155,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "data/nlp_preprocessing.py": {
       "filepath": "data/nlp_preprocessing.py",
       "size": 954,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "foundations/__init__.py": {
       "filepath": "foundations/__init__.py",
       "size": 491,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "foundations/activations.py": {
       "filepath": "foundations/activations.py",
       "size": 476,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "foundations/backprop.py": {
       "filepath": "foundations/backprop.py",
       "size": 873,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "foundations/digit_classifier.py": {
       "filepath": "foundations/digit_classifier.py",
       "size": 877,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "foundations/gradient_descent.py": {
       "filepath": "foundations/gradient_descent.py",
       "size": 519,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "foundations/linear_regression.py": {
       "filepath": "foundations/linear_regression.py",
       "size": 774,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "foundations/linear_regression_training.py": {
       "filepath": "foundations/linear_regression_training.py",
       "size": 1352,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "foundations/loss.py": {
       "filepath": "foundations/loss.py",
       "size": 1093,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "foundations/mlp.py": {
       "filepath": "foundations/mlp.py",
       "size": 689,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "foundations/multi_layer_backprop.py": {
       "filepath": "foundations/multi_layer_backprop.py",
       "size": 1809,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "foundations/neuron.py": {
       "filepath": "foundations/neuron.py",
       "size": 705,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "foundations/pytorch_basics.py": {
       "filepath": "foundations/pytorch_basics.py",
       "size": 1244,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "foundations/sentiment.py": {
       "filepath": "foundations/sentiment.py",
       "size": 875,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "foundations/softmax.py": {
       "filepath": "foundations/softmax.py",
       "size": 429,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "foundations/training_loop.py": {
       "filepath": "foundations/training_loop.py",
       "size": 908,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "foundations/weight_init.py": {
       "filepath": "foundations/weight_init.py",
       "size": 2033,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "model/__init__.py": {
       "filepath": "model/__init__.py",
       "size": 328,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "model/batch_normalization.py": {
       "filepath": "model/batch_normalization.py",
       "size": 1419,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "model/embeddings.py": {
       "filepath": "model/embeddings.py",
       "size": 451,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "model/normalization.py": {
       "filepath": "model/normalization.py",
       "size": 709,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     }
   },
   "file_metadata": {

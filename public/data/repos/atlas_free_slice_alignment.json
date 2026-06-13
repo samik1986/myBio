@@ -7,27 +7,32 @@
     "docs/conf.py": {
       "filepath": "docs/conf.py",
       "size": 1715,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "source/notebooks/example.ipynb": {
       "filepath": "source/notebooks/example.ipynb",
       "size": 2713,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "source/notebooks/slice_alignment_parallel Telescope a=0.25 c=0.25 deform only-Copy1.ipynb": {
       "filepath": "source/notebooks/slice_alignment_parallel Telescope a=0.25 c=0.25 deform only-Copy1.ipynb",
       "size": 67119,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "source/scripts/slice_alignment.py": {
       "filepath": "source/scripts/slice_alignment.py",
       "size": 19172,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "source/scripts/slice_alignment_help.py": {
       "filepath": "source/scripts/slice_alignment_help.py",
       "size": 22500,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     }
   },
   "repo_insight": "The 'atlas_free_slice_alignment' repository provides a sophisticated computational framework for the precise, non-atlas-dependent alignment of sequential 2D image slices, primarily targeting data acquired from complex optical or imaging systems that generate slices susceptible to various geometric deformations. Its holistic capability lies in accurately registering these slices and correcting for non-rigid transformations without relying on a pre-existing anatomical atlas, making it particularly useful in scientific imaging domains where dynamic or diverse samples preclude the use of fixed templates. The repository is intended to be used by first consulting its Sphinx-generated documentation (indicated by docs/conf.py) for a comprehensive conceptual understanding and setup instructions. Users can then engage with source/notebooks/example.ipynb for a practical, hands-on demonstration of the core alignment process, while source/notebooks/slice_alignment_parallel Telescope a=0.25 c=0.25 deform only-Copy1.ipynb provides a deeper dive into a specific, complex use case, demonstrating parameter tuning and deformation correction tailored for particular optical system characteristics. The primary means of applying the alignment algorithms to user-provided datasets would be through executing source/scripts/slice_alignment.py, likely via a command-line interface, with source/scripts/slice_alignment_help.py potentially providing utility functions or command-line argument parsing. Key architectural highlights include a robust, script-based core for automated execution, complemented by Jupyter notebooks for interactive exploration, visualization, and detailed exposition of complex algorithms and parameters, fostering reproducibility and understanding. Algorithmically, the project emphasizes \"atlas-free\" registration, suggesting the implementation of advanced image-based or feature-based alignment strategies, with a specific focus on \"deform only\" transformations, implying the use of sophisticated warping models (e.g., B-splines, thin-plate splines) to precisely correct for geometric distortions inherent to specialized imaging setups like the \"parallel Telescope\" context hinted at in the notebook titles."

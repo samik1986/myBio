@@ -795,307 +795,368 @@
     "Data Structures & Algorithms/add-two-numbers/submission-0.py": {
       "filepath": "Data Structures & Algorithms/add-two-numbers/submission-0.py",
       "size": 600,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/anagram-groups/submission-0.py": {
       "filepath": "Data Structures & Algorithms/anagram-groups/submission-0.py",
       "size": 529,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/buy-and-sell-crypto/submission-2.py": {
       "filepath": "Data Structures & Algorithms/buy-and-sell-crypto/submission-2.py",
       "size": 406,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/climbing-stairs/submission-0.py": {
       "filepath": "Data Structures & Algorithms/climbing-stairs/submission-0.py",
       "size": 241,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/count-paths/submission-0.py": {
       "filepath": "Data Structures & Algorithms/count-paths/submission-0.py",
       "size": 271,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/daily-temperatures/submission-0.cpp": {
       "filepath": "Data Structures & Algorithms/daily-temperatures/submission-0.cpp",
       "size": 442,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/depth-of-binary-tree/submission-0.py": {
       "filepath": "Data Structures & Algorithms/depth-of-binary-tree/submission-0.py",
       "size": 350,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/depth-of-binary-tree/submission-1.cpp": {
       "filepath": "Data Structures & Algorithms/depth-of-binary-tree/submission-1.cpp",
       "size": 555,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/duplicate-integer/submission-0.py": {
       "filepath": "Data Structures & Algorithms/duplicate-integer/submission-0.py",
       "size": 239,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/evaluate-reverse-polish-notation/submission-0.cpp": {
       "filepath": "Data Structures & Algorithms/evaluate-reverse-polish-notation/submission-0.cpp",
       "size": 770,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/find-minimum-in-rotated-sorted-array/submission-0.py": {
       "filepath": "Data Structures & Algorithms/find-minimum-in-rotated-sorted-array/submission-0.py",
       "size": 437,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/find-target-in-rotated-sorted-array/submission-1.py": {
       "filepath": "Data Structures & Algorithms/find-target-in-rotated-sorted-array/submission-1.py",
       "size": 817,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/house-robber-ii/submission-0.py": {
       "filepath": "Data Structures & Algorithms/house-robber-ii/submission-0.py",
       "size": 605,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/house-robber/submission-0.py": {
       "filepath": "Data Structures & Algorithms/house-robber/submission-0.py",
       "size": 378,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/implement-prefix-tree/submission-0.py": {
       "filepath": "Data Structures & Algorithms/implement-prefix-tree/submission-0.py",
       "size": 883,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/invert-a-binary-tree/submission-0.py": {
       "filepath": "Data Structures & Algorithms/invert-a-binary-tree/submission-0.py",
       "size": 289,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/is-anagram/submission-0.py": {
       "filepath": "Data Structures & Algorithms/is-anagram/submission-0.py",
       "size": 154,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/is-palindrome/submission-0.py": {
       "filepath": "Data Structures & Algorithms/is-palindrome/submission-0.py",
       "size": 552,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/level-order-traversal-of-binary-tree/submission-0.py": {
       "filepath": "Data Structures & Algorithms/level-order-traversal-of-binary-tree/submission-0.py",
       "size": 733,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/linked-list-cycle-detection/submission-0.py": {
       "filepath": "Data Structures & Algorithms/linked-list-cycle-detection/submission-0.py",
       "size": 420,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/longest-common-prefix/submission-0.py": {
       "filepath": "Data Structures & Algorithms/longest-common-prefix/submission-0.py",
       "size": 370,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/longest-common-subsequence/submission-0.py": {
       "filepath": "Data Structures & Algorithms/longest-common-subsequence/submission-0.py",
       "size": 420,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/longest-consecutive-sequence/submission-2.py": {
       "filepath": "Data Structures & Algorithms/longest-consecutive-sequence/submission-2.py",
       "size": 937,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/longest-repeating-substring-with-replacement/submission-2.py": {
       "filepath": "Data Structures & Algorithms/longest-repeating-substring-with-replacement/submission-2.py",
       "size": 396,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/longest-substring-without-duplicates/submission-8.py": {
       "filepath": "Data Structures & Algorithms/longest-substring-without-duplicates/submission-8.py",
       "size": 753,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/longest-substring-without-duplicates/submission-9.py": {
       "filepath": "Data Structures & Algorithms/longest-substring-without-duplicates/submission-9.py",
       "size": 753,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/lowest-common-ancestor-in-binary-search-tree/submission-0.py": {
       "filepath": "Data Structures & Algorithms/lowest-common-ancestor-in-binary-search-tree/submission-0.py",
       "size": 370,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/max-water-container/submission-1.py": {
       "filepath": "Data Structures & Algorithms/max-water-container/submission-1.py",
       "size": 394,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/median-of-two-sorted-arrays/submission-0.py": {
       "filepath": "Data Structures & Algorithms/median-of-two-sorted-arrays/submission-0.py",
       "size": 525,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/merge-k-sorted-linked-lists/submission-0.py": {
       "filepath": "Data Structures & Algorithms/merge-k-sorted-linked-lists/submission-0.py",
       "size": 781,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/merge-two-sorted-linked-lists/submission-0.py": {
       "filepath": "Data Structures & Algorithms/merge-two-sorted-linked-lists/submission-0.py",
       "size": 591,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/middle-of-the-linked-list/submission-4.cpp": {
       "filepath": "Data Structures & Algorithms/middle-of-the-linked-list/submission-4.cpp",
       "size": 605,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/minimum-path-sum/submission-0.py": {
       "filepath": "Data Structures & Algorithms/minimum-path-sum/submission-0.py",
       "size": 397,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/minimum-stack/submission-0.cpp": {
       "filepath": "Data Structures & Algorithms/minimum-stack/submission-0.cpp",
       "size": 613,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/number-of-one-bits/submission-0.cpp": {
       "filepath": "Data Structures & Algorithms/number-of-one-bits/submission-0.cpp",
       "size": 256,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/palindrome-number/submission-0.py": {
       "filepath": "Data Structures & Algorithms/palindrome-number/submission-0.py",
       "size": 257,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/permutation-string/submission-0.cpp": {
       "filepath": "Data Structures & Algorithms/permutation-string/submission-0.cpp",
       "size": 433,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/pow-x-n/submission-0.cpp": {
       "filepath": "Data Structures & Algorithms/pow-x-n/submission-0.cpp",
       "size": 266,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/products-of-array-discluding-self/submission-0.py": {
       "filepath": "Data Structures & Algorithms/products-of-array-discluding-self/submission-0.py",
       "size": 704,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/remove-node-from-end-of-linked-list/submission-0.py": {
       "filepath": "Data Structures & Algorithms/remove-node-from-end-of-linked-list/submission-0.py",
       "size": 398,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/reorder-linked-list/submission-0.py": {
       "filepath": "Data Structures & Algorithms/reorder-linked-list/submission-0.py",
       "size": 662,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/reorder-linked-list/submission-1.py": {
       "filepath": "Data Structures & Algorithms/reorder-linked-list/submission-1.py",
       "size": 662,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/reverse-a-linked-list/submission-0.py": {
       "filepath": "Data Structures & Algorithms/reverse-a-linked-list/submission-0.py",
       "size": 460,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/reverse-bits/submission-0.cpp": {
       "filepath": "Data Structures & Algorithms/reverse-bits/submission-0.cpp",
       "size": 236,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/reverse-integer/submission-1.py": {
       "filepath": "Data Structures & Algorithms/reverse-integer/submission-1.py",
       "size": 646,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/reverse-string/submission-0.cpp": {
       "filepath": "Data Structures & Algorithms/reverse-string/submission-0.cpp",
       "size": 241,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/rotate-matrix/submission-0.cpp": {
       "filepath": "Data Structures & Algorithms/rotate-matrix/submission-0.cpp",
       "size": 338,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/same-binary-tree/submission-0.py": {
       "filepath": "Data Structures & Algorithms/same-binary-tree/submission-0.py",
       "size": 395,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/same-binary-tree/submission-1.py": {
       "filepath": "Data Structures & Algorithms/same-binary-tree/submission-1.py",
       "size": 382,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/search-in-rotated-sorted-array-ii/submission-0.py": {
       "filepath": "Data Structures & Algorithms/search-in-rotated-sorted-array-ii/submission-0.py",
       "size": 304,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/single-number/submission-0.cpp": {
       "filepath": "Data Structures & Algorithms/single-number/submission-0.cpp",
       "size": 329,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/string-encode-and-decode/submission-0.py": {
       "filepath": "Data Structures & Algorithms/string-encode-and-decode/submission-0.py",
       "size": 609,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/subtree-of-a-binary-tree/submission-0.py": {
       "filepath": "Data Structures & Algorithms/subtree-of-a-binary-tree/submission-0.py",
       "size": 698,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/top-k-elements-in-list/submission-0.py": {
       "filepath": "Data Structures & Algorithms/top-k-elements-in-list/submission-0.py",
       "size": 779,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/trapping-rain-water/submission-0.py": {
       "filepath": "Data Structures & Algorithms/trapping-rain-water/submission-0.py",
       "size": 476,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/trapping-rain-water/submission-1.py": {
       "filepath": "Data Structures & Algorithms/trapping-rain-water/submission-1.py",
       "size": 476,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/trapping-rain-water/submission-2.py": {
       "filepath": "Data Structures & Algorithms/trapping-rain-water/submission-2.py",
       "size": 476,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/triangle/submission-0.py": {
       "filepath": "Data Structures & Algorithms/triangle/submission-0.py",
       "size": 404,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/two-integer-sum/submission-0.py": {
       "filepath": "Data Structures & Algorithms/two-integer-sum/submission-0.py",
       "size": 303,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/valid-binary-search-tree/submission-0.py": {
       "filepath": "Data Structures & Algorithms/valid-binary-search-tree/submission-0.py",
       "size": 422,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "Data Structures & Algorithms/validate-parentheses/submission-4.py": {
       "filepath": "Data Structures & Algorithms/validate-parentheses/submission-4.py",
       "size": 776,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     }
   },
   "repo_insight": "The neetcode-submissions-samik1986 repository represents a comprehensive personal reference suite and educational archive designed to master technical coding interviews through highly optimized solutions to core computer science problems. Covering essential domains like dynamic programming, tree traversals, linked list manipulation, and bitwise operations, the repository is primarily intended to be used as a learning companion and benchmark tool where developers can study, compare, and test implementations in both Python and C++ to build systemic algorithmic intuition. By exploring files like merge-k-sorted-linked-lists, longest-substring-without-duplicates, and implement-prefix-tree, users can analyze critical architectural patterns, including the use of divide-and-conquer strategies, optimized sliding window sliding boundaries, explicit memory management in C++, and modular tree node designs. Ultimately, this collection serves as a practical, multi-language guide that showcases how to transition from brute-force approaches to optimal time and space complexities, making it an invaluable asset for anyone refining their problem-solving and software engineering capabilities."

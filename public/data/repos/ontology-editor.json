@@ -7,162 +7,194 @@
     "scripts/add_parent_relationships.py": {
       "filepath": "scripts/add_parent_relationships.py",
       "size": 2161,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/ai_context.py": {
       "filepath": "scripts/ai_context.py",
       "size": 12353,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/ai_create_changes.py": {
       "filepath": "scripts/ai_create_changes.py",
       "size": 4962,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/ai_create_changes_v2.py": {
       "filepath": "scripts/ai_create_changes_v2.py",
       "size": 14425,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/ai_enhanced_prompt.py": {
       "filepath": "scripts/ai_enhanced_prompt.py",
       "size": 10045,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/ai_process_request.py": {
       "filepath": "scripts/ai_process_request.py",
       "size": 20063,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/ai_query.py": {
       "filepath": "scripts/ai_query.py",
       "size": 5512,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/bootstrap_species.py": {
       "filepath": "scripts/bootstrap_species.py",
       "size": 13182,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/generate_changelog.py": {
       "filepath": "scripts/generate_changelog.py",
       "size": 10974,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/generate_embeddings.py": {
       "filepath": "scripts/generate_embeddings.py",
       "size": 3054,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/generate_owl.py": {
       "filepath": "scripts/generate_owl.py",
       "size": 10168,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/generate_tree.py": {
       "filepath": "scripts/generate_tree.py",
       "size": 18262,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/generate_wiki.py": {
       "filepath": "scripts/generate_wiki.py",
       "size": 22922,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/import_brain_nomenclature.py": {
       "filepath": "scripts/import_brain_nomenclature.py",
       "size": 5612,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/lateralize_relationships.py": {
       "filepath": "scripts/lateralize_relationships.py",
       "size": 4655,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/lateralize_structures.py": {
       "filepath": "scripts/lateralize_structures.py",
       "size": 8641,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/move_structure.py": {
       "filepath": "scripts/move_structure.py",
       "size": 8641,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/parse_ai_response_from_issue.py": {
       "filepath": "scripts/parse_ai_response_from_issue.py",
       "size": 8074,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/parse_reorganization_request.py": {
       "filepath": "scripts/parse_reorganization_request.py",
       "size": 8154,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/process_batch_reorg.py": {
       "filepath": "scripts/process_batch_reorg.py",
       "size": 7161,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/process_relationship_issue.py": {
       "filepath": "scripts/process_relationship_issue.py",
       "size": 4150,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/process_removal_issue.py": {
       "filepath": "scripts/process_removal_issue.py",
       "size": 10318,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/process_structure_issue.py": {
       "filepath": "scripts/process_structure_issue.py",
       "size": 5497,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/qc_check.py": {
       "filepath": "scripts/qc_check.py",
       "size": 11666,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/remove_lateralized_parents.py": {
       "filepath": "scripts/remove_lateralized_parents.py",
       "size": 3833,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/semantic_search.py": {
       "filepath": "scripts/semantic_search.py",
       "size": 4434,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/sync_to_db.py": {
       "filepath": "scripts/sync_to_db.py",
       "size": 16877,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/test_ai_process.py": {
       "filepath": "scripts/test_ai_process.py",
       "size": 11219,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "scripts/test_enhanced_ai.py": {
       "filepath": "scripts/test_enhanced_ai.py",
       "size": 10235,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "scripts/validate.py": {
       "filepath": "scripts/validate.py",
       "size": 15763,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/verify_relationship_consistency.py": {
       "filepath": "scripts/verify_relationship_consistency.py",
       "size": 6509,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scripts/yaml_utils.py": {
       "filepath": "scripts/yaml_utils.py",
       "size": 3464,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     }
   },
   "repo_insight": "This repository serves as an advanced, AI-powered system for the comprehensive management, editing, and evolution of complex ontologies, particularly within the domain of biological and anatomical nomenclature, as hinted by scripts like 'import_brain_nomenclature.py' and 'bootstrap_species.py'. Its holistic capability lies in automating and assisting the lifecycle of an ontology, from initial creation and data ingestion to ongoing maintenance, validation, and diverse documentation generation. The repository is intended to be used by ontology curators, domain experts, or researchers to streamline the process of updating and expanding knowledge bases. Users would likely submit change requests\u2014potentially in natural language or structured formats\u2014which are then parsed and interpreted by AI components. The system then processes these requests, automatically generates proposed ontology modifications, and applies them after validation. It supports generating standard OWL exports, creating human-readable documentation (wiki), performing quality checks, and enabling semantic search, making the ontology accessible and verifiable. Key architectural highlights include a robust AI-driven ontology evolution pipeline, utilizing advanced prompt engineering ('ai_enhanced_prompt.py') and AI-assisted content generation ('ai_create_changes.py') to interpret requests and modify the ontology structure. A significant algorithmic highlight is its semantic processing capability, employing 'generate_embeddings.py' and 'semantic_search.py' to understand and query the ontology based on conceptual meaning rather than just keywords. Furthermore, it features an automated change management workflow, with scripts like 'parse_reorganization_request.py' and 'process_structure_issue.py' indicating a structured approach to applying changes, potentially integrated with an issue tracking system, alongside dedicated algorithms for robust validation ('validate.py', 'qc_check.py') and specialized handling of anatomical complexities such as laterality ('lateralize_structures.py')."

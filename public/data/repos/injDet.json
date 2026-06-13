@@ -38986,17 +38986,20 @@
     "phase1.py": {
       "filepath": "phase1.py",
       "size": 12899,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "phase2_G.py": {
       "filepath": "phase2_G.py",
       "size": 8305,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "phase2_R.py": {
       "filepath": "phase2_R.py",
       "size": 7115,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     }
   },
   "file_metadata": {

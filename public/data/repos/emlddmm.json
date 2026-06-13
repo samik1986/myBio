@@ -7,417 +7,500 @@
     "curve_annotator.py": {
       "filepath": "curve_annotator.py",
       "size": 3988,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "docs/build/html/2D_metadata_setup.html": {
       "filepath": "docs/build/html/2D_metadata_setup.html",
       "size": 4735,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "docs/build/html/Mouse_Serial_Section_Example.html": {
       "filepath": "docs/build/html/Mouse_Serial_Section_Example.html",
       "size": 7455499,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_modules/emlddmm.html": {
       "filepath": "docs/build/html/_modules/emlddmm.html",
       "size": 1063881,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_modules/histsetup.html": {
       "filepath": "docs/build/html/_modules/histsetup.html",
       "size": 66446,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_modules/index.html": {
       "filepath": "docs/build/html/_modules/index.html",
       "size": 4809,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_modules/test_emlddmm.html": {
       "filepath": "docs/build/html/_modules/test_emlddmm.html",
       "size": 16321,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "docs/build/html/_modules/transformation_graph.html": {
       "filepath": "docs/build/html/_modules/transformation_graph.html",
       "size": 179058,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_modules/transformation_graph_v01.html": {
       "filepath": "docs/build/html/_modules/transformation_graph_v01.html",
       "size": 263331,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/_sphinx_javascript_frameworks_compat.js": {
       "filepath": "docs/build/html/_static/_sphinx_javascript_frameworks_compat.js",
       "size": 4418,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/basic.css": {
       "filepath": "docs/build/html/_static/basic.css",
       "size": 14621,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/css/badge_only.css": {
       "filepath": "docs/build/html/_static/css/badge_only.css",
       "size": 3275,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/css/theme.css": {
       "filepath": "docs/build/html/_static/css/theme.css",
       "size": 129674,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/doctools.js": {
       "filepath": "docs/build/html/_static/doctools.js",
       "size": 4472,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/documentation_options.js": {
       "filepath": "docs/build/html/_static/documentation_options.js",
       "size": 420,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/graphviz.css": {
       "filepath": "docs/build/html/_static/graphviz.css",
       "size": 299,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/jquery-3.6.0.js": {
       "filepath": "docs/build/html/_static/jquery-3.6.0.js",
       "size": 288580,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/jquery.js": {
       "filepath": "docs/build/html/_static/jquery.js",
       "size": 89501,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/js/badge_only.js": {
       "filepath": "docs/build/html/_static/js/badge_only.js",
       "size": 934,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/js/html5shiv-printshiv.min.js": {
       "filepath": "docs/build/html/_static/js/html5shiv-printshiv.min.js",
       "size": 4370,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/js/html5shiv.min.js": {
       "filepath": "docs/build/html/_static/js/html5shiv.min.js",
       "size": 2734,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/js/theme.js": {
       "filepath": "docs/build/html/_static/js/theme.js",
       "size": 5023,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/language_data.js": {
       "filepath": "docs/build/html/_static/language_data.js",
       "size": 4758,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "docs/build/html/_static/nbsphinx-code-cells.css": {
       "filepath": "docs/build/html/_static/nbsphinx-code-cells.css",
       "size": 6861,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/nbsphinx-gallery.css": {
       "filepath": "docs/build/html/_static/nbsphinx-gallery.css",
       "size": 584,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/pygments.css": {
       "filepath": "docs/build/html/_static/pygments.css",
       "size": 4819,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/searchtools.js": {
       "filepath": "docs/build/html/_static/searchtools.js",
       "size": 18215,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/sphinx_highlight.js": {
       "filepath": "docs/build/html/_static/sphinx_highlight.js",
       "size": 4712,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/underscore-1.13.1.js": {
       "filepath": "docs/build/html/_static/underscore-1.13.1.js",
       "size": 68420,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/_static/underscore.js": {
       "filepath": "docs/build/html/_static/underscore.js",
       "size": 19530,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/coordinate_systems.html": {
       "filepath": "docs/build/html/coordinate_systems.html",
       "size": 29827,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/curve_annotator.html": {
       "filepath": "docs/build/html/curve_annotator.html",
       "size": 5012,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/documentation.html": {
       "filepath": "docs/build/html/documentation.html",
       "size": 5840,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/emlddmm.html": {
       "filepath": "docs/build/html/emlddmm.html",
       "size": 141735,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/example_rat_registration.html": {
       "filepath": "docs/build/html/example_rat_registration.html",
       "size": 5388350,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/examples.html": {
       "filepath": "docs/build/html/examples.html",
       "size": 12714,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/file_formats.html": {
       "filepath": "docs/build/html/file_formats.html",
       "size": 30270,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/genindex.html": {
       "filepath": "docs/build/html/genindex.html",
       "size": 22430,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/histsetup.html": {
       "filepath": "docs/build/html/histsetup.html",
       "size": 16333,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/human_mri_example.html": {
       "filepath": "docs/build/html/human_mri_example.html",
       "size": 8555473,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/index.html": {
       "filepath": "docs/build/html/index.html",
       "size": 10843,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/input_specification.html": {
       "filepath": "docs/build/html/input_specification.html",
       "size": 16645,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/installation.html": {
       "filepath": "docs/build/html/installation.html",
       "size": 7150,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/introduction.html": {
       "filepath": "docs/build/html/introduction.html",
       "size": 12100,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/modules.html": {
       "filepath": "docs/build/html/modules.html",
       "size": 5450,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/output_specification.html": {
       "filepath": "docs/build/html/output_specification.html",
       "size": 8207,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/py-modindex.html": {
       "filepath": "docs/build/html/py-modindex.html",
       "size": 6644,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/search.html": {
       "filepath": "docs/build/html/search.html",
       "size": 5207,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/searchindex.js": {
       "filepath": "docs/build/html/searchindex.js",
       "size": 56387,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/test_emlddmm.html": {
       "filepath": "docs/build/html/test_emlddmm.html",
       "size": 7589,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "docs/build/html/todo.html": {
       "filepath": "docs/build/html/todo.html",
       "size": 5238,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/transformation_graph.html": {
       "filepath": "docs/build/html/transformation_graph.html",
       "size": 4755,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/build/html/transformation_graph_v01.html": {
       "filepath": "docs/build/html/transformation_graph_v01.html",
       "size": 35276,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "docs/prepare_docs.sh": {
       "filepath": "docs/prepare_docs.sh",
       "size": 95,
-      "summary": "Shell script for automation or deployment."
+      "summary": "Shell script for automation or deployment.",
+      "is_gpu": false
     },
     "docs/source/Mouse_Serial_Section_Example.ipynb": {
       "filepath": "docs/source/Mouse_Serial_Section_Example.ipynb",
       "size": 78,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "docs/source/conf.py": {
       "filepath": "docs/source/conf.py",
       "size": 2907,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "docs/source/human_mri_example.ipynb": {
       "filepath": "docs/source/human_mri_example.ipynb",
       "size": 56,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "emlddmm.py": {
       "filepath": "emlddmm.py",
       "size": 238562,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "examples/human_mri_example/human_mri_example.ipynb": {
       "filepath": "examples/human_mri_example/human_mri_example.ipynb",
       "size": 8872211,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "examples/mouse_fmost_example/example_mouse_atlas_to_fmost_registration.ipynb": {
       "filepath": "examples/mouse_fmost_example/example_mouse_atlas_to_fmost_registration.ipynb",
       "size": 5870679,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "examples/mouse_serial_section_example/Mouse_Serial_Section_Example.ipynb": {
       "filepath": "examples/mouse_serial_section_example/Mouse_Serial_Section_Example.ipynb",
       "size": 7860085,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "examples/rat_iDISCO_hemisphere_example/example_rat_registration.ipynb": {
       "filepath": "examples/rat_iDISCO_hemisphere_example/example_rat_registration.ipynb",
       "size": 5633833,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "histsetup.py": {
       "filepath": "histsetup.py",
       "size": 12534,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "manual_point_align.py": {
       "filepath": "manual_point_align.py",
       "size": 19096,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "point_mapper.py": {
       "filepath": "point_mapper.py",
       "size": 10246,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "scratch/scratch.py": {
       "filepath": "scratch/scratch.py",
       "size": 34639,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "tests/test_emlddmm.py": {
       "filepath": "tests/test_emlddmm.py",
       "size": 1665,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "transformation_graph_v01.py": {
       "filepath": "transformation_graph_v01.py",
       "size": 63248,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "unsorted_examples/hackathon_fmost_demo_v00.ipynb": {
       "filepath": "unsorted_examples/hackathon_fmost_demo_v00.ipynb",
       "size": 4939350,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "unsorted_examples/hackathon_fmost_demo_v01_daniel.ipynb": {
       "filepath": "unsorted_examples/hackathon_fmost_demo_v01_daniel.ipynb",
       "size": 5031721,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "unsorted_examples/json_input_generator.html": {
       "filepath": "unsorted_examples/json_input_generator.html",
       "size": 22081,
-      "summary": "Frontend layout and styling templates."
+      "summary": "Frontend layout and styling templates.",
+      "is_gpu": false
     },
     "unsorted_examples/point_mapping_script.ipynb": {
       "filepath": "unsorted_examples/point_mapping_script.ipynb",
       "size": 186886,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "unsorted_examples/run_emlddmm_marmoset_v02.ipynb": {
       "filepath": "unsorted_examples/run_emlddmm_marmoset_v02.ipynb",
       "size": 7825858,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "unsorted_examples/run_emlddmm_marmoset_v03.ipynb": {
       "filepath": "unsorted_examples/run_emlddmm_marmoset_v03.ipynb",
       "size": 6076475,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "unsorted_examples/run_emlddmm_mouse_787small_v00.ipynb": {
       "filepath": "unsorted_examples/run_emlddmm_mouse_787small_v00.ipynb",
       "size": 3200696,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "unsorted_examples/run_emlddmm_mouse_skull_3d_atlas_v00.ipynb": {
       "filepath": "unsorted_examples/run_emlddmm_mouse_skull_3d_atlas_v00.ipynb",
       "size": 3766859,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "unsorted_examples/run_emlddmm_mouse_skull_3d_v00.ipynb": {
       "filepath": "unsorted_examples/run_emlddmm_mouse_skull_3d_v00.ipynb",
       "size": 10246,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "unsorted_examples/run_emlddmm_mricloud.ipynb": {
       "filepath": "unsorted_examples/run_emlddmm_mricloud.ipynb",
       "size": 16553774,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "unsorted_examples/run_emlddmm_v00.ipynb": {
       "filepath": "unsorted_examples/run_emlddmm_v00.ipynb",
       "size": 9512,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "unsorted_examples/run_emlddmm_v01.ipynb": {
       "filepath": "unsorted_examples/run_emlddmm_v01.ipynb",
       "size": 2114128,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "unsorted_examples/test_transformation_graph.ipynb": {
       "filepath": "unsorted_examples/test_transformation_graph.ipynb",
       "size": 9200060,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "unsorted_examples/transformation_graph.py": {
       "filepath": "unsorted_examples/transformation_graph.py",
       "size": 39680,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "vtkreader.m": {
       "filepath": "vtkreader.m",
       "size": 4076,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     }
   },
   "repo_insight": "The emlddmm project delivers a powerful and specialized expectation maximization algorithm primarily focused on deformable registration of biomedical images, addressing challenges such as aligning serial sections or multi-modal MRI data. Its holistic capability lies in simultaneously performing image alignment, predicting and compensating for contrast variations between images, and offering optional slice positioning to accurately reconstruct 3D volumes from misaligned 2D slices. This repository is intended to be utilized by researchers and practitioners in fields like neuroimaging or pathology as a Python-based toolkit; users would install the library, prepare their input image data according to the detailed input specifications outlined in its extensive Sphinx documentation, then execute the EMLDDMM algorithm, and finally interpret the output transformations and registered images, leveraging provided examples for various biological contexts like mouse, rat, and human MRI. Key architectural and algorithmic highlights include its reliance on the robust Expectation Maximization framework to jointly estimate complex deformation fields and image contrast parameters, a dedicated module for managing and correcting slice positions in 3D stacks, and the use of underlying deformation models to represent the non-rigid warps. The presence of `curve_annotator.py` suggests tools for interactive input or landmarking, `histsetup.py` points to preprocessing capabilities, and `transformation_graph` files hint at sophisticated handling and visualization of transformations, all within a well-tested and documented Python environment."

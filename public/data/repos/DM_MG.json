@@ -92,22 +92,26 @@
     "create_dm_patches.m": {
       "filepath": "create_dm_patches.m",
       "size": 1936,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "create_dm_patches_p.m": {
       "filepath": "create_dm_patches_p.m",
       "size": 2007,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "create_dm_patches_p16.m": {
       "filepath": "create_dm_patches_p16.m",
       "size": 1820,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "pix2pix.py": {
       "filepath": "pix2pix.py",
       "size": 14819,
-      "summary": "Key capabilities: structural_loss, imageLoader, imageLoaderReturn, and more"
+      "summary": "Key capabilities: structural_loss, imageLoader, imageLoaderReturn, and more",
+      "is_gpu": false
     }
   },
   "file_metadata": {

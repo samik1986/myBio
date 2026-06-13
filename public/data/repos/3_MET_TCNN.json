@@ -7,32 +7,38 @@
     "dataPrep.py": {
       "filepath": "dataPrep.py",
       "size": 1574,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "stage1.py": {
       "filepath": "stage1.py",
       "size": 2839,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "stage2.py": {
       "filepath": "stage2.py",
       "size": 4017,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "stage2Data.py": {
       "filepath": "stage2Data.py",
       "size": 1169,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "stage3.py": {
       "filepath": "stage3.py",
       "size": 2594,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "test.py": {
       "filepath": "test.py",
       "size": 1219,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     }
   },
   "repo_insight": "The 3_MET_TCNN repository presents a sophisticated, multi-stage deep learning pipeline primarily developed for neurocomputing research, likely accompanying a 2018 paper on applying Temporal Convolutional Neural Networks (TCNNs) to analyze specific neurophysiological time-series data, where \"MET\" likely denotes a domain-specific signal or experimental condition such as metabolic data, motor evoked potentials, or other neural measurements. The project's holistic capability lies in its ability to process complex neural data, learn intricate temporal patterns using TCNNs, and arrive at a specific classification or prediction relevant to neuroscience. Intended usage involves a sequential execution flow: first, dataPrep.py is used to preprocess raw neurophysiological data into a suitable format; subsequently, stage1.py trains an initial model or extracts preliminary features; then, stage2Data.py prepares specific inputs for the second stage, potentially utilizing outputs from stage 1; stage2.py proceeds with further training or representation learning; finally, stage3.py completes the model training or makes final predictions, with test.py providing comprehensive evaluation of the entire system's performance. Key architectural and algorithmic highlights include the strategic application of TCNNs for effective temporal sequence modeling, crucial for neuroscience time-series, and a distinct three-stage processing architecture that implies a hierarchical or cascading model design. This multi-stage approach allows for progressive feature learning, refined data representation, or handling different aspects of the neurocomputing task, underscoring a robust and modular methodology for tackling challenging problems in brain data analysis."

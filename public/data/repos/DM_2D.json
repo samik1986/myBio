@@ -1293,337 +1293,404 @@
     "DiMo2d/__init__.py": {
       "filepath": "DiMo2d/__init__.py",
       "size": 28546,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/__init__func.py": {
       "filepath": "DiMo2d/__init__func.py",
       "size": 3715,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c",
       "size": 20271,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
       "size": 20091,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/build/CMakeFiles/FindMPI/test_mpi.cpp": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/build/CMakeFiles/FindMPI/test_mpi.cpp",
       "size": 857,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/externals/mem_usage/mem_usage.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/externals/mem_usage/mem_usage.h",
       "size": 4171,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/driver/MersenneTwister.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/driver/MersenneTwister.h",
       "size": 14121,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/driver/psort_bench.sh": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/driver/psort_bench.sh",
       "size": 410,
-      "summary": "Shell script for automation or deployment."
+      "summary": "Shell script for automation or deployment.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/funnel.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/funnel.h",
       "size": 14589,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/funnel.timpl.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/funnel.timpl.h",
       "size": 57802,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort.h",
       "size": 4339,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_alltoall.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_alltoall.h",
       "size": 3429,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_merge.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_merge.h",
       "size": 6671,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_samplesort.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_samplesort.h",
       "size": 10590,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_seqsort.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_seqsort.h",
       "size": 2339,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_splitters.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_splitters.h",
       "size": 18567,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_util.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_util.h",
       "size": 8052,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/sort.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/sort.h",
       "size": 1383,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/sort.timpl.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/sort.timpl.h",
       "size": 11734,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/compute_reduced_columns.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/compute_reduced_columns.h",
       "size": 2639,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/dualize_explicit_complex.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/dualize_explicit_complex.h",
       "size": 9341,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/generate_unreduced_columns.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/generate_unreduced_columns.h",
       "size": 5336,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/get_cell_to_filtration_map.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/get_cell_to_filtration_map.h",
       "size": 2083,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/get_filtration_to_cell_map.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/get_filtration_to_cell_map.h",
       "size": 4635,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/reduction_kernel.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/reduction_kernel.h",
       "size": 3911,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/distributed_vector.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/distributed_vector.h",
       "size": 5224,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/flat_column_stack.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/flat_column_stack.h",
       "size": 2021,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/heap_column.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/heap_column.h",
       "size": 2876,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/write_once_array_of_arrays.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/write_once_array_of_arrays.h",
       "size": 2084,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/write_once_column_array.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/write_once_column_array.h",
       "size": 2843,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/element_distribution.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/element_distribution.h",
       "size": 4665,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/file_types.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/file_types.h",
       "size": 2177,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/globals.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/globals.h",
       "size": 1576,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/includes.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/includes.h",
       "size": 2350,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/abstract_weighted_cell_complex.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/abstract_weighted_cell_complex.h",
       "size": 10818,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/full_rips_complex.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/full_rips_complex.h",
       "size": 11877,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/sparse_rips_complex.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/sparse_rips_complex.h",
       "size": 40682,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/weighted_cubical_complex.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/weighted_cubical_complex.h",
       "size": 11379,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/weighted_explicit_complex.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/weighted_explicit_complex.h",
       "size": 5357,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/macros.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/macros.h",
       "size": 1676,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/mpi_utils.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/mpi_utils.h",
       "size": 7290,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/include/dipha/outputs/save_persistence_diagram.h": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/include/dipha/outputs/save_persistence_diagram.h",
       "size": 20520,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/matlab/create_noise_image_data.m": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/matlab/create_noise_image_data.m",
       "size": 1323,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/matlab/create_noisy_ramp_image_data.m": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/matlab/create_noisy_ramp_image_data.m",
       "size": 1536,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/matlab/create_ramp_image_data.m": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/matlab/create_ramp_image_data.m",
       "size": 1198,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/matlab/create_smooth_image_data.m": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/matlab/create_smooth_image_data.m",
       "size": 1959,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/matlab/create_sphere.m": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/matlab/create_sphere.m",
       "size": 1877,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/matlab/load_discrete_morse_edge_info.m": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/matlab/load_discrete_morse_edge_info.m",
       "size": 1905,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/matlab/load_persistence_diagram.m": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/matlab/load_persistence_diagram.m",
       "size": 1829,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/matlab/plot_midlife_persistence_diagram.m": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/matlab/plot_midlife_persistence_diagram.m",
       "size": 2846,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/matlab/plot_persistence_diagram.m": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/matlab/plot_persistence_diagram.m",
       "size": 2969,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/matlab/plot_persistence_diagram_density.m": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/matlab/plot_persistence_diagram_density.m",
       "size": 1633,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/matlab/save_distance_matrix.m": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/matlab/save_distance_matrix.m",
       "size": 1283,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/matlab/save_image_data.m": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/matlab/save_image_data.m",
       "size": 1352,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/matlab/save_weighted_triangle_surface.m": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/matlab/save_weighted_triangle_surface.m",
       "size": 3387,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/src/create_phat_filtration.cpp": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/src/create_phat_filtration.cpp",
       "size": 6516,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/src/dipha.cpp": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/src/dipha.cpp",
       "size": 9343,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/src/dualize.cpp": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/src/dualize.cpp",
       "size": 2857,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-2d-thresh/src/full_to_sparse_distance_matrix.cpp": {
       "filepath": "DiMo2d/code/dipha-2d-thresh/src/full_to_sparse_distance_matrix.cpp",
       "size": 4293,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/dipha-output-2d-ve-et-thresh/ComputeGraphReconstruction.cpp": {
       "filepath": "DiMo2d/code/dipha-output-2d-ve-et-thresh/ComputeGraphReconstruction.cpp",
       "size": 12777,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/matlab/load_persistence_diagram.m": {
       "filepath": "DiMo2d/code/matlab/load_persistence_diagram.m",
       "size": 1778,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/matlab/save_image_data.m": {
       "filepath": "DiMo2d/code/matlab/save_image_data.m",
       "size": 1440,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "DiMo2d/code/paths_src/ComputePaths.cpp": {
       "filepath": "DiMo2d/code/paths_src/ComputePaths.cpp",
       "size": 5106,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DiMo2d/code/paths_src/Point.h": {
       "filepath": "DiMo2d/code/paths_src/Point.h",
       "size": 829,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "load_persistence_diagram.m": {
       "filepath": "load_persistence_diagram.m",
       "size": 1778,
-      "summary": "Key capabilities: load_persistence_diagram"
+      "summary": "Key capabilities: load_persistence_diagram",
+      "is_gpu": false
     },
     "package_testing.py": {
       "filepath": "package_testing.py",
       "size": 635,
-      "summary": "Key capabilities: test_2d_func"
+      "summary": "Key capabilities: test_2d_func",
+      "is_gpu": false
     },
     "save_image_data.m": {
       "filepath": "save_image_data.m",
       "size": 1440,
-      "summary": "Key capabilities: save_image_data"
+      "summary": "Key capabilities: save_image_data",
+      "is_gpu": false
     }
   },
   "repo_insight": "This DM_2D repository is a sophisticated, high-performance computational topology project primarily focused on calculating persistent homology, particularly for two-dimensional data, likely leveraging Discrete Morse Theory for simplification. Its core capability lies in a distributed persistent homology algorithm (DIPHA), implemented in C++ and designed for parallel execution using MPI, making it suitable for analyzing large-scale datasets such as images or grid-based structures for feature extraction and topological data analysis. Users are intended to generate or prepare 2D input data, potentially using the provided Matlab scripts for synthetic data creation (e.g., ramp images, spheres, noisy data), and then feed this into the compiled C++ DIPHA engine to compute persistence diagrams, typically executed on a parallel computing environment. The Python files likely serve as a high-level interface or wrapper, orchestrating data input, execution of the C++ binary, and initial post-processing, while the Matlab scripts further aid in visualizing the computed persistence diagrams and analyzing intermediate results like discrete Morse edge information. Architecturally, the project's highlights include its C++ core with a strong emphasis on distributed computing through MPI, incorporating advanced column reduction algorithms (e.g., compute_reduced_columns, reduction_kernel) and custom, optimized data structures (like flat column stacks, heap columns, and write-once arrays) to efficiently process various complex types, notably weighted cubical complexes. The integration of the psort-1.0 library underscores its commitment to high-performance parallel sorting, critical for large-scale distributed computations, and the comprehensive Matlab utilities provide essential tooling for data preparation, testing, and result interpretation, forming a complete workflow for topological data analysis."

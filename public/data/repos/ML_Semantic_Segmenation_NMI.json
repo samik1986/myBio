@@ -6754,822 +6754,986 @@
     "ComputeScore/Injection Removal/ImageDiff.py": {
       "filepath": "ComputeScore/Injection Removal/ImageDiff.py",
       "size": 575,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "ComputeScore/Injection Removal/Splitter.py": {
       "filepath": "ComputeScore/Injection Removal/Splitter.py",
       "size": 629,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "ComputeScore/Injection Removal/merge_tiles.py": {
       "filepath": "ComputeScore/Injection Removal/merge_tiles.py",
       "size": 963,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "ComputeScore/cal_F1.py": {
       "filepath": "ComputeScore/cal_F1.py",
       "size": 3675,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "ComputeScore/cal_connectivity.py": {
       "filepath": "ComputeScore/cal_connectivity.py",
       "size": 1339,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "ComputeScore/dk_metric/__pycache__/image_metrics.py": {
       "filepath": "ComputeScore/dk_metric/__pycache__/image_metrics.py",
       "size": 2417,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "ComputeScore/dk_metric/image_metrics.py": {
       "filepath": "ComputeScore/dk_metric/image_metrics.py",
       "size": 5467,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "ComputeScore/main_180405.py": {
       "filepath": "ComputeScore/main_180405.py",
       "size": 3800,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "ComputeScore/main_backup.py": {
       "filepath": "ComputeScore/main_backup.py",
       "size": 3453,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DM_base/createData.py": {
       "filepath": "DM_base/createData.py",
       "size": 2823,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "DM_base/createData1.py": {
       "filepath": "DM_base/createData1.py",
       "size": 3133,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "DM_base/createData255.py": {
       "filepath": "DM_base/createData255.py",
       "size": 2811,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "DM_base/createDataTest.py": {
       "filepath": "DM_base/createDataTest.py",
       "size": 3167,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "DM_base/createNetR.py": {
       "filepath": "DM_base/createNetR.py",
       "size": 5904,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "DM_base/data.py": {
       "filepath": "DM_base/data.py",
       "size": 6452,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "DM_base/fullModel.py": {
       "filepath": "DM_base/fullModel.py",
       "size": 2020,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "DM_base/modelUnet.py": {
       "filepath": "DM_base/modelUnet.py",
       "size": 5158,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "DM_base/tsting.py": {
       "filepath": "DM_base/tsting.py",
       "size": 3976,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DM_base/tsting_PS.py": {
       "filepath": "DM_base/tsting_PS.py",
       "size": 3585,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "DM_base/tsting_single.py": {
       "filepath": "DM_base/tsting_single.py",
       "size": 3601,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "Mask_RCNN/build/lib/mrcnn/__init__.py": {
       "filepath": "Mask_RCNN/build/lib/mrcnn/__init__.py",
       "size": 1,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "Mask_RCNN/build/lib/mrcnn/config.py": {
       "filepath": "Mask_RCNN/build/lib/mrcnn/config.py",
       "size": 9396,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "Mask_RCNN/build/lib/mrcnn/model.py": {
       "filepath": "Mask_RCNN/build/lib/mrcnn/model.py",
       "size": 127371,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "Mask_RCNN/build/lib/mrcnn/parallel_model.py": {
       "filepath": "Mask_RCNN/build/lib/mrcnn/parallel_model.py",
       "size": 7022,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "Mask_RCNN/build/lib/mrcnn/utils.py": {
       "filepath": "Mask_RCNN/build/lib/mrcnn/utils.py",
       "size": 34261,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "Mask_RCNN/build/lib/mrcnn/visualize.py": {
       "filepath": "Mask_RCNN/build/lib/mrcnn/visualize.py",
       "size": 18951,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "Mask_RCNN/mrcnn/__init__.py": {
       "filepath": "Mask_RCNN/mrcnn/__init__.py",
       "size": 1,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "Mask_RCNN/mrcnn/config.py": {
       "filepath": "Mask_RCNN/mrcnn/config.py",
       "size": 9396,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "Mask_RCNN/mrcnn/model.py": {
       "filepath": "Mask_RCNN/mrcnn/model.py",
       "size": 127371,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "Mask_RCNN/mrcnn/parallel_model.py": {
       "filepath": "Mask_RCNN/mrcnn/parallel_model.py",
       "size": 7022,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "Mask_RCNN/mrcnn/utils.py": {
       "filepath": "Mask_RCNN/mrcnn/utils.py",
       "size": 34261,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "Mask_RCNN/mrcnn/visualize.py": {
       "filepath": "Mask_RCNN/mrcnn/visualize.py",
       "size": 18951,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "Mask_RCNN/samples/demo.ipynb": {
       "filepath": "Mask_RCNN/samples/demo.ipynb",
       "size": 1551723,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "Mask_RCNN/samples/nucleus/area_det.py": {
       "filepath": "Mask_RCNN/samples/nucleus/area_det.py",
       "size": 1948,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "Mask_RCNN/samples/nucleus/nucleus.py": {
       "filepath": "Mask_RCNN/samples/nucleus/nucleus.py",
       "size": 17063,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "Mask_RCNN/samples/nucleus/nucleus0.py": {
       "filepath": "Mask_RCNN/samples/nucleus/nucleus0.py",
       "size": 17850,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "Mask_RCNN/samples/nucleus/nucleus1.py": {
       "filepath": "Mask_RCNN/samples/nucleus/nucleus1.py",
       "size": 17372,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "Mask_RCNN/samples/nucleus/nucleus2.py": {
       "filepath": "Mask_RCNN/samples/nucleus/nucleus2.py",
       "size": 15698,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "Mask_RCNN/samples/nucleus/nucleus_axonarbors.py": {
       "filepath": "Mask_RCNN/samples/nucleus/nucleus_axonarbors.py",
       "size": 17849,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "Mask_RCNN/samples/nucleus/nucleus_dendrites.py": {
       "filepath": "Mask_RCNN/samples/nucleus/nucleus_dendrites.py",
       "size": 17850,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "Mask_RCNN/samples/nucleus/nucleus_passAxons.py": {
       "filepath": "Mask_RCNN/samples/nucleus/nucleus_passAxons.py",
       "size": 17851,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "Mask_RCNN/setup.py": {
       "filepath": "Mask_RCNN/setup.py",
       "size": 2518,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "bouton_code/bouton.py": {
       "filepath": "bouton_code/bouton.py",
       "size": 1750,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "bouton_code/bouton_x_process.py": {
       "filepath": "bouton_code/bouton_x_process.py",
       "size": 821,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "bouton_code/gaussian.py": {
       "filepath": "bouton_code/gaussian.py",
       "size": 364,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "bouton_code/src/ComputeGraphReconstruction.cpp": {
       "filepath": "bouton_code/src/ComputeGraphReconstruction.cpp",
       "size": 24720,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/GSIMPg2i.py": {
       "filepath": "morse_code/GSIMPg2i.py",
       "size": 1193,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/albu_dingkang.py": {
       "filepath": "morse_code/albu_dingkang.py",
       "size": 4773,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/createNetR.py": {
       "filepath": "morse_code/createNetR.py",
       "size": 5808,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "morse_code/dm.py": {
       "filepath": "morse_code/dm.py",
       "size": 7059,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/fullModel.py": {
       "filepath": "morse_code/fullModel.py",
       "size": 1980,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "morse_code/gray_scale_simp.py": {
       "filepath": "morse_code/gray_scale_simp.py",
       "size": 10923,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/jp2compare.py": {
       "filepath": "morse_code/jp2compare.py",
       "size": 908,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/new_dm.py": {
       "filepath": "morse_code/new_dm.py",
       "size": 8744,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/new_dm_mba.py": {
       "filepath": "morse_code/new_dm_mba.py",
       "size": 8995,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/new_dm_mba1.py": {
       "filepath": "morse_code/new_dm_mba1.py",
       "size": 8959,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/paths_src/ComputePaths.cpp": {
       "filepath": "morse_code/paths_src/ComputePaths.cpp",
       "size": 4556,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/paths_src/Point.h": {
       "filepath": "morse_code/paths_src/Point.h",
       "size": 829,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/pytorch_zoo/__init__.py": {
       "filepath": "morse_code/pytorch_zoo/__init__.py",
       "size": 0,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/pytorch_zoo/abstract_model.py": {
       "filepath": "morse_code/pytorch_zoo/abstract_model.py",
       "size": 4239,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "morse_code/pytorch_zoo/inception.py": {
       "filepath": "morse_code/pytorch_zoo/inception.py",
       "size": 10668,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/pytorch_zoo/resnet.py": {
       "filepath": "morse_code/pytorch_zoo/resnet.py",
       "size": 5984,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "morse_code/pytorch_zoo/unet.py": {
       "filepath": "morse_code/pytorch_zoo/unet.py",
       "size": 925,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "morse_code/remove_dup_edges.py": {
       "filepath": "morse_code/remove_dup_edges.py",
       "size": 641,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/src/ComputeGraphReconstruction.cpp": {
       "filepath": "morse_code/src/ComputeGraphReconstruction.cpp",
       "size": 23816,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/src/DIMOgraph2image.py": {
       "filepath": "morse_code/src/DIMOgraph2image.py",
       "size": 1493,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/src/base_triangulation_2d.py": {
       "filepath": "morse_code/src/base_triangulation_2d.py",
       "size": 7951,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/tsting_single.py": {
       "filepath": "morse_code/tsting_single.py",
       "size": 3536,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/tsting_single_cal.py": {
       "filepath": "morse_code/tsting_single_cal.py",
       "size": 1906,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/wrapper.py": {
       "filepath": "morse_code/wrapper.py",
       "size": 8336,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/wrapperALBU.py": {
       "filepath": "morse_code/wrapperALBU.py",
       "size": 4075,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/wrapperALBU_PS.py": {
       "filepath": "morse_code/wrapperALBU_PS.py",
       "size": 3473,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/wrapperDM1.py": {
       "filepath": "morse_code/wrapperDM1.py",
       "size": 11344,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/wrapperDMPP.py": {
       "filepath": "morse_code/wrapperDMPP.py",
       "size": 4398,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "morse_code/wrapperDMPP_MBA.py": {
       "filepath": "morse_code/wrapperDMPP_MBA.py",
       "size": 4634,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/__init__.py": {
       "filepath": "src/__init__.py",
       "size": 0,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/albu_dingkang.py": {
       "filepath": "src/albu_dingkang.py",
       "size": 4773,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/augmentations/__init__.py": {
       "filepath": "src/augmentations/__init__.py",
       "size": 0,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/augmentations/composition.py": {
       "filepath": "src/augmentations/composition.py",
       "size": 757,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/augmentations/functional.py": {
       "filepath": "src/augmentations/functional.py",
       "size": 4382,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/augmentations/transforms.py": {
       "filepath": "src/augmentations/transforms.py",
       "size": 7372,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/config.py": {
       "filepath": "src/config.py",
       "size": 466,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/create_spacenet_masks.py": {
       "filepath": "src/create_spacenet_masks.py",
       "size": 5036,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "src/dataset/__init__.py": {
       "filepath": "src/dataset/__init__.py",
       "size": 0,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "src/dataset/abstract_image_provider.py": {
       "filepath": "src/dataset/abstract_image_provider.py",
       "size": 496,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "src/dataset/abstract_image_type.py": {
       "filepath": "src/dataset/abstract_image_type.py",
       "size": 1864,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "src/dataset/image_cropper.py": {
       "filepath": "src/dataset/image_cropper.py",
       "size": 3552,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "src/dataset/neural_dataset.py": {
       "filepath": "src/dataset/neural_dataset.py",
       "size": 6341,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "src/dataset/raw_image.py": {
       "filepath": "src/dataset/raw_image.py",
       "size": 914,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "src/dataset/reading_image_provider.py": {
       "filepath": "src/dataset/reading_image_provider.py",
       "size": 875,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "src/merge_preds.py": {
       "filepath": "src/merge_preds.py",
       "size": 1541,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/other_tools/__init__.py": {
       "filepath": "src/other_tools/__init__.py",
       "size": 0,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/other_tools/all_dems_min_max.py": {
       "filepath": "src/other_tools/all_dems_min_max.py",
       "size": 719,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/other_tools/apls_tools.py": {
       "filepath": "src/other_tools/apls_tools.py",
       "size": 18271,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/other_tools/gen_folds.py": {
       "filepath": "src/other_tools/gen_folds.py",
       "size": 441,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/other_tools/make_submission.py": {
       "filepath": "src/other_tools/make_submission.py",
       "size": 3767,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/other_tools/merge_preds.py": {
       "filepath": "src/other_tools/merge_preds.py",
       "size": 2961,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/other_tools/sknw.py": {
       "filepath": "src/other_tools/sknw.py",
       "size": 4201,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pre_processing/fold4_gen.py": {
       "filepath": "src/pre_processing/fold4_gen.py",
       "size": 249,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pre_processing/renamer.py": {
       "filepath": "src/pre_processing/renamer.py",
       "size": 449,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pre_processing/renamer1.py": {
       "filepath": "src/pre_processing/renamer1.py",
       "size": 427,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pre_processing/scratch.py": {
       "filepath": "src/pre_processing/scratch.py",
       "size": 1407,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pre_processing/scratch1.py": {
       "filepath": "src/pre_processing/scratch1.py",
       "size": 1412,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pre_processing/scratch_bw.py": {
       "filepath": "src/pre_processing/scratch_bw.py",
       "size": 1627,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pre_processing/scratch_dmIP.py": {
       "filepath": "src/pre_processing/scratch_dmIP.py",
       "size": 1219,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pre_processing/scratch_maskBase64.py": {
       "filepath": "src/pre_processing/scratch_maskBase64.py",
       "size": 3084,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pre_processing/scratch_maskCopy.py": {
       "filepath": "src/pre_processing/scratch_maskCopy.py",
       "size": 1219,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pre_processing/scratch_redWeb.py": {
       "filepath": "src/pre_processing/scratch_redWeb.py",
       "size": 2632,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pre_processing/tif2rgb.py": {
       "filepath": "src/pre_processing/tif2rgb.py",
       "size": 917,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_utils/__init__.py": {
       "filepath": "src/pytorch_utils/__init__.py",
       "size": 0,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "src/pytorch_utils/callbacks.py": {
       "filepath": "src/pytorch_utils/callbacks.py",
       "size": 6685,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "src/pytorch_utils/concrete_eval.py": {
       "filepath": "src/pytorch_utils/concrete_eval.py",
       "size": 3111,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "src/pytorch_utils/eval.py": {
       "filepath": "src/pytorch_utils/eval.py",
       "size": 4033,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "src/pytorch_utils/loss.py": {
       "filepath": "src/pytorch_utils/loss.py",
       "size": 682,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "src/pytorch_utils/train.py": {
       "filepath": "src/pytorch_utils/train.py",
       "size": 9271,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "src/pytorch_utils/transforms.py": {
       "filepath": "src/pytorch_utils/transforms.py",
       "size": 16408,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/__init__.py": {
       "filepath": "src/pytorch_zoo/__init__.py",
       "size": 0,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/_utils.py": {
       "filepath": "src/pytorch_zoo/_utils.py",
       "size": 2625,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/abstract_model.py": {
       "filepath": "src/pytorch_zoo/abstract_model.py",
       "size": 4363,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/alexnet.py": {
       "filepath": "src/pytorch_zoo/alexnet.py",
       "size": 2102,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/densenet.py": {
       "filepath": "src/pytorch_zoo/densenet.py",
       "size": 11840,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/detection/__init__.py": {
       "filepath": "src/pytorch_zoo/detection/__init__.py",
       "size": 81,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/detection/_utils.py": {
       "filepath": "src/pytorch_zoo/detection/_utils.py",
       "size": 12816,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/detection/backbone_utils.py": {
       "filepath": "src/pytorch_zoo/detection/backbone_utils.py",
       "size": 2456,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/detection/faster_rcnn.py": {
       "filepath": "src/pytorch_zoo/detection/faster_rcnn.py",
       "size": 15886,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/detection/generalized_rcnn.py": {
       "filepath": "src/pytorch_zoo/detection/generalized_rcnn.py",
       "size": 2268,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/detection/image_list.py": {
       "filepath": "src/pytorch_zoo/detection/image_list.py",
       "size": 754,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/detection/keypoint_rcnn.py": {
       "filepath": "src/pytorch_zoo/detection/keypoint_rcnn.py",
       "size": 16452,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/detection/mask_rcnn.py": {
       "filepath": "src/pytorch_zoo/detection/mask_rcnn.py",
       "size": 16531,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/detection/roi_heads.py": {
       "filepath": "src/pytorch_zoo/detection/roi_heads.py",
       "size": 26310,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/detection/rpn.py": {
       "filepath": "src/pytorch_zoo/detection/rpn.py",
       "size": 18181,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/detection/transform.py": {
       "filepath": "src/pytorch_zoo/detection/transform.py",
       "size": 6853,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/googlenet.py": {
       "filepath": "src/pytorch_zoo/googlenet.py",
       "size": 10372,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/inception.py": {
       "filepath": "src/pytorch_zoo/inception.py",
       "size": 16017,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/mnasnet.py": {
       "filepath": "src/pytorch_zoo/mnasnet.py",
       "size": 10620,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/mobilenet.py": {
       "filepath": "src/pytorch_zoo/mobilenet.py",
       "size": 6163,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/quantization/__init__.py": {
       "filepath": "src/pytorch_zoo/quantization/__init__.py",
       "size": 125,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/quantization/googlenet.py": {
       "filepath": "src/pytorch_zoo/quantization/googlenet.py",
       "size": 5586,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/quantization/inception.py": {
       "filepath": "src/pytorch_zoo/quantization/inception.py",
       "size": 7644,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/quantization/mobilenet.py": {
       "filepath": "src/pytorch_zoo/quantization/mobilenet.py",
       "size": 3143,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/quantization/resnet.py": {
       "filepath": "src/pytorch_zoo/quantization/resnet.py",
       "size": 6051,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/quantization/shufflenetv2.py": {
       "filepath": "src/pytorch_zoo/quantization/shufflenetv2.py",
       "size": 5852,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/quantization/utils.py": {
       "filepath": "src/pytorch_zoo/quantization/utils.py",
       "size": 1439,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/resnet.py": {
       "filepath": "src/pytorch_zoo/resnet.py",
       "size": 13713,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/segmentation/__init__.py": {
       "filepath": "src/pytorch_zoo/segmentation/__init__.py",
       "size": 72,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/segmentation/_utils.py": {
       "filepath": "src/pytorch_zoo/segmentation/_utils.py",
       "size": 1040,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/segmentation/deeplabv3.py": {
       "filepath": "src/pytorch_zoo/segmentation/deeplabv3.py",
       "size": 3110,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/segmentation/fcn.py": {
       "filepath": "src/pytorch_zoo/segmentation/fcn.py",
       "size": 1164,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/segmentation/segmentation.py": {
       "filepath": "src/pytorch_zoo/segmentation/segmentation.py",
       "size": 4130,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/shufflenetv2.py": {
       "filepath": "src/pytorch_zoo/shufflenetv2.py",
       "size": 7612,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/squeezenet.py": {
       "filepath": "src/pytorch_zoo/squeezenet.py",
       "size": 5449,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/unet.py": {
       "filepath": "src/pytorch_zoo/unet.py",
       "size": 925,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/utils.py": {
       "filepath": "src/pytorch_zoo/utils.py",
       "size": 151,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/vgg.py": {
       "filepath": "src/pytorch_zoo/vgg.py",
       "size": 7233,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/video/__init__.py": {
       "filepath": "src/pytorch_zoo/video/__init__.py",
       "size": 22,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/pytorch_zoo/video/resnet.py": {
       "filepath": "src/pytorch_zoo/video/resnet.py",
       "size": 11017,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "src/run_training.sh": {
       "filepath": "src/run_training.sh",
       "size": 66,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "src/skeleton.py": {
       "filepath": "src/skeleton.py",
       "size": 10931,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/train.sh": {
       "filepath": "src/train.sh",
       "size": 90,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "src/train_4folds.sh": {
       "filepath": "src/train_4folds.sh",
       "size": 209,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "src/train_eval.py": {
       "filepath": "src/train_eval.py",
       "size": 2617,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "src/utils.py": {
       "filepath": "src/utils.py",
       "size": 737,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "src/wrapperALBU.py": {
       "filepath": "src/wrapperALBU.py",
       "size": 3450,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "src/wrapperALBU_PS.py": {
       "filepath": "src/wrapperALBU_PS.py",
       "size": 3473,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     }
   },
   "file_metadata": {

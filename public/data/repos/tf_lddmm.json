@@ -28,7 +28,8 @@
     "transform2atlas.py": {
       "filepath": "transform2atlas.py",
       "size": 1486,
-      "summary": "Key capabilities: read_from_pickle"
+      "summary": "Key capabilities: read_from_pickle",
+      "is_gpu": false
     }
   },
   "repo_insight": "The tf_lddmm repository is a specialized suite designed for computational anatomy and medical image registration, focusing on Large Deformation Diffeomorphic Metric Mapping (LDDMM) implemented using TensorFlow. Its primary holistic capability is to facilitate diffeomorphic (topology-preserving and invertible) transformations of medical images or geometric data into a common reference or atlas space, which is crucial for group-level statistical analysis in neuroimaging and digital anatomy. To use this repository, a practitioner typically executes the main script transform2atlas.py or integrates its utilities into their pipeline, passing source datasets along with pre-computed deformation maps or velocity fields that are seamlessly loaded using the read_from_pickle function. Architecturally, the project relies on TensorFlow to accelerate computationally intensive tensor operations, including spatial grid generation, differential warping, and high-dimensional interpolation. Algorithmically, it highlights the power of LDDMM by mapping source structures to target templates along a geodesic flow, ensuring that the structural transformations remain physically realistic, smooth, and mathematically invertible."

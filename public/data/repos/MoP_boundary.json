@@ -51,37 +51,44 @@
     "Unsup_nissl_seg_old.m": {
       "filepath": "Unsup_nissl_seg_old.m",
       "size": 5812,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "borderDet.m": {
       "filepath": "borderDet.m",
       "size": 2968,
-      "summary": "Key capabilities: borderDet"
+      "summary": "Key capabilities: borderDet",
+      "is_gpu": false
     },
     "calculate_cortical_normal.m": {
       "filepath": "calculate_cortical_normal.m",
       "size": 1373,
-      "summary": "Key capabilities: calculate_cortical_normal"
+      "summary": "Key capabilities: calculate_cortical_normal",
+      "is_gpu": false
     },
     "d_runline.m": {
       "filepath": "d_runline.m",
       "size": 148,
-      "summary": "Key capabilities: d_runline"
+      "summary": "Key capabilities: d_runline",
+      "is_gpu": false
     },
     "get_medial_axis.m": {
       "filepath": "get_medial_axis.m",
       "size": 1084,
-      "summary": "Key capabilities: get_medial_axis"
+      "summary": "Key capabilities: get_medial_axis",
+      "is_gpu": false
     },
     "runline1.m": {
       "filepath": "runline1.m",
       "size": 862,
-      "summary": "Key capabilities: runline1"
+      "summary": "Key capabilities: runline1",
+      "is_gpu": false
     },
     "script_mopBorder_SB_May24.m": {
       "filepath": "script_mopBorder_SB_May24.m",
       "size": 1323,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     }
   },
   "file_metadata": {

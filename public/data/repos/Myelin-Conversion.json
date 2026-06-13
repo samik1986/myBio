@@ -23,7 +23,8 @@
     "trfm2processDet.m": {
       "filepath": "trfm2processDet.m",
       "size": 756,
-      "summary": "Key capabilities: trfm2processDet"
+      "summary": "Key capabilities: trfm2processDet",
+      "is_gpu": false
     }
   },
   "file_metadata": {

@@ -1938,442 +1938,530 @@
     "Annotation_TrainingData_Cells/genCellTrainData.m": {
       "filepath": "Annotation_TrainingData_Cells/genCellTrainData.m",
       "size": 5732,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/getDataTrain.m": {
       "filepath": "Annotation_TrainingData_Cells/getDataTrain.m",
       "size": 4537,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/getDataTrain_RGB_Sep2021.m": {
       "filepath": "Annotation_TrainingData_Cells/getDataTrain_RGB_Sep2021.m",
       "size": 5599,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/Contents.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/Contents.m",
       "size": 49275,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/base64decode.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/base64decode.m",
       "size": 1375,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/base64encode.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/base64encode.m",
       "size": 1442,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/decodevarname.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/decodevarname.m",
       "size": 2407,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/encodevarname.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/encodevarname.m",
       "size": 2404,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/examples/demo_jsonlab_basic.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/examples/demo_jsonlab_basic.m",
       "size": 13451,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/examples/demo_msgpack_basic.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/examples/demo_msgpack_basic.m",
       "size": 9720,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/examples/demo_ubjson_basic.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/examples/demo_ubjson_basic.m",
       "size": 12237,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/examples/jsonlab_selftest.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/examples/jsonlab_selftest.m",
       "size": 995,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/examples/jsonlab_speedtest.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/examples/jsonlab_speedtest.m",
       "size": 675,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/fast_match_bracket.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/fast_match_bracket.m",
       "size": 2498,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/gendocs.sh": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/gendocs.sh",
       "size": 1459,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/genlog.sh": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/genlog.sh",
       "size": 63,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/gzipdecode.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/gzipdecode.m",
       "size": 2281,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/gzipencode.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/gzipencode.m",
       "size": 1799,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/isoctavemesh.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/isoctavemesh.m",
       "size": 497,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/jdatadecode.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/jdatadecode.m",
       "size": 12112,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/jdataencode.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/jdataencode.m",
       "size": 10878,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/jsonopt.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/jsonopt.m",
       "size": 916,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/loadjson.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/loadjson.m",
       "size": 19882,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/loadmsgpack.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/loadmsgpack.m",
       "size": 7992,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/loadubjson.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/loadubjson.m",
       "size": 11981,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/lz4decode.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/lz4decode.m",
       "size": 1441,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/lz4encode.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/lz4encode.m",
       "size": 1150,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/lz4hcdecode.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/lz4hcdecode.m",
       "size": 1459,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/lz4hcencode.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/lz4hcencode.m",
       "size": 1162,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/lzipdecode.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/lzipdecode.m",
       "size": 1450,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/lzipencode.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/lzipencode.m",
       "size": 1155,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/lzmadecode.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/lzmadecode.m",
       "size": 1450,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/lzmaencode.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/lzmaencode.m",
       "size": 1155,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/match_bracket.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/match_bracket.m",
       "size": 1971,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/mergestruct.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/mergestruct.m",
       "size": 746,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/nestbracket2dim.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/nestbracket2dim.m",
       "size": 2394,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/savejson.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/savejson.m",
       "size": 26842,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/savemsgpack.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/savemsgpack.m",
       "size": 1030,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/saveubjson.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/saveubjson.m",
       "size": 30909,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/varargin2struct.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/varargin2struct.m",
       "size": 1108,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/zlibdecode.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/zlibdecode.m",
       "size": 2240,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/jsonlab/jsonlab/zlibencode.m": {
       "filepath": "Annotation_TrainingData_Cells/jsonlab/jsonlab/zlibencode.m",
       "size": 1737,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/normal.m": {
       "filepath": "Annotation_TrainingData_Cells/normal.m",
       "size": 236,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/parseXML.m": {
       "filepath": "Annotation_TrainingData_Cells/parseXML.m",
       "size": 2018,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/scratch.m": {
       "filepath": "Annotation_TrainingData_Cells/scratch.m",
       "size": 1855,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/verifyDK_csv.m": {
       "filepath": "Annotation_TrainingData_Cells/verifyDK_csv.m",
       "size": 313,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/viewAnnot.m": {
       "filepath": "Annotation_TrainingData_Cells/viewAnnot.m",
       "size": 3181,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "Annotation_TrainingData_Cells/visCells_dist.m": {
       "filepath": "Annotation_TrainingData_Cells/visCells_dist.m",
       "size": 695,
-      "summary": "Handles model training routines and loops."
+      "summary": "Handles model training routines and loops.",
+      "is_gpu": false
     },
     "FixedBatchNormalization.py": {
       "filepath": "FixedBatchNormalization.py",
       "size": 3749,
-      "summary": "Key capabilities: FixedBatchNormalization, build, call, and more"
+      "summary": "Key capabilities: FixedBatchNormalization, build, call, and more",
+      "is_gpu": false
     },
     "Transper/inception_resnet_v2/export_imagenet.py": {
       "filepath": "Transper/inception_resnet_v2/export_imagenet.py",
       "size": 2008,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "Transper/inception_resnet_v2/inception_resnet_v2.py": {
       "filepath": "Transper/inception_resnet_v2/inception_resnet_v2.py",
       "size": 11475,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "config.py": {
       "filepath": "config.py",
       "size": 1847,
-      "summary": "Key capabilities: Config"
+      "summary": "Key capabilities: Config",
+      "is_gpu": false
     },
     "configDK.py": {
       "filepath": "configDK.py",
       "size": 1847,
-      "summary": "Key capabilities: Config"
+      "summary": "Key capabilities: Config",
+      "is_gpu": false
     },
     "data_augment.py": {
       "filepath": "data_augment.py",
       "size": 2337,
-      "summary": "Key capabilities: augment"
+      "summary": "Key capabilities: augment",
+      "is_gpu": false
     },
     "data_generators.py": {
       "filepath": "data_generators.py",
       "size": 14440,
-      "summary": "Key capabilities: union, intersection, iou, and more"
+      "summary": "Key capabilities: union, intersection, iou, and more",
+      "is_gpu": false
     },
     "getRegMask.py": {
       "filepath": "getRegMask.py",
       "size": 2926,
-      "summary": "Key capabilities: getRegMask"
+      "summary": "Key capabilities: getRegMask",
+      "is_gpu": false
     },
     "getRegMask_DK39.py": {
       "filepath": "getRegMask_DK39.py",
       "size": 2838,
-      "summary": "Key capabilities: getRegMask"
+      "summary": "Key capabilities: getRegMask",
+      "is_gpu": false
     },
     "img_overlay.py": {
       "filepath": "img_overlay.py",
       "size": 2378,
-      "summary": "Key capabilities: imread_fast, imwrite_fast"
+      "summary": "Key capabilities: imread_fast, imwrite_fast",
+      "is_gpu": false
     },
     "inception_resnet_v2.py": {
       "filepath": "inception_resnet_v2.py",
       "size": 19150,
-      "summary": "Key capabilities: get_weight_path, get_img_output_length, conv2d_bn, and more"
+      "summary": "Key capabilities: get_weight_path, get_img_output_length, conv2d_bn, and more",
+      "is_gpu": false
     },
     "keras_frcnn/FixedBatchNormalization.py": {
       "filepath": "keras_frcnn/FixedBatchNormalization.py",
       "size": 3749,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "keras_frcnn/RoiPoolingConv.py": {
       "filepath": "keras_frcnn/RoiPoolingConv.py",
       "size": 4221,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "keras_frcnn/config.py": {
       "filepath": "keras_frcnn/config.py",
       "size": 1847,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "keras_frcnn/configDK.py": {
       "filepath": "keras_frcnn/configDK.py",
       "size": 1847,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "keras_frcnn/data_augment.py": {
       "filepath": "keras_frcnn/data_augment.py",
       "size": 2337,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "keras_frcnn/data_generators.py": {
       "filepath": "keras_frcnn/data_generators.py",
       "size": 14440,
-      "summary": "Data loading and preprocessing pipeline."
+      "summary": "Data loading and preprocessing pipeline.",
+      "is_gpu": false
     },
     "keras_frcnn/inception_resnet_v2.py": {
       "filepath": "keras_frcnn/inception_resnet_v2.py",
       "size": 19150,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "keras_frcnn/losses.py": {
       "filepath": "keras_frcnn/losses.py",
       "size": 2306,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "keras_frcnn/pascal_voc_parser.py": {
       "filepath": "keras_frcnn/pascal_voc_parser.py",
       "size": 5946,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "keras_frcnn/resnet.py": {
       "filepath": "keras_frcnn/resnet.py",
       "size": 10747,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "keras_frcnn/roi_helpers.py": {
       "filepath": "keras_frcnn/roi_helpers.py",
       "size": 9389,
-      "summary": "Utility and helper functions."
+      "summary": "Utility and helper functions.",
+      "is_gpu": false
     },
     "keras_frcnn/simple_parser.py": {
       "filepath": "keras_frcnn/simple_parser.py",
       "size": 2187,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "keras_frcnn/vgg.py": {
       "filepath": "keras_frcnn/vgg.py",
       "size": 4753,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "keras_frcnn/xception.py": {
       "filepath": "keras_frcnn/xception.py",
       "size": 9688,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "measure_map.py": {
       "filepath": "measure_map.py",
       "size": 9163,
-      "summary": "Key capabilities: get_map, format_img"
+      "summary": "Key capabilities: get_map, format_img",
+      "is_gpu": false
     },
     "run_DK_cellDet.sh": {
       "filepath": "run_DK_cellDet.sh",
       "size": 898,
-      "summary": "Shell script for automation or deployment."
+      "summary": "Shell script for automation or deployment.",
+      "is_gpu": false
     },
     "splitCode/split.py": {
       "filepath": "splitCode/split.py",
       "size": 2027,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "test_frcnn_full_DK39.py": {
       "filepath": "test_frcnn_full_DK39.py",
       "size": 18478,
-      "summary": "Key capabilities: imread_fast, imwrite_fast, format_img_size, and more"
+      "summary": "Key capabilities: imread_fast, imwrite_fast, format_img_size, and more",
+      "is_gpu": false
     },
     "test_frcnn_full_DK39_0.py": {
       "filepath": "test_frcnn_full_DK39_0.py",
       "size": 19136,
-      "summary": "Key capabilities: imread_fast, imwrite_fast, format_img_size, and more"
+      "summary": "Key capabilities: imread_fast, imwrite_fast, format_img_size, and more",
+      "is_gpu": false
     },
     "test_frcnn_full_DK39_1.py": {
       "filepath": "test_frcnn_full_DK39_1.py",
       "size": 19144,
-      "summary": "Key capabilities: imread_fast, imwrite_fast, format_img_size, and more"
+      "summary": "Key capabilities: imread_fast, imwrite_fast, format_img_size, and more",
+      "is_gpu": false
     },
     "test_frcnn_full_DK55_trainset.py": {
       "filepath": "test_frcnn_full_DK55_trainset.py",
       "size": 14618,
-      "summary": "Key capabilities: imread_fast, imwrite_fast, format_img_size, and more"
+      "summary": "Key capabilities: imread_fast, imwrite_fast, format_img_size, and more",
+      "is_gpu": false
     },
     "test_frcnn_full_DK_May_2021.py": {
       "filepath": "test_frcnn_full_DK_May_2021.py",
       "size": 14997,
-      "summary": "Key capabilities: imread_fast, imwrite_fast, format_img_size, and more"
+      "summary": "Key capabilities: imread_fast, imwrite_fast, format_img_size, and more",
+      "is_gpu": false
     },
     "test_frcnn_full_DK_May_2021_GPU0.py": {
       "filepath": "test_frcnn_full_DK_May_2021_GPU0.py",
       "size": 17803,
-      "summary": "Key capabilities: imread_fast, imwrite_fast, pre_proc, and more"
+      "summary": "Key capabilities: imread_fast, imwrite_fast, pre_proc, and more",
+      "is_gpu": false
     },
     "test_frcnn_full_DK_May_2021_GPU0_utest.py": {
       "filepath": "test_frcnn_full_DK_May_2021_GPU0_utest.py",
       "size": 17054,
-      "summary": "Key capabilities: imread_fast, imwrite_fast, pre_proc, and more"
+      "summary": "Key capabilities: imread_fast, imwrite_fast, pre_proc, and more",
+      "is_gpu": false
     },
     "test_frcnn_full_DK_May_2021_GPU1.py": {
       "filepath": "test_frcnn_full_DK_May_2021_GPU1.py",
       "size": 16316,
-      "summary": "Key capabilities: imread_fast, imwrite_fast, pre_proc, and more"
+      "summary": "Key capabilities: imread_fast, imwrite_fast, pre_proc, and more",
+      "is_gpu": false
     },
     "test_frcnn_full_G_DK39.py": {
       "filepath": "test_frcnn_full_G_DK39.py",
       "size": 14424,
-      "summary": "Key capabilities: imread_fast, format_img_size, format_img_channels, and more"
+      "summary": "Key capabilities: imread_fast, format_img_size, format_img_channels, and more",
+      "is_gpu": false
     },
     "test_frcnn_full_rev_DK39.py": {
       "filepath": "test_frcnn_full_rev_DK39.py",
       "size": 15329,
-      "summary": "Key capabilities: imread_fast, format_img_size, format_img_channels, and more"
+      "summary": "Key capabilities: imread_fast, format_img_size, format_img_channels, and more",
+      "is_gpu": false
     },
     "train_frcnn_DK.py": {
       "filepath": "train_frcnn_DK.py",
       "size": 14787,
-      "summary": "Key capabilities: write_log"
+      "summary": "Key capabilities: write_log",
+      "is_gpu": false
     },
     "train_frcnn_DK_May21.py": {
       "filepath": "train_frcnn_DK_May21.py",
       "size": 14786,
-      "summary": "Key capabilities: write_log"
+      "summary": "Key capabilities: write_log",
+      "is_gpu": false
     }
   },
   "repo_insight": "The DKCell repository provides a comprehensive, hybrid language solution for biomedical image analysis, primarily focused on cell detection, segmentation, or classification tasks using a deep learning approach grounded in meticulous data annotation. This project is intended to be used by first employing the substantial collection of MATLAB/Octave scripts, such as genCellTrainData.m and getDataTrain.m, to generate, process, and manage training data and annotations, often involving visualization and verification via scripts like viewAnnot.m and verifyDK_csv.m. This annotation-centric preprocessing leverages the included jsonlab library for robust handling of structured data in various formats (JSON, MessagePack, UBJSON) with compression. Following data preparation, the project transitions to its Python components, where a powerful Inception-ResNet-V2 convolutional neural network, likely benefiting from transfer learning with ImageNet pre-training as suggested by export_imagenet.py, is adapted or fine-tuned for the specific cell analysis task, potentially incorporating specialized layers like FixedBatchNormalization.py. Key architectural and algorithmic highlights include this unique hybrid strategy that combines MATLAB's strengths in image processing and rapid prototyping with Python's deep learning capabilities, the sophisticated and versatile data serialization and compression provided by the jsonlab library for managing complex annotations, and the effective application of transfer learning with a high-performance deep neural network architecture to address challenges in biomedical imaging."

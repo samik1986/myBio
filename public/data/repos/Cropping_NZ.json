@@ -265,102 +265,122 @@
     "crop_1.m": {
       "filepath": "crop_1.m",
       "size": 1063,
-      "summary": "Key capabilities: crop_1"
+      "summary": "Key capabilities: crop_1",
+      "is_gpu": false
     },
     "crop_2.m": {
       "filepath": "crop_2.m",
       "size": 1798,
-      "summary": "Key capabilities: crop_2"
+      "summary": "Key capabilities: crop_2",
+      "is_gpu": false
     },
     "crop_3.m": {
       "filepath": "crop_3.m",
       "size": 2271,
-      "summary": "Key capabilities: crop_3"
+      "summary": "Key capabilities: crop_3",
+      "is_gpu": false
     },
     "crop_4.m": {
       "filepath": "crop_4.m",
       "size": 2681,
-      "summary": "Key capabilities: crop_4"
+      "summary": "Key capabilities: crop_4",
+      "is_gpu": false
     },
     "crop_Brains.m": {
       "filepath": "crop_Brains.m",
       "size": 1477,
-      "summary": "Key capabilities: crop_Brains"
+      "summary": "Key capabilities: crop_Brains",
+      "is_gpu": false
     },
     "crop_list.m": {
       "filepath": "crop_list.m",
       "size": 14741,
-      "summary": "Key capabilities: crop_list"
+      "summary": "Key capabilities: crop_list",
+      "is_gpu": false
     },
     "crop_list_rescan.m": {
       "filepath": "crop_list_rescan.m",
       "size": 13779,
-      "summary": "Key capabilities: crop_list_rescan"
+      "summary": "Key capabilities: crop_list_rescan",
+      "is_gpu": false
     },
     "crop_logs.m": {
       "filepath": "crop_logs.m",
       "size": 11511,
-      "summary": "Key capabilities: crop_logs"
+      "summary": "Key capabilities: crop_logs",
+      "is_gpu": false
     },
     "crop_marmoset.m": {
       "filepath": "crop_marmoset.m",
       "size": 12620,
-      "summary": "Key capabilities: crop_marmoset"
+      "summary": "Key capabilities: crop_marmoset",
+      "is_gpu": false
     },
     "crop_mouse_double.m": {
       "filepath": "crop_mouse_double.m",
       "size": 18701,
-      "summary": "Key capabilities: crop_mouse_double"
+      "summary": "Key capabilities: crop_mouse_double",
+      "is_gpu": false
     },
     "crop_mouse_double_inv.m": {
       "filepath": "crop_mouse_double_inv.m",
       "size": 18992,
-      "summary": "Key capabilities: crop_mouse_double_inv"
+      "summary": "Key capabilities: crop_mouse_double_inv",
+      "is_gpu": false
     },
     "crop_mouse_single.m": {
       "filepath": "crop_mouse_single.m",
       "size": 16167,
-      "summary": "Key capabilities: crop_mouse_single"
+      "summary": "Key capabilities: crop_mouse_single",
+      "is_gpu": false
     },
     "crop_sagital_quad.m": {
       "filepath": "crop_sagital_quad.m",
       "size": 13731,
-      "summary": "Key capabilities: crop_sagital_quad"
+      "summary": "Key capabilities: crop_sagital_quad",
+      "is_gpu": false
     },
     "natsortfiles/html/natsortfiles_doc.html": {
       "filepath": "natsortfiles/html/natsortfiles_doc.html",
       "size": 24842,
-      "summary": "Frontend layout and styling templates."
+      "summary": "Frontend layout and styling templates.",
+      "is_gpu": false
     },
     "natsortfiles/natsort.m": {
       "filepath": "natsortfiles/natsort.m",
       "size": 14760,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "natsortfiles/natsortfiles.m": {
       "filepath": "natsortfiles/natsortfiles.m",
       "size": 9384,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "natsortfiles/natsortfiles_doc.m": {
       "filepath": "natsortfiles/natsortfiles_doc.m",
       "size": 7166,
-      "summary": "Core application logic or configuration."
+      "summary": "Core application logic or configuration.",
+      "is_gpu": false
     },
     "natsortfiles/natsortfiles_test.m": {
       "filepath": "natsortfiles/natsortfiles_test.m",
       "size": 24048,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "natsortfiles/testfun.m": {
       "filepath": "natsortfiles/testfun.m",
       "size": 3720,
-      "summary": "Contains testing or evaluation scripts."
+      "summary": "Contains testing or evaluation scripts.",
+      "is_gpu": false
     },
     "ngr2tif.m": {
       "filepath": "ngr2tif.m",
       "size": 3202,
-      "summary": "Key capabilities: ngr2tif, checkfileexists"
+      "summary": "Key capabilities: ngr2tif, checkfileexists",
+      "is_gpu": false
     }
   },
   "repo_insight": "The Cropping_NZ MATLAB codebase is a specialized image processing utility primarily focused on automated or semi-automated region-of-interest extraction (cropping) from biological and medical image data, particularly neuroimaging scans from various species like mice, marmosets, and potentially human brains. Its holistic capability revolves around streamlining the pre-processing step of isolating relevant anatomical structures from larger image volumes or series, often within a research or diagnostic context where consistent and precise cropping is essential. This repository is intended to be used by researchers or technicians to batch process a collection of images; a typical workflow involves converting raw image data from a specific NGR format to TIFF using ngr2tif.m, then preparing a list of target files or directories for processing, likely managed by scripts like crop_list.m or crop_list_rescan.m. The core 'crop_X' functions (e.g., crop_Brains, crop_marmoset, crop_mouse_single, crop_sagital_quad) are then invoked to perform highly tailored cropping operations, selecting optimal regions based on species, anatomical plane, or specific acquisition protocol. The process includes robust logging via crop_logs.m for tracking operations, errors, and successful processing. Architecturally, the project employs a modular design with distinct functions for various cropping scenarios, indicating the use of highly specialized algorithms or predefined parameters for region identification. A key algorithmic highlight is the integration of natural-order file sorting through the 'natsortfiles' module, which is crucial for ensuring correct sequential processing of multi-slice or time-series image data where filenames contain numerical components. The system also features dedicated modules for robust batch processing and initial file format conversion, making it a comprehensive tool for efficient, high-throughput image data preparation in a scientific research setting."

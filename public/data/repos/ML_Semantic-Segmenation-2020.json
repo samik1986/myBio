@@ -139,52 +139,62 @@
     "createData.py": {
       "filepath": "createData.py",
       "size": 2823,
-      "summary": "Key capabilities: readImagesTwice"
+      "summary": "Key capabilities: readImagesTwice",
+      "is_gpu": false
     },
     "createData1.py": {
       "filepath": "createData1.py",
       "size": 3133,
-      "summary": "Key capabilities: readImagesTwice"
+      "summary": "Key capabilities: readImagesTwice",
+      "is_gpu": false
     },
     "createData255.py": {
       "filepath": "createData255.py",
       "size": 2811,
-      "summary": "Key capabilities: readImagesTwice"
+      "summary": "Key capabilities: readImagesTwice",
+      "is_gpu": false
     },
     "createDataTest.py": {
       "filepath": "createDataTest.py",
       "size": 3167,
-      "summary": "Key capabilities: readImagesTwice"
+      "summary": "Key capabilities: readImagesTwice",
+      "is_gpu": false
     },
     "createNetR.py": {
       "filepath": "createNetR.py",
       "size": 5904,
-      "summary": "Key capabilities: soft_dice_loss, dice_loss, comb_loss, and more"
+      "summary": "Key capabilities: soft_dice_loss, dice_loss, comb_loss, and more",
+      "is_gpu": false
     },
     "data.py": {
       "filepath": "data.py",
       "size": 6452,
-      "summary": "Key capabilities: adjustData, trainGenerator, validateGenerator, and more"
+      "summary": "Key capabilities: adjustData, trainGenerator, validateGenerator, and more",
+      "is_gpu": false
     },
     "fullModel.py": {
       "filepath": "fullModel.py",
       "size": 2020,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "tsting.py": {
       "filepath": "tsting.py",
       "size": 3548,
-      "summary": "Key capabilities: sigmoid, testImages"
+      "summary": "Key capabilities: sigmoid, testImages",
+      "is_gpu": false
     },
     "tsting_PS.py": {
       "filepath": "tsting_PS.py",
       "size": 3585,
-      "summary": "Key capabilities: sigmoid, testImages"
+      "summary": "Key capabilities: sigmoid, testImages",
+      "is_gpu": false
     },
     "tsting_single.py": {
       "filepath": "tsting_single.py",
       "size": 3601,
-      "summary": "Key capabilities: sigmoid, testImages"
+      "summary": "Key capabilities: sigmoid, testImages",
+      "is_gpu": false
     }
   },
   "file_metadata": {

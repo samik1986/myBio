@@ -339,67 +339,80 @@
     "bigram_samik.py": {
       "filepath": "bigram_samik.py",
       "size": 5727,
-      "summary": "Key capabilities: get_batch, estimate_loss, BigramLanguageModel, and more"
+      "summary": "Key capabilities: get_batch, estimate_loss, BigramLanguageModel, and more",
+      "is_gpu": false
     },
     "build_makemore_backprop_ninja.ipynb": {
       "filepath": "build_makemore_backprop_ninja.ipynb",
       "size": 22859,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "build_makemore_backprop_ninja_samik.ipynb": {
       "filepath": "build_makemore_backprop_ninja_samik.ipynb",
       "size": 24667,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "build_makemore_batchnorm.ipynb": {
       "filepath": "build_makemore_batchnorm.ipynb",
       "size": 545473,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "build_makemore_batchnorm_Samik.ipynb": {
       "filepath": "build_makemore_batchnorm_Samik.ipynb",
       "size": 848730,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "build_makemore_mlp.ipynb": {
       "filepath": "build_makemore_mlp.ipynb",
       "size": 52319,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "build_makemore_mlp_samik.ipynb": {
       "filepath": "build_makemore_mlp_samik.ipynb",
       "size": 120467,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "build_makemore_samik.ipynb": {
       "filepath": "build_makemore_samik.ipynb",
       "size": 447167,
-      "summary": "User interface components and rendering logic."
+      "summary": "User interface components and rendering logic.",
+      "is_gpu": false
     },
     "gpt_dev.ipynb": {
       "filepath": "gpt_dev.ipynb",
       "size": 59309,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "gpt_dev_samik.ipynb": {
       "filepath": "gpt_dev_samik.ipynb",
       "size": 58869,
-      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+      "is_gpu": false
     },
     "makemore.py": {
       "filepath": "makemore.py",
       "size": 29659,
-      "summary": "Key capabilities: ModelConfig, NewGELU, CausalSelfAttention, and more"
+      "summary": "Key capabilities: ModelConfig, NewGELU, CausalSelfAttention, and more",
+      "is_gpu": false
     },
     "makemore_part5_wavenet.ipynb": {
       "filepath": "makemore_part5_wavenet.ipynb",
       "size": 40871,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     },
     "makemore_part5_wavenet_samik.ipynb": {
       "filepath": "makemore_part5_wavenet_samik.ipynb",
       "size": 57668,
-      "summary": "Defines deep learning model architectures or networks."
+      "summary": "Defines deep learning model architectures or networks.",
+      "is_gpu": false
     }
   },
   "file_metadata": {
