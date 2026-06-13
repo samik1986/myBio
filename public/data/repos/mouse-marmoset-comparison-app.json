@@ -229,5 +229,6 @@
       "size": 80,
       "summary": "Frontend layout and styling templates."
     }
-  }
+  },
+  "repo_insight": "The mouse-marmoset-comparison-app is a specialized bioinformatics web platform engineered to facilitate comparative analysis between mouse and marmoset model organisms, bridging the gap between rodent and non-human primate research domains. It serves as an interactive explorer for visualizing and analyzing orthologous genes, brain regions, or physiological data points, leveraging a reactive Angular architecture coupled with high-performance Server-Side Rendering (SSR) driven by Express and Vite. To use this system, researchers browse and query specific biological entities through the frontend user interface, while developers run, test, and deploy the application using the integrated Angular CLI, utilizing the data service to fetch and process comparative datasets from external APIs or local stores. Architecturally, the repository represents a modern Angular setup featuring a hybrid or transitionary module-to-standalone layout, optimized with custom routing configurations, server-side bootloaders, and a dedicated HTTP data service layer that abstracts complex cross-species mappings to deliver fast, SEO-optimized, and performant comparisons directly to the user's browser."
 }
