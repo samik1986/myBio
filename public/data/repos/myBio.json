@@ -1,1 +1,570 @@
-{"name":"myBio","url":"https://github.com/samik1986/myBio","description":"**Codebase Intelligence:** This JavaScript codebase contains 11 extracted functions across 9 files. Key extracted functionality includes: get_cat, get_cat, get_largest_image, find_pdf, find_fig_bbox, and more.","language":"JavaScript","functions_extracted":{"apply_categories.py":[{"type":"function","name":"get_cat","docstring":""}],"apply_categories_arrays.py":[{"type":"function","name":"get_cat","docstring":""}],"build_image_db.py":[{"type":"function","name":"get_largest_image","docstring":""}],"extract_figures.py":[{"type":"function","name":"find_pdf","docstring":""},{"type":"function","name":"find_fig_bbox","docstring":""}],"fix_posix.py":[{"type":"function","name":"get_largest_image","docstring":""}],"fix_pubs.py":[{"type":"function","name":"replace_image","docstring":""}],"generate_options.py":[{"type":"function","name":"get_images","docstring":""}],"match_all_images.py":[{"type":"function","name":"get_import_var","docstring":""},{"type":"function","name":"clean_str","docstring":""}],"update_from_tex.py":[{"type":"function","name":"get_or_create_import","docstring":""}]},"updated_at":"2026-06-13T16:39:26Z","languages":[{"name":"JavaScript","percentage":54.9},{"name":"Python","percentage":27.9},{"name":"CSS","percentage":17},{"name":"HTML","percentage":0.1}],"all_files":{"api/chat.js":{"filepath":"api/chat.js","size":1664,"summary":"API routes and backend controllers."},"api/repo_data.js":{"filepath":"api/repo_data.js","size":613107,"summary":"Data loading and preprocessing pipeline."},"append_css.py":{"filepath":"append_css.py","size":907,"summary":"Core application logic or configuration."},"apply_categories.py":{"filepath":"apply_categories.py","size":4205,"summary":"Key capabilities: get_cat"},"apply_categories_arrays.py":{"filepath":"apply_categories_arrays.py","size":4486,"summary":"Key capabilities: get_cat"},"apply_choices.py":{"filepath":"apply_choices.py","size":2261,"summary":"Core application logic or configuration."},"apply_hardware_images.py":{"filepath":"apply_hardware_images.py","size":676,"summary":"Core application logic or configuration."},"build_image_db.py":{"filepath":"build_image_db.py","size":3692,"summary":"Key capabilities: get_largest_image"},"eslint.config.js":{"filepath":"eslint.config.js","size":568,"summary":"Core application logic or configuration."},"extract_figures.py":{"filepath":"extract_figures.py","size":1843,"summary":"Key capabilities: find_pdf, find_fig_bbox"},"extract_more_images.py":{"filepath":"extract_more_images.py","size":2412,"summary":"Core application logic or configuration."},"extract_neuro.py":{"filepath":"extract_neuro.py","size":1608,"summary":"Core application logic or configuration."},"extract_pdf_images.py":{"filepath":"extract_pdf_images.py","size":1846,"summary":"Core application logic or configuration."},"fetch_scholar.py":{"filepath":"fetch_scholar.py","size":1270,"summary":"Core application logic or configuration."},"fix_build.py":{"filepath":"fix_build.py","size":506,"summary":"User interface components and rendering logic."},"fix_data_final.py":{"filepath":"fix_data_final.py","size":1813,"summary":"Data loading and preprocessing pipeline."},"fix_posix.py":{"filepath":"fix_posix.py","size":1676,"summary":"Key capabilities: get_largest_image"},"fix_pub_images.py":{"filepath":"fix_pub_images.py","size":818,"summary":"Core application logic or configuration."},"fix_pubs.js":{"filepath":"fix_pubs.js","size":1764,"summary":"Core application logic or configuration."},"fix_pubs.py":{"filepath":"fix_pubs.py","size":763,"summary":"Key capabilities: replace_image"},"gemini_search.py":{"filepath":"gemini_search.py","size":867,"summary":"Core application logic or configuration."},"generate_options.py":{"filepath":"generate_options.py","size":1422,"summary":"Key capabilities: get_images"},"get_cites.py":{"filepath":"get_cites.py","size":457,"summary":"Core application logic or configuration."},"index.html":{"filepath":"index.html","size":357,"summary":"Frontend layout and styling templates."},"match_all_images.py":{"filepath":"match_all_images.py","size":5779,"summary":"Key capabilities: get_import_var, clean_str"},"parse_local_scholar.py":{"filepath":"parse_local_scholar.py","size":1162,"summary":"Core application logic or configuration."},"parse_scholar.py":{"filepath":"parse_scholar.py","size":708,"summary":"Core application logic or configuration."},"refactor_imports.py":{"filepath":"refactor_imports.py","size":2884,"summary":"Core application logic or configuration."},"refactor_projects.py":{"filepath":"refactor_projects.py","size":1843,"summary":"Core application logic or configuration."},"scratch_update.py":{"filepath":"scratch_update.py","size":2194,"summary":"Core application logic or configuration."},"src/App.css":{"filepath":"src/App.css","size":319,"summary":"Frontend layout and styling templates."},"src/App.jsx":{"filepath":"src/App.jsx","size":2958,"summary":"Core application logic or configuration."},"src/components/About/About.css":{"filepath":"src/components/About/About.css","size":1832,"summary":"User interface components and rendering logic."},"src/components/About/About.jsx":{"filepath":"src/components/About/About.jsx","size":5579,"summary":"User interface components and rendering logic."},"src/components/CareerTimeline/CareerTimeline.css":{"filepath":"src/components/CareerTimeline/CareerTimeline.css","size":1273,"summary":"User interface components and rendering logic."},"src/components/CareerTimeline/CareerTimeline.jsx":{"filepath":"src/components/CareerTimeline/CareerTimeline.jsx","size":3730,"summary":"User interface components and rendering logic."},"src/components/Education/Education.css":{"filepath":"src/components/Education/Education.css","size":896,"summary":"User interface components and rendering logic."},"src/components/Education/Education.jsx":{"filepath":"src/components/Education/Education.jsx","size":1610,"summary":"User interface components and rendering logic."},"src/components/Education/EducationDetail.css":{"filepath":"src/components/Education/EducationDetail.css","size":1211,"summary":"User interface components and rendering logic."},"src/components/Education/EducationDetail.jsx":{"filepath":"src/components/Education/EducationDetail.jsx","size":1621,"summary":"User interface components and rendering logic."},"src/components/Experience/Experience.css":{"filepath":"src/components/Experience/Experience.css","size":1789,"summary":"User interface components and rendering logic."},"src/components/Experience/Experience.jsx":{"filepath":"src/components/Experience/Experience.jsx","size":1791,"summary":"User interface components and rendering logic."},"src/components/Experience/ExperienceDetail.css":{"filepath":"src/components/Experience/ExperienceDetail.css","size":1241,"summary":"User interface components and rendering logic."},"src/components/Experience/ExperienceDetail.jsx":{"filepath":"src/components/Experience/ExperienceDetail.jsx","size":1863,"summary":"User interface components and rendering logic."},"src/components/Footer/Footer.css":{"filepath":"src/components/Footer/Footer.css","size":652,"summary":"User interface components and rendering logic."},"src/components/Footer/Footer.jsx":{"filepath":"src/components/Footer/Footer.jsx","size":1176,"summary":"User interface components and rendering logic."},"src/components/GeminiAssistant/GeminiAssistant.css":{"filepath":"src/components/GeminiAssistant/GeminiAssistant.css","size":6276,"summary":"User interface components and rendering logic."},"src/components/GeminiAssistant/GeminiAssistant.jsx":{"filepath":"src/components/GeminiAssistant/GeminiAssistant.jsx","size":13088,"summary":"User interface components and rendering logic."},"src/components/GitHubStats/GitHubStats.css":{"filepath":"src/components/GitHubStats/GitHubStats.css","size":2648,"summary":"User interface components and rendering logic."},"src/components/GitHubStats/GitHubStats.jsx":{"filepath":"src/components/GitHubStats/GitHubStats.jsx","size":5440,"summary":"User interface components and rendering logic."},"src/components/GithubRepos/GithubRepos.css":{"filepath":"src/components/GithubRepos/GithubRepos.css","size":2052,"summary":"User interface components and rendering logic."},"src/components/GithubRepos/GithubRepos.jsx":{"filepath":"src/components/GithubRepos/GithubRepos.jsx","size":7900,"summary":"User interface components and rendering logic."},"src/components/GithubRepos/RepoFunctions.css":{"filepath":"src/components/GithubRepos/RepoFunctions.css","size":3015,"summary":"User interface components and rendering logic."},"src/components/GithubRepos/RepoFunctions.jsx":{"filepath":"src/components/GithubRepos/RepoFunctions.jsx","size":6218,"summary":"User interface components and rendering logic."},"src/components/Hero/Hero.css":{"filepath":"src/components/Hero/Hero.css","size":2762,"summary":"User interface components and rendering logic."},"src/components/Hero/Hero.jsx":{"filepath":"src/components/Hero/Hero.jsx","size":2330,"summary":"User interface components and rendering logic."},"src/components/Navbar/Navbar.css":{"filepath":"src/components/Navbar/Navbar.css","size":2155,"summary":"User interface components and rendering logic."},"src/components/Navbar/Navbar.jsx":{"filepath":"src/components/Navbar/Navbar.jsx","size":2889,"summary":"User interface components and rendering logic."},"src/components/Projects/ProjectDetail.css":{"filepath":"src/components/Projects/ProjectDetail.css","size":1517,"summary":"User interface components and rendering logic."},"src/components/Projects/ProjectDetail.jsx":{"filepath":"src/components/Projects/ProjectDetail.jsx","size":2965,"summary":"User interface components and rendering logic."},"src/components/Projects/Projects.css":{"filepath":"src/components/Projects/Projects.css","size":3018,"summary":"User interface components and rendering logic."},"src/components/Projects/Projects.jsx":{"filepath":"src/components/Projects/Projects.jsx","size":3015,"summary":"User interface components and rendering logic."},"src/components/Publications/PublicationDetail.css":{"filepath":"src/components/Publications/PublicationDetail.css","size":2219,"summary":"User interface components and rendering logic."},"src/components/Publications/PublicationDetail.jsx":{"filepath":"src/components/Publications/PublicationDetail.jsx","size":2892,"summary":"User interface components and rendering logic."},"src/components/Publications/Publications.css":{"filepath":"src/components/Publications/Publications.css","size":2806,"summary":"User interface components and rendering logic."},"src/components/Publications/Publications.jsx":{"filepath":"src/components/Publications/Publications.jsx","size":4415,"summary":"User interface components and rendering logic."},"src/components/ResearchGraph/ResearchGraph.css":{"filepath":"src/components/ResearchGraph/ResearchGraph.css","size":643,"summary":"User interface components and rendering logic."},"src/components/ResearchGraph/ResearchGraph.jsx":{"filepath":"src/components/ResearchGraph/ResearchGraph.jsx","size":2885,"summary":"User interface components and rendering logic."},"src/components/Skills/Skills.css":{"filepath":"src/components/Skills/Skills.css","size":457,"summary":"User interface components and rendering logic."},"src/components/Skills/Skills.jsx":{"filepath":"src/components/Skills/Skills.jsx","size":3951,"summary":"User interface components and rendering logic."},"src/data/educationData.js":{"filepath":"src/data/educationData.js","size":1245,"summary":"Data loading and preprocessing pipeline."},"src/data/experienceData.js":{"filepath":"src/data/experienceData.js","size":2067,"summary":"Data loading and preprocessing pipeline."},"src/data/imageDatabase.js":{"filepath":"src/data/imageDatabase.js","size":3073,"summary":"Data loading and preprocessing pipeline."},"src/data/projectsData.js":{"filepath":"src/data/projectsData.js","size":33224,"summary":"Data loading and preprocessing pipeline."},"src/data/projectsImageDatabase.js":{"filepath":"src/data/projectsImageDatabase.js","size":1754,"summary":"Data loading and preprocessing pipeline."},"src/data/publicationsData.js":{"filepath":"src/data/publicationsData.js","size":18479,"summary":"Data loading and preprocessing pipeline."},"src/data/skillsData.js":{"filepath":"src/data/skillsData.js","size":1020,"summary":"Data loading and preprocessing pipeline."},"src/data/timelineData.js":{"filepath":"src/data/timelineData.js","size":3790,"summary":"Data loading and preprocessing pipeline."},"src/index.css":{"filepath":"src/index.css","size":1865,"summary":"Frontend layout and styling templates."},"src/main.jsx":{"filepath":"src/main.jsx","size":312,"summary":"Core application logic or configuration."},"update_db.py":{"filepath":"update_db.py","size":595,"summary":"Core application logic or configuration."},"update_db_names.py":{"filepath":"update_db_names.py","size":3811,"summary":"Core application logic or configuration."},"update_from_tex.py":{"filepath":"update_from_tex.py","size":6251,"summary":"Key capabilities: get_or_create_import"},"update_publications.py":{"filepath":"update_publications.py","size":3117,"summary":"Core application logic or configuration."},"update_pubs_from_resume.py":{"filepath":"update_pubs_from_resume.py","size":4935,"summary":"Core application logic or configuration."},"vite.config.js":{"filepath":"vite.config.js","size":160,"summary":"Core application logic or configuration."}},"file_metadata":{"apply_categories.py":{"summary":"Key capabilities: get_cat","updated_at":"2026-06-11T11:16:27Z"},"apply_categories_arrays.py":{"summary":"Key capabilities: get_cat","updated_at":"2026-06-11T11:16:27Z"},"build_image_db.py":{"summary":"Key capabilities: get_largest_image","updated_at":"2026-06-11T10:56:29Z"},"extract_figures.py":{"summary":"Key capabilities: find_pdf, find_fig_bbox","updated_at":"2026-06-11T11:10:03Z"},"fix_posix.py":{"summary":"Key capabilities: get_largest_image","updated_at":"2026-06-11T10:56:29Z"},"fix_pubs.py":{"summary":"Key capabilities: replace_image","updated_at":"2026-06-11T10:38:42Z"},"generate_options.py":{"summary":"Key capabilities: get_images","updated_at":"2026-06-11T11:07:16Z"},"match_all_images.py":{"summary":"Key capabilities: get_import_var, clean_str","updated_at":"2026-06-11T10:38:42Z"},"update_from_tex.py":{"summary":"Key capabilities: get_or_create_import","updated_at":"2026-06-11T10:38:42Z"}}}
+{
+  "name": "myBio",
+  "url": "https://github.com/samik1986/myBio",
+  "description": "**Codebase Intelligence:** This JavaScript codebase contains 11 extracted functions across 9 files. Key extracted functionality includes: get_cat, get_cat, get_largest_image, find_pdf, find_fig_bbox, and more.",
+  "language": "JavaScript",
+  "functions_extracted": {
+    "apply_categories.py": [
+      {
+        "type": "function",
+        "name": "get_cat",
+        "docstring": ""
+      }
+    ],
+    "apply_categories_arrays.py": [
+      {
+        "type": "function",
+        "name": "get_cat",
+        "docstring": ""
+      }
+    ],
+    "build_image_db.py": [
+      {
+        "type": "function",
+        "name": "get_largest_image",
+        "docstring": ""
+      }
+    ],
+    "extract_figures.py": [
+      {
+        "type": "function",
+        "name": "find_pdf",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "find_fig_bbox",
+        "docstring": ""
+      }
+    ],
+    "fix_posix.py": [
+      {
+        "type": "function",
+        "name": "get_largest_image",
+        "docstring": ""
+      }
+    ],
+    "fix_pubs.py": [
+      {
+        "type": "function",
+        "name": "replace_image",
+        "docstring": ""
+      }
+    ],
+    "generate_options.py": [
+      {
+        "type": "function",
+        "name": "get_images",
+        "docstring": ""
+      }
+    ],
+    "match_all_images.py": [
+      {
+        "type": "function",
+        "name": "get_import_var",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "clean_str",
+        "docstring": ""
+      }
+    ],
+    "update_from_tex.py": [
+      {
+        "type": "function",
+        "name": "get_or_create_import",
+        "docstring": ""
+      }
+    ]
+  },
+  "updated_at": "2026-06-13T16:39:26Z",
+  "languages": [
+    {
+      "name": "JavaScript",
+      "percentage": 54.9
+    },
+    {
+      "name": "Python",
+      "percentage": 27.9
+    },
+    {
+      "name": "CSS",
+      "percentage": 17
+    },
+    {
+      "name": "HTML",
+      "percentage": 0.1
+    }
+  ],
+  "all_files": {
+    "api/chat.js": {
+      "filepath": "api/chat.js",
+      "size": 1664,
+      "summary": "API routes and backend controllers."
+    },
+    "api/repo_data.js": {
+      "filepath": "api/repo_data.js",
+      "size": 613107,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "append_css.py": {
+      "filepath": "append_css.py",
+      "size": 907,
+      "summary": "Core application logic or configuration."
+    },
+    "apply_categories.py": {
+      "filepath": "apply_categories.py",
+      "size": 4205,
+      "summary": "Key capabilities: get_cat"
+    },
+    "apply_categories_arrays.py": {
+      "filepath": "apply_categories_arrays.py",
+      "size": 4486,
+      "summary": "Key capabilities: get_cat"
+    },
+    "apply_choices.py": {
+      "filepath": "apply_choices.py",
+      "size": 2261,
+      "summary": "Core application logic or configuration."
+    },
+    "apply_hardware_images.py": {
+      "filepath": "apply_hardware_images.py",
+      "size": 676,
+      "summary": "Core application logic or configuration."
+    },
+    "build_image_db.py": {
+      "filepath": "build_image_db.py",
+      "size": 3692,
+      "summary": "Key capabilities: get_largest_image"
+    },
+    "eslint.config.js": {
+      "filepath": "eslint.config.js",
+      "size": 568,
+      "summary": "Core application logic or configuration."
+    },
+    "extract_figures.py": {
+      "filepath": "extract_figures.py",
+      "size": 1843,
+      "summary": "Key capabilities: find_pdf, find_fig_bbox"
+    },
+    "extract_more_images.py": {
+      "filepath": "extract_more_images.py",
+      "size": 2412,
+      "summary": "Core application logic or configuration."
+    },
+    "extract_neuro.py": {
+      "filepath": "extract_neuro.py",
+      "size": 1608,
+      "summary": "Core application logic or configuration."
+    },
+    "extract_pdf_images.py": {
+      "filepath": "extract_pdf_images.py",
+      "size": 1846,
+      "summary": "Core application logic or configuration."
+    },
+    "fetch_scholar.py": {
+      "filepath": "fetch_scholar.py",
+      "size": 1270,
+      "summary": "Core application logic or configuration."
+    },
+    "fix_build.py": {
+      "filepath": "fix_build.py",
+      "size": 506,
+      "summary": "User interface components and rendering logic."
+    },
+    "fix_data_final.py": {
+      "filepath": "fix_data_final.py",
+      "size": 1813,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "fix_posix.py": {
+      "filepath": "fix_posix.py",
+      "size": 1676,
+      "summary": "Key capabilities: get_largest_image"
+    },
+    "fix_pub_images.py": {
+      "filepath": "fix_pub_images.py",
+      "size": 818,
+      "summary": "Core application logic or configuration."
+    },
+    "fix_pubs.js": {
+      "filepath": "fix_pubs.js",
+      "size": 1764,
+      "summary": "Core application logic or configuration."
+    },
+    "fix_pubs.py": {
+      "filepath": "fix_pubs.py",
+      "size": 763,
+      "summary": "Key capabilities: replace_image"
+    },
+    "gemini_search.py": {
+      "filepath": "gemini_search.py",
+      "size": 867,
+      "summary": "Core application logic or configuration."
+    },
+    "generate_options.py": {
+      "filepath": "generate_options.py",
+      "size": 1422,
+      "summary": "Key capabilities: get_images"
+    },
+    "get_cites.py": {
+      "filepath": "get_cites.py",
+      "size": 457,
+      "summary": "Core application logic or configuration."
+    },
+    "index.html": {
+      "filepath": "index.html",
+      "size": 357,
+      "summary": "Frontend layout and styling templates."
+    },
+    "match_all_images.py": {
+      "filepath": "match_all_images.py",
+      "size": 5779,
+      "summary": "Key capabilities: get_import_var, clean_str"
+    },
+    "parse_local_scholar.py": {
+      "filepath": "parse_local_scholar.py",
+      "size": 1162,
+      "summary": "Core application logic or configuration."
+    },
+    "parse_scholar.py": {
+      "filepath": "parse_scholar.py",
+      "size": 708,
+      "summary": "Core application logic or configuration."
+    },
+    "refactor_imports.py": {
+      "filepath": "refactor_imports.py",
+      "size": 2884,
+      "summary": "Core application logic or configuration."
+    },
+    "refactor_projects.py": {
+      "filepath": "refactor_projects.py",
+      "size": 1843,
+      "summary": "Core application logic or configuration."
+    },
+    "scratch_update.py": {
+      "filepath": "scratch_update.py",
+      "size": 2194,
+      "summary": "Core application logic or configuration."
+    },
+    "src/App.css": {
+      "filepath": "src/App.css",
+      "size": 319,
+      "summary": "Frontend layout and styling templates."
+    },
+    "src/App.jsx": {
+      "filepath": "src/App.jsx",
+      "size": 2958,
+      "summary": "Core application logic or configuration."
+    },
+    "src/components/About/About.css": {
+      "filepath": "src/components/About/About.css",
+      "size": 1832,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/About/About.jsx": {
+      "filepath": "src/components/About/About.jsx",
+      "size": 5579,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/CareerTimeline/CareerTimeline.css": {
+      "filepath": "src/components/CareerTimeline/CareerTimeline.css",
+      "size": 1273,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/CareerTimeline/CareerTimeline.jsx": {
+      "filepath": "src/components/CareerTimeline/CareerTimeline.jsx",
+      "size": 3730,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Education/Education.css": {
+      "filepath": "src/components/Education/Education.css",
+      "size": 896,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Education/Education.jsx": {
+      "filepath": "src/components/Education/Education.jsx",
+      "size": 1610,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Education/EducationDetail.css": {
+      "filepath": "src/components/Education/EducationDetail.css",
+      "size": 1211,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Education/EducationDetail.jsx": {
+      "filepath": "src/components/Education/EducationDetail.jsx",
+      "size": 1621,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Experience/Experience.css": {
+      "filepath": "src/components/Experience/Experience.css",
+      "size": 1789,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Experience/Experience.jsx": {
+      "filepath": "src/components/Experience/Experience.jsx",
+      "size": 1791,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Experience/ExperienceDetail.css": {
+      "filepath": "src/components/Experience/ExperienceDetail.css",
+      "size": 1241,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Experience/ExperienceDetail.jsx": {
+      "filepath": "src/components/Experience/ExperienceDetail.jsx",
+      "size": 1863,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Footer/Footer.css": {
+      "filepath": "src/components/Footer/Footer.css",
+      "size": 652,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Footer/Footer.jsx": {
+      "filepath": "src/components/Footer/Footer.jsx",
+      "size": 1176,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/GeminiAssistant/GeminiAssistant.css": {
+      "filepath": "src/components/GeminiAssistant/GeminiAssistant.css",
+      "size": 6276,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/GeminiAssistant/GeminiAssistant.jsx": {
+      "filepath": "src/components/GeminiAssistant/GeminiAssistant.jsx",
+      "size": 13088,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/GitHubStats/GitHubStats.css": {
+      "filepath": "src/components/GitHubStats/GitHubStats.css",
+      "size": 2648,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/GitHubStats/GitHubStats.jsx": {
+      "filepath": "src/components/GitHubStats/GitHubStats.jsx",
+      "size": 5440,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/GithubRepos/GithubRepos.css": {
+      "filepath": "src/components/GithubRepos/GithubRepos.css",
+      "size": 2052,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/GithubRepos/GithubRepos.jsx": {
+      "filepath": "src/components/GithubRepos/GithubRepos.jsx",
+      "size": 7900,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/GithubRepos/RepoFunctions.css": {
+      "filepath": "src/components/GithubRepos/RepoFunctions.css",
+      "size": 3015,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/GithubRepos/RepoFunctions.jsx": {
+      "filepath": "src/components/GithubRepos/RepoFunctions.jsx",
+      "size": 6218,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Hero/Hero.css": {
+      "filepath": "src/components/Hero/Hero.css",
+      "size": 2762,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Hero/Hero.jsx": {
+      "filepath": "src/components/Hero/Hero.jsx",
+      "size": 2330,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Navbar/Navbar.css": {
+      "filepath": "src/components/Navbar/Navbar.css",
+      "size": 2155,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Navbar/Navbar.jsx": {
+      "filepath": "src/components/Navbar/Navbar.jsx",
+      "size": 2889,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Projects/ProjectDetail.css": {
+      "filepath": "src/components/Projects/ProjectDetail.css",
+      "size": 1517,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Projects/ProjectDetail.jsx": {
+      "filepath": "src/components/Projects/ProjectDetail.jsx",
+      "size": 2965,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Projects/Projects.css": {
+      "filepath": "src/components/Projects/Projects.css",
+      "size": 3018,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Projects/Projects.jsx": {
+      "filepath": "src/components/Projects/Projects.jsx",
+      "size": 3015,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Publications/PublicationDetail.css": {
+      "filepath": "src/components/Publications/PublicationDetail.css",
+      "size": 2219,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Publications/PublicationDetail.jsx": {
+      "filepath": "src/components/Publications/PublicationDetail.jsx",
+      "size": 2892,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Publications/Publications.css": {
+      "filepath": "src/components/Publications/Publications.css",
+      "size": 2806,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Publications/Publications.jsx": {
+      "filepath": "src/components/Publications/Publications.jsx",
+      "size": 4415,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/ResearchGraph/ResearchGraph.css": {
+      "filepath": "src/components/ResearchGraph/ResearchGraph.css",
+      "size": 643,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/ResearchGraph/ResearchGraph.jsx": {
+      "filepath": "src/components/ResearchGraph/ResearchGraph.jsx",
+      "size": 2885,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Skills/Skills.css": {
+      "filepath": "src/components/Skills/Skills.css",
+      "size": 457,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/components/Skills/Skills.jsx": {
+      "filepath": "src/components/Skills/Skills.jsx",
+      "size": 3951,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/data/educationData.js": {
+      "filepath": "src/data/educationData.js",
+      "size": 1245,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "src/data/experienceData.js": {
+      "filepath": "src/data/experienceData.js",
+      "size": 2067,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "src/data/imageDatabase.js": {
+      "filepath": "src/data/imageDatabase.js",
+      "size": 3073,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "src/data/projectsData.js": {
+      "filepath": "src/data/projectsData.js",
+      "size": 33224,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "src/data/projectsImageDatabase.js": {
+      "filepath": "src/data/projectsImageDatabase.js",
+      "size": 1754,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "src/data/publicationsData.js": {
+      "filepath": "src/data/publicationsData.js",
+      "size": 18479,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "src/data/skillsData.js": {
+      "filepath": "src/data/skillsData.js",
+      "size": 1020,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "src/data/timelineData.js": {
+      "filepath": "src/data/timelineData.js",
+      "size": 3790,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "src/index.css": {
+      "filepath": "src/index.css",
+      "size": 1865,
+      "summary": "Frontend layout and styling templates."
+    },
+    "src/main.jsx": {
+      "filepath": "src/main.jsx",
+      "size": 312,
+      "summary": "Core application logic or configuration."
+    },
+    "update_db.py": {
+      "filepath": "update_db.py",
+      "size": 595,
+      "summary": "Core application logic or configuration."
+    },
+    "update_db_names.py": {
+      "filepath": "update_db_names.py",
+      "size": 3811,
+      "summary": "Core application logic or configuration."
+    },
+    "update_from_tex.py": {
+      "filepath": "update_from_tex.py",
+      "size": 6251,
+      "summary": "Key capabilities: get_or_create_import"
+    },
+    "update_publications.py": {
+      "filepath": "update_publications.py",
+      "size": 3117,
+      "summary": "Core application logic or configuration."
+    },
+    "update_pubs_from_resume.py": {
+      "filepath": "update_pubs_from_resume.py",
+      "size": 4935,
+      "summary": "Core application logic or configuration."
+    },
+    "vite.config.js": {
+      "filepath": "vite.config.js",
+      "size": 160,
+      "summary": "Core application logic or configuration."
+    }
+  },
+  "file_metadata": {
+    "apply_categories.py": {
+      "summary": "Key capabilities: get_cat",
+      "updated_at": "2026-06-11T11:16:27Z"
+    },
+    "apply_categories_arrays.py": {
+      "summary": "Key capabilities: get_cat",
+      "updated_at": "2026-06-11T11:16:27Z"
+    },
+    "build_image_db.py": {
+      "summary": "Key capabilities: get_largest_image",
+      "updated_at": "2026-06-11T10:56:29Z"
+    },
+    "extract_figures.py": {
+      "summary": "Key capabilities: find_pdf, find_fig_bbox",
+      "updated_at": "2026-06-11T11:10:03Z"
+    },
+    "fix_posix.py": {
+      "summary": "Key capabilities: get_largest_image",
+      "updated_at": "2026-06-11T10:56:29Z"
+    },
+    "fix_pubs.py": {
+      "summary": "Key capabilities: replace_image",
+      "updated_at": "2026-06-11T10:38:42Z"
+    },
+    "generate_options.py": {
+      "summary": "Key capabilities: get_images",
+      "updated_at": "2026-06-11T11:07:16Z"
+    },
+    "match_all_images.py": {
+      "summary": "Key capabilities: get_import_var, clean_str",
+      "updated_at": "2026-06-11T10:38:42Z"
+    },
+    "update_from_tex.py": {
+      "summary": "Key capabilities: get_or_create_import",
+      "updated_at": "2026-06-11T10:38:42Z"
+    }
+  }
+}
