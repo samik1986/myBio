@@ -566,5 +566,6 @@
       "summary": "Key capabilities: get_or_create_import",
       "updated_at": "2026-06-11T10:38:42Z"
     }
-  }
+  },
+  "repo_insight": "The myBio repository is a highly sophisticated, data-driven academic and professional portfolio platform designed to automatically compile, enrich, and present an individual's career achievements, research publications, and GitHub metrics. This codebase is intended to be used as a self-updating personal website; developers or researchers execute the extensive suite of Python utility scripts to fetch scholarly citations from Google Scholar, extract high-quality figures and layout bounding boxes from publication PDFs, build localized image databases, and categorize assets, while the React-based frontend serves an interactive timeline, experience log, and education profile to end-users. Key architectural and algorithmic highlights of this system include its dual-layer structure\u2014combining a rich preprocessing pipeline of Python scripts for heavy-duty PDF and metadata parsing with a lightweight React SPA\u2014and its integration of advanced image harvesting algorithms like find_fig_bbox and get_largest_image alongside a Gemini-powered serverless chat API that allows visitors to converse naturally with the portfolio data."
 }
