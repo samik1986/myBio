@@ -168,31 +168,39 @@ const RepoFunctions = () => {
       <div className="container">
         <Link to="/github" className="back-link"><ArrowLeft size={20} /> Back to Repositories</Link>
 
-        <div className="repo-header glass">
-          <h1 className="repo-title">{data.name} API & File Reference</h1>
-          {data.description && <p className="repo-desc mt-2 mb-4" style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', lineHeight: '1.6', whiteSpace: 'pre-wrap' }}>{data.description}</p>}
+        <div className="repo-header glass" style={{ display: 'grid', gridTemplateColumns: data.repo_insight ? 'repeat(auto-fit, minmax(350px, 1fr))' : '1fr', gap: '2rem', alignItems: 'stretch' }}>
+          
+          <div className="repo-info-col" style={{ display: 'flex', flexDirection: 'column' }}>
+            <h1 className="repo-title">{data.name} API & File Reference</h1>
+            {data.description && <p className="repo-desc mt-2 mb-4" style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', lineHeight: '1.6', whiteSpace: 'pre-wrap' }}>{data.description}</p>}
           
           {data.repo_insight && (
-            <div className="repo-insight mt-4 mb-4" style={{ 
-              padding: '1.5rem', 
-              background: 'linear-gradient(145deg, rgba(30,50,90,0.3), rgba(10,20,40,0.2))', 
-              borderLeft: '4px solid #ecc94b', 
-              borderRadius: '0 8px 8px 0', 
-              color: '#e2e8f0',
-              lineHeight: '1.7'
-            }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px', color: '#ecc94b', fontWeight: 'bold', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-                ✨ AI Repository Insight
+            <div className="repo-insight-col" style={{ display: 'flex' }}>
+              <div className="repo-insight mt-4 mb-4" style={{ 
+                flex: 1,
+                padding: '1.5rem', 
+                background: 'linear-gradient(145deg, rgba(30,50,90,0.3), rgba(10,20,40,0.2))', 
+                borderLeft: '4px solid #ecc94b', 
+                borderRadius: '0 8px 8px 0', 
+                color: '#e2e8f0',
+                lineHeight: '1.7'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px', color: '#ecc94b', fontWeight: 'bold', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+                  ✨ AI Repository Insight
+                </div>
+                <p style={{ margin: 0, whiteSpace: 'pre-wrap', fontSize: '1.05rem' }}>{data.repo_insight}</p>
               </div>
-              <p style={{ margin: 0, whiteSpace: 'pre-wrap', fontSize: '1.05rem' }}>{data.repo_insight}</p>
             </div>
           )}
           
-          {data.languages && <LanguageBar languages={data.languages} />}
-          
-          <div className="repo-meta" style={{ marginTop: '1rem', display: 'flex', gap: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1rem' }}>
-            {data.updated_at && <span><Clock size={16} style={{display:'inline', verticalAlign:'sub', marginRight:'4px'}}/> Last Push: {new Date(data.updated_at).toLocaleDateString()}</span>}
+          <div style={{ marginTop: 'auto' }}>
+            {data.languages && <LanguageBar languages={data.languages} />}
+            
+            <div className="repo-meta" style={{ marginTop: '1rem', display: 'flex', gap: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1rem' }}>
+              {data.updated_at && <span><Clock size={16} style={{display:'inline', verticalAlign:'sub', marginRight:'4px'}}/> Last Push: {new Date(data.updated_at).toLocaleDateString()}</span>}
+            </div>
           </div>
+        </div>
           
           {data.repo_insight && (
             <div className="repo-insight" style={{ marginTop: '1.5rem', padding: '1.5rem', background: 'rgba(0,0,0,0.2)', borderLeft: '4px solid var(--primary)', borderRadius: '0 8px 8px 0', fontSize: '1.05rem', lineHeight: '1.6', color: 'var(--text-primary)' }}>
