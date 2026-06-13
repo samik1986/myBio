@@ -245,6 +245,24 @@ const RepoFunctions = () => {
                                 </div>
                               )}
 
+                              {fn.ai_summary && (
+                                <div className="function-ai-summary" style={{ 
+                                  marginBottom: '1.5rem', 
+                                  padding: '1rem', 
+                                  background: 'linear-gradient(145deg, rgba(30,50,90,0.4), rgba(10,20,40,0.3))', 
+                                  borderLeft: '3px solid #4a90e2', 
+                                  borderRadius: '0 6px 6px 0', 
+                                  fontSize: '0.95rem', 
+                                  lineHeight: '1.6', 
+                                  color: '#e2e8f0' 
+                                }}>
+                                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px', color: '#63b3ed', fontWeight: 'bold', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+                                    ✨ AI Insight
+                                  </div>
+                                  {fn.ai_summary}
+                                </div>
+                              )}
+
                               {fn.args && fn.args.length > 0 && (
                                 <div className="function-params mb-3">
                                   <strong style={{color: 'var(--text-primary)'}}>Parameters:</strong>
