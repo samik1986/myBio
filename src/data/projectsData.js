@@ -537,4 +537,103 @@ export const githubProjects = [
     forks: 0,
     githubUrl: "https://github.com/samik1986/wiNN"
   },
+  {
+    id: 41,
+    name: "yolo_model (twardlab)",
+    description: "Object segmentation + quantification from microscopy images (twardlab)",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/twardlab/yolo_model"
+  },
+  {
+    id: 42,
+    name: "atlas_free_slice_alignment (twardlab)",
+    description: "Atlas free slice alignment (twardlab)",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/twardlab/atlas_free_slice_alignment"
+  },
+  {
+    id: 43,
+    name: "spine_registration (twardlab)",
+    description: "Registration for spine data from dong lab (twardlab)",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/twardlab/spine_registration"
+  },
+  {
+    id: 44,
+    name: "emlddmm (twardlab)",
+    description: "Expectation maximization algorithm for deformable registration (twardlab)",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/twardlab/emlddmm"
+  },
+  {
+    id: 45,
+    name: "Marmoset-Brain-Atlas (MitraLab)",
+    description: "Marmoset Brain Atlas project (MitraLab)",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/MitraLab-Organization/Marmoset-Brain-Atlas"
+  },
+  {
+    id: 46,
+    name: "ontology-editor (MitraLab)",
+    description: "Ontology editor tool (MitraLab)",
+    language: "JavaScript",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/MitraLab-Organization/ontology-editor"
+  },
+  {
+    id: 47,
+    name: "mouse-muscle-atlas (MitraLab)",
+    description: "Mouse muscle atlas project (MitraLab)",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/MitraLab-Organization/mouse-muscle-atlas"
+  },
+  {
+    id: 48,
+    name: "2D-Skeletonization (MitraLab)",
+    description: "Skeletonization and Summarization of Tracer Injected Data (MitraLab)",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/MitraLab-Organization/2D-Skeletonization"
+  },
+  {
+    id: 49,
+    name: "Human_Tissue_Dev (MitraLab)",
+    description: "Development projects related to wet lab processing of human tissue (MitraLab)",
+    language: "Python",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/MitraLab-Organization/Human_Tissue_Dev"
+  },
+  {
+    id: 50,
+    name: "Skeleton_Dockerized (MitraLab)",
+    description: "Dockerized skeletonization tools (MitraLab)",
+    language: "Dockerfile",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/MitraLab-Organization/Skeleton_Dockerized"
+  },
+  {
+    id: 51,
+    name: "NeuronBrowser (MitraLab)",
+    description: "NeuronBrowser project (MitraLab)",
+    language: "JavaScript",
+    stars: 0,
+    forks: 0,
+    githubUrl: "https://github.com/MitraLab-Organization/NeuronBrowser"
+  }
 ];
