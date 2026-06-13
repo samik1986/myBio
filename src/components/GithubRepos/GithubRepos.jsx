@@ -6,40 +6,32 @@ import { githubProjects } from '../../data/projectsData';
 import './GithubRepos.css';
 
 const GithubRepos = () => {
-  // 1. Group the repos logically with overlapping categories
-  const bionformatics = githubProjects.filter(p => {
-    const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
-    return text.includes('brain') || text.includes('cell') || text.includes('bio') || text.includes('tissue') || text.includes('muscle');
-  });
-  
-  const imaging3D = githubProjects.filter(p => {
-    const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
-    return text.includes('3d') || text.includes('volume') || text.includes('dm_');
-  });
-  
-  const imageProcessing = githubProjects.filter(p => {
-    const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
-    return text.includes('seg') || text.includes('crop') || text.includes('detect') || text.includes('image') || text.includes('registration') || text.includes('alignment') || text.includes('skeleton');
-  });
-  
-  const deepLearning = githubProjects.filter(p => {
-    const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
-    return text.includes('gan') || text.includes('tcnn') || text.includes('ml_') || text.includes('net') || text.includes('deep learning') || text.includes('yolo') || text.includes('model');
-  });
-  
-  const webPlatforms = githubProjects.filter(p => {
+  // 1. Group the repos logically without overlapping categories
+  const bionformatics = [];
+  const imaging3D = [];
+  const imageProcessing = [];
+  const deepLearning = [];
+  const webPlatforms = [];
+  const misc = [];
+
+  githubProjects.forEach(p => {
     const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
     const lang = (p.language || '').toLowerCase();
-    return lang.includes('javascript') || lang.includes('typescript') || text.includes('app') || text.includes('mybio') || text.includes('browser') || text.includes('editor');
+    
+    if (text.includes('brain') || text.includes('cell') || text.includes('bio') || text.includes('tissue') || text.includes('muscle')) {
+      bionformatics.push(p);
+    } else if (text.includes('3d') || text.includes('volume') || text.includes('dm_')) {
+      imaging3D.push(p);
+    } else if (text.includes('seg') || text.includes('crop') || text.includes('detect') || text.includes('image') || text.includes('registration') || text.includes('alignment') || text.includes('skeleton')) {
+      imageProcessing.push(p);
+    } else if (text.includes('gan') || text.includes('tcnn') || text.includes('ml_') || text.includes('net') || text.includes('deep learning') || text.includes('yolo') || text.includes('model')) {
+      deepLearning.push(p);
+    } else if (lang.includes('javascript') || lang.includes('typescript') || text.includes('app') || text.includes('mybio') || text.includes('browser') || text.includes('editor')) {
+      webPlatforms.push(p);
+    } else {
+      misc.push(p);
+    }
   });
-  
-  const misc = githubProjects.filter(p => 
-    !bionformatics.includes(p) && 
-    !imaging3D.includes(p) && 
-    !imageProcessing.includes(p) && 
-    !deepLearning.includes(p) && 
-    !webPlatforms.includes(p)
-  );
 
   const groups = [
     { title: "Bioinformatics & Neuroscience", repos: bionformatics },
