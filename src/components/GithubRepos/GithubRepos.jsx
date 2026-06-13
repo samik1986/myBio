@@ -206,9 +206,15 @@ const RepoCard = ({ repo, featured }) => {
         <div className="project-header">
           <FaGithub size={featured ? 28 : 20} className="project-icon" />
           <div className="project-links">
-            <a href={repo.githubUrl} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ color: 'inherit' }}>
-              <ExternalLink size={18} />
-            </a>
+            {(!repo.githubUrl || repo.githubUrl === '#' || repo.isPrivate) ? (
+              <a href={`mailto:samik1986@gmail.com?subject=Inquiry regarding repository: ${repo.name}`} onClick={(e) => e.stopPropagation()} style={{ color: 'var(--primary)', fontSize: '0.85rem', fontWeight: 'bold', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                Contact Author
+              </a>
+            ) : (
+              <a href={repo.githubUrl} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ color: 'inherit' }}>
+                <ExternalLink size={18} />
+              </a>
+            )}
           </div>
         </div>
         
