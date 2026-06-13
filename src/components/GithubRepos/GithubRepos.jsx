@@ -62,10 +62,11 @@ const GithubRepos = () => {
   // Pre-calculate highlights to avoid duplicates
   const highlightedRepoIds = new Set();
   const processedGroups = groups.map(group => {
-    // Exclude 'neetcode-submissions-samik1986' from being highlighted
+    // Exclude 'neetcode-submissions-samik1986' and 'twardlab' repos from being highlighted
     const availableRepos = group.repos.filter(r => 
       !highlightedRepoIds.has(r.id) && 
-      r.name !== 'neetcode-submissions-samik1986'
+      r.name !== 'neetcode-submissions-samik1986' &&
+      !(r.githubUrl || '').includes('twardlab')
     );
     
     // Sort available by recency and stars
