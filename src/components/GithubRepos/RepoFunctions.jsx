@@ -176,9 +176,16 @@ const RepoFunctions = () => {
           
           <div className="repo-meta" style={{ marginTop: '1rem', display: 'flex', gap: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1rem' }}>
             {data.updated_at && <span><Clock size={16} style={{display:'inline', verticalAlign:'sub', marginRight:'4px'}}/> Last Push: {new Date(data.updated_at).toLocaleDateString()}</span>}
-            <span><FileCode size={16} style={{display:'inline', verticalAlign:'sub', marginRight:'4px'}}/> Total Files: {Object.keys(allFiles).length}</span>
-            <span><Code size={16} style={{display:'inline', verticalAlign:'sub', marginRight:'4px'}}/> Extracted Functions: {Object.values(funcsExtracted).reduce((acc, curr) => acc + curr.length, 0)}</span>
           </div>
+          
+          {data.repo_insight && (
+            <div className="repo-insight" style={{ marginTop: '1.5rem', padding: '1.5rem', background: 'rgba(0,0,0,0.2)', borderLeft: '4px solid var(--primary)', borderRadius: '0 8px 8px 0', fontSize: '1.05rem', lineHeight: '1.6', color: 'var(--text-primary)' }}>
+              <h3 style={{ marginBottom: '0.8rem', color: 'var(--primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <Code size={20} /> Insight & Usage Guide
+              </h3>
+              {data.repo_insight}
+            </div>
+          )}
         </div>
 
         <div className="content-area mt-5">

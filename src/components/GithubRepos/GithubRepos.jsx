@@ -167,7 +167,7 @@ const RepoCard = ({ repo, featured }) => (
       </div>
       
       <h3 className="project-title">{repo.name}</h3>
-      <p className="project-desc">{repo.description || 'No description provided.'}</p>
+      <p className="repo-desc">{repo.repo_insight || repo.gist || repo.description || 'No description available'}</p>
       
       {repo.gist && (
         <div className="repo-gist" style={{ marginTop: '1rem', padding: '0.8rem', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', fontSize: '0.85rem', color: 'var(--text-secondary)', borderLeft: '3px solid var(--primary)' }}>
