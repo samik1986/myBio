@@ -18,7 +18,7 @@ const Hero = () => {
             Passionate about Generative AI, Deep Learning, and building intelligent systems that solve complex problems.
           </p>
           <div className="hero-actions">
-            <a href="mailto:samik.banerjee1986@gmail.com" className="btn btn-primary">
+            <a href="mailto:samik.banerjee.howrah@gmail.com" className="btn btn-primary">
               Contact Me <ChevronRight size={18} />
             </a>
             <a href="resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
