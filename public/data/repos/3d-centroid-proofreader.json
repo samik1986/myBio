@@ -1,1 +1,160 @@
-{"name":"3d-centroid-proofreader","url":"https://github.com/samik1986/3d-centroid-proofreader","description":"**Codebase Intelligence:** This Python codebase contains 20 extracted functions across 2 files. Key extracted functionality includes: install_and_import, read_swc, save_swc, LoadingWorker, ProofreaderDockWidget, and more.","language":"Python","functions_extracted":{"launcher.py":[{"type":"function","name":"install_and_import","docstring":""},{"type":"function","name":"main","docstring":""}],"napari_proofreader.py":[{"type":"function","name":"read_swc","docstring":"Reads an SWC file and returns a pandas DataFrame.\nFormat: id type x y z r p"},{"type":"function","name":"save_swc","docstring":"Saves centroids coordinates (in physical units or pixel units, depending on scale) back to SWC.\nHere coords are in physical units (Z, Y, X) because Napari displays/edits them scaled, \nbut let's write them matching the original SWC structure.\ncoords: numpy array of shape (N, 3) representing (z, y, x) in physical space."},{"type":"class","name":"LoadingWorker","docstring":""},{"type":"class","name":"ProofreaderDockWidget","docstring":""},{"type":"function","name":"main","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"run","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"load_volume_dialog","docstring":""},{"type":"function","name":"load_centroids_dialog","docstring":""},{"type":"function","name":"load_baseline_dialog","docstring":""},{"type":"function","name":"start_loading_thread","docstring":""},{"type":"function","name":"on_loading_finished","docstring":""},{"type":"function","name":"on_loading_error","docstring":""},{"type":"function","name":"calculate_metrics","docstring":""},{"type":"function","name":"update_voxel_spacing","docstring":""},{"type":"function","name":"update_marker_size","docstring":""},{"type":"function","name":"save_edits_dialog","docstring":""}]},"updated_at":"2026-05-26T19:06:05Z","languages":[{"name":"Python","percentage":96.0},{"name":"Shell","percentage":2.9},{"name":"Batchfile","percentage":1.1}]}
+{
+  "name": "3d-centroid-proofreader",
+  "url": "https://github.com/samik1986/3d-centroid-proofreader",
+  "description": "**Codebase Intelligence:** This Python codebase contains 20 extracted functions across 2 files. Key extracted functionality includes: install_and_import, read_swc, save_swc, LoadingWorker, ProofreaderDockWidget, and more.",
+  "language": "Python",
+  "functions_extracted": {
+    "launcher.py": [
+      {
+        "type": "function",
+        "name": "install_and_import",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "napari_proofreader.py": [
+      {
+        "type": "function",
+        "name": "read_swc",
+        "docstring": "Reads an SWC file and returns a pandas DataFrame.\nFormat: id type x y z r p"
+      },
+      {
+        "type": "function",
+        "name": "save_swc",
+        "docstring": "Saves centroids coordinates (in physical units or pixel units, depending on scale) back to SWC.\nHere coords are in physical units (Z, Y, X) because Napari displays/edits them scaled, \nbut let's write them matching the original SWC structure.\ncoords: numpy array of shape (N, 3) representing (z, y, x) in physical space."
+      },
+      {
+        "type": "class",
+        "name": "LoadingWorker",
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "ProofreaderDockWidget",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "run",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "load_volume_dialog",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "load_centroids_dialog",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "load_baseline_dialog",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "start_loading_thread",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "on_loading_finished",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "on_loading_error",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "calculate_metrics",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "update_voxel_spacing",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "update_marker_size",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save_edits_dialog",
+        "docstring": ""
+      }
+    ]
+  },
+  "updated_at": "2026-05-26T19:06:05Z",
+  "languages": [
+    {
+      "name": "Python",
+      "percentage": 96
+    },
+    {
+      "name": "Shell",
+      "percentage": 2.9
+    },
+    {
+      "name": "Batchfile",
+      "percentage": 1.1
+    }
+  ],
+  "file_metadata": {
+    "launcher.py": {
+      "summary": "Key capabilities: install_and_import",
+      "updated_at": "2026-05-26T18:57:28Z"
+    },
+    "napari_proofreader.py": {
+      "summary": "Key capabilities: read_swc, save_swc, LoadingWorker, ProofreaderDockWidget, and more",
+      "updated_at": "2026-05-26T19:05:57Z"
+    }
+  },
+  "all_files": {
+    "launcher.py": {
+      "filepath": "launcher.py",
+      "size": 2382,
+      "summary": "Key capabilities: install_and_import",
+      "sha": "e1b95398743ed1a933fa4a3edff14afa17256c3a",
+      "updated_at": "Wed May 27 00:35:57 2026 +0530"
+    },
+    "napari_proofreader.py": {
+      "filepath": "napari_proofreader.py",
+      "size": 19261,
+      "summary": "Key capabilities: read_swc, save_swc, LoadingWorker, and more",
+      "sha": "4bb94e7a0f4df01dd8ae98a8d24beaa72cde842e",
+      "updated_at": "Wed May 27 00:35:57 2026 +0530"
+    },
+    "run_proofreader.sh": {
+      "filepath": "run_proofreader.sh",
+      "size": 648,
+      "summary": "Shell script for automation or deployment.",
+      "sha": "4357c35f6b99a593ced3e90ff3513a8dead51353",
+      "updated_at": "Wed May 27 00:35:57 2026 +0530"
+    }
+  }
+}

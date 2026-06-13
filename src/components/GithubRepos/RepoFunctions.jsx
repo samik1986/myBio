@@ -1,8 +1,96 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, FileCode, Code } from 'lucide-react';
+import { ArrowLeft, FileCode, Code, ChevronDown, ChevronRight, Clock } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import './RepoFunctions.css';
+
+const LanguageBar = ({ languages }) => {
+  if (!languages || languages.length === 0) return null;
+  
+  const getLangColor = (lang) => {
+    const colors = {
+      Python: '#3572A5',
+      JavaScript: '#f1e05a',
+      TypeScript: '#3178c6',
+      'C++': '#f34b7d',
+      C: '#555555',
+      HTML: '#e34c26',
+      CSS: '#563d7c',
+      JupyterNotebook: '#DA5B0B',
+      Shell: '#89e051',
+      MATLAB: '#e16737',
+      Dockerfile: '#384d54'
+    };
+    return colors[lang.replace(/\s+/g, '')] || '#ccc';
+  };
+
+  return (
+    <div className="language-bar-container" style={{ width: '100%', marginTop: '1.2rem', marginBottom: '1rem' }}>
+      <div className="language-progress" style={{ display: 'flex', height: '8px', width: '100%', borderRadius: '4px', overflow: 'hidden' }}>
+        {languages.map((lang, idx) => (
+          <div 
+            key={idx} 
+            title={`${lang.name} ${lang.percentage}%`}
+            style={{ width: `${lang.percentage}%`, backgroundColor: getLangColor(lang.name) }}
+          />
+        ))}
+      </div>
+      <div className="language-legend" style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', marginTop: '0.6rem', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+        {languages.map((lang, idx) => (
+          <span key={idx} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <span style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: getLangColor(lang.name) }}></span>
+            {lang.name} <strong>{lang.percentage}%</strong>
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const Collapsible = ({ title, subtitle, children, defaultOpen = false, level = 1, icon = null }) => {
+  const [isOpen, setIsOpen] = useState(defaultOpen);
+
+  const getStyleForLevel = () => {
+    if (level === 1) return { padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '8px', marginBottom: '1rem', border: '1px solid rgba(255,255,255,0.1)' };
+    if (level === 2) return { padding: '0.8rem', background: 'rgba(0,0,0,0.2)', borderRadius: '6px', marginBottom: '0.8rem', borderLeft: '3px solid var(--primary)' };
+    if (level === 3) return { padding: '0.6rem', background: 'rgba(255,255,255,0.02)', borderRadius: '4px', marginBottom: '0.5rem', border: '1px solid rgba(255,255,255,0.05)' };
+    return {};
+  };
+
+  const getHeaderStyle = () => {
+    if (level === 1) return { fontSize: '1.5rem', fontWeight: 'bold' };
+    if (level === 2) return { fontSize: '1.2rem', fontWeight: '600' };
+    if (level === 3) return { fontSize: '1rem', fontWeight: '500', color: 'var(--primary)' };
+    return {};
+  };
+
+  return (
+    <div className={`collapsible-section level-${level}`} style={getStyleForLevel()}>
+      <div 
+        className="collapsible-header" 
+        onClick={() => setIsOpen(!isOpen)} 
+        style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', userSelect: 'none', gap: '8px' }}
+      >
+        <div style={{ color: 'var(--text-secondary)' }}>
+          {isOpen ? <ChevronDown size={level === 1 ? 24 : 20}/> : <ChevronRight size={level === 1 ? 24 : 20}/>}
+        </div>
+        {icon && <div>{icon}</div>}
+        <div style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <span style={getHeaderStyle()}>{title}</span>
+            {subtitle && <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', fontWeight: 'normal' }}>{subtitle}</span>}
+          </div>
+        </div>
+      </div>
+      
+      {isOpen && (
+        <div className="collapsible-content" style={{ marginTop: '1rem', paddingLeft: level === 3 ? '0' : '1rem' }}>
+          {children}
+        </div>
+      )}
+    </div>
+  );
+};
 
 const RepoFunctions = () => {
   const { repoName } = useParams();
@@ -36,6 +124,7 @@ const RepoFunctions = () => {
       <Link to="/github" className="back-link mt-4"><ArrowLeft size={20} /> Back to Repositories</Link>
     </div>
   );
+
   const getLanguageFromPath = (filepath) => {
     const ext = filepath.split('.').pop().toLowerCase();
     const map = {
@@ -61,11 +150,17 @@ const RepoFunctions = () => {
 
   // Group by language
   const groupedByLang = {};
-  Object.entries(data.functions_extracted || {}).forEach(([filepath, functions]) => {
-    if (!functions || functions.length === 0) return;
+  const allFiles = data.all_files || {};
+  const funcsExtracted = data.functions_extracted || {};
+  const fileMetadata = data.file_metadata || {};
+
+  Object.entries(allFiles).forEach(([filepath, fileData]) => {
     const lang = getLanguageFromPath(filepath);
     if (!groupedByLang[lang]) groupedByLang[lang] = [];
-    groupedByLang[lang].push({ filepath, functions });
+    
+    // merge functions
+    const functions = funcsExtracted[filepath] || [];
+    groupedByLang[lang].push({ filepath, fileData, functions });
   });
 
   return (
@@ -74,80 +169,131 @@ const RepoFunctions = () => {
         <Link to="/github" className="back-link"><ArrowLeft size={20} /> Back to Repositories</Link>
 
         <div className="repo-header glass">
-          <h1 className="repo-title">{data.name} API Reference</h1>
-          {data.description && <p className="repo-desc mt-2 mb-4" style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', lineHeight: '1.6' }}>{data.description}</p>}
-          <div className="repo-meta">
-            {data.updated_at && <span>Last Updated: {new Date(data.updated_at).toLocaleDateString()}</span>}
-            <span>Extracted Functions: {Object.values(data.functions_extracted || {}).reduce((acc, curr) => acc + curr.length, 0)}</span>
+          <h1 className="repo-title">{data.name} API & File Reference</h1>
+          {data.description && <p className="repo-desc mt-2 mb-4" style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', lineHeight: '1.6', whiteSpace: 'pre-wrap' }}>{data.description}</p>}
+          
+          {data.languages && <LanguageBar languages={data.languages} />}
+          
+          <div className="repo-meta" style={{ marginTop: '1rem', display: 'flex', gap: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1rem' }}>
+            {data.updated_at && <span><Clock size={16} style={{display:'inline', verticalAlign:'sub', marginRight:'4px'}}/> Last Push: {new Date(data.updated_at).toLocaleDateString()}</span>}
+            <span><FileCode size={16} style={{display:'inline', verticalAlign:'sub', marginRight:'4px'}}/> Total Files: {Object.keys(allFiles).length}</span>
+            <span><Code size={16} style={{display:'inline', verticalAlign:'sub', marginRight:'4px'}}/> Extracted Functions: {Object.values(funcsExtracted).reduce((acc, curr) => acc + curr.length, 0)}</span>
           </div>
         </div>
 
-        {Object.entries(groupedByLang).sort((a,b) => b[1].length - a[1].length).map(([lang, files]) => (
-          <div key={lang} className="language-group mb-5">
-            <h2 className="language-header" style={{ fontSize: '2rem', marginBottom: '2rem', borderBottom: '2px solid rgba(255,255,255,0.1)', paddingBottom: '1rem' }}>
-              {lang} <span style={{fontSize: '1rem', color: 'var(--text-secondary)', fontWeight: 'normal'}}>({files.reduce((a,c) => a + c.functions.length, 0)} functions)</span>
-            </h2>
-            
-            {files.map(({ filepath, functions }) => {
-              const cleanFilepath = filepath.replace(/\\/g, '/');
+        <div className="content-area mt-5">
+          {Object.entries(groupedByLang).sort((a,b) => b[1].length - a[1].length).map(([lang, files]) => (
+            <Collapsible 
+              key={lang} 
+              level={1} 
+              title={lang} 
+              defaultOpen={true}
+              subtitle={`${files.length} files, ${files.reduce((a,c) => a + c.functions.length, 0)} functions`}
+            >
+              {files.map(({ filepath, fileData, functions }) => {
+                const cleanFilepath = filepath.replace(/\\/g, '/');
+                const meta = fileMetadata[filepath] || {};
+                const summary = fileData.summary || meta.summary || '';
+                const updatedAt = meta.updated_at || fileData.updated_at || '';
+                
+                const fileSubtitle = (
+                  <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+                    {functions.length > 0 && <span>{functions.length} functions</span>}
+                    {updatedAt && (
+                      <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                        <Clock size={12}/> {new Date(updatedAt).toLocaleDateString()}
+                      </span>
+                    )}
+                  </div>
+                );
 
-              return (
-                <div key={filepath} className="file-group">
-                  <h3 className="file-header"><FileCode size={20} /> {cleanFilepath}</h3>
-                  <div className="functions-grid">
-                    {functions.map((fn, idx) => (
-                      <div key={idx} className="function-card glass">
-                        <div className="function-header">
-                          <h4 className="function-name"><Code size={18} style={{marginRight: '8px'}} />{fn.name}</h4>
-                          <span className="function-type">{fn.type || 'function'}</span>
-                        </div>
-                        
-                        {fn.docstring && (
-                          <div className="function-docstring">
-                            {fn.docstring}
-                          </div>
-                        )}
+                return (
+                  <Collapsible 
+                    key={filepath} 
+                    level={2} 
+                    title={cleanFilepath} 
+                    icon={<FileCode size={20} color="var(--primary)" />}
+                    subtitle={fileSubtitle}
+                  >
+                    {summary && (
+                      <div style={{ marginBottom: '1rem', padding: '0.6rem 1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '4px', fontSize: '0.9rem', color: 'var(--text-secondary)', fontStyle: 'italic' }}>
+                        {summary}
+                      </div>
+                    )}
+                    
+                    {functions.length > 0 ? (
+                      <div className="functions-list">
+                        {functions.map((fn, idx) => (
+                          <Collapsible 
+                            key={idx} 
+                            level={3} 
+                            title={fn.name} 
+                            icon={<Code size={16} />}
+                            subtitle={fn.type || 'function'}
+                          >
+                            <div className="function-details" style={{ padding: '1rem', background: 'rgba(0,0,0,0.3)', borderRadius: '6px' }}>
+                              {fn.docstring && (
+                                <div className="function-docstring" style={{ marginBottom: '1rem', whiteSpace: 'pre-wrap', fontFamily: 'monospace', fontSize: '0.85rem', color: '#a0aec0' }}>
+                                  {fn.docstring}
+                                </div>
+                              )}
 
-                        {fn.args && fn.args.length > 0 && (
-                          <div className="function-params">
-                            <div className="function-section-title">Parameters</div>
-                            <ul className="param-list">
-                              {fn.args.map((arg, i) => (
-                                <li key={i} className="param-item">{arg}</li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
-                        
-                        {fn.returns && fn.returns.length > 0 && (
-                          <div className="function-params">
-                            <div className="function-section-title">Returns</div>
-                            <ul className="param-list">
-                              {fn.returns.map((ret, i) => (
-                                <li key={i} className="param-item">{ret}</li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
+                              {fn.args && fn.args.length > 0 && (
+                                <div className="function-params mb-3">
+                                  <strong style={{color: 'var(--text-primary)'}}>Parameters:</strong>
+                                  <ul style={{ margin: '0.5rem 0 0 1.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+                                    {fn.args.map((arg, i) => (
+                                      <li key={i}>{arg}</li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+                              
+                              {fn.returns && fn.returns.length > 0 && (
+                                <div className="function-params mb-3">
+                                  <strong style={{color: 'var(--text-primary)'}}>Returns:</strong>
+                                  <ul style={{ margin: '0.5rem 0 0 1.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+                                    {fn.returns.map((ret, i) => (
+                                      <li key={i}>{ret}</li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
 
-                        <div className="function-actions mt-3">
-                          <a 
+                              <div className="mt-3 pt-3" style={{ borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+                                <a 
+                                  href={`${data.url}/blob/master/${cleanFilepath}`} 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="btn-github"
+                                  style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '0.4rem 0.8rem', background: '#24292e', color: 'white', textDecoration: 'none', borderRadius: '4px', fontSize: '0.85rem' }}
+                                >
+                                  <FaGithub size={14} /> View Source Code
+                                </a>
+                              </div>
+                            </div>
+                          </Collapsible>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="mt-2 mb-2">
+                         <a 
                             href={`${data.url}/blob/master/${cleanFilepath}`} 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="btn-github"
+                            style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '0.4rem 0.8rem', background: 'rgba(255,255,255,0.1)', color: 'white', textDecoration: 'none', borderRadius: '4px', fontSize: '0.85rem' }}
                           >
-                            <FaGithub size={16} /> View Source Code
+                            <FaGithub size={14} /> View File on GitHub
                           </a>
-                        </div>
                       </div>
-                    ))}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        ))}
+                    )}
+                  </Collapsible>
+                );
+              })}
+            </Collapsible>
+          ))}
+        </div>
       </div>
     </div>
   );

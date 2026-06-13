@@ -1,0 +1,83 @@
+{
+  "name": "yolo_model",
+  "url": "https://github.com/twardlab/yolo_model",
+  "description": "Object segmentation + quantification from microscopy images",
+  "language": "Unknown",
+  "all_files": {
+    "docs/conf.py": {
+      "filepath": "docs/conf.py",
+      "size": 1623,
+      "summary": "Core application logic or configuration."
+    },
+    "docs/notebooks/load_h5_data.ipynb": {
+      "filepath": "docs/notebooks/load_h5_data.ipynb",
+      "size": 452343,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "docs/notebooks/yolo_3d.ipynb": {
+      "filepath": "docs/notebooks/yolo_3d.ipynb",
+      "size": 6498236,
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+    },
+    "docs/notebooks/yolo_3d_scratch.ipynb": {
+      "filepath": "docs/notebooks/yolo_3d_scratch.ipynb",
+      "size": 1687795,
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+    },
+    "docs/notebooks/yolo_example.ipynb": {
+      "filepath": "docs/notebooks/yolo_example.ipynb",
+      "size": 742486,
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+    },
+    "docs/notebooks/yolo_example_3D.ipynb": {
+      "filepath": "docs/notebooks/yolo_example_3D.ipynb",
+      "size": 742486,
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+    },
+    "docs/notebooks/yolo_extra_comp.ipynb": {
+      "filepath": "docs/notebooks/yolo_extra_comp.ipynb",
+      "size": 635933,
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+    },
+    "docs/notebooks/yolo_pipeline.ipynb": {
+      "filepath": "docs/notebooks/yolo_pipeline.ipynb",
+      "size": 1128492,
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+    },
+    "docs/notebooks/yolo_preprocessing.ipynb": {
+      "filepath": "docs/notebooks/yolo_preprocessing.ipynb",
+      "size": 3292357,
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+    },
+    "docs/scripts/ds_yolo_output.py": {
+      "filepath": "docs/scripts/ds_yolo_output.py",
+      "size": 5859,
+      "summary": "Core application logic or configuration."
+    },
+    "docs/scripts/yolo_avg_prec.py": {
+      "filepath": "docs/scripts/yolo_avg_prec.py",
+      "size": 4119,
+      "summary": "Core application logic or configuration."
+    },
+    "docs/scripts/yolo_help.py": {
+      "filepath": "docs/scripts/yolo_help.py",
+      "size": 35788,
+      "summary": "Core application logic or configuration."
+    },
+    "docs/scripts/yolo_help_3D.py": {
+      "filepath": "docs/scripts/yolo_help_3D.py",
+      "size": 32913,
+      "summary": "Core application logic or configuration."
+    },
+    "docs/scripts/yolo_post_help.py": {
+      "filepath": "docs/scripts/yolo_post_help.py",
+      "size": 18200,
+      "summary": "Core application logic or configuration."
+    },
+    "docs/scripts/yolo_tiles.py": {
+      "filepath": "docs/scripts/yolo_tiles.py",
+      "size": 20820,
+      "summary": "Core application logic or configuration."
+    }
+  }
+}

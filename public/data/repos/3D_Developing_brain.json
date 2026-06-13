@@ -1,0 +1,23 @@
+{
+  "name": "3D_Developing_brain",
+  "url": "https://github.com/samik1986/3D_Developing_brain",
+  "description": "Code for Comparison of Cell Detection in 3D Histological Developing Brain",
+  "language": "Jupyter Notebook",
+  "all_files": {
+    "MEDIAR_(model1).ipynb": {
+      "filepath": "MEDIAR_(model1).ipynb",
+      "size": 19430968,
+      "summary": "Defines deep learning model architectures or networks."
+    },
+    "MultiStreamCellSeg_(model_2).ipynb": {
+      "filepath": "MultiStreamCellSeg_(model_2).ipynb",
+      "size": 5302545,
+      "summary": "Defines deep learning model architectures or networks."
+    },
+    "eval1.m": {
+      "filepath": "eval1.m",
+      "size": 3690,
+      "summary": "Contains testing or evaluation scripts."
+    }
+  }
+}

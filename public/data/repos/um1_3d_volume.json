@@ -1,1 +1,3098 @@
-{"name":"um1_3d_volume","url":"https://github.com/samik1986/um1_3d_volume","description":"**Codebase Intelligence:** This JavaScript codebase contains 266 extracted functions across 111 files. Key extracted functionality includes: create_line_volume, create_point_volume, create_reconstructed_line_volume, detect_3d_cells_blob, load_tiff_volume, and more.","language":"JavaScript","functions_extracted":{"create_line_volume.m":[{"type":"function","name":"create_line_volume","docstring":""}],"create_point_volume.m":[{"type":"function","name":"create_point_volume","docstring":""}],"create_reconstructed_line_volume.m":[{"type":"function","name":"create_reconstructed_line_volume","docstring":""}],"detect_3d_cells_blob.m":[{"type":"function","name":"detect_3d_cells_blob","docstring":""},{"type":"function","name":"load_tiff_volume","docstring":""},{"type":"function","name":"visualize_detections","docstring":""}],"detect_3d_cells_centroids.m":[{"type":"function","name":"detect_3d_cells_centroids","docstring":""}],"detect_neurons_napari.py":[{"type":"function","name":"detect_neurons_napari","docstring":""}],"divide_tiff.py":[{"type":"function","name":"divide_tiff_into_quadrants","docstring":"Divided a 3D TIFF volume into 4 spatial quadrants (2x2 grid) \nmemory-efficiently by processing slice-by-slice."}],"downsample_volumes.m":[{"type":"function","name":"downsample_volumes","docstring":""},{"type":"function","name":"save_nrrd_volume","docstring":""}],"eval_full_volume_line_endpoints.m":[{"type":"function","name":"find_extremes_2d","docstring":""},{"type":"function","name":"rotate_and_unpad","docstring":""},{"type":"function","name":"crop_volume","docstring":""}],"extract_endpoints_from_stereo.m":[{"type":"function","name":"extract_endpoints_from_stereo","docstring":""}],"extract_subset.m":[{"type":"function","name":"extract_subset","docstring":""}],"fp_pipeline_smoketest.m":[{"type":"function","name":"compute_mip_pictures","docstring":""},{"type":"function","name":"compute_skeleton","docstring":""},{"type":"function","name":"save_overlay","docstring":""},{"type":"function","name":"extract_endpoints_silent","docstring":""},{"type":"function","name":"backproject_skeletons","docstring":""},{"type":"function","name":"display_volume_skeleton","docstring":""},{"type":"function","name":"save_multipage_tiff","docstring":""}],"fp_volume_pipeline.m":[{"type":"function","name":"fp_volume_pipeline","docstring":""}],"generate_ppt.py":[{"type":"function","name":"get_flowchart_image","docstring":""},{"type":"function","name":"create_presentation","docstring":""}],"overlay_lines.m":[{"type":"function","name":"overlay_lines","docstring":""}],"process_vesselness_3d.m":[{"type":"function","name":"process_vesselness_3d","docstring":""},{"type":"function","name":"compute_mip_angle","docstring":""},{"type":"function","name":"backproject_to_3d","docstring":""},{"type":"function","name":"save_multipage_tiff","docstring":""}],"reconstruct_endpoints_stereo.m":[{"type":"function","name":"reconstruct_endpoints_stereo","docstring":""}],"reconstruct_single_point.m":[{"type":"function","name":"reconstruct_single_point","docstring":""}],"reconstruct_volume.m":[{"type":"function","name":"reconstruct_volume","docstring":""}],"take_volume_pictures.m":[{"type":"function","name":"take_volume_pictures","docstring":""}],"test_single_point_stereo.m":[{"type":"function","name":"test_single_point_stereo","docstring":""},{"type":"function","name":"create_point_volume","docstring":""},{"type":"function","name":"reconstruct_single_point","docstring":""},{"type":"function","name":"add_overlay_visualization","docstring":""}],"visualize_3d_cells.m":[{"type":"function","name":"visualize_3d_cells","docstring":""}],"visualize_full_cells_subset.m":[{"type":"function","name":"visualize_full_cells_subset","docstring":""}],"visualize_napari_csv.py":[{"type":"function","name":"load_csv_points","docstring":"Loads points from a CSV file (x,y,z,gene)."},{"type":"function","name":"visualize_napari_csv","docstring":""}],"visualize_subvol_napari.py":[{"type":"function","name":"visualize_subvol","docstring":""}],"volshow_cells_subset.m":[{"type":"function","name":"volshow_cells_subset","docstring":""}],"centroid_cw_processing\\process_centroids.py":[{"type":"function","name":"main","docstring":""}],"centroid_cw_processing\\utils.py":[{"type":"function","name":"parse_slice_num","docstring":"Extracts the integer slice number from the filename.\nExample: A3_ch04_slice0001.swc -> 1"},{"type":"function","name":"parse_swc_files","docstring":"Parses all SWC files in the input directory and returns a list of nodes."},{"type":"function","name":"serialize_to_cw_complex","docstring":"Serializes the list of nodes to a CW Complex JSON file."}],"cloud_proofreading\\napari_stream\\unified_viewer.py":[{"type":"function","name":"parse_swc_skeleton","docstring":"Parses an SWC file into paths (lines) and extracts original attributes."},{"type":"function","name":"save_swc_skeleton","docstring":"Saves edited napari paths back to an SWC format.\nUses a KD-Tree to preserve original types and radiuses if nodes were slightly moved."},{"type":"function","name":"color_connected_components","docstring":"Identifies connected paths (unique trees) and assigns a distinct color to each tree."},{"type":"function","name":"run_viewer","docstring":""},{"type":"function","name":"save_state","docstring":""},{"type":"function","name":"snap_to_intensity","docstring":""}],"cw_graph_tools\\add_tree.m":[{"type":"function","name":"add_tree","docstring":""}],"cw_graph_tools\\create_forest_from_json.m":[{"type":"function","name":"create_forest_from_json","docstring":""}],"cw_graph_tools\\delete_tree.m":[{"type":"function","name":"delete_tree","docstring":""}],"cw_graph_tools\\edit_cw_json.m":[{"type":"function","name":"edit_cw_json","docstring":""}],"cw_graph_tools\\edit_graph.m":[{"type":"function","name":"edit_graph","docstring":""}],"cw_graph_tools\\export_forest_to_json.m":[{"type":"function","name":"export_forest_to_json","docstring":""}],"cw_graph_tools\\find_loops.m":[{"type":"function","name":"find_loops","docstring":""}],"cw_graph_tools\\find_mst.m":[{"type":"function","name":"find_mst","docstring":""},{"type":"function","name":"find_dt","docstring":""},{"type":"function","name":"union_dt","docstring":""}],"cw_graph_tools\\load_cw_json.m":[{"type":"function","name":"load_cw_json","docstring":""}],"cw_graph_tools\\plot_cw_complex.m":[{"type":"function","name":"plot_cw_complex","docstring":""}],"cw_graph_tools\\save_cw_json.m":[{"type":"function","name":"save_cw_json","docstring":""}],"django_webapp\\manage.py":[{"type":"function","name":"main","docstring":"Run administrative tasks."}],"django_webapp\\viewer\\apps.py":[{"type":"class","name":"ViewerConfig","docstring":""}],"django_webapp\\viewer\\dash_apps.py":[{"type":"function","name":"parse_swc","docstring":""},{"type":"function","name":"load_data","docstring":""},{"type":"function","name":"toggle_slider","docstring":""},{"type":"function","name":"update_styles","docstring":""},{"type":"function","name":"render_3d","docstring":""},{"type":"function","name":"render_2d","docstring":""}],"django_webapp\\viewer\\views.py":[{"type":"function","name":"parse_swc","docstring":""},{"type":"function","name":"index","docstring":""},{"type":"function","name":"load_volume","docstring":""}],"docker_cell_detection\\run_centroids.py":[{"type":"function","name":"process_volume","docstring":""}],"docker_cell_detection\\run_centroids_DAPI.py":[{"type":"function","name":"process_volume","docstring":""}],"docker_cell_detection\\run_centroids_FP.py":[{"type":"function","name":"process_volume","docstring":""}],"docker_cell_detection\\run_pipeline.py":[{"type":"function","name":"load_swc","docstring":"Loads centroids from an SWC file into a numpy array (x, y, z)."},{"type":"function","name":"save_swc","docstring":"Saves centroids to an SWC file."},{"type":"function","name":"save_scaled_swc","docstring":"Applies scale factors and saves to SWC."},{"type":"function","name":"main","docstring":""}],"docker_cell_detection\\run_pipeline_parallel.py":[{"type":"function","name":"process_block","docstring":"Function to process a single block, designed for parallel execution."},{"type":"function","name":"detect_centroids_parallel","docstring":"Parallelized detection using a process pool."},{"type":"function","name":"save_swc","docstring":""},{"type":"function","name":"save_scaled_swc","docstring":""},{"type":"function","name":"main","docstring":""}],"docker_cell_detection\\scale_swc.py":[{"type":"function","name":"scale_swc","docstring":""}],"docker_cell_detection\\visualize_3d.py":[{"type":"function","name":"load_swc","docstring":"Loads centroids from an SWC file."},{"type":"function","name":"visualize","docstring":""}],"docker_cell_detection\\visualize_napari.py":[{"type":"function","name":"load_swc","docstring":"Loads centroids from an SWC file."},{"type":"function","name":"visualize_napari","docstring":""}],"fp_cpp_pipeline\\main.cpp":[{"type":"function","name":"main","docstring":""}],"fp_pipeline_modules\\backproject_skeletons.m":[{"type":"function","name":"backproject_skeletons","docstring":""}],"fp_pipeline_modules\\compute_mip_pictures.m":[{"type":"function","name":"compute_mip_pictures","docstring":""}],"fp_pipeline_modules\\compute_skeleton.m":[{"type":"function","name":"compute_skeleton","docstring":""}],"fp_pipeline_modules\\display_subvolume_overlay.m":[{"type":"function","name":"display_subvolume_overlay","docstring":""}],"fp_pipeline_modules\\display_volume_skeleton.m":[{"type":"function","name":"display_volume_skeleton","docstring":""}],"fp_pipeline_modules\\export_cw_complex_2d.m":[{"type":"function","name":"export_cw_complex_2d","docstring":""}],"fp_pipeline_modules\\export_cw_complex_json.m":[{"type":"function","name":"export_cw_complex_json","docstring":""}],"fp_pipeline_modules\\extract_endpoints_silent.m":[{"type":"function","name":"extract_endpoints_silent","docstring":""}],"fp_pipeline_modules\\save_multipage_tiff.m":[{"type":"function","name":"save_multipage_tiff","docstring":""}],"fp_pipeline_modules\\save_nrrd_volume.m":[{"type":"function","name":"save_nrrd_volume","docstring":""}],"fp_pipeline_modules\\save_overlay.m":[{"type":"function","name":"save_overlay","docstring":""}],"fp_pipeline_modules\\skel_to_graph_2d.m":[{"type":"function","name":"skel_to_graph_2d","docstring":""}],"fp_pipeline_modules\\swap_pts.m":[{"type":"function","name":"swap_pts","docstring":""}],"fp_pipeline_modules\\triangulate_endpoints_fast.m":[{"type":"function","name":"triangulate_endpoints_fast","docstring":""}],"frangi_filter_version2a\\eig2image.m":[{"type":"function","name":"eig2image","docstring":""}],"frangi_filter_version2a\\eig3volume.c":[{"type":"function","name":"eigen_decomposition","docstring":""},{"type":"function","name":"mexFunction","docstring":""}],"frangi_filter_version2a\\FrangiFilter2D.m":[{"type":"function","name":"FrangiFilter2D","docstring":""}],"frangi_filter_version2a\\FrangiFilter3D.m":[{"type":"function","name":"FrangiFilter3D","docstring":""}],"frangi_filter_version2a\\Hessian2D.m":[{"type":"function","name":"Hessian2D","docstring":""}],"frangi_filter_version2a\\Hessian3D.m":[{"type":"function","name":"Hessian3D","docstring":""},{"type":"function","name":"gradient3","docstring":""}],"frangi_filter_version2a\\imgaussian.c":[{"type":"function","name":"imfilter1D_double","docstring":""},{"type":"function","name":"imfilter2D_double","docstring":""},{"type":"function","name":"imfilter3D_double","docstring":""},{"type":"function","name":"imfilter1D_float","docstring":""},{"type":"function","name":"imfilter2D_float","docstring":""},{"type":"function","name":"imfilter3D_float","docstring":""},{"type":"function","name":"imfilter2Dcolor_double","docstring":""},{"type":"function","name":"imfilter2Dcolor_float","docstring":""},{"type":"function","name":"GaussianFiltering3D_float","docstring":""},{"type":"function","name":"GaussianFiltering2Dcolor_float","docstring":""},{"type":"function","name":"GaussianFiltering2D_float","docstring":""},{"type":"function","name":"GaussianFiltering1D_float","docstring":""},{"type":"function","name":"GaussianFiltering3D_double","docstring":""},{"type":"function","name":"GaussianFiltering2Dcolor_double","docstring":""},{"type":"function","name":"GaussianFiltering2D_double","docstring":""},{"type":"function","name":"GaussianFiltering1D_double","docstring":""},{"type":"function","name":"mexFunction","docstring":""}],"frangi_filter_version2a\\imgaussian.m":[{"type":"function","name":"imgaussian","docstring":""}],"neurite_detection\\create_synthetic_data.py":[{"type":"function","name":"create_synthetic_data","docstring":""}],"neurite_detection\\create_tutorial_data.py":[{"type":"function","name":"create_crop","docstring":""}],"neurite_detection\\cw_extraction.py":[{"type":"function","name":"binary_to_cw_complex","docstring":""}],"neurite_detection\\detect_somas.py":[{"type":"function","name":"process_tile_soma_gpu","docstring":""},{"type":"function","name":"detect_somas","docstring":""}],"neurite_detection\\generate_gif.py":[{"type":"function","name":"generate_neurite_gif","docstring":""},{"type":"function","name":"generate_centroid_gif","docstring":""}],"neurite_detection\\process_neurites.py":[{"type":"function","name":"cupy_frangi_3d","docstring":""},{"type":"function","name":"process_tile_gpu","docstring":""},{"type":"function","name":"detect_neurites_volume","docstring":""}],"neurite_detection\\run_pipeline.py":[{"type":"function","name":"run_pipeline","docstring":""},{"type":"function","name":"main","docstring":""}],"neurite_detection\\tutorial.py":[{"type":"function","name":"load_cw_complex","docstring":""},{"type":"function","name":"run_neurite_tutorial","docstring":""},{"type":"function","name":"run_centroid_tutorial","docstring":""},{"type":"function","name":"advance_tutorial","docstring":""},{"type":"function","name":"save_state","docstring":""},{"type":"function","name":"advance_tutorial","docstring":""},{"type":"function","name":"save_state","docstring":""}],"neurite_detection\\pipeline\\main.py":[{"type":"function","name":"main","docstring":""}],"neurite_detection\\pipeline\\test_frangi.py":[{"type":"function","name":"eigh_3x3_analytical","docstring":""},{"type":"function","name":"frangi_3d","docstring":""}],"neurite_detection\\pipeline\\core\\cell_detection.py":[{"type":"function","name":"process_tile_soma_gpu","docstring":""},{"type":"function","name":"detect_cells_488","docstring":""}],"neurite_detection\\pipeline\\core\\graph_export.py":[{"type":"function","name":"export_graphs","docstring":""}],"neurite_detection\\pipeline\\core\\neurite_detection.py":[{"type":"function","name":"eigh_3x3_analytical","docstring":"Analytically solves the roots of a 3x3 symmetric matrix characteristic polynomial using Cardano's method"},{"type":"function","name":"process_tile_frangi_gpu","docstring":""},{"type":"function","name":"detect_neurites","docstring":""},{"type":"function","name":"skel_chunk","docstring":""}],"neurite_detection\\pipeline\\visualization\\flex_visualizer.py":[{"type":"function","name":"main","docstring":""}],"neurite_detection\\pipeline\\visualization\\proofreader.py":[{"type":"function","name":"run_proofreader","docstring":""}],"neurite_detection\\utils\\viewer.py":[{"type":"function","name":"load_cw_complex","docstring":""},{"type":"function","name":"save_cw_complex","docstring":""},{"type":"function","name":"run_viewer","docstring":""},{"type":"function","name":"save_state","docstring":""}],"neuron_detection\\graph_utils.py":[{"type":"function","name":"stitch_graphs","docstring":"Merges multiple subvolume graphs into a single graph.\nWelds boundary nodes that are within `merge_dist`."},{"type":"function","name":"graph_to_cw_complex","docstring":"Saves the graph into the CW-Complex JSON format."},{"type":"function","name":"graph_to_swc","docstring":"Saves the graph to SWC format."}],"neuron_detection\\io_utils.py":[{"type":"function","name":"load_tiff_memmap","docstring":"Safely loads a large TIFF file as a memory-mapped numpy array."},{"type":"function","name":"extract_subvolume","docstring":"Extracts a specific bounding box from the memory-mapped volume."}],"neuron_detection\\main.py":[{"type":"function","name":"main","docstring":""}],"neuron_detection\\processing.py":[{"type":"function","name":"preprocess_volume","docstring":"Normalizes the volume intensity to [0, 1] range."},{"type":"function","name":"apply_frangi_3d","docstring":"Applies a multi-scale 3D Frangi vesselness filter."},{"type":"function","name":"extract_skeleton","docstring":"Thresholds the vesselness map and extracts a 1-pixel wide skeleton."},{"type":"function","name":"process_subvolume_to_graph","docstring":"Runs the full pipeline on a subvolume and extracts the networkx graph."}],"neuron_detection\\visualization.py":[{"type":"function","name":"launch_napari","docstring":"Launches the Napari viewer with the detection layers."}],"neuron_detection\\visualize_swc_volume.py":[{"type":"function","name":"load_swc_segments","docstring":"Parses an SWC file and returns a list of line segments (paths) \nconnecting each node to its parent, formatted for Napari's Paths layer."},{"type":"function","name":"main","docstring":""}],"neuron_processing\\zernike_pipeline\\cluster_ch03_zernike.py":[{"type":"function","name":"compute_invariants","docstring":"Groups individual moments into the 54 rotationally invariant shells F_nl."},{"type":"function","name":"main","docstring":""}],"neuron_processing\\zernike_pipeline\\napari_viewer.py":[{"type":"function","name":"load_centroids_from_json","docstring":"Load cell centroids from JSON file."},{"type":"function","name":"load_cw_complex","docstring":"Load CW complex from JSON."},{"type":"function","name":"build_edge_lines","docstring":"Build edge line data from CW complex 1D cells for Shapes layer."},{"type":"class","name":"ProofreadState","docstring":"Tracks proofreading edits in memory."},{"type":"function","name":"create_proofread_widget","docstring":"Create a Napari dock widget for proofreading.\n\nUses magicgui for widget creation if available, otherwise\nfalls back to a simple QWidget."},{"type":"function","name":"_do_proofread_action","docstring":"Execute a proofreading action on the currently selected point."},{"type":"function","name":"_setup_console_proofreading","docstring":"Fallback proofreading via console keybindings."},{"type":"function","name":"launch_napari_viewer","docstring":"Launch the Napari viewer with all layers and proofreading.\n\nParameters\n----------\nvolume_path : str or None\n    Path to raw DAPI TIFF volume.\nlabels_path : str or None\n    Path to cell labels TIFF.\ncentroids_path : str or None\n    Path to centroids JSON.\ncw_path : str or None\n    Path to CW complex JSON.\noutput_dir : str\n    Output directory for proofread exports."},{"type":"function","name":"main","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"approve","docstring":""},{"type":"function","name":"delete","docstring":""},{"type":"function","name":"split","docstring":""},{"type":"function","name":"save","docstring":""},{"type":"function","name":"summary","docstring":""},{"type":"function","name":"approve_key","docstring":""},{"type":"function","name":"delete_key","docstring":""},{"type":"function","name":"save_key","docstring":""},{"type":"function","name":"approve_btn","docstring":""},{"type":"function","name":"delete_btn","docstring":""},{"type":"function","name":"split_btn","docstring":""},{"type":"function","name":"save_btn","docstring":""},{"type":"function","name":"on_click","docstring":""}],"proofreading\\launcher.py":[{"type":"function","name":"install_and_import","docstring":""},{"type":"function","name":"main","docstring":""}],"proofreading\\napari_proofreader.py":[{"type":"function","name":"read_swc","docstring":"Reads an SWC file and returns a pandas DataFrame.\nFormat: id type x y z r p"},{"type":"function","name":"save_swc","docstring":"Saves centroids coordinates (in physical units or pixel units, depending on scale) back to SWC.\nHere coords are in physical units (Z, Y, X) because Napari displays/edits them scaled, \nbut let's write them matching the original SWC structure.\ncoords: numpy array of shape (N, 3) representing (z, y, x) in physical space."},{"type":"class","name":"LoadingWorker","docstring":""},{"type":"class","name":"ProofreaderDockWidget","docstring":""},{"type":"function","name":"main","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"run","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"_on_layer_inserted","docstring":""},{"type":"function","name":"connect_points_layer","docstring":""},{"type":"function","name":"load_volume_dialog","docstring":""},{"type":"function","name":"load_centroids_dialog","docstring":""},{"type":"function","name":"load_baseline_dialog","docstring":""},{"type":"function","name":"start_loading_thread","docstring":""},{"type":"function","name":"on_loading_finished","docstring":""},{"type":"function","name":"on_loading_error","docstring":""},{"type":"function","name":"calculate_metrics","docstring":""},{"type":"function","name":"update_voxel_spacing","docstring":""},{"type":"function","name":"update_marker_size","docstring":""},{"type":"function","name":"save_edits_dialog","docstring":""},{"type":"function","name":"on_data_changed","docstring":""}],"webapp\\app.py":[{"type":"function","name":"load_swc","docstring":""},{"type":"function","name":"close_volume","docstring":""},{"type":"function","name":"index","docstring":""},{"type":"function","name":"load_local","docstring":""},{"type":"function","name":"upload_files","docstring":""},{"type":"function","name":"get_slice","docstring":""},{"type":"function","name":"get_points","docstring":""},{"type":"function","name":"get_progress","docstring":""},{"type":"function","name":"get_volume3d","docstring":""},{"type":"function","name":"get_points_all","docstring":""}],"zarr_viewer\\launch.py":[{"type":"function","name":"main","docstring":""}],"zarr_viewer\\serve_zarr.py":[{"type":"class","name":"CORSRequestHandler","docstring":""},{"type":"function","name":"end_headers","docstring":""},{"type":"function","name":"do_OPTIONS","docstring":""}],"zernike_feature_pipeline_package\\batch_process_zernike.py":[{"type":"function","name":"compute_invariants","docstring":"Groups individual moments into the 54 rotationally invariant shells F_nl."},{"type":"function","name":"main","docstring":""}],"zernike_feature_pipeline_package\\build_zernike_filter_gpu.py":[{"type":"class","name":"ZernikeFilterBank","docstring":""},{"type":"function","name":"main","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"_build_filter_matrix","docstring":""},{"type":"function","name":"extract","docstring":"Extract the shape descriptors INSTANTANEOUSLY via a single matrix multiplication."},{"type":"function","name":"reconstruct","docstring":"Reconstruct the 3D volume INSTANTANEOUSLY via Matrix cross-multiplication."}],"zernike_feature_pipeline_package\\launcher.py":[{"type":"function","name":"install_package","docstring":""},{"type":"function","name":"main","docstring":""}],"zernike_feature_pipeline_package\\zernike_basis.py":[{"type":"function","name":"zernike_3d_basis_physical","docstring":"Evaluate the full 3D Zernike polynomial Z_{nl}^m on physical coordinates.\n\nParameters\n----------\nn : int\n    Degree (n >= 0).\nl : int\n    Order (0 <= l <= n, and n - l is even).\nm : int\n    Azimuthal index (-l <= m <= l).\nx_phys, y_phys, z_phys : np.ndarray\n    Physical Cartesian coordinates.\nR_max : float\n    Physical radius of the bounding sphere.\n    \nReturns\n-------\nnp.ndarray\n    Complex values of the Zernike polynomial at each point, normalized such that\n    the volumetric integral of the squared magnitude over the sphere evaluates to 1."}],"zernike_feature_pipeline_package\\zernike_basis_gpu.py":[{"type":"function","name":"_q_coeff","docstring":"Calculate the coefficient Q_{nl\nu} for the 3D Zernike radial polynomial.\n    Uses standard python math since n, l, nu are small scalars."},{"type":"function","name":"zernike_radial_gpu","docstring":"Evaluate the 3D Zernike radial polynomial R_{nl}(r) on the GPU.\nr is a cupy array."},{"type":"function","name":"zernike_spherical_gpu","docstring":"Evaluate the Spherical Harmonic Y_l^m(theta, phi) on the GPU.\ntheta and phi are cupy arrays."},{"type":"function","name":"zernike_3d_basis_physical_gpu","docstring":"Evaluate the full 3D Zernike polynomial Z_{nl}^m on physical coordinates using GPU."},{"type":"function","name":"zernike_3d_basis_precomputed_gpu","docstring":"Evaluate the Zernike polynomial using highly-optimized precomputed spherical coordinates.\nOptionally accepts a precomputed radial array R_cached to avoid redundant recalculation."}],"zernike_feature_pipeline_package\\zernike_radial.py":[{"type":"function","name":"_q_coeff","docstring":"Calculate the coefficient Q_{nl\nu} for the 3D Zernike radial polynomial."},{"type":"function","name":"zernike_radial","docstring":"Evaluate the 3D Zernike radial polynomial R_{nl}(r).\n\nParameters\n----------\nn : int\n    Degree of the polynomial (n >= 0).\nl : int\n    Order of the polynomial (0 <= l <= n, and n - l is even).\nr : np.ndarray\n    Radial distances (usually r <= 1.0).\n    \nReturns\n-------\nnp.ndarray\n    Evaluated radial polynomial values at r."}],"zernike_feature_pipeline_package\\zernike_spherical.py":[{"type":"function","name":"zernike_spherical","docstring":"Evaluate the Spherical Harmonic Y_l^m(theta, phi).\n\nParameters\n----------\nl : int\n    Degree of the harmonic (l >= 0).\nm : int\n    Order of the harmonic (-l <= m <= l).\ntheta : np.ndarray\n    Polar angle in radians [0, pi].\nphi : np.ndarray\n    Azimuthal angle in radians [0, 2*pi].\n    \nReturns\n-------\nnp.ndarray\n    Evaluated complex spherical harmonic values.\n    \nNotes\n-----\nIn scipy's sph_harm signature, the order of angles is (m, n, theta, phi) \nwhere theta is the azimuthal angle [0, 2pi] and phi is the polar angle [0, pi].\nWe wrap this to use standard physics notation where theta is polar [0, pi]\nand phi is azimuthal [0, 2pi]."}]},"updated_at":"2026-06-10T19:09:36Z","languages":[{"name":"JavaScript","percentage":83.9},{"name":"Python","percentage":7.0},{"name":"MATLAB","percentage":4.6},{"name":"CSS","percentage":2.4},{"name":"C","percentage":0.8},{"name":"C++","percentage":0.7},{"name":"TypeScript","percentage":0.2},{"name":"Shell","percentage":0.2},{"name":"Batchfile","percentage":0.1},{"name":"Dockerfile","percentage":0.1},{"name":"CMake","percentage":0.0},{"name":"M","percentage":0.0}]}
+{
+  "name": "um1_3d_volume",
+  "url": "https://github.com/samik1986/um1_3d_volume",
+  "description": "**Codebase Intelligence:** This JavaScript codebase contains 266 extracted functions across 111 files. Key extracted functionality includes: create_line_volume, create_point_volume, create_reconstructed_line_volume, detect_3d_cells_blob, load_tiff_volume, and more.",
+  "language": "JavaScript",
+  "functions_extracted": {
+    "create_line_volume.m": [
+      {
+        "type": "function",
+        "name": "create_line_volume",
+        "docstring": ""
+      }
+    ],
+    "create_point_volume.m": [
+      {
+        "type": "function",
+        "name": "create_point_volume",
+        "docstring": ""
+      }
+    ],
+    "create_reconstructed_line_volume.m": [
+      {
+        "type": "function",
+        "name": "create_reconstructed_line_volume",
+        "docstring": ""
+      }
+    ],
+    "detect_3d_cells_blob.m": [
+      {
+        "type": "function",
+        "name": "detect_3d_cells_blob",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "load_tiff_volume",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "visualize_detections",
+        "docstring": ""
+      }
+    ],
+    "detect_3d_cells_centroids.m": [
+      {
+        "type": "function",
+        "name": "detect_3d_cells_centroids",
+        "docstring": ""
+      }
+    ],
+    "detect_neurons_napari.py": [
+      {
+        "type": "function",
+        "name": "detect_neurons_napari",
+        "docstring": ""
+      }
+    ],
+    "divide_tiff.py": [
+      {
+        "type": "function",
+        "name": "divide_tiff_into_quadrants",
+        "docstring": "Divided a 3D TIFF volume into 4 spatial quadrants (2x2 grid) \nmemory-efficiently by processing slice-by-slice."
+      }
+    ],
+    "downsample_volumes.m": [
+      {
+        "type": "function",
+        "name": "downsample_volumes",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save_nrrd_volume",
+        "docstring": ""
+      }
+    ],
+    "eval_full_volume_line_endpoints.m": [
+      {
+        "type": "function",
+        "name": "find_extremes_2d",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "rotate_and_unpad",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "crop_volume",
+        "docstring": ""
+      }
+    ],
+    "extract_endpoints_from_stereo.m": [
+      {
+        "type": "function",
+        "name": "extract_endpoints_from_stereo",
+        "docstring": ""
+      }
+    ],
+    "extract_subset.m": [
+      {
+        "type": "function",
+        "name": "extract_subset",
+        "docstring": ""
+      }
+    ],
+    "fp_pipeline_smoketest.m": [
+      {
+        "type": "function",
+        "name": "compute_mip_pictures",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "compute_skeleton",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save_overlay",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "extract_endpoints_silent",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "backproject_skeletons",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "display_volume_skeleton",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save_multipage_tiff",
+        "docstring": ""
+      }
+    ],
+    "fp_volume_pipeline.m": [
+      {
+        "type": "function",
+        "name": "fp_volume_pipeline",
+        "docstring": ""
+      }
+    ],
+    "generate_ppt.py": [
+      {
+        "type": "function",
+        "name": "get_flowchart_image",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "create_presentation",
+        "docstring": ""
+      }
+    ],
+    "overlay_lines.m": [
+      {
+        "type": "function",
+        "name": "overlay_lines",
+        "docstring": ""
+      }
+    ],
+    "process_vesselness_3d.m": [
+      {
+        "type": "function",
+        "name": "process_vesselness_3d",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "compute_mip_angle",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "backproject_to_3d",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save_multipage_tiff",
+        "docstring": ""
+      }
+    ],
+    "reconstruct_endpoints_stereo.m": [
+      {
+        "type": "function",
+        "name": "reconstruct_endpoints_stereo",
+        "docstring": ""
+      }
+    ],
+    "reconstruct_single_point.m": [
+      {
+        "type": "function",
+        "name": "reconstruct_single_point",
+        "docstring": ""
+      }
+    ],
+    "reconstruct_volume.m": [
+      {
+        "type": "function",
+        "name": "reconstruct_volume",
+        "docstring": ""
+      }
+    ],
+    "take_volume_pictures.m": [
+      {
+        "type": "function",
+        "name": "take_volume_pictures",
+        "docstring": ""
+      }
+    ],
+    "test_single_point_stereo.m": [
+      {
+        "type": "function",
+        "name": "test_single_point_stereo",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "create_point_volume",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "reconstruct_single_point",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "add_overlay_visualization",
+        "docstring": ""
+      }
+    ],
+    "visualize_3d_cells.m": [
+      {
+        "type": "function",
+        "name": "visualize_3d_cells",
+        "docstring": ""
+      }
+    ],
+    "visualize_full_cells_subset.m": [
+      {
+        "type": "function",
+        "name": "visualize_full_cells_subset",
+        "docstring": ""
+      }
+    ],
+    "visualize_napari_csv.py": [
+      {
+        "type": "function",
+        "name": "load_csv_points",
+        "docstring": "Loads points from a CSV file (x,y,z,gene)."
+      },
+      {
+        "type": "function",
+        "name": "visualize_napari_csv",
+        "docstring": ""
+      }
+    ],
+    "visualize_subvol_napari.py": [
+      {
+        "type": "function",
+        "name": "visualize_subvol",
+        "docstring": ""
+      }
+    ],
+    "volshow_cells_subset.m": [
+      {
+        "type": "function",
+        "name": "volshow_cells_subset",
+        "docstring": ""
+      }
+    ],
+    "centroid_cw_processing\\process_centroids.py": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "centroid_cw_processing\\utils.py": [
+      {
+        "type": "function",
+        "name": "parse_slice_num",
+        "docstring": "Extracts the integer slice number from the filename.\nExample: A3_ch04_slice0001.swc -> 1"
+      },
+      {
+        "type": "function",
+        "name": "parse_swc_files",
+        "docstring": "Parses all SWC files in the input directory and returns a list of nodes."
+      },
+      {
+        "type": "function",
+        "name": "serialize_to_cw_complex",
+        "docstring": "Serializes the list of nodes to a CW Complex JSON file."
+      }
+    ],
+    "cloud_proofreading\\napari_stream\\unified_viewer.py": [
+      {
+        "type": "function",
+        "name": "parse_swc_skeleton",
+        "docstring": "Parses an SWC file into paths (lines) and extracts original attributes."
+      },
+      {
+        "type": "function",
+        "name": "save_swc_skeleton",
+        "docstring": "Saves edited napari paths back to an SWC format.\nUses a KD-Tree to preserve original types and radiuses if nodes were slightly moved."
+      },
+      {
+        "type": "function",
+        "name": "color_connected_components",
+        "docstring": "Identifies connected paths (unique trees) and assigns a distinct color to each tree."
+      },
+      {
+        "type": "function",
+        "name": "run_viewer",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save_state",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "snap_to_intensity",
+        "docstring": ""
+      }
+    ],
+    "cw_graph_tools\\add_tree.m": [
+      {
+        "type": "function",
+        "name": "add_tree",
+        "docstring": ""
+      }
+    ],
+    "cw_graph_tools\\create_forest_from_json.m": [
+      {
+        "type": "function",
+        "name": "create_forest_from_json",
+        "docstring": ""
+      }
+    ],
+    "cw_graph_tools\\delete_tree.m": [
+      {
+        "type": "function",
+        "name": "delete_tree",
+        "docstring": ""
+      }
+    ],
+    "cw_graph_tools\\edit_cw_json.m": [
+      {
+        "type": "function",
+        "name": "edit_cw_json",
+        "docstring": ""
+      }
+    ],
+    "cw_graph_tools\\edit_graph.m": [
+      {
+        "type": "function",
+        "name": "edit_graph",
+        "docstring": ""
+      }
+    ],
+    "cw_graph_tools\\export_forest_to_json.m": [
+      {
+        "type": "function",
+        "name": "export_forest_to_json",
+        "docstring": ""
+      }
+    ],
+    "cw_graph_tools\\find_loops.m": [
+      {
+        "type": "function",
+        "name": "find_loops",
+        "docstring": ""
+      }
+    ],
+    "cw_graph_tools\\find_mst.m": [
+      {
+        "type": "function",
+        "name": "find_mst",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "find_dt",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "union_dt",
+        "docstring": ""
+      }
+    ],
+    "cw_graph_tools\\load_cw_json.m": [
+      {
+        "type": "function",
+        "name": "load_cw_json",
+        "docstring": ""
+      }
+    ],
+    "cw_graph_tools\\plot_cw_complex.m": [
+      {
+        "type": "function",
+        "name": "plot_cw_complex",
+        "docstring": ""
+      }
+    ],
+    "cw_graph_tools\\save_cw_json.m": [
+      {
+        "type": "function",
+        "name": "save_cw_json",
+        "docstring": ""
+      }
+    ],
+    "django_webapp\\manage.py": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": "Run administrative tasks."
+      }
+    ],
+    "django_webapp\\viewer\\apps.py": [
+      {
+        "type": "class",
+        "name": "ViewerConfig",
+        "docstring": ""
+      }
+    ],
+    "django_webapp\\viewer\\dash_apps.py": [
+      {
+        "type": "function",
+        "name": "parse_swc",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "load_data",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "toggle_slider",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "update_styles",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "render_3d",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "render_2d",
+        "docstring": ""
+      }
+    ],
+    "django_webapp\\viewer\\views.py": [
+      {
+        "type": "function",
+        "name": "parse_swc",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "index",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "load_volume",
+        "docstring": ""
+      }
+    ],
+    "docker_cell_detection\\run_centroids.py": [
+      {
+        "type": "function",
+        "name": "process_volume",
+        "docstring": ""
+      }
+    ],
+    "docker_cell_detection\\run_centroids_DAPI.py": [
+      {
+        "type": "function",
+        "name": "process_volume",
+        "docstring": ""
+      }
+    ],
+    "docker_cell_detection\\run_centroids_FP.py": [
+      {
+        "type": "function",
+        "name": "process_volume",
+        "docstring": ""
+      }
+    ],
+    "docker_cell_detection\\run_pipeline.py": [
+      {
+        "type": "function",
+        "name": "load_swc",
+        "docstring": "Loads centroids from an SWC file into a numpy array (x, y, z)."
+      },
+      {
+        "type": "function",
+        "name": "save_swc",
+        "docstring": "Saves centroids to an SWC file."
+      },
+      {
+        "type": "function",
+        "name": "save_scaled_swc",
+        "docstring": "Applies scale factors and saves to SWC."
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "docker_cell_detection\\run_pipeline_parallel.py": [
+      {
+        "type": "function",
+        "name": "process_block",
+        "docstring": "Function to process a single block, designed for parallel execution."
+      },
+      {
+        "type": "function",
+        "name": "detect_centroids_parallel",
+        "docstring": "Parallelized detection using a process pool."
+      },
+      {
+        "type": "function",
+        "name": "save_swc",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save_scaled_swc",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "docker_cell_detection\\scale_swc.py": [
+      {
+        "type": "function",
+        "name": "scale_swc",
+        "docstring": ""
+      }
+    ],
+    "docker_cell_detection\\visualize_3d.py": [
+      {
+        "type": "function",
+        "name": "load_swc",
+        "docstring": "Loads centroids from an SWC file."
+      },
+      {
+        "type": "function",
+        "name": "visualize",
+        "docstring": ""
+      }
+    ],
+    "docker_cell_detection\\visualize_napari.py": [
+      {
+        "type": "function",
+        "name": "load_swc",
+        "docstring": "Loads centroids from an SWC file."
+      },
+      {
+        "type": "function",
+        "name": "visualize_napari",
+        "docstring": ""
+      }
+    ],
+    "fp_cpp_pipeline\\main.cpp": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "fp_pipeline_modules\\backproject_skeletons.m": [
+      {
+        "type": "function",
+        "name": "backproject_skeletons",
+        "docstring": ""
+      }
+    ],
+    "fp_pipeline_modules\\compute_mip_pictures.m": [
+      {
+        "type": "function",
+        "name": "compute_mip_pictures",
+        "docstring": ""
+      }
+    ],
+    "fp_pipeline_modules\\compute_skeleton.m": [
+      {
+        "type": "function",
+        "name": "compute_skeleton",
+        "docstring": ""
+      }
+    ],
+    "fp_pipeline_modules\\display_subvolume_overlay.m": [
+      {
+        "type": "function",
+        "name": "display_subvolume_overlay",
+        "docstring": ""
+      }
+    ],
+    "fp_pipeline_modules\\display_volume_skeleton.m": [
+      {
+        "type": "function",
+        "name": "display_volume_skeleton",
+        "docstring": ""
+      }
+    ],
+    "fp_pipeline_modules\\export_cw_complex_2d.m": [
+      {
+        "type": "function",
+        "name": "export_cw_complex_2d",
+        "docstring": ""
+      }
+    ],
+    "fp_pipeline_modules\\export_cw_complex_json.m": [
+      {
+        "type": "function",
+        "name": "export_cw_complex_json",
+        "docstring": ""
+      }
+    ],
+    "fp_pipeline_modules\\extract_endpoints_silent.m": [
+      {
+        "type": "function",
+        "name": "extract_endpoints_silent",
+        "docstring": ""
+      }
+    ],
+    "fp_pipeline_modules\\save_multipage_tiff.m": [
+      {
+        "type": "function",
+        "name": "save_multipage_tiff",
+        "docstring": ""
+      }
+    ],
+    "fp_pipeline_modules\\save_nrrd_volume.m": [
+      {
+        "type": "function",
+        "name": "save_nrrd_volume",
+        "docstring": ""
+      }
+    ],
+    "fp_pipeline_modules\\save_overlay.m": [
+      {
+        "type": "function",
+        "name": "save_overlay",
+        "docstring": ""
+      }
+    ],
+    "fp_pipeline_modules\\skel_to_graph_2d.m": [
+      {
+        "type": "function",
+        "name": "skel_to_graph_2d",
+        "docstring": ""
+      }
+    ],
+    "fp_pipeline_modules\\swap_pts.m": [
+      {
+        "type": "function",
+        "name": "swap_pts",
+        "docstring": ""
+      }
+    ],
+    "fp_pipeline_modules\\triangulate_endpoints_fast.m": [
+      {
+        "type": "function",
+        "name": "triangulate_endpoints_fast",
+        "docstring": ""
+      }
+    ],
+    "frangi_filter_version2a\\eig2image.m": [
+      {
+        "type": "function",
+        "name": "eig2image",
+        "docstring": ""
+      }
+    ],
+    "frangi_filter_version2a\\eig3volume.c": [
+      {
+        "type": "function",
+        "name": "eigen_decomposition",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "mexFunction",
+        "docstring": ""
+      }
+    ],
+    "frangi_filter_version2a\\FrangiFilter2D.m": [
+      {
+        "type": "function",
+        "name": "FrangiFilter2D",
+        "docstring": ""
+      }
+    ],
+    "frangi_filter_version2a\\FrangiFilter3D.m": [
+      {
+        "type": "function",
+        "name": "FrangiFilter3D",
+        "docstring": ""
+      }
+    ],
+    "frangi_filter_version2a\\Hessian2D.m": [
+      {
+        "type": "function",
+        "name": "Hessian2D",
+        "docstring": ""
+      }
+    ],
+    "frangi_filter_version2a\\Hessian3D.m": [
+      {
+        "type": "function",
+        "name": "Hessian3D",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "gradient3",
+        "docstring": ""
+      }
+    ],
+    "frangi_filter_version2a\\imgaussian.c": [
+      {
+        "type": "function",
+        "name": "imfilter1D_double",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "imfilter2D_double",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "imfilter3D_double",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "imfilter1D_float",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "imfilter2D_float",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "imfilter3D_float",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "imfilter2Dcolor_double",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "imfilter2Dcolor_float",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "GaussianFiltering3D_float",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "GaussianFiltering2Dcolor_float",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "GaussianFiltering2D_float",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "GaussianFiltering1D_float",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "GaussianFiltering3D_double",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "GaussianFiltering2Dcolor_double",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "GaussianFiltering2D_double",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "GaussianFiltering1D_double",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "mexFunction",
+        "docstring": ""
+      }
+    ],
+    "frangi_filter_version2a\\imgaussian.m": [
+      {
+        "type": "function",
+        "name": "imgaussian",
+        "docstring": ""
+      }
+    ],
+    "neurite_detection\\create_synthetic_data.py": [
+      {
+        "type": "function",
+        "name": "create_synthetic_data",
+        "docstring": ""
+      }
+    ],
+    "neurite_detection\\create_tutorial_data.py": [
+      {
+        "type": "function",
+        "name": "create_crop",
+        "docstring": ""
+      }
+    ],
+    "neurite_detection\\cw_extraction.py": [
+      {
+        "type": "function",
+        "name": "binary_to_cw_complex",
+        "docstring": ""
+      }
+    ],
+    "neurite_detection\\detect_somas.py": [
+      {
+        "type": "function",
+        "name": "process_tile_soma_gpu",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "detect_somas",
+        "docstring": ""
+      }
+    ],
+    "neurite_detection\\generate_gif.py": [
+      {
+        "type": "function",
+        "name": "generate_neurite_gif",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "generate_centroid_gif",
+        "docstring": ""
+      }
+    ],
+    "neurite_detection\\process_neurites.py": [
+      {
+        "type": "function",
+        "name": "cupy_frangi_3d",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "process_tile_gpu",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "detect_neurites_volume",
+        "docstring": ""
+      }
+    ],
+    "neurite_detection\\run_pipeline.py": [
+      {
+        "type": "function",
+        "name": "run_pipeline",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "neurite_detection\\tutorial.py": [
+      {
+        "type": "function",
+        "name": "load_cw_complex",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "run_neurite_tutorial",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "run_centroid_tutorial",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "advance_tutorial",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save_state",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "advance_tutorial",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save_state",
+        "docstring": ""
+      }
+    ],
+    "neurite_detection\\pipeline\\main.py": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "neurite_detection\\pipeline\\test_frangi.py": [
+      {
+        "type": "function",
+        "name": "eigh_3x3_analytical",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "frangi_3d",
+        "docstring": ""
+      }
+    ],
+    "neurite_detection\\pipeline\\core\\cell_detection.py": [
+      {
+        "type": "function",
+        "name": "process_tile_soma_gpu",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "detect_cells_488",
+        "docstring": ""
+      }
+    ],
+    "neurite_detection\\pipeline\\core\\graph_export.py": [
+      {
+        "type": "function",
+        "name": "export_graphs",
+        "docstring": ""
+      }
+    ],
+    "neurite_detection\\pipeline\\core\\neurite_detection.py": [
+      {
+        "type": "function",
+        "name": "eigh_3x3_analytical",
+        "docstring": "Analytically solves the roots of a 3x3 symmetric matrix characteristic polynomial using Cardano's method"
+      },
+      {
+        "type": "function",
+        "name": "process_tile_frangi_gpu",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "detect_neurites",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "skel_chunk",
+        "docstring": ""
+      }
+    ],
+    "neurite_detection\\pipeline\\visualization\\flex_visualizer.py": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "neurite_detection\\pipeline\\visualization\\proofreader.py": [
+      {
+        "type": "function",
+        "name": "run_proofreader",
+        "docstring": ""
+      }
+    ],
+    "neurite_detection\\utils\\viewer.py": [
+      {
+        "type": "function",
+        "name": "load_cw_complex",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save_cw_complex",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "run_viewer",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save_state",
+        "docstring": ""
+      }
+    ],
+    "neuron_detection\\graph_utils.py": [
+      {
+        "type": "function",
+        "name": "stitch_graphs",
+        "docstring": "Merges multiple subvolume graphs into a single graph.\nWelds boundary nodes that are within `merge_dist`."
+      },
+      {
+        "type": "function",
+        "name": "graph_to_cw_complex",
+        "docstring": "Saves the graph into the CW-Complex JSON format."
+      },
+      {
+        "type": "function",
+        "name": "graph_to_swc",
+        "docstring": "Saves the graph to SWC format."
+      }
+    ],
+    "neuron_detection\\io_utils.py": [
+      {
+        "type": "function",
+        "name": "load_tiff_memmap",
+        "docstring": "Safely loads a large TIFF file as a memory-mapped numpy array."
+      },
+      {
+        "type": "function",
+        "name": "extract_subvolume",
+        "docstring": "Extracts a specific bounding box from the memory-mapped volume."
+      }
+    ],
+    "neuron_detection\\main.py": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "neuron_detection\\processing.py": [
+      {
+        "type": "function",
+        "name": "preprocess_volume",
+        "docstring": "Normalizes the volume intensity to [0, 1] range."
+      },
+      {
+        "type": "function",
+        "name": "apply_frangi_3d",
+        "docstring": "Applies a multi-scale 3D Frangi vesselness filter."
+      },
+      {
+        "type": "function",
+        "name": "extract_skeleton",
+        "docstring": "Thresholds the vesselness map and extracts a 1-pixel wide skeleton."
+      },
+      {
+        "type": "function",
+        "name": "process_subvolume_to_graph",
+        "docstring": "Runs the full pipeline on a subvolume and extracts the networkx graph."
+      }
+    ],
+    "neuron_detection\\visualization.py": [
+      {
+        "type": "function",
+        "name": "launch_napari",
+        "docstring": "Launches the Napari viewer with the detection layers."
+      }
+    ],
+    "neuron_detection\\visualize_swc_volume.py": [
+      {
+        "type": "function",
+        "name": "load_swc_segments",
+        "docstring": "Parses an SWC file and returns a list of line segments (paths) \nconnecting each node to its parent, formatted for Napari's Paths layer."
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "neuron_processing\\zernike_pipeline\\cluster_ch03_zernike.py": [
+      {
+        "type": "function",
+        "name": "compute_invariants",
+        "docstring": "Groups individual moments into the 54 rotationally invariant shells F_nl."
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "neuron_processing\\zernike_pipeline\\napari_viewer.py": [
+      {
+        "type": "function",
+        "name": "load_centroids_from_json",
+        "docstring": "Load cell centroids from JSON file."
+      },
+      {
+        "type": "function",
+        "name": "load_cw_complex",
+        "docstring": "Load CW complex from JSON."
+      },
+      {
+        "type": "function",
+        "name": "build_edge_lines",
+        "docstring": "Build edge line data from CW complex 1D cells for Shapes layer."
+      },
+      {
+        "type": "class",
+        "name": "ProofreadState",
+        "docstring": "Tracks proofreading edits in memory."
+      },
+      {
+        "type": "function",
+        "name": "create_proofread_widget",
+        "docstring": "Create a Napari dock widget for proofreading.\n\nUses magicgui for widget creation if available, otherwise\nfalls back to a simple QWidget."
+      },
+      {
+        "type": "function",
+        "name": "_do_proofread_action",
+        "docstring": "Execute a proofreading action on the currently selected point."
+      },
+      {
+        "type": "function",
+        "name": "_setup_console_proofreading",
+        "docstring": "Fallback proofreading via console keybindings."
+      },
+      {
+        "type": "function",
+        "name": "launch_napari_viewer",
+        "docstring": "Launch the Napari viewer with all layers and proofreading.\n\nParameters\n----------\nvolume_path : str or None\n    Path to raw DAPI TIFF volume.\nlabels_path : str or None\n    Path to cell labels TIFF.\ncentroids_path : str or None\n    Path to centroids JSON.\ncw_path : str or None\n    Path to CW complex JSON.\noutput_dir : str\n    Output directory for proofread exports."
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "approve",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "delete",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "split",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "summary",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "approve_key",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "delete_key",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save_key",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "approve_btn",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "delete_btn",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "split_btn",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save_btn",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "on_click",
+        "docstring": ""
+      }
+    ],
+    "proofreading\\launcher.py": [
+      {
+        "type": "function",
+        "name": "install_and_import",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "proofreading\\napari_proofreader.py": [
+      {
+        "type": "function",
+        "name": "read_swc",
+        "docstring": "Reads an SWC file and returns a pandas DataFrame.\nFormat: id type x y z r p"
+      },
+      {
+        "type": "function",
+        "name": "save_swc",
+        "docstring": "Saves centroids coordinates (in physical units or pixel units, depending on scale) back to SWC.\nHere coords are in physical units (Z, Y, X) because Napari displays/edits them scaled, \nbut let's write them matching the original SWC structure.\ncoords: numpy array of shape (N, 3) representing (z, y, x) in physical space."
+      },
+      {
+        "type": "class",
+        "name": "LoadingWorker",
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "ProofreaderDockWidget",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "run",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_on_layer_inserted",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "connect_points_layer",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "load_volume_dialog",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "load_centroids_dialog",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "load_baseline_dialog",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "start_loading_thread",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "on_loading_finished",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "on_loading_error",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "calculate_metrics",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "update_voxel_spacing",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "update_marker_size",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save_edits_dialog",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "on_data_changed",
+        "docstring": ""
+      }
+    ],
+    "webapp\\app.py": [
+      {
+        "type": "function",
+        "name": "load_swc",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "close_volume",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "index",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "load_local",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "upload_files",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_slice",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_points",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_progress",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_volume3d",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_points_all",
+        "docstring": ""
+      }
+    ],
+    "zarr_viewer\\launch.py": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "zarr_viewer\\serve_zarr.py": [
+      {
+        "type": "class",
+        "name": "CORSRequestHandler",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "end_headers",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "do_OPTIONS",
+        "docstring": ""
+      }
+    ],
+    "zernike_feature_pipeline_package\\batch_process_zernike.py": [
+      {
+        "type": "function",
+        "name": "compute_invariants",
+        "docstring": "Groups individual moments into the 54 rotationally invariant shells F_nl."
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "zernike_feature_pipeline_package\\build_zernike_filter_gpu.py": [
+      {
+        "type": "class",
+        "name": "ZernikeFilterBank",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_build_filter_matrix",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "extract",
+        "docstring": "Extract the shape descriptors INSTANTANEOUSLY via a single matrix multiplication."
+      },
+      {
+        "type": "function",
+        "name": "reconstruct",
+        "docstring": "Reconstruct the 3D volume INSTANTANEOUSLY via Matrix cross-multiplication."
+      }
+    ],
+    "zernike_feature_pipeline_package\\launcher.py": [
+      {
+        "type": "function",
+        "name": "install_package",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "zernike_feature_pipeline_package\\zernike_basis.py": [
+      {
+        "type": "function",
+        "name": "zernike_3d_basis_physical",
+        "docstring": "Evaluate the full 3D Zernike polynomial Z_{nl}^m on physical coordinates.\n\nParameters\n----------\nn : int\n    Degree (n >= 0).\nl : int\n    Order (0 <= l <= n, and n - l is even).\nm : int\n    Azimuthal index (-l <= m <= l).\nx_phys, y_phys, z_phys : np.ndarray\n    Physical Cartesian coordinates.\nR_max : float\n    Physical radius of the bounding sphere.\n    \nReturns\n-------\nnp.ndarray\n    Complex values of the Zernike polynomial at each point, normalized such that\n    the volumetric integral of the squared magnitude over the sphere evaluates to 1."
+      }
+    ],
+    "zernike_feature_pipeline_package\\zernike_basis_gpu.py": [
+      {
+        "type": "function",
+        "name": "_q_coeff",
+        "docstring": "Calculate the coefficient Q_{nl\nu} for the 3D Zernike radial polynomial.\n    Uses standard python math since n, l, nu are small scalars."
+      },
+      {
+        "type": "function",
+        "name": "zernike_radial_gpu",
+        "docstring": "Evaluate the 3D Zernike radial polynomial R_{nl}(r) on the GPU.\nr is a cupy array."
+      },
+      {
+        "type": "function",
+        "name": "zernike_spherical_gpu",
+        "docstring": "Evaluate the Spherical Harmonic Y_l^m(theta, phi) on the GPU.\ntheta and phi are cupy arrays."
+      },
+      {
+        "type": "function",
+        "name": "zernike_3d_basis_physical_gpu",
+        "docstring": "Evaluate the full 3D Zernike polynomial Z_{nl}^m on physical coordinates using GPU."
+      },
+      {
+        "type": "function",
+        "name": "zernike_3d_basis_precomputed_gpu",
+        "docstring": "Evaluate the Zernike polynomial using highly-optimized precomputed spherical coordinates.\nOptionally accepts a precomputed radial array R_cached to avoid redundant recalculation."
+      }
+    ],
+    "zernike_feature_pipeline_package\\zernike_radial.py": [
+      {
+        "type": "function",
+        "name": "_q_coeff",
+        "docstring": "Calculate the coefficient Q_{nl\nu} for the 3D Zernike radial polynomial."
+      },
+      {
+        "type": "function",
+        "name": "zernike_radial",
+        "docstring": "Evaluate the 3D Zernike radial polynomial R_{nl}(r).\n\nParameters\n----------\nn : int\n    Degree of the polynomial (n >= 0).\nl : int\n    Order of the polynomial (0 <= l <= n, and n - l is even).\nr : np.ndarray\n    Radial distances (usually r <= 1.0).\n    \nReturns\n-------\nnp.ndarray\n    Evaluated radial polynomial values at r."
+      }
+    ],
+    "zernike_feature_pipeline_package\\zernike_spherical.py": [
+      {
+        "type": "function",
+        "name": "zernike_spherical",
+        "docstring": "Evaluate the Spherical Harmonic Y_l^m(theta, phi).\n\nParameters\n----------\nl : int\n    Degree of the harmonic (l >= 0).\nm : int\n    Order of the harmonic (-l <= m <= l).\ntheta : np.ndarray\n    Polar angle in radians [0, pi].\nphi : np.ndarray\n    Azimuthal angle in radians [0, 2*pi].\n    \nReturns\n-------\nnp.ndarray\n    Evaluated complex spherical harmonic values.\n    \nNotes\n-----\nIn scipy's sph_harm signature, the order of angles is (m, n, theta, phi) \nwhere theta is the azimuthal angle [0, 2pi] and phi is the polar angle [0, pi].\nWe wrap this to use standard physics notation where theta is polar [0, pi]\nand phi is azimuthal [0, 2pi]."
+      }
+    ]
+  },
+  "updated_at": "2026-06-10T19:09:36Z",
+  "languages": [
+    {
+      "name": "JavaScript",
+      "percentage": 83.9
+    },
+    {
+      "name": "Python",
+      "percentage": 7
+    },
+    {
+      "name": "MATLAB",
+      "percentage": 4.6
+    },
+    {
+      "name": "CSS",
+      "percentage": 2.4
+    },
+    {
+      "name": "C",
+      "percentage": 0.8
+    },
+    {
+      "name": "C++",
+      "percentage": 0.7
+    },
+    {
+      "name": "TypeScript",
+      "percentage": 0.2
+    },
+    {
+      "name": "Shell",
+      "percentage": 0.2
+    },
+    {
+      "name": "Batchfile",
+      "percentage": 0.1
+    },
+    {
+      "name": "Dockerfile",
+      "percentage": 0.1
+    },
+    {
+      "name": "CMake",
+      "percentage": 0
+    },
+    {
+      "name": "M",
+      "percentage": 0
+    }
+  ],
+  "all_files": {
+    "centroid_cw_processing/process_centroids.py": {
+      "filepath": "centroid_cw_processing/process_centroids.py",
+      "size": 1690,
+      "summary": "Core application logic or configuration."
+    },
+    "centroid_cw_processing/utils.py": {
+      "filepath": "centroid_cw_processing/utils.py",
+      "size": 3460,
+      "summary": "Utility and helper functions."
+    },
+    "cloud_proofreading/bare_metal_setup/bootstrap_ubuntu_gpu.sh": {
+      "filepath": "cloud_proofreading/bare_metal_setup/bootstrap_ubuntu_gpu.sh",
+      "size": 2244,
+      "summary": "Shell script for automation or deployment."
+    },
+    "cloud_proofreading/deploy_cloud.sh": {
+      "filepath": "cloud_proofreading/deploy_cloud.sh",
+      "size": 757,
+      "summary": "Shell script for automation or deployment."
+    },
+    "cloud_proofreading/deploy_on_premise.sh": {
+      "filepath": "cloud_proofreading/deploy_on_premise.sh",
+      "size": 598,
+      "summary": "Shell script for automation or deployment."
+    },
+    "cloud_proofreading/napari_stream/entrypoint.sh": {
+      "filepath": "cloud_proofreading/napari_stream/entrypoint.sh",
+      "size": 1213,
+      "summary": "Shell script for automation or deployment."
+    },
+    "cloud_proofreading/napari_stream/unified_viewer.py": {
+      "filepath": "cloud_proofreading/napari_stream/unified_viewer.py",
+      "size": 16686,
+      "summary": "User interface components and rendering logic."
+    },
+    "create_3d_lines.m": {
+      "filepath": "create_3d_lines.m",
+      "size": 3291,
+      "summary": "Core application logic or configuration."
+    },
+    "create_line_volume.m": {
+      "filepath": "create_line_volume.m",
+      "size": 1162,
+      "summary": "Key capabilities: create_line_volume"
+    },
+    "create_point_volume.m": {
+      "filepath": "create_point_volume.m",
+      "size": 476,
+      "summary": "Key capabilities: create_point_volume"
+    },
+    "create_reconstructed_line_volume.m": {
+      "filepath": "create_reconstructed_line_volume.m",
+      "size": 1364,
+      "summary": "Key capabilities: create_reconstructed_line_volume"
+    },
+    "cw_graph_tools/add_tree.m": {
+      "filepath": "cw_graph_tools/add_tree.m",
+      "size": 2223,
+      "summary": "Core application logic or configuration."
+    },
+    "cw_graph_tools/create_forest_from_json.m": {
+      "filepath": "cw_graph_tools/create_forest_from_json.m",
+      "size": 1632,
+      "summary": "Core application logic or configuration."
+    },
+    "cw_graph_tools/delete_tree.m": {
+      "filepath": "cw_graph_tools/delete_tree.m",
+      "size": 2536,
+      "summary": "Core application logic or configuration."
+    },
+    "cw_graph_tools/edit_cw_json.m": {
+      "filepath": "cw_graph_tools/edit_cw_json.m",
+      "size": 2705,
+      "summary": "Core application logic or configuration."
+    },
+    "cw_graph_tools/edit_graph.m": {
+      "filepath": "cw_graph_tools/edit_graph.m",
+      "size": 2295,
+      "summary": "Core application logic or configuration."
+    },
+    "cw_graph_tools/export_forest_to_json.m": {
+      "filepath": "cw_graph_tools/export_forest_to_json.m",
+      "size": 2134,
+      "summary": "Core application logic or configuration."
+    },
+    "cw_graph_tools/find_loops.m": {
+      "filepath": "cw_graph_tools/find_loops.m",
+      "size": 4158,
+      "summary": "Core application logic or configuration."
+    },
+    "cw_graph_tools/find_mst.m": {
+      "filepath": "cw_graph_tools/find_mst.m",
+      "size": 2749,
+      "summary": "Core application logic or configuration."
+    },
+    "cw_graph_tools/load_cw_json.m": {
+      "filepath": "cw_graph_tools/load_cw_json.m",
+      "size": 473,
+      "summary": "Core application logic or configuration."
+    },
+    "cw_graph_tools/plot_cw_complex.m": {
+      "filepath": "cw_graph_tools/plot_cw_complex.m",
+      "size": 2694,
+      "summary": "Core application logic or configuration."
+    },
+    "cw_graph_tools/save_cw_json.m": {
+      "filepath": "cw_graph_tools/save_cw_json.m",
+      "size": 605,
+      "summary": "Core application logic or configuration."
+    },
+    "detect_3d_cells_blob.m": {
+      "filepath": "detect_3d_cells_blob.m",
+      "size": 2484,
+      "summary": "Key capabilities: detect_3d_cells_blob, load_tiff_volume, visualize_detections"
+    },
+    "detect_3d_cells_centroids.m": {
+      "filepath": "detect_3d_cells_centroids.m",
+      "size": 5220,
+      "summary": "Key capabilities: detect_3d_cells_centroids"
+    },
+    "detect_neurons_napari.py": {
+      "filepath": "detect_neurons_napari.py",
+      "size": 3121,
+      "summary": "Key capabilities: detect_neurons_napari"
+    },
+    "divide_tiff.py": {
+      "filepath": "divide_tiff.py",
+      "size": 2637,
+      "summary": "Key capabilities: divide_tiff_into_quadrants"
+    },
+    "django_webapp/django_webapp/__init__.py": {
+      "filepath": "django_webapp/django_webapp/__init__.py",
+      "size": 0,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/django_webapp/asgi.py": {
+      "filepath": "django_webapp/django_webapp/asgi.py",
+      "size": 403,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/django_webapp/settings.py": {
+      "filepath": "django_webapp/django_webapp/settings.py",
+      "size": 3099,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/django_webapp/urls.py": {
+      "filepath": "django_webapp/django_webapp/urls.py",
+      "size": 886,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/django_webapp/wsgi.py": {
+      "filepath": "django_webapp/django_webapp/wsgi.py",
+      "size": 403,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/manage.py": {
+      "filepath": "django_webapp/manage.py",
+      "size": 769,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/css/autocomplete.css": {
+      "filepath": "django_webapp/staticfiles/admin/css/autocomplete.css",
+      "size": 9185,
+      "summary": "Frontend layout and styling templates."
+    },
+    "django_webapp/staticfiles/admin/css/base.css": {
+      "filepath": "django_webapp/staticfiles/admin/css/base.css",
+      "size": 23100,
+      "summary": "Frontend layout and styling templates."
+    },
+    "django_webapp/staticfiles/admin/css/changelists.css": {
+      "filepath": "django_webapp/staticfiles/admin/css/changelists.css",
+      "size": 7498,
+      "summary": "Frontend layout and styling templates."
+    },
+    "django_webapp/staticfiles/admin/css/dark_mode.css": {
+      "filepath": "django_webapp/staticfiles/admin/css/dark_mode.css",
+      "size": 3538,
+      "summary": "Frontend layout and styling templates."
+    },
+    "django_webapp/staticfiles/admin/css/dashboard.css": {
+      "filepath": "django_webapp/staticfiles/admin/css/dashboard.css",
+      "size": 441,
+      "summary": "Frontend layout and styling templates."
+    },
+    "django_webapp/staticfiles/admin/css/forms.css": {
+      "filepath": "django_webapp/staticfiles/admin/css/forms.css",
+      "size": 8831,
+      "summary": "Frontend layout and styling templates."
+    },
+    "django_webapp/staticfiles/admin/css/login.css": {
+      "filepath": "django_webapp/staticfiles/admin/css/login.css",
+      "size": 951,
+      "summary": "Frontend layout and styling templates."
+    },
+    "django_webapp/staticfiles/admin/css/nav_sidebar.css": {
+      "filepath": "django_webapp/staticfiles/admin/css/nav_sidebar.css",
+      "size": 2810,
+      "summary": "Frontend layout and styling templates."
+    },
+    "django_webapp/staticfiles/admin/css/responsive.css": {
+      "filepath": "django_webapp/staticfiles/admin/css/responsive.css",
+      "size": 16273,
+      "summary": "Frontend layout and styling templates."
+    },
+    "django_webapp/staticfiles/admin/css/responsive_rtl.css": {
+      "filepath": "django_webapp/staticfiles/admin/css/responsive_rtl.css",
+      "size": 2157,
+      "summary": "Frontend layout and styling templates."
+    },
+    "django_webapp/staticfiles/admin/css/rtl.css": {
+      "filepath": "django_webapp/staticfiles/admin/css/rtl.css",
+      "size": 4779,
+      "summary": "Frontend layout and styling templates."
+    },
+    "django_webapp/staticfiles/admin/css/unusable_password_field.css": {
+      "filepath": "django_webapp/staticfiles/admin/css/unusable_password_field.css",
+      "size": 663,
+      "summary": "Frontend layout and styling templates."
+    },
+    "django_webapp/staticfiles/admin/css/vendor/select2/select2.css": {
+      "filepath": "django_webapp/staticfiles/admin/css/vendor/select2/select2.css",
+      "size": 17358,
+      "summary": "Frontend layout and styling templates."
+    },
+    "django_webapp/staticfiles/admin/css/vendor/select2/select2.min.css": {
+      "filepath": "django_webapp/staticfiles/admin/css/vendor/select2/select2.min.css",
+      "size": 14966,
+      "summary": "Frontend layout and styling templates."
+    },
+    "django_webapp/staticfiles/admin/css/widgets.css": {
+      "filepath": "django_webapp/staticfiles/admin/css/widgets.css",
+      "size": 11811,
+      "summary": "Frontend layout and styling templates."
+    },
+    "django_webapp/staticfiles/admin/js/SelectBox.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/SelectBox.js",
+      "size": 4530,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/SelectFilter2.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/SelectFilter2.js",
+      "size": 16428,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/actions.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/actions.js",
+      "size": 8076,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/admin/DateTimeShortcuts.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/admin/DateTimeShortcuts.js",
+      "size": 19698,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/admin/RelatedObjectLookups.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/admin/RelatedObjectLookups.js",
+      "size": 9777,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/autocomplete.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/autocomplete.js",
+      "size": 1060,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/calendar.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/calendar.js",
+      "size": 9159,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/cancel.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/cancel.js",
+      "size": 884,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/change_form.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/change_form.js",
+      "size": 606,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/core.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/core.js",
+      "size": 6208,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/filters.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/filters.js",
+      "size": 978,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/inlines.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/inlines.js",
+      "size": 15628,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/jquery.init.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/jquery.init.js",
+      "size": 347,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/nav_sidebar.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/nav_sidebar.js",
+      "size": 3063,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/popup_response.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/popup_response.js",
+      "size": 532,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/prepopulate.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/prepopulate.js",
+      "size": 1531,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/prepopulate_init.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/prepopulate_init.js",
+      "size": 586,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/theme.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/theme.js",
+      "size": 1653,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/urlify.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/urlify.js",
+      "size": 7887,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/jquery/jquery.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/jquery/jquery.js",
+      "size": 285314,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/jquery/jquery.min.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/jquery/jquery.min.js",
+      "size": 87533,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/af.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/af.js",
+      "size": 866,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ar.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ar.js",
+      "size": 905,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/az.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/az.js",
+      "size": 721,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/bg.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/bg.js",
+      "size": 968,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/bn.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/bn.js",
+      "size": 1291,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/bs.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/bs.js",
+      "size": 965,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ca.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ca.js",
+      "size": 900,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/cs.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/cs.js",
+      "size": 1292,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/da.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/da.js",
+      "size": 828,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/de.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/de.js",
+      "size": 866,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/dsb.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/dsb.js",
+      "size": 1017,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/el.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/el.js",
+      "size": 1182,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/en.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/en.js",
+      "size": 844,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/es.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/es.js",
+      "size": 922,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/et.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/et.js",
+      "size": 801,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/eu.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/eu.js",
+      "size": 868,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/fa.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/fa.js",
+      "size": 1023,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/fi.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/fi.js",
+      "size": 803,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/fr.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/fr.js",
+      "size": 924,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/gl.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/gl.js",
+      "size": 924,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/he.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/he.js",
+      "size": 984,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/hi.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/hi.js",
+      "size": 1175,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/hr.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/hr.js",
+      "size": 852,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/hsb.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/hsb.js",
+      "size": 1018,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/hu.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/hu.js",
+      "size": 831,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/hy.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/hy.js",
+      "size": 1028,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/id.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/id.js",
+      "size": 768,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/is.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/is.js",
+      "size": 807,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/it.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/it.js",
+      "size": 897,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ja.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ja.js",
+      "size": 862,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ka.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ka.js",
+      "size": 1195,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/km.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/km.js",
+      "size": 1088,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ko.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ko.js",
+      "size": 855,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/lt.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/lt.js",
+      "size": 944,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/lv.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/lv.js",
+      "size": 900,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/mk.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/mk.js",
+      "size": 1038,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ms.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ms.js",
+      "size": 811,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/nb.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/nb.js",
+      "size": 778,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ne.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ne.js",
+      "size": 1357,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/nl.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/nl.js",
+      "size": 904,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/pl.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/pl.js",
+      "size": 947,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ps.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ps.js",
+      "size": 1049,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/pt-BR.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/pt-BR.js",
+      "size": 876,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/pt.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/pt.js",
+      "size": 878,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ro.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ro.js",
+      "size": 938,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ru.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ru.js",
+      "size": 1171,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sk.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sk.js",
+      "size": 1306,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sl.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sl.js",
+      "size": 925,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sq.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sq.js",
+      "size": 903,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.js",
+      "size": 1109,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sr.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sr.js",
+      "size": 980,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sv.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sv.js",
+      "size": 786,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/th.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/th.js",
+      "size": 1074,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/tk.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/tk.js",
+      "size": 771,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/tr.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/tr.js",
+      "size": 775,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/uk.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/uk.js",
+      "size": 1156,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/vi.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/vi.js",
+      "size": 796,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/zh-CN.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/zh-CN.js",
+      "size": 768,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/i18n/zh-TW.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/zh-TW.js",
+      "size": 707,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/select2.full.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/select2.full.js",
+      "size": 173566,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/select2/select2.full.min.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/select2/select2.full.min.js",
+      "size": 79212,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/xregexp/xregexp.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/xregexp/xregexp.js",
+      "size": 325171,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/admin/js/vendor/xregexp/xregexp.min.js": {
+      "filepath": "django_webapp/staticfiles/admin/js/vendor/xregexp/xregexp.min.js",
+      "size": 163184,
+      "summary": "Core application logic or configuration."
+    },
+    "django_webapp/staticfiles/dash/component/dash/dash_table/async-export.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/dash_table/async-export.js",
+      "size": 928477,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/dash_table/async-highlight.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/dash_table/async-highlight.js",
+      "size": 143565,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/dash_table/async-table.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/dash_table/async-table.js",
+      "size": 401628,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/dash_table/bundle.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/dash_table/bundle.js",
+      "size": 29021,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/dash_table/demo.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/dash_table/demo.js",
+      "size": 139446,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/dcc/async-datepicker.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/dcc/async-datepicker.js",
+      "size": 91090,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/dcc/async-dropdown.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/dcc/async-dropdown.js",
+      "size": 29387,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/dcc/async-graph.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/dcc/async-graph.js",
+      "size": 8024,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/dcc/async-highlight.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/dcc/async-highlight.js",
+      "size": 136188,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/dcc/async-markdown.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/dcc/async-markdown.js",
+      "size": 190937,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/dcc/async-mathjax.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/dcc/async-mathjax.js",
+      "size": 2091671,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/dcc/async-slider.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/dcc/async-slider.js",
+      "size": 33260,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/dcc/async-upload.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/dcc/async-upload.js",
+      "size": 19449,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/dcc/dash_core_components-shared.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/dcc/dash_core_components-shared.js",
+      "size": 88988,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/dcc/dash_core_components.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/dcc/dash_core_components.js",
+      "size": 315353,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/dcc/proptypes.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/dcc/proptypes.js",
+      "size": 13819,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/deps/polyfill@7.12.1.min.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/deps/polyfill@7.12.1.min.js",
+      "size": 99276,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/deps/prop-types@15.8.1.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/deps/prop-types@15.8.1.js",
+      "size": 48333,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/deps/prop-types@15.8.1.min.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/deps/prop-types@15.8.1.min.js",
+      "size": 1722,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/deps/react-dom@16.14.0.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/deps/react-dom@16.14.0.js",
+      "size": 906292,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/deps/react-dom@16.14.0.min.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/deps/react-dom@16.14.0.min.js",
+      "size": 118656,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/deps/react-dom@18.2.0.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/deps/react-dom@18.2.0.js",
+      "size": 1077022,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/deps/react-dom@18.2.0.min.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/deps/react-dom@18.2.0.min.js",
+      "size": 131882,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/deps/react-dom@18.3.1.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/deps/react-dom@18.3.1.js",
+      "size": 1080227,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/deps/react-dom@18.3.1.min.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/deps/react-dom@18.3.1.min.js",
+      "size": 131835,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/deps/react@16.14.0.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/deps/react@16.14.0.js",
+      "size": 105138,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/deps/react@16.14.0.min.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/deps/react@16.14.0.min.js",
+      "size": 12463,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/deps/react@18.2.0.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/deps/react@18.2.0.js",
+      "size": 109910,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/deps/react@18.2.0.min.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/deps/react@18.2.0.min.js",
+      "size": 10737,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/deps/react@18.3.1.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/deps/react@18.3.1.js",
+      "size": 109931,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/deps/react@18.3.1.min.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/deps/react@18.3.1.min.js",
+      "size": 10751,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/dash/html/dash_html_components.min.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/dash/html/dash_html_components.min.js",
+      "size": 208187,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/staticfiles/dash/component/plotly/package_data/plotly.min.js": {
+      "filepath": "django_webapp/staticfiles/dash/component/plotly/package_data/plotly.min.js",
+      "size": 4558696,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "django_webapp/viewer/__init__.py": {
+      "filepath": "django_webapp/viewer/__init__.py",
+      "size": 0,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/viewer/admin.py": {
+      "filepath": "django_webapp/viewer/admin.py",
+      "size": 63,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/viewer/apps.py": {
+      "filepath": "django_webapp/viewer/apps.py",
+      "size": 87,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/viewer/dash_apps.py": {
+      "filepath": "django_webapp/viewer/dash_apps.py",
+      "size": 12599,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/viewer/migrations/__init__.py": {
+      "filepath": "django_webapp/viewer/migrations/__init__.py",
+      "size": 0,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/viewer/models.py": {
+      "filepath": "django_webapp/viewer/models.py",
+      "size": 57,
+      "summary": "Defines deep learning model architectures or networks."
+    },
+    "django_webapp/viewer/tests.py": {
+      "filepath": "django_webapp/viewer/tests.py",
+      "size": 60,
+      "summary": "Contains testing or evaluation scripts."
+    },
+    "django_webapp/viewer/urls.py": {
+      "filepath": "django_webapp/viewer/urls.py",
+      "size": 219,
+      "summary": "User interface components and rendering logic."
+    },
+    "django_webapp/viewer/views.py": {
+      "filepath": "django_webapp/viewer/views.py",
+      "size": 3716,
+      "summary": "User interface components and rendering logic."
+    },
+    "docker_cell_detection/run_centroids.py": {
+      "filepath": "docker_cell_detection/run_centroids.py",
+      "size": 5951,
+      "summary": "Core application logic or configuration."
+    },
+    "docker_cell_detection/run_centroids_DAPI.py": {
+      "filepath": "docker_cell_detection/run_centroids_DAPI.py",
+      "size": 5578,
+      "summary": "API routes and backend controllers."
+    },
+    "docker_cell_detection/run_centroids_FP.py": {
+      "filepath": "docker_cell_detection/run_centroids_FP.py",
+      "size": 5724,
+      "summary": "Core application logic or configuration."
+    },
+    "docker_cell_detection/run_pipeline.py": {
+      "filepath": "docker_cell_detection/run_pipeline.py",
+      "size": 6392,
+      "summary": "Core application logic or configuration."
+    },
+    "docker_cell_detection/run_pipeline_parallel.py": {
+      "filepath": "docker_cell_detection/run_pipeline_parallel.py",
+      "size": 6214,
+      "summary": "Core application logic or configuration."
+    },
+    "docker_cell_detection/scale_swc.py": {
+      "filepath": "docker_cell_detection/scale_swc.py",
+      "size": 1794,
+      "summary": "Core application logic or configuration."
+    },
+    "docker_cell_detection/visualize_3d.py": {
+      "filepath": "docker_cell_detection/visualize_3d.py",
+      "size": 3565,
+      "summary": "Core application logic or configuration."
+    },
+    "docker_cell_detection/visualize_napari.py": {
+      "filepath": "docker_cell_detection/visualize_napari.py",
+      "size": 2309,
+      "summary": "Core application logic or configuration."
+    },
+    "downsample_volumes.m": {
+      "filepath": "downsample_volumes.m",
+      "size": 5378,
+      "summary": "Key capabilities: downsample_volumes, save_nrrd_volume"
+    },
+    "eval_full_volume_line_endpoints.m": {
+      "filepath": "eval_full_volume_line_endpoints.m",
+      "size": 7808,
+      "summary": "Key capabilities: find_extremes_2d, rotate_and_unpad, crop_volume"
+    },
+    "extract_endpoints_from_stereo.m": {
+      "filepath": "extract_endpoints_from_stereo.m",
+      "size": 2446,
+      "summary": "Key capabilities: extract_endpoints_from_stereo"
+    },
+    "extract_subset.m": {
+      "filepath": "extract_subset.m",
+      "size": 1241,
+      "summary": "Key capabilities: extract_subset"
+    },
+    "fp_cpp_pipeline/Filters2D.cpp": {
+      "filepath": "fp_cpp_pipeline/Filters2D.cpp",
+      "size": 9844,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_cpp_pipeline/Filters2D.hpp": {
+      "filepath": "fp_cpp_pipeline/Filters2D.hpp",
+      "size": 1368,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_cpp_pipeline/Geometry3D.cpp": {
+      "filepath": "fp_cpp_pipeline/Geometry3D.cpp",
+      "size": 7512,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_cpp_pipeline/Geometry3D.hpp": {
+      "filepath": "fp_cpp_pipeline/Geometry3D.hpp",
+      "size": 1301,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_cpp_pipeline/TiffIO.cpp": {
+      "filepath": "fp_cpp_pipeline/TiffIO.cpp",
+      "size": 4340,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_cpp_pipeline/TiffIO.hpp": {
+      "filepath": "fp_cpp_pipeline/TiffIO.hpp",
+      "size": 908,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_cpp_pipeline/main.cpp": {
+      "filepath": "fp_cpp_pipeline/main.cpp",
+      "size": 5187,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_pipeline_modules/backproject_skeletons.m": {
+      "filepath": "fp_pipeline_modules/backproject_skeletons.m",
+      "size": 1807,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_pipeline_modules/compute_mip_pictures.m": {
+      "filepath": "fp_pipeline_modules/compute_mip_pictures.m",
+      "size": 2552,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_pipeline_modules/compute_skeleton.m": {
+      "filepath": "fp_pipeline_modules/compute_skeleton.m",
+      "size": 1864,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_pipeline_modules/display_subvolume_overlay.m": {
+      "filepath": "fp_pipeline_modules/display_subvolume_overlay.m",
+      "size": 1026,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_pipeline_modules/display_volume_skeleton.m": {
+      "filepath": "fp_pipeline_modules/display_volume_skeleton.m",
+      "size": 1592,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_pipeline_modules/export_cw_complex_2d.m": {
+      "filepath": "fp_pipeline_modules/export_cw_complex_2d.m",
+      "size": 1667,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_pipeline_modules/export_cw_complex_json.m": {
+      "filepath": "fp_pipeline_modules/export_cw_complex_json.m",
+      "size": 2736,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_pipeline_modules/extract_endpoints_silent.m": {
+      "filepath": "fp_pipeline_modules/extract_endpoints_silent.m",
+      "size": 1651,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_pipeline_modules/save_multipage_tiff.m": {
+      "filepath": "fp_pipeline_modules/save_multipage_tiff.m",
+      "size": 917,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_pipeline_modules/save_nrrd_volume.m": {
+      "filepath": "fp_pipeline_modules/save_nrrd_volume.m",
+      "size": 886,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_pipeline_modules/save_overlay.m": {
+      "filepath": "fp_pipeline_modules/save_overlay.m",
+      "size": 1040,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_pipeline_modules/skel_to_graph_2d.m": {
+      "filepath": "fp_pipeline_modules/skel_to_graph_2d.m",
+      "size": 4202,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_pipeline_modules/swap_pts.m": {
+      "filepath": "fp_pipeline_modules/swap_pts.m",
+      "size": 138,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_pipeline_modules/triangulate_endpoints_fast.m": {
+      "filepath": "fp_pipeline_modules/triangulate_endpoints_fast.m",
+      "size": 2626,
+      "summary": "Core application logic or configuration."
+    },
+    "fp_pipeline_smoketest.m": {
+      "filepath": "fp_pipeline_smoketest.m",
+      "size": 11301,
+      "summary": "Key capabilities: compute_mip_pictures, compute_skeleton, save_overlay, and more"
+    },
+    "fp_volume_pipeline.m": {
+      "filepath": "fp_volume_pipeline.m",
+      "size": 9928,
+      "summary": "Key capabilities: fp_volume_pipeline"
+    },
+    "frangi_filter_version2a/FrangiFilter2D.m": {
+      "filepath": "frangi_filter_version2a/FrangiFilter2D.m",
+      "size": 3857,
+      "summary": "Core application logic or configuration."
+    },
+    "frangi_filter_version2a/FrangiFilter3D.m": {
+      "filepath": "frangi_filter_version2a/FrangiFilter3D.m",
+      "size": 5487,
+      "summary": "Core application logic or configuration."
+    },
+    "frangi_filter_version2a/Hessian2D.m": {
+      "filepath": "frangi_filter_version2a/Hessian2D.m",
+      "size": 992,
+      "summary": "Core application logic or configuration."
+    },
+    "frangi_filter_version2a/Hessian3D.m": {
+      "filepath": "frangi_filter_version2a/Hessian3D.m",
+      "size": 1868,
+      "summary": "Core application logic or configuration."
+    },
+    "frangi_filter_version2a/eig2image.m": {
+      "filepath": "frangi_filter_version2a/eig2image.m",
+      "size": 943,
+      "summary": "Core application logic or configuration."
+    },
+    "frangi_filter_version2a/eig3volume.c": {
+      "filepath": "frangi_filter_version2a/eig3volume.c",
+      "size": 12432,
+      "summary": "Core application logic or configuration."
+    },
+    "frangi_filter_version2a/eig3volume.m": {
+      "filepath": "frangi_filter_version2a/eig3volume.m",
+      "size": 0,
+      "summary": "Core application logic or configuration."
+    },
+    "frangi_filter_version2a/imgaussian.c": {
+      "filepath": "frangi_filter_version2a/imgaussian.c",
+      "size": 22500,
+      "summary": "Core application logic or configuration."
+    },
+    "frangi_filter_version2a/imgaussian.m": {
+      "filepath": "frangi_filter_version2a/imgaussian.m",
+      "size": 2016,
+      "summary": "Core application logic or configuration."
+    },
+    "generate_ppt.py": {
+      "filepath": "generate_ppt.py",
+      "size": 5895,
+      "summary": "Key capabilities: get_flowchart_image, create_presentation"
+    },
+    "master_eval_modular.m": {
+      "filepath": "master_eval_modular.m",
+      "size": 2071,
+      "summary": "Contains testing or evaluation scripts."
+    },
+    "master_pipeline_q1.m": {
+      "filepath": "master_pipeline_q1.m",
+      "size": 10041,
+      "summary": "Core application logic or configuration."
+    },
+    "master_pipeline_short.m": {
+      "filepath": "master_pipeline_short.m",
+      "size": 10003,
+      "summary": "Core application logic or configuration."
+    },
+    "neurite_detection/create_synthetic_data.py": {
+      "filepath": "neurite_detection/create_synthetic_data.py",
+      "size": 3429,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "neurite_detection/create_tutorial_data.py": {
+      "filepath": "neurite_detection/create_tutorial_data.py",
+      "size": 1165,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "neurite_detection/cw_extraction.py": {
+      "filepath": "neurite_detection/cw_extraction.py",
+      "size": 8158,
+      "summary": "Core application logic or configuration."
+    },
+    "neurite_detection/detect_somas.py": {
+      "filepath": "neurite_detection/detect_somas.py",
+      "size": 5420,
+      "summary": "Core application logic or configuration."
+    },
+    "neurite_detection/generate_gif.py": {
+      "filepath": "neurite_detection/generate_gif.py",
+      "size": 4025,
+      "summary": "Core application logic or configuration."
+    },
+    "neurite_detection/pipeline/config.py": {
+      "filepath": "neurite_detection/pipeline/config.py",
+      "size": 923,
+      "summary": "Core application logic or configuration."
+    },
+    "neurite_detection/pipeline/core/cell_detection.py": {
+      "filepath": "neurite_detection/pipeline/core/cell_detection.py",
+      "size": 5801,
+      "summary": "Core application logic or configuration."
+    },
+    "neurite_detection/pipeline/core/graph_export.py": {
+      "filepath": "neurite_detection/pipeline/core/graph_export.py",
+      "size": 7491,
+      "summary": "Core application logic or configuration."
+    },
+    "neurite_detection/pipeline/core/neurite_detection.py": {
+      "filepath": "neurite_detection/pipeline/core/neurite_detection.py",
+      "size": 12322,
+      "summary": "Core application logic or configuration."
+    },
+    "neurite_detection/pipeline/main.py": {
+      "filepath": "neurite_detection/pipeline/main.py",
+      "size": 4234,
+      "summary": "Core application logic or configuration."
+    },
+    "neurite_detection/pipeline/run_pipeline.sh": {
+      "filepath": "neurite_detection/pipeline/run_pipeline.sh",
+      "size": 462,
+      "summary": "Shell script for automation or deployment."
+    },
+    "neurite_detection/pipeline/test_frangi.py": {
+      "filepath": "neurite_detection/pipeline/test_frangi.py",
+      "size": 2481,
+      "summary": "Contains testing or evaluation scripts."
+    },
+    "neurite_detection/pipeline/visualization/flex_visualizer.py": {
+      "filepath": "neurite_detection/pipeline/visualization/flex_visualizer.py",
+      "size": 4045,
+      "summary": "Core application logic or configuration."
+    },
+    "neurite_detection/pipeline/visualization/proofreader.py": {
+      "filepath": "neurite_detection/pipeline/visualization/proofreader.py",
+      "size": 2226,
+      "summary": "Core application logic or configuration."
+    },
+    "neurite_detection/process_neurites.py": {
+      "filepath": "neurite_detection/process_neurites.py",
+      "size": 10077,
+      "summary": "Core application logic or configuration."
+    },
+    "neurite_detection/run_linux.sh": {
+      "filepath": "neurite_detection/run_linux.sh",
+      "size": 819,
+      "summary": "Shell script for automation or deployment."
+    },
+    "neurite_detection/run_pipeline.py": {
+      "filepath": "neurite_detection/run_pipeline.py",
+      "size": 4121,
+      "summary": "Core application logic or configuration."
+    },
+    "neurite_detection/tutorial.py": {
+      "filepath": "neurite_detection/tutorial.py",
+      "size": 6044,
+      "summary": "Core application logic or configuration."
+    },
+    "neurite_detection/utils/__init__.py": {
+      "filepath": "neurite_detection/utils/__init__.py",
+      "size": 0,
+      "summary": "Utility and helper functions."
+    },
+    "neurite_detection/utils/viewer.py": {
+      "filepath": "neurite_detection/utils/viewer.py",
+      "size": 8224,
+      "summary": "Utility and helper functions."
+    },
+    "neuron_detection/__init__.py": {
+      "filepath": "neuron_detection/__init__.py",
+      "size": 38,
+      "summary": "Core application logic or configuration."
+    },
+    "neuron_detection/graph_utils.py": {
+      "filepath": "neuron_detection/graph_utils.py",
+      "size": 4699,
+      "summary": "Utility and helper functions."
+    },
+    "neuron_detection/io_utils.py": {
+      "filepath": "neuron_detection/io_utils.py",
+      "size": 797,
+      "summary": "Utility and helper functions."
+    },
+    "neuron_detection/main.py": {
+      "filepath": "neuron_detection/main.py",
+      "size": 3418,
+      "summary": "Core application logic or configuration."
+    },
+    "neuron_detection/processing.py": {
+      "filepath": "neuron_detection/processing.py",
+      "size": 2266,
+      "summary": "Core application logic or configuration."
+    },
+    "neuron_detection/visualization.py": {
+      "filepath": "neuron_detection/visualization.py",
+      "size": 997,
+      "summary": "Core application logic or configuration."
+    },
+    "neuron_detection/visualize_swc_volume.py": {
+      "filepath": "neuron_detection/visualize_swc_volume.py",
+      "size": 3424,
+      "summary": "Core application logic or configuration."
+    },
+    "neuron_processing/zernike_pipeline/cluster_ch03_zernike.py": {
+      "filepath": "neuron_processing/zernike_pipeline/cluster_ch03_zernike.py",
+      "size": 8406,
+      "summary": "Core application logic or configuration."
+    },
+    "neuron_processing/zernike_pipeline/napari_viewer.py": {
+      "filepath": "neuron_processing/zernike_pipeline/napari_viewer.py",
+      "size": 18787,
+      "summary": "User interface components and rendering logic."
+    },
+    "overlay_lines.m": {
+      "filepath": "overlay_lines.m",
+      "size": 1205,
+      "summary": "Key capabilities: overlay_lines"
+    },
+    "overlay_volumes.m": {
+      "filepath": "overlay_volumes.m",
+      "size": 3304,
+      "summary": "Core application logic or configuration."
+    },
+    "process_vesselness_3d.m": {
+      "filepath": "process_vesselness_3d.m",
+      "size": 8939,
+      "summary": "Key capabilities: process_vesselness_3d, compute_mip_angle, backproject_to_3d, and more"
+    },
+    "proofreading/launcher.py": {
+      "filepath": "proofreading/launcher.py",
+      "size": 2382,
+      "summary": "Core application logic or configuration."
+    },
+    "proofreading/napari_proofreader.py": {
+      "filepath": "proofreading/napari_proofreader.py",
+      "size": 26495,
+      "summary": "Core application logic or configuration."
+    },
+    "proofreading/run_proofreader.sh": {
+      "filepath": "proofreading/run_proofreader.sh",
+      "size": 648,
+      "summary": "Shell script for automation or deployment."
+    },
+    "reconstruct_endpoints_stereo.m": {
+      "filepath": "reconstruct_endpoints_stereo.m",
+      "size": 4221,
+      "summary": "Key capabilities: reconstruct_endpoints_stereo"
+    },
+    "reconstruct_line_from_endpoints.m": {
+      "filepath": "reconstruct_line_from_endpoints.m",
+      "size": 3249,
+      "summary": "Core application logic or configuration."
+    },
+    "reconstruct_single_point.m": {
+      "filepath": "reconstruct_single_point.m",
+      "size": 2748,
+      "summary": "Key capabilities: reconstruct_single_point"
+    },
+    "reconstruct_volume.m": {
+      "filepath": "reconstruct_volume.m",
+      "size": 4585,
+      "summary": "Key capabilities: reconstruct_volume"
+    },
+    "run_script.m": {
+      "filepath": "run_script.m",
+      "size": 94,
+      "summary": "Core application logic or configuration."
+    },
+    "scratch.m": {
+      "filepath": "scratch.m",
+      "size": 2736,
+      "summary": "Core application logic or configuration."
+    },
+    "show_geom.m": {
+      "filepath": "show_geom.m",
+      "size": 334,
+      "summary": "Core application logic or configuration."
+    },
+    "show_geom2.m": {
+      "filepath": "show_geom2.m",
+      "size": 519,
+      "summary": "Core application logic or configuration."
+    },
+    "skel_master_eval_modular.m": {
+      "filepath": "skel_master_eval_modular.m",
+      "size": 2833,
+      "summary": "Contains testing or evaluation scripts."
+    },
+    "take_volume_pictures.m": {
+      "filepath": "take_volume_pictures.m",
+      "size": 3477,
+      "summary": "Key capabilities: take_volume_pictures"
+    },
+    "test_info.m": {
+      "filepath": "test_info.m",
+      "size": 129,
+      "summary": "Contains testing or evaluation scripts."
+    },
+    "test_json_export.m": {
+      "filepath": "test_json_export.m",
+      "size": 292,
+      "summary": "Contains testing or evaluation scripts."
+    },
+    "test_plot.m": {
+      "filepath": "test_plot.m",
+      "size": 223,
+      "summary": "Contains testing or evaluation scripts."
+    },
+    "test_single_point_stereo.m": {
+      "filepath": "test_single_point_stereo.m",
+      "size": 6429,
+      "summary": "Key capabilities: test_single_point_stereo, create_point_volume, reconstruct_single_point, and more"
+    },
+    "test_skel_to_graph.m": {
+      "filepath": "test_skel_to_graph.m",
+      "size": 1062,
+      "summary": "Contains testing or evaluation scripts."
+    },
+    "test_stereo_line_cv_toolbox.m": {
+      "filepath": "test_stereo_line_cv_toolbox.m",
+      "size": 5937,
+      "summary": "Contains testing or evaluation scripts."
+    },
+    "visualize_3d_cells.m": {
+      "filepath": "visualize_3d_cells.m",
+      "size": 2661,
+      "summary": "Key capabilities: visualize_3d_cells"
+    },
+    "visualize_full_cells_subset.m": {
+      "filepath": "visualize_full_cells_subset.m",
+      "size": 2605,
+      "summary": "Key capabilities: visualize_full_cells_subset"
+    },
+    "visualize_napari_csv.py": {
+      "filepath": "visualize_napari_csv.py",
+      "size": 2177,
+      "summary": "Key capabilities: load_csv_points, visualize_napari_csv"
+    },
+    "visualize_subvol_napari.py": {
+      "filepath": "visualize_subvol_napari.py",
+      "size": 2450,
+      "summary": "Key capabilities: visualize_subvol"
+    },
+    "volshow_cells_subset.m": {
+      "filepath": "volshow_cells_subset.m",
+      "size": 2389,
+      "summary": "Key capabilities: volshow_cells_subset"
+    },
+    "webapp/app.py": {
+      "filepath": "webapp/app.py",
+      "size": 7481,
+      "summary": "Core application logic or configuration."
+    },
+    "webapp/static/main.js": {
+      "filepath": "webapp/static/main.js",
+      "size": 14255,
+      "summary": "Core application logic or configuration."
+    },
+    "webapp/static/style.css": {
+      "filepath": "webapp/static/style.css",
+      "size": 4788,
+      "summary": "Frontend layout and styling templates."
+    },
+    "zarr_viewer/convert_tiff_to_ome_zarr.py": {
+      "filepath": "zarr_viewer/convert_tiff_to_ome_zarr.py",
+      "size": 2257,
+      "summary": "User interface components and rendering logic."
+    },
+    "zarr_viewer/frontend/eslint.config.js": {
+      "filepath": "zarr_viewer/frontend/eslint.config.js",
+      "size": 591,
+      "summary": "User interface components and rendering logic."
+    },
+    "zarr_viewer/frontend/src/App.css": {
+      "filepath": "zarr_viewer/frontend/src/App.css",
+      "size": 2891,
+      "summary": "User interface components and rendering logic."
+    },
+    "zarr_viewer/frontend/src/App.tsx": {
+      "filepath": "zarr_viewer/frontend/src/App.tsx",
+      "size": 8490,
+      "summary": "User interface components and rendering logic."
+    },
+    "zarr_viewer/frontend/src/index.css": {
+      "filepath": "zarr_viewer/frontend/src/index.css",
+      "size": 2169,
+      "summary": "User interface components and rendering logic."
+    },
+    "zarr_viewer/frontend/src/main.tsx": {
+      "filepath": "zarr_viewer/frontend/src/main.tsx",
+      "size": 230,
+      "summary": "User interface components and rendering logic."
+    },
+    "zarr_viewer/frontend/vite.config.ts": {
+      "filepath": "zarr_viewer/frontend/vite.config.ts",
+      "size": 161,
+      "summary": "User interface components and rendering logic."
+    },
+    "zarr_viewer/launch.py": {
+      "filepath": "zarr_viewer/launch.py",
+      "size": 1702,
+      "summary": "User interface components and rendering logic."
+    },
+    "zarr_viewer/serve_zarr.py": {
+      "filepath": "zarr_viewer/serve_zarr.py",
+      "size": 1100,
+      "summary": "User interface components and rendering logic."
+    },
+    "zernike_feature_pipeline_package/batch_process_zernike.py": {
+      "filepath": "zernike_feature_pipeline_package/batch_process_zernike.py",
+      "size": 7173,
+      "summary": "Core application logic or configuration."
+    },
+    "zernike_feature_pipeline_package/build_zernike_filter_gpu.py": {
+      "filepath": "zernike_feature_pipeline_package/build_zernike_filter_gpu.py",
+      "size": 6892,
+      "summary": "User interface components and rendering logic."
+    },
+    "zernike_feature_pipeline_package/launcher.py": {
+      "filepath": "zernike_feature_pipeline_package/launcher.py",
+      "size": 2878,
+      "summary": "Core application logic or configuration."
+    },
+    "zernike_feature_pipeline_package/run_pipeline.sh": {
+      "filepath": "zernike_feature_pipeline_package/run_pipeline.sh",
+      "size": 888,
+      "summary": "Shell script for automation or deployment."
+    },
+    "zernike_feature_pipeline_package/zernike_basis.py": {
+      "filepath": "zernike_feature_pipeline_package/zernike_basis.py",
+      "size": 1835,
+      "summary": "Core application logic or configuration."
+    },
+    "zernike_feature_pipeline_package/zernike_basis_gpu.py": {
+      "filepath": "zernike_feature_pipeline_package/zernike_basis_gpu.py",
+      "size": 2639,
+      "summary": "Core application logic or configuration."
+    },
+    "zernike_feature_pipeline_package/zernike_radial.py": {
+      "filepath": "zernike_feature_pipeline_package/zernike_radial.py",
+      "size": 1461,
+      "summary": "Core application logic or configuration."
+    },
+    "zernike_feature_pipeline_package/zernike_spherical.py": {
+      "filepath": "zernike_feature_pipeline_package/zernike_spherical.py",
+      "size": 1363,
+      "summary": "Core application logic or configuration."
+    }
+  }
+}

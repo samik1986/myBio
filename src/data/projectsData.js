@@ -199,7 +199,9 @@ export const githubProjects = [
         name: "Batchfile",
         percentage: 1.1
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Python codebase contains 20 extracted functions across 2 files. Key extracted functionality includes: install_and_import, read_swc, save_swc, LoadingWorker, ProofreaderDockWidget, and more."
   },
   {
     id: 2,
@@ -219,7 +221,8 @@ export const githubProjects = [
         name: "MATLAB",
         percentage: 0
       }
-    ]
+    ],
+    hasApiData: false
   },
   {
     id: 3,
@@ -235,7 +238,8 @@ export const githubProjects = [
         name: "Python",
         percentage: 100
       }
-    ]
+    ],
+    hasApiData: false
   },
   {
     id: 4,
@@ -255,7 +259,9 @@ export const githubProjects = [
         name: "HTML",
         percentage: 11.5
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This MATLAB codebase contains 27 extracted functions across 18 files. Key extracted functionality includes: crop_1, crop_2, crop_3, crop_4, crop_Brains, and more."
   },
   {
     id: 5,
@@ -271,7 +277,9 @@ export const githubProjects = [
         name: "MATLAB",
         percentage: 100
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This MATLAB codebase contains 13 extracted functions across 11 files. Key extracted functionality includes: add_tree, create_forest_from_json, delete_tree, edit_cw_json, edit_graph, and more."
   },
   {
     id: 6,
@@ -295,7 +303,9 @@ export const githubProjects = [
         name: "Shell",
         percentage: 0.4
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Python codebase contains 296 extracted functions across 72 files. Key extracted functionality includes: Config, Config, augment, union, intersection, and more."
   },
   {
     id: 7,
@@ -331,7 +341,9 @@ export const githubProjects = [
         name: "C",
         percentage: 4.6
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This C++ codebase contains 185 extracted functions across 55 files. Key extracted functionality includes: load_persistence_diagram, test_2d_func, save_image_data, get_date, __remove_dups, and more."
   },
   {
     id: 8,
@@ -359,7 +371,9 @@ export const githubProjects = [
         name: "CMake",
         percentage: 0.6
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This C++ codebase contains 282 extracted functions across 48 files. Key extracted functionality includes: load_persistence_diagram, test_3d_func, parallel_dipha_input, save_3d_image_data, split_domain, and more."
   },
   {
     id: 9,
@@ -395,7 +409,9 @@ export const githubProjects = [
         name: "C",
         percentage: 4.4
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This C++ codebase contains 364 extracted functions across 129 files. Key extracted functionality includes: parallel_dipha_input, function, function, function, func, and more."
   },
   {
     id: 10,
@@ -415,7 +431,9 @@ export const githubProjects = [
         name: "MATLAB",
         percentage: 28
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Python codebase contains 14 extracted functions across 1 files. Key extracted functionality includes: structural_loss, imageLoader, imageLoaderReturn, readImagesEdge, readImages, and more."
   },
   {
     id: 11,
@@ -439,7 +457,9 @@ export const githubProjects = [
         name: "MATLAB",
         percentage: 0.2
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Python codebase contains 10111 extracted functions across 465 files. Key extracted functionality includes: readImagesTwice, readImagesTwice, clipped_zoom, imageLoader, readImagesTwice, and more."
   },
   {
     id: 12,
@@ -463,7 +483,9 @@ export const githubProjects = [
         name: "Shell",
         percentage: 0.3
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This MATLAB codebase contains 47 extracted functions across 29 files. Key extracted functionality includes: cell_filling, circfit, cluster, edge_layers, Euclidean_Signature, and more."
   },
   {
     id: 13,
@@ -479,7 +501,8 @@ export const githubProjects = [
         name: "Python",
         percentage: 100
       }
-    ]
+    ],
+    hasApiData: false
   },
   {
     id: 14,
@@ -495,7 +518,8 @@ export const githubProjects = [
         name: "Python",
         percentage: 100
       }
-    ]
+    ],
+    hasApiData: false
   },
   {
     id: 15,
@@ -511,7 +535,8 @@ export const githubProjects = [
         name: "Jupyter Notebook",
         percentage: 100
       }
-    ]
+    ],
+    hasApiData: false
   },
   {
     id: 16,
@@ -531,7 +556,9 @@ export const githubProjects = [
         name: "Shell",
         percentage: 0.6
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Python codebase contains 5043 extracted functions across 227 files. Key extracted functionality includes: Command, RequirementCommand, _build_session, parse_args, populate_requirement_set, and more."
   },
   {
     id: 17,
@@ -551,7 +578,9 @@ export const githubProjects = [
         name: "Shell",
         percentage: 0.2
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Python codebase contains 7660 extracted functions across 333 files. Key extracted functionality includes: makepath, abs__file__, removeduppaths, addbuilddir, _init_pathinfo, and more."
   },
   {
     id: 18,
@@ -562,7 +591,8 @@ export const githubProjects = [
     forks: 0,
     githubUrl: "https://github.com/samik1986/keras-survGAN",
     updatedAt: "2017-09-09T13:10:40Z",
-    languages: []
+    languages: [],
+    hasApiData: false
   },
   {
     id: 19,
@@ -582,7 +612,9 @@ export const githubProjects = [
         name: "Python",
         percentage: 1.5
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Jupyter Notebook codebase contains 63 extracted functions across 2 files. Key extracted functionality includes: get_batch, estimate_loss, BigramLanguageModel, forward, generate, and more."
   },
   {
     id: 20,
@@ -602,7 +634,9 @@ export const githubProjects = [
         name: "MATLAB",
         percentage: 5.6
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Python codebase contains 4 extracted functions across 1 files. Key extracted functionality includes: LRN, call, get_config."
   },
   {
     id: 21,
@@ -618,7 +652,9 @@ export const githubProjects = [
         name: "Python",
         percentage: 100
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Python codebase contains 132 extracted functions across 23 files. Key extracted functionality includes: public_paths_labeled, official_paths_labeled, official_paths_tuning, add_mapping_to_json, natural_sort_key, and more."
   },
   {
     id: 22,
@@ -634,7 +670,9 @@ export const githubProjects = [
         name: "Python",
         percentage: 100
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Python codebase contains 21 extracted functions across 9 files. Key extracted functionality includes: readImagesTwice, readImagesTwice, readImagesTwice, readImagesTwice, soft_dice_loss, and more."
   },
   {
     id: 23,
@@ -662,7 +700,9 @@ export const githubProjects = [
         name: "Shell",
         percentage: 0
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Jupyter Notebook codebase contains 1296 extracted functions across 123 files. Key extracted functionality includes: bfs, retrieve_path, cal_connectivity, cal_fp_tp, cal_fp_tp, and more."
   },
   {
     id: 24,
@@ -678,7 +718,9 @@ export const githubProjects = [
         name: "MATLAB",
         percentage: 100
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This MATLAB codebase contains 5 extracted functions across 5 files. Key extracted functionality includes: borderDet, calculate_cortical_normal, d_runline, get_medial_axis, runline1."
   },
   {
     id: 25,
@@ -689,7 +731,8 @@ export const githubProjects = [
     forks: 0,
     githubUrl: "https://github.com/samik1986/MorseGAN_git",
     updatedAt: "2019-05-16T16:32:53Z",
-    languages: []
+    languages: [],
+    hasApiData: false
   },
   {
     id: 26,
@@ -713,7 +756,8 @@ export const githubProjects = [
         name: "CSS",
         percentage: 5.1
       }
-    ]
+    ],
+    hasApiData: false
   },
   {
     id: 27,
@@ -737,7 +781,9 @@ export const githubProjects = [
         name: "C",
         percentage: 0.6
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Python codebase contains 668 extracted functions across 42 files. Key extracted functionality includes: conv3x3, conv1x1, BasicBlock, Bottleneck, ResNet, and more."
   },
   {
     id: 28,
@@ -765,7 +811,9 @@ export const githubProjects = [
         name: "HTML",
         percentage: 0.1
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This JavaScript codebase contains 11 extracted functions across 9 files. Key extracted functionality includes: get_cat, get_cat, get_largest_image, find_pdf, find_fig_bbox, and more."
   },
   {
     id: 29,
@@ -781,7 +829,9 @@ export const githubProjects = [
         name: "MATLAB",
         percentage: 100
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This MATLAB codebase contains 1 extracted functions across 1 files. Key extracted functionality includes: trfm2processDet."
   },
   {
     id: 30,
@@ -797,7 +847,9 @@ export const githubProjects = [
         name: "Python",
         percentage: 100
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Python codebase contains 50 extracted functions across 19 files. Key extracted functionality includes: Solution, get_dataset, Solution, sigmoid, relu, and more."
   },
   {
     id: 31,
@@ -817,7 +869,9 @@ export const githubProjects = [
         name: "C++",
         percentage: 17
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Python codebase contains 131 extracted functions across 60 files. Key extracted functionality includes: Solution, addTwoNumbers, Solution, groupAnagrams, Solution, and more."
   },
   {
     id: 32,
@@ -828,7 +882,8 @@ export const githubProjects = [
     forks: 0,
     githubUrl: "https://github.com/samik1986/newTCNN",
     updatedAt: "2017-06-20T11:17:56Z",
-    languages: []
+    languages: [],
+    hasApiData: false
   },
   {
     id: 33,
@@ -839,7 +894,8 @@ export const githubProjects = [
     forks: 0,
     githubUrl: "https://github.com/samik1986/newWiNN",
     updatedAt: "2025-09-09T16:26:34Z",
-    languages: []
+    languages: [],
+    hasApiData: false
   },
   {
     id: 34,
@@ -850,7 +906,8 @@ export const githubProjects = [
     forks: 0,
     githubUrl: "https://github.com/samik1986/samik1986",
     updatedAt: "2022-12-07T20:36:54Z",
-    languages: []
+    languages: [],
+    hasApiData: false
   },
   {
     id: 35,
@@ -866,7 +923,9 @@ export const githubProjects = [
         name: "Python",
         percentage: 100
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Python codebase contains 10 extracted functions across 2 files. Key extracted functionality includes: MyLayer, build, call, compute_output_shape, euclidean_distance, and more."
   },
   {
     id: 36,
@@ -882,7 +941,9 @@ export const githubProjects = [
         name: "Python",
         percentage: 100
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Python codebase contains 2 extracted functions across 1 files. Key extracted functionality includes: read_from_pickle."
   },
   {
     id: 37,
@@ -893,7 +954,8 @@ export const githubProjects = [
     forks: 0,
     githubUrl: "https://github.com/samik1986/tranferNET",
     updatedAt: "2017-06-02T06:16:44Z",
-    languages: []
+    languages: [],
+    hasApiData: false
   },
   {
     id: 38,
@@ -904,7 +966,8 @@ export const githubProjects = [
     forks: 0,
     githubUrl: "https://github.com/samik1986/transferNET",
     updatedAt: "2017-06-20T10:57:40Z",
-    languages: []
+    languages: [],
+    hasApiData: false
   },
   {
     id: 39,
@@ -964,7 +1027,9 @@ export const githubProjects = [
         name: "M",
         percentage: 0
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This JavaScript codebase contains 266 extracted functions across 111 files. Key extracted functionality includes: create_line_volume, create_point_volume, create_reconstructed_line_volume, detect_3d_cells_blob, load_tiff_volume, and more."
   },
   {
     id: 40,
@@ -984,7 +1049,9 @@ export const githubProjects = [
         name: "Shell",
         percentage: 0.3
       }
-    ]
+    ],
+    hasApiData: true,
+    gist: "This Python codebase contains 7568 extracted functions across 332 files. Key extracted functionality includes: wt, y_hat, makepath, abs__file__, removeduppaths, and more."
   },
   {
     id: 41,
@@ -995,7 +1062,8 @@ export const githubProjects = [
     forks: 0,
     githubUrl: "https://github.com/twardlab/yolo_model",
     updatedAt: "2026-05-22T23:08:18Z",
-    languages: []
+    languages: [],
+    hasApiData: false
   },
   {
     id: 42,
@@ -1015,7 +1083,8 @@ export const githubProjects = [
         name: "Python",
         percentage: 37.4
       }
-    ]
+    ],
+    hasApiData: false
   },
   {
     id: 43,
@@ -1035,7 +1104,8 @@ export const githubProjects = [
         name: "Python",
         percentage: 37.9
       }
-    ]
+    ],
+    hasApiData: false
   },
   {
     id: 44,
@@ -1063,7 +1133,8 @@ export const githubProjects = [
         name: "MATLAB",
         percentage: 0
       }
-    ]
+    ],
+    hasApiData: false
   },
   {
     id: 45,
@@ -1091,7 +1162,8 @@ export const githubProjects = [
         name: "Batchfile",
         percentage: 0.4
       }
-    ]
+    ],
+    hasApiData: false
   },
   {
     id: 46,
@@ -1107,7 +1179,8 @@ export const githubProjects = [
         name: "Python",
         percentage: 100
       }
-    ]
+    ],
+    hasApiData: false
   },
   {
     id: 47,
@@ -1139,7 +1212,8 @@ export const githubProjects = [
         name: "Batchfile",
         percentage: 0.3
       }
-    ]
+    ],
+    hasApiData: false
   },
   {
     id: 48,
@@ -1251,7 +1325,8 @@ export const githubProjects = [
         name: "QuakeC",
         percentage: 0
       }
-    ]
+    ],
+    hasApiData: false
   },
   {
     id: 49,
@@ -1279,7 +1354,8 @@ export const githubProjects = [
         name: "Batchfile",
         percentage: 0
       }
-    ]
+    ],
+    hasApiData: false
   },
   {
     id: 50,
@@ -1290,7 +1366,8 @@ export const githubProjects = [
     forks: 0,
     githubUrl: "https://github.com/MitraLab-Organization/Skeleton_Dockerized",
     updatedAt: "2025-11-06T17:41:23Z",
-    languages: []
+    languages: [],
+    hasApiData: false
   },
   {
     id: 51,
@@ -1334,6 +1411,7 @@ export const githubProjects = [
         name: "Go",
         percentage: 0
       }
-    ]
+    ],
+    hasApiData: false
   }
 ];

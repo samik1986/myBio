@@ -1,0 +1,28 @@
+{
+  "name": "mouse-muscle-atlas",
+  "url": "https://github.com/MitraLab-Organization/mouse-muscle-atlas",
+  "description": "",
+  "language": "Makefile",
+  "all_files": {
+    "docs/ontology-tree.html": {
+      "filepath": "docs/ontology-tree.html",
+      "size": 9087,
+      "summary": "Frontend layout and styling templates."
+    },
+    "scripts/owl_to_tree.py": {
+      "filepath": "scripts/owl_to_tree.py",
+      "size": 4720,
+      "summary": "Core application logic or configuration."
+    },
+    "src/ontology/run.sh": {
+      "filepath": "src/ontology/run.sh",
+      "size": 6068,
+      "summary": "Shell script for automation or deployment."
+    },
+    "src/scripts/run-command.sh": {
+      "filepath": "src/scripts/run-command.sh",
+      "size": 186,
+      "summary": "Shell script for automation or deployment."
+    }
+  }
+}

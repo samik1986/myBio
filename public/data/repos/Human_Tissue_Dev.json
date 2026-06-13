@@ -1,0 +1,118 @@
+{
+  "name": "Human_Tissue_Dev",
+  "url": "https://github.com/MitraLab-Organization/Human_Tissue_Dev",
+  "description": "Development projects related to wet lab processing of human tissue",
+  "language": "C++",
+  "all_files": {
+    "3_Staining/Code/Legacy/LegacyStainer.py": {
+      "filepath": "3_Staining/Code/Legacy/LegacyStainer.py",
+      "size": 3542,
+      "summary": "Core application logic or configuration."
+    },
+    "3_Staining/Code/Legacy/csViewer.py": {
+      "filepath": "3_Staining/Code/Legacy/csViewer.py",
+      "size": 1378,
+      "summary": "User interface components and rendering logic."
+    },
+    "3_Staining/Code/Legacy/radioButtonTest.py": {
+      "filepath": "3_Staining/Code/Legacy/radioButtonTest.py",
+      "size": 1471,
+      "summary": "Contains testing or evaluation scripts."
+    },
+    "3_Staining/Code/Legacy/size_test.py": {
+      "filepath": "3_Staining/Code/Legacy/size_test.py",
+      "size": 1352,
+      "summary": "Contains testing or evaluation scripts."
+    },
+    "3_Staining/Code/Legacy/widgetTime.py": {
+      "filepath": "3_Staining/Code/Legacy/widgetTime.py",
+      "size": 1025,
+      "summary": "Core application logic or configuration."
+    },
+    "3_Staining/Code/Stainer.py": {
+      "filepath": "3_Staining/Code/Stainer.py",
+      "size": 27251,
+      "summary": "Core application logic or configuration."
+    },
+    "3_Staining/Code/stainerControl.py": {
+      "filepath": "3_Staining/Code/stainerControl.py",
+      "size": 3659,
+      "summary": "Core application logic or configuration."
+    },
+    "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/AISLER-2Layer/meta/info.html": {
+      "filepath": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/AISLER-2Layer/meta/info.html",
+      "size": 639,
+      "summary": "Frontend layout and styling templates."
+    },
+    "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/AISLER-4Layer/meta/info.html": {
+      "filepath": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/AISLER-4Layer/meta/info.html",
+      "size": 639,
+      "summary": "Frontend layout and styling templates."
+    },
+    "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Alchitry_Au/meta/info.html": {
+      "filepath": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Alchitry_Au/meta/info.html",
+      "size": 788,
+      "summary": "Frontend layout and styling templates."
+    },
+    "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/JLCPCB_1-2Layer/meta/info.html": {
+      "filepath": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/JLCPCB_1-2Layer/meta/info.html",
+      "size": 515,
+      "summary": "Frontend layout and styling templates."
+    },
+    "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/JLCPCB_Multilayer/meta/info.html": {
+      "filepath": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/JLCPCB_Multilayer/meta/info.html",
+      "size": 518,
+      "summary": "Frontend layout and styling templates."
+    },
+    "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/OshPark-2Layer/meta/info.html": {
+      "filepath": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/OshPark-2Layer/meta/info.html",
+      "size": 375,
+      "summary": "Frontend layout and styling templates."
+    },
+    "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/OshPark-4Layer/meta/info.html": {
+      "filepath": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/OshPark-4Layer/meta/info.html",
+      "size": 517,
+      "summary": "Frontend layout and styling templates."
+    },
+    "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/PCBWay/meta/info.html": {
+      "filepath": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/PCBWay/meta/info.html",
+      "size": 460,
+      "summary": "Frontend layout and styling templates."
+    },
+    "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 10 layer Board/meta/info.html": {
+      "filepath": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 10 layer Board/meta/info.html",
+      "size": 1465,
+      "summary": "Frontend layout and styling templates."
+    },
+    "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 12 layer Board/meta/info.html": {
+      "filepath": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 12 layer Board/meta/info.html",
+      "size": 1465,
+      "summary": "Frontend layout and styling templates."
+    },
+    "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 2 layer Board/meta/info.html": {
+      "filepath": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 2 layer Board/meta/info.html",
+      "size": 1462,
+      "summary": "Frontend layout and styling templates."
+    },
+    "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 4 layer Board/meta/info.html": {
+      "filepath": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 4 layer Board/meta/info.html",
+      "size": 1462,
+      "summary": "Frontend layout and styling templates."
+    },
+    "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 6 layer Board/meta/info.html": {
+      "filepath": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 6 layer Board/meta/info.html",
+      "size": 1461,
+      "summary": "Frontend layout and styling templates."
+    },
+    "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 8 layer Board/meta/info.html": {
+      "filepath": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 8 layer Board/meta/info.html",
+      "size": 1462,
+      "summary": "Frontend layout and styling templates."
+    },
+    "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/UCDavis/meta/info.html": {
+      "filepath": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/UCDavis/meta/info.html",
+      "size": 485,
+      "summary": "Frontend layout and styling templates."
+    }
+  }
+}

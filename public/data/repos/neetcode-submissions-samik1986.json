@@ -1,1 +1,1101 @@
-{"name":"neetcode-submissions-samik1986","url":"https://github.com/samik1986/neetcode-submissions-samik1986","description":"My NeetCode.io problem submissions\n\n**Codebase Intelligence:** This Python codebase contains 131 extracted functions across 60 files. Key extracted functionality includes: Solution, addTwoNumbers, Solution, groupAnagrams, Solution, and more.","language":"Python","functions_extracted":{"Data Structures & Algorithms\\add-two-numbers\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"addTwoNumbers","docstring":""}],"Data Structures & Algorithms\\anagram-groups\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"groupAnagrams","docstring":""}],"Data Structures & Algorithms\\buy-and-sell-crypto\\submission-2.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"maxProfit","docstring":""}],"Data Structures & Algorithms\\climbing-stairs\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"climbStairs","docstring":""}],"Data Structures & Algorithms\\count-paths\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"uniquePaths","docstring":""},{"type":"function","name":"dfs","docstring":""}],"Data Structures & Algorithms\\daily-temperatures\\submission-0.cpp":[{"type":"function","name":"dailyTemperatures","docstring":""}],"Data Structures & Algorithms\\depth-of-binary-tree\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"maxDepth","docstring":""}],"Data Structures & Algorithms\\depth-of-binary-tree\\submission-1.cpp":[{"type":"function","name":"maxDepth","docstring":""}],"Data Structures & Algorithms\\duplicate-integer\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"hasDuplicate","docstring":""}],"Data Structures & Algorithms\\evaluate-reverse-polish-notation\\submission-0.cpp":[{"type":"function","name":"evalRPN","docstring":""}],"Data Structures & Algorithms\\find-minimum-in-rotated-sorted-array\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"findMin","docstring":""}],"Data Structures & Algorithms\\find-target-in-rotated-sorted-array\\submission-1.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"search","docstring":""},{"type":"function","name":"binary_search","docstring":""}],"Data Structures & Algorithms\\house-robber\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"rob","docstring":""}],"Data Structures & Algorithms\\house-robber-ii\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"rob","docstring":""},{"type":"function","name":"lin_rob","docstring":""}],"Data Structures & Algorithms\\implement-prefix-tree\\submission-0.py":[{"type":"class","name":"PrefixTreeNode","docstring":""},{"type":"class","name":"PrefixTree","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"insert","docstring":""},{"type":"function","name":"search","docstring":""},{"type":"function","name":"startsWith","docstring":""}],"Data Structures & Algorithms\\invert-a-binary-tree\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"invertTree","docstring":""}],"Data Structures & Algorithms\\is-anagram\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"isAnagram","docstring":""}],"Data Structures & Algorithms\\is-palindrome\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"alphaNum","docstring":""},{"type":"function","name":"isPalindrome","docstring":""}],"Data Structures & Algorithms\\level-order-traversal-of-binary-tree\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"levelOrder","docstring":""}],"Data Structures & Algorithms\\linked-list-cycle-detection\\submission-0.py":[{"type":"class","name":"ListNode","docstring":""},{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"hasCycle","docstring":""}],"Data Structures & Algorithms\\longest-common-prefix\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"longestCommonPrefix","docstring":""}],"Data Structures & Algorithms\\longest-common-subsequence\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"longestCommonSubsequence","docstring":""}],"Data Structures & Algorithms\\longest-consecutive-sequence\\submission-2.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"longestConsecutive","docstring":""}],"Data Structures & Algorithms\\longest-repeating-substring-with-replacement\\submission-2.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"characterReplacement","docstring":""}],"Data Structures & Algorithms\\longest-substring-without-duplicates\\submission-8.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"lengthOfLongestSubstring","docstring":""}],"Data Structures & Algorithms\\longest-substring-without-duplicates\\submission-9.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"lengthOfLongestSubstring","docstring":""}],"Data Structures & Algorithms\\lowest-common-ancestor-in-binary-search-tree\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"lowestCommonAncestor","docstring":""}],"Data Structures & Algorithms\\max-water-container\\submission-1.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"maxArea","docstring":""}],"Data Structures & Algorithms\\median-of-two-sorted-arrays\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"findMedianSortedArrays","docstring":""}],"Data Structures & Algorithms\\merge-k-sorted-linked-lists\\submission-0.py":[{"type":"class","name":"ListNode","docstring":""},{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"mergeKLists","docstring":""}],"Data Structures & Algorithms\\merge-two-sorted-linked-lists\\submission-0.py":[{"type":"class","name":"ListNode","docstring":""},{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"mergeTwoLists","docstring":""}],"Data Structures & Algorithms\\minimum-path-sum\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"minPathSum","docstring":""}],"Data Structures & Algorithms\\minimum-stack\\submission-0.cpp":[{"type":"function","name":"push","docstring":""},{"type":"function","name":"pop","docstring":""},{"type":"function","name":"top","docstring":""},{"type":"function","name":"getMin","docstring":""}],"Data Structures & Algorithms\\number-of-one-bits\\submission-0.cpp":[{"type":"function","name":"hammingWeight","docstring":""}],"Data Structures & Algorithms\\palindrome-number\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"isPalindrome","docstring":""}],"Data Structures & Algorithms\\permutation-string\\submission-0.cpp":[{"type":"function","name":"checkInclusion","docstring":""}],"Data Structures & Algorithms\\pow-x-n\\submission-0.cpp":[{"type":"function","name":"myPow","docstring":""}],"Data Structures & Algorithms\\products-of-array-discluding-self\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"productExceptSelf","docstring":""}],"Data Structures & Algorithms\\remove-node-from-end-of-linked-list\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"removeNthFromEnd","docstring":""}],"Data Structures & Algorithms\\reorder-linked-list\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"reorderList","docstring":""}],"Data Structures & Algorithms\\reorder-linked-list\\submission-1.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"reorderList","docstring":""}],"Data Structures & Algorithms\\reverse-a-linked-list\\submission-0.py":[{"type":"class","name":"ListNode","docstring":""},{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"reverseList","docstring":""}],"Data Structures & Algorithms\\reverse-bits\\submission-0.cpp":[{"type":"function","name":"reverseBits","docstring":""}],"Data Structures & Algorithms\\reverse-integer\\submission-1.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"reverse","docstring":""}],"Data Structures & Algorithms\\reverse-string\\submission-0.cpp":[{"type":"function","name":"reverseString","docstring":""}],"Data Structures & Algorithms\\rotate-matrix\\submission-0.cpp":[{"type":"function","name":"rotate","docstring":""}],"Data Structures & Algorithms\\same-binary-tree\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"isSameTree","docstring":""}],"Data Structures & Algorithms\\same-binary-tree\\submission-1.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"isSameTree","docstring":""}],"Data Structures & Algorithms\\search-in-rotated-sorted-array-ii\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"search","docstring":""}],"Data Structures & Algorithms\\single-number\\submission-0.cpp":[{"type":"function","name":"singleNumber","docstring":""}],"Data Structures & Algorithms\\string-encode-and-decode\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"encode","docstring":""},{"type":"function","name":"decode","docstring":""}],"Data Structures & Algorithms\\subtree-of-a-binary-tree\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"isSubtree","docstring":""},{"type":"function","name":"isSameTree","docstring":""}],"Data Structures & Algorithms\\top-k-elements-in-list\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"topKFrequent","docstring":""}],"Data Structures & Algorithms\\trapping-rain-water\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"trap","docstring":""}],"Data Structures & Algorithms\\trapping-rain-water\\submission-1.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"trap","docstring":""}],"Data Structures & Algorithms\\trapping-rain-water\\submission-2.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"trap","docstring":""}],"Data Structures & Algorithms\\triangle\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"minimumTotal","docstring":""}],"Data Structures & Algorithms\\two-integer-sum\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"twoSum","docstring":""}],"Data Structures & Algorithms\\valid-binary-search-tree\\submission-0.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"isValidBST","docstring":""}],"Data Structures & Algorithms\\validate-parentheses\\submission-4.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"isValid","docstring":""}]},"updated_at":"2026-05-29T14:07:24Z","languages":[{"name":"Python","percentage":83.0},{"name":"C++","percentage":17.0}]}
+{
+  "name": "neetcode-submissions-samik1986",
+  "url": "https://github.com/samik1986/neetcode-submissions-samik1986",
+  "description": "My NeetCode.io problem submissions",
+  "language": "Python",
+  "functions_extracted": {
+    "Data Structures & Algorithms\\add-two-numbers\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "addTwoNumbers",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\anagram-groups\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "groupAnagrams",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\buy-and-sell-crypto\\submission-2.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "maxProfit",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\climbing-stairs\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "climbStairs",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\count-paths\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "uniquePaths",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "dfs",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\daily-temperatures\\submission-0.cpp": [
+      {
+        "type": "function",
+        "name": "dailyTemperatures",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\depth-of-binary-tree\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "maxDepth",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\depth-of-binary-tree\\submission-1.cpp": [
+      {
+        "type": "function",
+        "name": "maxDepth",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\duplicate-integer\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "hasDuplicate",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\evaluate-reverse-polish-notation\\submission-0.cpp": [
+      {
+        "type": "function",
+        "name": "evalRPN",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\find-minimum-in-rotated-sorted-array\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "findMin",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\find-target-in-rotated-sorted-array\\submission-1.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "search",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "binary_search",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\house-robber\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "rob",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\house-robber-ii\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "rob",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "lin_rob",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\implement-prefix-tree\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "PrefixTreeNode",
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "PrefixTree",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "insert",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "search",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "startsWith",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\invert-a-binary-tree\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "invertTree",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\is-anagram\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "isAnagram",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\is-palindrome\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "alphaNum",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "isPalindrome",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\level-order-traversal-of-binary-tree\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "levelOrder",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\linked-list-cycle-detection\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "ListNode",
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "hasCycle",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\longest-common-prefix\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "longestCommonPrefix",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\longest-common-subsequence\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "longestCommonSubsequence",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\longest-consecutive-sequence\\submission-2.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "longestConsecutive",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\longest-repeating-substring-with-replacement\\submission-2.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "characterReplacement",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\longest-substring-without-duplicates\\submission-8.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "lengthOfLongestSubstring",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\longest-substring-without-duplicates\\submission-9.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "lengthOfLongestSubstring",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\lowest-common-ancestor-in-binary-search-tree\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "lowestCommonAncestor",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\max-water-container\\submission-1.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "maxArea",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\median-of-two-sorted-arrays\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "findMedianSortedArrays",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\merge-k-sorted-linked-lists\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "ListNode",
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "mergeKLists",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\merge-two-sorted-linked-lists\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "ListNode",
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "mergeTwoLists",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\minimum-path-sum\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "minPathSum",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\minimum-stack\\submission-0.cpp": [
+      {
+        "type": "function",
+        "name": "push",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "pop",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "top",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "getMin",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\number-of-one-bits\\submission-0.cpp": [
+      {
+        "type": "function",
+        "name": "hammingWeight",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\palindrome-number\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "isPalindrome",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\permutation-string\\submission-0.cpp": [
+      {
+        "type": "function",
+        "name": "checkInclusion",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\pow-x-n\\submission-0.cpp": [
+      {
+        "type": "function",
+        "name": "myPow",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\products-of-array-discluding-self\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "productExceptSelf",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\remove-node-from-end-of-linked-list\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "removeNthFromEnd",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\reorder-linked-list\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "reorderList",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\reorder-linked-list\\submission-1.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "reorderList",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\reverse-a-linked-list\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "ListNode",
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "reverseList",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\reverse-bits\\submission-0.cpp": [
+      {
+        "type": "function",
+        "name": "reverseBits",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\reverse-integer\\submission-1.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "reverse",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\reverse-string\\submission-0.cpp": [
+      {
+        "type": "function",
+        "name": "reverseString",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\rotate-matrix\\submission-0.cpp": [
+      {
+        "type": "function",
+        "name": "rotate",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\same-binary-tree\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "isSameTree",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\same-binary-tree\\submission-1.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "isSameTree",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\search-in-rotated-sorted-array-ii\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "search",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\single-number\\submission-0.cpp": [
+      {
+        "type": "function",
+        "name": "singleNumber",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\string-encode-and-decode\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "encode",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "decode",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\subtree-of-a-binary-tree\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "isSubtree",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "isSameTree",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\top-k-elements-in-list\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "topKFrequent",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\trapping-rain-water\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "trap",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\trapping-rain-water\\submission-1.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "trap",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\trapping-rain-water\\submission-2.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "trap",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\triangle\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "minimumTotal",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\two-integer-sum\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "twoSum",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\valid-binary-search-tree\\submission-0.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "isValidBST",
+        "docstring": ""
+      }
+    ],
+    "Data Structures & Algorithms\\validate-parentheses\\submission-4.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "isValid",
+        "docstring": ""
+      }
+    ]
+  },
+  "updated_at": "2026-05-29T14:07:24Z",
+  "languages": [
+    {
+      "name": "Python",
+      "percentage": 83
+    },
+    {
+      "name": "C++",
+      "percentage": 17
+    }
+  ],
+  "all_files": {
+    "Data Structures & Algorithms/add-two-numbers/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/add-two-numbers/submission-0.py",
+      "size": 600,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/anagram-groups/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/anagram-groups/submission-0.py",
+      "size": 529,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/buy-and-sell-crypto/submission-2.py": {
+      "filepath": "Data Structures & Algorithms/buy-and-sell-crypto/submission-2.py",
+      "size": 406,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/climbing-stairs/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/climbing-stairs/submission-0.py",
+      "size": 241,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/count-paths/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/count-paths/submission-0.py",
+      "size": 271,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/daily-temperatures/submission-0.cpp": {
+      "filepath": "Data Structures & Algorithms/daily-temperatures/submission-0.cpp",
+      "size": 442,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/depth-of-binary-tree/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/depth-of-binary-tree/submission-0.py",
+      "size": 350,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/depth-of-binary-tree/submission-1.cpp": {
+      "filepath": "Data Structures & Algorithms/depth-of-binary-tree/submission-1.cpp",
+      "size": 555,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/duplicate-integer/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/duplicate-integer/submission-0.py",
+      "size": 239,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/evaluate-reverse-polish-notation/submission-0.cpp": {
+      "filepath": "Data Structures & Algorithms/evaluate-reverse-polish-notation/submission-0.cpp",
+      "size": 770,
+      "summary": "Contains testing or evaluation scripts."
+    },
+    "Data Structures & Algorithms/find-minimum-in-rotated-sorted-array/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/find-minimum-in-rotated-sorted-array/submission-0.py",
+      "size": 437,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/find-target-in-rotated-sorted-array/submission-1.py": {
+      "filepath": "Data Structures & Algorithms/find-target-in-rotated-sorted-array/submission-1.py",
+      "size": 817,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/house-robber-ii/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/house-robber-ii/submission-0.py",
+      "size": 605,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/house-robber/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/house-robber/submission-0.py",
+      "size": 378,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/implement-prefix-tree/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/implement-prefix-tree/submission-0.py",
+      "size": 883,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/invert-a-binary-tree/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/invert-a-binary-tree/submission-0.py",
+      "size": 289,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/is-anagram/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/is-anagram/submission-0.py",
+      "size": 154,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/is-palindrome/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/is-palindrome/submission-0.py",
+      "size": 552,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/level-order-traversal-of-binary-tree/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/level-order-traversal-of-binary-tree/submission-0.py",
+      "size": 733,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/linked-list-cycle-detection/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/linked-list-cycle-detection/submission-0.py",
+      "size": 420,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/longest-common-prefix/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/longest-common-prefix/submission-0.py",
+      "size": 370,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/longest-common-subsequence/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/longest-common-subsequence/submission-0.py",
+      "size": 420,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/longest-consecutive-sequence/submission-2.py": {
+      "filepath": "Data Structures & Algorithms/longest-consecutive-sequence/submission-2.py",
+      "size": 937,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/longest-repeating-substring-with-replacement/submission-2.py": {
+      "filepath": "Data Structures & Algorithms/longest-repeating-substring-with-replacement/submission-2.py",
+      "size": 396,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/longest-substring-without-duplicates/submission-8.py": {
+      "filepath": "Data Structures & Algorithms/longest-substring-without-duplicates/submission-8.py",
+      "size": 753,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/longest-substring-without-duplicates/submission-9.py": {
+      "filepath": "Data Structures & Algorithms/longest-substring-without-duplicates/submission-9.py",
+      "size": 753,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/lowest-common-ancestor-in-binary-search-tree/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/lowest-common-ancestor-in-binary-search-tree/submission-0.py",
+      "size": 370,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/max-water-container/submission-1.py": {
+      "filepath": "Data Structures & Algorithms/max-water-container/submission-1.py",
+      "size": 394,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/median-of-two-sorted-arrays/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/median-of-two-sorted-arrays/submission-0.py",
+      "size": 525,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/merge-k-sorted-linked-lists/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/merge-k-sorted-linked-lists/submission-0.py",
+      "size": 781,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/merge-two-sorted-linked-lists/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/merge-two-sorted-linked-lists/submission-0.py",
+      "size": 591,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/middle-of-the-linked-list/submission-4.cpp": {
+      "filepath": "Data Structures & Algorithms/middle-of-the-linked-list/submission-4.cpp",
+      "size": 605,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/minimum-path-sum/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/minimum-path-sum/submission-0.py",
+      "size": 397,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/minimum-stack/submission-0.cpp": {
+      "filepath": "Data Structures & Algorithms/minimum-stack/submission-0.cpp",
+      "size": 613,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/number-of-one-bits/submission-0.cpp": {
+      "filepath": "Data Structures & Algorithms/number-of-one-bits/submission-0.cpp",
+      "size": 256,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/palindrome-number/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/palindrome-number/submission-0.py",
+      "size": 257,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/permutation-string/submission-0.cpp": {
+      "filepath": "Data Structures & Algorithms/permutation-string/submission-0.cpp",
+      "size": 433,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/pow-x-n/submission-0.cpp": {
+      "filepath": "Data Structures & Algorithms/pow-x-n/submission-0.cpp",
+      "size": 266,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/products-of-array-discluding-self/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/products-of-array-discluding-self/submission-0.py",
+      "size": 704,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/remove-node-from-end-of-linked-list/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/remove-node-from-end-of-linked-list/submission-0.py",
+      "size": 398,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/reorder-linked-list/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/reorder-linked-list/submission-0.py",
+      "size": 662,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/reorder-linked-list/submission-1.py": {
+      "filepath": "Data Structures & Algorithms/reorder-linked-list/submission-1.py",
+      "size": 662,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/reverse-a-linked-list/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/reverse-a-linked-list/submission-0.py",
+      "size": 460,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/reverse-bits/submission-0.cpp": {
+      "filepath": "Data Structures & Algorithms/reverse-bits/submission-0.cpp",
+      "size": 236,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/reverse-integer/submission-1.py": {
+      "filepath": "Data Structures & Algorithms/reverse-integer/submission-1.py",
+      "size": 646,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/reverse-string/submission-0.cpp": {
+      "filepath": "Data Structures & Algorithms/reverse-string/submission-0.cpp",
+      "size": 241,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/rotate-matrix/submission-0.cpp": {
+      "filepath": "Data Structures & Algorithms/rotate-matrix/submission-0.cpp",
+      "size": 338,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/same-binary-tree/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/same-binary-tree/submission-0.py",
+      "size": 395,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/same-binary-tree/submission-1.py": {
+      "filepath": "Data Structures & Algorithms/same-binary-tree/submission-1.py",
+      "size": 382,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/search-in-rotated-sorted-array-ii/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/search-in-rotated-sorted-array-ii/submission-0.py",
+      "size": 304,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/single-number/submission-0.cpp": {
+      "filepath": "Data Structures & Algorithms/single-number/submission-0.cpp",
+      "size": 329,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/string-encode-and-decode/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/string-encode-and-decode/submission-0.py",
+      "size": 609,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/subtree-of-a-binary-tree/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/subtree-of-a-binary-tree/submission-0.py",
+      "size": 698,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/top-k-elements-in-list/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/top-k-elements-in-list/submission-0.py",
+      "size": 779,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/trapping-rain-water/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/trapping-rain-water/submission-0.py",
+      "size": 476,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/trapping-rain-water/submission-1.py": {
+      "filepath": "Data Structures & Algorithms/trapping-rain-water/submission-1.py",
+      "size": 476,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/trapping-rain-water/submission-2.py": {
+      "filepath": "Data Structures & Algorithms/trapping-rain-water/submission-2.py",
+      "size": 476,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/triangle/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/triangle/submission-0.py",
+      "size": 404,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/two-integer-sum/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/two-integer-sum/submission-0.py",
+      "size": 303,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/valid-binary-search-tree/submission-0.py": {
+      "filepath": "Data Structures & Algorithms/valid-binary-search-tree/submission-0.py",
+      "size": 422,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "Data Structures & Algorithms/validate-parentheses/submission-4.py": {
+      "filepath": "Data Structures & Algorithms/validate-parentheses/submission-4.py",
+      "size": 776,
+      "summary": "Data loading and preprocessing pipeline."
+    }
+  }
+}

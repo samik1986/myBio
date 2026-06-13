@@ -1,0 +1,233 @@
+{
+  "name": "mouse-marmoset-comparison-app",
+  "url": "https://github.com/samik1986/mouse-marmoset-comparison-app",
+  "description": "",
+  "language": "TypeScript",
+  "all_files": {
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_common.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_common.js",
+      "size": 4067,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_common_http.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_common_http.js",
+      "size": 1920,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_core.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_core.js",
+      "size": 25365,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_forms.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_forms.js",
+      "size": 227013,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_platform-browser.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_platform-browser.js",
+      "size": 1866,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_router.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_router.js",
+      "size": 218830,
+      "summary": "API routes and backend controllers."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/chunk-D6PF24LJ.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/chunk-D6PF24LJ.js",
+      "size": 93811,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/chunk-HNZBTQQY.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/chunk-HNZBTQQY.js",
+      "size": 184387,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/chunk-I3APFXH3.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/chunk-I3APFXH3.js",
+      "size": 1094287,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/chunk-RDHXSB74.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/chunk-RDHXSB74.js",
+      "size": 753,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/chunk-Z44F37CK.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/chunk-Z44F37CK.js",
+      "size": 65357,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_common.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_common.js",
+      "size": 4184,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_common_http.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_common_http.js",
+      "size": 2037,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_core.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_core.js",
+      "size": 25482,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_forms.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_forms.js",
+      "size": 227316,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_platform-browser.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_platform-browser.js",
+      "size": 1983,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_platform-server_init.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_platform-server_init.js",
+      "size": 493125,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_router.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_router.js",
+      "size": 3527,
+      "summary": "API routes and backend controllers."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_ssr.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_ssr.js",
+      "size": 1275,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_ssr_node.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_ssr_node.js",
+      "size": 11373,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-6DU2HRTW.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-6DU2HRTW.js",
+      "size": 3050,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-6XPXFVTG.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-6XPXFVTG.js",
+      "size": 1334107,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-BTYALREI.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-BTYALREI.js",
+      "size": 95457,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-FITUF5IC.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-FITUF5IC.js",
+      "size": 179392,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-NFBLRUPM.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-NFBLRUPM.js",
+      "size": 222962,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-T7ZA3WRX.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-T7ZA3WRX.js",
+      "size": 922504,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-WXMOVWUU.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-WXMOVWUU.js",
+      "size": 65541,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-YQZF7T32.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-YQZF7T32.js",
+      "size": 841,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/express.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/express.js",
+      "size": 1256629,
+      "summary": "Core application logic or configuration."
+    },
+    ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/xhr2-E5RTESSH.js": {
+      "filepath": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/xhr2-E5RTESSH.js",
+      "size": 40091,
+      "summary": "Core application logic or configuration."
+    },
+    "src/app/app.component.css": {
+      "filepath": "src/app/app.component.css",
+      "size": 1637,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/app/app.component.html": {
+      "filepath": "src/app/app.component.html",
+      "size": 1964,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/app/app.component.ts": {
+      "filepath": "src/app/app.component.ts",
+      "size": 23372,
+      "summary": "User interface components and rendering logic."
+    },
+    "src/app/app.config.server.ts": {
+      "filepath": "src/app/app.config.server.ts",
+      "size": 426,
+      "summary": "Core application logic or configuration."
+    },
+    "src/app/app.config.ts": {
+      "filepath": "src/app/app.config.ts",
+      "size": 596,
+      "summary": "Core application logic or configuration."
+    },
+    "src/app/app.module.ts": {
+      "filepath": "src/app/app.module.ts",
+      "size": 531,
+      "summary": "Core application logic or configuration."
+    },
+    "src/app/app.routes.server.ts": {
+      "filepath": "src/app/app.routes.server.ts",
+      "size": 166,
+      "summary": "API routes and backend controllers."
+    },
+    "src/app/app.routes.ts": {
+      "filepath": "src/app/app.routes.ts",
+      "size": 77,
+      "summary": "API routes and backend controllers."
+    },
+    "src/app/app.spec.ts": {
+      "filepath": "src/app/app.spec.ts",
+      "size": 849,
+      "summary": "Core application logic or configuration."
+    },
+    "src/app/data.service.ts": {
+      "filepath": "src/app/data.service.ts",
+      "size": 1388,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "src/index.html": {
+      "filepath": "src/index.html",
+      "size": 312,
+      "summary": "Frontend layout and styling templates."
+    },
+    "src/main.server.ts": {
+      "filepath": "src/main.server.ts",
+      "size": 320,
+      "summary": "Core application logic or configuration."
+    },
+    "src/main.ts": {
+      "filepath": "src/main.ts",
+      "size": 250,
+      "summary": "Core application logic or configuration."
+    },
+    "src/server.ts": {
+      "filepath": "src/server.ts",
+      "size": 1609,
+      "summary": "Core application logic or configuration."
+    },
+    "src/styles.css": {
+      "filepath": "src/styles.css",
+      "size": 80,
+      "summary": "Frontend layout and styling templates."
+    }
+  }
+}

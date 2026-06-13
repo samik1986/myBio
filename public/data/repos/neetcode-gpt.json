@@ -1,1 +1,415 @@
-{"name":"neetcode-gpt","url":"https://github.com/samik1986/neetcode-gpt","description":"GPT built from scratch \u00e2\u20ac\u201d assembled from my NeetCode ML course submissions\n\n**Codebase Intelligence:** This Python codebase contains 50 extracted functions across 19 files. Key extracted functionality includes: Solution, get_dataset, Solution, sigmoid, relu, and more.","language":"Python","functions_extracted":{"data\\nlp_preprocessing.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"get_dataset","docstring":""}],"foundations\\activations.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"sigmoid","docstring":""},{"type":"function","name":"relu","docstring":""}],"foundations\\backprop.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"backward","docstring":""}],"foundations\\digit_classifier.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"forward","docstring":""}],"foundations\\gradient_descent.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"get_minimizer","docstring":""}],"foundations\\linear_regression.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"get_model_prediction","docstring":""},{"type":"function","name":"get_error","docstring":""}],"foundations\\linear_regression_training.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"get_derivative","docstring":""},{"type":"function","name":"get_model_prediction","docstring":""},{"type":"function","name":"train_model","docstring":""}],"foundations\\loss.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"binary_cross_entropy","docstring":""},{"type":"function","name":"categorical_cross_entropy","docstring":""}],"foundations\\mlp.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"forward","docstring":""}],"foundations\\multi_layer_backprop.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"forward_and_backward","docstring":""}],"foundations\\neuron.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"forward","docstring":""}],"foundations\\pytorch_basics.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"reshape","docstring":""},{"type":"function","name":"average","docstring":""},{"type":"function","name":"concatenate","docstring":""},{"type":"function","name":"get_loss","docstring":""}],"foundations\\sentiment.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"forward","docstring":""}],"foundations\\softmax.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"softmax","docstring":""}],"foundations\\training_loop.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"train","docstring":""}],"foundations\\weight_init.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"xavier_init","docstring":""},{"type":"function","name":"kaiming_init","docstring":""},{"type":"function","name":"check_activations","docstring":""}],"model\\batch_normalization.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"batch_norm","docstring":""}],"model\\embeddings.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"lookup","docstring":""}],"model\\normalization.py":[{"type":"class","name":"Solution","docstring":""},{"type":"function","name":"forward","docstring":""}]},"updated_at":"2026-04-27T10:41:44Z","languages":[{"name":"Python","percentage":100.0}]}
+{
+  "name": "neetcode-gpt",
+  "url": "https://github.com/samik1986/neetcode-gpt",
+  "description": "GPT built from scratch \u2014 assembled from my NeetCode ML course submissions",
+  "language": "Python",
+  "functions_extracted": {
+    "data\\nlp_preprocessing.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_dataset",
+        "docstring": ""
+      }
+    ],
+    "foundations\\activations.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "sigmoid",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "relu",
+        "docstring": ""
+      }
+    ],
+    "foundations\\backprop.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "backward",
+        "docstring": ""
+      }
+    ],
+    "foundations\\digit_classifier.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "forward",
+        "docstring": ""
+      }
+    ],
+    "foundations\\gradient_descent.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_minimizer",
+        "docstring": ""
+      }
+    ],
+    "foundations\\linear_regression.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_model_prediction",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_error",
+        "docstring": ""
+      }
+    ],
+    "foundations\\linear_regression_training.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_derivative",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_model_prediction",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "train_model",
+        "docstring": ""
+      }
+    ],
+    "foundations\\loss.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "binary_cross_entropy",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "categorical_cross_entropy",
+        "docstring": ""
+      }
+    ],
+    "foundations\\mlp.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "forward",
+        "docstring": ""
+      }
+    ],
+    "foundations\\multi_layer_backprop.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "forward_and_backward",
+        "docstring": ""
+      }
+    ],
+    "foundations\\neuron.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "forward",
+        "docstring": ""
+      }
+    ],
+    "foundations\\pytorch_basics.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "reshape",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "average",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "concatenate",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_loss",
+        "docstring": ""
+      }
+    ],
+    "foundations\\sentiment.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "forward",
+        "docstring": ""
+      }
+    ],
+    "foundations\\softmax.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "softmax",
+        "docstring": ""
+      }
+    ],
+    "foundations\\training_loop.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "train",
+        "docstring": ""
+      }
+    ],
+    "foundations\\weight_init.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "xavier_init",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "kaiming_init",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "check_activations",
+        "docstring": ""
+      }
+    ],
+    "model\\batch_normalization.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "batch_norm",
+        "docstring": ""
+      }
+    ],
+    "model\\embeddings.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "lookup",
+        "docstring": ""
+      }
+    ],
+    "model\\normalization.py": [
+      {
+        "type": "class",
+        "name": "Solution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "forward",
+        "docstring": ""
+      }
+    ]
+  },
+  "updated_at": "2026-04-27T10:41:44Z",
+  "languages": [
+    {
+      "name": "Python",
+      "percentage": 100
+    }
+  ],
+  "all_files": {
+    "data/__init__.py": {
+      "filepath": "data/__init__.py",
+      "size": 155,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "data/nlp_preprocessing.py": {
+      "filepath": "data/nlp_preprocessing.py",
+      "size": 954,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "foundations/__init__.py": {
+      "filepath": "foundations/__init__.py",
+      "size": 491,
+      "summary": "Core application logic or configuration."
+    },
+    "foundations/activations.py": {
+      "filepath": "foundations/activations.py",
+      "size": 476,
+      "summary": "Core application logic or configuration."
+    },
+    "foundations/backprop.py": {
+      "filepath": "foundations/backprop.py",
+      "size": 873,
+      "summary": "Core application logic or configuration."
+    },
+    "foundations/digit_classifier.py": {
+      "filepath": "foundations/digit_classifier.py",
+      "size": 877,
+      "summary": "Core application logic or configuration."
+    },
+    "foundations/gradient_descent.py": {
+      "filepath": "foundations/gradient_descent.py",
+      "size": 519,
+      "summary": "Core application logic or configuration."
+    },
+    "foundations/linear_regression.py": {
+      "filepath": "foundations/linear_regression.py",
+      "size": 774,
+      "summary": "Core application logic or configuration."
+    },
+    "foundations/linear_regression_training.py": {
+      "filepath": "foundations/linear_regression_training.py",
+      "size": 1352,
+      "summary": "Handles model training routines and loops."
+    },
+    "foundations/loss.py": {
+      "filepath": "foundations/loss.py",
+      "size": 1093,
+      "summary": "Core application logic or configuration."
+    },
+    "foundations/mlp.py": {
+      "filepath": "foundations/mlp.py",
+      "size": 689,
+      "summary": "Core application logic or configuration."
+    },
+    "foundations/multi_layer_backprop.py": {
+      "filepath": "foundations/multi_layer_backprop.py",
+      "size": 1809,
+      "summary": "Core application logic or configuration."
+    },
+    "foundations/neuron.py": {
+      "filepath": "foundations/neuron.py",
+      "size": 705,
+      "summary": "Core application logic or configuration."
+    },
+    "foundations/pytorch_basics.py": {
+      "filepath": "foundations/pytorch_basics.py",
+      "size": 1244,
+      "summary": "Core application logic or configuration."
+    },
+    "foundations/sentiment.py": {
+      "filepath": "foundations/sentiment.py",
+      "size": 875,
+      "summary": "Core application logic or configuration."
+    },
+    "foundations/softmax.py": {
+      "filepath": "foundations/softmax.py",
+      "size": 429,
+      "summary": "Core application logic or configuration."
+    },
+    "foundations/training_loop.py": {
+      "filepath": "foundations/training_loop.py",
+      "size": 908,
+      "summary": "Handles model training routines and loops."
+    },
+    "foundations/weight_init.py": {
+      "filepath": "foundations/weight_init.py",
+      "size": 2033,
+      "summary": "Core application logic or configuration."
+    },
+    "model/__init__.py": {
+      "filepath": "model/__init__.py",
+      "size": 328,
+      "summary": "Defines deep learning model architectures or networks."
+    },
+    "model/batch_normalization.py": {
+      "filepath": "model/batch_normalization.py",
+      "size": 1419,
+      "summary": "Defines deep learning model architectures or networks."
+    },
+    "model/embeddings.py": {
+      "filepath": "model/embeddings.py",
+      "size": 451,
+      "summary": "Defines deep learning model architectures or networks."
+    },
+    "model/normalization.py": {
+      "filepath": "model/normalization.py",
+      "size": 709,
+      "summary": "Defines deep learning model architectures or networks."
+    }
+  }
+}

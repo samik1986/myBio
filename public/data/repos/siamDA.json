@@ -1,1 +1,121 @@
-{"name":"siamDA","url":"https://github.com/samik1986/siamDA","description":"**Codebase Intelligence:** This Python codebase contains 10 extracted functions across 2 files. Key extracted functionality includes: MyLayer, build, call, compute_output_shape, euclidean_distance, and more.","language":"Python","functions_extracted":{"newLayer.py":[{"type":"class","name":"MyLayer","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"build","docstring":""},{"type":"function","name":"call","docstring":""},{"type":"function","name":"compute_output_shape","docstring":""}],"siamese.py":[{"type":"function","name":"euclidean_distance","docstring":""},{"type":"function","name":"contrastive_loss","docstring":"Contrastive loss from Hadsell-et-al.'06\nhttp://yann.lecun.com/exdb/publis/pdf/hadsell-chopra-lecun-06.pdf"},{"type":"function","name":"create_pairs","docstring":"Positive and negative pair creation.\nAlternates between positive and negative pairs."},{"type":"function","name":"create_base_network","docstring":"Base network to be shared (eq. to feature extraction)."},{"type":"function","name":"compute_accuracy","docstring":"Compute classification accuracy with a fixed threshold on distances."}]},"updated_at":"2017-06-20T11:22:52Z","languages":[{"name":"Python","percentage":100.0}]}
+{
+  "name": "siamDA",
+  "url": "https://github.com/samik1986/siamDA",
+  "description": "**Codebase Intelligence:** This Python codebase contains 10 extracted functions across 2 files. Key extracted functionality includes: MyLayer, build, call, compute_output_shape, euclidean_distance, and more.",
+  "language": "Python",
+  "functions_extracted": {
+    "newLayer.py": [
+      {
+        "type": "class",
+        "name": "MyLayer",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "build",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "call",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "compute_output_shape",
+        "docstring": ""
+      }
+    ],
+    "siamese.py": [
+      {
+        "type": "function",
+        "name": "euclidean_distance",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "contrastive_loss",
+        "docstring": "Contrastive loss from Hadsell-et-al.'06\nhttp://yann.lecun.com/exdb/publis/pdf/hadsell-chopra-lecun-06.pdf"
+      },
+      {
+        "type": "function",
+        "name": "create_pairs",
+        "docstring": "Positive and negative pair creation.\nAlternates between positive and negative pairs."
+      },
+      {
+        "type": "function",
+        "name": "create_base_network",
+        "docstring": "Base network to be shared (eq. to feature extraction)."
+      },
+      {
+        "type": "function",
+        "name": "compute_accuracy",
+        "docstring": "Compute classification accuracy with a fixed threshold on distances."
+      }
+    ]
+  },
+  "updated_at": "2017-06-20T11:22:52Z",
+  "languages": [
+    {
+      "name": "Python",
+      "percentage": 100
+    }
+  ],
+  "all_files": {
+    "ae.py": {
+      "filepath": "ae.py",
+      "size": 4006,
+      "summary": "Core application logic or configuration."
+    },
+    "aeData.py": {
+      "filepath": "aeData.py",
+      "size": 1108,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "customLayer.py": {
+      "filepath": "customLayer.py",
+      "size": 9518,
+      "summary": "Core application logic or configuration."
+    },
+    "modelBuild.py": {
+      "filepath": "modelBuild.py",
+      "size": 7544,
+      "summary": "Defines deep learning model architectures or networks."
+    },
+    "newLayer.py": {
+      "filepath": "newLayer.py",
+      "size": 784,
+      "summary": "Key capabilities: MyLayer, build, call, and more"
+    },
+    "prepareDataFRS.py": {
+      "filepath": "prepareDataFRS.py",
+      "size": 1650,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "showFig.py": {
+      "filepath": "showFig.py",
+      "size": 1668,
+      "summary": "Core application logic or configuration."
+    },
+    "siamDataIITM.py": {
+      "filepath": "siamDataIITM.py",
+      "size": 1227,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "siamese.py": {
+      "filepath": "siamese.py",
+      "size": 4992,
+      "summary": "Key capabilities: euclidean_distance, contrastive_loss, create_pairs, and more"
+    },
+    "test.py": {
+      "filepath": "test.py",
+      "size": 322,
+      "summary": "Contains testing or evaluation scripts."
+    }
+  }
+}

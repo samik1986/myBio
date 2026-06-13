@@ -1,0 +1,33 @@
+{
+  "name": "atlas_free_slice_alignment",
+  "url": "https://github.com/twardlab/atlas_free_slice_alignment",
+  "description": "",
+  "language": "Jupyter Notebook",
+  "all_files": {
+    "docs/conf.py": {
+      "filepath": "docs/conf.py",
+      "size": 1715,
+      "summary": "Core application logic or configuration."
+    },
+    "source/notebooks/example.ipynb": {
+      "filepath": "source/notebooks/example.ipynb",
+      "size": 2713,
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+    },
+    "source/notebooks/slice_alignment_parallel Telescope a=0.25 c=0.25 deform only-Copy1.ipynb": {
+      "filepath": "source/notebooks/slice_alignment_parallel Telescope a=0.25 c=0.25 deform only-Copy1.ipynb",
+      "size": 67119,
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+    },
+    "source/scripts/slice_alignment.py": {
+      "filepath": "source/scripts/slice_alignment.py",
+      "size": 19172,
+      "summary": "Core application logic or configuration."
+    },
+    "source/scripts/slice_alignment_help.py": {
+      "filepath": "source/scripts/slice_alignment_help.py",
+      "size": 22500,
+      "summary": "Core application logic or configuration."
+    }
+  }
+}

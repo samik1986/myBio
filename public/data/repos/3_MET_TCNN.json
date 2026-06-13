@@ -1,0 +1,38 @@
+{
+  "name": "3_MET_TCNN",
+  "url": "https://github.com/samik1986/3_MET_TCNN",
+  "description": "For Paper in NeuroComputing 2018",
+  "language": "Python",
+  "all_files": {
+    "dataPrep.py": {
+      "filepath": "dataPrep.py",
+      "size": 1574,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "stage1.py": {
+      "filepath": "stage1.py",
+      "size": 2839,
+      "summary": "Core application logic or configuration."
+    },
+    "stage2.py": {
+      "filepath": "stage2.py",
+      "size": 4017,
+      "summary": "Core application logic or configuration."
+    },
+    "stage2Data.py": {
+      "filepath": "stage2Data.py",
+      "size": 1169,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "stage3.py": {
+      "filepath": "stage3.py",
+      "size": 2594,
+      "summary": "Core application logic or configuration."
+    },
+    "test.py": {
+      "filepath": "test.py",
+      "size": 1219,
+      "summary": "Contains testing or evaluation scripts."
+    }
+  }
+}

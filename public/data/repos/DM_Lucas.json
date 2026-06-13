@@ -1,1 +1,2632 @@
-{"name":"DM_Lucas","url":"https://github.com/samik1986/DM_Lucas","description":"**Codebase Intelligence:** This C++ codebase contains 364 extracted functions across 129 files. Key extracted functionality includes: parallel_dipha_input, function, function, function, func, and more.","language":"C++","functions_extracted":{"Skeletonization\\parallel_dipha_input.m":[{"type":"function","name":"parallel_dipha_input","docstring":""}],"Skeletonization\\step_02_run_dipha.py":[{"type":"function","name":"function","docstring":""}],"Skeletonization\\step_03_convert_dipha_output.py":[{"type":"function","name":"function","docstring":""}],"Skeletonization\\step_04_shift_verts.py":[{"type":"function","name":"function","docstring":""}],"Skeletonization\\step_07_execute_merging.py":[{"type":"function","name":"func","docstring":""}],"Skeletonization\\dipha-3d\\build\\CMakeFiles\\feature_tests.c":[{"type":"function","name":"main","docstring":""}],"Skeletonization\\dipha-3d\\build\\CMakeFiles\\3.10.2\\CompilerIdC\\CMakeCCompilerId.c":[{"type":"function","name":"main","docstring":""}],"Skeletonization\\dipha-3d\\build\\CMakeFiles\\3.10.2\\CompilerIdCXX\\CMakeCXXCompilerId.cpp":[{"type":"function","name":"main","docstring":""}],"Skeletonization\\dipha-3d\\build\\CMakeFiles\\FindMPI\\test_mpi.cpp":[{"type":"function","name":"main","docstring":""}],"Skeletonization\\dipha-3d\\build2\\CMakeFiles\\feature_tests.c":[{"type":"function","name":"main","docstring":""}],"Skeletonization\\dipha-3d\\build2\\CMakeFiles\\3.10.2\\CompilerIdC\\CMakeCCompilerId.c":[{"type":"function","name":"main","docstring":""}],"Skeletonization\\dipha-3d\\build2\\CMakeFiles\\3.10.2\\CompilerIdCXX\\CMakeCXXCompilerId.cpp":[{"type":"function","name":"main","docstring":""}],"Skeletonization\\dipha-3d\\build2\\CMakeFiles\\FindMPI\\test_mpi.cpp":[{"type":"function","name":"main","docstring":""}],"Skeletonization\\dipha-3d\\externals\\mem_usage\\mem_usage.h":[{"type":"function","name":"getPeakRSS","docstring":""},{"type":"function","name":"getCurrentRSS","docstring":""}],"Skeletonization\\dipha-3d\\externals\\psort-1.0\\driver\\MersenneTwister.h":[{"type":"function","name":"operator","docstring":""}],"Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\funnel.h":[{"type":"function","name":"bfs_index","docstring":""},{"type":"function","name":"merge_tree","docstring":""},{"type":"function","name":"merge_tree","docstring":""},{"type":"function","name":"fill","docstring":""},{"type":"function","name":"fill_leaf","docstring":""},{"type":"function","name":"merge_tree","docstring":""},{"type":"function","name":"merge_tree","docstring":""},{"type":"function","name":"stream","docstring":""},{"type":"function","name":"stream_iterator","docstring":""}],"Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort.h":[{"type":"function","name":"parallel_sort","docstring":""},{"type":"function","name":"parallel_sort","docstring":""},{"type":"function","name":"parallel_sort","docstring":""}],"Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort_merge.h":[{"type":"function","name":"merge","docstring":""},{"type":"function","name":"real_merge","docstring":""},{"type":"function","name":"real_merge","docstring":""},{"type":"function","name":"real_merge","docstring":""},{"type":"function","name":"real_merge","docstring":""},{"type":"function","name":"real_merge","docstring":""}],"Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort_samplesort.h":[{"type":"function","name":"parallel_samplesort","docstring":""},{"type":"function","name":"parallel_samplesort","docstring":""}],"Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort_seqsort.h":[{"type":"function","name":"seqsort","docstring":""},{"type":"function","name":"real_seqsort","docstring":""},{"type":"function","name":"real_seqsort","docstring":""}],"Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort_splitters.h":[{"type":"function","name":"split","docstring":""},{"type":"function","name":"real_split","docstring":""},{"type":"function","name":"operator","docstring":""}],"Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort_util.h":[{"type":"function","name":"is_sorted","docstring":""},{"type":"function","name":"is_sorted","docstring":""},{"type":"function","name":"print_perf_data","docstring":""},{"type":"function","name":"print_perf_data","docstring":""},{"type":"function","name":"print_perf_data_samplesort","docstring":""}],"Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\sort.timpl.h":[{"type":"function","name":"batcher_sort","docstring":""},{"type":"function","name":"inplace_base_sort","docstring":""},{"type":"function","name":"iterator","docstring":""},{"type":"function","name":"merge_sort_","docstring":""}],"Skeletonization\\dipha-3d\\include\\dipha\\element_distribution.h":[{"type":"function","name":"gather_answers","docstring":""}],"Skeletonization\\dipha-3d\\include\\dipha\\mpi_utils.h":[{"type":"function","name":"receive_vector","docstring":""},{"type":"function","name":"non_blocking_send_vector","docstring":""},{"type":"function","name":"all_gather","docstring":""},{"type":"function","name":"file_read_at_vector","docstring":""},{"type":"function","name":"file_write_at_vector","docstring":""},{"type":"function","name":"file_read_at","docstring":""},{"type":"function","name":"file_write_at","docstring":""}],"Skeletonization\\dipha-3d\\include\\dipha\\algorithms\\compute_reduced_columns.h":[{"type":"function","name":"compute_reduced_columns","docstring":""}],"Skeletonization\\dipha-3d\\include\\dipha\\algorithms\\generate_unreduced_columns.h":[{"type":"function","name":"generate_unreduced_columns","docstring":""}],"Skeletonization\\dipha-3d\\include\\dipha\\algorithms\\get_filtration_to_cell_map.h":[{"type":"function","name":"get_filtration_to_cell_map","docstring":""}],"Skeletonization\\dipha-3d\\include\\dipha\\data_structures\\distributed_vector.h":[{"type":"function","name":"init","docstring":""},{"type":"function","name":"set_local_value","docstring":""},{"type":"function","name":"set_global_values","docstring":""}],"Skeletonization\\dipha-3d\\include\\dipha\\data_structures\\flat_column_stack.h":[{"type":"function","name":"swap","docstring":""},{"type":"function","name":"clear","docstring":""},{"type":"function","name":"shrink_to_fit","docstring":""},{"type":"function","name":"push","docstring":""},{"type":"function","name":"pop","docstring":""}],"Skeletonization\\dipha-3d\\include\\dipha\\data_structures\\heap_column.h":[{"type":"function","name":"add_column","docstring":""},{"type":"function","name":"prune","docstring":""},{"type":"function","name":"clear","docstring":""},{"type":"function","name":"get_max_index","docstring":""},{"type":"function","name":"push","docstring":""},{"type":"function","name":"pop","docstring":""},{"type":"function","name":"pop_max_index","docstring":""}],"Skeletonization\\dipha-3d\\include\\dipha\\data_structures\\write_once_array_of_arrays.h":[{"type":"function","name":"init","docstring":""},{"type":"function","name":"clear","docstring":""},{"type":"function","name":"set","docstring":""}],"Skeletonization\\dipha-3d\\include\\dipha\\data_structures\\write_once_column_array.h":[{"type":"function","name":"init","docstring":""},{"type":"function","name":"set","docstring":""}],"Skeletonization\\dipha-3d\\include\\dipha\\inputs\\abstract_weighted_cell_complex.h":[{"type":"function","name":"load_binary","docstring":""}],"Skeletonization\\dipha-3d\\include\\dipha\\inputs\\full_rips_complex.h":[{"type":"function","name":"_load_binary","docstring":""},{"type":"function","name":"_precompute_breakpoints","docstring":""},{"type":"function","name":"_precompute_binomials","docstring":""}],"Skeletonization\\dipha-3d\\include\\dipha\\inputs\\sparse_rips_complex.h":[{"type":"function","name":"operator","docstring":""},{"type":"function","name":"operator","docstring":""},{"type":"function","name":"operator","docstring":""},{"type":"function","name":"_load_binary","docstring":""},{"type":"function","name":"get_process_id_for_full_index","docstring":""},{"type":"function","name":"_compute_sparse_indices","docstring":""},{"type":"function","name":"_precompute_values","docstring":""},{"type":"function","name":"_precompute_breakpoints","docstring":""},{"type":"function","name":"_precompute_binomials","docstring":""}],"Skeletonization\\dipha-3d\\include\\dipha\\inputs\\weighted_cubical_complex.h":[{"type":"function","name":"_get_lattice_resolution","docstring":""},{"type":"function","name":"_load_binary","docstring":""}],"Skeletonization\\dipha-3d\\include\\dipha\\inputs\\weighted_explicit_complex.h":[{"type":"function","name":"_load_binary","docstring":""}],"Skeletonization\\dipha-3d\\include\\dipha\\outputs\\save_persistence_diagram.h":[{"type":"function","name":"compute_original_index","docstring":""},{"type":"function","name":"save_persistence_diagram","docstring":""}],"Skeletonization\\dipha-3d\\matlab\\create_noise_image_data.m":[{"type":"function","name":"create_noise_image_data","docstring":""}],"Skeletonization\\dipha-3d\\matlab\\create_noisy_ramp_image_data.m":[{"type":"function","name":"create_noisy_ramp_image_data","docstring":""}],"Skeletonization\\dipha-3d\\matlab\\create_ramp_image_data.m":[{"type":"function","name":"create_ramp_image_data","docstring":""}],"Skeletonization\\dipha-3d\\matlab\\create_smooth_image_data.m":[{"type":"function","name":"create_smooth_image_data","docstring":""}],"Skeletonization\\dipha-3d\\matlab\\create_sphere.m":[{"type":"function","name":"create_sphere","docstring":""}],"Skeletonization\\dipha-3d\\matlab\\load_discrete_morse_edge_info.m":[{"type":"function","name":"load_discrete_morse_edge_info","docstring":""}],"Skeletonization\\dipha-3d\\matlab\\load_persistence_diagram.m":[{"type":"function","name":"load_persistence_diagram","docstring":""}],"Skeletonization\\dipha-3d\\matlab\\plot_midlife_persistence_diagram.m":[{"type":"function","name":"plot_midlife_persistence_diagram","docstring":""}],"Skeletonization\\dipha-3d\\matlab\\plot_persistence_diagram.m":[{"type":"function","name":"plot_persistence_diagram","docstring":""}],"Skeletonization\\dipha-3d\\matlab\\plot_persistence_diagram_density.m":[{"type":"function","name":"plot_persistence_diagram_density","docstring":""}],"Skeletonization\\dipha-3d\\matlab\\save_3d_image_data.m":[{"type":"function","name":"save_3d_image_data","docstring":""}],"Skeletonization\\dipha-3d\\matlab\\save_distance_matrix.m":[{"type":"function","name":"save_distance_matrix","docstring":""}],"Skeletonization\\dipha-3d\\matlab\\save_image_data.m":[{"type":"function","name":"save_image_data","docstring":""}],"Skeletonization\\dipha-3d\\matlab\\save_weighted_triangle_surface.m":[{"type":"function","name":"save_weighted_triangle_surface","docstring":""},{"type":"function","name":"get_n4ed","docstring":""},{"type":"function","name":"get_ed4e","docstring":""},{"type":"function","name":"get_ed4n","docstring":""},{"type":"function","name":"get_e4n","docstring":""}],"Skeletonization\\dipha-3d\\src\\create_phat_filtration.cpp":[{"type":"function","name":"print_help_and_exit","docstring":""},{"type":"function","name":"parse_command_line","docstring":""},{"type":"function","name":"create_phat_filtration","docstring":""},{"type":"function","name":"main","docstring":""}],"Skeletonization\\dipha-3d\\src\\dipha.cpp":[{"type":"function","name":"print_help_and_exit","docstring":""},{"type":"function","name":"parse_command_line","docstring":""},{"type":"function","name":"compute","docstring":""},{"type":"function","name":"main","docstring":""}],"Skeletonization\\dipha-3d\\src\\dualize.cpp":[{"type":"function","name":"print_help","docstring":""},{"type":"function","name":"print_help_and_exit","docstring":""},{"type":"function","name":"parse_command_line","docstring":""},{"type":"function","name":"main","docstring":""}],"Skeletonization\\dipha-3d\\src\\full_to_sparse_distance_matrix.cpp":[{"type":"function","name":"print_help_and_exit","docstring":""},{"type":"function","name":"parse_command_line","docstring":""},{"type":"function","name":"create_sparse_representation","docstring":""},{"type":"function","name":"main","docstring":""}],"Skeletonization\\dipha-output\\ComputeGraphReconstruction.cpp":[{"type":"function","name":"bfs","docstring":""},{"type":"function","name":"retrieve_path","docstring":""},{"type":"function","name":"main","docstring":""}],"Skeletonization\\merger-hierarchical\\combine.cpp":[{"type":"function","name":"Reorder","docstring":""},{"type":"function","name":"Reorder","docstring":""},{"type":"function","name":"GetIndex","docstring":""},{"type":"function","name":"InsertVertex","docstring":""},{"type":"function","name":"size","docstring":""},{"type":"function","name":"hash_value","docstring":""},{"type":"function","name":"HasEdge","docstring":""},{"type":"function","name":"InsertEdge","docstring":""},{"type":"function","name":"size","docstring":""},{"type":"function","name":"begin","docstring":""},{"type":"function","name":"end","docstring":""},{"type":"function","name":"hash_value","docstring":""},{"type":"function","name":"HasTriangle","docstring":""},{"type":"function","name":"InsertTriangle","docstring":""},{"type":"function","name":"size","docstring":""},{"type":"function","name":"begin","docstring":""},{"type":"function","name":"end","docstring":""},{"type":"function","name":"hash_value","docstring":""},{"type":"function","name":"init_file","docstring":""},{"type":"function","name":"getpath","docstring":""},{"type":"function","name":"adjust_bbox","docstring":""},{"type":"function","name":"in_range","docstring":""},{"type":"function","name":"update_bbox","docstring":""},{"type":"function","name":"kernel_init","docstring":""},{"type":"function","name":"diffuse","docstring":""},{"type":"function","name":"ProcessGraph","docstring":""},{"type":"function","name":"triangle_cube","docstring":""},{"type":"function","name":"Triangulate","docstring":""},{"type":"function","name":"simplex_output","docstring":""},{"type":"function","name":"main","docstring":""}],"Skeletonization\\merger-hierarchical\\hash.cpp":[{"type":"function","name":"hash_value","docstring":""},{"type":"function","name":"hash_value","docstring":""},{"type":"function","name":"hash_value","docstring":""}],"Skeletonization\\merger-hierarchical\\hash.h":[{"type":"function","name":"size","docstring":""},{"type":"function","name":"size","docstring":""},{"type":"function","name":"begin","docstring":""},{"type":"function","name":"end","docstring":""},{"type":"function","name":"size","docstring":""},{"type":"function","name":"begin","docstring":""},{"type":"function","name":"end","docstring":""}],"Skeletonization\\merger-hierarchical\\merge.cpp":[{"type":"function","name":"main","docstring":""}],"Skeletonization\\merger-hierarchical\\merge_graph.cpp":[{"type":"function","name":"triangle_cube","docstring":""},{"type":"function","name":"diffuse","docstring":""},{"type":"function","name":"in_range","docstring":""},{"type":"function","name":"update_bbox","docstring":""},{"type":"function","name":"simplex_output","docstring":""},{"type":"function","name":"kernel_init","docstring":""},{"type":"function","name":"Triangulate","docstring":""},{"type":"function","name":"to_string","docstring":""},{"type":"function","name":"init_file","docstring":""},{"type":"function","name":"adjust_bbox","docstring":""},{"type":"function","name":"ProcessGraph","docstring":""},{"type":"function","name":"main","docstring":""}],"Summarization\\load_persistence_diagram.m":[{"type":"function","name":"load_persistence_diagram","docstring":""}],"Summarization\\save_image_data.m":[{"type":"function","name":"save_image_data","docstring":""}],"Summarization\\step_00_convert_jp2_to_tif.py":[{"type":"function","name":"get_date","docstring":""},{"type":"function","name":"remove_dups","docstring":""},{"type":"function","name":"function","docstring":""}],"Summarization\\step_01_split_tif_channels.py":[{"type":"function","name":"function","docstring":""}],"Summarization\\step_02_crop_single_channel.py":[{"type":"function","name":"function","docstring":""}],"Summarization\\step_03a_write_dipha.py":[{"type":"function","name":"function","docstring":""}],"Summarization\\step_03b_write_vert.py":[{"type":"function","name":"function","docstring":""}],"Summarization\\step_04_run_dipha.py":[{"type":"function","name":"function","docstring":""}],"Summarization\\step_05_run_matlab.py":[{"type":"function","name":"function","docstring":""}],"Summarization\\step_06_run_dimo_ve_et.py":[{"type":"function","name":"function","docstring":""}],"Summarization\\step_07_shift_morse_verts.py":[{"type":"function","name":"function","docstring":""}],"Summarization\\step_08_cross_morse_with_process.py":[{"type":"function","name":"function","docstring":""}],"Summarization\\step_09_remove_dup_edges.py":[{"type":"function","name":"function","docstring":""}],"Summarization\\step_10_paths.py":[{"type":"function","name":"function","docstring":""}],"Summarization\\step_11_haircut.py":[{"type":"function","name":"remove_deg2_nodes","docstring":""},{"type":"function","name":"function","docstring":""}],"Summarization\\step_12_post_haircut_paths.py":[{"type":"function","name":"function","docstring":""}],"Summarization\\step_13_remove_insignificant.py":[{"type":"function","name":"remove_deg2_nodes","docstring":""},{"type":"function","name":"line_function","docstring":""},{"type":"function","name":"compute_abs_cos_angle","docstring":""},{"type":"function","name":"function","docstring":""}],"Summarization\\step_14_align_morse_coords_with_webviewer.py":[{"type":"function","name":"function","docstring":""}],"Summarization\\step_15_morse_to_geojson.py":[{"type":"function","name":"read_all","docstring":""},{"type":"function","name":"read_ve","docstring":""},{"type":"function","name":"in_between","docstring":""},{"type":"function","name":"segment","docstring":""},{"type":"function","name":"project_point","docstring":""},{"type":"function","name":"get_density","docstring":""},{"type":"function","name":"get_point_density","docstring":""},{"type":"function","name":"get_all_project_points","docstring":""},{"type":"function","name":"get_all_segs","docstring":""},{"type":"function","name":"make_png_point","docstring":""},{"type":"function","name":"make_png","docstring":""},{"type":"function","name":"make_geojson","docstring":""},{"type":"function","name":"find_index_from_filename","docstring":""},{"type":"function","name":"read_in_cloud","docstring":""},{"type":"function","name":"function","docstring":""}],"Summarization\\step_16_all_json_to_one_folder.py":[{"type":"function","name":"function","docstring":""}],"Summarization\\dipha-2d-thresh\\externals\\mem_usage\\mem_usage.h":[{"type":"function","name":"getPeakRSS","docstring":""},{"type":"function","name":"getCurrentRSS","docstring":""}],"Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\driver\\MersenneTwister.h":[{"type":"function","name":"operator","docstring":""}],"Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\funnel.h":[{"type":"function","name":"bfs_index","docstring":""},{"type":"function","name":"merge_tree","docstring":""},{"type":"function","name":"merge_tree","docstring":""},{"type":"function","name":"fill","docstring":""},{"type":"function","name":"fill_leaf","docstring":""},{"type":"function","name":"merge_tree","docstring":""},{"type":"function","name":"merge_tree","docstring":""},{"type":"function","name":"stream","docstring":""},{"type":"function","name":"stream_iterator","docstring":""}],"Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort.h":[{"type":"function","name":"parallel_sort","docstring":""},{"type":"function","name":"parallel_sort","docstring":""},{"type":"function","name":"parallel_sort","docstring":""}],"Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort_merge.h":[{"type":"function","name":"merge","docstring":""},{"type":"function","name":"real_merge","docstring":""},{"type":"function","name":"real_merge","docstring":""},{"type":"function","name":"real_merge","docstring":""},{"type":"function","name":"real_merge","docstring":""},{"type":"function","name":"real_merge","docstring":""}],"Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort_samplesort.h":[{"type":"function","name":"parallel_samplesort","docstring":""},{"type":"function","name":"parallel_samplesort","docstring":""}],"Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort_seqsort.h":[{"type":"function","name":"seqsort","docstring":""},{"type":"function","name":"real_seqsort","docstring":""},{"type":"function","name":"real_seqsort","docstring":""}],"Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort_splitters.h":[{"type":"function","name":"split","docstring":""},{"type":"function","name":"real_split","docstring":""},{"type":"function","name":"operator","docstring":""}],"Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort_util.h":[{"type":"function","name":"is_sorted","docstring":""},{"type":"function","name":"is_sorted","docstring":""},{"type":"function","name":"print_perf_data","docstring":""},{"type":"function","name":"print_perf_data","docstring":""},{"type":"function","name":"print_perf_data_samplesort","docstring":""}],"Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\sort.timpl.h":[{"type":"function","name":"batcher_sort","docstring":""},{"type":"function","name":"inplace_base_sort","docstring":""},{"type":"function","name":"iterator","docstring":""},{"type":"function","name":"merge_sort_","docstring":""}],"Summarization\\dipha-2d-thresh\\include\\dipha\\element_distribution.h":[{"type":"function","name":"gather_answers","docstring":""}],"Summarization\\dipha-2d-thresh\\include\\dipha\\mpi_utils.h":[{"type":"function","name":"receive_vector","docstring":""},{"type":"function","name":"non_blocking_send_vector","docstring":""},{"type":"function","name":"all_gather","docstring":""},{"type":"function","name":"file_read_at_vector","docstring":""},{"type":"function","name":"file_write_at_vector","docstring":""},{"type":"function","name":"file_read_at","docstring":""},{"type":"function","name":"file_write_at","docstring":""}],"Summarization\\dipha-2d-thresh\\include\\dipha\\algorithms\\compute_reduced_columns.h":[{"type":"function","name":"compute_reduced_columns","docstring":""}],"Summarization\\dipha-2d-thresh\\include\\dipha\\algorithms\\generate_unreduced_columns.h":[{"type":"function","name":"generate_unreduced_columns","docstring":""}],"Summarization\\dipha-2d-thresh\\include\\dipha\\algorithms\\get_filtration_to_cell_map.h":[{"type":"function","name":"get_filtration_to_cell_map","docstring":""}],"Summarization\\dipha-2d-thresh\\include\\dipha\\data_structures\\distributed_vector.h":[{"type":"function","name":"init","docstring":""},{"type":"function","name":"set_local_value","docstring":""},{"type":"function","name":"set_global_values","docstring":""}],"Summarization\\dipha-2d-thresh\\include\\dipha\\data_structures\\flat_column_stack.h":[{"type":"function","name":"swap","docstring":""},{"type":"function","name":"clear","docstring":""},{"type":"function","name":"shrink_to_fit","docstring":""},{"type":"function","name":"push","docstring":""},{"type":"function","name":"pop","docstring":""}],"Summarization\\dipha-2d-thresh\\include\\dipha\\data_structures\\heap_column.h":[{"type":"function","name":"add_column","docstring":""},{"type":"function","name":"prune","docstring":""},{"type":"function","name":"clear","docstring":""},{"type":"function","name":"get_max_index","docstring":""},{"type":"function","name":"push","docstring":""},{"type":"function","name":"pop","docstring":""},{"type":"function","name":"pop_max_index","docstring":""}],"Summarization\\dipha-2d-thresh\\include\\dipha\\data_structures\\write_once_array_of_arrays.h":[{"type":"function","name":"init","docstring":""},{"type":"function","name":"clear","docstring":""},{"type":"function","name":"set","docstring":""}],"Summarization\\dipha-2d-thresh\\include\\dipha\\data_structures\\write_once_column_array.h":[{"type":"function","name":"init","docstring":""},{"type":"function","name":"set","docstring":""}],"Summarization\\dipha-2d-thresh\\include\\dipha\\inputs\\abstract_weighted_cell_complex.h":[{"type":"function","name":"load_binary","docstring":""}],"Summarization\\dipha-2d-thresh\\include\\dipha\\inputs\\full_rips_complex.h":[{"type":"function","name":"_load_binary","docstring":""},{"type":"function","name":"_precompute_breakpoints","docstring":""},{"type":"function","name":"_precompute_binomials","docstring":""}],"Summarization\\dipha-2d-thresh\\include\\dipha\\inputs\\sparse_rips_complex.h":[{"type":"function","name":"operator","docstring":""},{"type":"function","name":"operator","docstring":""},{"type":"function","name":"operator","docstring":""},{"type":"function","name":"_load_binary","docstring":""},{"type":"function","name":"get_process_id_for_full_index","docstring":""},{"type":"function","name":"_compute_sparse_indices","docstring":""},{"type":"function","name":"_precompute_values","docstring":""},{"type":"function","name":"_precompute_breakpoints","docstring":""},{"type":"function","name":"_precompute_binomials","docstring":""}],"Summarization\\dipha-2d-thresh\\include\\dipha\\inputs\\weighted_cubical_complex.h":[{"type":"function","name":"_load_binary","docstring":""}],"Summarization\\dipha-2d-thresh\\include\\dipha\\inputs\\weighted_explicit_complex.h":[{"type":"function","name":"_load_binary","docstring":""}],"Summarization\\dipha-2d-thresh\\include\\dipha\\outputs\\save_persistence_diagram.h":[{"type":"function","name":"compute_original_index","docstring":""},{"type":"function","name":"save_persistence_diagram","docstring":""}],"Summarization\\dipha-2d-thresh\\matlab\\create_noise_image_data.m":[{"type":"function","name":"create_noise_image_data","docstring":""}],"Summarization\\dipha-2d-thresh\\matlab\\create_noisy_ramp_image_data.m":[{"type":"function","name":"create_noisy_ramp_image_data","docstring":""}],"Summarization\\dipha-2d-thresh\\matlab\\create_ramp_image_data.m":[{"type":"function","name":"create_ramp_image_data","docstring":""}],"Summarization\\dipha-2d-thresh\\matlab\\create_smooth_image_data.m":[{"type":"function","name":"create_smooth_image_data","docstring":""}],"Summarization\\dipha-2d-thresh\\matlab\\create_sphere.m":[{"type":"function","name":"create_sphere","docstring":""}],"Summarization\\dipha-2d-thresh\\matlab\\load_discrete_morse_edge_info.m":[{"type":"function","name":"load_discrete_morse_edge_info","docstring":""}],"Summarization\\dipha-2d-thresh\\matlab\\load_persistence_diagram.m":[{"type":"function","name":"load_persistence_diagram","docstring":""}],"Summarization\\dipha-2d-thresh\\matlab\\plot_midlife_persistence_diagram.m":[{"type":"function","name":"plot_midlife_persistence_diagram","docstring":""}],"Summarization\\dipha-2d-thresh\\matlab\\plot_persistence_diagram.m":[{"type":"function","name":"plot_persistence_diagram","docstring":""}],"Summarization\\dipha-2d-thresh\\matlab\\plot_persistence_diagram_density.m":[{"type":"function","name":"plot_persistence_diagram_density","docstring":""}],"Summarization\\dipha-2d-thresh\\matlab\\save_distance_matrix.m":[{"type":"function","name":"save_distance_matrix","docstring":""}],"Summarization\\dipha-2d-thresh\\matlab\\save_image_data.m":[{"type":"function","name":"save_image_data","docstring":""}],"Summarization\\dipha-2d-thresh\\matlab\\save_weighted_triangle_surface.m":[{"type":"function","name":"save_weighted_triangle_surface","docstring":""},{"type":"function","name":"get_n4ed","docstring":""},{"type":"function","name":"get_ed4e","docstring":""},{"type":"function","name":"get_ed4n","docstring":""},{"type":"function","name":"get_e4n","docstring":""}],"Summarization\\dipha-2d-thresh\\src\\create_phat_filtration.cpp":[{"type":"function","name":"print_help_and_exit","docstring":""},{"type":"function","name":"parse_command_line","docstring":""},{"type":"function","name":"create_phat_filtration","docstring":""},{"type":"function","name":"main","docstring":""}],"Summarization\\dipha-2d-thresh\\src\\dipha.cpp":[{"type":"function","name":"print_help_and_exit","docstring":""},{"type":"function","name":"parse_command_line","docstring":""},{"type":"function","name":"compute","docstring":""},{"type":"function","name":"main","docstring":""}],"Summarization\\dipha-2d-thresh\\src\\dualize.cpp":[{"type":"function","name":"print_help","docstring":""},{"type":"function","name":"print_help_and_exit","docstring":""},{"type":"function","name":"parse_command_line","docstring":""},{"type":"function","name":"main","docstring":""}],"Summarization\\dipha-2d-thresh\\src\\full_to_sparse_distance_matrix.cpp":[{"type":"function","name":"print_help_and_exit","docstring":""},{"type":"function","name":"parse_command_line","docstring":""},{"type":"function","name":"create_sparse_representation","docstring":""},{"type":"function","name":"main","docstring":""}],"Summarization\\dipha-output-2d-ve-et-thresh\\ComputeGraphReconstruction.cpp":[{"type":"function","name":"bfs","docstring":""},{"type":"function","name":"retrieve_path","docstring":""},{"type":"function","name":"main","docstring":""}],"Summarization\\paths_src\\ComputePaths.cpp":[{"type":"function","name":"println","docstring":""},{"type":"function","name":"ReadInEdge","docstring":""},{"type":"function","name":"output_paths","docstring":""},{"type":"function","name":"dfs","docstring":""},{"type":"function","name":"get_paths","docstring":""},{"type":"function","name":"main","docstring":""}],"Summarization\\post-haircutpaths\\ComputePaths.cpp":[{"type":"function","name":"println","docstring":""},{"type":"function","name":"ReadInEdge","docstring":""},{"type":"function","name":"output_paths","docstring":""},{"type":"function","name":"dfs","docstring":""},{"type":"function","name":"get_paths","docstring":""},{"type":"function","name":"main","docstring":""}]},"updated_at":"2022-07-19T18:20:59Z","languages":[{"name":"C++","percentage":58.6},{"name":"Makefile","percentage":12.0},{"name":"CMake","percentage":11.1},{"name":"Python","percentage":7.4},{"name":"MATLAB","percentage":6.5},{"name":"C","percentage":4.4}]}
+{
+  "name": "DM_Lucas",
+  "url": "https://github.com/samik1986/DM_Lucas",
+  "description": "**Codebase Intelligence:** This C++ codebase contains 364 extracted functions across 129 files. Key extracted functionality includes: parallel_dipha_input, function, function, function, func, and more.",
+  "language": "C++",
+  "functions_extracted": {
+    "Skeletonization\\parallel_dipha_input.m": [
+      {
+        "type": "function",
+        "name": "parallel_dipha_input",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\step_02_run_dipha.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\step_03_convert_dipha_output.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\step_04_shift_verts.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\step_07_execute_merging.py": [
+      {
+        "type": "function",
+        "name": "func",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\build\\CMakeFiles\\feature_tests.c": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\build\\CMakeFiles\\3.10.2\\CompilerIdC\\CMakeCCompilerId.c": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\build\\CMakeFiles\\3.10.2\\CompilerIdCXX\\CMakeCXXCompilerId.cpp": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\build\\CMakeFiles\\FindMPI\\test_mpi.cpp": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\build2\\CMakeFiles\\feature_tests.c": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\build2\\CMakeFiles\\3.10.2\\CompilerIdC\\CMakeCCompilerId.c": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\build2\\CMakeFiles\\3.10.2\\CompilerIdCXX\\CMakeCXXCompilerId.cpp": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\build2\\CMakeFiles\\FindMPI\\test_mpi.cpp": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\externals\\mem_usage\\mem_usage.h": [
+      {
+        "type": "function",
+        "name": "getPeakRSS",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "getCurrentRSS",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\driver\\MersenneTwister.h": [
+      {
+        "type": "function",
+        "name": "operator",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\funnel.h": [
+      {
+        "type": "function",
+        "name": "bfs_index",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "merge_tree",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "merge_tree",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "fill",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "fill_leaf",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "merge_tree",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "merge_tree",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "stream",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "stream_iterator",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort.h": [
+      {
+        "type": "function",
+        "name": "parallel_sort",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "parallel_sort",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "parallel_sort",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort_merge.h": [
+      {
+        "type": "function",
+        "name": "merge",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "real_merge",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "real_merge",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "real_merge",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "real_merge",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "real_merge",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort_samplesort.h": [
+      {
+        "type": "function",
+        "name": "parallel_samplesort",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "parallel_samplesort",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort_seqsort.h": [
+      {
+        "type": "function",
+        "name": "seqsort",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "real_seqsort",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "real_seqsort",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort_splitters.h": [
+      {
+        "type": "function",
+        "name": "split",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "real_split",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "operator",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort_util.h": [
+      {
+        "type": "function",
+        "name": "is_sorted",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "is_sorted",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "print_perf_data",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "print_perf_data",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "print_perf_data_samplesort",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\sort.timpl.h": [
+      {
+        "type": "function",
+        "name": "batcher_sort",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "inplace_base_sort",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "iterator",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "merge_sort_",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\include\\dipha\\element_distribution.h": [
+      {
+        "type": "function",
+        "name": "gather_answers",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\include\\dipha\\mpi_utils.h": [
+      {
+        "type": "function",
+        "name": "receive_vector",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "non_blocking_send_vector",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "all_gather",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "file_read_at_vector",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "file_write_at_vector",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "file_read_at",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "file_write_at",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\include\\dipha\\algorithms\\compute_reduced_columns.h": [
+      {
+        "type": "function",
+        "name": "compute_reduced_columns",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\include\\dipha\\algorithms\\generate_unreduced_columns.h": [
+      {
+        "type": "function",
+        "name": "generate_unreduced_columns",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\include\\dipha\\algorithms\\get_filtration_to_cell_map.h": [
+      {
+        "type": "function",
+        "name": "get_filtration_to_cell_map",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\include\\dipha\\data_structures\\distributed_vector.h": [
+      {
+        "type": "function",
+        "name": "init",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "set_local_value",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "set_global_values",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\include\\dipha\\data_structures\\flat_column_stack.h": [
+      {
+        "type": "function",
+        "name": "swap",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "clear",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "shrink_to_fit",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "push",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "pop",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\include\\dipha\\data_structures\\heap_column.h": [
+      {
+        "type": "function",
+        "name": "add_column",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "prune",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "clear",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_max_index",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "push",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "pop",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "pop_max_index",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\include\\dipha\\data_structures\\write_once_array_of_arrays.h": [
+      {
+        "type": "function",
+        "name": "init",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "clear",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "set",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\include\\dipha\\data_structures\\write_once_column_array.h": [
+      {
+        "type": "function",
+        "name": "init",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "set",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\include\\dipha\\inputs\\abstract_weighted_cell_complex.h": [
+      {
+        "type": "function",
+        "name": "load_binary",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\include\\dipha\\inputs\\full_rips_complex.h": [
+      {
+        "type": "function",
+        "name": "_load_binary",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_precompute_breakpoints",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_precompute_binomials",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\include\\dipha\\inputs\\sparse_rips_complex.h": [
+      {
+        "type": "function",
+        "name": "operator",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "operator",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "operator",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_load_binary",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_process_id_for_full_index",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_compute_sparse_indices",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_precompute_values",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_precompute_breakpoints",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_precompute_binomials",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\include\\dipha\\inputs\\weighted_cubical_complex.h": [
+      {
+        "type": "function",
+        "name": "_get_lattice_resolution",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_load_binary",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\include\\dipha\\inputs\\weighted_explicit_complex.h": [
+      {
+        "type": "function",
+        "name": "_load_binary",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\include\\dipha\\outputs\\save_persistence_diagram.h": [
+      {
+        "type": "function",
+        "name": "compute_original_index",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save_persistence_diagram",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\matlab\\create_noise_image_data.m": [
+      {
+        "type": "function",
+        "name": "create_noise_image_data",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\matlab\\create_noisy_ramp_image_data.m": [
+      {
+        "type": "function",
+        "name": "create_noisy_ramp_image_data",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\matlab\\create_ramp_image_data.m": [
+      {
+        "type": "function",
+        "name": "create_ramp_image_data",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\matlab\\create_smooth_image_data.m": [
+      {
+        "type": "function",
+        "name": "create_smooth_image_data",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\matlab\\create_sphere.m": [
+      {
+        "type": "function",
+        "name": "create_sphere",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\matlab\\load_discrete_morse_edge_info.m": [
+      {
+        "type": "function",
+        "name": "load_discrete_morse_edge_info",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\matlab\\load_persistence_diagram.m": [
+      {
+        "type": "function",
+        "name": "load_persistence_diagram",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\matlab\\plot_midlife_persistence_diagram.m": [
+      {
+        "type": "function",
+        "name": "plot_midlife_persistence_diagram",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\matlab\\plot_persistence_diagram.m": [
+      {
+        "type": "function",
+        "name": "plot_persistence_diagram",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\matlab\\plot_persistence_diagram_density.m": [
+      {
+        "type": "function",
+        "name": "plot_persistence_diagram_density",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\matlab\\save_3d_image_data.m": [
+      {
+        "type": "function",
+        "name": "save_3d_image_data",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\matlab\\save_distance_matrix.m": [
+      {
+        "type": "function",
+        "name": "save_distance_matrix",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\matlab\\save_image_data.m": [
+      {
+        "type": "function",
+        "name": "save_image_data",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\matlab\\save_weighted_triangle_surface.m": [
+      {
+        "type": "function",
+        "name": "save_weighted_triangle_surface",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_n4ed",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_ed4e",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_ed4n",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_e4n",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\src\\create_phat_filtration.cpp": [
+      {
+        "type": "function",
+        "name": "print_help_and_exit",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "parse_command_line",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "create_phat_filtration",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\src\\dipha.cpp": [
+      {
+        "type": "function",
+        "name": "print_help_and_exit",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "parse_command_line",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "compute",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\src\\dualize.cpp": [
+      {
+        "type": "function",
+        "name": "print_help",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "print_help_and_exit",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "parse_command_line",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-3d\\src\\full_to_sparse_distance_matrix.cpp": [
+      {
+        "type": "function",
+        "name": "print_help_and_exit",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "parse_command_line",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "create_sparse_representation",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\dipha-output\\ComputeGraphReconstruction.cpp": [
+      {
+        "type": "function",
+        "name": "bfs",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "retrieve_path",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\merger-hierarchical\\combine.cpp": [
+      {
+        "type": "function",
+        "name": "Reorder",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "Reorder",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "GetIndex",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "InsertVertex",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "size",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "hash_value",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "HasEdge",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "InsertEdge",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "size",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "begin",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "end",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "hash_value",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "HasTriangle",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "InsertTriangle",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "size",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "begin",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "end",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "hash_value",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "init_file",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "getpath",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "adjust_bbox",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "in_range",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "update_bbox",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "kernel_init",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "diffuse",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "ProcessGraph",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "triangle_cube",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "Triangulate",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "simplex_output",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\merger-hierarchical\\hash.cpp": [
+      {
+        "type": "function",
+        "name": "hash_value",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "hash_value",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "hash_value",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\merger-hierarchical\\hash.h": [
+      {
+        "type": "function",
+        "name": "size",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "size",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "begin",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "end",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "size",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "begin",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "end",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\merger-hierarchical\\merge.cpp": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Skeletonization\\merger-hierarchical\\merge_graph.cpp": [
+      {
+        "type": "function",
+        "name": "triangle_cube",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "diffuse",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "in_range",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "update_bbox",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "simplex_output",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "kernel_init",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "Triangulate",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "to_string",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "init_file",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "adjust_bbox",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "ProcessGraph",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\load_persistence_diagram.m": [
+      {
+        "type": "function",
+        "name": "load_persistence_diagram",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\save_image_data.m": [
+      {
+        "type": "function",
+        "name": "save_image_data",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_00_convert_jp2_to_tif.py": [
+      {
+        "type": "function",
+        "name": "get_date",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "remove_dups",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_01_split_tif_channels.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_02_crop_single_channel.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_03a_write_dipha.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_03b_write_vert.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_04_run_dipha.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_05_run_matlab.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_06_run_dimo_ve_et.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_07_shift_morse_verts.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_08_cross_morse_with_process.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_09_remove_dup_edges.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_10_paths.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_11_haircut.py": [
+      {
+        "type": "function",
+        "name": "remove_deg2_nodes",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_12_post_haircut_paths.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_13_remove_insignificant.py": [
+      {
+        "type": "function",
+        "name": "remove_deg2_nodes",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "line_function",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "compute_abs_cos_angle",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_14_align_morse_coords_with_webviewer.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_15_morse_to_geojson.py": [
+      {
+        "type": "function",
+        "name": "read_all",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "read_ve",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "in_between",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "segment",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "project_point",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_density",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_point_density",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_all_project_points",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_all_segs",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "make_png_point",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "make_png",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "make_geojson",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "find_index_from_filename",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "read_in_cloud",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\step_16_all_json_to_one_folder.py": [
+      {
+        "type": "function",
+        "name": "function",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\externals\\mem_usage\\mem_usage.h": [
+      {
+        "type": "function",
+        "name": "getPeakRSS",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "getCurrentRSS",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\driver\\MersenneTwister.h": [
+      {
+        "type": "function",
+        "name": "operator",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\funnel.h": [
+      {
+        "type": "function",
+        "name": "bfs_index",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "merge_tree",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "merge_tree",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "fill",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "fill_leaf",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "merge_tree",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "merge_tree",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "stream",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "stream_iterator",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort.h": [
+      {
+        "type": "function",
+        "name": "parallel_sort",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "parallel_sort",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "parallel_sort",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort_merge.h": [
+      {
+        "type": "function",
+        "name": "merge",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "real_merge",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "real_merge",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "real_merge",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "real_merge",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "real_merge",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort_samplesort.h": [
+      {
+        "type": "function",
+        "name": "parallel_samplesort",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "parallel_samplesort",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort_seqsort.h": [
+      {
+        "type": "function",
+        "name": "seqsort",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "real_seqsort",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "real_seqsort",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort_splitters.h": [
+      {
+        "type": "function",
+        "name": "split",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "real_split",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "operator",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort_util.h": [
+      {
+        "type": "function",
+        "name": "is_sorted",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "is_sorted",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "print_perf_data",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "print_perf_data",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "print_perf_data_samplesort",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\sort.timpl.h": [
+      {
+        "type": "function",
+        "name": "batcher_sort",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "inplace_base_sort",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "iterator",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "merge_sort_",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\element_distribution.h": [
+      {
+        "type": "function",
+        "name": "gather_answers",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\mpi_utils.h": [
+      {
+        "type": "function",
+        "name": "receive_vector",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "non_blocking_send_vector",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "all_gather",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "file_read_at_vector",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "file_write_at_vector",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "file_read_at",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "file_write_at",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\algorithms\\compute_reduced_columns.h": [
+      {
+        "type": "function",
+        "name": "compute_reduced_columns",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\algorithms\\generate_unreduced_columns.h": [
+      {
+        "type": "function",
+        "name": "generate_unreduced_columns",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\algorithms\\get_filtration_to_cell_map.h": [
+      {
+        "type": "function",
+        "name": "get_filtration_to_cell_map",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\data_structures\\distributed_vector.h": [
+      {
+        "type": "function",
+        "name": "init",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "set_local_value",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "set_global_values",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\data_structures\\flat_column_stack.h": [
+      {
+        "type": "function",
+        "name": "swap",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "clear",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "shrink_to_fit",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "push",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "pop",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\data_structures\\heap_column.h": [
+      {
+        "type": "function",
+        "name": "add_column",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "prune",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "clear",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_max_index",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "push",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "pop",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "pop_max_index",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\data_structures\\write_once_array_of_arrays.h": [
+      {
+        "type": "function",
+        "name": "init",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "clear",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "set",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\data_structures\\write_once_column_array.h": [
+      {
+        "type": "function",
+        "name": "init",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "set",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\inputs\\abstract_weighted_cell_complex.h": [
+      {
+        "type": "function",
+        "name": "load_binary",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\inputs\\full_rips_complex.h": [
+      {
+        "type": "function",
+        "name": "_load_binary",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_precompute_breakpoints",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_precompute_binomials",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\inputs\\sparse_rips_complex.h": [
+      {
+        "type": "function",
+        "name": "operator",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "operator",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "operator",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_load_binary",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_process_id_for_full_index",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_compute_sparse_indices",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_precompute_values",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_precompute_breakpoints",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_precompute_binomials",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\inputs\\weighted_cubical_complex.h": [
+      {
+        "type": "function",
+        "name": "_load_binary",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\inputs\\weighted_explicit_complex.h": [
+      {
+        "type": "function",
+        "name": "_load_binary",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\outputs\\save_persistence_diagram.h": [
+      {
+        "type": "function",
+        "name": "compute_original_index",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "save_persistence_diagram",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\matlab\\create_noise_image_data.m": [
+      {
+        "type": "function",
+        "name": "create_noise_image_data",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\matlab\\create_noisy_ramp_image_data.m": [
+      {
+        "type": "function",
+        "name": "create_noisy_ramp_image_data",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\matlab\\create_ramp_image_data.m": [
+      {
+        "type": "function",
+        "name": "create_ramp_image_data",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\matlab\\create_smooth_image_data.m": [
+      {
+        "type": "function",
+        "name": "create_smooth_image_data",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\matlab\\create_sphere.m": [
+      {
+        "type": "function",
+        "name": "create_sphere",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\matlab\\load_discrete_morse_edge_info.m": [
+      {
+        "type": "function",
+        "name": "load_discrete_morse_edge_info",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\matlab\\load_persistence_diagram.m": [
+      {
+        "type": "function",
+        "name": "load_persistence_diagram",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\matlab\\plot_midlife_persistence_diagram.m": [
+      {
+        "type": "function",
+        "name": "plot_midlife_persistence_diagram",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\matlab\\plot_persistence_diagram.m": [
+      {
+        "type": "function",
+        "name": "plot_persistence_diagram",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\matlab\\plot_persistence_diagram_density.m": [
+      {
+        "type": "function",
+        "name": "plot_persistence_diagram_density",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\matlab\\save_distance_matrix.m": [
+      {
+        "type": "function",
+        "name": "save_distance_matrix",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\matlab\\save_image_data.m": [
+      {
+        "type": "function",
+        "name": "save_image_data",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\matlab\\save_weighted_triangle_surface.m": [
+      {
+        "type": "function",
+        "name": "save_weighted_triangle_surface",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_n4ed",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_ed4e",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_ed4n",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_e4n",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\src\\create_phat_filtration.cpp": [
+      {
+        "type": "function",
+        "name": "print_help_and_exit",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "parse_command_line",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "create_phat_filtration",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\src\\dipha.cpp": [
+      {
+        "type": "function",
+        "name": "print_help_and_exit",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "parse_command_line",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "compute",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\src\\dualize.cpp": [
+      {
+        "type": "function",
+        "name": "print_help",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "print_help_and_exit",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "parse_command_line",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-2d-thresh\\src\\full_to_sparse_distance_matrix.cpp": [
+      {
+        "type": "function",
+        "name": "print_help_and_exit",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "parse_command_line",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "create_sparse_representation",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\dipha-output-2d-ve-et-thresh\\ComputeGraphReconstruction.cpp": [
+      {
+        "type": "function",
+        "name": "bfs",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "retrieve_path",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\paths_src\\ComputePaths.cpp": [
+      {
+        "type": "function",
+        "name": "println",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "ReadInEdge",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "output_paths",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "dfs",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_paths",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "Summarization\\post-haircutpaths\\ComputePaths.cpp": [
+      {
+        "type": "function",
+        "name": "println",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "ReadInEdge",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "output_paths",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "dfs",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_paths",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ]
+  },
+  "updated_at": "2022-07-19T18:20:59Z",
+  "languages": [
+    {
+      "name": "C++",
+      "percentage": 58.6
+    },
+    {
+      "name": "Makefile",
+      "percentage": 12.0
+    },
+    {
+      "name": "CMake",
+      "percentage": 11.1
+    },
+    {
+      "name": "Python",
+      "percentage": 7.4
+    },
+    {
+      "name": "MATLAB",
+      "percentage": 6.5
+    },
+    {
+      "name": "C",
+      "percentage": 4.4
+    }
+  ],
+  "file_metadata": {
+    "Skeletonization\\parallel_dipha_input.m": {
+      "summary": "Key capabilities: parallel_dipha_input",
+      "updated_at": "2022-07-19T18:20:56Z"
+    },
+    "Skeletonization\\step_02_run_dipha.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:20:56Z"
+    },
+    "Skeletonization\\step_03_convert_dipha_output.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:20:56Z"
+    },
+    "Skeletonization\\step_04_shift_verts.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:20:56Z"
+    },
+    "Skeletonization\\step_07_execute_merging.py": {
+      "summary": "Key capabilities: func",
+      "updated_at": "2022-07-19T18:20:56Z"
+    },
+    "Skeletonization\\dipha-3d\\build\\CMakeFiles\\feature_tests.c": {
+      "summary": "Key capabilities: main",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\build\\CMakeFiles\\3.10.2\\CompilerIdC\\CMakeCCompilerId.c": {
+      "summary": "Key capabilities: main",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\build\\CMakeFiles\\3.10.2\\CompilerIdCXX\\CMakeCXXCompilerId.cpp": {
+      "summary": "Key capabilities: main",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\build\\CMakeFiles\\FindMPI\\test_mpi.cpp": {
+      "summary": "Key capabilities: main",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\build2\\CMakeFiles\\feature_tests.c": {
+      "summary": "Key capabilities: main",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\build2\\CMakeFiles\\3.10.2\\CompilerIdC\\CMakeCCompilerId.c": {
+      "summary": "Key capabilities: main",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\build2\\CMakeFiles\\3.10.2\\CompilerIdCXX\\CMakeCXXCompilerId.cpp": {
+      "summary": "Key capabilities: main",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\build2\\CMakeFiles\\FindMPI\\test_mpi.cpp": {
+      "summary": "Key capabilities: main",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\externals\\mem_usage\\mem_usage.h": {
+      "summary": "Key capabilities: getPeakRSS, getCurrentRSS",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\driver\\MersenneTwister.h": {
+      "summary": "Key capabilities: operator",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\funnel.h": {
+      "summary": "Key capabilities: bfs_index, merge_tree, merge_tree, fill, and more",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort.h": {
+      "summary": "Key capabilities: parallel_sort, parallel_sort, parallel_sort",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort_merge.h": {
+      "summary": "Key capabilities: merge, real_merge, real_merge, real_merge, and more",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort_samplesort.h": {
+      "summary": "Key capabilities: parallel_samplesort, parallel_samplesort",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort_seqsort.h": {
+      "summary": "Key capabilities: seqsort, real_seqsort, real_seqsort",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort_splitters.h": {
+      "summary": "Key capabilities: split, real_split, operator",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\psort_util.h": {
+      "summary": "Key capabilities: is_sorted, is_sorted, print_perf_data, print_perf_data, and more",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\externals\\psort-1.0\\src\\sort.timpl.h": {
+      "summary": "Key capabilities: batcher_sort, inplace_base_sort, iterator, merge_sort_",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\include\\dipha\\element_distribution.h": {
+      "summary": "Key capabilities: gather_answers",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\include\\dipha\\mpi_utils.h": {
+      "summary": "Key capabilities: receive_vector, non_blocking_send_vector, all_gather, file_read_at_vector, and more",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\include\\dipha\\algorithms\\compute_reduced_columns.h": {
+      "summary": "Key capabilities: compute_reduced_columns",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\include\\dipha\\algorithms\\generate_unreduced_columns.h": {
+      "summary": "Key capabilities: generate_unreduced_columns",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\include\\dipha\\algorithms\\get_filtration_to_cell_map.h": {
+      "summary": "Key capabilities: get_filtration_to_cell_map",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\include\\dipha\\data_structures\\distributed_vector.h": {
+      "summary": "Key capabilities: init, set_local_value, set_global_values",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\include\\dipha\\data_structures\\flat_column_stack.h": {
+      "summary": "Key capabilities: swap, clear, shrink_to_fit, push, and more",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\include\\dipha\\data_structures\\heap_column.h": {
+      "summary": "Key capabilities: add_column, prune, clear, get_max_index, and more",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\include\\dipha\\data_structures\\write_once_array_of_arrays.h": {
+      "summary": "Key capabilities: init, clear, set",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\include\\dipha\\data_structures\\write_once_column_array.h": {
+      "summary": "Key capabilities: init, set",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\include\\dipha\\inputs\\abstract_weighted_cell_complex.h": {
+      "summary": "Key capabilities: load_binary",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\include\\dipha\\inputs\\full_rips_complex.h": {
+      "summary": "Key capabilities: _load_binary, _precompute_breakpoints, _precompute_binomials",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\include\\dipha\\inputs\\sparse_rips_complex.h": {
+      "summary": "Key capabilities: operator, operator, operator, _load_binary, and more",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\include\\dipha\\inputs\\weighted_cubical_complex.h": {
+      "summary": "Key capabilities: _get_lattice_resolution, _load_binary",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\include\\dipha\\inputs\\weighted_explicit_complex.h": {
+      "summary": "Key capabilities: _load_binary",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\include\\dipha\\outputs\\save_persistence_diagram.h": {
+      "summary": "Key capabilities: compute_original_index, save_persistence_diagram",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\matlab\\create_noise_image_data.m": {
+      "summary": "Key capabilities: create_noise_image_data",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\matlab\\create_noisy_ramp_image_data.m": {
+      "summary": "Key capabilities: create_noisy_ramp_image_data",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\matlab\\create_ramp_image_data.m": {
+      "summary": "Key capabilities: create_ramp_image_data",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\matlab\\create_smooth_image_data.m": {
+      "summary": "Key capabilities: create_smooth_image_data",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\matlab\\create_sphere.m": {
+      "summary": "Key capabilities: create_sphere",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\matlab\\load_discrete_morse_edge_info.m": {
+      "summary": "Key capabilities: load_discrete_morse_edge_info",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\matlab\\load_persistence_diagram.m": {
+      "summary": "Key capabilities: load_persistence_diagram",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\matlab\\plot_midlife_persistence_diagram.m": {
+      "summary": "Key capabilities: plot_midlife_persistence_diagram",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\matlab\\plot_persistence_diagram.m": {
+      "summary": "Key capabilities: plot_persistence_diagram",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\matlab\\plot_persistence_diagram_density.m": {
+      "summary": "Key capabilities: plot_persistence_diagram_density",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\matlab\\save_3d_image_data.m": {
+      "summary": "Key capabilities: save_3d_image_data",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\matlab\\save_distance_matrix.m": {
+      "summary": "Key capabilities: save_distance_matrix",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\matlab\\save_image_data.m": {
+      "summary": "Key capabilities: save_image_data",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\matlab\\save_weighted_triangle_surface.m": {
+      "summary": "Key capabilities: save_weighted_triangle_surface, get_n4ed, get_ed4e, get_ed4n, and more",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\src\\create_phat_filtration.cpp": {
+      "summary": "Key capabilities: print_help_and_exit, parse_command_line, create_phat_filtration",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\src\\dipha.cpp": {
+      "summary": "Key capabilities: print_help_and_exit, parse_command_line, compute",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\src\\dualize.cpp": {
+      "summary": "Key capabilities: print_help, print_help_and_exit, parse_command_line",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-3d\\src\\full_to_sparse_distance_matrix.cpp": {
+      "summary": "Key capabilities: print_help_and_exit, parse_command_line, create_sparse_representation",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Skeletonization\\dipha-output\\ComputeGraphReconstruction.cpp": {
+      "summary": "Key capabilities: bfs, retrieve_path",
+      "updated_at": "2022-07-19T18:20:56Z"
+    },
+    "Skeletonization\\merger-hierarchical\\combine.cpp": {
+      "summary": "Key capabilities: Reorder, Reorder, GetIndex, InsertVertex, and more",
+      "updated_at": "2022-07-19T18:20:56Z"
+    },
+    "Skeletonization\\merger-hierarchical\\hash.cpp": {
+      "summary": "Key capabilities: hash_value, hash_value, hash_value",
+      "updated_at": "2022-07-19T18:20:56Z"
+    },
+    "Skeletonization\\merger-hierarchical\\hash.h": {
+      "summary": "Key capabilities: size, size, begin, end, and more",
+      "updated_at": "2022-07-19T18:20:56Z"
+    },
+    "Skeletonization\\merger-hierarchical\\merge.cpp": {
+      "summary": "Key capabilities: main",
+      "updated_at": "2022-07-19T18:20:56Z"
+    },
+    "Skeletonization\\merger-hierarchical\\merge_graph.cpp": {
+      "summary": "Key capabilities: triangle_cube, diffuse, in_range, update_bbox, and more",
+      "updated_at": "2022-07-19T18:20:56Z"
+    },
+    "Summarization\\load_persistence_diagram.m": {
+      "summary": "Key capabilities: load_persistence_diagram",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\save_image_data.m": {
+      "summary": "Key capabilities: save_image_data",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_00_convert_jp2_to_tif.py": {
+      "summary": "Key capabilities: get_date, remove_dups, function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_01_split_tif_channels.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_02_crop_single_channel.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_03a_write_dipha.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_03b_write_vert.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_04_run_dipha.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_05_run_matlab.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_06_run_dimo_ve_et.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_07_shift_morse_verts.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_08_cross_morse_with_process.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_09_remove_dup_edges.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_10_paths.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_11_haircut.py": {
+      "summary": "Key capabilities: remove_deg2_nodes, function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_12_post_haircut_paths.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_13_remove_insignificant.py": {
+      "summary": "Key capabilities: remove_deg2_nodes, line_function, compute_abs_cos_angle, function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_14_align_morse_coords_with_webviewer.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_15_morse_to_geojson.py": {
+      "summary": "Key capabilities: read_all, read_ve, in_between, segment, and more",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\step_16_all_json_to_one_folder.py": {
+      "summary": "Key capabilities: function",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\dipha-2d-thresh\\externals\\mem_usage\\mem_usage.h": {
+      "summary": "Key capabilities: getPeakRSS, getCurrentRSS",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\driver\\MersenneTwister.h": {
+      "summary": "Key capabilities: operator",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\funnel.h": {
+      "summary": "Key capabilities: bfs_index, merge_tree, merge_tree, fill, and more",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort.h": {
+      "summary": "Key capabilities: parallel_sort, parallel_sort, parallel_sort",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort_merge.h": {
+      "summary": "Key capabilities: merge, real_merge, real_merge, real_merge, and more",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort_samplesort.h": {
+      "summary": "Key capabilities: parallel_samplesort, parallel_samplesort",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort_seqsort.h": {
+      "summary": "Key capabilities: seqsort, real_seqsort, real_seqsort",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort_splitters.h": {
+      "summary": "Key capabilities: split, real_split, operator",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\psort_util.h": {
+      "summary": "Key capabilities: is_sorted, is_sorted, print_perf_data, print_perf_data, and more",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\externals\\psort-1.0\\src\\sort.timpl.h": {
+      "summary": "Key capabilities: batcher_sort, inplace_base_sort, iterator, merge_sort_",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\element_distribution.h": {
+      "summary": "Key capabilities: gather_answers",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\mpi_utils.h": {
+      "summary": "Key capabilities: receive_vector, non_blocking_send_vector, all_gather, file_read_at_vector, and more",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\algorithms\\compute_reduced_columns.h": {
+      "summary": "Key capabilities: compute_reduced_columns",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\algorithms\\generate_unreduced_columns.h": {
+      "summary": "Key capabilities: generate_unreduced_columns",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\algorithms\\get_filtration_to_cell_map.h": {
+      "summary": "Key capabilities: get_filtration_to_cell_map",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\data_structures\\distributed_vector.h": {
+      "summary": "Key capabilities: init, set_local_value, set_global_values",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\data_structures\\flat_column_stack.h": {
+      "summary": "Key capabilities: swap, clear, shrink_to_fit, push, and more",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\data_structures\\heap_column.h": {
+      "summary": "Key capabilities: add_column, prune, clear, get_max_index, and more",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\data_structures\\write_once_array_of_arrays.h": {
+      "summary": "Key capabilities: init, clear, set",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\data_structures\\write_once_column_array.h": {
+      "summary": "Key capabilities: init, set",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\inputs\\abstract_weighted_cell_complex.h": {
+      "summary": "Key capabilities: load_binary",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\inputs\\full_rips_complex.h": {
+      "summary": "Key capabilities: _load_binary, _precompute_breakpoints, _precompute_binomials",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\inputs\\sparse_rips_complex.h": {
+      "summary": "Key capabilities: operator, operator, operator, _load_binary, and more",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\inputs\\weighted_cubical_complex.h": {
+      "summary": "Key capabilities: _load_binary",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\inputs\\weighted_explicit_complex.h": {
+      "summary": "Key capabilities: _load_binary",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\include\\dipha\\outputs\\save_persistence_diagram.h": {
+      "summary": "Key capabilities: compute_original_index, save_persistence_diagram",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\matlab\\create_noise_image_data.m": {
+      "summary": "Key capabilities: create_noise_image_data",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\matlab\\create_noisy_ramp_image_data.m": {
+      "summary": "Key capabilities: create_noisy_ramp_image_data",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\matlab\\create_ramp_image_data.m": {
+      "summary": "Key capabilities: create_ramp_image_data",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\matlab\\create_smooth_image_data.m": {
+      "summary": "Key capabilities: create_smooth_image_data",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\matlab\\create_sphere.m": {
+      "summary": "Key capabilities: create_sphere",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\matlab\\load_discrete_morse_edge_info.m": {
+      "summary": "Key capabilities: load_discrete_morse_edge_info",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\matlab\\load_persistence_diagram.m": {
+      "summary": "Key capabilities: load_persistence_diagram",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\matlab\\plot_midlife_persistence_diagram.m": {
+      "summary": "Key capabilities: plot_midlife_persistence_diagram",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\matlab\\plot_persistence_diagram.m": {
+      "summary": "Key capabilities: plot_persistence_diagram",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\matlab\\plot_persistence_diagram_density.m": {
+      "summary": "Key capabilities: plot_persistence_diagram_density",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\matlab\\save_distance_matrix.m": {
+      "summary": "Key capabilities: save_distance_matrix",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\matlab\\save_image_data.m": {
+      "summary": "Key capabilities: save_image_data",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\matlab\\save_weighted_triangle_surface.m": {
+      "summary": "Key capabilities: save_weighted_triangle_surface, get_n4ed, get_ed4e, get_ed4n, and more",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\src\\create_phat_filtration.cpp": {
+      "summary": "Key capabilities: print_help_and_exit, parse_command_line, create_phat_filtration",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\src\\dipha.cpp": {
+      "summary": "Key capabilities: print_help_and_exit, parse_command_line, compute",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\src\\dualize.cpp": {
+      "summary": "Key capabilities: print_help, print_help_and_exit, parse_command_line",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-2d-thresh\\src\\full_to_sparse_distance_matrix.cpp": {
+      "summary": "Key capabilities: print_help_and_exit, parse_command_line, create_sparse_representation",
+      "updated_at": "2022-07-19T19:56:31Z"
+    },
+    "Summarization\\dipha-output-2d-ve-et-thresh\\ComputeGraphReconstruction.cpp": {
+      "summary": "Key capabilities: bfs, retrieve_path",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\paths_src\\ComputePaths.cpp": {
+      "summary": "Key capabilities: println, ReadInEdge, output_paths, dfs, and more",
+      "updated_at": "2022-07-19T18:18:40Z"
+    },
+    "Summarization\\post-haircutpaths\\ComputePaths.cpp": {
+      "summary": "Key capabilities: println, ReadInEdge, output_paths, dfs, and more",
+      "updated_at": "2022-07-19T18:18:40Z"
+    }
+  },
+  "all_files": {}
+}

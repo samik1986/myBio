@@ -1,1 +1,118 @@
-{"name":"MakeUPMirror","url":"https://github.com/samik1986/MakeUPMirror","description":"**Codebase Intelligence:** This Python codebase contains 4 extracted functions across 1 files. Key extracted functionality includes: LRN, call, get_config.","language":"Python","functions_extracted":{"LRN.py":[{"type":"class","name":"LRN","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"call","docstring":""},{"type":"function","name":"get_config","docstring":""}]},"updated_at":"2025-09-09T16:27:27Z","languages":[{"name":"Python","percentage":94.4},{"name":"MATLAB","percentage":5.6}]}
+{
+  "name": "MakeUPMirror",
+  "url": "https://github.com/samik1986/MakeUPMirror",
+  "description": "**Codebase Intelligence:** This Python codebase contains 4 extracted functions across 1 files. Key extracted functionality includes: LRN, call, get_config.",
+  "language": "Python",
+  "functions_extracted": {
+    "LRN.py": [
+      {
+        "type": "class",
+        "name": "LRN",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "call",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_config",
+        "docstring": ""
+      }
+    ]
+  },
+  "updated_at": "2025-09-09T16:27:27Z",
+  "languages": [
+    {
+      "name": "Python",
+      "percentage": 94.4
+    },
+    {
+      "name": "MATLAB",
+      "percentage": 5.6
+    }
+  ],
+  "all_files": {
+    "LRN.py": {
+      "filepath": "LRN.py",
+      "size": 2113,
+      "summary": "Key capabilities: LRN, call, get_config"
+    },
+    "VMU/__init__.py": {
+      "filepath": "VMU/__init__.py",
+      "size": 0,
+      "summary": "Core application logic or configuration."
+    },
+    "VMU/dataPrep.py": {
+      "filepath": "VMU/dataPrep.py",
+      "size": 2530,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "VMU/tripletData.py": {
+      "filepath": "VMU/tripletData.py",
+      "size": 1299,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "YMU/__init__.py": {
+      "filepath": "YMU/__init__.py",
+      "size": 0,
+      "summary": "Core application logic or configuration."
+    },
+    "YMU/dataPrep.py": {
+      "filepath": "YMU/dataPrep.py",
+      "size": 1146,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "YMU/tripletData.py": {
+      "filepath": "YMU/tripletData.py",
+      "size": 1501,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "custom_merge.py": {
+      "filepath": "custom_merge.py",
+      "size": 11175,
+      "summary": "Core application logic or configuration."
+    },
+    "dataPrep.py": {
+      "filepath": "dataPrep.py",
+      "size": 2117,
+      "summary": "Data loading and preprocessing pipeline."
+    },
+    "discriminate.py": {
+      "filepath": "discriminate.py",
+      "size": 0,
+      "summary": "Core application logic or configuration."
+    },
+    "image_save.m": {
+      "filepath": "image_save.m",
+      "size": 1895,
+      "summary": "Core application logic or configuration."
+    },
+    "network.py": {
+      "filepath": "network.py",
+      "size": 4537,
+      "summary": "Defines deep learning model architectures or networks."
+    },
+    "test.py": {
+      "filepath": "test.py",
+      "size": 1778,
+      "summary": "Contains testing or evaluation scripts."
+    },
+    "tetsing.py": {
+      "filepath": "tetsing.py",
+      "size": 2143,
+      "summary": "Core application logic or configuration."
+    },
+    "tripletData.py": {
+      "filepath": "tripletData.py",
+      "size": 1501,
+      "summary": "Data loading and preprocessing pipeline."
+    }
+  }
+}

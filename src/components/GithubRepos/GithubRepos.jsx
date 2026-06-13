@@ -155,36 +155,47 @@ const formatDate = (dateString) => {
 };
 
 const RepoCard = ({ repo, featured }) => (
-  <Link to={`/repo/${repo.name}/functions`} className={`glass project-card repo-card ${featured ? 'repo-featured' : 'repo-standard'}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-    <div className="project-header">
-      <FaGithub size={featured ? 28 : 20} className="project-icon" />
-      <div className="project-links">
-        <a href={repo.githubUrl} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ color: 'inherit' }}>
-          <ExternalLink size={18} />
-        </a>
-      </div>
-    </div>
-    
-    <h3 className="project-title">{repo.name}</h3>
-    <p className="project-desc">{repo.description || 'No description provided.'}</p>
-    
-    <LanguageBar languages={repo.languages} />
-    
-    <div className="project-footer mt-2" style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', fontSize: '0.85rem' }}>
-        <span className="project-updated">
-          Updated on {formatDate(repo.updatedAt)}
-        </span>
-        <div className="project-stats">
-          <span><Star size={14} /> {repo.stars}</span>
-          <span><GitFork size={14} /> {repo.forks}</span>
+  <div className={`glass project-card repo-card ${featured ? 'repo-featured' : 'repo-standard'}`} style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' }}>
+    <Link to={repo.hasApiData ? `/repo/${repo.name}/functions` : '#'} style={{textDecoration: 'none', color: 'inherit', flexGrow: 1, cursor: repo.hasApiData ? 'pointer' : 'default'}}>
+      <div className="project-header">
+        <FaGithub size={featured ? 28 : 20} className="project-icon" />
+        <div className="project-links">
+          <a href={repo.githubUrl} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ color: 'inherit' }}>
+            <ExternalLink size={18} />
+          </a>
         </div>
       </div>
-      <div className="view-functions-badge" style={{ alignSelf: 'flex-start', fontSize: '0.8rem', background: 'rgba(var(--primary-rgb), 0.1)', color: 'var(--primary)', padding: '0.3rem 0.6rem', borderRadius: '4px', fontWeight: '500' }}>
-        View API / Functions <ArrowRight size={14} style={{verticalAlign: 'middle', marginLeft: '4px'}}/>
+      
+      <h3 className="project-title">{repo.name}</h3>
+      <p className="project-desc">{repo.description || 'No description provided.'}</p>
+      
+      {repo.gist && (
+        <div className="repo-gist" style={{ marginTop: '1rem', padding: '0.8rem', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', fontSize: '0.85rem', color: 'var(--text-secondary)', borderLeft: '3px solid var(--primary)' }}>
+          <strong>Codebase Gist:</strong> {repo.gist}
+        </div>
+      )}
+      
+      <LanguageBar languages={repo.languages} />
+      
+      <div className="project-footer mt-2" style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', fontSize: '0.85rem' }}>
+          <span className="project-updated">
+            Updated on {formatDate(repo.updatedAt)}
+          </span>
+          <div className="project-stats">
+            <span><Star size={14} /> {repo.stars}</span>
+            <span><GitFork size={14} /> {repo.forks}</span>
+          </div>
+        </div>
+        
+        {repo.hasApiData && (
+          <div className="view-functions-badge" style={{ alignSelf: 'flex-start', fontSize: '0.8rem', background: 'rgba(var(--primary-rgb), 0.1)', color: 'var(--primary)', padding: '0.3rem 0.6rem', borderRadius: '4px', fontWeight: '500', marginTop: 'auto' }}>
+            View API / Functions <ArrowRight size={14} style={{verticalAlign: 'middle', marginLeft: '4px'}}/>
+          </div>
+        )}
       </div>
-    </div>
-  </Link>
+    </Link>
+  </div>
 );
 
 export default GithubRepos;

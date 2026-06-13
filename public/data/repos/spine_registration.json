@@ -1,0 +1,33 @@
+{
+  "name": "spine_registration",
+  "url": "https://github.com/twardlab/spine_registration",
+  "description": "registration for spine data from dong lab",
+  "language": "Jupyter Notebook",
+  "all_files": {
+    "docs/conf.py": {
+      "filepath": "docs/conf.py",
+      "size": 1663,
+      "summary": "Core application logic or configuration."
+    },
+    "source/notebooks/example.ipynb": {
+      "filepath": "source/notebooks/example.ipynb",
+      "size": 2550,
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+    },
+    "source/notebooks/register_spine_v04_spinal_cord_4_atlas_to_reflection_points_lines.ipynb": {
+      "filepath": "source/notebooks/register_spine_v04_spinal_cord_4_atlas_to_reflection_points_lines.ipynb",
+      "size": 68722,
+      "summary": "Jupyter Notebook for exploratory data analysis or experiments."
+    },
+    "source/scripts/spine_reg.py": {
+      "filepath": "source/scripts/spine_reg.py",
+      "size": 6517,
+      "summary": "Core application logic or configuration."
+    },
+    "source/scripts/spine_reg_pipeline.py": {
+      "filepath": "source/scripts/spine_reg_pipeline.py",
+      "size": 37041,
+      "summary": "Core application logic or configuration."
+    }
+  }
+}

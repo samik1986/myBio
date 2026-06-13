@@ -1,1 +1,34 @@
-{"name":"tf_lddmm","url":"https://github.com/samik1986/tf_lddmm","description":"**Codebase Intelligence:** This Python codebase contains 2 extracted functions across 1 files. Key extracted functionality includes: read_from_pickle.","language":"Python","functions_extracted":{"transform2atlas.py":[{"type":"function","name":"main","docstring":""},{"type":"function","name":"read_from_pickle","docstring":""}]},"updated_at":"2019-05-06T15:58:42Z","languages":[{"name":"Python","percentage":100.0}]}
+{
+  "name": "tf_lddmm",
+  "url": "https://github.com/samik1986/tf_lddmm",
+  "description": "**Codebase Intelligence:** This Python codebase contains 2 extracted functions across 1 files. Key extracted functionality includes: read_from_pickle.",
+  "language": "Python",
+  "functions_extracted": {
+    "transform2atlas.py": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "read_from_pickle",
+        "docstring": ""
+      }
+    ]
+  },
+  "updated_at": "2019-05-06T15:58:42Z",
+  "languages": [
+    {
+      "name": "Python",
+      "percentage": 100
+    }
+  ],
+  "all_files": {
+    "transform2atlas.py": {
+      "filepath": "transform2atlas.py",
+      "size": 1486,
+      "summary": "Key capabilities: read_from_pickle"
+    }
+  }
+}

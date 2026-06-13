@@ -1,1 +1,205 @@
-{"name":"cw_graph_tools","url":"https://github.com/samik1986/cw_graph_tools","description":"**Codebase Intelligence:** This MATLAB codebase contains 13 extracted functions across 11 files. Key extracted functionality includes: add_tree, create_forest_from_json, delete_tree, edit_cw_json, edit_graph, and more.","language":"MATLAB","functions_extracted":{"add_tree.m":[{"type":"function","name":"add_tree","docstring":""}],"create_forest_from_json.m":[{"type":"function","name":"create_forest_from_json","docstring":""}],"delete_tree.m":[{"type":"function","name":"delete_tree","docstring":""}],"edit_cw_json.m":[{"type":"function","name":"edit_cw_json","docstring":""}],"edit_graph.m":[{"type":"function","name":"edit_graph","docstring":""}],"export_forest_to_json.m":[{"type":"function","name":"export_forest_to_json","docstring":""}],"find_loops.m":[{"type":"function","name":"find_loops","docstring":""}],"find_mst.m":[{"type":"function","name":"find_mst","docstring":""},{"type":"function","name":"find_dt","docstring":""},{"type":"function","name":"union_dt","docstring":""}],"load_cw_json.m":[{"type":"function","name":"load_cw_json","docstring":""}],"plot_cw_complex.m":[{"type":"function","name":"plot_cw_complex","docstring":""}],"save_cw_json.m":[{"type":"function","name":"save_cw_json","docstring":""}]},"updated_at":"2026-04-15T13:47:38Z","languages":[{"name":"MATLAB","percentage":100.0}]}
+{
+  "name": "cw_graph_tools",
+  "url": "https://github.com/samik1986/cw_graph_tools",
+  "description": "**Codebase Intelligence:** This MATLAB codebase contains 13 extracted functions across 11 files. Key extracted functionality includes: add_tree, create_forest_from_json, delete_tree, edit_cw_json, edit_graph, and more.",
+  "language": "MATLAB",
+  "functions_extracted": {
+    "add_tree.m": [
+      {
+        "type": "function",
+        "name": "add_tree",
+        "docstring": ""
+      }
+    ],
+    "create_forest_from_json.m": [
+      {
+        "type": "function",
+        "name": "create_forest_from_json",
+        "docstring": ""
+      }
+    ],
+    "delete_tree.m": [
+      {
+        "type": "function",
+        "name": "delete_tree",
+        "docstring": ""
+      }
+    ],
+    "edit_cw_json.m": [
+      {
+        "type": "function",
+        "name": "edit_cw_json",
+        "docstring": ""
+      }
+    ],
+    "edit_graph.m": [
+      {
+        "type": "function",
+        "name": "edit_graph",
+        "docstring": ""
+      }
+    ],
+    "export_forest_to_json.m": [
+      {
+        "type": "function",
+        "name": "export_forest_to_json",
+        "docstring": ""
+      }
+    ],
+    "find_loops.m": [
+      {
+        "type": "function",
+        "name": "find_loops",
+        "docstring": ""
+      }
+    ],
+    "find_mst.m": [
+      {
+        "type": "function",
+        "name": "find_mst",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "find_dt",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "union_dt",
+        "docstring": ""
+      }
+    ],
+    "load_cw_json.m": [
+      {
+        "type": "function",
+        "name": "load_cw_json",
+        "docstring": ""
+      }
+    ],
+    "plot_cw_complex.m": [
+      {
+        "type": "function",
+        "name": "plot_cw_complex",
+        "docstring": ""
+      }
+    ],
+    "save_cw_json.m": [
+      {
+        "type": "function",
+        "name": "save_cw_json",
+        "docstring": ""
+      }
+    ]
+  },
+  "updated_at": "2026-04-15T13:47:38Z",
+  "languages": [
+    {
+      "name": "MATLAB",
+      "percentage": 100
+    }
+  ],
+  "file_metadata": {
+    "add_tree.m": {
+      "summary": "Key capabilities: add_tree",
+      "updated_at": "2026-04-15T13:38:54Z"
+    },
+    "create_forest_from_json.m": {
+      "summary": "Key capabilities: create_forest_from_json",
+      "updated_at": "2026-04-15T13:38:54Z"
+    },
+    "delete_tree.m": {
+      "summary": "Key capabilities: delete_tree",
+      "updated_at": "2026-04-15T13:38:54Z"
+    },
+    "edit_cw_json.m": {
+      "summary": "Key capabilities: edit_cw_json",
+      "updated_at": "2026-04-15T13:38:54Z"
+    },
+    "edit_graph.m": {
+      "summary": "Key capabilities: edit_graph",
+      "updated_at": "2026-04-15T13:38:54Z"
+    },
+    "export_forest_to_json.m": {
+      "summary": "Key capabilities: export_forest_to_json",
+      "updated_at": "2026-04-15T13:38:54Z"
+    },
+    "find_loops.m": {
+      "summary": "Key capabilities: find_loops",
+      "updated_at": "2026-04-15T13:38:54Z"
+    },
+    "find_mst.m": {
+      "summary": "Key capabilities: find_mst, find_dt, union_dt",
+      "updated_at": "2026-04-15T13:38:54Z"
+    },
+    "load_cw_json.m": {
+      "summary": "Key capabilities: load_cw_json",
+      "updated_at": "2026-04-15T13:38:54Z"
+    },
+    "plot_cw_complex.m": {
+      "summary": "Key capabilities: plot_cw_complex",
+      "updated_at": "2026-04-15T13:38:54Z"
+    },
+    "save_cw_json.m": {
+      "summary": "Key capabilities: save_cw_json",
+      "updated_at": "2026-04-15T13:38:54Z"
+    }
+  },
+  "all_files": {
+    "add_tree.m": {
+      "filepath": "add_tree.m",
+      "size": 2223,
+      "summary": "Key capabilities: add_tree"
+    },
+    "create_forest_from_json.m": {
+      "filepath": "create_forest_from_json.m",
+      "size": 1632,
+      "summary": "Key capabilities: create_forest_from_json"
+    },
+    "delete_tree.m": {
+      "filepath": "delete_tree.m",
+      "size": 2536,
+      "summary": "Key capabilities: delete_tree"
+    },
+    "edit_cw_json.m": {
+      "filepath": "edit_cw_json.m",
+      "size": 2705,
+      "summary": "Key capabilities: edit_cw_json"
+    },
+    "edit_graph.m": {
+      "filepath": "edit_graph.m",
+      "size": 2295,
+      "summary": "Key capabilities: edit_graph"
+    },
+    "export_forest_to_json.m": {
+      "filepath": "export_forest_to_json.m",
+      "size": 2134,
+      "summary": "Key capabilities: export_forest_to_json"
+    },
+    "find_loops.m": {
+      "filepath": "find_loops.m",
+      "size": 4158,
+      "summary": "Key capabilities: find_loops"
+    },
+    "find_mst.m": {
+      "filepath": "find_mst.m",
+      "size": 2749,
+      "summary": "Key capabilities: find_mst, find_dt, union_dt"
+    },
+    "load_cw_json.m": {
+      "filepath": "load_cw_json.m",
+      "size": 473,
+      "summary": "Key capabilities: load_cw_json"
+    },
+    "plot_cw_complex.m": {
+      "filepath": "plot_cw_complex.m",
+      "size": 2694,
+      "summary": "Key capabilities: plot_cw_complex"
+    },
+    "save_cw_json.m": {
+      "filepath": "save_cw_json.m",
+      "size": 605,
+      "summary": "Key capabilities: save_cw_json"
+    }
+  }
+}

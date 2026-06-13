@@ -1,1 +1,878 @@
-{"name":"Mediar_4_devBrain","url":"https://github.com/samik1986/Mediar_4_devBrain","description":"**Codebase Intelligence:** This Python codebase contains 132 extracted functions across 23 files. Key extracted functionality includes: public_paths_labeled, official_paths_labeled, official_paths_tuning, add_mapping_to_json, natural_sort_key, and more.","language":"Python","functions_extracted":{"evaluate.py":[{"type":"function","name":"main","docstring":""}],"generate_mapping.py":[{"type":"function","name":"public_paths_labeled","docstring":"Map paths for public datasets as dictionary list"},{"type":"function","name":"official_paths_labeled","docstring":"Map paths for official labeled datasets as dictionary list"},{"type":"function","name":"official_paths_tuning","docstring":"Map paths for official tuning datasets as dictionary list"},{"type":"function","name":"add_mapping_to_json","docstring":"Save mapped dictionary as a json file"},{"type":"function","name":"natural_sort_key","docstring":""}],"main.py":[{"type":"function","name":"_get_setups","docstring":"Get experiment configuration"},{"type":"function","name":"main","docstring":"Execute experiment."}],"predict.py":[{"type":"function","name":"main","docstring":"Execute prediction and save the results"}],"core\\BasePredictor.py":[{"type":"class","name":"BasePredictor","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"conduct_prediction","docstring":""},{"type":"function","name":"write_pred_mask","docstring":""},{"type":"function","name":"_setups","docstring":""},{"type":"function","name":"_get_img_data","docstring":""},{"type":"function","name":"_inference","docstring":""},{"type":"function","name":"_post_process","docstring":""}],"core\\BaseTrainer.py":[{"type":"class","name":"BaseTrainer","docstring":"Abstract base class for trainer implementations"},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"train","docstring":"Train the model"},{"type":"function","name":"_epoch_phase","docstring":"Learning process for 1 Epoch (for different phases).\n\nArgs:\n    phase (str): \"train\", \"valid\", \"test\"\n\nReturns:\n    dict: statistics for the phase results"},{"type":"function","name":"_tuningset_evaluation","docstring":""},{"type":"function","name":"_update_results","docstring":"Aggregate and flush metrics\n\nArgs:\n    phase_results (dict): base dictionary to log metrics\n    metric (_type_): cumulated metrics\n    metric_key (_type_): name of metric\n    phase (str, optional): current phase name. Defaults to \"train\".\n\nReturns:\n    dict: dictionary of metrics for the current phase"},{"type":"function","name":"_update_best_model","docstring":""},{"type":"function","name":"_inference","docstring":"inference methods for different phase"},{"type":"function","name":"_post_process","docstring":""},{"type":"function","name":"_get_f1_metric","docstring":""}],"core\\utils.py":[{"type":"function","name":"print_learning_device","docstring":"Get and print the learning device information."},{"type":"function","name":"print_with_logging","docstring":"Print and log on the W&B server.\n\nArgs:\n    results (dict): results dictionary\n    step (int): epoch index"}],"core\\Baseline\\Predictor.py":[{"type":"class","name":"Predictor","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"_inference","docstring":""},{"type":"function","name":"_post_process","docstring":""}],"core\\Baseline\\Trainer.py":[{"type":"class","name":"Trainer","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"_epoch_phase","docstring":"Learning process for 1 Epoch."},{"type":"function","name":"_post_process","docstring":"Conduct post-processing for outputs & labels."},{"type":"function","name":"_get_f1_metric","docstring":""}],"core\\Baseline\\utils.py":[{"type":"function","name":"identify_instances_from_classmap","docstring":"Identification of cell instances from the class map"},{"type":"function","name":"create_interior_onehot","docstring":"interior : (H,W), np.uint8\n    three-class map, values: 0,1,2\n    0: background\n    1: interior\n    2: boundary"}],"core\\MEDIAR\\EnsemblePredictor.py":[{"type":"class","name":"EnsemblePredictor","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"_inference","docstring":""}],"core\\MEDIAR\\Predictor.py":[{"type":"class","name":"Predictor","docstring":""},{"type":"function","name":"hflip","docstring":"flip batch of images horizontally"},{"type":"function","name":"vflip","docstring":"flip batch of images vertically"},{"type":"class","name":"DualTransform","docstring":""},{"type":"class","name":"HorizontalFlip","docstring":"Flip images horizontally (left -> right)"},{"type":"class","name":"VerticalFlip","docstring":"Flip images vertically (up -> down)"},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"_inference","docstring":"Conduct model prediction"},{"type":"function","name":"_window_inference","docstring":"Inference on RoI-sized window"},{"type":"function","name":"_post_process","docstring":"Generate cell instance masks."},{"type":"function","name":"_sigmoid","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"apply_aug_image","docstring":""},{"type":"function","name":"apply_deaug_mask","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"apply_aug_image","docstring":""},{"type":"function","name":"apply_deaug_mask","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"apply_aug_image","docstring":""},{"type":"function","name":"apply_deaug_mask","docstring":""}],"core\\MEDIAR\\Trainer.py":[{"type":"class","name":"Trainer","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"mediar_criterion","docstring":"loss function between true labels and prediction outputs"},{"type":"function","name":"_epoch_phase","docstring":""},{"type":"function","name":"_inference","docstring":"inference methods for different phase"},{"type":"function","name":"_post_process","docstring":"Predict cell instances using the gradient tracking"},{"type":"function","name":"_sigmoid","docstring":"Sigmoid function for numpy arrays"}],"core\\MEDIAR\\utils.py":[{"type":"function","name":"labels_to_flows","docstring":"Convert labels (list of masks or flows) to flows for training model"},{"type":"function","name":"compute_masks","docstring":"compute masks using dynamics from dP, cellprob, and boundary"},{"type":"function","name":"_extend_centers_gpu","docstring":""},{"type":"function","name":"diameters","docstring":""},{"type":"function","name":"masks_to_flows_gpu","docstring":""},{"type":"function","name":"masks_to_flows","docstring":""},{"type":"function","name":"steps2D_interp","docstring":""},{"type":"function","name":"follow_flows","docstring":""},{"type":"function","name":"flow_error","docstring":""},{"type":"function","name":"remove_bad_flow_masks","docstring":""},{"type":"function","name":"get_masks","docstring":""}],"train_tools\\measures.py":[{"type":"function","name":"evaluate_f1_score_cellseg","docstring":"Get confusion elements for cell segmentation results.\nBoundary pixels are not considered during evaluation."},{"type":"function","name":"evaluate_f1_score","docstring":"Evaluate F1-score for the given confusion elements"},{"type":"function","name":"_remove_boundary_cells","docstring":"Remove cells on the boundary from the mask"},{"type":"function","name":"get_confusion","docstring":"Calculate confusion matrix elements: (TP, FP, FN)"},{"type":"function","name":"_get_true_positive","docstring":"Get true positive (TP) pixels at the given threshold"},{"type":"function","name":"_get_iou","docstring":"Get the iou between masks_true and masks_pred"},{"type":"function","name":"_label_overlap","docstring":"Get pixel overlaps between two masks\n\nParameters\n------------\nx, y (np array; dtype int): 0=NO masks; 1,2... are mask labels\n\nReturns\n------------\noverlap (np array; dtype int): Overlaps of size [x.max()+1, y.max()+1]"}],"train_tools\\utils.py":[{"type":"class","name":"ConfLoader","docstring":"Load json config file using DictWithAttributeAccess object_hook.\nConfLoader(conf_name).opt attribute is the result of loading json config file."},{"type":"function","name":"directory_setter","docstring":"Make dictionary if not exists."},{"type":"function","name":"random_seeder","docstring":"Fix randomness."},{"type":"function","name":"pprint_config","docstring":""},{"type":"class","name":"DictWithAttributeAccess","docstring":"This inner class makes dict to be accessed same as class attribute.\nFor example, you can use opt.key instead of the opt['key']."},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"__load_conf","docstring":""},{"type":"function","name":"__get_opt","docstring":""},{"type":"function","name":"__getattr__","docstring":""},{"type":"function","name":"__setattr__","docstring":""}],"train_tools\\data_utils\\datasetter.py":[{"type":"function","name":"get_dataloaders_labeled","docstring":"Set DataLoaders for labeled datasets.\n\nArgs:\n    root (str): root directory\n    mapping_file (str): json file for mapping dataset\n    valid_portion (float, optional): portion of valid datasets. Defaults to 0.1.\n    batch_size (int, optional): batch size. Defaults to 8.\n    shuffle (bool, optional): shuffles dataloader. Defaults to True.\n    num_workers (int, optional): number of workers for each datalaoder. Defaults to 5.\n\nReturns:\n    dict: dictionary of data loaders."},{"type":"function","name":"get_dataloaders_public","docstring":"Set DataLoaders for labeled datasets.\n\nArgs:\n    root (str): root directory\n    mapping_file (str): json file for mapping dataset\n    valid_portion (float, optional): portion of valid datasets. Defaults to 0.1.\n    batch_size (int, optional): batch size. Defaults to 8.\n    shuffle (bool, optional): shuffles dataloader. Defaults to True.\n\nReturns:\n    dict: dictionary of data loaders."},{"type":"function","name":"get_dataloaders_unlabeled","docstring":"Set dataloaders for unlabeled dataset."},{"type":"function","name":"get_dataloaders_unlabeled_psuedo","docstring":""}],"train_tools\\data_utils\\transforms.py":[{"type":"function","name":"get_pred_transforms","docstring":"Prediction preprocessing"}],"train_tools\\data_utils\\utils.py":[{"type":"function","name":"split_train_valid","docstring":"Split train/validata data according to the given proportion"},{"type":"function","name":"path_decoder","docstring":"Decode img/label file paths from root & mapping directory.\n\nArgs:\n    root (str):\n    mapping_file (str): json file containing image & label file paths.\n    no_label (bool, optional): whether to include \"label\" key. Defaults to False.\n\nReturns:\n    list: list of dictionary. (ex. [{\"img\": img_path, \"label\": label_path}, ...])"}],"train_tools\\data_utils\\custom\\CellAware.py":[{"type":"class","name":"BoundaryExclusion","docstring":"Map the cell boundary pixel labels to the background class (0)."},{"type":"class","name":"IntensityDiversification","docstring":"Randomly rescale the intensity of cell pixels."},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"__call__","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"__call__","docstring":""}],"train_tools\\data_utils\\custom\\LoadImage.py":[{"type":"class","name":"CustomLoadImage","docstring":"Load image file or files from provided path based on reader.\nIf reader is not specified, this class automatically chooses readers\nbased on the supported suffixes and in the following order:\n\n    - User-specified reader at runtime when calling this loader.\n    - User-specified reader in the constructor of `LoadImage`.\n    - Readers from the last to the first in the registered list.\n    - Current default readers: (nii, nii.gz -> NibabelReader), (png, jpg, bmp -> PILReader),\n      (npz, npy -> NumpyReader), (nrrd -> NrrdReader), (DICOM file -> ITKReader).\n\n[!Caution] This overriding replaces the original ITK with Custom UnifiedITKReader."},{"type":"class","name":"CustomLoadImaged","docstring":"Dictionary-based wrapper of `CustomLoadImage`."},{"type":"class","name":"UnifiedITKReader","docstring":"Unified Reader to read \".tif\" and \".tiff files\".\nAs the tifffile reads the images as numpy arrays, it inherits from the NumpyReader."},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"verify_suffix","docstring":"Verify whether the file format is supported by TIFF Reader."},{"type":"function","name":"read","docstring":"Read Images from the file."}],"train_tools\\data_utils\\custom\\NormalizeImage.py":[{"type":"class","name":"CustomNormalizeImage","docstring":"Normalize the image."},{"type":"class","name":"CustomNormalizeImaged","docstring":"Dictionary-based wrapper of NormalizeImage"},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"_normalize","docstring":""},{"type":"function","name":"__call__","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"__call__","docstring":""}],"train_tools\\models\\MEDIARFormer.py":[{"type":"class","name":"MEDIARFormer","docstring":"MEDIAR-Former Model"},{"type":"class","name":"DeepSegmentationHead","docstring":"Custom segmentation head for generating specific masks"},{"type":"function","name":"_convert_activations","docstring":"Recursively convert activation functions in a module"},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"forward","docstring":"Forward pass through the network"},{"type":"function","name":"__init__","docstring":""}]},"updated_at":"2025-09-09T16:26:18Z","languages":[{"name":"Python","percentage":100.0}]}
+{
+  "name": "Mediar_4_devBrain",
+  "url": "https://github.com/samik1986/Mediar_4_devBrain",
+  "description": "**Codebase Intelligence:** This Python codebase contains 132 extracted functions across 23 files. Key extracted functionality includes: public_paths_labeled, official_paths_labeled, official_paths_tuning, add_mapping_to_json, natural_sort_key, and more.",
+  "language": "Python",
+  "functions_extracted": {
+    "evaluate.py": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": ""
+      }
+    ],
+    "generate_mapping.py": [
+      {
+        "type": "function",
+        "name": "public_paths_labeled",
+        "docstring": "Map paths for public datasets as dictionary list"
+      },
+      {
+        "type": "function",
+        "name": "official_paths_labeled",
+        "docstring": "Map paths for official labeled datasets as dictionary list"
+      },
+      {
+        "type": "function",
+        "name": "official_paths_tuning",
+        "docstring": "Map paths for official tuning datasets as dictionary list"
+      },
+      {
+        "type": "function",
+        "name": "add_mapping_to_json",
+        "docstring": "Save mapped dictionary as a json file"
+      },
+      {
+        "type": "function",
+        "name": "natural_sort_key",
+        "docstring": ""
+      }
+    ],
+    "main.py": [
+      {
+        "type": "function",
+        "name": "_get_setups",
+        "docstring": "Get experiment configuration"
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": "Execute experiment."
+      }
+    ],
+    "predict.py": [
+      {
+        "type": "function",
+        "name": "main",
+        "docstring": "Execute prediction and save the results"
+      }
+    ],
+    "core\\BasePredictor.py": [
+      {
+        "type": "class",
+        "name": "BasePredictor",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "conduct_prediction",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "write_pred_mask",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_setups",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_get_img_data",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_inference",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_post_process",
+        "docstring": ""
+      }
+    ],
+    "core\\BaseTrainer.py": [
+      {
+        "type": "class",
+        "name": "BaseTrainer",
+        "docstring": "Abstract base class for trainer implementations"
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "train",
+        "docstring": "Train the model"
+      },
+      {
+        "type": "function",
+        "name": "_epoch_phase",
+        "docstring": "Learning process for 1 Epoch (for different phases).\n\nArgs:\n    phase (str): \"train\", \"valid\", \"test\"\n\nReturns:\n    dict: statistics for the phase results"
+      },
+      {
+        "type": "function",
+        "name": "_tuningset_evaluation",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_update_results",
+        "docstring": "Aggregate and flush metrics\n\nArgs:\n    phase_results (dict): base dictionary to log metrics\n    metric (_type_): cumulated metrics\n    metric_key (_type_): name of metric\n    phase (str, optional): current phase name. Defaults to \"train\".\n\nReturns:\n    dict: dictionary of metrics for the current phase"
+      },
+      {
+        "type": "function",
+        "name": "_update_best_model",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_inference",
+        "docstring": "inference methods for different phase"
+      },
+      {
+        "type": "function",
+        "name": "_post_process",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_get_f1_metric",
+        "docstring": ""
+      }
+    ],
+    "core\\utils.py": [
+      {
+        "type": "function",
+        "name": "print_learning_device",
+        "docstring": "Get and print the learning device information."
+      },
+      {
+        "type": "function",
+        "name": "print_with_logging",
+        "docstring": "Print and log on the W&B server.\n\nArgs:\n    results (dict): results dictionary\n    step (int): epoch index"
+      }
+    ],
+    "core\\Baseline\\Predictor.py": [
+      {
+        "type": "class",
+        "name": "Predictor",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_inference",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_post_process",
+        "docstring": ""
+      }
+    ],
+    "core\\Baseline\\Trainer.py": [
+      {
+        "type": "class",
+        "name": "Trainer",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_epoch_phase",
+        "docstring": "Learning process for 1 Epoch."
+      },
+      {
+        "type": "function",
+        "name": "_post_process",
+        "docstring": "Conduct post-processing for outputs & labels."
+      },
+      {
+        "type": "function",
+        "name": "_get_f1_metric",
+        "docstring": ""
+      }
+    ],
+    "core\\Baseline\\utils.py": [
+      {
+        "type": "function",
+        "name": "identify_instances_from_classmap",
+        "docstring": "Identification of cell instances from the class map"
+      },
+      {
+        "type": "function",
+        "name": "create_interior_onehot",
+        "docstring": "interior : (H,W), np.uint8\n    three-class map, values: 0,1,2\n    0: background\n    1: interior\n    2: boundary"
+      }
+    ],
+    "core\\MEDIAR\\EnsemblePredictor.py": [
+      {
+        "type": "class",
+        "name": "EnsemblePredictor",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_inference",
+        "docstring": ""
+      }
+    ],
+    "core\\MEDIAR\\Predictor.py": [
+      {
+        "type": "class",
+        "name": "Predictor",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "hflip",
+        "docstring": "flip batch of images horizontally"
+      },
+      {
+        "type": "function",
+        "name": "vflip",
+        "docstring": "flip batch of images vertically"
+      },
+      {
+        "type": "class",
+        "name": "DualTransform",
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "HorizontalFlip",
+        "docstring": "Flip images horizontally (left -> right)"
+      },
+      {
+        "type": "class",
+        "name": "VerticalFlip",
+        "docstring": "Flip images vertically (up -> down)"
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_inference",
+        "docstring": "Conduct model prediction"
+      },
+      {
+        "type": "function",
+        "name": "_window_inference",
+        "docstring": "Inference on RoI-sized window"
+      },
+      {
+        "type": "function",
+        "name": "_post_process",
+        "docstring": "Generate cell instance masks."
+      },
+      {
+        "type": "function",
+        "name": "_sigmoid",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "apply_aug_image",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "apply_deaug_mask",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "apply_aug_image",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "apply_deaug_mask",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "apply_aug_image",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "apply_deaug_mask",
+        "docstring": ""
+      }
+    ],
+    "core\\MEDIAR\\Trainer.py": [
+      {
+        "type": "class",
+        "name": "Trainer",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "mediar_criterion",
+        "docstring": "loss function between true labels and prediction outputs"
+      },
+      {
+        "type": "function",
+        "name": "_epoch_phase",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_inference",
+        "docstring": "inference methods for different phase"
+      },
+      {
+        "type": "function",
+        "name": "_post_process",
+        "docstring": "Predict cell instances using the gradient tracking"
+      },
+      {
+        "type": "function",
+        "name": "_sigmoid",
+        "docstring": "Sigmoid function for numpy arrays"
+      }
+    ],
+    "core\\MEDIAR\\utils.py": [
+      {
+        "type": "function",
+        "name": "labels_to_flows",
+        "docstring": "Convert labels (list of masks or flows) to flows for training model"
+      },
+      {
+        "type": "function",
+        "name": "compute_masks",
+        "docstring": "compute masks using dynamics from dP, cellprob, and boundary"
+      },
+      {
+        "type": "function",
+        "name": "_extend_centers_gpu",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "diameters",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "masks_to_flows_gpu",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "masks_to_flows",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "steps2D_interp",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "follow_flows",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "flow_error",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "remove_bad_flow_masks",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "get_masks",
+        "docstring": ""
+      }
+    ],
+    "train_tools\\measures.py": [
+      {
+        "type": "function",
+        "name": "evaluate_f1_score_cellseg",
+        "docstring": "Get confusion elements for cell segmentation results.\nBoundary pixels are not considered during evaluation."
+      },
+      {
+        "type": "function",
+        "name": "evaluate_f1_score",
+        "docstring": "Evaluate F1-score for the given confusion elements"
+      },
+      {
+        "type": "function",
+        "name": "_remove_boundary_cells",
+        "docstring": "Remove cells on the boundary from the mask"
+      },
+      {
+        "type": "function",
+        "name": "get_confusion",
+        "docstring": "Calculate confusion matrix elements: (TP, FP, FN)"
+      },
+      {
+        "type": "function",
+        "name": "_get_true_positive",
+        "docstring": "Get true positive (TP) pixels at the given threshold"
+      },
+      {
+        "type": "function",
+        "name": "_get_iou",
+        "docstring": "Get the iou between masks_true and masks_pred"
+      },
+      {
+        "type": "function",
+        "name": "_label_overlap",
+        "docstring": "Get pixel overlaps between two masks\n\nParameters\n------------\nx, y (np array; dtype int): 0=NO masks; 1,2... are mask labels\n\nReturns\n------------\noverlap (np array; dtype int): Overlaps of size [x.max()+1, y.max()+1]"
+      }
+    ],
+    "train_tools\\utils.py": [
+      {
+        "type": "class",
+        "name": "ConfLoader",
+        "docstring": "Load json config file using DictWithAttributeAccess object_hook.\nConfLoader(conf_name).opt attribute is the result of loading json config file."
+      },
+      {
+        "type": "function",
+        "name": "directory_setter",
+        "docstring": "Make dictionary if not exists."
+      },
+      {
+        "type": "function",
+        "name": "random_seeder",
+        "docstring": "Fix randomness."
+      },
+      {
+        "type": "function",
+        "name": "pprint_config",
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "DictWithAttributeAccess",
+        "docstring": "This inner class makes dict to be accessed same as class attribute.\nFor example, you can use opt.key instead of the opt['key']."
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__load_conf",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__get_opt",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__getattr__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__setattr__",
+        "docstring": ""
+      }
+    ],
+    "train_tools\\data_utils\\datasetter.py": [
+      {
+        "type": "function",
+        "name": "get_dataloaders_labeled",
+        "docstring": "Set DataLoaders for labeled datasets.\n\nArgs:\n    root (str): root directory\n    mapping_file (str): json file for mapping dataset\n    valid_portion (float, optional): portion of valid datasets. Defaults to 0.1.\n    batch_size (int, optional): batch size. Defaults to 8.\n    shuffle (bool, optional): shuffles dataloader. Defaults to True.\n    num_workers (int, optional): number of workers for each datalaoder. Defaults to 5.\n\nReturns:\n    dict: dictionary of data loaders."
+      },
+      {
+        "type": "function",
+        "name": "get_dataloaders_public",
+        "docstring": "Set DataLoaders for labeled datasets.\n\nArgs:\n    root (str): root directory\n    mapping_file (str): json file for mapping dataset\n    valid_portion (float, optional): portion of valid datasets. Defaults to 0.1.\n    batch_size (int, optional): batch size. Defaults to 8.\n    shuffle (bool, optional): shuffles dataloader. Defaults to True.\n\nReturns:\n    dict: dictionary of data loaders."
+      },
+      {
+        "type": "function",
+        "name": "get_dataloaders_unlabeled",
+        "docstring": "Set dataloaders for unlabeled dataset."
+      },
+      {
+        "type": "function",
+        "name": "get_dataloaders_unlabeled_psuedo",
+        "docstring": ""
+      }
+    ],
+    "train_tools\\data_utils\\transforms.py": [
+      {
+        "type": "function",
+        "name": "get_pred_transforms",
+        "docstring": "Prediction preprocessing"
+      }
+    ],
+    "train_tools\\data_utils\\utils.py": [
+      {
+        "type": "function",
+        "name": "split_train_valid",
+        "docstring": "Split train/validata data according to the given proportion"
+      },
+      {
+        "type": "function",
+        "name": "path_decoder",
+        "docstring": "Decode img/label file paths from root & mapping directory.\n\nArgs:\n    root (str):\n    mapping_file (str): json file containing image & label file paths.\n    no_label (bool, optional): whether to include \"label\" key. Defaults to False.\n\nReturns:\n    list: list of dictionary. (ex. [{\"img\": img_path, \"label\": label_path}, ...])"
+      }
+    ],
+    "train_tools\\data_utils\\custom\\CellAware.py": [
+      {
+        "type": "class",
+        "name": "BoundaryExclusion",
+        "docstring": "Map the cell boundary pixel labels to the background class (0)."
+      },
+      {
+        "type": "class",
+        "name": "IntensityDiversification",
+        "docstring": "Randomly rescale the intensity of cell pixels."
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__call__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__call__",
+        "docstring": ""
+      }
+    ],
+    "train_tools\\data_utils\\custom\\LoadImage.py": [
+      {
+        "type": "class",
+        "name": "CustomLoadImage",
+        "docstring": "Load image file or files from provided path based on reader.\nIf reader is not specified, this class automatically chooses readers\nbased on the supported suffixes and in the following order:\n\n    - User-specified reader at runtime when calling this loader.\n    - User-specified reader in the constructor of `LoadImage`.\n    - Readers from the last to the first in the registered list.\n    - Current default readers: (nii, nii.gz -> NibabelReader), (png, jpg, bmp -> PILReader),\n      (npz, npy -> NumpyReader), (nrrd -> NrrdReader), (DICOM file -> ITKReader).\n\n[!Caution] This overriding replaces the original ITK with Custom UnifiedITKReader."
+      },
+      {
+        "type": "class",
+        "name": "CustomLoadImaged",
+        "docstring": "Dictionary-based wrapper of `CustomLoadImage`."
+      },
+      {
+        "type": "class",
+        "name": "UnifiedITKReader",
+        "docstring": "Unified Reader to read \".tif\" and \".tiff files\".\nAs the tifffile reads the images as numpy arrays, it inherits from the NumpyReader."
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "verify_suffix",
+        "docstring": "Verify whether the file format is supported by TIFF Reader."
+      },
+      {
+        "type": "function",
+        "name": "read",
+        "docstring": "Read Images from the file."
+      }
+    ],
+    "train_tools\\data_utils\\custom\\NormalizeImage.py": [
+      {
+        "type": "class",
+        "name": "CustomNormalizeImage",
+        "docstring": "Normalize the image."
+      },
+      {
+        "type": "class",
+        "name": "CustomNormalizeImaged",
+        "docstring": "Dictionary-based wrapper of NormalizeImage"
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "_normalize",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__call__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__call__",
+        "docstring": ""
+      }
+    ],
+    "train_tools\\models\\MEDIARFormer.py": [
+      {
+        "type": "class",
+        "name": "MEDIARFormer",
+        "docstring": "MEDIAR-Former Model"
+      },
+      {
+        "type": "class",
+        "name": "DeepSegmentationHead",
+        "docstring": "Custom segmentation head for generating specific masks"
+      },
+      {
+        "type": "function",
+        "name": "_convert_activations",
+        "docstring": "Recursively convert activation functions in a module"
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "forward",
+        "docstring": "Forward pass through the network"
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "docstring": ""
+      }
+    ]
+  },
+  "updated_at": "2025-09-09T16:26:18Z",
+  "languages": [
+    {
+      "name": "Python",
+      "percentage": 100
+    }
+  ],
+  "all_files": {
+    "SetupDict.py": {
+      "filepath": "SetupDict.py",
+      "size": 869,
+      "summary": "Core application logic or configuration."
+    },
+    "core/BasePredictor.py": {
+      "filepath": "core/BasePredictor.py",
+      "size": 3664,
+      "summary": "Core application logic or configuration."
+    },
+    "core/BaseTrainer.py": {
+      "filepath": "core/BaseTrainer.py",
+      "size": 7428,
+      "summary": "Handles model training routines and loops."
+    },
+    "core/Baseline/Predictor.py": {
+      "filepath": "core/Baseline/Predictor.py",
+      "size": 1535,
+      "summary": "Core application logic or configuration."
+    },
+    "core/Baseline/Trainer.py": {
+      "filepath": "core/Baseline/Trainer.py",
+      "size": 3451,
+      "summary": "Handles model training routines and loops."
+    },
+    "core/Baseline/__init__.py": {
+      "filepath": "core/Baseline/__init__.py",
+      "size": 48,
+      "summary": "Core application logic or configuration."
+    },
+    "core/Baseline/utils.py": {
+      "filepath": "core/Baseline/utils.py",
+      "size": 2370,
+      "summary": "Utility and helper functions."
+    },
+    "core/MEDIAR/EnsemblePredictor.py": {
+      "filepath": "core/MEDIAR/EnsemblePredictor.py",
+      "size": 3416,
+      "summary": "Core application logic or configuration."
+    },
+    "core/MEDIAR/Predictor.py": {
+      "filepath": "core/MEDIAR/Predictor.py",
+      "size": 6763,
+      "summary": "Core application logic or configuration."
+    },
+    "core/MEDIAR/Trainer.py": {
+      "filepath": "core/MEDIAR/Trainer.py",
+      "size": 5745,
+      "summary": "Handles model training routines and loops."
+    },
+    "core/MEDIAR/__init__.py": {
+      "filepath": "core/MEDIAR/__init__.py",
+      "size": 81,
+      "summary": "Core application logic or configuration."
+    },
+    "core/MEDIAR/utils.py": {
+      "filepath": "core/MEDIAR/utils.py",
+      "size": 14554,
+      "summary": "Utility and helper functions."
+    },
+    "core/__init__.py": {
+      "filepath": "core/__init__.py",
+      "size": 46,
+      "summary": "Core application logic or configuration."
+    },
+    "core/utils.py": {
+      "filepath": "core/utils.py",
+      "size": 948,
+      "summary": "Utility and helper functions."
+    },
+    "evaluate.py": {
+      "filepath": "evaluate.py",
+      "size": 2181,
+      "summary": "Key capabilities: main"
+    },
+    "generate_mapping.py": {
+      "filepath": "generate_mapping.py",
+      "size": 3989,
+      "summary": "Key capabilities: public_paths_labeled, official_paths_labeled, official_paths_tuning, and more"
+    },
+    "main.py": {
+      "filepath": "main.py",
+      "size": 3573,
+      "summary": "Key capabilities: _get_setups"
+    },
+    "predict.py": {
+      "filepath": "predict.py",
+      "size": 2141,
+      "summary": "Key capabilities: main"
+    },
+    "train_tools/__init__.py": {
+      "filepath": "train_tools/__init__.py",
+      "size": 71,
+      "summary": "Handles model training routines and loops."
+    },
+    "train_tools/data_utils/__init__.py": {
+      "filepath": "train_tools/data_utils/__init__.py",
+      "size": 26,
+      "summary": "Handles model training routines and loops."
+    },
+    "train_tools/data_utils/custom/CellAware.py": {
+      "filepath": "train_tools/data_utils/custom/CellAware.py",
+      "size": 2865,
+      "summary": "Handles model training routines and loops."
+    },
+    "train_tools/data_utils/custom/LoadImage.py": {
+      "filepath": "train_tools/data_utils/custom/LoadImage.py",
+      "size": 5431,
+      "summary": "Handles model training routines and loops."
+    },
+    "train_tools/data_utils/custom/NormalizeImage.py": {
+      "filepath": "train_tools/data_utils/custom/NormalizeImage.py",
+      "size": 2152,
+      "summary": "Handles model training routines and loops."
+    },
+    "train_tools/data_utils/custom/__init__.py": {
+      "filepath": "train_tools/data_utils/custom/__init__.py",
+      "size": 80,
+      "summary": "Handles model training routines and loops."
+    },
+    "train_tools/data_utils/datasetter.py": {
+      "filepath": "train_tools/data_utils/datasetter.py",
+      "size": 6323,
+      "summary": "Handles model training routines and loops."
+    },
+    "train_tools/data_utils/transforms.py": {
+      "filepath": "train_tools/data_utils/transforms.py",
+      "size": 5147,
+      "summary": "Handles model training routines and loops."
+    },
+    "train_tools/data_utils/utils.py": {
+      "filepath": "train_tools/data_utils/utils.py",
+      "size": 2556,
+      "summary": "Handles model training routines and loops."
+    },
+    "train_tools/measures.py": {
+      "filepath": "train_tools/measures.py",
+      "size": 5770,
+      "summary": "Handles model training routines and loops."
+    },
+    "train_tools/models/MEDIARFormer.py": {
+      "filepath": "train_tools/models/MEDIARFormer.py",
+      "size": 3615,
+      "summary": "Defines deep learning model architectures or networks."
+    },
+    "train_tools/models/__init__.py": {
+      "filepath": "train_tools/models/__init__.py",
+      "size": 28,
+      "summary": "Defines deep learning model architectures or networks."
+    },
+    "train_tools/utils.py": {
+      "filepath": "train_tools/utils.py",
+      "size": 1911,
+      "summary": "Handles model training routines and loops."
+    }
+  }
+}

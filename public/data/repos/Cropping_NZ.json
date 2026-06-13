@@ -1,1 +1,366 @@
-{"name":"Cropping_NZ","url":"https://github.com/samik1986/Cropping_NZ","description":"**Codebase Intelligence:** This MATLAB codebase contains 27 extracted functions across 18 files. Key extracted functionality includes: crop_1, crop_2, crop_3, crop_4, crop_Brains, and more.","language":"MATLAB","functions_extracted":{"crop_1.m":[{"type":"function","name":"crop_1","docstring":""}],"crop_2.m":[{"type":"function","name":"crop_2","docstring":""}],"crop_3.m":[{"type":"function","name":"crop_3","docstring":""}],"crop_4.m":[{"type":"function","name":"crop_4","docstring":""}],"crop_Brains.m":[{"type":"function","name":"crop_Brains","docstring":""}],"crop_list.m":[{"type":"function","name":"crop_list","docstring":""}],"crop_list_rescan.m":[{"type":"function","name":"crop_list_rescan","docstring":""}],"crop_logs.m":[{"type":"function","name":"crop_logs","docstring":""}],"crop_marmoset.m":[{"type":"function","name":"crop_marmoset","docstring":""}],"crop_mouse_double.m":[{"type":"function","name":"crop_mouse_double","docstring":""}],"crop_mouse_double_inv.m":[{"type":"function","name":"crop_mouse_double_inv","docstring":""}],"crop_mouse_single.m":[{"type":"function","name":"crop_mouse_single","docstring":""}],"crop_sagital_quad.m":[{"type":"function","name":"crop_sagital_quad","docstring":""}],"ngr2tif.m":[{"type":"function","name":"ngr2tif","docstring":""},{"type":"function","name":"checkfileexists","docstring":""}],"natsortfiles\\natsort.m":[{"type":"function","name":"natsort","docstring":""},{"type":"function","name":"nsGroups","docstring":""},{"type":"function","name":"nsAssert","docstring":""},{"type":"function","name":"nsChkRgx","docstring":""},{"type":"function","name":"ns1s2c","docstring":""}],"natsortfiles\\natsortfiles.m":[{"type":"function","name":"natsortfiles","docstring":""},{"type":"function","name":"nsfChkRgx","docstring":""},{"type":"function","name":"ns1s2c","docstring":""}],"natsortfiles\\natsortfiles_test.m":[{"type":"function","name":"natsortfiles_test","docstring":""}],"natsortfiles\\testfun.m":[{"type":"function","name":"testfun","docstring":""},{"type":"function","name":"nestfun","docstring":""},{"type":"function","name":"tfPretty","docstring":""}]},"updated_at":"2025-09-09T16:26:21Z","languages":[{"name":"MATLAB","percentage":88.5},{"name":"HTML","percentage":11.5}]}
+{
+  "name": "Cropping_NZ",
+  "url": "https://github.com/samik1986/Cropping_NZ",
+  "description": "**Codebase Intelligence:** This MATLAB codebase contains 27 extracted functions across 18 files. Key extracted functionality includes: crop_1, crop_2, crop_3, crop_4, crop_Brains, and more.",
+  "language": "MATLAB",
+  "functions_extracted": {
+    "crop_1.m": [
+      {
+        "type": "function",
+        "name": "crop_1",
+        "docstring": ""
+      }
+    ],
+    "crop_2.m": [
+      {
+        "type": "function",
+        "name": "crop_2",
+        "docstring": ""
+      }
+    ],
+    "crop_3.m": [
+      {
+        "type": "function",
+        "name": "crop_3",
+        "docstring": ""
+      }
+    ],
+    "crop_4.m": [
+      {
+        "type": "function",
+        "name": "crop_4",
+        "docstring": ""
+      }
+    ],
+    "crop_Brains.m": [
+      {
+        "type": "function",
+        "name": "crop_Brains",
+        "docstring": ""
+      }
+    ],
+    "crop_list.m": [
+      {
+        "type": "function",
+        "name": "crop_list",
+        "docstring": ""
+      }
+    ],
+    "crop_list_rescan.m": [
+      {
+        "type": "function",
+        "name": "crop_list_rescan",
+        "docstring": ""
+      }
+    ],
+    "crop_logs.m": [
+      {
+        "type": "function",
+        "name": "crop_logs",
+        "docstring": ""
+      }
+    ],
+    "crop_marmoset.m": [
+      {
+        "type": "function",
+        "name": "crop_marmoset",
+        "docstring": ""
+      }
+    ],
+    "crop_mouse_double.m": [
+      {
+        "type": "function",
+        "name": "crop_mouse_double",
+        "docstring": ""
+      }
+    ],
+    "crop_mouse_double_inv.m": [
+      {
+        "type": "function",
+        "name": "crop_mouse_double_inv",
+        "docstring": ""
+      }
+    ],
+    "crop_mouse_single.m": [
+      {
+        "type": "function",
+        "name": "crop_mouse_single",
+        "docstring": ""
+      }
+    ],
+    "crop_sagital_quad.m": [
+      {
+        "type": "function",
+        "name": "crop_sagital_quad",
+        "docstring": ""
+      }
+    ],
+    "ngr2tif.m": [
+      {
+        "type": "function",
+        "name": "ngr2tif",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "checkfileexists",
+        "docstring": ""
+      }
+    ],
+    "natsortfiles\\natsort.m": [
+      {
+        "type": "function",
+        "name": "natsort",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "nsGroups",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "nsAssert",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "nsChkRgx",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "ns1s2c",
+        "docstring": ""
+      }
+    ],
+    "natsortfiles\\natsortfiles.m": [
+      {
+        "type": "function",
+        "name": "natsortfiles",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "nsfChkRgx",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "ns1s2c",
+        "docstring": ""
+      }
+    ],
+    "natsortfiles\\natsortfiles_test.m": [
+      {
+        "type": "function",
+        "name": "natsortfiles_test",
+        "docstring": ""
+      }
+    ],
+    "natsortfiles\\testfun.m": [
+      {
+        "type": "function",
+        "name": "testfun",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "nestfun",
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "tfPretty",
+        "docstring": ""
+      }
+    ]
+  },
+  "updated_at": "2025-09-09T16:26:21Z",
+  "languages": [
+    {
+      "name": "MATLAB",
+      "percentage": 88.5
+    },
+    {
+      "name": "HTML",
+      "percentage": 11.5
+    }
+  ],
+  "file_metadata": {
+    "crop_1.m": {
+      "summary": "Key capabilities: crop_1",
+      "updated_at": "2022-12-07T20:16:09Z"
+    },
+    "crop_2.m": {
+      "summary": "Key capabilities: crop_2",
+      "updated_at": "2022-12-07T20:16:09Z"
+    },
+    "crop_3.m": {
+      "summary": "Key capabilities: crop_3",
+      "updated_at": "2022-12-07T20:16:09Z"
+    },
+    "crop_4.m": {
+      "summary": "Key capabilities: crop_4",
+      "updated_at": "2022-12-07T20:16:09Z"
+    },
+    "crop_Brains.m": {
+      "summary": "Key capabilities: crop_Brains",
+      "updated_at": "2022-12-19T19:36:30Z"
+    },
+    "crop_list.m": {
+      "summary": "Key capabilities: crop_list",
+      "updated_at": "2022-12-07T20:16:09Z"
+    },
+    "crop_list_rescan.m": {
+      "summary": "Key capabilities: crop_list_rescan",
+      "updated_at": "2022-12-07T20:16:09Z"
+    },
+    "crop_logs.m": {
+      "summary": "Key capabilities: crop_logs",
+      "updated_at": "2022-08-22T18:35:28Z"
+    },
+    "crop_marmoset.m": {
+      "summary": "Key capabilities: crop_marmoset",
+      "updated_at": "2022-12-07T20:16:09Z"
+    },
+    "crop_mouse_double.m": {
+      "summary": "Key capabilities: crop_mouse_double",
+      "updated_at": "2022-08-22T18:35:28Z"
+    },
+    "crop_mouse_double_inv.m": {
+      "summary": "Key capabilities: crop_mouse_double_inv",
+      "updated_at": "2022-12-19T19:36:30Z"
+    },
+    "crop_mouse_single.m": {
+      "summary": "Key capabilities: crop_mouse_single",
+      "updated_at": "2022-08-22T18:35:28Z"
+    },
+    "crop_sagital_quad.m": {
+      "summary": "Key capabilities: crop_sagital_quad",
+      "updated_at": "2022-12-07T20:16:09Z"
+    },
+    "ngr2tif.m": {
+      "summary": "Key capabilities: ngr2tif, checkfileexists",
+      "updated_at": "2022-08-22T18:35:28Z"
+    },
+    "natsortfiles\\natsort.m": {
+      "summary": "Key capabilities: natsort, nsGroups, nsAssert, nsChkRgx, and more",
+      "updated_at": "2022-08-22T18:35:28Z"
+    },
+    "natsortfiles\\natsortfiles.m": {
+      "summary": "Key capabilities: natsortfiles, nsfChkRgx, ns1s2c",
+      "updated_at": "2022-08-22T18:35:28Z"
+    },
+    "natsortfiles\\natsortfiles_test.m": {
+      "summary": "Key capabilities: natsortfiles_test",
+      "updated_at": "2022-08-22T18:35:28Z"
+    },
+    "natsortfiles\\testfun.m": {
+      "summary": "Key capabilities: testfun, nestfun, tfPretty",
+      "updated_at": "2022-08-22T18:35:28Z"
+    }
+  },
+  "all_files": {
+    "crop_1.m": {
+      "filepath": "crop_1.m",
+      "size": 1063,
+      "summary": "Key capabilities: crop_1"
+    },
+    "crop_2.m": {
+      "filepath": "crop_2.m",
+      "size": 1798,
+      "summary": "Key capabilities: crop_2"
+    },
+    "crop_3.m": {
+      "filepath": "crop_3.m",
+      "size": 2271,
+      "summary": "Key capabilities: crop_3"
+    },
+    "crop_4.m": {
+      "filepath": "crop_4.m",
+      "size": 2681,
+      "summary": "Key capabilities: crop_4"
+    },
+    "crop_Brains.m": {
+      "filepath": "crop_Brains.m",
+      "size": 1477,
+      "summary": "Key capabilities: crop_Brains"
+    },
+    "crop_list.m": {
+      "filepath": "crop_list.m",
+      "size": 14741,
+      "summary": "Key capabilities: crop_list"
+    },
+    "crop_list_rescan.m": {
+      "filepath": "crop_list_rescan.m",
+      "size": 13779,
+      "summary": "Key capabilities: crop_list_rescan"
+    },
+    "crop_logs.m": {
+      "filepath": "crop_logs.m",
+      "size": 11511,
+      "summary": "Key capabilities: crop_logs"
+    },
+    "crop_marmoset.m": {
+      "filepath": "crop_marmoset.m",
+      "size": 12620,
+      "summary": "Key capabilities: crop_marmoset"
+    },
+    "crop_mouse_double.m": {
+      "filepath": "crop_mouse_double.m",
+      "size": 18701,
+      "summary": "Key capabilities: crop_mouse_double"
+    },
+    "crop_mouse_double_inv.m": {
+      "filepath": "crop_mouse_double_inv.m",
+      "size": 18992,
+      "summary": "Key capabilities: crop_mouse_double_inv"
+    },
+    "crop_mouse_single.m": {
+      "filepath": "crop_mouse_single.m",
+      "size": 16167,
+      "summary": "Key capabilities: crop_mouse_single"
+    },
+    "crop_sagital_quad.m": {
+      "filepath": "crop_sagital_quad.m",
+      "size": 13731,
+      "summary": "Key capabilities: crop_sagital_quad"
+    },
+    "natsortfiles/html/natsortfiles_doc.html": {
+      "filepath": "natsortfiles/html/natsortfiles_doc.html",
+      "size": 24842,
+      "summary": "Frontend layout and styling templates."
+    },
+    "natsortfiles/natsort.m": {
+      "filepath": "natsortfiles/natsort.m",
+      "size": 14760,
+      "summary": "Core application logic or configuration."
+    },
+    "natsortfiles/natsortfiles.m": {
+      "filepath": "natsortfiles/natsortfiles.m",
+      "size": 9384,
+      "summary": "Core application logic or configuration."
+    },
+    "natsortfiles/natsortfiles_doc.m": {
+      "filepath": "natsortfiles/natsortfiles_doc.m",
+      "size": 7166,
+      "summary": "Core application logic or configuration."
+    },
+    "natsortfiles/natsortfiles_test.m": {
+      "filepath": "natsortfiles/natsortfiles_test.m",
+      "size": 24048,
+      "summary": "Contains testing or evaluation scripts."
+    },
+    "natsortfiles/testfun.m": {
+      "filepath": "natsortfiles/testfun.m",
+      "size": 3720,
+      "summary": "Contains testing or evaluation scripts."
+    },
+    "ngr2tif.m": {
+      "filepath": "ngr2tif.m",
+      "size": 3202,
+      "summary": "Key capabilities: ngr2tif, checkfileexists"
+    }
+  }
+}
