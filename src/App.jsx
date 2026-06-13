@@ -37,25 +37,10 @@ const HomePage = () => (
     <About />
     <ResearchGraph />
     <Skills />
-    
-    <div className="homepage-row">
-      <div className="homepage-col">
-        <Experience limit={2} />
-      </div>
-      <div className="homepage-col">
-        <Education limit={2} />
-      </div>
-    </div>
-
-    <div className="homepage-row">
-      <div className="homepage-col">
-        <Projects limit={2} />
-      </div>
-      <div className="homepage-col">
-        <GithubRepos limit={2} />
-      </div>
-    </div>
-
+    <Experience limit={2} />
+    <Education limit={2} />
+    <Projects limit={2} />
+    <GithubRepos limit={2} />
     <Publications limit={2} />
   </>
 );
