@@ -184,7 +184,22 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/3d-centroid-proofreader"
+    githubUrl: "https://github.com/samik1986/3d-centroid-proofreader",
+    updatedAt: "2026-05-26T19:06:05Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 96
+      },
+      {
+        name: "Shell",
+        percentage: 2.9
+      },
+      {
+        name: "Batchfile",
+        percentage: 1.1
+      }
+    ]
   },
   {
     id: 2,
@@ -193,7 +208,18 @@ export const githubProjects = [
     language: "Jupyter Notebook",
     stars: 1,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/3D_Developing_brain"
+    githubUrl: "https://github.com/samik1986/3D_Developing_brain",
+    updatedAt: "2025-09-09T16:26:16Z",
+    languages: [
+      {
+        name: "Jupyter Notebook",
+        percentage: 100
+      },
+      {
+        name: "MATLAB",
+        percentage: 0
+      }
+    ]
   },
   {
     id: 3,
@@ -202,7 +228,14 @@ export const githubProjects = [
     language: "Python",
     stars: 2,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/3_MET_TCNN"
+    githubUrl: "https://github.com/samik1986/3_MET_TCNN",
+    updatedAt: "2025-09-09T16:26:36Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 100
+      }
+    ]
   },
   {
     id: 4,
@@ -211,7 +244,18 @@ export const githubProjects = [
     language: "MATLAB",
     stars: 1,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/Cropping_NZ"
+    githubUrl: "https://github.com/samik1986/Cropping_NZ",
+    updatedAt: "2025-09-09T16:26:21Z",
+    languages: [
+      {
+        name: "MATLAB",
+        percentage: 88.5
+      },
+      {
+        name: "HTML",
+        percentage: 11.5
+      }
+    ]
   },
   {
     id: 5,
@@ -220,7 +264,14 @@ export const githubProjects = [
     language: "MATLAB",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/cw_graph_tools"
+    githubUrl: "https://github.com/samik1986/cw_graph_tools",
+    updatedAt: "2026-04-15T13:47:38Z",
+    languages: [
+      {
+        name: "MATLAB",
+        percentage: 100
+      }
+    ]
   },
   {
     id: 6,
@@ -229,7 +280,22 @@ export const githubProjects = [
     language: "Python",
     stars: 1,
     forks: 1,
-    githubUrl: "https://github.com/samik1986/DKCell"
+    githubUrl: "https://github.com/samik1986/DKCell",
+    updatedAt: "2025-09-09T16:26:45Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 54
+      },
+      {
+        name: "MATLAB",
+        percentage: 45.6
+      },
+      {
+        name: "Shell",
+        percentage: 0.4
+      }
+    ]
   },
   {
     id: 7,
@@ -238,7 +304,34 @@ export const githubProjects = [
     language: "C++",
     stars: 1,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/DM_2D"
+    githubUrl: "https://github.com/samik1986/DM_2D",
+    updatedAt: "2025-09-09T16:26:43Z",
+    languages: [
+      {
+        name: "C++",
+        percentage: 51.6
+      },
+      {
+        name: "CMake",
+        percentage: 14.6
+      },
+      {
+        name: "Makefile",
+        percentage: 14.5
+      },
+      {
+        name: "Python",
+        percentage: 7.5
+      },
+      {
+        name: "MATLAB",
+        percentage: 7.2
+      },
+      {
+        name: "C",
+        percentage: 4.6
+      }
+    ]
   },
   {
     id: 8,
@@ -247,7 +340,26 @@ export const githubProjects = [
     language: "C++",
     stars: 1,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/DM_3D"
+    githubUrl: "https://github.com/samik1986/DM_3D",
+    updatedAt: "2025-09-09T16:26:43Z",
+    languages: [
+      {
+        name: "C++",
+        percentage: 91.5
+      },
+      {
+        name: "Python",
+        percentage: 5.4
+      },
+      {
+        name: "MATLAB",
+        percentage: 2.5
+      },
+      {
+        name: "CMake",
+        percentage: 0.6
+      }
+    ]
   },
   {
     id: 9,
@@ -256,7 +368,34 @@ export const githubProjects = [
     language: "C++",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/DM_Lucas"
+    githubUrl: "https://github.com/samik1986/DM_Lucas",
+    updatedAt: "2022-07-19T18:20:59Z",
+    languages: [
+      {
+        name: "C++",
+        percentage: 58.6
+      },
+      {
+        name: "Makefile",
+        percentage: 12
+      },
+      {
+        name: "CMake",
+        percentage: 11.1
+      },
+      {
+        name: "Python",
+        percentage: 7.4
+      },
+      {
+        name: "MATLAB",
+        percentage: 6.5
+      },
+      {
+        name: "C",
+        percentage: 4.4
+      }
+    ]
   },
   {
     id: 10,
@@ -265,7 +404,18 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/DM_MG"
+    githubUrl: "https://github.com/samik1986/DM_MG",
+    updatedAt: "2019-05-16T17:26:07Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 72
+      },
+      {
+        name: "MATLAB",
+        percentage: 28
+      }
+    ]
   },
   {
     id: 11,
@@ -274,7 +424,22 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/DM_net"
+    githubUrl: "https://github.com/samik1986/DM_net",
+    updatedAt: "2019-08-02T18:33:52Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 99.5
+      },
+      {
+        name: "Shell",
+        percentage: 0.3
+      },
+      {
+        name: "MATLAB",
+        percentage: 0.2
+      }
+    ]
   },
   {
     id: 12,
@@ -283,7 +448,22 @@ export const githubProjects = [
     language: "MATLAB",
     stars: 1,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/GFP-Cell-Detection"
+    githubUrl: "https://github.com/samik1986/GFP-Cell-Detection",
+    updatedAt: "2025-09-09T16:26:26Z",
+    languages: [
+      {
+        name: "MATLAB",
+        percentage: 64.4
+      },
+      {
+        name: "C",
+        percentage: 35.3
+      },
+      {
+        name: "Shell",
+        percentage: 0.3
+      }
+    ]
   },
   {
     id: 13,
@@ -292,7 +472,14 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/Github_test"
+    githubUrl: "https://github.com/samik1986/Github_test",
+    updatedAt: "2025-10-23T19:09:37Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 100
+      }
+    ]
   },
   {
     id: 14,
@@ -301,7 +488,14 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/github_test2"
+    githubUrl: "https://github.com/samik1986/github_test2",
+    updatedAt: "2025-10-23T19:04:31Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 100
+      }
+    ]
   },
   {
     id: 15,
@@ -310,7 +504,14 @@ export const githubProjects = [
     language: "Jupyter Notebook",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/HF_learn"
+    githubUrl: "https://github.com/samik1986/HF_learn",
+    updatedAt: "2025-09-26T20:19:02Z",
+    languages: [
+      {
+        name: "Jupyter Notebook",
+        percentage: 100
+      }
+    ]
   },
   {
     id: 16,
@@ -319,7 +520,18 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/HG2PD"
+    githubUrl: "https://github.com/samik1986/HG2PD",
+    updatedAt: "2019-04-25T18:18:35Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 99.4
+      },
+      {
+        name: "Shell",
+        percentage: 0.6
+      }
+    ]
   },
   {
     id: 17,
@@ -328,7 +540,18 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/injDet"
+    githubUrl: "https://github.com/samik1986/injDet",
+    updatedAt: "2019-04-08T19:56:32Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 99.8
+      },
+      {
+        name: "Shell",
+        percentage: 0.2
+      }
+    ]
   },
   {
     id: 18,
@@ -337,7 +560,9 @@ export const githubProjects = [
     language: "",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/keras-survGAN"
+    githubUrl: "https://github.com/samik1986/keras-survGAN",
+    updatedAt: "2017-09-09T13:10:40Z",
+    languages: []
   },
   {
     id: 19,
@@ -346,7 +571,18 @@ export const githubProjects = [
     language: "Jupyter Notebook",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/makemore_Samik"
+    githubUrl: "https://github.com/samik1986/makemore_Samik",
+    updatedAt: "2025-09-24T21:24:24Z",
+    languages: [
+      {
+        name: "Jupyter Notebook",
+        percentage: 98.5
+      },
+      {
+        name: "Python",
+        percentage: 1.5
+      }
+    ]
   },
   {
     id: 20,
@@ -355,7 +591,18 @@ export const githubProjects = [
     language: "Python",
     stars: 2,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/MakeUPMirror"
+    githubUrl: "https://github.com/samik1986/MakeUPMirror",
+    updatedAt: "2025-09-09T16:27:27Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 94.4
+      },
+      {
+        name: "MATLAB",
+        percentage: 5.6
+      }
+    ]
   },
   {
     id: 21,
@@ -364,7 +611,14 @@ export const githubProjects = [
     language: "Python",
     stars: 1,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/Mediar_4_devBrain"
+    githubUrl: "https://github.com/samik1986/Mediar_4_devBrain",
+    updatedAt: "2025-09-09T16:26:18Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 100
+      }
+    ]
   },
   {
     id: 22,
@@ -373,7 +627,14 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/ML_Semantic-Segmenation-2020"
+    githubUrl: "https://github.com/samik1986/ML_Semantic-Segmenation-2020",
+    updatedAt: "2020-03-26T17:34:44Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 100
+      }
+    ]
   },
   {
     id: 23,
@@ -382,7 +643,26 @@ export const githubProjects = [
     language: "Jupyter Notebook",
     stars: 20,
     forks: 5,
-    githubUrl: "https://github.com/samik1986/ML_Semantic_Segmenation_NMI"
+    githubUrl: "https://github.com/samik1986/ML_Semantic_Segmenation_NMI",
+    updatedAt: "2025-09-09T16:26:21Z",
+    languages: [
+      {
+        name: "Jupyter Notebook",
+        percentage: 56.6
+      },
+      {
+        name: "Python",
+        percentage: 41.4
+      },
+      {
+        name: "C++",
+        percentage: 2
+      },
+      {
+        name: "Shell",
+        percentage: 0
+      }
+    ]
   },
   {
     id: 24,
@@ -391,7 +671,14 @@ export const githubProjects = [
     language: "MATLAB",
     stars: 1,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/MoP_boundary"
+    githubUrl: "https://github.com/samik1986/MoP_boundary",
+    updatedAt: "2025-09-09T16:27:49Z",
+    languages: [
+      {
+        name: "MATLAB",
+        percentage: 100
+      }
+    ]
   },
   {
     id: 25,
@@ -400,7 +687,9 @@ export const githubProjects = [
     language: "",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/MorseGAN_git"
+    githubUrl: "https://github.com/samik1986/MorseGAN_git",
+    updatedAt: "2019-05-16T16:32:53Z",
+    languages: []
   },
   {
     id: 26,
@@ -409,7 +698,22 @@ export const githubProjects = [
     language: "TypeScript",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/mouse-marmoset-comparison-app"
+    githubUrl: "https://github.com/samik1986/mouse-marmoset-comparison-app",
+    updatedAt: "2025-11-19T19:16:43Z",
+    languages: [
+      {
+        name: "TypeScript",
+        percentage: 88.1
+      },
+      {
+        name: "HTML",
+        percentage: 6.8
+      },
+      {
+        name: "CSS",
+        percentage: 5.1
+      }
+    ]
   },
   {
     id: 27,
@@ -418,7 +722,22 @@ export const githubProjects = [
     language: "Python",
     stars: 1,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/MultiStreamCellSeg_4_devBrain"
+    githubUrl: "https://github.com/samik1986/MultiStreamCellSeg_4_devBrain",
+    updatedAt: "2025-09-09T16:26:17Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 58.2
+      },
+      {
+        name: "Jupyter Notebook",
+        percentage: 41.2
+      },
+      {
+        name: "C",
+        percentage: 0.6
+      }
+    ]
   },
   {
     id: 28,
@@ -427,7 +746,26 @@ export const githubProjects = [
     language: "JavaScript",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/myBio"
+    githubUrl: "https://github.com/samik1986/myBio",
+    updatedAt: "2026-06-13T16:39:26Z",
+    languages: [
+      {
+        name: "JavaScript",
+        percentage: 54.9
+      },
+      {
+        name: "Python",
+        percentage: 27.9
+      },
+      {
+        name: "CSS",
+        percentage: 17
+      },
+      {
+        name: "HTML",
+        percentage: 0.1
+      }
+    ]
   },
   {
     id: 29,
@@ -436,7 +774,14 @@ export const githubProjects = [
     language: "MATLAB",
     stars: 1,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/Myelin-Conversion"
+    githubUrl: "https://github.com/samik1986/Myelin-Conversion",
+    updatedAt: "2025-09-09T16:26:20Z",
+    languages: [
+      {
+        name: "MATLAB",
+        percentage: 100
+      }
+    ]
   },
   {
     id: 30,
@@ -445,7 +790,14 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/neetcode-gpt"
+    githubUrl: "https://github.com/samik1986/neetcode-gpt",
+    updatedAt: "2026-04-27T10:41:44Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 100
+      }
+    ]
   },
   {
     id: 31,
@@ -454,7 +806,18 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/neetcode-submissions-samik1986"
+    githubUrl: "https://github.com/samik1986/neetcode-submissions-samik1986",
+    updatedAt: "2026-05-29T14:07:24Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 83
+      },
+      {
+        name: "C++",
+        percentage: 17
+      }
+    ]
   },
   {
     id: 32,
@@ -463,7 +826,9 @@ export const githubProjects = [
     language: "",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/newTCNN"
+    githubUrl: "https://github.com/samik1986/newTCNN",
+    updatedAt: "2017-06-20T11:17:56Z",
+    languages: []
   },
   {
     id: 33,
@@ -472,7 +837,9 @@ export const githubProjects = [
     language: "",
     stars: 1,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/newWiNN"
+    githubUrl: "https://github.com/samik1986/newWiNN",
+    updatedAt: "2025-09-09T16:26:34Z",
+    languages: []
   },
   {
     id: 34,
@@ -481,7 +848,9 @@ export const githubProjects = [
     language: "",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/samik1986"
+    githubUrl: "https://github.com/samik1986/samik1986",
+    updatedAt: "2022-12-07T20:36:54Z",
+    languages: []
   },
   {
     id: 35,
@@ -490,7 +859,14 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/siamDA"
+    githubUrl: "https://github.com/samik1986/siamDA",
+    updatedAt: "2017-06-20T11:22:52Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 100
+      }
+    ]
   },
   {
     id: 36,
@@ -499,7 +875,14 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/tf_lddmm"
+    githubUrl: "https://github.com/samik1986/tf_lddmm",
+    updatedAt: "2019-05-06T15:58:42Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 100
+      }
+    ]
   },
   {
     id: 37,
@@ -508,7 +891,9 @@ export const githubProjects = [
     language: "",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/tranferNET"
+    githubUrl: "https://github.com/samik1986/tranferNET",
+    updatedAt: "2017-06-02T06:16:44Z",
+    languages: []
   },
   {
     id: 38,
@@ -517,7 +902,9 @@ export const githubProjects = [
     language: "",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/transferNET"
+    githubUrl: "https://github.com/samik1986/transferNET",
+    updatedAt: "2017-06-20T10:57:40Z",
+    languages: []
   },
   {
     id: 39,
@@ -526,7 +913,58 @@ export const githubProjects = [
     language: "JavaScript",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/um1_3d_volume"
+    githubUrl: "https://github.com/samik1986/um1_3d_volume",
+    updatedAt: "2026-06-10T19:09:36Z",
+    languages: [
+      {
+        name: "JavaScript",
+        percentage: 83.9
+      },
+      {
+        name: "Python",
+        percentage: 7
+      },
+      {
+        name: "MATLAB",
+        percentage: 4.6
+      },
+      {
+        name: "CSS",
+        percentage: 2.4
+      },
+      {
+        name: "C",
+        percentage: 0.8
+      },
+      {
+        name: "C++",
+        percentage: 0.7
+      },
+      {
+        name: "TypeScript",
+        percentage: 0.2
+      },
+      {
+        name: "Shell",
+        percentage: 0.2
+      },
+      {
+        name: "Batchfile",
+        percentage: 0.1
+      },
+      {
+        name: "Dockerfile",
+        percentage: 0.1
+      },
+      {
+        name: "CMake",
+        percentage: 0
+      },
+      {
+        name: "M",
+        percentage: 0
+      }
+    ]
   },
   {
     id: 40,
@@ -535,7 +973,18 @@ export const githubProjects = [
     language: "Python",
     stars: 1,
     forks: 0,
-    githubUrl: "https://github.com/samik1986/wiNN"
+    githubUrl: "https://github.com/samik1986/wiNN",
+    updatedAt: "2025-09-09T16:26:33Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 99.7
+      },
+      {
+        name: "Shell",
+        percentage: 0.3
+      }
+    ]
   },
   {
     id: 41,
@@ -544,7 +993,9 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/twardlab/yolo_model"
+    githubUrl: "https://github.com/twardlab/yolo_model",
+    updatedAt: "2026-05-22T23:08:18Z",
+    languages: []
   },
   {
     id: 42,
@@ -553,7 +1004,18 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/twardlab/atlas_free_slice_alignment"
+    githubUrl: "https://github.com/twardlab/atlas_free_slice_alignment",
+    updatedAt: "2026-01-28T21:56:46Z",
+    languages: [
+      {
+        name: "Jupyter Notebook",
+        percentage: 62.6
+      },
+      {
+        name: "Python",
+        percentage: 37.4
+      }
+    ]
   },
   {
     id: 43,
@@ -562,7 +1024,18 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/twardlab/spine_registration"
+    githubUrl: "https://github.com/twardlab/spine_registration",
+    updatedAt: "2026-01-20T19:19:44Z",
+    languages: [
+      {
+        name: "Jupyter Notebook",
+        percentage: 62.1
+      },
+      {
+        name: "Python",
+        percentage: 37.9
+      }
+    ]
   },
   {
     id: 44,
@@ -571,7 +1044,26 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/twardlab/emlddmm"
+    githubUrl: "https://github.com/twardlab/emlddmm",
+    updatedAt: "2025-12-07T18:52:19Z",
+    languages: [
+      {
+        name: "Jupyter Notebook",
+        percentage: 99.2
+      },
+      {
+        name: "Python",
+        percentage: 0.7
+      },
+      {
+        name: "HTML",
+        percentage: 0
+      },
+      {
+        name: "MATLAB",
+        percentage: 0
+      }
+    ]
   },
   {
     id: 45,
@@ -580,7 +1072,26 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/MitraLab-Organization/Marmoset-Brain-Atlas"
+    githubUrl: "https://github.com/MitraLab-Organization/Marmoset-Brain-Atlas",
+    updatedAt: "2026-05-12T14:19:53Z",
+    languages: [
+      {
+        name: "Makefile",
+        percentage: 79.5
+      },
+      {
+        name: "Shell",
+        percentage: 17.3
+      },
+      {
+        name: "Ruby",
+        percentage: 2.8
+      },
+      {
+        name: "Batchfile",
+        percentage: 0.4
+      }
+    ]
   },
   {
     id: 46,
@@ -589,7 +1100,14 @@ export const githubProjects = [
     language: "JavaScript",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/MitraLab-Organization/ontology-editor"
+    githubUrl: "https://github.com/MitraLab-Organization/ontology-editor",
+    updatedAt: "2026-04-13T18:01:58Z",
+    languages: [
+      {
+        name: "Python",
+        percentage: 100
+      }
+    ]
   },
   {
     id: 47,
@@ -598,7 +1116,30 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/MitraLab-Organization/mouse-muscle-atlas"
+    githubUrl: "https://github.com/MitraLab-Organization/mouse-muscle-atlas",
+    updatedAt: "2026-04-30T22:02:11Z",
+    languages: [
+      {
+        name: "Makefile",
+        percentage: 70.3
+      },
+      {
+        name: "Shell",
+        percentage: 15.3
+      },
+      {
+        name: "Python",
+        percentage: 11.6
+      },
+      {
+        name: "Ruby",
+        percentage: 2.5
+      },
+      {
+        name: "Batchfile",
+        percentage: 0.3
+      }
+    ]
   },
   {
     id: 48,
@@ -607,7 +1148,110 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/MitraLab-Organization/2D-Skeletonization"
+    githubUrl: "https://github.com/MitraLab-Organization/2D-Skeletonization",
+    updatedAt: "2026-03-10T16:28:42Z",
+    languages: [
+      {
+        name: "C++",
+        percentage: 88.9
+      },
+      {
+        name: "C",
+        percentage: 7.1
+      },
+      {
+        name: "Python",
+        percentage: 1.2
+      },
+      {
+        name: "Jupyter Notebook",
+        percentage: 1.2
+      },
+      {
+        name: "Shell",
+        percentage: 0.4
+      },
+      {
+        name: "Gnuplot",
+        percentage: 0.4
+      },
+      {
+        name: "HTML",
+        percentage: 0.2
+      },
+      {
+        name: "Perl",
+        percentage: 0.2
+      },
+      {
+        name: "Makefile",
+        percentage: 0.1
+      },
+      {
+        name: "CMake",
+        percentage: 0.1
+      },
+      {
+        name: "Terra",
+        percentage: 0.1
+      },
+      {
+        name: "QMake",
+        percentage: 0.1
+      },
+      {
+        name: "GLSL",
+        percentage: 0
+      },
+      {
+        name: "M4",
+        percentage: 0
+      },
+      {
+        name: "Awk",
+        percentage: 0
+      },
+      {
+        name: "OpenEdge ABL",
+        percentage: 0
+      },
+      {
+        name: "Raku",
+        percentage: 0
+      },
+      {
+        name: "SWIG",
+        percentage: 0
+      },
+      {
+        name: "Dockerfile",
+        percentage: 0
+      },
+      {
+        name: "Batchfile",
+        percentage: 0
+      },
+      {
+        name: "RAML",
+        percentage: 0
+      },
+      {
+        name: "MATLAB",
+        percentage: 0
+      },
+      {
+        name: "ImageJ Macro",
+        percentage: 0
+      },
+      {
+        name: "CSS",
+        percentage: 0
+      },
+      {
+        name: "QuakeC",
+        percentage: 0
+      }
+    ]
   },
   {
     id: 49,
@@ -616,7 +1260,26 @@ export const githubProjects = [
     language: "Python",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/MitraLab-Organization/Human_Tissue_Dev"
+    githubUrl: "https://github.com/MitraLab-Organization/Human_Tissue_Dev",
+    updatedAt: "2025-12-25T02:20:46Z",
+    languages: [
+      {
+        name: "C++",
+        percentage: 61.8
+      },
+      {
+        name: "Python",
+        percentage: 28.4
+      },
+      {
+        name: "HTML",
+        percentage: 9.8
+      },
+      {
+        name: "Batchfile",
+        percentage: 0
+      }
+    ]
   },
   {
     id: 50,
@@ -625,7 +1288,9 @@ export const githubProjects = [
     language: "Dockerfile",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/MitraLab-Organization/Skeleton_Dockerized"
+    githubUrl: "https://github.com/MitraLab-Organization/Skeleton_Dockerized",
+    updatedAt: "2025-11-06T17:41:23Z",
+    languages: []
   },
   {
     id: 51,
@@ -634,6 +1299,41 @@ export const githubProjects = [
     language: "JavaScript",
     stars: 0,
     forks: 0,
-    githubUrl: "https://github.com/MitraLab-Organization/NeuronBrowser"
+    githubUrl: "https://github.com/MitraLab-Organization/NeuronBrowser",
+    updatedAt: "2025-09-16T14:44:09Z",
+    languages: [
+      {
+        name: "JavaScript",
+        percentage: 54.7
+      },
+      {
+        name: "TypeScript",
+        percentage: 36.3
+      },
+      {
+        name: "Python",
+        percentage: 6.9
+      },
+      {
+        name: "Shell",
+        percentage: 1.4
+      },
+      {
+        name: "CSS",
+        percentage: 0.3
+      },
+      {
+        name: "HTML",
+        percentage: 0.2
+      },
+      {
+        name: "Dockerfile",
+        percentage: 0.2
+      },
+      {
+        name: "Go",
+        percentage: 0
+      }
+    ]
   }
 ];

@@ -7,11 +7,31 @@ import './GithubRepos.css';
 
 const GithubRepos = () => {
   // 1. Group the repos logically with overlapping categories
-  const bionformatics = githubProjects.filter(p => (p.name && (p.name.includes('Brain') || p.name.includes('Cell') || p.name.includes('Bio'))) || p.description.includes('Brain') || p.description.includes('Cell'));
-  const imaging3D = githubProjects.filter(p => p.name.includes('3D') || p.description.includes('3D') || p.name.includes('volume') || p.name.includes('DM'));
-  const imageProcessing = githubProjects.filter(p => (p.name && (p.name.includes('Seg') || p.name.includes('Crop') || p.name.includes('Detect'))) || p.description.includes('Image') || p.description.includes('Segmentation') || p.description.includes('Detection'));
-  const deepLearning = githubProjects.filter(p => ['Python', 'Jupyter Notebook'].includes(p.language) || (p.name && (p.name.includes('GAN') || p.name.includes('TCNN') || p.name.includes('ML_') || p.name.includes('net') || p.name.includes('NET'))) || p.description.includes('GAN') || p.description.includes('Deep Learning'));
-  const webPlatforms = githubProjects.filter(p => ['JavaScript', 'TypeScript'].includes(p.language) || (p.name && (p.name.includes('app') || p.name.includes('myBio'))));
+  const bionformatics = githubProjects.filter(p => {
+    const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
+    return text.includes('brain') || text.includes('cell') || text.includes('bio') || text.includes('tissue') || text.includes('muscle');
+  });
+  
+  const imaging3D = githubProjects.filter(p => {
+    const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
+    return text.includes('3d') || text.includes('volume') || text.includes('dm_');
+  });
+  
+  const imageProcessing = githubProjects.filter(p => {
+    const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
+    return text.includes('seg') || text.includes('crop') || text.includes('detect') || text.includes('image') || text.includes('registration') || text.includes('alignment') || text.includes('skeleton');
+  });
+  
+  const deepLearning = githubProjects.filter(p => {
+    const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
+    return text.includes('gan') || text.includes('tcnn') || text.includes('ml_') || text.includes('net') || text.includes('deep learning') || text.includes('yolo') || text.includes('model');
+  });
+  
+  const webPlatforms = githubProjects.filter(p => {
+    const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
+    const lang = (p.language || '').toLowerCase();
+    return lang.includes('javascript') || lang.includes('typescript') || text.includes('app') || text.includes('mybio') || text.includes('browser') || text.includes('editor');
+  });
   
   const misc = githubProjects.filter(p => 
     !bionformatics.includes(p) && 
@@ -84,6 +104,56 @@ const RepoGroup = ({ title, repos }) => {
 };
 
 
+const LanguageBar = ({ languages }) => {
+  if (!languages || languages.length === 0) return null;
+  
+  // Define colors for common languages
+  const getLangColor = (lang) => {
+    const colors = {
+      Python: '#3572A5',
+      JavaScript: '#f1e05a',
+      TypeScript: '#3178c6',
+      'C++': '#f34b7d',
+      C: '#555555',
+      HTML: '#e34c26',
+      CSS: '#563d7c',
+      JupyterNotebook: '#DA5B0B',
+      Shell: '#89e051',
+      MATLAB: '#e16737',
+      Dockerfile: '#384d54'
+    };
+    return colors[lang.replace(/\s+/g, '')] || '#ccc';
+  };
+
+  return (
+    <div className="language-bar-container" style={{ width: '100%', marginTop: '0.8rem' }}>
+      <div className="language-progress" style={{ display: 'flex', height: '6px', width: '100%', borderRadius: '3px', overflow: 'hidden' }}>
+        {languages.map((lang, idx) => (
+          <div 
+            key={idx} 
+            title={`${lang.name} ${lang.percentage}%`}
+            style={{ width: `${lang.percentage}%`, backgroundColor: getLangColor(lang.name) }}
+          />
+        ))}
+      </div>
+      <div className="language-legend" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '0.4rem', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+        {languages.slice(0, 3).map((lang, idx) => (
+          <span key={idx} style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+            <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: getLangColor(lang.name) }}></span>
+            {lang.name} {lang.percentage}%
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const formatDate = (dateString) => {
+  if (!dateString) return 'Unknown';
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+};
+
 const RepoCard = ({ repo, featured }) => (
   <Link to={`/repo/${repo.name}/functions`} className={`glass project-card repo-card ${featured ? 'repo-featured' : 'repo-standard'}`} style={{ textDecoration: 'none', color: 'inherit' }}>
     <div className="project-header">
@@ -98,11 +168,12 @@ const RepoCard = ({ repo, featured }) => (
     <h3 className="project-title">{repo.name}</h3>
     <p className="project-desc">{repo.description || 'No description provided.'}</p>
     
+    <LanguageBar languages={repo.languages} />
+    
     <div className="project-footer mt-2" style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-        <span className="project-lang">
-          <span className={`lang-dot ${repo.language ? repo.language.toLowerCase().replace(' ', '-') : 'unknown'}`}></span>
-          {repo.language || 'Unknown'}
+      <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', fontSize: '0.85rem' }}>
+        <span className="project-updated">
+          Updated on {formatDate(repo.updatedAt)}
         </span>
         <div className="project-stats">
           <span><Star size={14} /> {repo.stars}</span>
