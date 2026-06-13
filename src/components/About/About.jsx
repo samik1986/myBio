@@ -19,7 +19,7 @@ const About = () => {
             </div>
             <div className="about-header-text">
               <h1>Samik Banerjee</h1>
-              <p className="about-role">Computational Science Analyst & Post-Doctoral Researcher</p>
+              <p className="about-role">Computational Science Analyst · AI Researcher · Computer Vision & Computational Neuroscience Specialist</p>
               
               <div className="about-contact">
                 <span><Mail size={16} /> sbanerje@cshl.edu</span>
@@ -32,7 +32,7 @@ const About = () => {
           <div className="about-body">
             <h3>Professional Summary</h3>
             <p>
-              Post-Doctoral Researcher and Ph.D. with over 12+ years of experience in Machine Learning and Deep Learning. Proven track record of developing state-of-the-art algorithms for 3D multimodal brain mapping and cellular segmentation. Adept at processing terabyte-scale histological datasets and bridging single-cell data with neuro-radiology. Seeking to leverage deep expertise in ML applications to drive innovations in AI and biological sciences.
+              Ph.D. and Computational Science Analyst with 12+ years of expertise at the intersection of Artificial Intelligence, Computer Vision, and Computational Neuroscience. Proven track record of building state-of-the-art deep learning pipelines for 3D multimodal brain mapping, cellular segmentation, and neuronal connectivity analysis across mammalian species. Expert in processing terabyte-scale histological and neuroimaging datasets, bridging single-cell genomics with neuro-radiology, and deploying scalable AI systems for biomedical discovery.
             </p>
 
             <h3>Research Focus</h3>

@@ -26,7 +26,8 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled glass' : ''}`}>
       <div className="nav-container container">
         <Link to="/" className="nav-logo">
-          Samik<span>Banerjee</span>
+          <img src="/logo.png" alt="Samik Banerjee" style={{ height: '42px', width: '42px', objectFit: 'contain', borderRadius: '6px' }} />
+          <span style={{ marginLeft: '10px' }}>Samik<span style={{ color: 'var(--accent-color)' }}>Banerjee</span></span>
         </Link>
 
         {/* Desktop Menu */}

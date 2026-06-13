@@ -12,10 +12,10 @@ const Hero = () => {
             <img src="https://github.com/samik1986.png" alt="Samik Banerjee" style={{ width: '80px', height: '80px', borderRadius: '50%', border: '2px solid var(--accent-color)', boxShadow: '0 4px 10px rgba(0,0,0,0.2)' }} loading="lazy" />
             <h1 className="name" style={{ margin: 0 }}>Samik Banerjee</h1>
           </div>
-          <h3 className="title">Computational Science Analyst</h3>
+          <h3 className="title">Computational Science Analyst · AI Researcher · Computer Vision & Computational Neuroscience Specialist</h3>
           <p className="description">
-            Specializing in Machine Learning, Computer Vision, Computational Neuroscience, and Bioinformatics. 
-            Passionate about Generative AI, Deep Learning, and building intelligent systems that solve complex problems.
+            Bridging AI, Computer Vision, and Computational Neuroscience to map the brain at cellular scale.
+            Building scalable deep learning pipelines for 3D multimodal neuroimaging, cellular segmentation, and biological data fusion.
           </p>
           <div className="hero-actions">
             <a href="mailto:samik.banerjee.howrah@gmail.com" className="btn btn-primary">
