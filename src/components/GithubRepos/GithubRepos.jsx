@@ -154,48 +154,81 @@ const formatDate = (dateString) => {
   return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
 };
 
-const RepoCard = ({ repo, featured }) => (
-  <div className={`glass project-card repo-card ${featured ? 'repo-featured' : 'repo-standard'}`} style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' }}>
-    <Link to={repo.hasApiData ? `/repo/${repo.name}/functions` : '#'} style={{textDecoration: 'none', color: 'inherit', flexGrow: 1, cursor: repo.hasApiData ? 'pointer' : 'default'}}>
-      <div className="project-header">
-        <FaGithub size={featured ? 28 : 20} className="project-icon" />
-        <div className="project-links">
-          <a href={repo.githubUrl} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ color: 'inherit' }}>
-            <ExternalLink size={18} />
-          </a>
-        </div>
-      </div>
-      
-      <h3 className="project-title">{repo.name}</h3>
-      <p className="repo-desc">{repo.repo_insight || repo.gist || repo.description || 'No description available'}</p>
-      
-      {repo.gist && (
-        <div className="repo-gist" style={{ marginTop: '1rem', padding: '0.8rem', background: 'rgba(255,255,255,0.05)', borderRadius: '6px', fontSize: '0.85rem', color: 'var(--text-secondary)', borderLeft: '3px solid var(--primary)' }}>
-          <strong>Codebase Gist:</strong> {repo.gist}
-        </div>
-      )}
-      
-      <LanguageBar languages={repo.languages} />
-      
-      <div className="project-footer mt-2" style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', fontSize: '0.85rem' }}>
-          <span className="project-updated">
-            Updated on {formatDate(repo.updatedAt)}
-          </span>
-          <div className="project-stats">
-            <span><Star size={14} /> {repo.stars}</span>
-            <span><GitFork size={14} /> {repo.forks}</span>
+const RepoCard = ({ repo, featured }) => {
+  const [expanded, setExpanded] = useState(false);
+  const text = repo.repo_insight || repo.gist || repo.description || 'No description available';
+  const isLong = text.length > 180;
+
+  return (
+    <div className={`glass project-card repo-card ${featured ? 'repo-featured' : 'repo-standard'}`} style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' }}>
+      <Link to={repo.hasApiData ? `/repo/${repo.name}/functions` : '#'} style={{textDecoration: 'none', color: 'inherit', flexGrow: 1, cursor: repo.hasApiData ? 'pointer' : 'default', display: 'flex', flexDirection: 'column'}}>
+        <div className="project-header">
+          <FaGithub size={featured ? 28 : 20} className="project-icon" />
+          <div className="project-links">
+            <a href={repo.githubUrl} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ color: 'inherit' }}>
+              <ExternalLink size={18} />
+            </a>
           </div>
         </div>
         
-        {repo.hasApiData && (
-          <div className="view-functions-badge" style={{ alignSelf: 'flex-start', fontSize: '0.8rem', background: 'rgba(var(--primary-rgb), 0.1)', color: 'var(--primary)', padding: '0.3rem 0.6rem', borderRadius: '4px', fontWeight: '500', marginTop: 'auto' }}>
-            View API / Functions <ArrowRight size={14} style={{verticalAlign: 'middle', marginLeft: '4px'}}/>
+        <h3 className="project-title">{repo.name}</h3>
+        
+        <div className="repo-desc-container" style={{ position: 'relative', paddingBottom: isLong ? '1.8rem' : '0.5rem' }}>
+          <p className="repo-desc" style={{ 
+             display: expanded ? 'block' : '-webkit-box', 
+             WebkitLineClamp: expanded ? 'unset' : 4, 
+             WebkitBoxOrient: 'vertical', 
+             overflow: 'hidden',
+             margin: 0,
+             lineHeight: '1.5'
+          }}>
+            {text}
+          </p>
+          {isLong && (
+            <button 
+              onClick={(e) => { e.preventDefault(); e.stopPropagation(); setExpanded(!expanded); }}
+              style={{
+                position: 'absolute',
+                bottom: '0',
+                left: '0',
+                background: 'transparent',
+                border: 'none',
+                color: 'var(--primary)',
+                cursor: 'pointer',
+                fontSize: '0.85rem',
+                fontWeight: 'bold',
+                padding: '0'
+              }}
+            >
+              {expanded ? 'Show Less' : 'Read More'}
+            </button>
+          )}
+        </div>
+        
+        <div style={{ flexGrow: 1 }}></div>
+        
+        <LanguageBar languages={repo.languages} />
+        
+        <div className="project-footer mt-2" style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', fontSize: '0.85rem' }}>
+            <span className="project-updated">
+              Updated on {formatDate(repo.updatedAt)}
+            </span>
+            <div className="project-stats">
+              <span><Star size={14} /> {repo.stars}</span>
+              <span><GitFork size={14} /> {repo.forks}</span>
+            </div>
           </div>
-        )}
-      </div>
-    </Link>
-  </div>
-);
+          
+          {repo.hasApiData && (
+            <div className="view-functions-badge" style={{ alignSelf: 'flex-start', fontSize: '0.8rem', background: 'rgba(var(--primary-rgb), 0.1)', color: 'var(--primary)', padding: '0.3rem 0.6rem', borderRadius: '4px', fontWeight: '500', marginTop: 'auto' }}>
+              View API / Functions <ArrowRight size={14} style={{verticalAlign: 'middle', marginLeft: '4px'}}/>
+            </div>
+          )}
+        </div>
+      </Link>
+    </div>
+  );
+};
 
 export default GithubRepos;
