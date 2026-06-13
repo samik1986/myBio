@@ -78,7 +78,7 @@ const About = () => {
               <a href="https://github.com/samik1986" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
                 <FaGithub /> GitHub
               </a>
-              <a href="https://www.linkedin.com/in/samik-banerjee-08361622" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+              <a href="https://www.linkedin.com/in/samik-banerjee" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
                 <FaLinkedin /> LinkedIn
               </a>
               <a href="https://scholar.google.com/citations?user=XbMnDucAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="btn btn-outline">

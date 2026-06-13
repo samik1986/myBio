@@ -42,7 +42,7 @@ const Navbar = () => {
 
         <div className="nav-socials">
           <a href="https://github.com/samik1986" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-          <a href="https://www.linkedin.com/in/samik-banerjee-08361622" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+          <a href="https://www.linkedin.com/in/samik-banerjee" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           <a href="https://scholar.google.com/citations?user=XbMnDucAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><FaGoogle /></a>
           <a href="https://www.researchgate.net/profile/Samik-Banerjee" target="_blank" rel="noopener noreferrer"><FaResearchgate /></a>
         </div>
