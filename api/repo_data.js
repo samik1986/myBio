@@ -1,2241 +1,8202 @@
-export const repoData = `EXHAUSTIVE REPOSITORY DATABASE (WITH GITHUB URLS & FILE PATHS):
-
-Repository: 3d-centroid-proofreader (Python)
-GitHub URL: https://github.com/samik1986/3d-centroid-proofreader
-Extracted Functions by File:
-- launcher.py: install_and_import, main
-- napari_proofreader.py: read_swc, save_swc, LoadingWorker, ProofreaderDockWidget, main, __init__, run, __init__, load_volume_dialog, load_centroids_dialog, load_baseline_dialog, start_loading_thread, on_loading_finished, on_loading_error, calculate_metrics, update_voxel_spacing, update_marker_size, save_edits_dialog
-
-Repository: Cropping_NZ (MATLAB)
-GitHub URL: https://github.com/samik1986/Cropping_NZ
-Extracted Functions by File:
-- crop_1.m: crop_1
-- crop_2.m: crop_2
-- crop_3.m: crop_3
-- crop_4.m: crop_4
-- crop_Brains.m: crop_Brains
-- crop_list.m: crop_list
-- crop_list_rescan.m: crop_list_rescan
-- crop_logs.m: crop_logs
-- crop_marmoset.m: crop_marmoset
-- crop_mouse_double.m: crop_mouse_double
-- crop_mouse_double_inv.m: crop_mouse_double_inv
-- crop_mouse_single.m: crop_mouse_single
-- crop_sagital_quad.m: crop_sagital_quad
-- ngr2tif.m: ngr2tif, checkfileexists
-- natsortfiles/natsort.m: natsort, nsGroups, nsAssert, nsChkRgx, ns1s2c
-- natsortfiles/natsortfiles.m: natsortfiles, nsfChkRgx, ns1s2c
-- natsortfiles/natsortfiles_test.m: natsortfiles_test
-- natsortfiles/testfun.m: testfun, nestfun, tfPretty
-
-Repository: cw_graph_tools (MATLAB)
-GitHub URL: https://github.com/samik1986/cw_graph_tools
-Extracted Functions by File:
-- add_tree.m: add_tree
-- create_forest_from_json.m: create_forest_from_json
-- delete_tree.m: delete_tree
-- edit_cw_json.m: edit_cw_json
-- edit_graph.m: edit_graph
-- export_forest_to_json.m: export_forest_to_json
-- find_loops.m: find_loops
-- find_mst.m: find_mst, find_dt, union_dt
-- load_cw_json.m: load_cw_json
-- plot_cw_complex.m: plot_cw_complex
-- save_cw_json.m: save_cw_json
-
-Repository: DKCell (Python)
-GitHub URL: https://github.com/samik1986/DKCell
-Extracted Functions by File:
-- config.py: Config, __init__
-- configDK.py: Config, __init__
-- data_augment.py: augment
-- data_generators.py: union, intersection, iou, get_new_img_size, SampleSelector, calc_rpn, threadsafe_iter, threadsafe_generator, get_anchor_gt, __init__, skip_sample_for_balanced_class, __init__, __iter__, next, g
-- FixedBatchNormalization.py: FixedBatchNormalization, __init__, build, call, get_config
-- getRegMask.py: getRegMask
-- getRegMask_DK39.py: getRegMask
-- img_overlay.py: imread_fast, imwrite_fast
-- inception_resnet_v2.py: get_weight_path, get_img_output_length, conv2d_bn, conv2d_bn_td, inception_resnet_block, inception_resnet_block_td, nn_base, classifier_layers, rpn, classifier, get_output_length
-- measure_map.py: get_map, format_img
-- test_frcnn_full_DK39.py: imread_fast, imwrite_fast, format_img_size, format_img_channels, format_img, get_real_coordinates
-- test_frcnn_full_DK39_0.py: imread_fast, imwrite_fast, format_img_size, format_img_channels, format_img, get_real_coordinates
-- test_frcnn_full_DK39_1.py: imread_fast, imwrite_fast, format_img_size, format_img_channels, format_img, get_real_coordinates
-- test_frcnn_full_DK55_trainset.py: imread_fast, imwrite_fast, format_img_size, format_img_channels, format_img, get_real_coordinates
-- test_frcnn_full_DK_May_2021.py: imread_fast, imwrite_fast, format_img_size, format_img_channels, format_img, get_real_coordinates
-- test_frcnn_full_DK_May_2021_GPU0.py: imread_fast, imwrite_fast, pre_proc, format_img_size, format_img_channels, format_img, get_real_coordinates
-- test_frcnn_full_DK_May_2021_GPU0_utest.py: imread_fast, imwrite_fast, pre_proc, format_img_size, format_img_channels, format_img, get_real_coordinates
-- test_frcnn_full_DK_May_2021_GPU1.py: imread_fast, imwrite_fast, pre_proc, format_img_size, format_img_channels, format_img, get_real_coordinates
-- test_frcnn_full_G_DK39.py: imread_fast, format_img_size, format_img_channels, format_img, get_real_coordinates
-- test_frcnn_full_rev_DK39.py: imread_fast, format_img_size, format_img_channels, format_img, get_real_coordinates
-- train_frcnn_DK.py: write_log
-- train_frcnn_DK_May21.py: write_log
-- Annotation_TrainingData_Cells/getDataTrain.m: getDataTrain
-- Annotation_TrainingData_Cells/getDataTrain_RGB_Sep2021.m: getDataTrain_RGB_Sep2021
-- Annotation_TrainingData_Cells/normal.m: normal
-- Annotation_TrainingData_Cells/parseXML.m: parseXML, parseChildNodes, makeStructFromNode, parseAttributes
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/base64decode.m: base64decode
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/base64encode.m: base64encode
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/decodevarname.m: decodevarname, hex2unicode
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/encodevarname.m: encodevarname
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/fast_match_bracket.m: fast_match_bracket
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/gzipdecode.m: gzipdecode
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/gzipencode.m: gzipencode
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/jdatadecode.m: jdatadecode, N_
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/jdataencode.m: jdataencode, obj2jd, cell2jd, struct2jd, map2jd, mat2jd, table2jd, graph2jd, matlabobject2jd, any2jd, N_
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/jsonopt.m: jsonopt
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/loadjson.m: loadjson, parse_array, parse_char, next_char, parseStr, parse_number, parse_value, parse_object, error_pos, skip_whitespace, unescapejsonstring, sscanf_prep, parse2darray
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/loadmsgpack.m: loadmsgpack, parse, bytes2scalar, parsestring, parsebytes, parseext, parsearray, parsemap
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/loadubjson.m: loadubjson, parse_block, parse_array, parse_char, next_char, parse_name, parseStr, parse_number, parse_value, error_pos, parse_object, elem_info
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/lz4decode.m: lz4decode
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/lz4encode.m: lz4hcencode
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/lz4hcdecode.m: lz4hcdecode
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/lz4hcencode.m: lz4hcencode
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/lzipdecode.m: lzipdecode
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/lzipencode.m: lzipencode
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/lzmadecode.m: lzmadecode
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/lzmaencode.m: lzmaencode
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/match_bracket.m: match_bracket
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/mergestruct.m: mergestruct
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/nestbracket2dim.m: nestbracket2dim
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/savejson.m: savejson, obj2json, cell2json, struct2json, map2json, str2json, mat2json, matlabobject2json, matlabtable2json, matdata2json, any2json, escapejsonstring
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/savemsgpack.m: savemsgpack
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/saveubjson.m: saveubjson, obj2ubjson, cell2ubjson, struct2ubjson, map2ubjson, str2ubjson, mat2ubjson, matlabtable2ubjson, matlabobject2ubjson, matdata2ubjson, N_, S_, Imsgpk_, I_, D_, I_a, D_a, any2ubjson, data2byte
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/varargin2struct.m: varargin2struct
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/zlibdecode.m: zlibdecode
-- Annotation_TrainingData_Cells/jsonlab/jsonlab/zlibencode.m: zlibencode
-- keras_frcnn/config.py: Config, __init__
-- keras_frcnn/configDK.py: Config, __init__
-- keras_frcnn/data_augment.py: augment
-- keras_frcnn/data_generators.py: union, intersection, iou, get_new_img_size, SampleSelector, calc_rpn, threadsafe_iter, threadsafe_generator, get_anchor_gt, __init__, skip_sample_for_balanced_class, __init__, __iter__, next, g
-- keras_frcnn/FixedBatchNormalization.py: FixedBatchNormalization, __init__, build, call, get_config
-- keras_frcnn/inception_resnet_v2.py: get_weight_path, get_img_output_length, conv2d_bn, conv2d_bn_td, inception_resnet_block, inception_resnet_block_td, nn_base, classifier_layers, rpn, classifier, get_output_length
-- keras_frcnn/losses.py: rpn_loss_regr, rpn_loss_cls, class_loss_regr, class_loss_cls, rpn_loss_regr_fixed_num, rpn_loss_cls_fixed_num, class_loss_regr_fixed_num
-- keras_frcnn/pascal_voc_parser.py: get_data
-- keras_frcnn/resnet.py: get_weight_path, get_img_output_length, identity_block, identity_block_td, conv_block, conv_block_td, nn_base, classifier_layers, rpn, classifier, get_output_length
-- keras_frcnn/RoiPoolingConv.py: RoiPoolingConv, __init__, build, compute_output_shape, call
-- keras_frcnn/roi_helpers.py: calc_iou, apply_regr, apply_regr_np, non_max_suppression_fast, rpn_to_roi
-- keras_frcnn/simple_parser.py: get_data
-- keras_frcnn/vgg.py: get_weight_path, get_img_output_length, nn_base, rpn, classifier, get_output_length
-- keras_frcnn/xception.py: get_weight_path, get_img_output_length, nn_base, classifier_layers, rpn, classifier, get_output_length
-- Transper/inception_resnet_v2/export_imagenet.py: export
-- Transper/inception_resnet_v2/inception_resnet_v2.py: conv2d_bn, inception_resnet_block, InceptionResnetV2_model
-
-Repository: DM_2D (C++)
-GitHub URL: https://github.com/samik1986/DM_2D
-Extracted Functions by File:
-- load_persistence_diagram.m: load_persistence_diagram
-- package_testing.py: test_2d_func
-- save_image_data.m: save_image_data
-- DiMo2d/__init__.py: get_date, __remove_dups, __single_jp2_to_tif, cshl_jp2_to_tif, __single_split_tif_channels, split_tif_channels, __single_crop_channel, crop_channel, __single_write_dipha_input_file, write_dipha_input_files, __single_write_vertex_file, write_vertex_files, __single_run_dipha_persistence, run_dipha_persistence, __single_convert_persistence_diagrams, convert_persistence_diagrams, compute_persistence_single_channel, __single_graph_reconstruction, run_graph_reconstruction, __single_shift_vertex_coordinates, shift_vertex_coordinates, __single_intersect_morse_graph_with_binary_output, intersect_morse_graphs_with_binary_outputs, __single_remove_duplicate_edges, remove_duplicate_edges, generate_morse_graphs, __single_non_degree_2_paths, non_degree_2_paths, __single_haircut, haircut, postprocess_graphs, __single_align_coordinates_with_webviewer, cshl_align_coordinates_with_webviewer, __read_ve, __in_between, __segment, __get_all_segs, __make_geojson, __single_convert_morse_graphs_to_geojson, convert_morse_graphs_to_geojson, __single_move_geojson_to_folder, move_geojsons_to_folder, cshl_post_results
-- DiMo2d/__init__func.py: get_date, remove_dups, cshl_jp2_to_tif, split_tif_channels, single_crop, crop_single_channel
-- DiMo2d/code/dipha-2d-thresh/build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c: main
-- DiMo2d/code/dipha-2d-thresh/build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp: main
-- DiMo2d/code/dipha-2d-thresh/build/CMakeFiles/FindMPI/test_mpi.cpp: main
-- DiMo2d/code/dipha-2d-thresh/externals/mem_usage/mem_usage.h: getPeakRSS, getCurrentRSS
-- DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/driver/MersenneTwister.h: operator
-- DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/funnel.h: bfs_index, merge_tree, merge_tree, fill, fill_leaf, merge_tree, merge_tree, stream, stream_iterator
-- DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort.h: parallel_sort, parallel_sort, parallel_sort
-- DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_merge.h: merge, real_merge, real_merge, real_merge, real_merge, real_merge
-- DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_samplesort.h: parallel_samplesort, parallel_samplesort
-- DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_seqsort.h: seqsort, real_seqsort, real_seqsort
-- DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_splitters.h: split, real_split, operator
-- DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_util.h: is_sorted, is_sorted, print_perf_data, print_perf_data, print_perf_data_samplesort
-- DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/sort.timpl.h: batcher_sort, inplace_base_sort, iterator, merge_sort_
-- DiMo2d/code/dipha-2d-thresh/include/dipha/element_distribution.h: gather_answers
-- DiMo2d/code/dipha-2d-thresh/include/dipha/mpi_utils.h: receive_vector, non_blocking_send_vector, all_gather, file_read_at_vector, file_write_at_vector, file_read_at, file_write_at
-- DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/compute_reduced_columns.h: compute_reduced_columns
-- DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/generate_unreduced_columns.h: generate_unreduced_columns
-- DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/get_filtration_to_cell_map.h: get_filtration_to_cell_map
-- DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/distributed_vector.h: init, set_local_value, set_global_values
-- DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/flat_column_stack.h: swap, clear, shrink_to_fit, push, pop
-- DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/heap_column.h: add_column, prune, clear, get_max_index, push, pop, pop_max_index
-- DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/write_once_array_of_arrays.h: init, clear, set
-- DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/write_once_column_array.h: init, set
-- DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/abstract_weighted_cell_complex.h: load_binary
-- DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/full_rips_complex.h: _load_binary, _precompute_breakpoints, _precompute_binomials
-- DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/sparse_rips_complex.h: operator, operator, operator, _load_binary, get_process_id_for_full_index, _compute_sparse_indices, _precompute_values, _precompute_breakpoints, _precompute_binomials
-- DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/weighted_cubical_complex.h: _load_binary
-- DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/weighted_explicit_complex.h: _load_binary
-- DiMo2d/code/dipha-2d-thresh/include/dipha/outputs/save_persistence_diagram.h: compute_original_index, save_persistence_diagram
-- DiMo2d/code/dipha-2d-thresh/matlab/create_noise_image_data.m: create_noise_image_data
-- DiMo2d/code/dipha-2d-thresh/matlab/create_noisy_ramp_image_data.m: create_noisy_ramp_image_data
-- DiMo2d/code/dipha-2d-thresh/matlab/create_ramp_image_data.m: create_ramp_image_data
-- DiMo2d/code/dipha-2d-thresh/matlab/create_smooth_image_data.m: create_smooth_image_data
-- DiMo2d/code/dipha-2d-thresh/matlab/create_sphere.m: create_sphere
-- DiMo2d/code/dipha-2d-thresh/matlab/load_discrete_morse_edge_info.m: load_discrete_morse_edge_info
-- DiMo2d/code/dipha-2d-thresh/matlab/load_persistence_diagram.m: load_persistence_diagram
-- DiMo2d/code/dipha-2d-thresh/matlab/plot_midlife_persistence_diagram.m: plot_midlife_persistence_diagram
-- DiMo2d/code/dipha-2d-thresh/matlab/plot_persistence_diagram.m: plot_persistence_diagram
-- DiMo2d/code/dipha-2d-thresh/matlab/plot_persistence_diagram_density.m: plot_persistence_diagram_density
-- DiMo2d/code/dipha-2d-thresh/matlab/save_distance_matrix.m: save_distance_matrix
-- DiMo2d/code/dipha-2d-thresh/matlab/save_image_data.m: save_image_data
-- DiMo2d/code/dipha-2d-thresh/matlab/save_weighted_triangle_surface.m: save_weighted_triangle_surface, get_n4ed, get_ed4e, get_ed4n, get_e4n
-- DiMo2d/code/dipha-2d-thresh/src/create_phat_filtration.cpp: print_help_and_exit, parse_command_line, create_phat_filtration, main
-- DiMo2d/code/dipha-2d-thresh/src/dipha.cpp: print_help_and_exit, parse_command_line, compute, main
-- DiMo2d/code/dipha-2d-thresh/src/dualize.cpp: print_help, print_help_and_exit, parse_command_line, main
-- DiMo2d/code/dipha-2d-thresh/src/full_to_sparse_distance_matrix.cpp: print_help_and_exit, parse_command_line, create_sparse_representation, main
-- DiMo2d/code/dipha-output-2d-ve-et-thresh/ComputeGraphReconstruction.cpp: bfs, retrieve_path, main
-- DiMo2d/code/matlab/load_persistence_diagram.m: load_persistence_diagram
-- DiMo2d/code/matlab/save_image_data.m: save_image_data
-- DiMo2d/code/paths_src/ComputePaths.cpp: println, ReadInEdge, output_paths, dfs, get_paths, main
-
-Repository: DM_3D (C++)
-GitHub URL: https://github.com/samik1986/DM_3D
-Extracted Functions by File:
-- load_persistence_diagram.m: load_persistence_diagram
-- package_testing.py: test_3d_func
-- parallel_dipha_input.m: parallel_dipha_input
-- save_3d_image_data.m: save_3d_image_data
-- DiMo3d/__init__.py: split_domain, write_dipha_persistence_input, __single_dipha, compute_dipha_persistence, __single_convert, convert_persistence_diagram, __single_write_vertex_files, write_vertex_files, __run_morse_single, graph_reconstruction, __write_merge_configs, __single_merge, __execute_merging, merge
-- DiMo3d/code/dipha-output/ComputeGraphReconstruction.cpp: bfs, retrieve_path, main
-- DiMo3d/code/matlab/load_persistence_diagram.m: load_persistence_diagram
-- DiMo3d/code/matlab/parallel_dipha_input.m: parallel_dipha_input
-- DiMo3d/code/matlab/save_3d_image_data.m: save_3d_image_data
-- DiMo3d/code/merge/combine.cpp: Reorder, Reorder, GetIndex, InsertVertex, size, hash_value, HasEdge, InsertEdge, size, begin, end, hash_value, HasTriangle, InsertTriangle, size, begin, end, hash_value, init_file, getpath, adjust_bbox, in_range, update_bbox, kernel_init, diffuse, ProcessGraph, triangle_cube, Triangulate, simplex_output, main
-- DiMo3d/code/merge/hash.cpp: hash_value, hash_value, hash_value
-- DiMo3d/code/merge/hash.h: size, size, begin, end, size, begin, end
-- DiMo3d/code/merge/merge.cpp: main
-- DiMo3d/code/merge/merge_graph.cpp: triangle_cube, diffuse, in_range, update_bbox, simplex_output, kernel_init, Triangulate, to_string, init_file, adjust_bbox, ProcessGraph, main
-- DiMo3d/code/spt_cpp/DiMoSC.cpp: main
-- DiMo3d/code/spt_cpp/graph_spt.h: add_neighbor
-- DiMo3d/code/spt_cpp/graph_spt_list.h: add_neighbor
-- DiMo3d/code/spt_cpp/persistence.h: msBegin, msEnd, smBegin, smEnd, msinsert, sminsert, sortmspair, mssize, smsize, output_sm_pair, outputPersistencePairs
-- DiMo3d/code/spt_cpp/Simplex.h: setFuncValue, getoriPosition, setoriposition, output, getcoord, set_vp, output, getEval, setEval, Grad, set_vp, output
-- DiMo3d/code/spt_cpp/Simplicial2Complex.h: vBegin, vEnd, eBegin, eEnd, tBegin, tEnd, hasEdge, getAdjacentVertex, findEdge, sortVertices, print_neighbor
-- DiMo3d/code/spt_cpp/phat/addons/alpha_3.cpp: has_index, index, set_index, edge_conv, has_edge_index, edge_index, has_facet_index, facet_index, set_edge_index, set_facet_index, set_index_of_edge, set_index_of_facet, operator, edge_attached_to, triangle_attached_to, main
-- DiMo3d/code/spt_cpp/phat/addons/rips.cpp: main
-- DiMo3d/code/spt_cpp/phat/include/phat/boundary_matrix.h: set_num_cols, set_dim, set_col, remove_max, add_to, clear, finalize, sync, load_vector_vector, save_vector_vector, load_ascii, save_ascii, load_binary, save_binary
-- DiMo3d/code/spt_cpp/phat/include/phat/compute_persistence_pairs.h: compute_relative_persistence_pairs, compute_persistence_pairs, compute_persistence_pairs, compute_persistence_pairs_dualized, compute_persistence_pairs, compute_persistence_pairs_dualized
-- DiMo3d/code/spt_cpp/phat/include/phat/persistence_pairs.h: append_pair, set_pair, clear, sort, load_ascii, save_ascii, load_binary, save_binary
-- DiMo3d/code/spt_cpp/phat/include/phat/algorithms/chunk_reduction.h: operator, _local_chunk_reduction, _get_active_columns, _global_column_simplification
-- DiMo3d/code/spt_cpp/phat/include/phat/algorithms/row_reduction.h: operator
-- DiMo3d/code/spt_cpp/phat/include/phat/algorithms/spectral_sequence_reduction.h: operator
-- DiMo3d/code/spt_cpp/phat/include/phat/algorithms/standard_reduction.h: operator
-- DiMo3d/code/spt_cpp/phat/include/phat/algorithms/twist_reduction.h: operator
-- DiMo3d/code/spt_cpp/phat/include/phat/helpers/dualize.h: dualize, dualize_persistence_pairs
-- DiMo3d/code/spt_cpp/phat/include/phat/helpers/misc.h: omp_set_num_threads
-- DiMo3d/code/spt_cpp/phat/include/phat/representations/abstract_pivot_column.h: release_pivot_col, make_pivot_col, _set_num_cols, _add_to, _sync, _clear, _set_col, _remove_max, finalize
-- DiMo3d/code/spt_cpp/phat/include/phat/representations/bit_tree_pivot_column.h: init, add_index, get_col_and_clear, add_col, clear, remove_max, set_col, get_col
-- DiMo3d/code/spt_cpp/phat/include/phat/representations/full_pivot_column.h: init, add_col, add_index, get_max_index, get_col_and_clear, is_empty, clear, remove_max, set_col, get_col
-- DiMo3d/code/spt_cpp/phat/include/phat/representations/heap_pivot_column.h: prune, pop_max_index, init, add_col, get_max_index, get_col_and_clear, is_empty, clear, remove_max, set_col, get_col
-- DiMo3d/code/spt_cpp/phat/include/phat/representations/sparse_pivot_column.h: add_index, init, add_col, get_max_index, get_col_and_clear, is_empty, clear, remove_max, set_col, get_col
-- DiMo3d/code/spt_cpp/phat/include/phat/representations/vector_heap.h: _prune, _pop_max_index, _set_num_cols, _set_dim, _set_col, _remove_max, _clear, _sync, _add_to, _finalize
-- DiMo3d/code/spt_cpp/phat/include/phat/representations/vector_list.h: _set_num_cols, _set_dim, _set_col, _remove_max, _clear, _sync, _add_to, _finalize
-- DiMo3d/code/spt_cpp/phat/include/phat/representations/vector_set.h: _set_num_cols, _set_dim, _set_col, _remove_max, _clear, _sync, _add_to, _finalize
-- DiMo3d/code/spt_cpp/phat/include/phat/representations/vector_vector.h: _set_num_cols, _set_dim, _set_col, _remove_max, _clear, _sync, _add_to, _finalize
-- DiMo3d/code/spt_cpp/phat/src/benchmark.cpp: print_help, print_help_and_exit, parse_command_line, benchmark, benchmark_latex, main
-- DiMo3d/code/spt_cpp/phat/src/convert.cpp: print_help, print_help_and_exit, parse_command_line, main
-- DiMo3d/code/spt_cpp/phat/src/info.cpp: print_help, print_help_and_exit, parse_command_line, main
-- DiMo3d/code/spt_cpp/phat/src/phat.cpp: print_help, print_help_and_exit, parse_command_line, compute_pairing, main
-- DiMo3d/code/spt_cpp/phat/src/relative_example.cpp: idx_, add_bd, main, compute_relative_persistence, example, load, experiments, build_bdm, test
-- DiMo3d/code/spt_cpp/phat/src/self_test.cpp: main
-- DiMo3d/code/spt_cpp/phat/src/simple_example.cpp: main
-
-Repository: DM_Lucas (C++)
-GitHub URL: https://github.com/samik1986/DM_Lucas
-Extracted Functions by File:
-- Skeletonization/parallel_dipha_input.m: parallel_dipha_input
-- Skeletonization/step_02_run_dipha.py: function
-- Skeletonization/step_03_convert_dipha_output.py: function
-- Skeletonization/step_04_shift_verts.py: function
-- Skeletonization/step_07_execute_merging.py: func
-- Skeletonization/dipha-3d/build/CMakeFiles/feature_tests.c: main
-- Skeletonization/dipha-3d/build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c: main
-- Skeletonization/dipha-3d/build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp: main
-- Skeletonization/dipha-3d/build/CMakeFiles/FindMPI/test_mpi.cpp: main
-- Skeletonization/dipha-3d/build2/CMakeFiles/feature_tests.c: main
-- Skeletonization/dipha-3d/build2/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c: main
-- Skeletonization/dipha-3d/build2/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp: main
-- Skeletonization/dipha-3d/build2/CMakeFiles/FindMPI/test_mpi.cpp: main
-- Skeletonization/dipha-3d/externals/mem_usage/mem_usage.h: getPeakRSS, getCurrentRSS
-- Skeletonization/dipha-3d/externals/psort-1.0/driver/MersenneTwister.h: operator
-- Skeletonization/dipha-3d/externals/psort-1.0/src/funnel.h: bfs_index, merge_tree, merge_tree, fill, fill_leaf, merge_tree, merge_tree, stream, stream_iterator
-- Skeletonization/dipha-3d/externals/psort-1.0/src/psort.h: parallel_sort, parallel_sort, parallel_sort
-- Skeletonization/dipha-3d/externals/psort-1.0/src/psort_merge.h: merge, real_merge, real_merge, real_merge, real_merge, real_merge
-- Skeletonization/dipha-3d/externals/psort-1.0/src/psort_samplesort.h: parallel_samplesort, parallel_samplesort
-- Skeletonization/dipha-3d/externals/psort-1.0/src/psort_seqsort.h: seqsort, real_seqsort, real_seqsort
-- Skeletonization/dipha-3d/externals/psort-1.0/src/psort_splitters.h: split, real_split, operator
-- Skeletonization/dipha-3d/externals/psort-1.0/src/psort_util.h: is_sorted, is_sorted, print_perf_data, print_perf_data, print_perf_data_samplesort
-- Skeletonization/dipha-3d/externals/psort-1.0/src/sort.timpl.h: batcher_sort, inplace_base_sort, iterator, merge_sort_
-- Skeletonization/dipha-3d/include/dipha/element_distribution.h: gather_answers
-- Skeletonization/dipha-3d/include/dipha/mpi_utils.h: receive_vector, non_blocking_send_vector, all_gather, file_read_at_vector, file_write_at_vector, file_read_at, file_write_at
-- Skeletonization/dipha-3d/include/dipha/algorithms/compute_reduced_columns.h: compute_reduced_columns
-- Skeletonization/dipha-3d/include/dipha/algorithms/generate_unreduced_columns.h: generate_unreduced_columns
-- Skeletonization/dipha-3d/include/dipha/algorithms/get_filtration_to_cell_map.h: get_filtration_to_cell_map
-- Skeletonization/dipha-3d/include/dipha/data_structures/distributed_vector.h: init, set_local_value, set_global_values
-- Skeletonization/dipha-3d/include/dipha/data_structures/flat_column_stack.h: swap, clear, shrink_to_fit, push, pop
-- Skeletonization/dipha-3d/include/dipha/data_structures/heap_column.h: add_column, prune, clear, get_max_index, push, pop, pop_max_index
-- Skeletonization/dipha-3d/include/dipha/data_structures/write_once_array_of_arrays.h: init, clear, set
-- Skeletonization/dipha-3d/include/dipha/data_structures/write_once_column_array.h: init, set
-- Skeletonization/dipha-3d/include/dipha/inputs/abstract_weighted_cell_complex.h: load_binary
-- Skeletonization/dipha-3d/include/dipha/inputs/full_rips_complex.h: _load_binary, _precompute_breakpoints, _precompute_binomials
-- Skeletonization/dipha-3d/include/dipha/inputs/sparse_rips_complex.h: operator, operator, operator, _load_binary, get_process_id_for_full_index, _compute_sparse_indices, _precompute_values, _precompute_breakpoints, _precompute_binomials
-- Skeletonization/dipha-3d/include/dipha/inputs/weighted_cubical_complex.h: _get_lattice_resolution, _load_binary
-- Skeletonization/dipha-3d/include/dipha/inputs/weighted_explicit_complex.h: _load_binary
-- Skeletonization/dipha-3d/include/dipha/outputs/save_persistence_diagram.h: compute_original_index, save_persistence_diagram
-- Skeletonization/dipha-3d/matlab/create_noise_image_data.m: create_noise_image_data
-- Skeletonization/dipha-3d/matlab/create_noisy_ramp_image_data.m: create_noisy_ramp_image_data
-- Skeletonization/dipha-3d/matlab/create_ramp_image_data.m: create_ramp_image_data
-- Skeletonization/dipha-3d/matlab/create_smooth_image_data.m: create_smooth_image_data
-- Skeletonization/dipha-3d/matlab/create_sphere.m: create_sphere
-- Skeletonization/dipha-3d/matlab/load_discrete_morse_edge_info.m: load_discrete_morse_edge_info
-- Skeletonization/dipha-3d/matlab/load_persistence_diagram.m: load_persistence_diagram
-- Skeletonization/dipha-3d/matlab/plot_midlife_persistence_diagram.m: plot_midlife_persistence_diagram
-- Skeletonization/dipha-3d/matlab/plot_persistence_diagram.m: plot_persistence_diagram
-- Skeletonization/dipha-3d/matlab/plot_persistence_diagram_density.m: plot_persistence_diagram_density
-- Skeletonization/dipha-3d/matlab/save_3d_image_data.m: save_3d_image_data
-- Skeletonization/dipha-3d/matlab/save_distance_matrix.m: save_distance_matrix
-- Skeletonization/dipha-3d/matlab/save_image_data.m: save_image_data
-- Skeletonization/dipha-3d/matlab/save_weighted_triangle_surface.m: save_weighted_triangle_surface, get_n4ed, get_ed4e, get_ed4n, get_e4n
-- Skeletonization/dipha-3d/src/create_phat_filtration.cpp: print_help_and_exit, parse_command_line, create_phat_filtration, main
-- Skeletonization/dipha-3d/src/dipha.cpp: print_help_and_exit, parse_command_line, compute, main
-- Skeletonization/dipha-3d/src/dualize.cpp: print_help, print_help_and_exit, parse_command_line, main
-- Skeletonization/dipha-3d/src/full_to_sparse_distance_matrix.cpp: print_help_and_exit, parse_command_line, create_sparse_representation, main
-- Skeletonization/dipha-output/ComputeGraphReconstruction.cpp: bfs, retrieve_path, main
-- Skeletonization/merger-hierarchical/combine.cpp: Reorder, Reorder, GetIndex, InsertVertex, size, hash_value, HasEdge, InsertEdge, size, begin, end, hash_value, HasTriangle, InsertTriangle, size, begin, end, hash_value, init_file, getpath, adjust_bbox, in_range, update_bbox, kernel_init, diffuse, ProcessGraph, triangle_cube, Triangulate, simplex_output, main
-- Skeletonization/merger-hierarchical/hash.cpp: hash_value, hash_value, hash_value
-- Skeletonization/merger-hierarchical/hash.h: size, size, begin, end, size, begin, end
-- Skeletonization/merger-hierarchical/merge.cpp: main
-- Skeletonization/merger-hierarchical/merge_graph.cpp: triangle_cube, diffuse, in_range, update_bbox, simplex_output, kernel_init, Triangulate, to_string, init_file, adjust_bbox, ProcessGraph, main
-- Summarization/load_persistence_diagram.m: load_persistence_diagram
-- Summarization/save_image_data.m: save_image_data
-- Summarization/step_00_convert_jp2_to_tif.py: get_date, remove_dups, function
-- Summarization/step_01_split_tif_channels.py: function
-- Summarization/step_02_crop_single_channel.py: function
-- Summarization/step_03a_write_dipha.py: function
-- Summarization/step_03b_write_vert.py: function
-- Summarization/step_04_run_dipha.py: function
-- Summarization/step_05_run_matlab.py: function
-- Summarization/step_06_run_dimo_ve_et.py: function
-- Summarization/step_07_shift_morse_verts.py: function
-- Summarization/step_08_cross_morse_with_process.py: function
-- Summarization/step_09_remove_dup_edges.py: function
-- Summarization/step_10_paths.py: function
-- Summarization/step_11_haircut.py: remove_deg2_nodes, function
-- Summarization/step_12_post_haircut_paths.py: function
-- Summarization/step_13_remove_insignificant.py: remove_deg2_nodes, line_function, compute_abs_cos_angle, function
-- Summarization/step_14_align_morse_coords_with_webviewer.py: function
-- Summarization/step_15_morse_to_geojson.py: read_all, read_ve, in_between, segment, project_point, get_density, get_point_density, get_all_project_points, get_all_segs, make_png_point, make_png, make_geojson, find_index_from_filename, read_in_cloud, function
-- Summarization/step_16_all_json_to_one_folder.py: function
-- Summarization/dipha-2d-thresh/externals/mem_usage/mem_usage.h: getPeakRSS, getCurrentRSS
-- Summarization/dipha-2d-thresh/externals/psort-1.0/driver/MersenneTwister.h: operator
-- Summarization/dipha-2d-thresh/externals/psort-1.0/src/funnel.h: bfs_index, merge_tree, merge_tree, fill, fill_leaf, merge_tree, merge_tree, stream, stream_iterator
-- Summarization/dipha-2d-thresh/externals/psort-1.0/src/psort.h: parallel_sort, parallel_sort, parallel_sort
-- Summarization/dipha-2d-thresh/externals/psort-1.0/src/psort_merge.h: merge, real_merge, real_merge, real_merge, real_merge, real_merge
-- Summarization/dipha-2d-thresh/externals/psort-1.0/src/psort_samplesort.h: parallel_samplesort, parallel_samplesort
-- Summarization/dipha-2d-thresh/externals/psort-1.0/src/psort_seqsort.h: seqsort, real_seqsort, real_seqsort
-- Summarization/dipha-2d-thresh/externals/psort-1.0/src/psort_splitters.h: split, real_split, operator
-- Summarization/dipha-2d-thresh/externals/psort-1.0/src/psort_util.h: is_sorted, is_sorted, print_perf_data, print_perf_data, print_perf_data_samplesort
-- Summarization/dipha-2d-thresh/externals/psort-1.0/src/sort.timpl.h: batcher_sort, inplace_base_sort, iterator, merge_sort_
-- Summarization/dipha-2d-thresh/include/dipha/element_distribution.h: gather_answers
-- Summarization/dipha-2d-thresh/include/dipha/mpi_utils.h: receive_vector, non_blocking_send_vector, all_gather, file_read_at_vector, file_write_at_vector, file_read_at, file_write_at
-- Summarization/dipha-2d-thresh/include/dipha/algorithms/compute_reduced_columns.h: compute_reduced_columns
-- Summarization/dipha-2d-thresh/include/dipha/algorithms/generate_unreduced_columns.h: generate_unreduced_columns
-- Summarization/dipha-2d-thresh/include/dipha/algorithms/get_filtration_to_cell_map.h: get_filtration_to_cell_map
-- Summarization/dipha-2d-thresh/include/dipha/data_structures/distributed_vector.h: init, set_local_value, set_global_values
-- Summarization/dipha-2d-thresh/include/dipha/data_structures/flat_column_stack.h: swap, clear, shrink_to_fit, push, pop
-- Summarization/dipha-2d-thresh/include/dipha/data_structures/heap_column.h: add_column, prune, clear, get_max_index, push, pop, pop_max_index
-- Summarization/dipha-2d-thresh/include/dipha/data_structures/write_once_array_of_arrays.h: init, clear, set
-- Summarization/dipha-2d-thresh/include/dipha/data_structures/write_once_column_array.h: init, set
-- Summarization/dipha-2d-thresh/include/dipha/inputs/abstract_weighted_cell_complex.h: load_binary
-- Summarization/dipha-2d-thresh/include/dipha/inputs/full_rips_complex.h: _load_binary, _precompute_breakpoints, _precompute_binomials
-- Summarization/dipha-2d-thresh/include/dipha/inputs/sparse_rips_complex.h: operator, operator, operator, _load_binary, get_process_id_for_full_index, _compute_sparse_indices, _precompute_values, _precompute_breakpoints, _precompute_binomials
-- Summarization/dipha-2d-thresh/include/dipha/inputs/weighted_cubical_complex.h: _load_binary
-- Summarization/dipha-2d-thresh/include/dipha/inputs/weighted_explicit_complex.h: _load_binary
-- Summarization/dipha-2d-thresh/include/dipha/outputs/save_persistence_diagram.h: compute_original_index, save_persistence_diagram
-- Summarization/dipha-2d-thresh/matlab/create_noise_image_data.m: create_noise_image_data
-- Summarization/dipha-2d-thresh/matlab/create_noisy_ramp_image_data.m: create_noisy_ramp_image_data
-- Summarization/dipha-2d-thresh/matlab/create_ramp_image_data.m: create_ramp_image_data
-- Summarization/dipha-2d-thresh/matlab/create_smooth_image_data.m: create_smooth_image_data
-- Summarization/dipha-2d-thresh/matlab/create_sphere.m: create_sphere
-- Summarization/dipha-2d-thresh/matlab/load_discrete_morse_edge_info.m: load_discrete_morse_edge_info
-- Summarization/dipha-2d-thresh/matlab/load_persistence_diagram.m: load_persistence_diagram
-- Summarization/dipha-2d-thresh/matlab/plot_midlife_persistence_diagram.m: plot_midlife_persistence_diagram
-- Summarization/dipha-2d-thresh/matlab/plot_persistence_diagram.m: plot_persistence_diagram
-- Summarization/dipha-2d-thresh/matlab/plot_persistence_diagram_density.m: plot_persistence_diagram_density
-- Summarization/dipha-2d-thresh/matlab/save_distance_matrix.m: save_distance_matrix
-- Summarization/dipha-2d-thresh/matlab/save_image_data.m: save_image_data
-- Summarization/dipha-2d-thresh/matlab/save_weighted_triangle_surface.m: save_weighted_triangle_surface, get_n4ed, get_ed4e, get_ed4n, get_e4n
-- Summarization/dipha-2d-thresh/src/create_phat_filtration.cpp: print_help_and_exit, parse_command_line, create_phat_filtration, main
-- Summarization/dipha-2d-thresh/src/dipha.cpp: print_help_and_exit, parse_command_line, compute, main
-- Summarization/dipha-2d-thresh/src/dualize.cpp: print_help, print_help_and_exit, parse_command_line, main
-- Summarization/dipha-2d-thresh/src/full_to_sparse_distance_matrix.cpp: print_help_and_exit, parse_command_line, create_sparse_representation, main
-- Summarization/dipha-output-2d-ve-et-thresh/ComputeGraphReconstruction.cpp: bfs, retrieve_path, main
-- Summarization/paths_src/ComputePaths.cpp: println, ReadInEdge, output_paths, dfs, get_paths, main
-- Summarization/post-haircutpaths/ComputePaths.cpp: println, ReadInEdge, output_paths, dfs, get_paths, main
-
-Repository: DM_MG (Python)
-GitHub URL: https://github.com/samik1986/DM_MG
-Extracted Functions by File:
-- pix2pix.py: structural_loss, imageLoader, imageLoaderReturn, readImagesEdge, readImages, Pix2Pix, __init__, build_generator, build_discriminator, train, sample_images, conv2d, deconv2d, d_layer
-
-Repository: DM_net (Python)
-GitHub URL: https://github.com/samik1986/DM_net
-Extracted Functions by File:
-- createBlack.py: readImagesTwice
-- createData.py: readImagesTwice, clipped_zoom, imageLoader
-- createDataA.py: readImagesTwice
-- createDataFT.py: readImagesTwice
-- createDataTest.py: readImagesTwice, imageLoader
-- createNEt.py: jaccard_distance, dmnet
-- createNETa.py: jaccard_distance, dmnet
-- createNEt_long.py: jaccard_distance, dmnetLong
-- createNEt_U.py: jaccard_distance, dmnetU
-- data.py: adjustData, trainGenerator, validateGenerator, testGenerator, geneTrainNpy, labelVisualize, saveResult
-- modelUnet.py: jaccard_distance, unet
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/basecommand.py: Command, RequirementCommand, __init__, _build_session, parse_args, main, populate_requirement_set, _build_package_finder
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/baseparser.py: PrettyHelpFormatter, UpdatingDefaultsHelpFormatter, CustomOptionParser, ConfigOptionParser, __init__, format_option_strings, _format_option_strings, format_heading, format_usage, format_description, format_epilog, indent_lines, expand_default, insert_option_group, option_list_all, __init__, check_default, _get_ordered_configuration_items, _update_defaults, get_default_values, error
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/build_env.py: BuildEnvironment, NoOpBuildEnvironment, __init__, path, __enter__, __exit__, cleanup, __init__, __enter__, __exit__, cleanup, restore_var
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/cache.py: Cache, SimpleWheelCache, EphemWheelCache, WheelCache, __init__, _get_cache_path_parts, _get_candidates, get_path_for_link, get, _link_for_candidate, cleanup, __init__, get_path_for_link, get, __init__, cleanup, __init__, get_path_for_link, get_ephem_path_for_link, get, cleanup
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/cmdoptions.py: make_option_group, check_install_build_global, exists_action, extra_index_url, find_links, trusted_host, constraints, requirements, editable, _get_format_control, _handle_no_binary, _handle_only_binary, no_binary, only_binary, _merge_hash, getname
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/compat.py: console_to_str, get_path_uid, expanduser, samefile, backslashreplace_decode_fn, native_str, native_str, get_terminal_size, get_terminal_size, ioctl_GWINSZ
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/configuration.py: _normalize_name, _disassemble_key, Configuration, __init__, load, get_file_to_edit, items, get_value, set_value, unset_value, save, _ensure_have_load_only, _dictionary, _load_config_files, _load_file, _construct_parser, _load_environment_vars, _normalized_keys, _get_environ_vars, _iter_config_files, _get_parser_to_modify, _mark_as_modified
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/download.py: user_agent, MultiDomainBasicAuth, LocalFSAdapter, SafeFileCache, InsecureHTTPAdapter, PipSession, get_file_content, is_url, url_to_path, path_to_url, is_archive_file, unpack_vcs_link, _get_used_vcs_backend, is_vcs_url, is_file_url, is_dir_url, _progress_indicator, _download_url, _copy_file, unpack_http_url, unpack_file_url, _copy_dist_from_dir, PipXmlrpcTransport, unpack_url, _download_http_url, _check_download_dir, __init__, __call__, handle_401, parse_credentials, send, close, __init__, get, set, delete, cert_verify, __init__, request, resp_read, written_chunks, __init__, request
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/exceptions.py: PipError, ConfigurationError, InstallationError, UninstallationError, DistributionNotFound, RequirementsFileParseError, BestVersionAlreadyInstalled, BadCommand, CommandError, PreviousBuildDirError, InvalidWheelFilename, UnsupportedWheel, HashErrors, HashError, VcsHashUnsupported, DirectoryUrlHashUnsupported, HashMissing, HashUnpinned, HashMismatch, UnsupportedPythonVersion, __init__, append, __str__, __nonzero__, __bool__, body, __str__, _requirement_name, __init__, body, __init__, body, _hash_comparison, hash_then_or
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/index.py: InstallationCandidate, PackageFinder, egg_info_matches, HTMLPage, Link, fmt_ctl_handle_mutual_exclude, fmt_ctl_formats, fmt_ctl_no_binary, __init__, __repr__, __hash__, __lt__, __le__, __eq__, __ge__, __gt__, __ne__, _compare, __init__, get_formatted_locations, add_dependency_links, _sort_locations, _candidate_sort_key, _validate_secure_origin, _get_index_urls_locations, find_all_candidates, find_requirement, _get_pages, _sort_links, _package_versions, _log_skipped_link, _link_package_versions, _get_page, __init__, __str__, get_page, _handle_fail, _get_content_type, base_url, links, clean_link, __init__, __str__, __repr__, __eq__, __ne__, __lt__, __le__, __gt__, __ge__, __hash__, filename, scheme, netloc, path, splitext, ext, url_without_fragment, egg_fragment, subdirectory_fragment, hash, hash_name, show_url, is_wheel, is_artifact, sort_path, mkurl_pypi_url
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/locations.py: write_delete_marker_file, running_under_virtualenv, virtualenv_no_global, distutils_scheme
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/pep425tags.py: get_config_var, get_abbr_impl, get_impl_ver, get_impl_version_info, get_impl_tag, get_flag, get_abi_tag, _is_running_32bit, get_platform, is_manylinux1_compatible, get_darwin_arches, get_supported, _supports_arch
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/resolve.py: Resolver, __init__, resolve, _is_upgrade_allowed, _set_req_to_reinstall, _check_skip_installed, _get_abstract_dist_for, _resolve_one, get_installation_order, add_req, schedule
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/wheel.py: rehash, open_for_csv, fix_script, root_is_purelib, get_entrypoints, message_about_scripts_not_on_PATH, move_wheel_files, wheel_version, check_compatibility, Wheel, WheelBuilder, _split_ep, normpath, record_installed, clobber, is_entrypoint_wrapper, _get_script_text, __init__, support_index_min, supported, __init__, _build_one, _build_one_inside_env, _base_setup_args, __build_one, _clean_one, build
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/__init__.py: autocomplete, create_main_parser, parseopts, check_isolated, main
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/check.py: CheckCommand, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/completion.py: CompletionCommand, __init__, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/configuration.py: ConfigurationCommand, __init__, run, _determine_file, list_values, get_name, set_name_value, unset_name, open_in_editor, _get_n_args, _save_configuration, _determine_editor
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/download.py: DownloadCommand, __init__, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/freeze.py: FreezeCommand, __init__, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/hash.py: HashCommand, _hash_of_file, __init__, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/help.py: HelpCommand, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/install.py: InstallCommand, get_lib_location_guesses, create_env_error_message, __init__, run, _handle_target_dir, _warn_about_conflicts
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/list.py: ListCommand, tabulate, format_for_columns, format_for_json, __init__, _build_package_finder, run, get_outdated, get_uptodate, get_not_required, iter_packages_latest_infos, output_legacy, output_legacy_latest, output_package_listing, output_package_listing_columns
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/search.py: SearchCommand, transform_hits, print_results, highest_version, __init__, run, search
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/show.py: ShowCommand, search_packages_info, print_results, __init__, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/uninstall.py: UninstallCommand, __init__, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/wheel.py: WheelCommand, __init__, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/__init__.py: get_summaries, get_similar_commands, _sort_commands, keyfn
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/models/index.py: Index, __init__, url_to_path
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/operations/check.py: create_package_set_from_installed, check_package_set, check_install_conflicts, _simulate_installation_of, str_key
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/operations/freeze.py: freeze, FrozenRequirement, __init__, from_dist, egg_name, __str__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/operations/prepare.py: make_abstract_dist, _install_build_reqs, DistAbstraction, IsWheel, IsSDist, Installed, RequirementPreparer, __init__, dist, prep_for_dist, dist, prep_for_dist, dist, prep_for_dist, dist, prep_for_dist, __init__, _download_should_save, prepare_linked_requirement, prepare_editable_requirement, prepare_installed_requirement, format_reqs
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/req_file.py: parse_requirements, preprocess, process_line, break_args_options, build_parser, join_lines, ignore_comments, skip_regex, expand_env_variables, parser_exit
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/req_install.py: _strip_extras, InstallRequirement, _strip_postfix, parse_editable, deduce_helpful_msg, __init__, from_editable, from_req, from_line, __str__, __repr__, populate_link, specifier, is_pinned, from_path, build_location, _correct_build_location, name, setup_py_dir, setup_py, pyproject_toml, get_pep_518_info, run_egg_info, egg_info_data, egg_info_path, pkg_info, installed_version, assert_source_matches_version, update_editable, uninstall, archive, _clean_zip_name, match_markers, install, ensure_has_source_dir, get_install_args, remove_temporary_source, install_editable, check_if_exists, is_wheel, move_wheel_files, get_dist, has_hash_options, hashes, prepend_root
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/req_set.py: RequirementSet, __init__, __str__, __repr__, add_requirement, has_requirement, has_requirements, get_requirement, cleanup_files
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/req_uninstall.py: _script_names, _unique, uninstallation_paths, compact, compress_for_output_listing, UninstallPathSet, UninstallPthEntries, unique, __init__, _permitted, add, add_pth, _stash, remove, _allowed_to_proceed, rollback, commit, from_dist, __init__, add, remove, rollback, _display
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/__init__.py: install_given_reqs
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/appdirs.py: user_cache_dir, user_data_dir, user_config_dir, site_config_dirs, _get_win_folder_from_registry, _get_win_folder_with_ctypes, _win_path_to_bytes
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/deprecation.py: PipDeprecationWarning, Pending, RemovedInPip11Warning, RemovedInPip12Warning, _showwarning, install_warning_logger
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/encoding.py: auto_decode
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/filesystem.py: check_path_owner
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/glibc.py: glibc_version_string, check_glibc_version, have_compatible_glibc, libc_ver
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/hashes.py: Hashes, MissingHashes, __init__, check_against_chunks, _raise, check_against_file, check_against_path, __nonzero__, __bool__, __init__, _raise
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/logging.py: indent_log, get_indentation, IndentingFormatter, _color_wrap, ColorizedStreamHandler, BetterRotatingFileHandler, MaxLevelFilter, format, wrapped, __init__, should_color, format, _open, __init__, filter
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/misc.py: import_or_raise, ensure_dir, get_prog, rmtree, rmtree_errorhandler, display_path, backup_dir, ask_path_exists, ask, format_size, is_installable_dir, is_svn_page, file_contents, read_chunks, split_leading_dir, has_leading_dir, normalize_path, splitext, renames, is_local, dist_is_local, dist_in_usersite, dist_in_site_packages, dist_is_editable, get_installed_distributions, egg_link_path, dist_location, current_umask, unzip_file, untar_file, unpack_file, call_subprocess, read_text_file, _make_build_dir, FakeFile, StreamWrapper, captured_output, captured_stdout, cached_property, get_installed_version, consume, enum, __init__, readline, __iter__, from_stream, encoding, __init__, __get__, local_test, editable_test, editable_test, editables_only_test, editables_only_test, user_test
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/outdated.py: VirtualenvSelfCheckState, GlobalSelfCheckState, load_selfcheck_statefile, pip_version_check, __init__, save, __init__, save
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/packaging.py: check_requires_python, get_metadata, check_dist_requires_python, get_installer
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/temp_dir.py: TempDirectory, __init__, __repr__, __enter__, __exit__, create, cleanup
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/ui.py: _select_progress_class, InterruptibleMixin, SilentBar, BlueEmojiBar, DownloadProgressMixin, WindowsMixin, BaseDownloadProgressBar, DefaultDownloadProgressBar, DownloadSilentBar, DownloadIncrementalBar, DownloadChargingBar, DownloadShadyBar, DownloadFillingSquaresBar, DownloadFillingCirclesBar, DownloadBlueEmojiProgressBar, DownloadProgressSpinner, DownloadProgressProvider, hidden_cursor, RateLimiter, InteractiveSpinner, NonInteractiveSpinner, open_spinner, __init__, finish, handle_sigint, update, __init__, downloaded, download_speed, pretty_eta, iter, __init__, next_phase, update, __init__, ready, reset, __init__, _write, spin, finish, __init__, _update, spin, finish
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/bazaar.py: Bazaar, __init__, get_base_rev_args, export, switch, update, obtain, get_url_rev, get_url, get_revision, get_src_requirement, is_commit_id_equal
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/git.py: looks_like_hash, Git, __init__, get_base_rev_args, get_git_version, export, get_revision_sha, check_rev_options, is_commit_id_equal, switch, update, obtain, get_url, get_revision, _get_subdirectory, get_src_requirement, get_url_rev, update_submodules, controls_location
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/mercurial.py: Mercurial, get_base_rev_args, export, switch, update, obtain, get_url, get_revision, get_revision_hash, get_src_requirement, is_commit_id_equal
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/subversion.py: Subversion, get_rev_options, get_base_rev_args, get_info, export, switch, update, obtain, get_location, get_revision, get_url_rev, get_url, _get_svn_url_rev, get_src_requirement, is_commit_id_equal, remove_auth_from_url
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/__init__.py: RevOptions, VcsSupport, VersionControl, get_src_requirement, __init__, __repr__, arg_rev, to_args, to_display, make_new, __init__, __iter__, backends, dirnames, all_schemes, register, unregister, get_backend_name, get_backend, get_backend_from_location, __init__, get_base_rev_args, make_rev_options, _is_local_repository, translate_egg_surname, export, get_url_rev, get_info, normalize_url, compare_urls, obtain, switch, update, is_commit_id_equal, check_destination, unpack, get_src_requirement, get_url, get_revision, run_command, controls_location
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/appdirs.py: user_data_dir, site_data_dir, user_config_dir, site_config_dir, user_cache_dir, user_state_dir, user_log_dir, AppDirs, _get_win_folder_from_registry, _get_win_folder_with_pywin32, _get_win_folder_with_ctypes, _get_win_folder_with_jna, __init__, user_data_dir, site_data_dir, user_config_dir, site_config_dir, user_cache_dir, user_state_dir, user_log_dir
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distro.py: linux_distribution, id, name, version, version_parts, major_version, minor_version, build_number, like, codename, info, os_release_info, lsb_release_info, distro_release_info, os_release_attr, lsb_release_attr, distro_release_attr, cached_property, LinuxDistribution, main, __init__, __get__, __init__, __repr__, linux_distribution, id, name, version, version_parts, major_version, minor_version, build_number, like, codename, info, os_release_info, lsb_release_info, distro_release_info, os_release_attr, lsb_release_attr, distro_release_attr, _os_release_info, _parse_os_release_content, _lsb_release_info, _parse_lsb_release_content, _distro_release_info, _parse_distro_release_file, _parse_distro_release_content, normalize
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/ipaddress.py: _compat_to_bytes, _compat_range, _TotalOrderingMixin, AddressValueError, NetmaskValueError, ip_address, ip_network, ip_interface, v4_int_to_packed, v6_int_to_packed, _split_optional_netmask, _find_address_range, _count_righthand_zero_bits, summarize_address_range, _collapse_addresses_internal, collapse_addresses, get_mixed_type_key, _IPAddressBase, _BaseAddress, _BaseNetwork, _BaseV4, IPv4Address, IPv4Interface, IPv4Network, _IPv4Constants, _BaseV6, IPv6Address, IPv6Interface, IPv6Network, _IPv6Constants, _compat_bytes_to_byte_vals, _compat_bytes_to_byte_vals, _compat_bit_length, _compat_bit_length, __eq__, __ne__, __lt__, __le__, __gt__, __ge__, exploded, compressed, reverse_pointer, version, _check_int_address, _check_packed_address, _ip_int_from_prefix, _prefix_from_ip_int, _report_invalid_netmask, _prefix_from_prefix_string, _prefix_from_ip_string, __reduce__, __int__, __eq__, __lt__, __add__, __sub__, __repr__, __str__, __hash__, _get_address_key, __reduce__, __init__, __repr__, __str__, hosts, __iter__, __getitem__, __lt__, __eq__, __hash__, __contains__, overlaps, broadcast_address, hostmask, with_prefixlen, with_netmask, with_hostmask, num_addresses, _address_class, prefixlen, address_exclude, compare_networks, _get_networks_key, subnets, supernet, is_multicast, _is_subnet_of, subnet_of, supernet_of, is_reserved, is_link_local, is_private, is_global, is_unspecified, is_loopback, _explode_shorthand_ip_string, _make_netmask, _ip_int_from_string, _parse_octet, _string_from_ip_int, _is_hostmask, _reverse_pointer, max_prefixlen, version, __init__, packed, is_reserved, is_private, is_global, is_multicast, is_unspecified, is_loopback, is_link_local, __init__, __str__, __eq__, __lt__, __hash__, ip, with_prefixlen, with_netmask, with_hostmask, __init__, is_global, _make_netmask, _ip_int_from_string, _parse_hextet, _compress_hextets, _string_from_ip_int, _explode_shorthand_ip_string, _reverse_pointer, max_prefixlen, version, __init__, packed, is_multicast, is_reserved, is_link_local, is_site_local, is_private, is_global, is_unspecified, is_loopback, ipv4_mapped, teredo, sixtofour, __init__, __str__, __eq__, __lt__, __hash__, ip, with_prefixlen, with_netmask, with_hostmask, is_unspecified, is_loopback, __init__, hosts, is_site_local, _compat_int_from_byte_vals
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pyparsing.py: _xml_escape, _Constants, ParseBaseException, ParseException, ParseFatalException, ParseSyntaxException, RecursiveGrammarException, _ParseResultsWithOffset, ParseResults, col, lineno, line, _defaultStartDebugAction, _defaultSuccessDebugAction, _defaultExceptionDebugAction, nullDebugAction, _trim_arity, ParserElement, Token, Empty, NoMatch, Literal, Keyword, CaselessLiteral, CaselessKeyword, CloseMatch, Word, Regex, QuotedString, CharsNotIn, White, _PositionToken, GoToColumn, LineStart, LineEnd, StringStart, StringEnd, WordStart, WordEnd, ParseExpression, And, Or, MatchFirst, Each, ParseElementEnhance, FollowedBy, NotAny, _MultipleMatch, OneOrMore, ZeroOrMore, _NullToken, Optional, SkipTo, Forward, _ForwardNoRecurse, TokenConverter, Combine, Group, Dict, Suppress, OnlyOnce, traceParseAction, delimitedList, countedArray, _flatten, matchPreviousLiteral, matchPreviousExpr, _escapeRegexRangeChars, oneOf, dictOf, originalTextFor, ungroup, locatedExpr, srange, matchOnlyAtCol, replaceWith, removeQuotes, tokenMap, _makeTags, makeHTMLTags, makeXMLTags, withAttribute, withClass, infixNotation, nestedExpr, indentedBlock, replaceHTMLEntity, pyparsing_common, _ustr, __init__, _from_exception, __getattr__, __str__, __repr__, markInputline, __dir__, __init__, __str__, __init__, __getitem__, __repr__, setOffset, __new__, __init__, __getitem__, __setitem__, __delitem__, __contains__, __len__, __bool__, __iter__, __reversed__, _iterkeys, _itervalues, _iteritems, haskeys, pop, get, insert, append, extend, clear, __getattr__, __add__, __iadd__, __radd__, __repr__, __str__, _asStringList, asList, asDict, copy, asXML, __lookup, getName, dump, pprint, __getstate__, __setstate__, __getnewargs__, __dir__, wrapper, setDefaultWhitespaceChars, inlineLiteralsUsing, __init__, copy, setName, setResultsName, setBreak, setParseAction, addParseAction, addCondition, setFailAction, _skipIgnorables, preParse, parseImpl, postParse, _parseNoCache, tryParse, canParseNext, _UnboundedCache, _parseCache, resetCache, enablePackrat, parseString, scanString, transformString, searchString, split, __add__, __radd__, __sub__, __rsub__, __mul__, __rmul__, __or__, __ror__, __xor__, __rxor__, __and__, __rand__, __invert__, __call__, suppress, leaveWhitespace, setWhitespaceChars, parseWithTabs, ignore, setDebugActions, setDebug, __str__, __repr__, streamline, checkRecursion, validate, parseFile, __eq__, __ne__, __hash__, __req__, __rne__, matches, runTests, __init__, __init__, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, copy, setDefaultKeywordChars, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __init__, preParse, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, __getitem__, append, leaveWhitespace, ignore, __str__, streamline, setResultsName, validate, copy, _ErrorStop, __init__, parseImpl, __iadd__, checkRecursion, __str__, __init__, parseImpl, __ixor__, __str__, checkRecursion, __init__, parseImpl, __ior__, __str__, checkRecursion, __init__, parseImpl, __str__, checkRecursion, __init__, parseImpl, leaveWhitespace, ignore, streamline, checkRecursion, validate, __str__, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __bool__, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __lshift__, __ilshift__, leaveWhitespace, streamline, validate, __str__, copy, __str__, __init__, __init__, ignore, postParse, __init__, postParse, __init__, postParse, postParse, suppress, __init__, __call__, reset, z, countFieldParseAction, copyTokenToRepeater, copyTokenToRepeater, verifyCol, pa, pa, checkPeerIndent, checkSubIndent, checkUnindent, convertToDate, convertToDatetime, stripHTMLTags, keys, values, items, toItem, extract_stack, extract_tb, __init__, _FifoCache, _FifoCache, __init__, mustMatchTheseTokens, extractText, cvt_fn, cvt_fn, breaker, pa, get, set, clear, cache_len, __init__, __init__, makeOptionalList, charsAsStr, get, set, clear, cache_len, get, set, clear, cache_len
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/retrying.py: retry, Retrying, Attempt, RetryError, __init__, stop_after_attempt, stop_after_delay, no_sleep, fixed_sleep, random_sleep, incrementing_sleep, exponential_sleep, never_reject, always_reject, should_reject, call, __init__, get, __repr__, __init__, __str__, wrap_simple, wrap, wrapped_f, wrapped_f
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/six.py: _add_doc, _import_module, _LazyDescr, MovedModule, _LazyModule, MovedAttribute, _SixMetaPathImporter, _MovedItems, Module_six_moves_urllib_parse, Module_six_moves_urllib_error, Module_six_moves_urllib_request, Module_six_moves_urllib_response, Module_six_moves_urllib_robotparser, Module_six_moves_urllib, add_move, remove_move, assertCountEqual, assertRaisesRegex, assertRegex, with_metaclass, add_metaclass, python_2_unicode_compatible, __init__, __get__, __init__, _resolve, __getattr__, __init__, __dir__, __init__, _resolve, __init__, _add_module, _get_module, find_module, __get_module, load_module, is_package, get_code, __dir__, get_unbound_function, create_unbound_method, get_unbound_function, create_bound_method, create_unbound_method, Iterator, iterkeys, itervalues, iteritems, iterlists, iterkeys, itervalues, iteritems, iterlists, b, u, b, u, byte2int, indexbytes, reraise, exec_, print_, print_, wraps, metaclass, wrapper, X, advance_iterator, callable, next, raise_from, write, wrapper, __new__, __prepare__, __len__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/__init__.py: vendored
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/adapter.py: CacheControlAdapter, __init__, send, build_response, close, _update_chunk_length
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/cache.py: BaseCache, DictCache, get, set, delete, close, __init__, get, set, delete
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/controller.py: parse_uri, CacheController, __init__, _urlnorm, cache_url, parse_cache_control, cached_request, conditional_headers, cache_response, update_cached_response
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/filewrapper.py: CallbackFileWrapper, __init__, __getattr__, __is_fp_closed, _close, read, _safe_read
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/heuristics.py: expire_after, datetime_to_header, BaseHeuristic, OneDayCache, ExpiresAfter, LastModified, warning, update_headers, apply, update_headers, __init__, update_headers, warning, update_headers, warning
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/serialize.py: _b64_decode_bytes, _b64_decode_str, Serializer, dumps, loads, prepare_response, _loads_v0, _loads_v1, _loads_v2, _loads_v3, _loads_v4
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/wrapper.py: CacheControl
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/_cmd.py: setup_logging, get_session, get_args, main
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches/file_cache.py: _secure_open_write, FileCache, url_to_file_path, __init__, encode, _fn, get, set, delete
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches/redis_cache.py: total_seconds, RedisCache, __init__, get, set, delete, clear, close
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/certifi/core.py: DeprecatedBundleWarning, where, old_where
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/big5prober.py: Big5Prober, __init__, charset_name, language
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/chardistribution.py: CharDistributionAnalysis, EUCTWDistributionAnalysis, EUCKRDistributionAnalysis, GB2312DistributionAnalysis, Big5DistributionAnalysis, SJISDistributionAnalysis, EUCJPDistributionAnalysis, __init__, reset, feed, get_confidence, got_enough_data, get_order, __init__, get_order, __init__, get_order, __init__, get_order, __init__, get_order, __init__, get_order, __init__, get_order
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/charsetgroupprober.py: CharSetGroupProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/charsetprober.py: CharSetProber, __init__, reset, charset_name, feed, state, get_confidence, filter_high_byte_only, filter_international_words, filter_with_english_letters
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/codingstatemachine.py: CodingStateMachine, __init__, reset, next_state, get_current_charlen, get_coding_state_machine, language
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/cp949prober.py: CP949Prober, __init__, charset_name, language
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/enums.py: InputState, LanguageFilter, ProbingState, MachineState, SequenceLikelihood, CharacterCategory, get_num_categories
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/escprober.py: EscCharSetProber, __init__, reset, charset_name, language, get_confidence, feed
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/eucjpprober.py: EUCJPProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/euckrprober.py: EUCKRProber, __init__, charset_name, language
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/euctwprober.py: EUCTWProber, __init__, charset_name, language
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/gb2312prober.py: GB2312Prober, __init__, charset_name, language
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/hebrewprober.py: HebrewProber, __init__, reset, set_model_probers, is_final, is_non_final, feed, charset_name, language, state
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/jpcntx.py: JapaneseContextAnalysis, SJISContextAnalysis, EUCJPContextAnalysis, __init__, reset, feed, got_enough_data, get_confidence, get_order, __init__, charset_name, get_order, get_order
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/latin1prober.py: Latin1Prober, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/mbcharsetprober.py: MultiByteCharSetProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/mbcsgroupprober.py: MBCSGroupProber, __init__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/sbcharsetprober.py: SingleByteCharSetProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/sbcsgroupprober.py: SBCSGroupProber, __init__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/sjisprober.py: SJISProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/universaldetector.py: UniversalDetector, __init__, reset, feed, close
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/utf8prober.py: UTF8Prober, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/__init__.py: detect
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/cli/chardetect.py: description_of, main
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/ansi.py: code_to_chars, set_title, clear_screen, clear_line, AnsiCodes, AnsiCursor, AnsiFore, AnsiBack, AnsiStyle, __init__, UP, DOWN, FORWARD, BACK, POS
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/ansitowin32.py: is_stream_closed, is_a_tty, StreamWrapper, AnsiToWin32, __init__, __getattr__, write, __init__, should_wrap, get_win32_calls, write, reset_all, write_and_convert, write_plain_text, convert_ansi, extract_params, call_win32, convert_osc
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/initialise.py: reset_all, init, deinit, colorama_text, reinit, wrap_stream
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/win32.py: CONSOLE_SCREEN_BUFFER_INFO, _winapi_test, winapi_test, GetConsoleScreenBufferInfo, SetConsoleTextAttribute, SetConsoleCursorPosition, FillConsoleOutputCharacter, FillConsoleOutputAttribute, SetConsoleTitle, __str__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/winterm.py: WinColor, WinStyle, WinTerm, __init__, get_attrs, set_attrs, reset_all, fore, back, style, set_console, get_position, set_cursor_position, cursor_adjust, erase_screen, erase_line, set_title
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/compat.py: quote, splituser, ZipExtFile, ZipFile, CertificateError, _dnsname_match, match_hostname, Container, which, __init__, __enter__, __exit__, __enter__, __exit__, open, python_implementation, callable, fsencode, fsdecode, _get_normal_name, detect_encoding, ChainMap, OrderedDict, valid_ident, ConvertingDict, pop, ConvertingList, ConvertingTuple, BaseConfigurator, __init__, _access_check, read_or_stop, find_cookie, __init__, __missing__, __getitem__, get, __len__, __iter__, __contains__, __bool__, __repr__, fromkeys, copy, new_child, parents, __setitem__, __delitem__, popitem, pop, clear, __init__, __setitem__, __delitem__, __iter__, __reversed__, clear, popitem, keys, values, items, iterkeys, itervalues, iteritems, update, pop, setdefault, __repr__, __reduce__, copy, fromkeys, __eq__, __ne__, viewkeys, viewvalues, viewitems, __getitem__, get, __getitem__, pop, __getitem__, __init__, resolve, ext_convert, cfg_convert, convert, configure_custom, as_tuple, _recursive_repr, cache_from_source, decorating_function, wrapper
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/database.py: _Cache, DistributionPath, Distribution, BaseInstalledDistribution, InstalledDistribution, EggInfoDistribution, DependencyGraph, make_graph, get_dependent_dists, get_required_dists, make_dist, __init__, clear, add, __init__, _get_cache_enabled, _set_cache_enabled, clear_cache, _yield_distributions, _generate_cache, distinfo_dirname, get_distributions, get_distribution, provides_distribution, get_file_path, get_exported_entries, __init__, source_url, name_and_version, provides, _get_requirements, run_requires, meta_requires, build_requires, test_requires, dev_requires, matches_requirement, __repr__, __eq__, __hash__, __init__, get_hash, __init__, __repr__, __str__, _get_records, exports, read_exports, write_exports, get_resource_path, list_installed_files, write_installed_files, check_installed_files, shared_locations, write_shared_locations, get_distinfo_resource, get_distinfo_file, list_distinfo_files, __eq__, __init__, _get_metadata, __repr__, __str__, check_installed_files, list_installed_files, list_distinfo_files, __eq__, __init__, add_distribution, add_edge, add_missing, _repr_dist, repr_node, to_dot, topological_sort, __repr__, set_name_and_version, parse_requires_data, parse_requires_path, _md5, _size
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/index.py: PackageIndex, __init__, _get_pypirc_command, read_configuration, save_configuration, check_credentials, register, _reader, get_sign_command, run_command, sign_file, upload_file, upload_documentation, get_verify_command, verify_signature, download_file, send_request, encode_request, search
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/locators.py: get_all_distribution_names, RedirectHandler, Locator, PyPIRPCLocator, PyPIJSONLocator, Page, SimpleScrapingLocator, DirectoryLocator, JSONLocator, DistPathLocator, AggregatingLocator, DependencyFinder, http_error_302, __init__, get_errors, clear_errors, clear_cache, _get_scheme, _set_scheme, _get_project, get_distribution_names, get_project, score_url, prefer_url, split_filename, convert_url_to_download_info, _get_digest, _update_version_data, locate, __init__, get_distribution_names, _get_project, __init__, get_distribution_names, _get_project, __init__, links, __init__, _prepare_threads, _wait_threads, _get_project, _is_platform_dependent, _process_download, _should_queue, _fetch, get_page, get_distribution_names, __init__, should_include, _get_project, get_distribution_names, get_distribution_names, _get_project, __init__, _get_project, __init__, clear_cache, _set_scheme, _get_project, get_distribution_names, __init__, add_distribution, remove_distribution, get_matcher, find_providers, try_to_replace, find, same_project, clean
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/manifest.py: Manifest, __init__, findall, add, add_many, sorted, clear, process_directive, _parse_directive, _include_pattern, _exclude_pattern, _translate_pattern, _glob_to_re, add_dir
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/markers.py: _is_literal, Evaluator, default_context, interpret, evaluate, format_full_version
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/metadata.py: MetadataMissingError, MetadataConflictError, MetadataUnrecognizedVersionError, MetadataInvalidError, _version2fieldlist, _best_version, _get_name_and_version, LegacyMetadata, Metadata, _has_marker, __init__, set_metadata_version, _write_field, __getitem__, __setitem__, __delitem__, __contains__, _convert_name, _default_value, _remove_line_prefix, __getattr__, get_fullname, is_field, is_multi_field, read, read_file, write, write_file, update, set, get, check, todict, add_requirements, keys, __iter__, values, items, __repr__, __init__, __getattribute__, _validate_value, __setattr__, name_and_version, provides, provides, get_requirements, dictionary, dependencies, dependencies, _validate_mapping, validate, todict, _from_legacy, _to_legacy, write, add_requirements, __repr__, _set, are_valid_constraints, process_entries
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/resources.py: ResourceCache, ResourceBase, Resource, ResourceContainer, ResourceFinder, ZipResourceFinder, register_finder, finder, finder_for_path, __init__, is_stale, get, __init__, as_stream, file_path, bytes, size, resources, __init__, _adjust_path, _make_path, _find, get_cache_info, find, get_stream, get_bytes, get_size, get_resources, is_container, iterator, __init__, _adjust_path, _find, get_cache_info, get_bytes, get_stream, get_size, get_resources, _is_directory, allowed
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/scripts.py: _enquote_executable, ScriptMaker, __init__, _get_alternate_executable, _build_shebang, _get_shebang, _get_script_text, get_manifest, _write_script, _make_script, _copy_script, dry_run, dry_run, make, make_multiple, _is_shell, _fix_jython_executable, _get_launcher
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/util.py: parse_marker, parse_requirement, get_resources_dests, in_venv, get_executable, proceed, extract_by_key, read_exports, write_exports, tempdir, chdir, socket_timeout, cached_property, convert_path, FileOperator, resolve, ExportEntry, get_export_entry, get_cache_base, path_to_cache_dir, ensure_slash, parse_credentials, get_process_umask, is_string_sequence, split_filename, parse_name_and_version, get_extras, _get_external_data, get_project_data, get_package_data, Cache, EventMixin, Sequencer, unarchive, zip_dir, Progress, iglob, _iglob, Transport, ServerProxy, _csv_open, CSVBase, CSVReader, CSVWriter, Configurator, SubprocessMixin, normalize_name, marker_var, marker_expr, marker_and, marker, get_rel_path, read_stream, __init__, __get__, __init__, _init_record, record_as_written, newer, copy_file, copy_stream, write_binary_file, write_text_file, set_mode, ensure_dir, byte_compile, ensure_removed, is_writable, commit, rollback, __init__, value, __repr__, __eq__, __init__, prefix_to_dir, clear, __init__, add, remove, get_subscribers, publish, __init__, add_node, remove_node, add, remove, is_step, get_steps, strong_connections, dot, check_path, __init__, update, increment, start, stop, maximum, percentage, format_duration, ETA, speed, HTTPSConnection, HTTPSHandler, HTTPSOnlyHandler, HTTP, __init__, make_connection, SafeTransport, __init__, __enter__, __exit__, __init__, __iter__, next, __init__, writerow, __init__, configure_custom, __getitem__, inc_convert, __init__, reader, run_command, strongconnect, connect, __init__, _conn_maker, https_open, http_open, __init__, HTTPS, __init__, make_connection, convert, get_versions, __init__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/version.py: UnsupportedVersionError, Version, Matcher, _pep_440_key, NormalizedVersion, _match_prefix, NormalizedMatcher, _suggest_semantic_version, _suggest_normalized_version, _legacy_key, LegacyVersion, LegacyMatcher, is_semver, _semantic_key, SemanticVersion, SemanticMatcher, VersionScheme, get_scheme, __init__, parse, _check_compatible, __eq__, __ne__, __lt__, __gt__, __le__, __ge__, __hash__, __repr__, __str__, is_prerelease, parse_requirement, __init__, match, exact_version, _check_compatible, __eq__, __ne__, __hash__, __repr__, __str__, parse, is_prerelease, _adjust_local, _match_lt, _match_gt, _match_le, _match_ge, _match_eq, _match_arbitrary, _match_ne, _match_compatible, get_parts, parse, is_prerelease, _match_compatible, make_tuple, parse, is_prerelease, __init__, is_valid_version, is_valid_matcher, is_valid_constraint_list, suggest
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/wheel.py: Mounter, Wheel, compatible_tags, is_compatible, _derive_abi, __init__, add, remove, find_module, load_module, __init__, filename, exists, tags, metadata, get_wheel_metadata, info, process_shebang, get_hash, write_record, write_records, build_zip, build, install, _get_dylib_cache, _get_extensions, is_compatible, is_mountable, mount, unmount, verify, update, get_version, update_version
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/__init__.py: DistlibException, NullHandler, handle, emit, createLock
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/misc.py: cache_from_source, callable, fsencode
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/shutil.py: Error, SpecialFileError, ExecError, ReadError, RegistryError, copyfileobj, _samefile, copyfile, copymode, copystat, copy, copy2, ignore_patterns, copytree, rmtree, _basename, move, _destinsrc, _get_gid, _get_uid, _make_tarball, _call_external_zip, _make_zipfile, get_archive_formats, register_archive_format, unregister_archive_format, make_archive, get_unpack_formats, _check_unpack_options, register_unpack_format, unregister_unpack_format, _ensure_directory, _unpack_zipfile, _unpack_tarfile, _find_unpack_format, unpack_archive, _ignore_patterns, _set_uid_gid, onerror, onerror
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/sysconfig.py: _safe_realpath, is_python_build, _ensure_cfg_read, _expand_globals, _subst_vars, _extend_dict, _expand_vars, format_value, _get_default_scheme, _getuserbase, _parse_makefile, get_makefile_filename, _init_posix, _init_non_posix, parse_config_h, get_config_h_filename, get_scheme_names, get_path_names, get_paths, get_path, get_config_vars, get_config_var, get_platform, get_python_version, _print_dict, _main, _replacer, _replacer, joinuser, _replacer
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/tarfile.py: stn, nts, nti, itn, calc_chksums, copyfileobj, filemode, TarError, ExtractError, ReadError, CompressionError, StreamError, HeaderError, EmptyHeaderError, TruncatedHeaderError, EOFHeaderError, InvalidHeaderError, SubsequentHeaderError, _LowLevelFile, _Stream, _StreamProxy, _BZ2Proxy, _FileInFile, ExFileObject, TarInfo, TarFile, TarIter, is_tarfile, __init__, close, read, write, __init__, __del__, _init_write_gz, write, __write, close, _init_read_gz, tell, seek, read, _read, __read, __init__, read, getcomptype, close, __init__, init, read, seek, tell, write, close, __init__, seekable, tell, seek, read, __init__, readable, writable, seekable, read, readline, readlines, tell, seek, close, __iter__, __init__, _getpath, _setpath, _getlinkpath, _setlinkpath, __repr__, get_info, tobuf, create_ustar_header, create_gnu_header, create_pax_header, create_pax_global_header, _posix_split_name, _create_header, _create_payload, _create_gnu_long_header, _create_pax_generic_header, frombuf, fromtarfile, _proc_member, _proc_builtin, _proc_gnulong, _proc_sparse, _proc_pax, _proc_gnusparse_00, _proc_gnusparse_01, _proc_gnusparse_10, _apply_pax_info, _decode_pax_field, _block, isreg, isfile, isdir, issym, islnk, ischr, isblk, isfifo, issparse, isdev, __init__, open, taropen, gzopen, bz2open, close, getmember, getmembers, getnames, gettarinfo, list, add, addfile, extractall, extract, extractfile, _extract_member, makedir, makefile, makeunknown, makefifo, makedev, makelink, chown, chmod, utime, next, _getmember, _load, _check, _find_link_target, __iter__, _dbg, __enter__, __exit__, __init__, __iter__, __next__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/constants.py: DataLossWarning, _ReparseException
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/html5parser.py: parse, parseFragment, method_decorator_metaclass, HTMLParser, getPhases, adjust_attributes, impliedTagToken, ParseError, Decorated, __init__, _parse, reset, documentEncoding, isHTMLIntegrationPoint, isMathMLTextIntegrationPoint, mainLoop, normalizedTokens, parse, parseFragment, parseError, normalizeToken, adjustMathMLAttributes, adjustSVGAttributes, adjustForeignAttributes, reparseTokenNormal, resetInsertionMode, parseRCDataRawtext, log, getMetaclass, Phase, InitialPhase, BeforeHtmlPhase, BeforeHeadPhase, InHeadPhase, InHeadNoscriptPhase, AfterHeadPhase, InBodyPhase, TextPhase, InTablePhase, InTableTextPhase, InCaptionPhase, InColumnGroupPhase, InTableBodyPhase, InRowPhase, InCellPhase, InSelectPhase, InSelectInTablePhase, InForeignContentPhase, AfterBodyPhase, InFramesetPhase, AfterFramesetPhase, AfterAfterBodyPhase, AfterAfterFramesetPhase, __new__, wrapped, __init__, processEOF, processComment, processDoctype, processCharacters, processSpaceCharacters, processStartTag, startTagHtml, processEndTag, processSpaceCharacters, processComment, processDoctype, anythingElse, processCharacters, processStartTag, processEndTag, processEOF, insertHtmlElement, processEOF, processComment, processSpaceCharacters, processCharacters, processStartTag, processEndTag, __init__, processEOF, processSpaceCharacters, processCharacters, startTagHtml, startTagHead, startTagOther, endTagImplyHead, endTagOther, __init__, processEOF, processCharacters, startTagHtml, startTagHead, startTagBaseLinkCommand, startTagMeta, startTagTitle, startTagNoFramesStyle, startTagNoscript, startTagScript, startTagOther, endTagHead, endTagHtmlBodyBr, endTagOther, anythingElse, __init__, processEOF, processComment, processCharacters, processSpaceCharacters, startTagHtml, startTagBaseLinkCommand, startTagHeadNoscript, startTagOther, endTagNoscript, endTagBr, endTagOther, anythingElse, __init__, processEOF, processCharacters, startTagHtml, startTagBody, startTagFrameset, startTagFromHead, startTagHead, startTagOther, endTagHtmlBodyBr, endTagOther, anythingElse, __init__, isMatchingFormattingElement, addFormattingElement, processEOF, processSpaceCharactersDropNewline, processCharacters, processSpaceCharactersNonPre, startTagProcessInHead, startTagBody, startTagFrameset, startTagCloseP, startTagPreListing, startTagForm, startTagListItem, startTagPlaintext, startTagHeading, startTagA, startTagFormatting, startTagNobr, startTagButton, startTagAppletMarqueeObject, startTagXmp, startTagTable, startTagVoidFormatting, startTagInput, startTagParamSource, startTagHr, startTagImage, startTagIsIndex, startTagTextarea, startTagIFrame, startTagNoscript, startTagRawtext, startTagOpt, startTagSelect, startTagRpRt, startTagMath, startTagSvg, startTagMisplaced, startTagOther, endTagP, endTagBody, endTagHtml, endTagBlock, endTagForm, endTagListItem, endTagHeading, endTagFormatting, endTagAppletMarqueeObject, endTagBr, endTagOther, __init__, processCharacters, processEOF, startTagOther, endTagScript, endTagOther, __init__, clearStackToTableContext, processEOF, processSpaceCharacters, processCharacters, insertText, startTagCaption, startTagColgroup, startTagCol, startTagRowGroup, startTagImplyTbody, startTagTable, startTagStyleScript, startTagInput, startTagForm, startTagOther, endTagTable, endTagIgnore, endTagOther, __init__, flushCharacters, processComment, processEOF, processCharacters, processSpaceCharacters, processStartTag, processEndTag, __init__, ignoreEndTagCaption, processEOF, processCharacters, startTagTableElement, startTagOther, endTagCaption, endTagTable, endTagIgnore, endTagOther, __init__, ignoreEndTagColgroup, processEOF, processCharacters, startTagCol, startTagOther, endTagColgroup, endTagCol, endTagOther, __init__, clearStackToTableBodyContext, processEOF, processSpaceCharacters, processCharacters, startTagTr, startTagTableCell, startTagTableOther, startTagOther, endTagTableRowGroup, endTagTable, endTagIgnore, endTagOther, __init__, clearStackToTableRowContext, ignoreEndTagTr, processEOF, processSpaceCharacters, processCharacters, startTagTableCell, startTagTableOther, startTagOther, endTagTr, endTagTable, endTagTableRowGroup, endTagIgnore, endTagOther, __init__, closeCell, processEOF, processCharacters, startTagTableOther, startTagOther, endTagTableCell, endTagIgnore, endTagImply, endTagOther, __init__, processEOF, processCharacters, startTagOption, startTagOptgroup, startTagSelect, startTagInput, startTagScript, startTagOther, endTagOption, endTagOptgroup, endTagSelect, endTagOther, __init__, processEOF, processCharacters, startTagTable, startTagOther, endTagTable, endTagOther, __init__, adjustSVGTagNames, processCharacters, processStartTag, processEndTag, __init__, processEOF, processComment, processCharacters, startTagHtml, startTagOther, endTagHtml, endTagOther, __init__, processEOF, processCharacters, startTagFrameset, startTagFrame, startTagNoframes, startTagOther, endTagFrameset, endTagOther, __init__, processEOF, processCharacters, startTagNoframes, startTagOther, endTagHtml, endTagOther, __init__, processEOF, processComment, processSpaceCharacters, processCharacters, startTagHtml, startTagOther, processEndTag, __init__, processEOF, processComment, processSpaceCharacters, processCharacters, startTagHtml, startTagNoFrames, startTagOther, processEndTag
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/serializer.py: htmlentityreplace_errors, serialize, HTMLSerializer, SerializeError, __init__, encode, encodeStrict, serialize, render, serializeError
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_ihatexml.py: charStringToList, normaliseCharList, missingRanges, listToRegexpStr, hexToInt, escapeRegexp, InfosetFilter, __init__, coerceAttribute, coerceElement, coerceComment, coerceCharacters, coercePubid, toXmlName, getReplacementCharacter, fromXmlName, escapeChar, unescapeChar
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_inputstream.py: BufferedStream, HTMLInputStream, HTMLUnicodeInputStream, HTMLBinaryInputStream, EncodingBytes, EncodingParser, ContentAttrParser, lookupEncoding, __init__, tell, seek, read, _bufferedBytes, _readStream, _readFromBuffer, __init__, reset, openStream, _position, position, char, readChunk, characterErrorsUCS4, characterErrorsUCS2, charsUntil, unget, __init__, reset, openStream, determineEncoding, changeEncoding, detectBOM, detectEncodingMeta, __new__, __init__, __iter__, __next__, next, previous, setPosition, getPosition, getCurrentByte, skip, skipUntil, matchBytes, jumpTo, __init__, getEncoding, handleComment, handleMeta, handlePossibleStartTag, handlePossibleEndTag, handlePossibleTag, handleOther, getAttribute, __init__, parse
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_tokenizer.py: HTMLTokenizer, __init__, __iter__, consumeNumberEntity, consumeEntity, processEntityInAttribute, emitCurrentToken, dataState, entityDataState, rcdataState, characterReferenceInRcdata, rawtextState, scriptDataState, plaintextState, tagOpenState, closeTagOpenState, tagNameState, rcdataLessThanSignState, rcdataEndTagOpenState, rcdataEndTagNameState, rawtextLessThanSignState, rawtextEndTagOpenState, rawtextEndTagNameState, scriptDataLessThanSignState, scriptDataEndTagOpenState, scriptDataEndTagNameState, scriptDataEscapeStartState, scriptDataEscapeStartDashState, scriptDataEscapedState, scriptDataEscapedDashState, scriptDataEscapedDashDashState, scriptDataEscapedLessThanSignState, scriptDataEscapedEndTagOpenState, scriptDataEscapedEndTagNameState, scriptDataDoubleEscapeStartState, scriptDataDoubleEscapedState, scriptDataDoubleEscapedDashState, scriptDataDoubleEscapedDashDashState, scriptDataDoubleEscapedLessThanSignState, scriptDataDoubleEscapeEndState, beforeAttributeNameState, attributeNameState, afterAttributeNameState, beforeAttributeValueState, attributeValueDoubleQuotedState, attributeValueSingleQuotedState, attributeValueUnQuotedState, afterAttributeValueState, selfClosingStartTagState, bogusCommentState, markupDeclarationOpenState, commentStartState, commentStartDashState, commentState, commentEndDashState, commentEndState, commentEndBangState, doctypeState, beforeDoctypeNameState, doctypeNameState, afterDoctypeNameState, afterDoctypePublicKeywordState, beforeDoctypePublicIdentifierState, doctypePublicIdentifierDoubleQuotedState, doctypePublicIdentifierSingleQuotedState, afterDoctypePublicIdentifierState, betweenDoctypePublicAndSystemIdentifiersState, afterDoctypeSystemKeywordState, beforeDoctypeSystemIdentifierState, doctypeSystemIdentifierDoubleQuotedState, doctypeSystemIdentifierSingleQuotedState, afterDoctypeSystemIdentifierState, bogusDoctypeState, cdataSectionState
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_utils.py: MethodDispatcher, isSurrogatePair, surrogatePairToCodepoint, moduleFactoryFactory, memoize, __init__, __getitem__, moduleFactory, wrapped
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/alphabeticalattributes.py: _attr_key, Filter, __iter__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/base.py: Filter, __init__, __iter__, __getattr__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/inject_meta_charset.py: Filter, __init__, __iter__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/lint.py: Filter, __init__, __iter__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/optionaltags.py: Filter, slider, __iter__, is_optional_start, is_optional_end
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/sanitizer.py: Filter, __init__, __iter__, sanitize_token, allowed_token, disallowed_token, sanitize_css
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/whitespace.py: Filter, collapse_spaces, __iter__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treeadapters/genshi.py: to_genshi
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treeadapters/sax.py: to_sax
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/base.py: Node, ActiveFormattingElements, TreeBuilder, __init__, __str__, __repr__, appendChild, insertText, insertBefore, removeChild, reparentChildren, cloneNode, hasContent, append, nodesEqual, __init__, reset, elementInScope, reconstructActiveFormattingElements, clearActiveFormattingElements, elementInActiveFormattingElements, insertRoot, insertDoctype, insertComment, createElement, _getInsertFromTable, _setInsertFromTable, insertElementNormal, insertElementTable, insertText, getTableMisnestedNodePosition, generateImpliedEndTags, getDocument, getFragment, testSerializer
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/dom.py: getDomBuilder, AttrList, NodeBuilder, TreeBuilder, testSerializer, __init__, __iter__, __setitem__, __len__, items, values, __getitem__, __delitem__, __init__, appendChild, insertText, insertBefore, removeChild, reparentChildren, getAttributes, setAttributes, cloneNode, hasContent, getNameTuple, documentClass, insertDoctype, elementClass, commentClass, fragmentClass, appendChild, testSerializer, getDocument, getFragment, insertText, serializeElement
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/etree.py: getETreeBuilder, Element, Comment, DocumentType, Document, DocumentFragment, testSerializer, tostring, TreeBuilder, __init__, _getETreeTag, _setName, _getName, _setNamespace, _getNamespace, _getAttributes, _setAttributes, _getChildNodes, _setChildNodes, hasContent, appendChild, insertBefore, removeChild, insertText, cloneNode, reparentChildren, __init__, _getData, _setData, __init__, _getPublicId, _setPublicId, _getSystemId, _setSystemId, __init__, __init__, serializeElement, serializeElement, testSerializer, getDocument, getFragment
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/etree_lxml.py: DocumentType, Document, testSerializer, tostring, TreeBuilder, __init__, __init__, appendChild, _getChildNodes, serializeElement, serializeElement, __init__, reset, testSerializer, getDocument, getFragment, insertDoctype, insertCommentInitial, insertCommentMain, insertRoot, Attributes, Element, Comment, __init__, __setitem__, __init__, _setName, _getName, _getAttributes, _setAttributes, insertText, appendChild, __init__, _setData, _getData
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/__init__.py: getTreeBuilder
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/base.py: TreeWalker, NonRecursiveTreeWalker, __init__, __iter__, error, emptyTag, startTag, endTag, text, comment, doctype, entity, unknown, getNodeDetails, getFirstChild, getNextSibling, getParentNode, __iter__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/dom.py: TreeWalker, getNodeDetails, getFirstChild, getNextSibling, getParentNode
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/etree.py: getETreeBuilder, TreeWalker, getNodeDetails, getFirstChild, getNextSibling, getParentNode
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/etree_lxml.py: ensure_str, Root, Doctype, FragmentRoot, FragmentWrapper, TreeWalker, __init__, __getitem__, getnext, __len__, __init__, getnext, __init__, getnext, __init__, __getattr__, getnext, __getitem__, __bool__, getparent, __str__, __unicode__, __len__, __init__, getNodeDetails, getFirstChild, getNextSibling, getParentNode
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/genshi.py: TreeWalker, __iter__, tokens
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/__init__.py: getTreeWalker, concatenateCharacterTokens, pprint
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_trie/datrie.py: Trie, __init__, __contains__, __len__, __iter__, __getitem__, keys, has_keys_with_prefix, longest_prefix, longest_prefix_item
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_trie/py.py: Trie, __init__, __contains__, __len__, __iter__, __getitem__, keys, has_keys_with_prefix
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_trie/_base.py: Trie, keys, has_keys_with_prefix, longest_prefix, longest_prefix_item
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/codec.py: Codec, IncrementalEncoder, IncrementalDecoder, StreamWriter, StreamReader, getregentry, encode, decode, _buffer_encode, _buffer_decode
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/compat.py: ToASCII, ToUnicode, nameprep
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/core.py: IDNAError, IDNABidiError, InvalidCodepoint, InvalidCodepointContext, _combining_class, _is_script, _punycode, _unot, valid_label_length, valid_string_length, check_bidi, check_initial_combiner, check_hyphen_ok, check_nfc, valid_contextj, valid_contexto, check_label, alabel, ulabel, uts46_remap, encode, decode
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/intranges.py: intranges_from_list, _encode_range, _decode_range, intranges_contain
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/uts46data.py: _seg_0, _seg_1, _seg_2, _seg_3, _seg_4, _seg_5, _seg_6, _seg_7, _seg_8, _seg_9, _seg_10, _seg_11, _seg_12, _seg_13, _seg_14, _seg_15, _seg_16, _seg_17, _seg_18, _seg_19, _seg_20, _seg_21, _seg_22, _seg_23, _seg_24, _seg_25, _seg_26, _seg_27, _seg_28, _seg_29, _seg_30, _seg_31, _seg_32, _seg_33, _seg_34, _seg_35, _seg_36, _seg_37, _seg_38, _seg_39, _seg_40, _seg_41, _seg_42, _seg_43, _seg_44, _seg_45, _seg_46, _seg_47, _seg_48, _seg_49, _seg_50, _seg_51, _seg_52, _seg_53, _seg_54, _seg_55, _seg_56, _seg_57, _seg_58, _seg_59, _seg_60, _seg_61, _seg_62, _seg_63, _seg_64, _seg_65, _seg_66, _seg_67, _seg_68, _seg_69, _seg_70, _seg_71, _seg_72
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/linklockfile.py: LinkLockFile, acquire, release, is_locked, i_am_locking, break_lock
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/mkdirlockfile.py: MkdirLockFile, __init__, acquire, release, is_locked, i_am_locking, break_lock
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/pidlockfile.py: PIDLockFile, read_pid_from_pidfile, write_pid_to_pidfile, remove_existing_pidfile, __init__, read_pid, is_locked, i_am_locking, acquire, release, break_lock
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/sqlitelockfile.py: SQLiteLockFile, __init__, acquire, release, _who_is_locking, is_locked, i_am_locking, break_lock
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/symlinklockfile.py: SymlinkLockFile, __init__, acquire, release, is_locked, i_am_locking, break_lock
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/__init__.py: Error, LockError, LockTimeout, AlreadyLocked, LockFailed, UnlockError, NotLocked, NotMyLock, _SharedBase, LockBase, _fl_helper, LinkFileLock, MkdirFileLock, SQLiteFileLock, locked, __init__, acquire, release, __enter__, __exit__, __repr__, __init__, is_locked, i_am_locking, break_lock, __repr__, decor, wrapper
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/msgpack/exceptions.py: UnpackException, BufferFull, OutOfData, UnpackValueError, ExtraData, PackException, PackValueError, PackOverflowError, __init__, __str__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/msgpack/fallback.py: _check_type_strict, _get_data_from_buffer, unpack, unpackb, Unpacker, Packer, dict_iteritems, dict_iteritems, StringIO, __init__, feed, _consume, _got_extradata, _get_extradata, read_bytes, _read, _reserve, _read_header, _unpack, __iter__, __next__, skip, unpack, read_array_header, read_map_header, tell, __init__, _pack, pack, pack_map_pairs, pack_array_header, pack_map_header, pack_ext_type, _pack_array_header, _pack_map_header, _pack_map_pairs, _pack_raw_header, _pack_bin_header, bytes, reset, __init__, write, getvalue
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/msgpack/__init__.py: ExtType, pack, packb, unpack, __new__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/markers.py: InvalidMarker, UndefinedComparison, UndefinedEnvironmentName, Node, Variable, Value, Op, _coerce_parse_result, _format_marker, _eval_op, _get_env, _evaluate_markers, format_full_version, default_environment, Marker, __init__, __str__, __repr__, serialize, serialize, serialize, serialize, __init__, __str__, __repr__, evaluate
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/requirements.py: InvalidRequirement, Requirement, __init__, __str__, __repr__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/specifiers.py: InvalidSpecifier, BaseSpecifier, _IndividualSpecifier, LegacySpecifier, _require_version_compare, Specifier, _version_split, _pad_version, SpecifierSet, __str__, __hash__, __eq__, __ne__, prereleases, prereleases, contains, filter, __init__, __repr__, __str__, __hash__, __eq__, __ne__, _get_operator, _coerce_version, operator, version, prereleases, prereleases, __contains__, contains, filter, _coerce_version, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, wrapped, _compare_compatible, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, _compare_arbitrary, prereleases, prereleases, __init__, __repr__, __str__, __hash__, __and__, __eq__, __ne__, __len__, __iter__, prereleases, prereleases, __contains__, contains, filter
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/utils.py: canonicalize_name, canonicalize_version
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/version.py: parse, InvalidVersion, _BaseVersion, LegacyVersion, _parse_version_parts, _legacy_cmpkey, Version, _parse_letter_version, _parse_local_version, _cmpkey, __hash__, __lt__, __le__, __eq__, __ge__, __gt__, __ne__, _compare, __init__, __str__, __repr__, public, base_version, epoch, release, pre, post, dev, local, is_prerelease, is_postrelease, is_devrelease, __init__, __repr__, __str__, epoch, release, pre, post, dev, local, public, base_version, is_prerelease, is_postrelease, is_devrelease
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/_compat.py: with_metaclass, metaclass, __new__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/_structures.py: Infinity, NegativeInfinity, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pkg_resources/py31compat.py: _makedirs_31
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pkg_resources/__init__.py: PEP440Warning, parse_version, _declare_state, __getstate__, __setstate__, _sget_dict, _sset_dict, _sget_object, _sset_object, get_supported_platform, ResolutionError, VersionConflict, ContextualVersionConflict, DistributionNotFound, UnknownExtra, register_loader_type, get_provider, _macosx_vers, _macosx_arch, get_build_platform, compatible_platforms, run_script, get_distribution, load_entry_point, get_entry_map, get_entry_info, IMetadataProvider, IResourceProvider, WorkingSet, _ReqExtras, Environment, ExtractionError, ResourceManager, get_default_cache, safe_name, safe_version, safe_extra, to_filename, invalid_marker, evaluate_marker, NullProvider, EggProvider, DefaultProvider, EmptyProvider, ZipManifests, MemoizedZipManifests, ZipProvider, FileMetadata, PathMetadata, EggMetadata, register_finder, find_distributions, find_eggs_in_zip, find_nothing, _by_version_descending, find_on_path, dist_factory, NoDists, safe_listdir, distributions_from_metadata, non_empty_lines, resolve_egg_link, register_namespace_handler, _handle_ns, _rebuild_mod_path, declare_namespace, fixup_namespace_packages, file_ns_handler, null_ns_handler, normalize_path, _normalize_cached, _is_egg_path, _is_unpacked_egg, _set_parent_ns, yield_lines, EntryPoint, _remove_md5_fragment, _version_from_file, Distribution, EggInfoDistribution, DistInfoDistribution, issue_warning, RequirementParseError, parse_requirements, Requirement, _always_object, _find_adapter, ensure_directory, _bypass_ensure_directory, split_sections, _mkstemp, _call_aside, _initialize, _initialize_master_working_set, __repr__, dist, req, report, with_context, required_by, req, requirers, requirers_str, report, __str__, has_metadata, get_metadata, get_metadata_lines, metadata_isdir, metadata_listdir, run_script, get_resource_filename, get_resource_stream, get_resource_string, has_resource, resource_isdir, resource_listdir, __init__, _build_master, _build_from_requirements, add_entry, __contains__, find, iter_entry_points, run_script, __iter__, add, resolve, find_plugins, require, subscribe, _added_new, __getstate__, __setstate__, markers_pass, __init__, can_add, remove, scan, __getitem__, add, best_match, obtain, __iter__, __iadd__, __add__, __init__, resource_exists, resource_isdir, resource_filename, resource_stream, resource_string, resource_listdir, extraction_error, get_cache_path, _warn_unsafe_extraction_path, postprocess, set_extraction_path, cleanup_resources, __init__, get_resource_filename, get_resource_stream, get_resource_string, has_resource, has_metadata, get_metadata, get_metadata_lines, resource_isdir, metadata_isdir, resource_listdir, metadata_listdir, run_script, _has, _isdir, _listdir, _fn, _get, __init__, _setup_prefix, _has, _isdir, _listdir, get_resource_stream, _get, _register, _get, _listdir, __init__, build, load, __init__, _zipinfo_name, _parts, zipinfo, get_resource_filename, _get_date_and_size, _extract_resource, _is_current, _get_eager_resources, _index, _has, _isdir, _listdir, _eager_to_zip, _resource_to_zip, __init__, has_metadata, get_metadata, _warn_on_replacement, get_metadata_lines, __init__, __init__, _by_version, __bool__, __call__, safe_sys_path_index, position_in_sys_path, __init__, __str__, __repr__, load, resolve, require, parse, _parse_extras, parse_group, parse_map, is_version_line, __init__, from_location, _reload_version, hashcmp, __hash__, __lt__, __le__, __gt__, __ge__, __eq__, __ne__, key, parsed_version, _warn_legacy_version, version, _dep_map, _filter_extras, _build_dep_map, requires, _get_metadata, activate, egg_name, __repr__, __str__, __getattr__, from_filename, as_requirement, load_entry_point, get_entry_map, get_entry_info, insert_on, check_version_conflict, has_version, clone, extras, _reload_version, _parsed_pkg_info, _dep_map, _compute_dependencies, __str__, __init__, __eq__, __ne__, __contains__, __hash__, __repr__, parse, reqs_for_extra
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/bar.py: Bar, ChargingBar, FillingSquaresBar, FillingCirclesBar, IncrementalBar, PixelBar, ShadyBar, update, update
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/counter.py: Counter, Countdown, Stack, Pie, update, update, update
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/helpers.py: WriteMixin, WritelnMixin, SigIntMixin, __init__, write, finish, __init__, clearln, writeln, finish, __init__, _sigint_handler
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/spinner.py: Spinner, PieSpinner, MoonSpinner, LineSpinner, PixelSpinner, update
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/__init__.py: Infinite, Progress, __init__, __getitem__, elapsed, elapsed_td, update_avg, update, start, finish, next, iter, __init__, eta, eta_td, percent, progress, remaining, start, goto, iter
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pytoml/core.py: TomlError, __init__, __str__, __repr__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pytoml/parser.py: load, loads, _Source, _p_ews, _p_ws, _p_basicstr_content, _p_key, _p_value, _p_stmt, _p_toml, _TimeZone, error, process_value, merge_tables, __init__, last, pos, fail, consume_dot, expect_dot, consume_eof, expect_eof, consume, expect, consume_re, expect_re, __enter__, __exit__, commit, _expect, _advance, __init__, utcoffset, dst, tzname
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pytoml/writer.py: dumps, _escape_string, _escape_id, _format_list, _total_seconds, _format_value, dump, flush
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/adapters.py: BaseAdapter, HTTPAdapter, __init__, send, close, __init__, __getstate__, __setstate__, init_poolmanager, proxy_manager_for, cert_verify, build_response, get_connection, close, request_url, add_headers, proxy_headers, send, SOCKSProxyManager
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/api.py: request, get, options, head, post, put, patch, delete
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/auth.py: _basic_auth_str, AuthBase, HTTPBasicAuth, HTTPProxyAuth, HTTPDigestAuth, __call__, __init__, __eq__, __ne__, __call__, __call__, __init__, init_per_thread_state, build_digest_header, handle_redirect, handle_401, __call__, __eq__, __ne__, md5_utf8, sha_utf8
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/cookies.py: MockRequest, MockResponse, extract_cookies_to_jar, get_cookie_header, remove_cookie_by_name, CookieConflictError, RequestsCookieJar, _copy_cookie_jar, create_cookie, morsel_to_cookie, cookiejar_from_dict, merge_cookies, __init__, get_type, get_host, get_origin_req_host, get_full_url, is_unverifiable, has_header, get_header, add_header, add_unredirected_header, get_new_headers, unverifiable, origin_req_host, host, __init__, info, getheaders, get, set, iterkeys, keys, itervalues, values, iteritems, items, list_domains, list_paths, multiple_domains, get_dict, __contains__, __getitem__, __setitem__, __delitem__, set_cookie, update, _find, _find_no_duplicates, __getstate__, __setstate__, copy
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/exceptions.py: RequestException, HTTPError, ConnectionError, ProxyError, SSLError, Timeout, ConnectTimeout, ReadTimeout, URLRequired, TooManyRedirects, MissingSchema, InvalidSchema, InvalidURL, InvalidHeader, ChunkedEncodingError, ContentDecodingError, StreamConsumedError, RetryError, UnrewindableBodyError, RequestsWarning, FileModeWarning, RequestsDependencyWarning, __init__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/help.py: _implementation, info, main
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/hooks.py: default_hooks, dispatch_hook
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/models.py: RequestEncodingMixin, RequestHooksMixin, Request, PreparedRequest, Response, path_url, _encode_params, _encode_files, register_hook, deregister_hook, __init__, __repr__, prepare, __init__, prepare, __repr__, copy, prepare_method, _get_idna_encoded_host, prepare_url, prepare_headers, prepare_body, prepare_content_length, prepare_auth, prepare_cookies, prepare_hooks, __init__, __enter__, __exit__, __getstate__, __setstate__, __repr__, __bool__, __nonzero__, __iter__, ok, is_redirect, is_permanent_redirect, next, apparent_encoding, iter_content, iter_lines, content, text, json, links, raise_for_status, close, generate
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/sessions.py: merge_setting, merge_hooks, SessionRedirectMixin, Session, session, get_redirect_target, resolve_redirects, rebuild_auth, rebuild_proxies, rebuild_method, __init__, __enter__, __exit__, prepare_request, request, get, options, head, post, put, patch, delete, send, merge_environment_settings, get_adapter, close, mount, __getstate__, __setstate__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/structures.py: CaseInsensitiveDict, LookupDict, __init__, __setitem__, __getitem__, __delitem__, __iter__, __len__, lower_items, __eq__, copy, __repr__, __init__, __repr__, __getitem__, get
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/utils.py: dict_to_sequence, super_len, get_netrc_auth, guess_filename, from_key_val_list, to_key_val_list, parse_list_header, parse_dict_header, unquote_header_value, dict_from_cookiejar, add_dict_to_cookiejar, get_encodings_from_content, get_encoding_from_headers, stream_decode_response_unicode, iter_slices, get_unicode_from_response, unquote_unreserved, requote_uri, address_in_network, dotted_netmask, is_ipv4_address, is_valid_cidr, set_environ, should_bypass_proxies, get_environ_proxies, select_proxy, default_user_agent, default_headers, parse_header_links, guess_json_utf, prepend_scheme_if_needed, get_auth_from_url, check_header_validity, urldefragauth, rewind_body, proxy_bypass_registry, proxy_bypass
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/_internal_utils.py: to_native_string, unicode_is_ascii
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/__init__.py: check_compatibility, NullHandler, emit
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/connection.py: DummyConnection, HTTPConnection, HTTPSConnection, VerifiedHTTPSConnection, _match_hostname, __init__, _new_conn, _prepare_conn, connect, request_chunked, __init__, connect, set_cert, connect, BaseSSLError, ConnectionError
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/connectionpool.py: ConnectionPool, HTTPConnectionPool, HTTPSConnectionPool, connection_from_url, _ipv6_host, __init__, __str__, __enter__, __exit__, close, __init__, _new_conn, _get_conn, _put_conn, _validate_conn, _prepare_proxy, _get_timeout, _raise_timeout, _make_request, _absolute_url, close, is_same_host, urlopen, __init__, _prepare_conn, _prepare_proxy, _new_conn, _validate_conn, drain_and_release_conn
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/exceptions.py: HTTPError, HTTPWarning, PoolError, RequestError, SSLError, ProxyError, DecodeError, ProtocolError, MaxRetryError, HostChangedError, TimeoutStateError, TimeoutError, ReadTimeoutError, ConnectTimeoutError, NewConnectionError, EmptyPoolError, ClosedPoolError, LocationValueError, LocationParseError, ResponseError, SecurityWarning, SubjectAltNameWarning, InsecureRequestWarning, SystemTimeWarning, InsecurePlatformWarning, SNIMissingWarning, DependencyWarning, ResponseNotChunked, BodyNotHttplibCompatible, IncompleteRead, InvalidHeader, ProxySchemeUnknown, HeaderParsingError, UnrewindableBodyError, __init__, __reduce__, __init__, __reduce__, __init__, __init__, __init__, __init__, __repr__, __init__, __init__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/fields.py: guess_content_type, format_header_param, RequestField, __init__, from_tuples, _render_part, _render_parts, render_headers, make_multipart
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/filepost.py: choose_boundary, iter_field_objects, iter_fields, encode_multipart_formdata
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/poolmanager.py: _default_key_normalizer, PoolManager, ProxyManager, proxy_from_url, __init__, __enter__, __exit__, _new_pool, clear, connection_from_host, connection_from_context, connection_from_pool_key, connection_from_url, _merge_pool_kwargs, urlopen, __init__, connection_from_host, _set_proxy_headers, urlopen
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/request.py: RequestMethods, __init__, urlopen, request, request_encode_url, request_encode_body
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/response.py: DeflateDecoder, GzipDecoder, _get_decoder, HTTPResponse, __init__, __getattr__, decompress, __init__, __getattr__, decompress, __init__, get_redirect_location, release_conn, data, connection, tell, _init_length, _init_decoder, _decode, _flush_decoder, _error_catcher, read, stream, from_httplib, getheaders, getheader, info, close, closed, fileno, flush, readable, readinto, supports_chunked_reads, _update_chunk_length, _handle_chunk, read_chunked
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/_collections.py: RecentlyUsedContainer, HTTPHeaderDict, __init__, __getitem__, __setitem__, __delitem__, __len__, __iter__, clear, keys, __init__, __setitem__, __getitem__, __delitem__, __contains__, __eq__, __ne__, __len__, __iter__, pop, discard, add, extend, getlist, __repr__, _copy_from, copy, iteritems, itermerged, items, from_httplib, RLock, __enter__, __exit__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/__init__.py: add_stderr_logger, disable_warnings, NullHandler, emit
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/appengine.py: AppEnginePlatformWarning, AppEnginePlatformError, AppEngineManager, is_appengine, is_appengine_sandbox, is_local_appengine, is_prod_appengine, is_prod_appengine_mvms, __init__, __enter__, __exit__, urlopen, _urlfetch_response_to_http_response, _get_absolute_timeout, _get_retries
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/ntlmpool.py: NTLMConnectionPool, __init__, _new_conn, urlopen
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/pyopenssl.py: inject_into_urllib3, extract_from_urllib3, _validate_dependencies_met, _dnsname_to_stdlib, get_subj_alt_name, WrappedSocket, PyOpenSSLContext, _verify_callback, idna_encode, __init__, fileno, _decref_socketios, recv, recv_into, settimeout, _send_until_done, sendall, shutdown, close, getpeercert, _reuse, _drop, makefile, __init__, options, options, verify_mode, verify_mode, set_default_verify_paths, set_ciphers, load_verify_locations, load_cert_chain, wrap_socket
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/securetransport.py: inject_into_urllib3, extract_from_urllib3, _read_callback, _write_callback, WrappedSocket, SecureTransportContext, __init__, _raise_on_error, _set_ciphers, _custom_validate, handshake, fileno, _decref_socketios, recv, recv_into, settimeout, gettimeout, send, sendall, shutdown, close, getpeercert, _reuse, _drop, makefile, makefile, __init__, check_hostname, check_hostname, options, options, verify_mode, verify_mode, set_default_verify_paths, load_default_certs, set_ciphers, load_verify_locations, load_cert_chain, wrap_socket
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/socks.py: SOCKSConnection, SOCKSHTTPSConnection, SOCKSHTTPConnectionPool, SOCKSHTTPSConnectionPool, SOCKSProxyManager, __init__, _new_conn, __init__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/_securetransport/bindings.py: CFConst, SecurityConst
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/_securetransport/low_level.py: _cf_data_from_bytes, _cf_dictionary_from_tuples, _cf_string_to_unicode, _assert_no_error, _cert_array_from_pem, _is_cert, _is_identity, _temporary_keychain, _load_items_from_file, _load_client_cert_chain
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/ordered_dict.py: OrderedDict, __init__, __setitem__, __delitem__, __iter__, __reversed__, clear, popitem, keys, values, items, iterkeys, itervalues, iteritems, update, pop, setdefault, __repr__, __reduce__, copy, fromkeys, __eq__, __ne__, viewkeys, viewvalues, viewitems
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/six.py: _add_doc, _import_module, _LazyDescr, MovedModule, _LazyModule, MovedAttribute, _SixMetaPathImporter, _MovedItems, Module_six_moves_urllib_parse, Module_six_moves_urllib_error, Module_six_moves_urllib_request, Module_six_moves_urllib_response, Module_six_moves_urllib_robotparser, Module_six_moves_urllib, add_move, remove_move, assertCountEqual, assertRaisesRegex, assertRegex, with_metaclass, add_metaclass, python_2_unicode_compatible, __init__, __get__, __init__, _resolve, __getattr__, __init__, __dir__, __init__, _resolve, __init__, _add_module, _get_module, find_module, __get_module, load_module, is_package, get_code, __dir__, get_unbound_function, create_unbound_method, get_unbound_function, create_bound_method, create_unbound_method, Iterator, iterkeys, itervalues, iteritems, iterlists, iterkeys, itervalues, iteritems, iterlists, b, u, b, u, byte2int, indexbytes, reraise, exec_, print_, print_, wraps, metaclass, wrapper, X, advance_iterator, callable, next, raise_from, write, wrapper, __new__, __len__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/backports/makefile.py: backport_makefile
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py: CertificateError, _dnsname_match, _to_unicode, _ipaddress_match, match_hostname
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/connection.py: is_connection_dropped, create_connection, _set_socket_options, allowed_gai_family, _has_ipv6
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/request.py: make_headers, set_file_position, rewind_body
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/response.py: is_fp_closed, assert_header_parsing, is_response_to_head
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/retry.py: Retry, __init__, new, from_int, get_backoff_time, parse_retry_after, get_retry_after, sleep_for_retry, _sleep_backoff, sleep, _is_connection_error, _is_read_error, _is_method_retryable, is_retry, is_exhausted, increment, __repr__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/selectors.py: SelectorError, _fileobj_to_fd, _SelectorMapping, BaseSelector, _can_allocate, DefaultSelector, __init__, __repr__, __str__, _syscall_wrapper, _syscall_wrapper, __init__, __len__, __getitem__, __iter__, __init__, _fileobj_lookup, register, unregister, modify, select, close, get_key, get_map, _key_from_fd, __enter__, __exit__, SelectSelector, PollSelector, EpollSelector, KqueueSelector, __init__, register, unregister, _select, select, __init__, register, unregister, _wrap_poll, select, __init__, fileno, register, unregister, select, close, __init__, fileno, register, unregister, select, close
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/ssl_.py: _const_compare_digest_backport, assert_fingerprint, resolve_cert_reqs, resolve_ssl_version, create_urllib3_context, ssl_wrap_socket, SSLContext, __init__, load_cert_chain, load_verify_locations, set_ciphers, wrap_socket
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/timeout.py: Timeout, __init__, __str__, _validate_timeout, from_float, clone, start_connect, get_connect_duration, connect_timeout, read_timeout
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/url.py: Url, split_first, parse_url, get_host, __new__, hostname, request_uri, netloc, url, __str__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/wait.py: _wait_for_io_events, wait_for_read, wait_for_write
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/mklabels.py: assert_lower, generate
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/tests.py: assert_raises, test_labels, test_all_labels, test_invalid_label, test_decode, test_encode, test_iter_decode, test_iter_encode, test_x_user_defined, iter_decode_to_string
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/x_user_defined.py: Codec, IncrementalEncoder, IncrementalDecoder, StreamWriter, StreamReader, encode, decode, encode, decode
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/__init__.py: ascii_lower, lookup, _get_encoding, Encoding, decode, _detect_bom, encode, iter_decode, _iter_decode_generator, iter_encode, _iter_encode_generator, IncrementalDecoder, IncrementalEncoder, __init__, __repr__, __init__, decode, __init__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/basecommand.py: Command, RequirementCommand, __init__, _build_session, parse_args, main, populate_requirement_set, _build_package_finder
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/baseparser.py: PrettyHelpFormatter, UpdatingDefaultsHelpFormatter, CustomOptionParser, ConfigOptionParser, __init__, format_option_strings, _format_option_strings, format_heading, format_usage, format_description, format_epilog, indent_lines, expand_default, insert_option_group, option_list_all, __init__, check_default, _get_ordered_configuration_items, _update_defaults, get_default_values, error
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/build_env.py: BuildEnvironment, NoOpBuildEnvironment, __init__, path, __enter__, __exit__, cleanup, __init__, __enter__, __exit__, cleanup, restore_var
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/cache.py: Cache, SimpleWheelCache, EphemWheelCache, WheelCache, __init__, _get_cache_path_parts, _get_candidates, get_path_for_link, get, _link_for_candidate, cleanup, __init__, get_path_for_link, get, __init__, cleanup, __init__, get_path_for_link, get_ephem_path_for_link, get, cleanup
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/cmdoptions.py: make_option_group, check_install_build_global, exists_action, extra_index_url, find_links, trusted_host, constraints, requirements, editable, _get_format_control, _handle_no_binary, _handle_only_binary, no_binary, only_binary, _merge_hash, getname
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/compat.py: console_to_str, get_path_uid, expanduser, samefile, backslashreplace_decode_fn, native_str, native_str, get_terminal_size, get_terminal_size, ioctl_GWINSZ
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/configuration.py: _normalize_name, _disassemble_key, Configuration, __init__, load, get_file_to_edit, items, get_value, set_value, unset_value, save, _ensure_have_load_only, _dictionary, _load_config_files, _load_file, _construct_parser, _load_environment_vars, _normalized_keys, _get_environ_vars, _iter_config_files, _get_parser_to_modify, _mark_as_modified
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/download.py: user_agent, MultiDomainBasicAuth, LocalFSAdapter, SafeFileCache, InsecureHTTPAdapter, PipSession, get_file_content, is_url, url_to_path, path_to_url, is_archive_file, unpack_vcs_link, _get_used_vcs_backend, is_vcs_url, is_file_url, is_dir_url, _progress_indicator, _download_url, _copy_file, unpack_http_url, unpack_file_url, _copy_dist_from_dir, PipXmlrpcTransport, unpack_url, _download_http_url, _check_download_dir, __init__, __call__, handle_401, parse_credentials, send, close, __init__, get, set, delete, cert_verify, __init__, request, resp_read, written_chunks, __init__, request
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/exceptions.py: PipError, ConfigurationError, InstallationError, UninstallationError, DistributionNotFound, RequirementsFileParseError, BestVersionAlreadyInstalled, BadCommand, CommandError, PreviousBuildDirError, InvalidWheelFilename, UnsupportedWheel, HashErrors, HashError, VcsHashUnsupported, DirectoryUrlHashUnsupported, HashMissing, HashUnpinned, HashMismatch, UnsupportedPythonVersion, __init__, append, __str__, __nonzero__, __bool__, body, __str__, _requirement_name, __init__, body, __init__, body, _hash_comparison, hash_then_or
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/index.py: InstallationCandidate, PackageFinder, egg_info_matches, HTMLPage, Link, fmt_ctl_handle_mutual_exclude, fmt_ctl_formats, fmt_ctl_no_binary, __init__, __repr__, __hash__, __lt__, __le__, __eq__, __ge__, __gt__, __ne__, _compare, __init__, get_formatted_locations, add_dependency_links, _sort_locations, _candidate_sort_key, _validate_secure_origin, _get_index_urls_locations, find_all_candidates, find_requirement, _get_pages, _sort_links, _package_versions, _log_skipped_link, _link_package_versions, _get_page, __init__, __str__, get_page, _handle_fail, _get_content_type, base_url, links, clean_link, __init__, __str__, __repr__, __eq__, __ne__, __lt__, __le__, __gt__, __ge__, __hash__, filename, scheme, netloc, path, splitext, ext, url_without_fragment, egg_fragment, subdirectory_fragment, hash, hash_name, show_url, is_wheel, is_artifact, sort_path, mkurl_pypi_url
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/locations.py: write_delete_marker_file, running_under_virtualenv, virtualenv_no_global, distutils_scheme
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/pep425tags.py: get_config_var, get_abbr_impl, get_impl_ver, get_impl_version_info, get_impl_tag, get_flag, get_abi_tag, _is_running_32bit, get_platform, is_manylinux1_compatible, get_darwin_arches, get_supported, _supports_arch
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/resolve.py: Resolver, __init__, resolve, _is_upgrade_allowed, _set_req_to_reinstall, _check_skip_installed, _get_abstract_dist_for, _resolve_one, get_installation_order, add_req, schedule
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/wheel.py: rehash, open_for_csv, fix_script, root_is_purelib, get_entrypoints, message_about_scripts_not_on_PATH, move_wheel_files, wheel_version, check_compatibility, Wheel, WheelBuilder, _split_ep, normpath, record_installed, clobber, is_entrypoint_wrapper, _get_script_text, __init__, support_index_min, supported, __init__, _build_one, _build_one_inside_env, _base_setup_args, __build_one, _clean_one, build
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/__init__.py: autocomplete, create_main_parser, parseopts, check_isolated, main
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/check.py: CheckCommand, run
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/completion.py: CompletionCommand, __init__, run
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/configuration.py: ConfigurationCommand, __init__, run, _determine_file, list_values, get_name, set_name_value, unset_name, open_in_editor, _get_n_args, _save_configuration, _determine_editor
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/download.py: DownloadCommand, __init__, run
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/freeze.py: FreezeCommand, __init__, run
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/hash.py: HashCommand, _hash_of_file, __init__, run
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/help.py: HelpCommand, run
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/install.py: InstallCommand, get_lib_location_guesses, create_env_error_message, __init__, run, _handle_target_dir, _warn_about_conflicts
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/list.py: ListCommand, tabulate, format_for_columns, format_for_json, __init__, _build_package_finder, run, get_outdated, get_uptodate, get_not_required, iter_packages_latest_infos, output_legacy, output_legacy_latest, output_package_listing, output_package_listing_columns
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/search.py: SearchCommand, transform_hits, print_results, highest_version, __init__, run, search
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/show.py: ShowCommand, search_packages_info, print_results, __init__, run
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/uninstall.py: UninstallCommand, __init__, run
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/wheel.py: WheelCommand, __init__, run
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/__init__.py: get_summaries, get_similar_commands, _sort_commands, keyfn
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/models/index.py: Index, __init__, url_to_path
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/operations/check.py: create_package_set_from_installed, check_package_set, check_install_conflicts, _simulate_installation_of, str_key
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/operations/freeze.py: freeze, FrozenRequirement, __init__, from_dist, egg_name, __str__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/operations/prepare.py: make_abstract_dist, _install_build_reqs, DistAbstraction, IsWheel, IsSDist, Installed, RequirementPreparer, __init__, dist, prep_for_dist, dist, prep_for_dist, dist, prep_for_dist, dist, prep_for_dist, __init__, _download_should_save, prepare_linked_requirement, prepare_editable_requirement, prepare_installed_requirement, format_reqs
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/req_file.py: parse_requirements, preprocess, process_line, break_args_options, build_parser, join_lines, ignore_comments, skip_regex, expand_env_variables, parser_exit
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/req_install.py: _strip_extras, InstallRequirement, _strip_postfix, parse_editable, deduce_helpful_msg, __init__, from_editable, from_req, from_line, __str__, __repr__, populate_link, specifier, is_pinned, from_path, build_location, _correct_build_location, name, setup_py_dir, setup_py, pyproject_toml, get_pep_518_info, run_egg_info, egg_info_data, egg_info_path, pkg_info, installed_version, assert_source_matches_version, update_editable, uninstall, archive, _clean_zip_name, match_markers, install, ensure_has_source_dir, get_install_args, remove_temporary_source, install_editable, check_if_exists, is_wheel, move_wheel_files, get_dist, has_hash_options, hashes, prepend_root
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/req_set.py: RequirementSet, __init__, __str__, __repr__, add_requirement, has_requirement, has_requirements, get_requirement, cleanup_files
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/req_uninstall.py: _script_names, _unique, uninstallation_paths, compact, compress_for_output_listing, UninstallPathSet, UninstallPthEntries, unique, __init__, _permitted, add, add_pth, _stash, remove, _allowed_to_proceed, rollback, commit, from_dist, __init__, add, remove, rollback, _display
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/__init__.py: install_given_reqs
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/appdirs.py: user_cache_dir, user_data_dir, user_config_dir, site_config_dirs, _get_win_folder_from_registry, _get_win_folder_with_ctypes, _win_path_to_bytes
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/deprecation.py: PipDeprecationWarning, Pending, RemovedInPip11Warning, RemovedInPip12Warning, _showwarning, install_warning_logger
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/encoding.py: auto_decode
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/filesystem.py: check_path_owner
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/glibc.py: glibc_version_string, check_glibc_version, have_compatible_glibc, libc_ver
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/hashes.py: Hashes, MissingHashes, __init__, check_against_chunks, _raise, check_against_file, check_against_path, __nonzero__, __bool__, __init__, _raise
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/logging.py: indent_log, get_indentation, IndentingFormatter, _color_wrap, ColorizedStreamHandler, BetterRotatingFileHandler, MaxLevelFilter, format, wrapped, __init__, should_color, format, _open, __init__, filter
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/misc.py: import_or_raise, ensure_dir, get_prog, rmtree, rmtree_errorhandler, display_path, backup_dir, ask_path_exists, ask, format_size, is_installable_dir, is_svn_page, file_contents, read_chunks, split_leading_dir, has_leading_dir, normalize_path, splitext, renames, is_local, dist_is_local, dist_in_usersite, dist_in_site_packages, dist_is_editable, get_installed_distributions, egg_link_path, dist_location, current_umask, unzip_file, untar_file, unpack_file, call_subprocess, read_text_file, _make_build_dir, FakeFile, StreamWrapper, captured_output, captured_stdout, cached_property, get_installed_version, consume, enum, __init__, readline, __iter__, from_stream, encoding, __init__, __get__, local_test, editable_test, editable_test, editables_only_test, editables_only_test, user_test
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/outdated.py: VirtualenvSelfCheckState, GlobalSelfCheckState, load_selfcheck_statefile, pip_version_check, __init__, save, __init__, save
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/packaging.py: check_requires_python, get_metadata, check_dist_requires_python, get_installer
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/temp_dir.py: TempDirectory, __init__, __repr__, __enter__, __exit__, create, cleanup
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/ui.py: _select_progress_class, InterruptibleMixin, SilentBar, BlueEmojiBar, DownloadProgressMixin, WindowsMixin, BaseDownloadProgressBar, DefaultDownloadProgressBar, DownloadSilentBar, DownloadIncrementalBar, DownloadChargingBar, DownloadShadyBar, DownloadFillingSquaresBar, DownloadFillingCirclesBar, DownloadBlueEmojiProgressBar, DownloadProgressSpinner, DownloadProgressProvider, hidden_cursor, RateLimiter, InteractiveSpinner, NonInteractiveSpinner, open_spinner, __init__, finish, handle_sigint, update, __init__, downloaded, download_speed, pretty_eta, iter, __init__, next_phase, update, __init__, ready, reset, __init__, _write, spin, finish, __init__, _update, spin, finish
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/bazaar.py: Bazaar, __init__, get_base_rev_args, export, switch, update, obtain, get_url_rev, get_url, get_revision, get_src_requirement, is_commit_id_equal
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/git.py: looks_like_hash, Git, __init__, get_base_rev_args, get_git_version, export, get_revision_sha, check_rev_options, is_commit_id_equal, switch, update, obtain, get_url, get_revision, _get_subdirectory, get_src_requirement, get_url_rev, update_submodules, controls_location
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/mercurial.py: Mercurial, get_base_rev_args, export, switch, update, obtain, get_url, get_revision, get_revision_hash, get_src_requirement, is_commit_id_equal
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/subversion.py: Subversion, get_rev_options, get_base_rev_args, get_info, export, switch, update, obtain, get_location, get_revision, get_url_rev, get_url, _get_svn_url_rev, get_src_requirement, is_commit_id_equal, remove_auth_from_url
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/__init__.py: RevOptions, VcsSupport, VersionControl, get_src_requirement, __init__, __repr__, arg_rev, to_args, to_display, make_new, __init__, __iter__, backends, dirnames, all_schemes, register, unregister, get_backend_name, get_backend, get_backend_from_location, __init__, get_base_rev_args, make_rev_options, _is_local_repository, translate_egg_surname, export, get_url_rev, get_info, normalize_url, compare_urls, obtain, switch, update, is_commit_id_equal, check_destination, unpack, get_src_requirement, get_url, get_revision, run_command, controls_location
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/appdirs.py: user_data_dir, site_data_dir, user_config_dir, site_config_dir, user_cache_dir, user_state_dir, user_log_dir, AppDirs, _get_win_folder_from_registry, _get_win_folder_with_pywin32, _get_win_folder_with_ctypes, _get_win_folder_with_jna, __init__, user_data_dir, site_data_dir, user_config_dir, site_config_dir, user_cache_dir, user_state_dir, user_log_dir
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distro.py: linux_distribution, id, name, version, version_parts, major_version, minor_version, build_number, like, codename, info, os_release_info, lsb_release_info, distro_release_info, os_release_attr, lsb_release_attr, distro_release_attr, cached_property, LinuxDistribution, main, __init__, __get__, __init__, __repr__, linux_distribution, id, name, version, version_parts, major_version, minor_version, build_number, like, codename, info, os_release_info, lsb_release_info, distro_release_info, os_release_attr, lsb_release_attr, distro_release_attr, _os_release_info, _parse_os_release_content, _lsb_release_info, _parse_lsb_release_content, _distro_release_info, _parse_distro_release_file, _parse_distro_release_content, normalize
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/ipaddress.py: _compat_to_bytes, _compat_range, _TotalOrderingMixin, AddressValueError, NetmaskValueError, ip_address, ip_network, ip_interface, v4_int_to_packed, v6_int_to_packed, _split_optional_netmask, _find_address_range, _count_righthand_zero_bits, summarize_address_range, _collapse_addresses_internal, collapse_addresses, get_mixed_type_key, _IPAddressBase, _BaseAddress, _BaseNetwork, _BaseV4, IPv4Address, IPv4Interface, IPv4Network, _IPv4Constants, _BaseV6, IPv6Address, IPv6Interface, IPv6Network, _IPv6Constants, _compat_bytes_to_byte_vals, _compat_bytes_to_byte_vals, _compat_bit_length, _compat_bit_length, __eq__, __ne__, __lt__, __le__, __gt__, __ge__, exploded, compressed, reverse_pointer, version, _check_int_address, _check_packed_address, _ip_int_from_prefix, _prefix_from_ip_int, _report_invalid_netmask, _prefix_from_prefix_string, _prefix_from_ip_string, __reduce__, __int__, __eq__, __lt__, __add__, __sub__, __repr__, __str__, __hash__, _get_address_key, __reduce__, __init__, __repr__, __str__, hosts, __iter__, __getitem__, __lt__, __eq__, __hash__, __contains__, overlaps, broadcast_address, hostmask, with_prefixlen, with_netmask, with_hostmask, num_addresses, _address_class, prefixlen, address_exclude, compare_networks, _get_networks_key, subnets, supernet, is_multicast, _is_subnet_of, subnet_of, supernet_of, is_reserved, is_link_local, is_private, is_global, is_unspecified, is_loopback, _explode_shorthand_ip_string, _make_netmask, _ip_int_from_string, _parse_octet, _string_from_ip_int, _is_hostmask, _reverse_pointer, max_prefixlen, version, __init__, packed, is_reserved, is_private, is_global, is_multicast, is_unspecified, is_loopback, is_link_local, __init__, __str__, __eq__, __lt__, __hash__, ip, with_prefixlen, with_netmask, with_hostmask, __init__, is_global, _make_netmask, _ip_int_from_string, _parse_hextet, _compress_hextets, _string_from_ip_int, _explode_shorthand_ip_string, _reverse_pointer, max_prefixlen, version, __init__, packed, is_multicast, is_reserved, is_link_local, is_site_local, is_private, is_global, is_unspecified, is_loopback, ipv4_mapped, teredo, sixtofour, __init__, __str__, __eq__, __lt__, __hash__, ip, with_prefixlen, with_netmask, with_hostmask, is_unspecified, is_loopback, __init__, hosts, is_site_local, _compat_int_from_byte_vals
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pyparsing.py: _xml_escape, _Constants, ParseBaseException, ParseException, ParseFatalException, ParseSyntaxException, RecursiveGrammarException, _ParseResultsWithOffset, ParseResults, col, lineno, line, _defaultStartDebugAction, _defaultSuccessDebugAction, _defaultExceptionDebugAction, nullDebugAction, _trim_arity, ParserElement, Token, Empty, NoMatch, Literal, Keyword, CaselessLiteral, CaselessKeyword, CloseMatch, Word, Regex, QuotedString, CharsNotIn, White, _PositionToken, GoToColumn, LineStart, LineEnd, StringStart, StringEnd, WordStart, WordEnd, ParseExpression, And, Or, MatchFirst, Each, ParseElementEnhance, FollowedBy, NotAny, _MultipleMatch, OneOrMore, ZeroOrMore, _NullToken, Optional, SkipTo, Forward, _ForwardNoRecurse, TokenConverter, Combine, Group, Dict, Suppress, OnlyOnce, traceParseAction, delimitedList, countedArray, _flatten, matchPreviousLiteral, matchPreviousExpr, _escapeRegexRangeChars, oneOf, dictOf, originalTextFor, ungroup, locatedExpr, srange, matchOnlyAtCol, replaceWith, removeQuotes, tokenMap, _makeTags, makeHTMLTags, makeXMLTags, withAttribute, withClass, infixNotation, nestedExpr, indentedBlock, replaceHTMLEntity, pyparsing_common, _ustr, __init__, _from_exception, __getattr__, __str__, __repr__, markInputline, __dir__, __init__, __str__, __init__, __getitem__, __repr__, setOffset, __new__, __init__, __getitem__, __setitem__, __delitem__, __contains__, __len__, __bool__, __iter__, __reversed__, _iterkeys, _itervalues, _iteritems, haskeys, pop, get, insert, append, extend, clear, __getattr__, __add__, __iadd__, __radd__, __repr__, __str__, _asStringList, asList, asDict, copy, asXML, __lookup, getName, dump, pprint, __getstate__, __setstate__, __getnewargs__, __dir__, wrapper, setDefaultWhitespaceChars, inlineLiteralsUsing, __init__, copy, setName, setResultsName, setBreak, setParseAction, addParseAction, addCondition, setFailAction, _skipIgnorables, preParse, parseImpl, postParse, _parseNoCache, tryParse, canParseNext, _UnboundedCache, _parseCache, resetCache, enablePackrat, parseString, scanString, transformString, searchString, split, __add__, __radd__, __sub__, __rsub__, __mul__, __rmul__, __or__, __ror__, __xor__, __rxor__, __and__, __rand__, __invert__, __call__, suppress, leaveWhitespace, setWhitespaceChars, parseWithTabs, ignore, setDebugActions, setDebug, __str__, __repr__, streamline, checkRecursion, validate, parseFile, __eq__, __ne__, __hash__, __req__, __rne__, matches, runTests, __init__, __init__, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, copy, setDefaultKeywordChars, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __init__, preParse, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, __getitem__, append, leaveWhitespace, ignore, __str__, streamline, setResultsName, validate, copy, _ErrorStop, __init__, parseImpl, __iadd__, checkRecursion, __str__, __init__, parseImpl, __ixor__, __str__, checkRecursion, __init__, parseImpl, __ior__, __str__, checkRecursion, __init__, parseImpl, __str__, checkRecursion, __init__, parseImpl, leaveWhitespace, ignore, streamline, checkRecursion, validate, __str__, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __bool__, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __lshift__, __ilshift__, leaveWhitespace, streamline, validate, __str__, copy, __str__, __init__, __init__, ignore, postParse, __init__, postParse, __init__, postParse, postParse, suppress, __init__, __call__, reset, z, countFieldParseAction, copyTokenToRepeater, copyTokenToRepeater, verifyCol, pa, pa, checkPeerIndent, checkSubIndent, checkUnindent, convertToDate, convertToDatetime, stripHTMLTags, keys, values, items, toItem, extract_stack, extract_tb, __init__, _FifoCache, _FifoCache, __init__, mustMatchTheseTokens, extractText, cvt_fn, cvt_fn, breaker, pa, get, set, clear, cache_len, __init__, __init__, makeOptionalList, charsAsStr, get, set, clear, cache_len, get, set, clear, cache_len
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/retrying.py: retry, Retrying, Attempt, RetryError, __init__, stop_after_attempt, stop_after_delay, no_sleep, fixed_sleep, random_sleep, incrementing_sleep, exponential_sleep, never_reject, always_reject, should_reject, call, __init__, get, __repr__, __init__, __str__, wrap_simple, wrap, wrapped_f, wrapped_f
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/six.py: _add_doc, _import_module, _LazyDescr, MovedModule, _LazyModule, MovedAttribute, _SixMetaPathImporter, _MovedItems, Module_six_moves_urllib_parse, Module_six_moves_urllib_error, Module_six_moves_urllib_request, Module_six_moves_urllib_response, Module_six_moves_urllib_robotparser, Module_six_moves_urllib, add_move, remove_move, assertCountEqual, assertRaisesRegex, assertRegex, with_metaclass, add_metaclass, python_2_unicode_compatible, __init__, __get__, __init__, _resolve, __getattr__, __init__, __dir__, __init__, _resolve, __init__, _add_module, _get_module, find_module, __get_module, load_module, is_package, get_code, __dir__, get_unbound_function, create_unbound_method, get_unbound_function, create_bound_method, create_unbound_method, Iterator, iterkeys, itervalues, iteritems, iterlists, iterkeys, itervalues, iteritems, iterlists, b, u, b, u, byte2int, indexbytes, reraise, exec_, print_, print_, wraps, metaclass, wrapper, X, advance_iterator, callable, next, raise_from, write, wrapper, __new__, __prepare__, __len__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/__init__.py: vendored
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/adapter.py: CacheControlAdapter, __init__, send, build_response, close, _update_chunk_length
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/cache.py: BaseCache, DictCache, get, set, delete, close, __init__, get, set, delete
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/controller.py: parse_uri, CacheController, __init__, _urlnorm, cache_url, parse_cache_control, cached_request, conditional_headers, cache_response, update_cached_response
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/filewrapper.py: CallbackFileWrapper, __init__, __getattr__, __is_fp_closed, _close, read, _safe_read
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/heuristics.py: expire_after, datetime_to_header, BaseHeuristic, OneDayCache, ExpiresAfter, LastModified, warning, update_headers, apply, update_headers, __init__, update_headers, warning, update_headers, warning
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/serialize.py: _b64_decode_bytes, _b64_decode_str, Serializer, dumps, loads, prepare_response, _loads_v0, _loads_v1, _loads_v2, _loads_v3, _loads_v4
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/wrapper.py: CacheControl
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/_cmd.py: setup_logging, get_session, get_args, main
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches/file_cache.py: _secure_open_write, FileCache, url_to_file_path, __init__, encode, _fn, get, set, delete
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches/redis_cache.py: total_seconds, RedisCache, __init__, get, set, delete, clear, close
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/certifi/core.py: DeprecatedBundleWarning, where, old_where
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/big5prober.py: Big5Prober, __init__, charset_name, language
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/chardistribution.py: CharDistributionAnalysis, EUCTWDistributionAnalysis, EUCKRDistributionAnalysis, GB2312DistributionAnalysis, Big5DistributionAnalysis, SJISDistributionAnalysis, EUCJPDistributionAnalysis, __init__, reset, feed, get_confidence, got_enough_data, get_order, __init__, get_order, __init__, get_order, __init__, get_order, __init__, get_order, __init__, get_order, __init__, get_order
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/charsetgroupprober.py: CharSetGroupProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/charsetprober.py: CharSetProber, __init__, reset, charset_name, feed, state, get_confidence, filter_high_byte_only, filter_international_words, filter_with_english_letters
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/codingstatemachine.py: CodingStateMachine, __init__, reset, next_state, get_current_charlen, get_coding_state_machine, language
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/cp949prober.py: CP949Prober, __init__, charset_name, language
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/enums.py: InputState, LanguageFilter, ProbingState, MachineState, SequenceLikelihood, CharacterCategory, get_num_categories
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/escprober.py: EscCharSetProber, __init__, reset, charset_name, language, get_confidence, feed
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/eucjpprober.py: EUCJPProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/euckrprober.py: EUCKRProber, __init__, charset_name, language
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/euctwprober.py: EUCTWProber, __init__, charset_name, language
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/gb2312prober.py: GB2312Prober, __init__, charset_name, language
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/hebrewprober.py: HebrewProber, __init__, reset, set_model_probers, is_final, is_non_final, feed, charset_name, language, state
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/jpcntx.py: JapaneseContextAnalysis, SJISContextAnalysis, EUCJPContextAnalysis, __init__, reset, feed, got_enough_data, get_confidence, get_order, __init__, charset_name, get_order, get_order
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/latin1prober.py: Latin1Prober, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/mbcharsetprober.py: MultiByteCharSetProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/mbcsgroupprober.py: MBCSGroupProber, __init__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/sbcharsetprober.py: SingleByteCharSetProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/sbcsgroupprober.py: SBCSGroupProber, __init__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/sjisprober.py: SJISProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/universaldetector.py: UniversalDetector, __init__, reset, feed, close
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/utf8prober.py: UTF8Prober, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/__init__.py: detect
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/cli/chardetect.py: description_of, main
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/ansi.py: code_to_chars, set_title, clear_screen, clear_line, AnsiCodes, AnsiCursor, AnsiFore, AnsiBack, AnsiStyle, __init__, UP, DOWN, FORWARD, BACK, POS
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/ansitowin32.py: is_stream_closed, is_a_tty, StreamWrapper, AnsiToWin32, __init__, __getattr__, write, __init__, should_wrap, get_win32_calls, write, reset_all, write_and_convert, write_plain_text, convert_ansi, extract_params, call_win32, convert_osc
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/initialise.py: reset_all, init, deinit, colorama_text, reinit, wrap_stream
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/win32.py: CONSOLE_SCREEN_BUFFER_INFO, _winapi_test, winapi_test, GetConsoleScreenBufferInfo, SetConsoleTextAttribute, SetConsoleCursorPosition, FillConsoleOutputCharacter, FillConsoleOutputAttribute, SetConsoleTitle, __str__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/winterm.py: WinColor, WinStyle, WinTerm, __init__, get_attrs, set_attrs, reset_all, fore, back, style, set_console, get_position, set_cursor_position, cursor_adjust, erase_screen, erase_line, set_title
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/compat.py: quote, splituser, ZipExtFile, ZipFile, CertificateError, _dnsname_match, match_hostname, Container, which, __init__, __enter__, __exit__, __enter__, __exit__, open, python_implementation, callable, fsencode, fsdecode, _get_normal_name, detect_encoding, ChainMap, OrderedDict, valid_ident, ConvertingDict, pop, ConvertingList, ConvertingTuple, BaseConfigurator, __init__, _access_check, read_or_stop, find_cookie, __init__, __missing__, __getitem__, get, __len__, __iter__, __contains__, __bool__, __repr__, fromkeys, copy, new_child, parents, __setitem__, __delitem__, popitem, pop, clear, __init__, __setitem__, __delitem__, __iter__, __reversed__, clear, popitem, keys, values, items, iterkeys, itervalues, iteritems, update, pop, setdefault, __repr__, __reduce__, copy, fromkeys, __eq__, __ne__, viewkeys, viewvalues, viewitems, __getitem__, get, __getitem__, pop, __getitem__, __init__, resolve, ext_convert, cfg_convert, convert, configure_custom, as_tuple, _recursive_repr, cache_from_source, decorating_function, wrapper
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/database.py: _Cache, DistributionPath, Distribution, BaseInstalledDistribution, InstalledDistribution, EggInfoDistribution, DependencyGraph, make_graph, get_dependent_dists, get_required_dists, make_dist, __init__, clear, add, __init__, _get_cache_enabled, _set_cache_enabled, clear_cache, _yield_distributions, _generate_cache, distinfo_dirname, get_distributions, get_distribution, provides_distribution, get_file_path, get_exported_entries, __init__, source_url, name_and_version, provides, _get_requirements, run_requires, meta_requires, build_requires, test_requires, dev_requires, matches_requirement, __repr__, __eq__, __hash__, __init__, get_hash, __init__, __repr__, __str__, _get_records, exports, read_exports, write_exports, get_resource_path, list_installed_files, write_installed_files, check_installed_files, shared_locations, write_shared_locations, get_distinfo_resource, get_distinfo_file, list_distinfo_files, __eq__, __init__, _get_metadata, __repr__, __str__, check_installed_files, list_installed_files, list_distinfo_files, __eq__, __init__, add_distribution, add_edge, add_missing, _repr_dist, repr_node, to_dot, topological_sort, __repr__, set_name_and_version, parse_requires_data, parse_requires_path, _md5, _size
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/index.py: PackageIndex, __init__, _get_pypirc_command, read_configuration, save_configuration, check_credentials, register, _reader, get_sign_command, run_command, sign_file, upload_file, upload_documentation, get_verify_command, verify_signature, download_file, send_request, encode_request, search
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/locators.py: get_all_distribution_names, RedirectHandler, Locator, PyPIRPCLocator, PyPIJSONLocator, Page, SimpleScrapingLocator, DirectoryLocator, JSONLocator, DistPathLocator, AggregatingLocator, DependencyFinder, http_error_302, __init__, get_errors, clear_errors, clear_cache, _get_scheme, _set_scheme, _get_project, get_distribution_names, get_project, score_url, prefer_url, split_filename, convert_url_to_download_info, _get_digest, _update_version_data, locate, __init__, get_distribution_names, _get_project, __init__, get_distribution_names, _get_project, __init__, links, __init__, _prepare_threads, _wait_threads, _get_project, _is_platform_dependent, _process_download, _should_queue, _fetch, get_page, get_distribution_names, __init__, should_include, _get_project, get_distribution_names, get_distribution_names, _get_project, __init__, _get_project, __init__, clear_cache, _set_scheme, _get_project, get_distribution_names, __init__, add_distribution, remove_distribution, get_matcher, find_providers, try_to_replace, find, same_project, clean
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/manifest.py: Manifest, __init__, findall, add, add_many, sorted, clear, process_directive, _parse_directive, _include_pattern, _exclude_pattern, _translate_pattern, _glob_to_re, add_dir
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/markers.py: _is_literal, Evaluator, default_context, interpret, evaluate, format_full_version
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/metadata.py: MetadataMissingError, MetadataConflictError, MetadataUnrecognizedVersionError, MetadataInvalidError, _version2fieldlist, _best_version, _get_name_and_version, LegacyMetadata, Metadata, _has_marker, __init__, set_metadata_version, _write_field, __getitem__, __setitem__, __delitem__, __contains__, _convert_name, _default_value, _remove_line_prefix, __getattr__, get_fullname, is_field, is_multi_field, read, read_file, write, write_file, update, set, get, check, todict, add_requirements, keys, __iter__, values, items, __repr__, __init__, __getattribute__, _validate_value, __setattr__, name_and_version, provides, provides, get_requirements, dictionary, dependencies, dependencies, _validate_mapping, validate, todict, _from_legacy, _to_legacy, write, add_requirements, __repr__, _set, are_valid_constraints, process_entries
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/resources.py: ResourceCache, ResourceBase, Resource, ResourceContainer, ResourceFinder, ZipResourceFinder, register_finder, finder, finder_for_path, __init__, is_stale, get, __init__, as_stream, file_path, bytes, size, resources, __init__, _adjust_path, _make_path, _find, get_cache_info, find, get_stream, get_bytes, get_size, get_resources, is_container, iterator, __init__, _adjust_path, _find, get_cache_info, get_bytes, get_stream, get_size, get_resources, _is_directory, allowed
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/scripts.py: _enquote_executable, ScriptMaker, __init__, _get_alternate_executable, _build_shebang, _get_shebang, _get_script_text, get_manifest, _write_script, _make_script, _copy_script, dry_run, dry_run, make, make_multiple, _is_shell, _fix_jython_executable, _get_launcher
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/util.py: parse_marker, parse_requirement, get_resources_dests, in_venv, get_executable, proceed, extract_by_key, read_exports, write_exports, tempdir, chdir, socket_timeout, cached_property, convert_path, FileOperator, resolve, ExportEntry, get_export_entry, get_cache_base, path_to_cache_dir, ensure_slash, parse_credentials, get_process_umask, is_string_sequence, split_filename, parse_name_and_version, get_extras, _get_external_data, get_project_data, get_package_data, Cache, EventMixin, Sequencer, unarchive, zip_dir, Progress, iglob, _iglob, Transport, ServerProxy, _csv_open, CSVBase, CSVReader, CSVWriter, Configurator, SubprocessMixin, normalize_name, marker_var, marker_expr, marker_and, marker, get_rel_path, read_stream, __init__, __get__, __init__, _init_record, record_as_written, newer, copy_file, copy_stream, write_binary_file, write_text_file, set_mode, ensure_dir, byte_compile, ensure_removed, is_writable, commit, rollback, __init__, value, __repr__, __eq__, __init__, prefix_to_dir, clear, __init__, add, remove, get_subscribers, publish, __init__, add_node, remove_node, add, remove, is_step, get_steps, strong_connections, dot, check_path, __init__, update, increment, start, stop, maximum, percentage, format_duration, ETA, speed, HTTPSConnection, HTTPSHandler, HTTPSOnlyHandler, HTTP, __init__, make_connection, SafeTransport, __init__, __enter__, __exit__, __init__, __iter__, next, __init__, writerow, __init__, configure_custom, __getitem__, inc_convert, __init__, reader, run_command, strongconnect, connect, __init__, _conn_maker, https_open, http_open, __init__, HTTPS, __init__, make_connection, convert, get_versions, __init__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/version.py: UnsupportedVersionError, Version, Matcher, _pep_440_key, NormalizedVersion, _match_prefix, NormalizedMatcher, _suggest_semantic_version, _suggest_normalized_version, _legacy_key, LegacyVersion, LegacyMatcher, is_semver, _semantic_key, SemanticVersion, SemanticMatcher, VersionScheme, get_scheme, __init__, parse, _check_compatible, __eq__, __ne__, __lt__, __gt__, __le__, __ge__, __hash__, __repr__, __str__, is_prerelease, parse_requirement, __init__, match, exact_version, _check_compatible, __eq__, __ne__, __hash__, __repr__, __str__, parse, is_prerelease, _adjust_local, _match_lt, _match_gt, _match_le, _match_ge, _match_eq, _match_arbitrary, _match_ne, _match_compatible, get_parts, parse, is_prerelease, _match_compatible, make_tuple, parse, is_prerelease, __init__, is_valid_version, is_valid_matcher, is_valid_constraint_list, suggest
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/wheel.py: Mounter, Wheel, compatible_tags, is_compatible, _derive_abi, __init__, add, remove, find_module, load_module, __init__, filename, exists, tags, metadata, get_wheel_metadata, info, process_shebang, get_hash, write_record, write_records, build_zip, build, install, _get_dylib_cache, _get_extensions, is_compatible, is_mountable, mount, unmount, verify, update, get_version, update_version
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/__init__.py: DistlibException, NullHandler, handle, emit, createLock
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/misc.py: cache_from_source, callable, fsencode
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/shutil.py: Error, SpecialFileError, ExecError, ReadError, RegistryError, copyfileobj, _samefile, copyfile, copymode, copystat, copy, copy2, ignore_patterns, copytree, rmtree, _basename, move, _destinsrc, _get_gid, _get_uid, _make_tarball, _call_external_zip, _make_zipfile, get_archive_formats, register_archive_format, unregister_archive_format, make_archive, get_unpack_formats, _check_unpack_options, register_unpack_format, unregister_unpack_format, _ensure_directory, _unpack_zipfile, _unpack_tarfile, _find_unpack_format, unpack_archive, _ignore_patterns, _set_uid_gid, onerror, onerror
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/sysconfig.py: _safe_realpath, is_python_build, _ensure_cfg_read, _expand_globals, _subst_vars, _extend_dict, _expand_vars, format_value, _get_default_scheme, _getuserbase, _parse_makefile, get_makefile_filename, _init_posix, _init_non_posix, parse_config_h, get_config_h_filename, get_scheme_names, get_path_names, get_paths, get_path, get_config_vars, get_config_var, get_platform, get_python_version, _print_dict, _main, _replacer, _replacer, joinuser, _replacer
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/tarfile.py: stn, nts, nti, itn, calc_chksums, copyfileobj, filemode, TarError, ExtractError, ReadError, CompressionError, StreamError, HeaderError, EmptyHeaderError, TruncatedHeaderError, EOFHeaderError, InvalidHeaderError, SubsequentHeaderError, _LowLevelFile, _Stream, _StreamProxy, _BZ2Proxy, _FileInFile, ExFileObject, TarInfo, TarFile, TarIter, is_tarfile, __init__, close, read, write, __init__, __del__, _init_write_gz, write, __write, close, _init_read_gz, tell, seek, read, _read, __read, __init__, read, getcomptype, close, __init__, init, read, seek, tell, write, close, __init__, seekable, tell, seek, read, __init__, readable, writable, seekable, read, readline, readlines, tell, seek, close, __iter__, __init__, _getpath, _setpath, _getlinkpath, _setlinkpath, __repr__, get_info, tobuf, create_ustar_header, create_gnu_header, create_pax_header, create_pax_global_header, _posix_split_name, _create_header, _create_payload, _create_gnu_long_header, _create_pax_generic_header, frombuf, fromtarfile, _proc_member, _proc_builtin, _proc_gnulong, _proc_sparse, _proc_pax, _proc_gnusparse_00, _proc_gnusparse_01, _proc_gnusparse_10, _apply_pax_info, _decode_pax_field, _block, isreg, isfile, isdir, issym, islnk, ischr, isblk, isfifo, issparse, isdev, __init__, open, taropen, gzopen, bz2open, close, getmember, getmembers, getnames, gettarinfo, list, add, addfile, extractall, extract, extractfile, _extract_member, makedir, makefile, makeunknown, makefifo, makedev, makelink, chown, chmod, utime, next, _getmember, _load, _check, _find_link_target, __iter__, _dbg, __enter__, __exit__, __init__, __iter__, __next__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/constants.py: DataLossWarning, _ReparseException
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/html5parser.py: parse, parseFragment, method_decorator_metaclass, HTMLParser, getPhases, adjust_attributes, impliedTagToken, ParseError, Decorated, __init__, _parse, reset, documentEncoding, isHTMLIntegrationPoint, isMathMLTextIntegrationPoint, mainLoop, normalizedTokens, parse, parseFragment, parseError, normalizeToken, adjustMathMLAttributes, adjustSVGAttributes, adjustForeignAttributes, reparseTokenNormal, resetInsertionMode, parseRCDataRawtext, log, getMetaclass, Phase, InitialPhase, BeforeHtmlPhase, BeforeHeadPhase, InHeadPhase, InHeadNoscriptPhase, AfterHeadPhase, InBodyPhase, TextPhase, InTablePhase, InTableTextPhase, InCaptionPhase, InColumnGroupPhase, InTableBodyPhase, InRowPhase, InCellPhase, InSelectPhase, InSelectInTablePhase, InForeignContentPhase, AfterBodyPhase, InFramesetPhase, AfterFramesetPhase, AfterAfterBodyPhase, AfterAfterFramesetPhase, __new__, wrapped, __init__, processEOF, processComment, processDoctype, processCharacters, processSpaceCharacters, processStartTag, startTagHtml, processEndTag, processSpaceCharacters, processComment, processDoctype, anythingElse, processCharacters, processStartTag, processEndTag, processEOF, insertHtmlElement, processEOF, processComment, processSpaceCharacters, processCharacters, processStartTag, processEndTag, __init__, processEOF, processSpaceCharacters, processCharacters, startTagHtml, startTagHead, startTagOther, endTagImplyHead, endTagOther, __init__, processEOF, processCharacters, startTagHtml, startTagHead, startTagBaseLinkCommand, startTagMeta, startTagTitle, startTagNoFramesStyle, startTagNoscript, startTagScript, startTagOther, endTagHead, endTagHtmlBodyBr, endTagOther, anythingElse, __init__, processEOF, processComment, processCharacters, processSpaceCharacters, startTagHtml, startTagBaseLinkCommand, startTagHeadNoscript, startTagOther, endTagNoscript, endTagBr, endTagOther, anythingElse, __init__, processEOF, processCharacters, startTagHtml, startTagBody, startTagFrameset, startTagFromHead, startTagHead, startTagOther, endTagHtmlBodyBr, endTagOther, anythingElse, __init__, isMatchingFormattingElement, addFormattingElement, processEOF, processSpaceCharactersDropNewline, processCharacters, processSpaceCharactersNonPre, startTagProcessInHead, startTagBody, startTagFrameset, startTagCloseP, startTagPreListing, startTagForm, startTagListItem, startTagPlaintext, startTagHeading, startTagA, startTagFormatting, startTagNobr, startTagButton, startTagAppletMarqueeObject, startTagXmp, startTagTable, startTagVoidFormatting, startTagInput, startTagParamSource, startTagHr, startTagImage, startTagIsIndex, startTagTextarea, startTagIFrame, startTagNoscript, startTagRawtext, startTagOpt, startTagSelect, startTagRpRt, startTagMath, startTagSvg, startTagMisplaced, startTagOther, endTagP, endTagBody, endTagHtml, endTagBlock, endTagForm, endTagListItem, endTagHeading, endTagFormatting, endTagAppletMarqueeObject, endTagBr, endTagOther, __init__, processCharacters, processEOF, startTagOther, endTagScript, endTagOther, __init__, clearStackToTableContext, processEOF, processSpaceCharacters, processCharacters, insertText, startTagCaption, startTagColgroup, startTagCol, startTagRowGroup, startTagImplyTbody, startTagTable, startTagStyleScript, startTagInput, startTagForm, startTagOther, endTagTable, endTagIgnore, endTagOther, __init__, flushCharacters, processComment, processEOF, processCharacters, processSpaceCharacters, processStartTag, processEndTag, __init__, ignoreEndTagCaption, processEOF, processCharacters, startTagTableElement, startTagOther, endTagCaption, endTagTable, endTagIgnore, endTagOther, __init__, ignoreEndTagColgroup, processEOF, processCharacters, startTagCol, startTagOther, endTagColgroup, endTagCol, endTagOther, __init__, clearStackToTableBodyContext, processEOF, processSpaceCharacters, processCharacters, startTagTr, startTagTableCell, startTagTableOther, startTagOther, endTagTableRowGroup, endTagTable, endTagIgnore, endTagOther, __init__, clearStackToTableRowContext, ignoreEndTagTr, processEOF, processSpaceCharacters, processCharacters, startTagTableCell, startTagTableOther, startTagOther, endTagTr, endTagTable, endTagTableRowGroup, endTagIgnore, endTagOther, __init__, closeCell, processEOF, processCharacters, startTagTableOther, startTagOther, endTagTableCell, endTagIgnore, endTagImply, endTagOther, __init__, processEOF, processCharacters, startTagOption, startTagOptgroup, startTagSelect, startTagInput, startTagScript, startTagOther, endTagOption, endTagOptgroup, endTagSelect, endTagOther, __init__, processEOF, processCharacters, startTagTable, startTagOther, endTagTable, endTagOther, __init__, adjustSVGTagNames, processCharacters, processStartTag, processEndTag, __init__, processEOF, processComment, processCharacters, startTagHtml, startTagOther, endTagHtml, endTagOther, __init__, processEOF, processCharacters, startTagFrameset, startTagFrame, startTagNoframes, startTagOther, endTagFrameset, endTagOther, __init__, processEOF, processCharacters, startTagNoframes, startTagOther, endTagHtml, endTagOther, __init__, processEOF, processComment, processSpaceCharacters, processCharacters, startTagHtml, startTagOther, processEndTag, __init__, processEOF, processComment, processSpaceCharacters, processCharacters, startTagHtml, startTagNoFrames, startTagOther, processEndTag
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/serializer.py: htmlentityreplace_errors, serialize, HTMLSerializer, SerializeError, __init__, encode, encodeStrict, serialize, render, serializeError
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_ihatexml.py: charStringToList, normaliseCharList, missingRanges, listToRegexpStr, hexToInt, escapeRegexp, InfosetFilter, __init__, coerceAttribute, coerceElement, coerceComment, coerceCharacters, coercePubid, toXmlName, getReplacementCharacter, fromXmlName, escapeChar, unescapeChar
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_inputstream.py: BufferedStream, HTMLInputStream, HTMLUnicodeInputStream, HTMLBinaryInputStream, EncodingBytes, EncodingParser, ContentAttrParser, lookupEncoding, __init__, tell, seek, read, _bufferedBytes, _readStream, _readFromBuffer, __init__, reset, openStream, _position, position, char, readChunk, characterErrorsUCS4, characterErrorsUCS2, charsUntil, unget, __init__, reset, openStream, determineEncoding, changeEncoding, detectBOM, detectEncodingMeta, __new__, __init__, __iter__, __next__, next, previous, setPosition, getPosition, getCurrentByte, skip, skipUntil, matchBytes, jumpTo, __init__, getEncoding, handleComment, handleMeta, handlePossibleStartTag, handlePossibleEndTag, handlePossibleTag, handleOther, getAttribute, __init__, parse
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_tokenizer.py: HTMLTokenizer, __init__, __iter__, consumeNumberEntity, consumeEntity, processEntityInAttribute, emitCurrentToken, dataState, entityDataState, rcdataState, characterReferenceInRcdata, rawtextState, scriptDataState, plaintextState, tagOpenState, closeTagOpenState, tagNameState, rcdataLessThanSignState, rcdataEndTagOpenState, rcdataEndTagNameState, rawtextLessThanSignState, rawtextEndTagOpenState, rawtextEndTagNameState, scriptDataLessThanSignState, scriptDataEndTagOpenState, scriptDataEndTagNameState, scriptDataEscapeStartState, scriptDataEscapeStartDashState, scriptDataEscapedState, scriptDataEscapedDashState, scriptDataEscapedDashDashState, scriptDataEscapedLessThanSignState, scriptDataEscapedEndTagOpenState, scriptDataEscapedEndTagNameState, scriptDataDoubleEscapeStartState, scriptDataDoubleEscapedState, scriptDataDoubleEscapedDashState, scriptDataDoubleEscapedDashDashState, scriptDataDoubleEscapedLessThanSignState, scriptDataDoubleEscapeEndState, beforeAttributeNameState, attributeNameState, afterAttributeNameState, beforeAttributeValueState, attributeValueDoubleQuotedState, attributeValueSingleQuotedState, attributeValueUnQuotedState, afterAttributeValueState, selfClosingStartTagState, bogusCommentState, markupDeclarationOpenState, commentStartState, commentStartDashState, commentState, commentEndDashState, commentEndState, commentEndBangState, doctypeState, beforeDoctypeNameState, doctypeNameState, afterDoctypeNameState, afterDoctypePublicKeywordState, beforeDoctypePublicIdentifierState, doctypePublicIdentifierDoubleQuotedState, doctypePublicIdentifierSingleQuotedState, afterDoctypePublicIdentifierState, betweenDoctypePublicAndSystemIdentifiersState, afterDoctypeSystemKeywordState, beforeDoctypeSystemIdentifierState, doctypeSystemIdentifierDoubleQuotedState, doctypeSystemIdentifierSingleQuotedState, afterDoctypeSystemIdentifierState, bogusDoctypeState, cdataSectionState
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_utils.py: MethodDispatcher, isSurrogatePair, surrogatePairToCodepoint, moduleFactoryFactory, memoize, __init__, __getitem__, moduleFactory, wrapped
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/alphabeticalattributes.py: _attr_key, Filter, __iter__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/base.py: Filter, __init__, __iter__, __getattr__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/inject_meta_charset.py: Filter, __init__, __iter__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/lint.py: Filter, __init__, __iter__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/optionaltags.py: Filter, slider, __iter__, is_optional_start, is_optional_end
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/sanitizer.py: Filter, __init__, __iter__, sanitize_token, allowed_token, disallowed_token, sanitize_css
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/whitespace.py: Filter, collapse_spaces, __iter__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treeadapters/genshi.py: to_genshi
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treeadapters/sax.py: to_sax
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/base.py: Node, ActiveFormattingElements, TreeBuilder, __init__, __str__, __repr__, appendChild, insertText, insertBefore, removeChild, reparentChildren, cloneNode, hasContent, append, nodesEqual, __init__, reset, elementInScope, reconstructActiveFormattingElements, clearActiveFormattingElements, elementInActiveFormattingElements, insertRoot, insertDoctype, insertComment, createElement, _getInsertFromTable, _setInsertFromTable, insertElementNormal, insertElementTable, insertText, getTableMisnestedNodePosition, generateImpliedEndTags, getDocument, getFragment, testSerializer
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/dom.py: getDomBuilder, AttrList, NodeBuilder, TreeBuilder, testSerializer, __init__, __iter__, __setitem__, __len__, items, values, __getitem__, __delitem__, __init__, appendChild, insertText, insertBefore, removeChild, reparentChildren, getAttributes, setAttributes, cloneNode, hasContent, getNameTuple, documentClass, insertDoctype, elementClass, commentClass, fragmentClass, appendChild, testSerializer, getDocument, getFragment, insertText, serializeElement
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/etree.py: getETreeBuilder, Element, Comment, DocumentType, Document, DocumentFragment, testSerializer, tostring, TreeBuilder, __init__, _getETreeTag, _setName, _getName, _setNamespace, _getNamespace, _getAttributes, _setAttributes, _getChildNodes, _setChildNodes, hasContent, appendChild, insertBefore, removeChild, insertText, cloneNode, reparentChildren, __init__, _getData, _setData, __init__, _getPublicId, _setPublicId, _getSystemId, _setSystemId, __init__, __init__, serializeElement, serializeElement, testSerializer, getDocument, getFragment
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/etree_lxml.py: DocumentType, Document, testSerializer, tostring, TreeBuilder, __init__, __init__, appendChild, _getChildNodes, serializeElement, serializeElement, __init__, reset, testSerializer, getDocument, getFragment, insertDoctype, insertCommentInitial, insertCommentMain, insertRoot, Attributes, Element, Comment, __init__, __setitem__, __init__, _setName, _getName, _getAttributes, _setAttributes, insertText, appendChild, __init__, _setData, _getData
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/__init__.py: getTreeBuilder
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/base.py: TreeWalker, NonRecursiveTreeWalker, __init__, __iter__, error, emptyTag, startTag, endTag, text, comment, doctype, entity, unknown, getNodeDetails, getFirstChild, getNextSibling, getParentNode, __iter__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/dom.py: TreeWalker, getNodeDetails, getFirstChild, getNextSibling, getParentNode
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/etree.py: getETreeBuilder, TreeWalker, getNodeDetails, getFirstChild, getNextSibling, getParentNode
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/etree_lxml.py: ensure_str, Root, Doctype, FragmentRoot, FragmentWrapper, TreeWalker, __init__, __getitem__, getnext, __len__, __init__, getnext, __init__, getnext, __init__, __getattr__, getnext, __getitem__, __bool__, getparent, __str__, __unicode__, __len__, __init__, getNodeDetails, getFirstChild, getNextSibling, getParentNode
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/genshi.py: TreeWalker, __iter__, tokens
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/__init__.py: getTreeWalker, concatenateCharacterTokens, pprint
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_trie/datrie.py: Trie, __init__, __contains__, __len__, __iter__, __getitem__, keys, has_keys_with_prefix, longest_prefix, longest_prefix_item
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_trie/py.py: Trie, __init__, __contains__, __len__, __iter__, __getitem__, keys, has_keys_with_prefix
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_trie/_base.py: Trie, keys, has_keys_with_prefix, longest_prefix, longest_prefix_item
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/codec.py: Codec, IncrementalEncoder, IncrementalDecoder, StreamWriter, StreamReader, getregentry, encode, decode, _buffer_encode, _buffer_decode
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/compat.py: ToASCII, ToUnicode, nameprep
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/core.py: IDNAError, IDNABidiError, InvalidCodepoint, InvalidCodepointContext, _combining_class, _is_script, _punycode, _unot, valid_label_length, valid_string_length, check_bidi, check_initial_combiner, check_hyphen_ok, check_nfc, valid_contextj, valid_contexto, check_label, alabel, ulabel, uts46_remap, encode, decode
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/intranges.py: intranges_from_list, _encode_range, _decode_range, intranges_contain
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/uts46data.py: _seg_0, _seg_1, _seg_2, _seg_3, _seg_4, _seg_5, _seg_6, _seg_7, _seg_8, _seg_9, _seg_10, _seg_11, _seg_12, _seg_13, _seg_14, _seg_15, _seg_16, _seg_17, _seg_18, _seg_19, _seg_20, _seg_21, _seg_22, _seg_23, _seg_24, _seg_25, _seg_26, _seg_27, _seg_28, _seg_29, _seg_30, _seg_31, _seg_32, _seg_33, _seg_34, _seg_35, _seg_36, _seg_37, _seg_38, _seg_39, _seg_40, _seg_41, _seg_42, _seg_43, _seg_44, _seg_45, _seg_46, _seg_47, _seg_48, _seg_49, _seg_50, _seg_51, _seg_52, _seg_53, _seg_54, _seg_55, _seg_56, _seg_57, _seg_58, _seg_59, _seg_60, _seg_61, _seg_62, _seg_63, _seg_64, _seg_65, _seg_66, _seg_67, _seg_68, _seg_69, _seg_70, _seg_71, _seg_72
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/linklockfile.py: LinkLockFile, acquire, release, is_locked, i_am_locking, break_lock
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/mkdirlockfile.py: MkdirLockFile, __init__, acquire, release, is_locked, i_am_locking, break_lock
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/pidlockfile.py: PIDLockFile, read_pid_from_pidfile, write_pid_to_pidfile, remove_existing_pidfile, __init__, read_pid, is_locked, i_am_locking, acquire, release, break_lock
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/sqlitelockfile.py: SQLiteLockFile, __init__, acquire, release, _who_is_locking, is_locked, i_am_locking, break_lock
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/symlinklockfile.py: SymlinkLockFile, __init__, acquire, release, is_locked, i_am_locking, break_lock
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/__init__.py: Error, LockError, LockTimeout, AlreadyLocked, LockFailed, UnlockError, NotLocked, NotMyLock, _SharedBase, LockBase, _fl_helper, LinkFileLock, MkdirFileLock, SQLiteFileLock, locked, __init__, acquire, release, __enter__, __exit__, __repr__, __init__, is_locked, i_am_locking, break_lock, __repr__, decor, wrapper
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/msgpack/exceptions.py: UnpackException, BufferFull, OutOfData, UnpackValueError, ExtraData, PackException, PackValueError, PackOverflowError, __init__, __str__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/msgpack/fallback.py: _check_type_strict, _get_data_from_buffer, unpack, unpackb, Unpacker, Packer, dict_iteritems, dict_iteritems, StringIO, __init__, feed, _consume, _got_extradata, _get_extradata, read_bytes, _read, _reserve, _read_header, _unpack, __iter__, __next__, skip, unpack, read_array_header, read_map_header, tell, __init__, _pack, pack, pack_map_pairs, pack_array_header, pack_map_header, pack_ext_type, _pack_array_header, _pack_map_header, _pack_map_pairs, _pack_raw_header, _pack_bin_header, bytes, reset, __init__, write, getvalue
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/msgpack/__init__.py: ExtType, pack, packb, unpack, __new__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/markers.py: InvalidMarker, UndefinedComparison, UndefinedEnvironmentName, Node, Variable, Value, Op, _coerce_parse_result, _format_marker, _eval_op, _get_env, _evaluate_markers, format_full_version, default_environment, Marker, __init__, __str__, __repr__, serialize, serialize, serialize, serialize, __init__, __str__, __repr__, evaluate
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/requirements.py: InvalidRequirement, Requirement, __init__, __str__, __repr__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/specifiers.py: InvalidSpecifier, BaseSpecifier, _IndividualSpecifier, LegacySpecifier, _require_version_compare, Specifier, _version_split, _pad_version, SpecifierSet, __str__, __hash__, __eq__, __ne__, prereleases, prereleases, contains, filter, __init__, __repr__, __str__, __hash__, __eq__, __ne__, _get_operator, _coerce_version, operator, version, prereleases, prereleases, __contains__, contains, filter, _coerce_version, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, wrapped, _compare_compatible, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, _compare_arbitrary, prereleases, prereleases, __init__, __repr__, __str__, __hash__, __and__, __eq__, __ne__, __len__, __iter__, prereleases, prereleases, __contains__, contains, filter
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/utils.py: canonicalize_name, canonicalize_version
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/version.py: parse, InvalidVersion, _BaseVersion, LegacyVersion, _parse_version_parts, _legacy_cmpkey, Version, _parse_letter_version, _parse_local_version, _cmpkey, __hash__, __lt__, __le__, __eq__, __ge__, __gt__, __ne__, _compare, __init__, __str__, __repr__, public, base_version, epoch, release, pre, post, dev, local, is_prerelease, is_postrelease, is_devrelease, __init__, __repr__, __str__, epoch, release, pre, post, dev, local, public, base_version, is_prerelease, is_postrelease, is_devrelease
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/_compat.py: with_metaclass, metaclass, __new__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/_structures.py: Infinity, NegativeInfinity, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pkg_resources/py31compat.py: _makedirs_31
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pkg_resources/__init__.py: PEP440Warning, parse_version, _declare_state, __getstate__, __setstate__, _sget_dict, _sset_dict, _sget_object, _sset_object, get_supported_platform, ResolutionError, VersionConflict, ContextualVersionConflict, DistributionNotFound, UnknownExtra, register_loader_type, get_provider, _macosx_vers, _macosx_arch, get_build_platform, compatible_platforms, run_script, get_distribution, load_entry_point, get_entry_map, get_entry_info, IMetadataProvider, IResourceProvider, WorkingSet, _ReqExtras, Environment, ExtractionError, ResourceManager, get_default_cache, safe_name, safe_version, safe_extra, to_filename, invalid_marker, evaluate_marker, NullProvider, EggProvider, DefaultProvider, EmptyProvider, ZipManifests, MemoizedZipManifests, ZipProvider, FileMetadata, PathMetadata, EggMetadata, register_finder, find_distributions, find_eggs_in_zip, find_nothing, _by_version_descending, find_on_path, dist_factory, NoDists, safe_listdir, distributions_from_metadata, non_empty_lines, resolve_egg_link, register_namespace_handler, _handle_ns, _rebuild_mod_path, declare_namespace, fixup_namespace_packages, file_ns_handler, null_ns_handler, normalize_path, _normalize_cached, _is_egg_path, _is_unpacked_egg, _set_parent_ns, yield_lines, EntryPoint, _remove_md5_fragment, _version_from_file, Distribution, EggInfoDistribution, DistInfoDistribution, issue_warning, RequirementParseError, parse_requirements, Requirement, _always_object, _find_adapter, ensure_directory, _bypass_ensure_directory, split_sections, _mkstemp, _call_aside, _initialize, _initialize_master_working_set, __repr__, dist, req, report, with_context, required_by, req, requirers, requirers_str, report, __str__, has_metadata, get_metadata, get_metadata_lines, metadata_isdir, metadata_listdir, run_script, get_resource_filename, get_resource_stream, get_resource_string, has_resource, resource_isdir, resource_listdir, __init__, _build_master, _build_from_requirements, add_entry, __contains__, find, iter_entry_points, run_script, __iter__, add, resolve, find_plugins, require, subscribe, _added_new, __getstate__, __setstate__, markers_pass, __init__, can_add, remove, scan, __getitem__, add, best_match, obtain, __iter__, __iadd__, __add__, __init__, resource_exists, resource_isdir, resource_filename, resource_stream, resource_string, resource_listdir, extraction_error, get_cache_path, _warn_unsafe_extraction_path, postprocess, set_extraction_path, cleanup_resources, __init__, get_resource_filename, get_resource_stream, get_resource_string, has_resource, has_metadata, get_metadata, get_metadata_lines, resource_isdir, metadata_isdir, resource_listdir, metadata_listdir, run_script, _has, _isdir, _listdir, _fn, _get, __init__, _setup_prefix, _has, _isdir, _listdir, get_resource_stream, _get, _register, _get, _listdir, __init__, build, load, __init__, _zipinfo_name, _parts, zipinfo, get_resource_filename, _get_date_and_size, _extract_resource, _is_current, _get_eager_resources, _index, _has, _isdir, _listdir, _eager_to_zip, _resource_to_zip, __init__, has_metadata, get_metadata, _warn_on_replacement, get_metadata_lines, __init__, __init__, _by_version, __bool__, __call__, safe_sys_path_index, position_in_sys_path, __init__, __str__, __repr__, load, resolve, require, parse, _parse_extras, parse_group, parse_map, is_version_line, __init__, from_location, _reload_version, hashcmp, __hash__, __lt__, __le__, __gt__, __ge__, __eq__, __ne__, key, parsed_version, _warn_legacy_version, version, _dep_map, _filter_extras, _build_dep_map, requires, _get_metadata, activate, egg_name, __repr__, __str__, __getattr__, from_filename, as_requirement, load_entry_point, get_entry_map, get_entry_info, insert_on, check_version_conflict, has_version, clone, extras, _reload_version, _parsed_pkg_info, _dep_map, _compute_dependencies, __str__, __init__, __eq__, __ne__, __contains__, __hash__, __repr__, parse, reqs_for_extra
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/bar.py: Bar, ChargingBar, FillingSquaresBar, FillingCirclesBar, IncrementalBar, PixelBar, ShadyBar, update, update
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/counter.py: Counter, Countdown, Stack, Pie, update, update, update
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/helpers.py: WriteMixin, WritelnMixin, SigIntMixin, __init__, write, finish, __init__, clearln, writeln, finish, __init__, _sigint_handler
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/spinner.py: Spinner, PieSpinner, MoonSpinner, LineSpinner, PixelSpinner, update
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/__init__.py: Infinite, Progress, __init__, __getitem__, elapsed, elapsed_td, update_avg, update, start, finish, next, iter, __init__, eta, eta_td, percent, progress, remaining, start, goto, iter
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pytoml/core.py: TomlError, __init__, __str__, __repr__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pytoml/parser.py: load, loads, _Source, _p_ews, _p_ws, _p_basicstr_content, _p_key, _p_value, _p_stmt, _p_toml, _TimeZone, error, process_value, merge_tables, __init__, last, pos, fail, consume_dot, expect_dot, consume_eof, expect_eof, consume, expect, consume_re, expect_re, __enter__, __exit__, commit, _expect, _advance, __init__, utcoffset, dst, tzname
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pytoml/writer.py: dumps, _escape_string, _escape_id, _format_list, _total_seconds, _format_value, dump, flush
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/adapters.py: BaseAdapter, HTTPAdapter, __init__, send, close, __init__, __getstate__, __setstate__, init_poolmanager, proxy_manager_for, cert_verify, build_response, get_connection, close, request_url, add_headers, proxy_headers, send, SOCKSProxyManager
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/api.py: request, get, options, head, post, put, patch, delete
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/auth.py: _basic_auth_str, AuthBase, HTTPBasicAuth, HTTPProxyAuth, HTTPDigestAuth, __call__, __init__, __eq__, __ne__, __call__, __call__, __init__, init_per_thread_state, build_digest_header, handle_redirect, handle_401, __call__, __eq__, __ne__, md5_utf8, sha_utf8
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/cookies.py: MockRequest, MockResponse, extract_cookies_to_jar, get_cookie_header, remove_cookie_by_name, CookieConflictError, RequestsCookieJar, _copy_cookie_jar, create_cookie, morsel_to_cookie, cookiejar_from_dict, merge_cookies, __init__, get_type, get_host, get_origin_req_host, get_full_url, is_unverifiable, has_header, get_header, add_header, add_unredirected_header, get_new_headers, unverifiable, origin_req_host, host, __init__, info, getheaders, get, set, iterkeys, keys, itervalues, values, iteritems, items, list_domains, list_paths, multiple_domains, get_dict, __contains__, __getitem__, __setitem__, __delitem__, set_cookie, update, _find, _find_no_duplicates, __getstate__, __setstate__, copy
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/exceptions.py: RequestException, HTTPError, ConnectionError, ProxyError, SSLError, Timeout, ConnectTimeout, ReadTimeout, URLRequired, TooManyRedirects, MissingSchema, InvalidSchema, InvalidURL, InvalidHeader, ChunkedEncodingError, ContentDecodingError, StreamConsumedError, RetryError, UnrewindableBodyError, RequestsWarning, FileModeWarning, RequestsDependencyWarning, __init__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/help.py: _implementation, info, main
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/hooks.py: default_hooks, dispatch_hook
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/models.py: RequestEncodingMixin, RequestHooksMixin, Request, PreparedRequest, Response, path_url, _encode_params, _encode_files, register_hook, deregister_hook, __init__, __repr__, prepare, __init__, prepare, __repr__, copy, prepare_method, _get_idna_encoded_host, prepare_url, prepare_headers, prepare_body, prepare_content_length, prepare_auth, prepare_cookies, prepare_hooks, __init__, __enter__, __exit__, __getstate__, __setstate__, __repr__, __bool__, __nonzero__, __iter__, ok, is_redirect, is_permanent_redirect, next, apparent_encoding, iter_content, iter_lines, content, text, json, links, raise_for_status, close, generate
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/sessions.py: merge_setting, merge_hooks, SessionRedirectMixin, Session, session, get_redirect_target, resolve_redirects, rebuild_auth, rebuild_proxies, rebuild_method, __init__, __enter__, __exit__, prepare_request, request, get, options, head, post, put, patch, delete, send, merge_environment_settings, get_adapter, close, mount, __getstate__, __setstate__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/structures.py: CaseInsensitiveDict, LookupDict, __init__, __setitem__, __getitem__, __delitem__, __iter__, __len__, lower_items, __eq__, copy, __repr__, __init__, __repr__, __getitem__, get
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/utils.py: dict_to_sequence, super_len, get_netrc_auth, guess_filename, from_key_val_list, to_key_val_list, parse_list_header, parse_dict_header, unquote_header_value, dict_from_cookiejar, add_dict_to_cookiejar, get_encodings_from_content, get_encoding_from_headers, stream_decode_response_unicode, iter_slices, get_unicode_from_response, unquote_unreserved, requote_uri, address_in_network, dotted_netmask, is_ipv4_address, is_valid_cidr, set_environ, should_bypass_proxies, get_environ_proxies, select_proxy, default_user_agent, default_headers, parse_header_links, guess_json_utf, prepend_scheme_if_needed, get_auth_from_url, check_header_validity, urldefragauth, rewind_body, proxy_bypass_registry, proxy_bypass
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/_internal_utils.py: to_native_string, unicode_is_ascii
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/__init__.py: check_compatibility, NullHandler, emit
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/connection.py: DummyConnection, HTTPConnection, HTTPSConnection, VerifiedHTTPSConnection, _match_hostname, __init__, _new_conn, _prepare_conn, connect, request_chunked, __init__, connect, set_cert, connect, BaseSSLError, ConnectionError
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/connectionpool.py: ConnectionPool, HTTPConnectionPool, HTTPSConnectionPool, connection_from_url, _ipv6_host, __init__, __str__, __enter__, __exit__, close, __init__, _new_conn, _get_conn, _put_conn, _validate_conn, _prepare_proxy, _get_timeout, _raise_timeout, _make_request, _absolute_url, close, is_same_host, urlopen, __init__, _prepare_conn, _prepare_proxy, _new_conn, _validate_conn, drain_and_release_conn
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/exceptions.py: HTTPError, HTTPWarning, PoolError, RequestError, SSLError, ProxyError, DecodeError, ProtocolError, MaxRetryError, HostChangedError, TimeoutStateError, TimeoutError, ReadTimeoutError, ConnectTimeoutError, NewConnectionError, EmptyPoolError, ClosedPoolError, LocationValueError, LocationParseError, ResponseError, SecurityWarning, SubjectAltNameWarning, InsecureRequestWarning, SystemTimeWarning, InsecurePlatformWarning, SNIMissingWarning, DependencyWarning, ResponseNotChunked, BodyNotHttplibCompatible, IncompleteRead, InvalidHeader, ProxySchemeUnknown, HeaderParsingError, UnrewindableBodyError, __init__, __reduce__, __init__, __reduce__, __init__, __init__, __init__, __init__, __repr__, __init__, __init__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/fields.py: guess_content_type, format_header_param, RequestField, __init__, from_tuples, _render_part, _render_parts, render_headers, make_multipart
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/filepost.py: choose_boundary, iter_field_objects, iter_fields, encode_multipart_formdata
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/poolmanager.py: _default_key_normalizer, PoolManager, ProxyManager, proxy_from_url, __init__, __enter__, __exit__, _new_pool, clear, connection_from_host, connection_from_context, connection_from_pool_key, connection_from_url, _merge_pool_kwargs, urlopen, __init__, connection_from_host, _set_proxy_headers, urlopen
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/request.py: RequestMethods, __init__, urlopen, request, request_encode_url, request_encode_body
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/response.py: DeflateDecoder, GzipDecoder, _get_decoder, HTTPResponse, __init__, __getattr__, decompress, __init__, __getattr__, decompress, __init__, get_redirect_location, release_conn, data, connection, tell, _init_length, _init_decoder, _decode, _flush_decoder, _error_catcher, read, stream, from_httplib, getheaders, getheader, info, close, closed, fileno, flush, readable, readinto, supports_chunked_reads, _update_chunk_length, _handle_chunk, read_chunked
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/_collections.py: RecentlyUsedContainer, HTTPHeaderDict, __init__, __getitem__, __setitem__, __delitem__, __len__, __iter__, clear, keys, __init__, __setitem__, __getitem__, __delitem__, __contains__, __eq__, __ne__, __len__, __iter__, pop, discard, add, extend, getlist, __repr__, _copy_from, copy, iteritems, itermerged, items, from_httplib, RLock, __enter__, __exit__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/__init__.py: add_stderr_logger, disable_warnings, NullHandler, emit
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/appengine.py: AppEnginePlatformWarning, AppEnginePlatformError, AppEngineManager, is_appengine, is_appengine_sandbox, is_local_appengine, is_prod_appengine, is_prod_appengine_mvms, __init__, __enter__, __exit__, urlopen, _urlfetch_response_to_http_response, _get_absolute_timeout, _get_retries
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/ntlmpool.py: NTLMConnectionPool, __init__, _new_conn, urlopen
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/pyopenssl.py: inject_into_urllib3, extract_from_urllib3, _validate_dependencies_met, _dnsname_to_stdlib, get_subj_alt_name, WrappedSocket, PyOpenSSLContext, _verify_callback, idna_encode, __init__, fileno, _decref_socketios, recv, recv_into, settimeout, _send_until_done, sendall, shutdown, close, getpeercert, _reuse, _drop, makefile, __init__, options, options, verify_mode, verify_mode, set_default_verify_paths, set_ciphers, load_verify_locations, load_cert_chain, wrap_socket
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/securetransport.py: inject_into_urllib3, extract_from_urllib3, _read_callback, _write_callback, WrappedSocket, SecureTransportContext, __init__, _raise_on_error, _set_ciphers, _custom_validate, handshake, fileno, _decref_socketios, recv, recv_into, settimeout, gettimeout, send, sendall, shutdown, close, getpeercert, _reuse, _drop, makefile, makefile, __init__, check_hostname, check_hostname, options, options, verify_mode, verify_mode, set_default_verify_paths, load_default_certs, set_ciphers, load_verify_locations, load_cert_chain, wrap_socket
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/socks.py: SOCKSConnection, SOCKSHTTPSConnection, SOCKSHTTPConnectionPool, SOCKSHTTPSConnectionPool, SOCKSProxyManager, __init__, _new_conn, __init__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/_securetransport/bindings.py: CFConst, SecurityConst
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/_securetransport/low_level.py: _cf_data_from_bytes, _cf_dictionary_from_tuples, _cf_string_to_unicode, _assert_no_error, _cert_array_from_pem, _is_cert, _is_identity, _temporary_keychain, _load_items_from_file, _load_client_cert_chain
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/ordered_dict.py: OrderedDict, __init__, __setitem__, __delitem__, __iter__, __reversed__, clear, popitem, keys, values, items, iterkeys, itervalues, iteritems, update, pop, setdefault, __repr__, __reduce__, copy, fromkeys, __eq__, __ne__, viewkeys, viewvalues, viewitems
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/six.py: _add_doc, _import_module, _LazyDescr, MovedModule, _LazyModule, MovedAttribute, _SixMetaPathImporter, _MovedItems, Module_six_moves_urllib_parse, Module_six_moves_urllib_error, Module_six_moves_urllib_request, Module_six_moves_urllib_response, Module_six_moves_urllib_robotparser, Module_six_moves_urllib, add_move, remove_move, assertCountEqual, assertRaisesRegex, assertRegex, with_metaclass, add_metaclass, python_2_unicode_compatible, __init__, __get__, __init__, _resolve, __getattr__, __init__, __dir__, __init__, _resolve, __init__, _add_module, _get_module, find_module, __get_module, load_module, is_package, get_code, __dir__, get_unbound_function, create_unbound_method, get_unbound_function, create_bound_method, create_unbound_method, Iterator, iterkeys, itervalues, iteritems, iterlists, iterkeys, itervalues, iteritems, iterlists, b, u, b, u, byte2int, indexbytes, reraise, exec_, print_, print_, wraps, metaclass, wrapper, X, advance_iterator, callable, next, raise_from, write, wrapper, __new__, __len__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/backports/makefile.py: backport_makefile
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py: CertificateError, _dnsname_match, _to_unicode, _ipaddress_match, match_hostname
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/connection.py: is_connection_dropped, create_connection, _set_socket_options, allowed_gai_family, _has_ipv6
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/request.py: make_headers, set_file_position, rewind_body
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/response.py: is_fp_closed, assert_header_parsing, is_response_to_head
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/retry.py: Retry, __init__, new, from_int, get_backoff_time, parse_retry_after, get_retry_after, sleep_for_retry, _sleep_backoff, sleep, _is_connection_error, _is_read_error, _is_method_retryable, is_retry, is_exhausted, increment, __repr__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/selectors.py: SelectorError, _fileobj_to_fd, _SelectorMapping, BaseSelector, _can_allocate, DefaultSelector, __init__, __repr__, __str__, _syscall_wrapper, _syscall_wrapper, __init__, __len__, __getitem__, __iter__, __init__, _fileobj_lookup, register, unregister, modify, select, close, get_key, get_map, _key_from_fd, __enter__, __exit__, SelectSelector, PollSelector, EpollSelector, KqueueSelector, __init__, register, unregister, _select, select, __init__, register, unregister, _wrap_poll, select, __init__, fileno, register, unregister, select, close, __init__, fileno, register, unregister, select, close
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/ssl_.py: _const_compare_digest_backport, assert_fingerprint, resolve_cert_reqs, resolve_ssl_version, create_urllib3_context, ssl_wrap_socket, SSLContext, __init__, load_cert_chain, load_verify_locations, set_ciphers, wrap_socket
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/timeout.py: Timeout, __init__, __str__, _validate_timeout, from_float, clone, start_connect, get_connect_duration, connect_timeout, read_timeout
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/url.py: Url, split_first, parse_url, get_host, __new__, hostname, request_uri, netloc, url, __str__
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/wait.py: _wait_for_io_events, wait_for_read, wait_for_write
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/mklabels.py: assert_lower, generate
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/tests.py: assert_raises, test_labels, test_all_labels, test_invalid_label, test_decode, test_encode, test_iter_decode, test_iter_encode, test_x_user_defined, iter_decode_to_string
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/x_user_defined.py: Codec, IncrementalEncoder, IncrementalDecoder, StreamWriter, StreamReader, encode, decode, encode, decode
-- venv/lib64/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/__init__.py: ascii_lower, lookup, _get_encoding, Encoding, decode, _detect_bom, encode, iter_decode, _iter_decode_generator, iter_encode, _iter_encode_generator, IncrementalDecoder, IncrementalEncoder, __init__, __repr__, __init__, decode, __init__
-
-Repository: GFP-Cell-Detection (MATLAB)
-GitHub URL: https://github.com/samik1986/GFP-Cell-Detection
-Extracted Functions by File:
-- GFP_Cell_Detection/cell_filling.m: cell_filling
-- GFP_Cell_Detection/circfit.m: circfit
-- GFP_Cell_Detection/cluster.m: cluster
-- GFP_Cell_Detection/edge_layers.m: edge_layers
-- GFP_Cell_Detection/Euclidean_Signature.m: Euclidean_Signature
-- GFP_Cell_Detection/eval_pts.m: eval_pts
-- GFP_Cell_Detection/fit_circles.m: fit_circles
-- GFP_Cell_Detection/gaussFun.m: gaussFun
-- GFP_Cell_Detection/main.m: main
-- GFP_Cell_Detection/main_bam.m: main_bam
-- GFP_Cell_Detection/normal.m: normal
-- GFP_Cell_Detection/phase1.m: phase1
-- GFP_Cell_Detection/phase2.m: phase2
-- GFP_Cell_Detection/pre_proc.m: pre_proc
-- GFP_Cell_Detection/residue.m: residue
-- GFP_Cell_Detection/residue1.m: residue1
-- GFP_Cell_Detection/swap.m: swap
-- GFP_Cell_Detection/Vessels.m: Vessels
-- GFP_Cell_Detection/zcc.m: zcc
-- GFP_Cell_Detection/Evaluation/Ground_truth_labelling.m: Ground_truth_labelling
-- GFP_Cell_Detection/frangi_filter_version2a/eig2image.m: eig2image
-- GFP_Cell_Detection/frangi_filter_version2a/eig3volume.c: eigen_decomposition, mexFunction
-- GFP_Cell_Detection/frangi_filter_version2a/FrangiFilter2D.m: FrangiFilter2D
-- GFP_Cell_Detection/frangi_filter_version2a/FrangiFilter3D.m: FrangiFilter3D
-- GFP_Cell_Detection/frangi_filter_version2a/Hessian2D.m: Hessian2D
-- GFP_Cell_Detection/frangi_filter_version2a/Hessian3D.m: Hessian3D, gradient3
-- GFP_Cell_Detection/frangi_filter_version2a/imgaussian.c: imfilter1D_double, imfilter2D_double, imfilter3D_double, imfilter1D_float, imfilter2D_float, imfilter3D_float, imfilter2Dcolor_double, imfilter2Dcolor_float, GaussianFiltering3D_float, GaussianFiltering2Dcolor_float, GaussianFiltering2D_float, GaussianFiltering1D_float, GaussianFiltering3D_double, GaussianFiltering2Dcolor_double, GaussianFiltering2D_double, GaussianFiltering1D_double, mexFunction
-- GFP_Cell_Detection/frangi_filter_version2a/imgaussian.m: imgaussian
-- GFP_Cell_Detection/frangi_filter_version2a/nonmaxsup.m: nonmaxsup
-
-Repository: HG2PD (Python)
-GitHub URL: https://github.com/samik1986/HG2PD
-Extracted Functions by File:
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/basecommand.py: Command, RequirementCommand, __init__, _build_session, parse_args, main, populate_requirement_set, _build_package_finder
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/baseparser.py: PrettyHelpFormatter, UpdatingDefaultsHelpFormatter, CustomOptionParser, ConfigOptionParser, __init__, format_option_strings, _format_option_strings, format_heading, format_usage, format_description, format_epilog, indent_lines, expand_default, insert_option_group, option_list_all, __init__, check_default, _get_ordered_configuration_items, _update_defaults, get_default_values, error
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/build_env.py: BuildEnvironment, NoOpBuildEnvironment, __init__, path, __enter__, __exit__, cleanup, __init__, __enter__, __exit__, cleanup, restore_var
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/cache.py: Cache, SimpleWheelCache, EphemWheelCache, WheelCache, __init__, _get_cache_path_parts, _get_candidates, get_path_for_link, get, _link_for_candidate, cleanup, __init__, get_path_for_link, get, __init__, cleanup, __init__, get_path_for_link, get_ephem_path_for_link, get, cleanup
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/cmdoptions.py: make_option_group, check_install_build_global, exists_action, extra_index_url, find_links, trusted_host, constraints, requirements, editable, _get_format_control, _handle_no_binary, _handle_only_binary, no_binary, only_binary, _merge_hash, getname
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/compat.py: console_to_str, get_path_uid, expanduser, samefile, backslashreplace_decode_fn, native_str, native_str, get_terminal_size, get_terminal_size, ioctl_GWINSZ
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/configuration.py: _normalize_name, _disassemble_key, Configuration, __init__, load, get_file_to_edit, items, get_value, set_value, unset_value, save, _ensure_have_load_only, _dictionary, _load_config_files, _load_file, _construct_parser, _load_environment_vars, _normalized_keys, _get_environ_vars, _iter_config_files, _get_parser_to_modify, _mark_as_modified
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/download.py: user_agent, MultiDomainBasicAuth, LocalFSAdapter, SafeFileCache, InsecureHTTPAdapter, PipSession, get_file_content, is_url, url_to_path, path_to_url, is_archive_file, unpack_vcs_link, _get_used_vcs_backend, is_vcs_url, is_file_url, is_dir_url, _progress_indicator, _download_url, _copy_file, unpack_http_url, unpack_file_url, _copy_dist_from_dir, PipXmlrpcTransport, unpack_url, _download_http_url, _check_download_dir, __init__, __call__, handle_401, parse_credentials, send, close, __init__, get, set, delete, cert_verify, __init__, request, resp_read, written_chunks, __init__, request
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/exceptions.py: PipError, ConfigurationError, InstallationError, UninstallationError, DistributionNotFound, RequirementsFileParseError, BestVersionAlreadyInstalled, BadCommand, CommandError, PreviousBuildDirError, InvalidWheelFilename, UnsupportedWheel, HashErrors, HashError, VcsHashUnsupported, DirectoryUrlHashUnsupported, HashMissing, HashUnpinned, HashMismatch, UnsupportedPythonVersion, __init__, append, __str__, __nonzero__, __bool__, body, __str__, _requirement_name, __init__, body, __init__, body, _hash_comparison, hash_then_or
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/index.py: InstallationCandidate, PackageFinder, egg_info_matches, HTMLPage, Link, fmt_ctl_handle_mutual_exclude, fmt_ctl_formats, fmt_ctl_no_binary, __init__, __repr__, __hash__, __lt__, __le__, __eq__, __ge__, __gt__, __ne__, _compare, __init__, get_formatted_locations, add_dependency_links, _sort_locations, _candidate_sort_key, _validate_secure_origin, _get_index_urls_locations, find_all_candidates, find_requirement, _get_pages, _sort_links, _package_versions, _log_skipped_link, _link_package_versions, _get_page, __init__, __str__, get_page, _handle_fail, _get_content_type, base_url, links, clean_link, __init__, __str__, __repr__, __eq__, __ne__, __lt__, __le__, __gt__, __ge__, __hash__, filename, scheme, netloc, path, splitext, ext, url_without_fragment, egg_fragment, subdirectory_fragment, hash, hash_name, show_url, is_wheel, is_artifact, sort_path, mkurl_pypi_url
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/locations.py: write_delete_marker_file, running_under_virtualenv, virtualenv_no_global, distutils_scheme
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/pep425tags.py: get_config_var, get_abbr_impl, get_impl_ver, get_impl_version_info, get_impl_tag, get_flag, get_abi_tag, _is_running_32bit, get_platform, is_manylinux1_compatible, get_darwin_arches, get_supported, _supports_arch
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/resolve.py: Resolver, __init__, resolve, _is_upgrade_allowed, _set_req_to_reinstall, _check_skip_installed, _get_abstract_dist_for, _resolve_one, get_installation_order, add_req, schedule
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/wheel.py: rehash, open_for_csv, fix_script, root_is_purelib, get_entrypoints, message_about_scripts_not_on_PATH, move_wheel_files, wheel_version, check_compatibility, Wheel, WheelBuilder, _split_ep, normpath, record_installed, clobber, is_entrypoint_wrapper, _get_script_text, __init__, support_index_min, supported, __init__, _build_one, _build_one_inside_env, _base_setup_args, __build_one, _clean_one, build
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/__init__.py: autocomplete, create_main_parser, parseopts, check_isolated, main
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/check.py: CheckCommand, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/completion.py: CompletionCommand, __init__, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/configuration.py: ConfigurationCommand, __init__, run, _determine_file, list_values, get_name, set_name_value, unset_name, open_in_editor, _get_n_args, _save_configuration, _determine_editor
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/download.py: DownloadCommand, __init__, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/freeze.py: FreezeCommand, __init__, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/hash.py: HashCommand, _hash_of_file, __init__, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/help.py: HelpCommand, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/install.py: InstallCommand, get_lib_location_guesses, create_env_error_message, __init__, run, _handle_target_dir, _warn_about_conflicts
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/list.py: ListCommand, tabulate, format_for_columns, format_for_json, __init__, _build_package_finder, run, get_outdated, get_uptodate, get_not_required, iter_packages_latest_infos, output_legacy, output_legacy_latest, output_package_listing, output_package_listing_columns
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/search.py: SearchCommand, transform_hits, print_results, highest_version, __init__, run, search
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/show.py: ShowCommand, search_packages_info, print_results, __init__, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/uninstall.py: UninstallCommand, __init__, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/wheel.py: WheelCommand, __init__, run
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/__init__.py: get_summaries, get_similar_commands, _sort_commands, keyfn
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/models/index.py: Index, __init__, url_to_path
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/operations/check.py: create_package_set_from_installed, check_package_set, check_install_conflicts, _simulate_installation_of, str_key
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/operations/freeze.py: freeze, FrozenRequirement, __init__, from_dist, egg_name, __str__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/operations/prepare.py: make_abstract_dist, _install_build_reqs, DistAbstraction, IsWheel, IsSDist, Installed, RequirementPreparer, __init__, dist, prep_for_dist, dist, prep_for_dist, dist, prep_for_dist, dist, prep_for_dist, __init__, _download_should_save, prepare_linked_requirement, prepare_editable_requirement, prepare_installed_requirement, format_reqs
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/req_file.py: parse_requirements, preprocess, process_line, break_args_options, build_parser, join_lines, ignore_comments, skip_regex, expand_env_variables, parser_exit
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/req_install.py: _strip_extras, InstallRequirement, _strip_postfix, parse_editable, deduce_helpful_msg, __init__, from_editable, from_req, from_line, __str__, __repr__, populate_link, specifier, is_pinned, from_path, build_location, _correct_build_location, name, setup_py_dir, setup_py, pyproject_toml, get_pep_518_info, run_egg_info, egg_info_data, egg_info_path, pkg_info, installed_version, assert_source_matches_version, update_editable, uninstall, archive, _clean_zip_name, match_markers, install, ensure_has_source_dir, get_install_args, remove_temporary_source, install_editable, check_if_exists, is_wheel, move_wheel_files, get_dist, has_hash_options, hashes, prepend_root
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/req_set.py: RequirementSet, __init__, __str__, __repr__, add_requirement, has_requirement, has_requirements, get_requirement, cleanup_files
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/req_uninstall.py: _script_names, _unique, uninstallation_paths, compact, compress_for_output_listing, UninstallPathSet, UninstallPthEntries, unique, __init__, _permitted, add, add_pth, _stash, remove, _allowed_to_proceed, rollback, commit, from_dist, __init__, add, remove, rollback, _display
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/req/__init__.py: install_given_reqs
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/appdirs.py: user_cache_dir, user_data_dir, user_config_dir, site_config_dirs, _get_win_folder_from_registry, _get_win_folder_with_ctypes, _win_path_to_bytes
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/deprecation.py: PipDeprecationWarning, Pending, RemovedInPip11Warning, RemovedInPip12Warning, _showwarning, install_warning_logger
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/encoding.py: auto_decode
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/filesystem.py: check_path_owner
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/glibc.py: glibc_version_string, check_glibc_version, have_compatible_glibc, libc_ver
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/hashes.py: Hashes, MissingHashes, __init__, check_against_chunks, _raise, check_against_file, check_against_path, __nonzero__, __bool__, __init__, _raise
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/logging.py: indent_log, get_indentation, IndentingFormatter, _color_wrap, ColorizedStreamHandler, BetterRotatingFileHandler, MaxLevelFilter, format, wrapped, __init__, should_color, format, _open, __init__, filter
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/misc.py: import_or_raise, ensure_dir, get_prog, rmtree, rmtree_errorhandler, display_path, backup_dir, ask_path_exists, ask, format_size, is_installable_dir, is_svn_page, file_contents, read_chunks, split_leading_dir, has_leading_dir, normalize_path, splitext, renames, is_local, dist_is_local, dist_in_usersite, dist_in_site_packages, dist_is_editable, get_installed_distributions, egg_link_path, dist_location, current_umask, unzip_file, untar_file, unpack_file, call_subprocess, read_text_file, _make_build_dir, FakeFile, StreamWrapper, captured_output, captured_stdout, cached_property, get_installed_version, consume, enum, __init__, readline, __iter__, from_stream, encoding, __init__, __get__, local_test, editable_test, editable_test, editables_only_test, editables_only_test, user_test
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/outdated.py: VirtualenvSelfCheckState, GlobalSelfCheckState, load_selfcheck_statefile, pip_version_check, __init__, save, __init__, save
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/packaging.py: check_requires_python, get_metadata, check_dist_requires_python, get_installer
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/temp_dir.py: TempDirectory, __init__, __repr__, __enter__, __exit__, create, cleanup
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/utils/ui.py: _select_progress_class, InterruptibleMixin, SilentBar, BlueEmojiBar, DownloadProgressMixin, WindowsMixin, BaseDownloadProgressBar, DefaultDownloadProgressBar, DownloadSilentBar, DownloadIncrementalBar, DownloadChargingBar, DownloadShadyBar, DownloadFillingSquaresBar, DownloadFillingCirclesBar, DownloadBlueEmojiProgressBar, DownloadProgressSpinner, DownloadProgressProvider, hidden_cursor, RateLimiter, InteractiveSpinner, NonInteractiveSpinner, open_spinner, __init__, finish, handle_sigint, update, __init__, downloaded, download_speed, pretty_eta, iter, __init__, next_phase, update, __init__, ready, reset, __init__, _write, spin, finish, __init__, _update, spin, finish
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/bazaar.py: Bazaar, __init__, get_base_rev_args, export, switch, update, obtain, get_url_rev, get_url, get_revision, get_src_requirement, is_commit_id_equal
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/git.py: looks_like_hash, Git, __init__, get_base_rev_args, get_git_version, export, get_revision_sha, check_rev_options, is_commit_id_equal, switch, update, obtain, get_url, get_revision, _get_subdirectory, get_src_requirement, get_url_rev, update_submodules, controls_location
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/mercurial.py: Mercurial, get_base_rev_args, export, switch, update, obtain, get_url, get_revision, get_revision_hash, get_src_requirement, is_commit_id_equal
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/subversion.py: Subversion, get_rev_options, get_base_rev_args, get_info, export, switch, update, obtain, get_location, get_revision, get_url_rev, get_url, _get_svn_url_rev, get_src_requirement, is_commit_id_equal, remove_auth_from_url
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/vcs/__init__.py: RevOptions, VcsSupport, VersionControl, get_src_requirement, __init__, __repr__, arg_rev, to_args, to_display, make_new, __init__, __iter__, backends, dirnames, all_schemes, register, unregister, get_backend_name, get_backend, get_backend_from_location, __init__, get_base_rev_args, make_rev_options, _is_local_repository, translate_egg_surname, export, get_url_rev, get_info, normalize_url, compare_urls, obtain, switch, update, is_commit_id_equal, check_destination, unpack, get_src_requirement, get_url, get_revision, run_command, controls_location
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/appdirs.py: user_data_dir, site_data_dir, user_config_dir, site_config_dir, user_cache_dir, user_state_dir, user_log_dir, AppDirs, _get_win_folder_from_registry, _get_win_folder_with_pywin32, _get_win_folder_with_ctypes, _get_win_folder_with_jna, __init__, user_data_dir, site_data_dir, user_config_dir, site_config_dir, user_cache_dir, user_state_dir, user_log_dir
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distro.py: linux_distribution, id, name, version, version_parts, major_version, minor_version, build_number, like, codename, info, os_release_info, lsb_release_info, distro_release_info, os_release_attr, lsb_release_attr, distro_release_attr, cached_property, LinuxDistribution, main, __init__, __get__, __init__, __repr__, linux_distribution, id, name, version, version_parts, major_version, minor_version, build_number, like, codename, info, os_release_info, lsb_release_info, distro_release_info, os_release_attr, lsb_release_attr, distro_release_attr, _os_release_info, _parse_os_release_content, _lsb_release_info, _parse_lsb_release_content, _distro_release_info, _parse_distro_release_file, _parse_distro_release_content, normalize
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/ipaddress.py: _compat_to_bytes, _compat_range, _TotalOrderingMixin, AddressValueError, NetmaskValueError, ip_address, ip_network, ip_interface, v4_int_to_packed, v6_int_to_packed, _split_optional_netmask, _find_address_range, _count_righthand_zero_bits, summarize_address_range, _collapse_addresses_internal, collapse_addresses, get_mixed_type_key, _IPAddressBase, _BaseAddress, _BaseNetwork, _BaseV4, IPv4Address, IPv4Interface, IPv4Network, _IPv4Constants, _BaseV6, IPv6Address, IPv6Interface, IPv6Network, _IPv6Constants, _compat_bytes_to_byte_vals, _compat_bytes_to_byte_vals, _compat_bit_length, _compat_bit_length, __eq__, __ne__, __lt__, __le__, __gt__, __ge__, exploded, compressed, reverse_pointer, version, _check_int_address, _check_packed_address, _ip_int_from_prefix, _prefix_from_ip_int, _report_invalid_netmask, _prefix_from_prefix_string, _prefix_from_ip_string, __reduce__, __int__, __eq__, __lt__, __add__, __sub__, __repr__, __str__, __hash__, _get_address_key, __reduce__, __init__, __repr__, __str__, hosts, __iter__, __getitem__, __lt__, __eq__, __hash__, __contains__, overlaps, broadcast_address, hostmask, with_prefixlen, with_netmask, with_hostmask, num_addresses, _address_class, prefixlen, address_exclude, compare_networks, _get_networks_key, subnets, supernet, is_multicast, _is_subnet_of, subnet_of, supernet_of, is_reserved, is_link_local, is_private, is_global, is_unspecified, is_loopback, _explode_shorthand_ip_string, _make_netmask, _ip_int_from_string, _parse_octet, _string_from_ip_int, _is_hostmask, _reverse_pointer, max_prefixlen, version, __init__, packed, is_reserved, is_private, is_global, is_multicast, is_unspecified, is_loopback, is_link_local, __init__, __str__, __eq__, __lt__, __hash__, ip, with_prefixlen, with_netmask, with_hostmask, __init__, is_global, _make_netmask, _ip_int_from_string, _parse_hextet, _compress_hextets, _string_from_ip_int, _explode_shorthand_ip_string, _reverse_pointer, max_prefixlen, version, __init__, packed, is_multicast, is_reserved, is_link_local, is_site_local, is_private, is_global, is_unspecified, is_loopback, ipv4_mapped, teredo, sixtofour, __init__, __str__, __eq__, __lt__, __hash__, ip, with_prefixlen, with_netmask, with_hostmask, is_unspecified, is_loopback, __init__, hosts, is_site_local, _compat_int_from_byte_vals
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pyparsing.py: _xml_escape, _Constants, ParseBaseException, ParseException, ParseFatalException, ParseSyntaxException, RecursiveGrammarException, _ParseResultsWithOffset, ParseResults, col, lineno, line, _defaultStartDebugAction, _defaultSuccessDebugAction, _defaultExceptionDebugAction, nullDebugAction, _trim_arity, ParserElement, Token, Empty, NoMatch, Literal, Keyword, CaselessLiteral, CaselessKeyword, CloseMatch, Word, Regex, QuotedString, CharsNotIn, White, _PositionToken, GoToColumn, LineStart, LineEnd, StringStart, StringEnd, WordStart, WordEnd, ParseExpression, And, Or, MatchFirst, Each, ParseElementEnhance, FollowedBy, NotAny, _MultipleMatch, OneOrMore, ZeroOrMore, _NullToken, Optional, SkipTo, Forward, _ForwardNoRecurse, TokenConverter, Combine, Group, Dict, Suppress, OnlyOnce, traceParseAction, delimitedList, countedArray, _flatten, matchPreviousLiteral, matchPreviousExpr, _escapeRegexRangeChars, oneOf, dictOf, originalTextFor, ungroup, locatedExpr, srange, matchOnlyAtCol, replaceWith, removeQuotes, tokenMap, _makeTags, makeHTMLTags, makeXMLTags, withAttribute, withClass, infixNotation, nestedExpr, indentedBlock, replaceHTMLEntity, pyparsing_common, _ustr, __init__, _from_exception, __getattr__, __str__, __repr__, markInputline, __dir__, __init__, __str__, __init__, __getitem__, __repr__, setOffset, __new__, __init__, __getitem__, __setitem__, __delitem__, __contains__, __len__, __bool__, __iter__, __reversed__, _iterkeys, _itervalues, _iteritems, haskeys, pop, get, insert, append, extend, clear, __getattr__, __add__, __iadd__, __radd__, __repr__, __str__, _asStringList, asList, asDict, copy, asXML, __lookup, getName, dump, pprint, __getstate__, __setstate__, __getnewargs__, __dir__, wrapper, setDefaultWhitespaceChars, inlineLiteralsUsing, __init__, copy, setName, setResultsName, setBreak, setParseAction, addParseAction, addCondition, setFailAction, _skipIgnorables, preParse, parseImpl, postParse, _parseNoCache, tryParse, canParseNext, _UnboundedCache, _parseCache, resetCache, enablePackrat, parseString, scanString, transformString, searchString, split, __add__, __radd__, __sub__, __rsub__, __mul__, __rmul__, __or__, __ror__, __xor__, __rxor__, __and__, __rand__, __invert__, __call__, suppress, leaveWhitespace, setWhitespaceChars, parseWithTabs, ignore, setDebugActions, setDebug, __str__, __repr__, streamline, checkRecursion, validate, parseFile, __eq__, __ne__, __hash__, __req__, __rne__, matches, runTests, __init__, __init__, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, copy, setDefaultKeywordChars, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __init__, preParse, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, __getitem__, append, leaveWhitespace, ignore, __str__, streamline, setResultsName, validate, copy, _ErrorStop, __init__, parseImpl, __iadd__, checkRecursion, __str__, __init__, parseImpl, __ixor__, __str__, checkRecursion, __init__, parseImpl, __ior__, __str__, checkRecursion, __init__, parseImpl, __str__, checkRecursion, __init__, parseImpl, leaveWhitespace, ignore, streamline, checkRecursion, validate, __str__, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __bool__, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __lshift__, __ilshift__, leaveWhitespace, streamline, validate, __str__, copy, __str__, __init__, __init__, ignore, postParse, __init__, postParse, __init__, postParse, postParse, suppress, __init__, __call__, reset, z, countFieldParseAction, copyTokenToRepeater, copyTokenToRepeater, verifyCol, pa, pa, checkPeerIndent, checkSubIndent, checkUnindent, convertToDate, convertToDatetime, stripHTMLTags, keys, values, items, toItem, extract_stack, extract_tb, __init__, _FifoCache, _FifoCache, __init__, mustMatchTheseTokens, extractText, cvt_fn, cvt_fn, breaker, pa, get, set, clear, cache_len, __init__, __init__, makeOptionalList, charsAsStr, get, set, clear, cache_len, get, set, clear, cache_len
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/retrying.py: retry, Retrying, Attempt, RetryError, __init__, stop_after_attempt, stop_after_delay, no_sleep, fixed_sleep, random_sleep, incrementing_sleep, exponential_sleep, never_reject, always_reject, should_reject, call, __init__, get, __repr__, __init__, __str__, wrap_simple, wrap, wrapped_f, wrapped_f
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/six.py: _add_doc, _import_module, _LazyDescr, MovedModule, _LazyModule, MovedAttribute, _SixMetaPathImporter, _MovedItems, Module_six_moves_urllib_parse, Module_six_moves_urllib_error, Module_six_moves_urllib_request, Module_six_moves_urllib_response, Module_six_moves_urllib_robotparser, Module_six_moves_urllib, add_move, remove_move, assertCountEqual, assertRaisesRegex, assertRegex, with_metaclass, add_metaclass, python_2_unicode_compatible, __init__, __get__, __init__, _resolve, __getattr__, __init__, __dir__, __init__, _resolve, __init__, _add_module, _get_module, find_module, __get_module, load_module, is_package, get_code, __dir__, get_unbound_function, create_unbound_method, get_unbound_function, create_bound_method, create_unbound_method, Iterator, iterkeys, itervalues, iteritems, iterlists, iterkeys, itervalues, iteritems, iterlists, b, u, b, u, byte2int, indexbytes, reraise, exec_, print_, print_, wraps, metaclass, wrapper, X, advance_iterator, callable, next, raise_from, write, wrapper, __new__, __prepare__, __len__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/__init__.py: vendored
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/adapter.py: CacheControlAdapter, __init__, send, build_response, close, _update_chunk_length
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/cache.py: BaseCache, DictCache, get, set, delete, close, __init__, get, set, delete
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/controller.py: parse_uri, CacheController, __init__, _urlnorm, cache_url, parse_cache_control, cached_request, conditional_headers, cache_response, update_cached_response
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/filewrapper.py: CallbackFileWrapper, __init__, __getattr__, __is_fp_closed, _close, read, _safe_read
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/heuristics.py: expire_after, datetime_to_header, BaseHeuristic, OneDayCache, ExpiresAfter, LastModified, warning, update_headers, apply, update_headers, __init__, update_headers, warning, update_headers, warning
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/serialize.py: _b64_decode_bytes, _b64_decode_str, Serializer, dumps, loads, prepare_response, _loads_v0, _loads_v1, _loads_v2, _loads_v3, _loads_v4
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/wrapper.py: CacheControl
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/_cmd.py: setup_logging, get_session, get_args, main
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches/file_cache.py: _secure_open_write, FileCache, url_to_file_path, __init__, encode, _fn, get, set, delete
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches/redis_cache.py: total_seconds, RedisCache, __init__, get, set, delete, clear, close
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/certifi/core.py: DeprecatedBundleWarning, where, old_where
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/big5prober.py: Big5Prober, __init__, charset_name, language
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/chardistribution.py: CharDistributionAnalysis, EUCTWDistributionAnalysis, EUCKRDistributionAnalysis, GB2312DistributionAnalysis, Big5DistributionAnalysis, SJISDistributionAnalysis, EUCJPDistributionAnalysis, __init__, reset, feed, get_confidence, got_enough_data, get_order, __init__, get_order, __init__, get_order, __init__, get_order, __init__, get_order, __init__, get_order, __init__, get_order
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/charsetgroupprober.py: CharSetGroupProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/charsetprober.py: CharSetProber, __init__, reset, charset_name, feed, state, get_confidence, filter_high_byte_only, filter_international_words, filter_with_english_letters
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/codingstatemachine.py: CodingStateMachine, __init__, reset, next_state, get_current_charlen, get_coding_state_machine, language
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/cp949prober.py: CP949Prober, __init__, charset_name, language
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/enums.py: InputState, LanguageFilter, ProbingState, MachineState, SequenceLikelihood, CharacterCategory, get_num_categories
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/escprober.py: EscCharSetProber, __init__, reset, charset_name, language, get_confidence, feed
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/eucjpprober.py: EUCJPProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/euckrprober.py: EUCKRProber, __init__, charset_name, language
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/euctwprober.py: EUCTWProber, __init__, charset_name, language
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/gb2312prober.py: GB2312Prober, __init__, charset_name, language
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/hebrewprober.py: HebrewProber, __init__, reset, set_model_probers, is_final, is_non_final, feed, charset_name, language, state
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/jpcntx.py: JapaneseContextAnalysis, SJISContextAnalysis, EUCJPContextAnalysis, __init__, reset, feed, got_enough_data, get_confidence, get_order, __init__, charset_name, get_order, get_order
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/latin1prober.py: Latin1Prober, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/mbcharsetprober.py: MultiByteCharSetProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/mbcsgroupprober.py: MBCSGroupProber, __init__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/sbcharsetprober.py: SingleByteCharSetProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/sbcsgroupprober.py: SBCSGroupProber, __init__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/sjisprober.py: SJISProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/universaldetector.py: UniversalDetector, __init__, reset, feed, close
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/utf8prober.py: UTF8Prober, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/__init__.py: detect
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/chardet/cli/chardetect.py: description_of, main
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/ansi.py: code_to_chars, set_title, clear_screen, clear_line, AnsiCodes, AnsiCursor, AnsiFore, AnsiBack, AnsiStyle, __init__, UP, DOWN, FORWARD, BACK, POS
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/ansitowin32.py: is_stream_closed, is_a_tty, StreamWrapper, AnsiToWin32, __init__, __getattr__, write, __init__, should_wrap, get_win32_calls, write, reset_all, write_and_convert, write_plain_text, convert_ansi, extract_params, call_win32, convert_osc
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/initialise.py: reset_all, init, deinit, colorama_text, reinit, wrap_stream
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/win32.py: CONSOLE_SCREEN_BUFFER_INFO, _winapi_test, winapi_test, GetConsoleScreenBufferInfo, SetConsoleTextAttribute, SetConsoleCursorPosition, FillConsoleOutputCharacter, FillConsoleOutputAttribute, SetConsoleTitle, __str__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/colorama/winterm.py: WinColor, WinStyle, WinTerm, __init__, get_attrs, set_attrs, reset_all, fore, back, style, set_console, get_position, set_cursor_position, cursor_adjust, erase_screen, erase_line, set_title
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/compat.py: quote, splituser, ZipExtFile, ZipFile, CertificateError, _dnsname_match, match_hostname, Container, which, __init__, __enter__, __exit__, __enter__, __exit__, open, python_implementation, callable, fsencode, fsdecode, _get_normal_name, detect_encoding, ChainMap, OrderedDict, valid_ident, ConvertingDict, pop, ConvertingList, ConvertingTuple, BaseConfigurator, __init__, _access_check, read_or_stop, find_cookie, __init__, __missing__, __getitem__, get, __len__, __iter__, __contains__, __bool__, __repr__, fromkeys, copy, new_child, parents, __setitem__, __delitem__, popitem, pop, clear, __init__, __setitem__, __delitem__, __iter__, __reversed__, clear, popitem, keys, values, items, iterkeys, itervalues, iteritems, update, pop, setdefault, __repr__, __reduce__, copy, fromkeys, __eq__, __ne__, viewkeys, viewvalues, viewitems, __getitem__, get, __getitem__, pop, __getitem__, __init__, resolve, ext_convert, cfg_convert, convert, configure_custom, as_tuple, _recursive_repr, cache_from_source, decorating_function, wrapper
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/database.py: _Cache, DistributionPath, Distribution, BaseInstalledDistribution, InstalledDistribution, EggInfoDistribution, DependencyGraph, make_graph, get_dependent_dists, get_required_dists, make_dist, __init__, clear, add, __init__, _get_cache_enabled, _set_cache_enabled, clear_cache, _yield_distributions, _generate_cache, distinfo_dirname, get_distributions, get_distribution, provides_distribution, get_file_path, get_exported_entries, __init__, source_url, name_and_version, provides, _get_requirements, run_requires, meta_requires, build_requires, test_requires, dev_requires, matches_requirement, __repr__, __eq__, __hash__, __init__, get_hash, __init__, __repr__, __str__, _get_records, exports, read_exports, write_exports, get_resource_path, list_installed_files, write_installed_files, check_installed_files, shared_locations, write_shared_locations, get_distinfo_resource, get_distinfo_file, list_distinfo_files, __eq__, __init__, _get_metadata, __repr__, __str__, check_installed_files, list_installed_files, list_distinfo_files, __eq__, __init__, add_distribution, add_edge, add_missing, _repr_dist, repr_node, to_dot, topological_sort, __repr__, set_name_and_version, parse_requires_data, parse_requires_path, _md5, _size
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/index.py: PackageIndex, __init__, _get_pypirc_command, read_configuration, save_configuration, check_credentials, register, _reader, get_sign_command, run_command, sign_file, upload_file, upload_documentation, get_verify_command, verify_signature, download_file, send_request, encode_request, search
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/locators.py: get_all_distribution_names, RedirectHandler, Locator, PyPIRPCLocator, PyPIJSONLocator, Page, SimpleScrapingLocator, DirectoryLocator, JSONLocator, DistPathLocator, AggregatingLocator, DependencyFinder, http_error_302, __init__, get_errors, clear_errors, clear_cache, _get_scheme, _set_scheme, _get_project, get_distribution_names, get_project, score_url, prefer_url, split_filename, convert_url_to_download_info, _get_digest, _update_version_data, locate, __init__, get_distribution_names, _get_project, __init__, get_distribution_names, _get_project, __init__, links, __init__, _prepare_threads, _wait_threads, _get_project, _is_platform_dependent, _process_download, _should_queue, _fetch, get_page, get_distribution_names, __init__, should_include, _get_project, get_distribution_names, get_distribution_names, _get_project, __init__, _get_project, __init__, clear_cache, _set_scheme, _get_project, get_distribution_names, __init__, add_distribution, remove_distribution, get_matcher, find_providers, try_to_replace, find, same_project, clean
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/manifest.py: Manifest, __init__, findall, add, add_many, sorted, clear, process_directive, _parse_directive, _include_pattern, _exclude_pattern, _translate_pattern, _glob_to_re, add_dir
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/markers.py: _is_literal, Evaluator, default_context, interpret, evaluate, format_full_version
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/metadata.py: MetadataMissingError, MetadataConflictError, MetadataUnrecognizedVersionError, MetadataInvalidError, _version2fieldlist, _best_version, _get_name_and_version, LegacyMetadata, Metadata, _has_marker, __init__, set_metadata_version, _write_field, __getitem__, __setitem__, __delitem__, __contains__, _convert_name, _default_value, _remove_line_prefix, __getattr__, get_fullname, is_field, is_multi_field, read, read_file, write, write_file, update, set, get, check, todict, add_requirements, keys, __iter__, values, items, __repr__, __init__, __getattribute__, _validate_value, __setattr__, name_and_version, provides, provides, get_requirements, dictionary, dependencies, dependencies, _validate_mapping, validate, todict, _from_legacy, _to_legacy, write, add_requirements, __repr__, _set, are_valid_constraints, process_entries
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/resources.py: ResourceCache, ResourceBase, Resource, ResourceContainer, ResourceFinder, ZipResourceFinder, register_finder, finder, finder_for_path, __init__, is_stale, get, __init__, as_stream, file_path, bytes, size, resources, __init__, _adjust_path, _make_path, _find, get_cache_info, find, get_stream, get_bytes, get_size, get_resources, is_container, iterator, __init__, _adjust_path, _find, get_cache_info, get_bytes, get_stream, get_size, get_resources, _is_directory, allowed
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/scripts.py: _enquote_executable, ScriptMaker, __init__, _get_alternate_executable, _build_shebang, _get_shebang, _get_script_text, get_manifest, _write_script, _make_script, _copy_script, dry_run, dry_run, make, make_multiple, _is_shell, _fix_jython_executable, _get_launcher
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/util.py: parse_marker, parse_requirement, get_resources_dests, in_venv, get_executable, proceed, extract_by_key, read_exports, write_exports, tempdir, chdir, socket_timeout, cached_property, convert_path, FileOperator, resolve, ExportEntry, get_export_entry, get_cache_base, path_to_cache_dir, ensure_slash, parse_credentials, get_process_umask, is_string_sequence, split_filename, parse_name_and_version, get_extras, _get_external_data, get_project_data, get_package_data, Cache, EventMixin, Sequencer, unarchive, zip_dir, Progress, iglob, _iglob, Transport, ServerProxy, _csv_open, CSVBase, CSVReader, CSVWriter, Configurator, SubprocessMixin, normalize_name, marker_var, marker_expr, marker_and, marker, get_rel_path, read_stream, __init__, __get__, __init__, _init_record, record_as_written, newer, copy_file, copy_stream, write_binary_file, write_text_file, set_mode, ensure_dir, byte_compile, ensure_removed, is_writable, commit, rollback, __init__, value, __repr__, __eq__, __init__, prefix_to_dir, clear, __init__, add, remove, get_subscribers, publish, __init__, add_node, remove_node, add, remove, is_step, get_steps, strong_connections, dot, check_path, __init__, update, increment, start, stop, maximum, percentage, format_duration, ETA, speed, HTTPSConnection, HTTPSHandler, HTTPSOnlyHandler, HTTP, __init__, make_connection, SafeTransport, __init__, __enter__, __exit__, __init__, __iter__, next, __init__, writerow, __init__, configure_custom, __getitem__, inc_convert, __init__, reader, run_command, strongconnect, connect, __init__, _conn_maker, https_open, http_open, __init__, HTTPS, __init__, make_connection, convert, get_versions, __init__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/version.py: UnsupportedVersionError, Version, Matcher, _pep_440_key, NormalizedVersion, _match_prefix, NormalizedMatcher, _suggest_semantic_version, _suggest_normalized_version, _legacy_key, LegacyVersion, LegacyMatcher, is_semver, _semantic_key, SemanticVersion, SemanticMatcher, VersionScheme, get_scheme, __init__, parse, _check_compatible, __eq__, __ne__, __lt__, __gt__, __le__, __ge__, __hash__, __repr__, __str__, is_prerelease, parse_requirement, __init__, match, exact_version, _check_compatible, __eq__, __ne__, __hash__, __repr__, __str__, parse, is_prerelease, _adjust_local, _match_lt, _match_gt, _match_le, _match_ge, _match_eq, _match_arbitrary, _match_ne, _match_compatible, get_parts, parse, is_prerelease, _match_compatible, make_tuple, parse, is_prerelease, __init__, is_valid_version, is_valid_matcher, is_valid_constraint_list, suggest
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/wheel.py: Mounter, Wheel, compatible_tags, is_compatible, _derive_abi, __init__, add, remove, find_module, load_module, __init__, filename, exists, tags, metadata, get_wheel_metadata, info, process_shebang, get_hash, write_record, write_records, build_zip, build, install, _get_dylib_cache, _get_extensions, is_compatible, is_mountable, mount, unmount, verify, update, get_version, update_version
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/__init__.py: DistlibException, NullHandler, handle, emit, createLock
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/misc.py: cache_from_source, callable, fsencode
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/shutil.py: Error, SpecialFileError, ExecError, ReadError, RegistryError, copyfileobj, _samefile, copyfile, copymode, copystat, copy, copy2, ignore_patterns, copytree, rmtree, _basename, move, _destinsrc, _get_gid, _get_uid, _make_tarball, _call_external_zip, _make_zipfile, get_archive_formats, register_archive_format, unregister_archive_format, make_archive, get_unpack_formats, _check_unpack_options, register_unpack_format, unregister_unpack_format, _ensure_directory, _unpack_zipfile, _unpack_tarfile, _find_unpack_format, unpack_archive, _ignore_patterns, _set_uid_gid, onerror, onerror
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/sysconfig.py: _safe_realpath, is_python_build, _ensure_cfg_read, _expand_globals, _subst_vars, _extend_dict, _expand_vars, format_value, _get_default_scheme, _getuserbase, _parse_makefile, get_makefile_filename, _init_posix, _init_non_posix, parse_config_h, get_config_h_filename, get_scheme_names, get_path_names, get_paths, get_path, get_config_vars, get_config_var, get_platform, get_python_version, _print_dict, _main, _replacer, _replacer, joinuser, _replacer
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/distlib/_backport/tarfile.py: stn, nts, nti, itn, calc_chksums, copyfileobj, filemode, TarError, ExtractError, ReadError, CompressionError, StreamError, HeaderError, EmptyHeaderError, TruncatedHeaderError, EOFHeaderError, InvalidHeaderError, SubsequentHeaderError, _LowLevelFile, _Stream, _StreamProxy, _BZ2Proxy, _FileInFile, ExFileObject, TarInfo, TarFile, TarIter, is_tarfile, __init__, close, read, write, __init__, __del__, _init_write_gz, write, __write, close, _init_read_gz, tell, seek, read, _read, __read, __init__, read, getcomptype, close, __init__, init, read, seek, tell, write, close, __init__, seekable, tell, seek, read, __init__, readable, writable, seekable, read, readline, readlines, tell, seek, close, __iter__, __init__, _getpath, _setpath, _getlinkpath, _setlinkpath, __repr__, get_info, tobuf, create_ustar_header, create_gnu_header, create_pax_header, create_pax_global_header, _posix_split_name, _create_header, _create_payload, _create_gnu_long_header, _create_pax_generic_header, frombuf, fromtarfile, _proc_member, _proc_builtin, _proc_gnulong, _proc_sparse, _proc_pax, _proc_gnusparse_00, _proc_gnusparse_01, _proc_gnusparse_10, _apply_pax_info, _decode_pax_field, _block, isreg, isfile, isdir, issym, islnk, ischr, isblk, isfifo, issparse, isdev, __init__, open, taropen, gzopen, bz2open, close, getmember, getmembers, getnames, gettarinfo, list, add, addfile, extractall, extract, extractfile, _extract_member, makedir, makefile, makeunknown, makefifo, makedev, makelink, chown, chmod, utime, next, _getmember, _load, _check, _find_link_target, __iter__, _dbg, __enter__, __exit__, __init__, __iter__, __next__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/constants.py: DataLossWarning, _ReparseException
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/html5parser.py: parse, parseFragment, method_decorator_metaclass, HTMLParser, getPhases, adjust_attributes, impliedTagToken, ParseError, Decorated, __init__, _parse, reset, documentEncoding, isHTMLIntegrationPoint, isMathMLTextIntegrationPoint, mainLoop, normalizedTokens, parse, parseFragment, parseError, normalizeToken, adjustMathMLAttributes, adjustSVGAttributes, adjustForeignAttributes, reparseTokenNormal, resetInsertionMode, parseRCDataRawtext, log, getMetaclass, Phase, InitialPhase, BeforeHtmlPhase, BeforeHeadPhase, InHeadPhase, InHeadNoscriptPhase, AfterHeadPhase, InBodyPhase, TextPhase, InTablePhase, InTableTextPhase, InCaptionPhase, InColumnGroupPhase, InTableBodyPhase, InRowPhase, InCellPhase, InSelectPhase, InSelectInTablePhase, InForeignContentPhase, AfterBodyPhase, InFramesetPhase, AfterFramesetPhase, AfterAfterBodyPhase, AfterAfterFramesetPhase, __new__, wrapped, __init__, processEOF, processComment, processDoctype, processCharacters, processSpaceCharacters, processStartTag, startTagHtml, processEndTag, processSpaceCharacters, processComment, processDoctype, anythingElse, processCharacters, processStartTag, processEndTag, processEOF, insertHtmlElement, processEOF, processComment, processSpaceCharacters, processCharacters, processStartTag, processEndTag, __init__, processEOF, processSpaceCharacters, processCharacters, startTagHtml, startTagHead, startTagOther, endTagImplyHead, endTagOther, __init__, processEOF, processCharacters, startTagHtml, startTagHead, startTagBaseLinkCommand, startTagMeta, startTagTitle, startTagNoFramesStyle, startTagNoscript, startTagScript, startTagOther, endTagHead, endTagHtmlBodyBr, endTagOther, anythingElse, __init__, processEOF, processComment, processCharacters, processSpaceCharacters, startTagHtml, startTagBaseLinkCommand, startTagHeadNoscript, startTagOther, endTagNoscript, endTagBr, endTagOther, anythingElse, __init__, processEOF, processCharacters, startTagHtml, startTagBody, startTagFrameset, startTagFromHead, startTagHead, startTagOther, endTagHtmlBodyBr, endTagOther, anythingElse, __init__, isMatchingFormattingElement, addFormattingElement, processEOF, processSpaceCharactersDropNewline, processCharacters, processSpaceCharactersNonPre, startTagProcessInHead, startTagBody, startTagFrameset, startTagCloseP, startTagPreListing, startTagForm, startTagListItem, startTagPlaintext, startTagHeading, startTagA, startTagFormatting, startTagNobr, startTagButton, startTagAppletMarqueeObject, startTagXmp, startTagTable, startTagVoidFormatting, startTagInput, startTagParamSource, startTagHr, startTagImage, startTagIsIndex, startTagTextarea, startTagIFrame, startTagNoscript, startTagRawtext, startTagOpt, startTagSelect, startTagRpRt, startTagMath, startTagSvg, startTagMisplaced, startTagOther, endTagP, endTagBody, endTagHtml, endTagBlock, endTagForm, endTagListItem, endTagHeading, endTagFormatting, endTagAppletMarqueeObject, endTagBr, endTagOther, __init__, processCharacters, processEOF, startTagOther, endTagScript, endTagOther, __init__, clearStackToTableContext, processEOF, processSpaceCharacters, processCharacters, insertText, startTagCaption, startTagColgroup, startTagCol, startTagRowGroup, startTagImplyTbody, startTagTable, startTagStyleScript, startTagInput, startTagForm, startTagOther, endTagTable, endTagIgnore, endTagOther, __init__, flushCharacters, processComment, processEOF, processCharacters, processSpaceCharacters, processStartTag, processEndTag, __init__, ignoreEndTagCaption, processEOF, processCharacters, startTagTableElement, startTagOther, endTagCaption, endTagTable, endTagIgnore, endTagOther, __init__, ignoreEndTagColgroup, processEOF, processCharacters, startTagCol, startTagOther, endTagColgroup, endTagCol, endTagOther, __init__, clearStackToTableBodyContext, processEOF, processSpaceCharacters, processCharacters, startTagTr, startTagTableCell, startTagTableOther, startTagOther, endTagTableRowGroup, endTagTable, endTagIgnore, endTagOther, __init__, clearStackToTableRowContext, ignoreEndTagTr, processEOF, processSpaceCharacters, processCharacters, startTagTableCell, startTagTableOther, startTagOther, endTagTr, endTagTable, endTagTableRowGroup, endTagIgnore, endTagOther, __init__, closeCell, processEOF, processCharacters, startTagTableOther, startTagOther, endTagTableCell, endTagIgnore, endTagImply, endTagOther, __init__, processEOF, processCharacters, startTagOption, startTagOptgroup, startTagSelect, startTagInput, startTagScript, startTagOther, endTagOption, endTagOptgroup, endTagSelect, endTagOther, __init__, processEOF, processCharacters, startTagTable, startTagOther, endTagTable, endTagOther, __init__, adjustSVGTagNames, processCharacters, processStartTag, processEndTag, __init__, processEOF, processComment, processCharacters, startTagHtml, startTagOther, endTagHtml, endTagOther, __init__, processEOF, processCharacters, startTagFrameset, startTagFrame, startTagNoframes, startTagOther, endTagFrameset, endTagOther, __init__, processEOF, processCharacters, startTagNoframes, startTagOther, endTagHtml, endTagOther, __init__, processEOF, processComment, processSpaceCharacters, processCharacters, startTagHtml, startTagOther, processEndTag, __init__, processEOF, processComment, processSpaceCharacters, processCharacters, startTagHtml, startTagNoFrames, startTagOther, processEndTag
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/serializer.py: htmlentityreplace_errors, serialize, HTMLSerializer, SerializeError, __init__, encode, encodeStrict, serialize, render, serializeError
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_ihatexml.py: charStringToList, normaliseCharList, missingRanges, listToRegexpStr, hexToInt, escapeRegexp, InfosetFilter, __init__, coerceAttribute, coerceElement, coerceComment, coerceCharacters, coercePubid, toXmlName, getReplacementCharacter, fromXmlName, escapeChar, unescapeChar
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_inputstream.py: BufferedStream, HTMLInputStream, HTMLUnicodeInputStream, HTMLBinaryInputStream, EncodingBytes, EncodingParser, ContentAttrParser, lookupEncoding, __init__, tell, seek, read, _bufferedBytes, _readStream, _readFromBuffer, __init__, reset, openStream, _position, position, char, readChunk, characterErrorsUCS4, characterErrorsUCS2, charsUntil, unget, __init__, reset, openStream, determineEncoding, changeEncoding, detectBOM, detectEncodingMeta, __new__, __init__, __iter__, __next__, next, previous, setPosition, getPosition, getCurrentByte, skip, skipUntil, matchBytes, jumpTo, __init__, getEncoding, handleComment, handleMeta, handlePossibleStartTag, handlePossibleEndTag, handlePossibleTag, handleOther, getAttribute, __init__, parse
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_tokenizer.py: HTMLTokenizer, __init__, __iter__, consumeNumberEntity, consumeEntity, processEntityInAttribute, emitCurrentToken, dataState, entityDataState, rcdataState, characterReferenceInRcdata, rawtextState, scriptDataState, plaintextState, tagOpenState, closeTagOpenState, tagNameState, rcdataLessThanSignState, rcdataEndTagOpenState, rcdataEndTagNameState, rawtextLessThanSignState, rawtextEndTagOpenState, rawtextEndTagNameState, scriptDataLessThanSignState, scriptDataEndTagOpenState, scriptDataEndTagNameState, scriptDataEscapeStartState, scriptDataEscapeStartDashState, scriptDataEscapedState, scriptDataEscapedDashState, scriptDataEscapedDashDashState, scriptDataEscapedLessThanSignState, scriptDataEscapedEndTagOpenState, scriptDataEscapedEndTagNameState, scriptDataDoubleEscapeStartState, scriptDataDoubleEscapedState, scriptDataDoubleEscapedDashState, scriptDataDoubleEscapedDashDashState, scriptDataDoubleEscapedLessThanSignState, scriptDataDoubleEscapeEndState, beforeAttributeNameState, attributeNameState, afterAttributeNameState, beforeAttributeValueState, attributeValueDoubleQuotedState, attributeValueSingleQuotedState, attributeValueUnQuotedState, afterAttributeValueState, selfClosingStartTagState, bogusCommentState, markupDeclarationOpenState, commentStartState, commentStartDashState, commentState, commentEndDashState, commentEndState, commentEndBangState, doctypeState, beforeDoctypeNameState, doctypeNameState, afterDoctypeNameState, afterDoctypePublicKeywordState, beforeDoctypePublicIdentifierState, doctypePublicIdentifierDoubleQuotedState, doctypePublicIdentifierSingleQuotedState, afterDoctypePublicIdentifierState, betweenDoctypePublicAndSystemIdentifiersState, afterDoctypeSystemKeywordState, beforeDoctypeSystemIdentifierState, doctypeSystemIdentifierDoubleQuotedState, doctypeSystemIdentifierSingleQuotedState, afterDoctypeSystemIdentifierState, bogusDoctypeState, cdataSectionState
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_utils.py: MethodDispatcher, isSurrogatePair, surrogatePairToCodepoint, moduleFactoryFactory, memoize, __init__, __getitem__, moduleFactory, wrapped
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/alphabeticalattributes.py: _attr_key, Filter, __iter__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/base.py: Filter, __init__, __iter__, __getattr__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/inject_meta_charset.py: Filter, __init__, __iter__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/lint.py: Filter, __init__, __iter__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/optionaltags.py: Filter, slider, __iter__, is_optional_start, is_optional_end
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/sanitizer.py: Filter, __init__, __iter__, sanitize_token, allowed_token, disallowed_token, sanitize_css
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/filters/whitespace.py: Filter, collapse_spaces, __iter__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treeadapters/genshi.py: to_genshi
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treeadapters/sax.py: to_sax
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/base.py: Node, ActiveFormattingElements, TreeBuilder, __init__, __str__, __repr__, appendChild, insertText, insertBefore, removeChild, reparentChildren, cloneNode, hasContent, append, nodesEqual, __init__, reset, elementInScope, reconstructActiveFormattingElements, clearActiveFormattingElements, elementInActiveFormattingElements, insertRoot, insertDoctype, insertComment, createElement, _getInsertFromTable, _setInsertFromTable, insertElementNormal, insertElementTable, insertText, getTableMisnestedNodePosition, generateImpliedEndTags, getDocument, getFragment, testSerializer
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/dom.py: getDomBuilder, AttrList, NodeBuilder, TreeBuilder, testSerializer, __init__, __iter__, __setitem__, __len__, items, values, __getitem__, __delitem__, __init__, appendChild, insertText, insertBefore, removeChild, reparentChildren, getAttributes, setAttributes, cloneNode, hasContent, getNameTuple, documentClass, insertDoctype, elementClass, commentClass, fragmentClass, appendChild, testSerializer, getDocument, getFragment, insertText, serializeElement
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/etree.py: getETreeBuilder, Element, Comment, DocumentType, Document, DocumentFragment, testSerializer, tostring, TreeBuilder, __init__, _getETreeTag, _setName, _getName, _setNamespace, _getNamespace, _getAttributes, _setAttributes, _getChildNodes, _setChildNodes, hasContent, appendChild, insertBefore, removeChild, insertText, cloneNode, reparentChildren, __init__, _getData, _setData, __init__, _getPublicId, _setPublicId, _getSystemId, _setSystemId, __init__, __init__, serializeElement, serializeElement, testSerializer, getDocument, getFragment
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/etree_lxml.py: DocumentType, Document, testSerializer, tostring, TreeBuilder, __init__, __init__, appendChild, _getChildNodes, serializeElement, serializeElement, __init__, reset, testSerializer, getDocument, getFragment, insertDoctype, insertCommentInitial, insertCommentMain, insertRoot, Attributes, Element, Comment, __init__, __setitem__, __init__, _setName, _getName, _getAttributes, _setAttributes, insertText, appendChild, __init__, _setData, _getData
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/__init__.py: getTreeBuilder
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/base.py: TreeWalker, NonRecursiveTreeWalker, __init__, __iter__, error, emptyTag, startTag, endTag, text, comment, doctype, entity, unknown, getNodeDetails, getFirstChild, getNextSibling, getParentNode, __iter__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/dom.py: TreeWalker, getNodeDetails, getFirstChild, getNextSibling, getParentNode
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/etree.py: getETreeBuilder, TreeWalker, getNodeDetails, getFirstChild, getNextSibling, getParentNode
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/etree_lxml.py: ensure_str, Root, Doctype, FragmentRoot, FragmentWrapper, TreeWalker, __init__, __getitem__, getnext, __len__, __init__, getnext, __init__, getnext, __init__, __getattr__, getnext, __getitem__, __bool__, getparent, __str__, __unicode__, __len__, __init__, getNodeDetails, getFirstChild, getNextSibling, getParentNode
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/genshi.py: TreeWalker, __iter__, tokens
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/__init__.py: getTreeWalker, concatenateCharacterTokens, pprint
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_trie/datrie.py: Trie, __init__, __contains__, __len__, __iter__, __getitem__, keys, has_keys_with_prefix, longest_prefix, longest_prefix_item
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_trie/py.py: Trie, __init__, __contains__, __len__, __iter__, __getitem__, keys, has_keys_with_prefix
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_trie/_base.py: Trie, keys, has_keys_with_prefix, longest_prefix, longest_prefix_item
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/codec.py: Codec, IncrementalEncoder, IncrementalDecoder, StreamWriter, StreamReader, getregentry, encode, decode, _buffer_encode, _buffer_decode
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/compat.py: ToASCII, ToUnicode, nameprep
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/core.py: IDNAError, IDNABidiError, InvalidCodepoint, InvalidCodepointContext, _combining_class, _is_script, _punycode, _unot, valid_label_length, valid_string_length, check_bidi, check_initial_combiner, check_hyphen_ok, check_nfc, valid_contextj, valid_contexto, check_label, alabel, ulabel, uts46_remap, encode, decode
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/intranges.py: intranges_from_list, _encode_range, _decode_range, intranges_contain
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/idna/uts46data.py: _seg_0, _seg_1, _seg_2, _seg_3, _seg_4, _seg_5, _seg_6, _seg_7, _seg_8, _seg_9, _seg_10, _seg_11, _seg_12, _seg_13, _seg_14, _seg_15, _seg_16, _seg_17, _seg_18, _seg_19, _seg_20, _seg_21, _seg_22, _seg_23, _seg_24, _seg_25, _seg_26, _seg_27, _seg_28, _seg_29, _seg_30, _seg_31, _seg_32, _seg_33, _seg_34, _seg_35, _seg_36, _seg_37, _seg_38, _seg_39, _seg_40, _seg_41, _seg_42, _seg_43, _seg_44, _seg_45, _seg_46, _seg_47, _seg_48, _seg_49, _seg_50, _seg_51, _seg_52, _seg_53, _seg_54, _seg_55, _seg_56, _seg_57, _seg_58, _seg_59, _seg_60, _seg_61, _seg_62, _seg_63, _seg_64, _seg_65, _seg_66, _seg_67, _seg_68, _seg_69, _seg_70, _seg_71, _seg_72
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/linklockfile.py: LinkLockFile, acquire, release, is_locked, i_am_locking, break_lock
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/mkdirlockfile.py: MkdirLockFile, __init__, acquire, release, is_locked, i_am_locking, break_lock
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/pidlockfile.py: PIDLockFile, read_pid_from_pidfile, write_pid_to_pidfile, remove_existing_pidfile, __init__, read_pid, is_locked, i_am_locking, acquire, release, break_lock
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/sqlitelockfile.py: SQLiteLockFile, __init__, acquire, release, _who_is_locking, is_locked, i_am_locking, break_lock
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/symlinklockfile.py: SymlinkLockFile, __init__, acquire, release, is_locked, i_am_locking, break_lock
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/lockfile/__init__.py: Error, LockError, LockTimeout, AlreadyLocked, LockFailed, UnlockError, NotLocked, NotMyLock, _SharedBase, LockBase, _fl_helper, LinkFileLock, MkdirFileLock, SQLiteFileLock, locked, __init__, acquire, release, __enter__, __exit__, __repr__, __init__, is_locked, i_am_locking, break_lock, __repr__, decor, wrapper
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/msgpack/exceptions.py: UnpackException, BufferFull, OutOfData, UnpackValueError, ExtraData, PackException, PackValueError, PackOverflowError, __init__, __str__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/msgpack/fallback.py: _check_type_strict, _get_data_from_buffer, unpack, unpackb, Unpacker, Packer, dict_iteritems, dict_iteritems, StringIO, __init__, feed, _consume, _got_extradata, _get_extradata, read_bytes, _read, _reserve, _read_header, _unpack, __iter__, __next__, skip, unpack, read_array_header, read_map_header, tell, __init__, _pack, pack, pack_map_pairs, pack_array_header, pack_map_header, pack_ext_type, _pack_array_header, _pack_map_header, _pack_map_pairs, _pack_raw_header, _pack_bin_header, bytes, reset, __init__, write, getvalue
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/msgpack/__init__.py: ExtType, pack, packb, unpack, __new__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/markers.py: InvalidMarker, UndefinedComparison, UndefinedEnvironmentName, Node, Variable, Value, Op, _coerce_parse_result, _format_marker, _eval_op, _get_env, _evaluate_markers, format_full_version, default_environment, Marker, __init__, __str__, __repr__, serialize, serialize, serialize, serialize, __init__, __str__, __repr__, evaluate
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/requirements.py: InvalidRequirement, Requirement, __init__, __str__, __repr__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/specifiers.py: InvalidSpecifier, BaseSpecifier, _IndividualSpecifier, LegacySpecifier, _require_version_compare, Specifier, _version_split, _pad_version, SpecifierSet, __str__, __hash__, __eq__, __ne__, prereleases, prereleases, contains, filter, __init__, __repr__, __str__, __hash__, __eq__, __ne__, _get_operator, _coerce_version, operator, version, prereleases, prereleases, __contains__, contains, filter, _coerce_version, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, wrapped, _compare_compatible, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, _compare_arbitrary, prereleases, prereleases, __init__, __repr__, __str__, __hash__, __and__, __eq__, __ne__, __len__, __iter__, prereleases, prereleases, __contains__, contains, filter
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/utils.py: canonicalize_name, canonicalize_version
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/version.py: parse, InvalidVersion, _BaseVersion, LegacyVersion, _parse_version_parts, _legacy_cmpkey, Version, _parse_letter_version, _parse_local_version, _cmpkey, __hash__, __lt__, __le__, __eq__, __ge__, __gt__, __ne__, _compare, __init__, __str__, __repr__, public, base_version, epoch, release, pre, post, dev, local, is_prerelease, is_postrelease, is_devrelease, __init__, __repr__, __str__, epoch, release, pre, post, dev, local, public, base_version, is_prerelease, is_postrelease, is_devrelease
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/_compat.py: with_metaclass, metaclass, __new__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/packaging/_structures.py: Infinity, NegativeInfinity, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pkg_resources/py31compat.py: _makedirs_31
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pkg_resources/__init__.py: PEP440Warning, parse_version, _declare_state, __getstate__, __setstate__, _sget_dict, _sset_dict, _sget_object, _sset_object, get_supported_platform, ResolutionError, VersionConflict, ContextualVersionConflict, DistributionNotFound, UnknownExtra, register_loader_type, get_provider, _macosx_vers, _macosx_arch, get_build_platform, compatible_platforms, run_script, get_distribution, load_entry_point, get_entry_map, get_entry_info, IMetadataProvider, IResourceProvider, WorkingSet, _ReqExtras, Environment, ExtractionError, ResourceManager, get_default_cache, safe_name, safe_version, safe_extra, to_filename, invalid_marker, evaluate_marker, NullProvider, EggProvider, DefaultProvider, EmptyProvider, ZipManifests, MemoizedZipManifests, ZipProvider, FileMetadata, PathMetadata, EggMetadata, register_finder, find_distributions, find_eggs_in_zip, find_nothing, _by_version_descending, find_on_path, dist_factory, NoDists, safe_listdir, distributions_from_metadata, non_empty_lines, resolve_egg_link, register_namespace_handler, _handle_ns, _rebuild_mod_path, declare_namespace, fixup_namespace_packages, file_ns_handler, null_ns_handler, normalize_path, _normalize_cached, _is_egg_path, _is_unpacked_egg, _set_parent_ns, yield_lines, EntryPoint, _remove_md5_fragment, _version_from_file, Distribution, EggInfoDistribution, DistInfoDistribution, issue_warning, RequirementParseError, parse_requirements, Requirement, _always_object, _find_adapter, ensure_directory, _bypass_ensure_directory, split_sections, _mkstemp, _call_aside, _initialize, _initialize_master_working_set, __repr__, dist, req, report, with_context, required_by, req, requirers, requirers_str, report, __str__, has_metadata, get_metadata, get_metadata_lines, metadata_isdir, metadata_listdir, run_script, get_resource_filename, get_resource_stream, get_resource_string, has_resource, resource_isdir, resource_listdir, __init__, _build_master, _build_from_requirements, add_entry, __contains__, find, iter_entry_points, run_script, __iter__, add, resolve, find_plugins, require, subscribe, _added_new, __getstate__, __setstate__, markers_pass, __init__, can_add, remove, scan, __getitem__, add, best_match, obtain, __iter__, __iadd__, __add__, __init__, resource_exists, resource_isdir, resource_filename, resource_stream, resource_string, resource_listdir, extraction_error, get_cache_path, _warn_unsafe_extraction_path, postprocess, set_extraction_path, cleanup_resources, __init__, get_resource_filename, get_resource_stream, get_resource_string, has_resource, has_metadata, get_metadata, get_metadata_lines, resource_isdir, metadata_isdir, resource_listdir, metadata_listdir, run_script, _has, _isdir, _listdir, _fn, _get, __init__, _setup_prefix, _has, _isdir, _listdir, get_resource_stream, _get, _register, _get, _listdir, __init__, build, load, __init__, _zipinfo_name, _parts, zipinfo, get_resource_filename, _get_date_and_size, _extract_resource, _is_current, _get_eager_resources, _index, _has, _isdir, _listdir, _eager_to_zip, _resource_to_zip, __init__, has_metadata, get_metadata, _warn_on_replacement, get_metadata_lines, __init__, __init__, _by_version, __bool__, __call__, safe_sys_path_index, position_in_sys_path, __init__, __str__, __repr__, load, resolve, require, parse, _parse_extras, parse_group, parse_map, is_version_line, __init__, from_location, _reload_version, hashcmp, __hash__, __lt__, __le__, __gt__, __ge__, __eq__, __ne__, key, parsed_version, _warn_legacy_version, version, _dep_map, _filter_extras, _build_dep_map, requires, _get_metadata, activate, egg_name, __repr__, __str__, __getattr__, from_filename, as_requirement, load_entry_point, get_entry_map, get_entry_info, insert_on, check_version_conflict, has_version, clone, extras, _reload_version, _parsed_pkg_info, _dep_map, _compute_dependencies, __str__, __init__, __eq__, __ne__, __contains__, __hash__, __repr__, parse, reqs_for_extra
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/bar.py: Bar, ChargingBar, FillingSquaresBar, FillingCirclesBar, IncrementalBar, PixelBar, ShadyBar, update, update
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/counter.py: Counter, Countdown, Stack, Pie, update, update, update
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/helpers.py: WriteMixin, WritelnMixin, SigIntMixin, __init__, write, finish, __init__, clearln, writeln, finish, __init__, _sigint_handler
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/spinner.py: Spinner, PieSpinner, MoonSpinner, LineSpinner, PixelSpinner, update
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/progress/__init__.py: Infinite, Progress, __init__, __getitem__, elapsed, elapsed_td, update_avg, update, start, finish, next, iter, __init__, eta, eta_td, percent, progress, remaining, start, goto, iter
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pytoml/core.py: TomlError, __init__, __str__, __repr__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pytoml/parser.py: load, loads, _Source, _p_ews, _p_ws, _p_basicstr_content, _p_key, _p_value, _p_stmt, _p_toml, _TimeZone, error, process_value, merge_tables, __init__, last, pos, fail, consume_dot, expect_dot, consume_eof, expect_eof, consume, expect, consume_re, expect_re, __enter__, __exit__, commit, _expect, _advance, __init__, utcoffset, dst, tzname
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/pytoml/writer.py: dumps, _escape_string, _escape_id, _format_list, _total_seconds, _format_value, dump, flush
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/adapters.py: BaseAdapter, HTTPAdapter, __init__, send, close, __init__, __getstate__, __setstate__, init_poolmanager, proxy_manager_for, cert_verify, build_response, get_connection, close, request_url, add_headers, proxy_headers, send, SOCKSProxyManager
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/api.py: request, get, options, head, post, put, patch, delete
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/auth.py: _basic_auth_str, AuthBase, HTTPBasicAuth, HTTPProxyAuth, HTTPDigestAuth, __call__, __init__, __eq__, __ne__, __call__, __call__, __init__, init_per_thread_state, build_digest_header, handle_redirect, handle_401, __call__, __eq__, __ne__, md5_utf8, sha_utf8
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/cookies.py: MockRequest, MockResponse, extract_cookies_to_jar, get_cookie_header, remove_cookie_by_name, CookieConflictError, RequestsCookieJar, _copy_cookie_jar, create_cookie, morsel_to_cookie, cookiejar_from_dict, merge_cookies, __init__, get_type, get_host, get_origin_req_host, get_full_url, is_unverifiable, has_header, get_header, add_header, add_unredirected_header, get_new_headers, unverifiable, origin_req_host, host, __init__, info, getheaders, get, set, iterkeys, keys, itervalues, values, iteritems, items, list_domains, list_paths, multiple_domains, get_dict, __contains__, __getitem__, __setitem__, __delitem__, set_cookie, update, _find, _find_no_duplicates, __getstate__, __setstate__, copy
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/exceptions.py: RequestException, HTTPError, ConnectionError, ProxyError, SSLError, Timeout, ConnectTimeout, ReadTimeout, URLRequired, TooManyRedirects, MissingSchema, InvalidSchema, InvalidURL, InvalidHeader, ChunkedEncodingError, ContentDecodingError, StreamConsumedError, RetryError, UnrewindableBodyError, RequestsWarning, FileModeWarning, RequestsDependencyWarning, __init__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/help.py: _implementation, info, main
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/hooks.py: default_hooks, dispatch_hook
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/models.py: RequestEncodingMixin, RequestHooksMixin, Request, PreparedRequest, Response, path_url, _encode_params, _encode_files, register_hook, deregister_hook, __init__, __repr__, prepare, __init__, prepare, __repr__, copy, prepare_method, _get_idna_encoded_host, prepare_url, prepare_headers, prepare_body, prepare_content_length, prepare_auth, prepare_cookies, prepare_hooks, __init__, __enter__, __exit__, __getstate__, __setstate__, __repr__, __bool__, __nonzero__, __iter__, ok, is_redirect, is_permanent_redirect, next, apparent_encoding, iter_content, iter_lines, content, text, json, links, raise_for_status, close, generate
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/sessions.py: merge_setting, merge_hooks, SessionRedirectMixin, Session, session, get_redirect_target, resolve_redirects, rebuild_auth, rebuild_proxies, rebuild_method, __init__, __enter__, __exit__, prepare_request, request, get, options, head, post, put, patch, delete, send, merge_environment_settings, get_adapter, close, mount, __getstate__, __setstate__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/structures.py: CaseInsensitiveDict, LookupDict, __init__, __setitem__, __getitem__, __delitem__, __iter__, __len__, lower_items, __eq__, copy, __repr__, __init__, __repr__, __getitem__, get
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/utils.py: dict_to_sequence, super_len, get_netrc_auth, guess_filename, from_key_val_list, to_key_val_list, parse_list_header, parse_dict_header, unquote_header_value, dict_from_cookiejar, add_dict_to_cookiejar, get_encodings_from_content, get_encoding_from_headers, stream_decode_response_unicode, iter_slices, get_unicode_from_response, unquote_unreserved, requote_uri, address_in_network, dotted_netmask, is_ipv4_address, is_valid_cidr, set_environ, should_bypass_proxies, get_environ_proxies, select_proxy, default_user_agent, default_headers, parse_header_links, guess_json_utf, prepend_scheme_if_needed, get_auth_from_url, check_header_validity, urldefragauth, rewind_body, proxy_bypass_registry, proxy_bypass
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/_internal_utils.py: to_native_string, unicode_is_ascii
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/__init__.py: check_compatibility, NullHandler, emit
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/connection.py: DummyConnection, HTTPConnection, HTTPSConnection, VerifiedHTTPSConnection, _match_hostname, __init__, _new_conn, _prepare_conn, connect, request_chunked, __init__, connect, set_cert, connect, BaseSSLError, ConnectionError
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/connectionpool.py: ConnectionPool, HTTPConnectionPool, HTTPSConnectionPool, connection_from_url, _ipv6_host, __init__, __str__, __enter__, __exit__, close, __init__, _new_conn, _get_conn, _put_conn, _validate_conn, _prepare_proxy, _get_timeout, _raise_timeout, _make_request, _absolute_url, close, is_same_host, urlopen, __init__, _prepare_conn, _prepare_proxy, _new_conn, _validate_conn, drain_and_release_conn
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/exceptions.py: HTTPError, HTTPWarning, PoolError, RequestError, SSLError, ProxyError, DecodeError, ProtocolError, MaxRetryError, HostChangedError, TimeoutStateError, TimeoutError, ReadTimeoutError, ConnectTimeoutError, NewConnectionError, EmptyPoolError, ClosedPoolError, LocationValueError, LocationParseError, ResponseError, SecurityWarning, SubjectAltNameWarning, InsecureRequestWarning, SystemTimeWarning, InsecurePlatformWarning, SNIMissingWarning, DependencyWarning, ResponseNotChunked, BodyNotHttplibCompatible, IncompleteRead, InvalidHeader, ProxySchemeUnknown, HeaderParsingError, UnrewindableBodyError, __init__, __reduce__, __init__, __reduce__, __init__, __init__, __init__, __init__, __repr__, __init__, __init__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/fields.py: guess_content_type, format_header_param, RequestField, __init__, from_tuples, _render_part, _render_parts, render_headers, make_multipart
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/filepost.py: choose_boundary, iter_field_objects, iter_fields, encode_multipart_formdata
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/poolmanager.py: _default_key_normalizer, PoolManager, ProxyManager, proxy_from_url, __init__, __enter__, __exit__, _new_pool, clear, connection_from_host, connection_from_context, connection_from_pool_key, connection_from_url, _merge_pool_kwargs, urlopen, __init__, connection_from_host, _set_proxy_headers, urlopen
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/request.py: RequestMethods, __init__, urlopen, request, request_encode_url, request_encode_body
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/response.py: DeflateDecoder, GzipDecoder, _get_decoder, HTTPResponse, __init__, __getattr__, decompress, __init__, __getattr__, decompress, __init__, get_redirect_location, release_conn, data, connection, tell, _init_length, _init_decoder, _decode, _flush_decoder, _error_catcher, read, stream, from_httplib, getheaders, getheader, info, close, closed, fileno, flush, readable, readinto, supports_chunked_reads, _update_chunk_length, _handle_chunk, read_chunked
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/_collections.py: RecentlyUsedContainer, HTTPHeaderDict, __init__, __getitem__, __setitem__, __delitem__, __len__, __iter__, clear, keys, __init__, __setitem__, __getitem__, __delitem__, __contains__, __eq__, __ne__, __len__, __iter__, pop, discard, add, extend, getlist, __repr__, _copy_from, copy, iteritems, itermerged, items, from_httplib, RLock, __enter__, __exit__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/__init__.py: add_stderr_logger, disable_warnings, NullHandler, emit
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/appengine.py: AppEnginePlatformWarning, AppEnginePlatformError, AppEngineManager, is_appengine, is_appengine_sandbox, is_local_appengine, is_prod_appengine, is_prod_appengine_mvms, __init__, __enter__, __exit__, urlopen, _urlfetch_response_to_http_response, _get_absolute_timeout, _get_retries
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/ntlmpool.py: NTLMConnectionPool, __init__, _new_conn, urlopen
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/pyopenssl.py: inject_into_urllib3, extract_from_urllib3, _validate_dependencies_met, _dnsname_to_stdlib, get_subj_alt_name, WrappedSocket, PyOpenSSLContext, _verify_callback, idna_encode, __init__, fileno, _decref_socketios, recv, recv_into, settimeout, _send_until_done, sendall, shutdown, close, getpeercert, _reuse, _drop, makefile, __init__, options, options, verify_mode, verify_mode, set_default_verify_paths, set_ciphers, load_verify_locations, load_cert_chain, wrap_socket
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/securetransport.py: inject_into_urllib3, extract_from_urllib3, _read_callback, _write_callback, WrappedSocket, SecureTransportContext, __init__, _raise_on_error, _set_ciphers, _custom_validate, handshake, fileno, _decref_socketios, recv, recv_into, settimeout, gettimeout, send, sendall, shutdown, close, getpeercert, _reuse, _drop, makefile, makefile, __init__, check_hostname, check_hostname, options, options, verify_mode, verify_mode, set_default_verify_paths, load_default_certs, set_ciphers, load_verify_locations, load_cert_chain, wrap_socket
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/socks.py: SOCKSConnection, SOCKSHTTPSConnection, SOCKSHTTPConnectionPool, SOCKSHTTPSConnectionPool, SOCKSProxyManager, __init__, _new_conn, __init__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/_securetransport/bindings.py: CFConst, SecurityConst
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/_securetransport/low_level.py: _cf_data_from_bytes, _cf_dictionary_from_tuples, _cf_string_to_unicode, _assert_no_error, _cert_array_from_pem, _is_cert, _is_identity, _temporary_keychain, _load_items_from_file, _load_client_cert_chain
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/ordered_dict.py: OrderedDict, __init__, __setitem__, __delitem__, __iter__, __reversed__, clear, popitem, keys, values, items, iterkeys, itervalues, iteritems, update, pop, setdefault, __repr__, __reduce__, copy, fromkeys, __eq__, __ne__, viewkeys, viewvalues, viewitems
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/six.py: _add_doc, _import_module, _LazyDescr, MovedModule, _LazyModule, MovedAttribute, _SixMetaPathImporter, _MovedItems, Module_six_moves_urllib_parse, Module_six_moves_urllib_error, Module_six_moves_urllib_request, Module_six_moves_urllib_response, Module_six_moves_urllib_robotparser, Module_six_moves_urllib, add_move, remove_move, assertCountEqual, assertRaisesRegex, assertRegex, with_metaclass, add_metaclass, python_2_unicode_compatible, __init__, __get__, __init__, _resolve, __getattr__, __init__, __dir__, __init__, _resolve, __init__, _add_module, _get_module, find_module, __get_module, load_module, is_package, get_code, __dir__, get_unbound_function, create_unbound_method, get_unbound_function, create_bound_method, create_unbound_method, Iterator, iterkeys, itervalues, iteritems, iterlists, iterkeys, itervalues, iteritems, iterlists, b, u, b, u, byte2int, indexbytes, reraise, exec_, print_, print_, wraps, metaclass, wrapper, X, advance_iterator, callable, next, raise_from, write, wrapper, __new__, __len__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/backports/makefile.py: backport_makefile
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py: CertificateError, _dnsname_match, _to_unicode, _ipaddress_match, match_hostname
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/connection.py: is_connection_dropped, create_connection, _set_socket_options, allowed_gai_family, _has_ipv6
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/request.py: make_headers, set_file_position, rewind_body
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/response.py: is_fp_closed, assert_header_parsing, is_response_to_head
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/retry.py: Retry, __init__, new, from_int, get_backoff_time, parse_retry_after, get_retry_after, sleep_for_retry, _sleep_backoff, sleep, _is_connection_error, _is_read_error, _is_method_retryable, is_retry, is_exhausted, increment, __repr__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/selectors.py: SelectorError, _fileobj_to_fd, _SelectorMapping, BaseSelector, _can_allocate, DefaultSelector, __init__, __repr__, __str__, _syscall_wrapper, _syscall_wrapper, __init__, __len__, __getitem__, __iter__, __init__, _fileobj_lookup, register, unregister, modify, select, close, get_key, get_map, _key_from_fd, __enter__, __exit__, SelectSelector, PollSelector, EpollSelector, KqueueSelector, __init__, register, unregister, _select, select, __init__, register, unregister, _wrap_poll, select, __init__, fileno, register, unregister, select, close, __init__, fileno, register, unregister, select, close
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/ssl_.py: _const_compare_digest_backport, assert_fingerprint, resolve_cert_reqs, resolve_ssl_version, create_urllib3_context, ssl_wrap_socket, SSLContext, __init__, load_cert_chain, load_verify_locations, set_ciphers, wrap_socket
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/timeout.py: Timeout, __init__, __str__, _validate_timeout, from_float, clone, start_connect, get_connect_duration, connect_timeout, read_timeout
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/url.py: Url, split_first, parse_url, get_host, __new__, hostname, request_uri, netloc, url, __str__
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/util/wait.py: _wait_for_io_events, wait_for_read, wait_for_write
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/mklabels.py: assert_lower, generate
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/tests.py: assert_raises, test_labels, test_all_labels, test_invalid_label, test_decode, test_encode, test_iter_decode, test_iter_encode, test_x_user_defined, iter_decode_to_string
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/x_user_defined.py: Codec, IncrementalEncoder, IncrementalDecoder, StreamWriter, StreamReader, encode, decode, encode, decode
-- venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/webencodings/__init__.py: ascii_lower, lookup, _get_encoding, Encoding, decode, _detect_bom, encode, iter_decode, _iter_decode_generator, iter_encode, _iter_encode_generator, IncrementalDecoder, IncrementalEncoder, __init__, __repr__, __init__, decode, __init__
-
-Repository: injDet (Python)
-GitHub URL: https://github.com/samik1986/injDet
-Extracted Functions by File:
-- venv/lib/python2.7/site.py: makepath, abs__file__, removeduppaths, addbuilddir, _init_pathinfo, addpackage, addsitedir, addsitepackages, check_enableusersite, addusersitepackages, setBEGINLIBPATH, setquit, _Printer, setcopyright, _Helper, sethelper, aliasmbcs, setencoding, execsitecustomize, virtual_install_main_packages, force_global_eggs_after_local_site_packages, virtual_addsitepackages, fixclasspath, execusercustomize, main, _script, joinuser, Quitter, __init__, __setup, __repr__, __call__, __repr__, __call__, __init__, __repr__, __call__, exists
-- venv/lib/python2.7/distutils/__init__.py: find_config_files, sysconfig_get_python_inc, sysconfig_get_python_lib, sysconfig_get_config_vars, build_ext, finalize_options
-- venv/lib/python2.7/site-packages/pip/_internal/build_env.py: _Prefix, BuildEnvironment, NoOpBuildEnvironment, __init__, __init__, __enter__, __exit__, cleanup, check_requirements, install_requirements, __init__, __enter__, __exit__, cleanup, install_requirements
-- venv/lib/python2.7/site-packages/pip/_internal/cache.py: Cache, SimpleWheelCache, EphemWheelCache, WheelCache, __init__, _get_cache_path_parts, _get_candidates, get_path_for_link, get, _link_for_candidate, cleanup, __init__, get_path_for_link, get, __init__, cleanup, __init__, get_path_for_link, get_ephem_path_for_link, get, cleanup
-- venv/lib/python2.7/site-packages/pip/_internal/configuration.py: _normalize_name, _disassemble_key, Configuration, __init__, load, get_file_to_edit, items, get_value, set_value, unset_value, save, _ensure_have_load_only, _dictionary, _load_config_files, _load_file, _construct_parser, _load_environment_vars, _normalized_keys, _get_environ_vars, _iter_config_files, _get_parser_to_modify, _mark_as_modified
-- venv/lib/python2.7/site-packages/pip/_internal/download.py: user_agent, MultiDomainBasicAuth, LocalFSAdapter, SafeFileCache, InsecureHTTPAdapter, PipSession, get_file_content, is_url, url_to_path, path_to_url, is_archive_file, unpack_vcs_link, _get_used_vcs_backend, is_vcs_url, is_file_url, is_dir_url, _progress_indicator, _download_url, _copy_file, unpack_http_url, unpack_file_url, _copy_dist_from_dir, PipXmlrpcTransport, unpack_url, _download_http_url, _check_download_dir, __init__, __call__, handle_401, warn_on_401, send, close, __init__, get, set, delete, cert_verify, __init__, request, resp_read, written_chunks, __init__, request
-- venv/lib/python2.7/site-packages/pip/_internal/exceptions.py: PipError, ConfigurationError, InstallationError, UninstallationError, DistributionNotFound, RequirementsFileParseError, BestVersionAlreadyInstalled, BadCommand, CommandError, PreviousBuildDirError, InvalidWheelFilename, UnsupportedWheel, HashErrors, HashError, VcsHashUnsupported, DirectoryUrlHashUnsupported, HashMissing, HashUnpinned, HashMismatch, UnsupportedPythonVersion, ConfigurationFileCouldNotBeLoaded, __init__, append, __str__, __nonzero__, __bool__, body, __str__, _requirement_name, __init__, body, __init__, body, _hash_comparison, __init__, __str__, hash_then_or
-- venv/lib/python2.7/site-packages/pip/_internal/index.py: _match_vcs_scheme, _is_url_like_archive, _NotHTML, _ensure_html_header, _NotHTTP, _ensure_html_response, _get_html_response, _handle_get_page_fail, _get_html_page, PackageFinder, _find_name_version_sep, _egg_info_matches, _determine_base_url, _get_encoding_from_headers, _clean_link, HTMLPage, __init__, __init__, get_formatted_locations, _sort_locations, _candidate_sort_key, _validate_secure_origin, _get_index_urls_locations, find_all_candidates, find_requirement, _get_pages, _sort_links, _package_versions, _log_skipped_link, _link_package_versions, __init__, __str__, iter_links, sort_path, mkurl_pypi_url
-- venv/lib/python2.7/site-packages/pip/_internal/locations.py: write_delete_marker_file, running_under_virtualenv, virtualenv_no_global, distutils_scheme
-- venv/lib/python2.7/site-packages/pip/_internal/pep425tags.py: get_config_var, get_abbr_impl, get_impl_ver, get_impl_version_info, get_impl_tag, get_flag, get_abi_tag, _is_running_32bit, get_platform, is_manylinux1_compatible, is_manylinux2010_compatible, get_darwin_arches, get_all_minor_versions_as_strings, get_supported, _supports_arch
-- venv/lib/python2.7/site-packages/pip/_internal/pyproject.py: _is_list_of_str, make_pyproject_path, load_pyproject_toml
-- venv/lib/python2.7/site-packages/pip/_internal/resolve.py: Resolver, __init__, resolve, _is_upgrade_allowed, _set_req_to_reinstall, _check_skip_installed, _get_abstract_dist_for, _resolve_one, get_installation_order, add_req, schedule
-- venv/lib/python2.7/site-packages/pip/_internal/wheel.py: normpath, rehash, open_for_csv, replace_python_tag, fix_script, root_is_purelib, get_entrypoints, message_about_scripts_not_on_PATH, sorted_outrows, get_csv_rows_for_installed, move_wheel_files, wheel_version, check_compatibility, Wheel, _contains_egg_info, should_use_ephemeral_cache, format_command, get_legacy_build_wheel_path, WheelBuilder, _split_ep, record_installed, clobber, is_entrypoint_wrapper, _get_script_text, __init__, support_index_min, supported, __init__, _build_one, _build_one_inside_env, _base_setup_args, _build_one_pep517, _build_one_legacy, _clean_one, build
-- venv/lib/python2.7/site-packages/pip/_internal/__init__.py: main
-- venv/lib/python2.7/site-packages/pip/_internal/cli/autocompletion.py: autocomplete, get_path_completion_type, auto_complete_paths
-- venv/lib/python2.7/site-packages/pip/_internal/cli/base_command.py: Command, RequirementCommand, __init__, run, _build_session, parse_args, main, populate_requirement_set, _build_package_finder
-- venv/lib/python2.7/site-packages/pip/_internal/cli/cmdoptions.py: raise_option_error, make_option_group, check_install_build_global, check_dist_restriction, exists_action, extra_index_url, find_links, trusted_host, constraints, requirements, editable, _get_format_control, _handle_no_binary, _handle_only_binary, no_binary, only_binary, prefer_binary, no_cache_dir_callback, no_use_pep517_callback, _merge_hash, getname
-- venv/lib/python2.7/site-packages/pip/_internal/cli/main_parser.py: create_main_parser, parse_command
-- venv/lib/python2.7/site-packages/pip/_internal/cli/parser.py: PrettyHelpFormatter, UpdatingDefaultsHelpFormatter, CustomOptionParser, ConfigOptionParser, invalid_config_error_message, __init__, format_option_strings, _format_option_strings, format_heading, format_usage, format_description, format_epilog, indent_lines, expand_default, insert_option_group, option_list_all, __init__, check_default, _get_ordered_configuration_items, _update_defaults, get_default_values, error
-- venv/lib/python2.7/site-packages/pip/_internal/commands/check.py: CheckCommand, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/completion.py: CompletionCommand, __init__, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/configuration.py: ConfigurationCommand, __init__, run, _determine_file, list_values, get_name, set_name_value, unset_name, open_in_editor, _get_n_args, _save_configuration, _determine_editor
-- venv/lib/python2.7/site-packages/pip/_internal/commands/download.py: DownloadCommand, __init__, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/freeze.py: FreezeCommand, __init__, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/hash.py: HashCommand, _hash_of_file, __init__, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/help.py: HelpCommand, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/install.py: InstallCommand, get_lib_location_guesses, create_env_error_message, __init__, run, _handle_target_dir, _warn_about_conflicts
-- venv/lib/python2.7/site-packages/pip/_internal/commands/list.py: ListCommand, tabulate, format_for_columns, format_for_json, __init__, _build_package_finder, run, get_outdated, get_uptodate, get_not_required, iter_packages_latest_infos, output_package_listing, output_package_listing_columns
-- venv/lib/python2.7/site-packages/pip/_internal/commands/search.py: SearchCommand, transform_hits, print_results, highest_version, __init__, run, search
-- venv/lib/python2.7/site-packages/pip/_internal/commands/show.py: ShowCommand, search_packages_info, print_results, __init__, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/uninstall.py: UninstallCommand, __init__, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/wheel.py: WheelCommand, __init__, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/__init__.py: get_summaries, get_similar_commands, _sort_commands, keyfn
-- venv/lib/python2.7/site-packages/pip/_internal/models/candidate.py: InstallationCandidate, __init__, __repr__
-- venv/lib/python2.7/site-packages/pip/_internal/models/format_control.py: FormatControl, __init__, __eq__, __ne__, __repr__, handle_mutual_excludes, get_allowed_formats, disallow_binaries
-- venv/lib/python2.7/site-packages/pip/_internal/models/index.py: PackageIndex, __init__, _url_for_path
-- venv/lib/python2.7/site-packages/pip/_internal/models/link.py: Link, __init__, __str__, __repr__, filename, scheme, netloc, path, splitext, ext, url_without_fragment, egg_fragment, subdirectory_fragment, hash, hash_name, show_url, is_wheel, is_artifact
-- venv/lib/python2.7/site-packages/pip/_internal/operations/check.py: create_package_set_from_installed, check_package_set, check_install_conflicts, _simulate_installation_of, _create_whitelist, should_ignore
-- venv/lib/python2.7/site-packages/pip/_internal/operations/freeze.py: freeze, get_requirement_info, FrozenRequirement, __init__, from_dist, __str__
-- venv/lib/python2.7/site-packages/pip/_internal/operations/prepare.py: make_abstract_dist, DistAbstraction, IsWheel, IsSDist, Installed, RequirementPreparer, __init__, dist, prep_for_dist, dist, prep_for_dist, dist, prep_for_dist, dist, prep_for_dist, __init__, _download_should_save, prepare_linked_requirement, prepare_editable_requirement, prepare_installed_requirement, _raise_conflicts
-- venv/lib/python2.7/site-packages/pip/_internal/req/constructors.py: _strip_extras, parse_editable, deduce_helpful_msg, install_req_from_editable, install_req_from_line, install_req_from_req_string
-- venv/lib/python2.7/site-packages/pip/_internal/req/req_file.py: parse_requirements, preprocess, process_line, break_args_options, build_parser, join_lines, ignore_comments, skip_regex, expand_env_variables, parser_exit
-- venv/lib/python2.7/site-packages/pip/_internal/req/req_install.py: InstallRequirement, __init__, __str__, __repr__, populate_link, name, specifier, is_pinned, installed_version, match_markers, has_hash_options, hashes, from_path, build_location, _correct_build_location, remove_temporary_source, check_if_exists, is_wheel, move_wheel_files, setup_py_dir, setup_py, pyproject_toml, load_pyproject_toml, prepare_metadata, prepare_pep517_metadata, run_egg_info, egg_info_path, metadata, get_dist, assert_source_matches_version, ensure_has_source_dir, install_editable, update_editable, uninstall, _clean_zip_name, _get_archive_name, archive, install, get_install_args, runner, prepend_root
-- venv/lib/python2.7/site-packages/pip/_internal/req/req_set.py: RequirementSet, __init__, __str__, __repr__, add_requirement, has_requirement, has_requirements, get_requirement, cleanup_files
-- venv/lib/python2.7/site-packages/pip/_internal/req/req_tracker.py: RequirementTracker, __init__, __enter__, __exit__, _entry_path, add, remove, cleanup, track
-- venv/lib/python2.7/site-packages/pip/_internal/req/req_uninstall.py: _script_names, _unique, uninstallation_paths, compact, compress_for_rename, compress_for_output_listing, StashedUninstallPathSet, UninstallPathSet, UninstallPthEntries, unique, norm_join, __init__, _get_directory_stash, _get_file_stash, stash, commit, rollback, can_rollback, __init__, _permitted, add, add_pth, remove, _allowed_to_proceed, rollback, commit, from_dist, __init__, add, remove, rollback, _display
-- venv/lib/python2.7/site-packages/pip/_internal/req/__init__.py: install_given_reqs
-- venv/lib/python2.7/site-packages/pip/_internal/utils/appdirs.py: user_cache_dir, user_data_dir, user_config_dir, site_config_dirs, _get_win_folder_from_registry, _get_win_folder_with_ctypes, _win_path_to_bytes
-- venv/lib/python2.7/site-packages/pip/_internal/utils/compat.py: console_to_str, get_path_uid, expanduser, samefile, backslashreplace_decode_fn, native_str, native_str, get_extension_suffixes, get_extension_suffixes, get_terminal_size, get_terminal_size, ioctl_GWINSZ
-- venv/lib/python2.7/site-packages/pip/_internal/utils/deprecation.py: PipDeprecationWarning, _showwarning, install_warning_logger, deprecated
-- venv/lib/python2.7/site-packages/pip/_internal/utils/encoding.py: auto_decode
-- venv/lib/python2.7/site-packages/pip/_internal/utils/filesystem.py: check_path_owner
-- venv/lib/python2.7/site-packages/pip/_internal/utils/glibc.py: glibc_version_string, check_glibc_version, have_compatible_glibc, libc_ver
-- venv/lib/python2.7/site-packages/pip/_internal/utils/hashes.py: Hashes, MissingHashes, __init__, check_against_chunks, _raise, check_against_file, check_against_path, __nonzero__, __bool__, __init__, _raise
-- venv/lib/python2.7/site-packages/pip/_internal/utils/logging.py: BrokenStdoutLoggingError, indent_log, get_indentation, IndentingFormatter, _color_wrap, ColorizedStreamHandler, BetterRotatingFileHandler, MaxLevelFilter, setup_logging, __init__, format, wrapped, __init__, _using_stdout, should_color, format, handleError, _open, __init__, filter, _is_broken_pipe_error, _is_broken_pipe_error, _is_broken_pipe_error, _is_broken_pipe_error
-- venv/lib/python2.7/site-packages/pip/_internal/utils/misc.py: ensure_dir, get_prog, rmtree, rmtree_errorhandler, display_path, backup_dir, ask_path_exists, ask, format_size, is_installable_dir, is_svn_page, file_contents, read_chunks, split_leading_dir, has_leading_dir, normalize_path, splitext, renames, is_local, dist_is_local, dist_in_usersite, dist_in_site_packages, dist_is_editable, get_installed_distributions, egg_link_path, dist_location, current_umask, unzip_file, untar_file, unpack_file, call_subprocess, read_text_file, _make_build_dir, FakeFile, StreamWrapper, captured_output, captured_stdout, captured_stderr, cached_property, get_installed_version, consume, enum, make_vcs_requirement_url, split_auth_from_netloc, redact_netloc, _transform_url, _get_netloc, remove_auth_from_url, redact_password_from_url, protect_pip_from_modification_on_windows, __init__, readline, __iter__, from_stream, encoding, __init__, __get__, local_test, editable_test, editable_test, editables_only_test, editables_only_test, user_test
-- venv/lib/python2.7/site-packages/pip/_internal/utils/models.py: KeyBasedCompareMixin, __init__, __hash__, __lt__, __le__, __gt__, __ge__, __eq__, __ne__, _compare
-- venv/lib/python2.7/site-packages/pip/_internal/utils/outdated.py: SelfCheckState, was_installed_by_pip, pip_version_check, __init__, save
-- venv/lib/python2.7/site-packages/pip/_internal/utils/packaging.py: check_requires_python, get_metadata, check_dist_requires_python, get_installer
-- venv/lib/python2.7/site-packages/pip/_internal/utils/temp_dir.py: TempDirectory, AdjacentTempDirectory, __init__, __repr__, __enter__, __exit__, create, cleanup, __init__, _generate_names, create
-- venv/lib/python2.7/site-packages/pip/_internal/utils/ui.py: _select_progress_class, InterruptibleMixin, SilentBar, BlueEmojiBar, DownloadProgressMixin, WindowsMixin, BaseDownloadProgressBar, DefaultDownloadProgressBar, DownloadSilentBar, DownloadIncrementalBar, DownloadChargingBar, DownloadShadyBar, DownloadFillingSquaresBar, DownloadFillingCirclesBar, DownloadBlueEmojiProgressBar, DownloadProgressSpinner, DownloadProgressProvider, hidden_cursor, RateLimiter, SpinnerInterface, InteractiveSpinner, NonInteractiveSpinner, open_spinner, __init__, finish, handle_sigint, update, __init__, downloaded, download_speed, pretty_eta, iter, __init__, next_phase, update, __init__, ready, reset, spin, finish, __init__, _write, spin, finish, __init__, _update, spin, finish
-- venv/lib/python2.7/site-packages/pip/_internal/vcs/bazaar.py: Bazaar, __init__, get_base_rev_args, export, fetch_new, switch, update, get_url_rev_and_auth, get_remote_url, get_revision, get_src_requirement, is_commit_id_equal
-- venv/lib/python2.7/site-packages/pip/_internal/vcs/git.py: looks_like_hash, Git, __init__, get_base_rev_args, get_git_version, get_current_branch, export, get_revision_sha, resolve_revision, is_commit_id_equal, fetch_new, switch, update, get_remote_url, get_revision, _get_subdirectory, get_src_requirement, get_url_rev_and_auth, update_submodules, controls_location
-- venv/lib/python2.7/site-packages/pip/_internal/vcs/mercurial.py: Mercurial, get_base_rev_args, export, fetch_new, switch, update, get_remote_url, get_revision, get_revision_hash, get_src_requirement, is_commit_id_equal
-- venv/lib/python2.7/site-packages/pip/_internal/vcs/subversion.py: Subversion, get_base_rev_args, export, fetch_new, switch, update, get_revision, get_netloc_and_auth, get_url_rev_and_auth, make_rev_args, get_remote_url, _get_svn_url_rev, get_src_requirement, is_commit_id_equal
-- venv/lib/python2.7/site-packages/pip/_internal/vcs/__init__.py: RemoteNotFoundError, RevOptions, VcsSupport, VersionControl, __init__, __repr__, arg_rev, to_args, to_display, make_new, __init__, __iter__, backends, dirnames, all_schemes, register, unregister, get_backend_type, get_backend, __init__, get_base_rev_args, make_rev_options, _is_local_repository, export, get_netloc_and_auth, get_url_rev_and_auth, make_rev_args, get_url_rev_options, normalize_url, compare_urls, fetch_new, switch, update, is_commit_id_equal, obtain, unpack, get_src_requirement, get_remote_url, get_revision, run_command, is_repository_directory, controls_location
-- venv/lib/python2.7/site-packages/pip/_vendor/appdirs.py: user_data_dir, site_data_dir, user_config_dir, site_config_dir, user_cache_dir, user_state_dir, user_log_dir, AppDirs, _get_win_folder_from_registry, _get_win_folder_with_pywin32, _get_win_folder_with_ctypes, _get_win_folder_with_jna, __init__, user_data_dir, site_data_dir, user_config_dir, site_config_dir, user_cache_dir, user_state_dir, user_log_dir
-- venv/lib/python2.7/site-packages/pip/_vendor/distro.py: linux_distribution, id, name, version, version_parts, major_version, minor_version, build_number, like, codename, info, os_release_info, lsb_release_info, distro_release_info, uname_info, os_release_attr, lsb_release_attr, distro_release_attr, uname_attr, cached_property, LinuxDistribution, main, __init__, __get__, __init__, __repr__, linux_distribution, id, name, version, version_parts, major_version, minor_version, build_number, like, codename, info, os_release_info, lsb_release_info, distro_release_info, uname_info, os_release_attr, lsb_release_attr, distro_release_attr, uname_attr, _os_release_info, _parse_os_release_content, _lsb_release_info, _parse_lsb_release_content, _uname_info, _parse_uname_content, _distro_release_info, _parse_distro_release_file, _parse_distro_release_content, normalize
-- venv/lib/python2.7/site-packages/pip/_vendor/ipaddress.py: _compat_to_bytes, _compat_range, _TotalOrderingMixin, AddressValueError, NetmaskValueError, ip_address, ip_network, ip_interface, v4_int_to_packed, v6_int_to_packed, _split_optional_netmask, _find_address_range, _count_righthand_zero_bits, summarize_address_range, _collapse_addresses_internal, collapse_addresses, get_mixed_type_key, _IPAddressBase, _BaseAddress, _BaseNetwork, _BaseV4, IPv4Address, IPv4Interface, IPv4Network, _IPv4Constants, _BaseV6, IPv6Address, IPv6Interface, IPv6Network, _IPv6Constants, _compat_bytes_to_byte_vals, _compat_bytes_to_byte_vals, _compat_bit_length, _compat_bit_length, __eq__, __ne__, __lt__, __le__, __gt__, __ge__, exploded, compressed, reverse_pointer, version, _check_int_address, _check_packed_address, _ip_int_from_prefix, _prefix_from_ip_int, _report_invalid_netmask, _prefix_from_prefix_string, _prefix_from_ip_string, __reduce__, __int__, __eq__, __lt__, __add__, __sub__, __repr__, __str__, __hash__, _get_address_key, __reduce__, __init__, __repr__, __str__, hosts, __iter__, __getitem__, __lt__, __eq__, __hash__, __contains__, overlaps, broadcast_address, hostmask, with_prefixlen, with_netmask, with_hostmask, num_addresses, _address_class, prefixlen, address_exclude, compare_networks, _get_networks_key, subnets, supernet, is_multicast, _is_subnet_of, subnet_of, supernet_of, is_reserved, is_link_local, is_private, is_global, is_unspecified, is_loopback, _explode_shorthand_ip_string, _make_netmask, _ip_int_from_string, _parse_octet, _string_from_ip_int, _is_hostmask, _reverse_pointer, max_prefixlen, version, __init__, packed, is_reserved, is_private, is_global, is_multicast, is_unspecified, is_loopback, is_link_local, __init__, __str__, __eq__, __lt__, __hash__, ip, with_prefixlen, with_netmask, with_hostmask, __init__, is_global, _make_netmask, _ip_int_from_string, _parse_hextet, _compress_hextets, _string_from_ip_int, _explode_shorthand_ip_string, _reverse_pointer, max_prefixlen, version, __init__, packed, is_multicast, is_reserved, is_link_local, is_site_local, is_private, is_global, is_unspecified, is_loopback, ipv4_mapped, teredo, sixtofour, __init__, __str__, __eq__, __lt__, __hash__, ip, with_prefixlen, with_netmask, with_hostmask, is_unspecified, is_loopback, __init__, hosts, is_site_local, _compat_int_from_byte_vals
-- venv/lib/python2.7/site-packages/pip/_vendor/pyparsing.py: _xml_escape, ParseBaseException, ParseException, ParseFatalException, ParseSyntaxException, RecursiveGrammarException, _ParseResultsWithOffset, ParseResults, col, lineno, line, _defaultStartDebugAction, _defaultSuccessDebugAction, _defaultExceptionDebugAction, nullDebugAction, _trim_arity, ParserElement, Token, Empty, NoMatch, Literal, Keyword, CaselessLiteral, CaselessKeyword, CloseMatch, Word, Char, Regex, QuotedString, CharsNotIn, White, _PositionToken, GoToColumn, LineStart, LineEnd, StringStart, StringEnd, WordStart, WordEnd, ParseExpression, And, Or, MatchFirst, Each, ParseElementEnhance, FollowedBy, PrecededBy, NotAny, _MultipleMatch, OneOrMore, ZeroOrMore, _NullToken, Optional, SkipTo, Forward, _ForwardNoRecurse, TokenConverter, Combine, Group, Dict, Suppress, OnlyOnce, traceParseAction, delimitedList, countedArray, _flatten, matchPreviousLiteral, matchPreviousExpr, _escapeRegexRangeChars, oneOf, dictOf, originalTextFor, ungroup, locatedExpr, srange, matchOnlyAtCol, replaceWith, removeQuotes, tokenMap, _makeTags, makeHTMLTags, makeXMLTags, withAttribute, withClass, infixNotation, nestedExpr, indentedBlock, replaceHTMLEntity, pyparsing_common, _lazyclassproperty, unicode_set, pyparsing_unicode, _ustr, __init__, _from_exception, __getattr__, __str__, __repr__, markInputline, __dir__, explain, __init__, __str__, __init__, __getitem__, __repr__, setOffset, __new__, __init__, __getitem__, __setitem__, __delitem__, __contains__, __len__, __bool__, __iter__, __reversed__, _iterkeys, _itervalues, _iteritems, haskeys, pop, get, insert, append, extend, clear, __getattr__, __add__, __iadd__, __radd__, __repr__, __str__, _asStringList, asList, asDict, copy, asXML, __lookup, getName, dump, pprint, __getstate__, __setstate__, __getnewargs__, __dir__, wrapper, setDefaultWhitespaceChars, inlineLiteralsUsing, __init__, copy, setName, setResultsName, setBreak, setParseAction, addParseAction, addCondition, setFailAction, _skipIgnorables, preParse, parseImpl, postParse, _parseNoCache, tryParse, canParseNext, _UnboundedCache, _parseCache, resetCache, enablePackrat, parseString, scanString, transformString, searchString, split, __add__, __radd__, __sub__, __rsub__, __mul__, __rmul__, __or__, __ror__, __xor__, __rxor__, __and__, __rand__, __invert__, __call__, suppress, leaveWhitespace, setWhitespaceChars, parseWithTabs, ignore, setDebugActions, setDebug, __str__, __repr__, streamline, checkRecursion, validate, parseFile, __eq__, __ne__, __hash__, __req__, __rne__, matches, runTests, __init__, __init__, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, copy, setDefaultKeywordChars, __init__, parseImpl, __init__, __init__, parseImpl, __init__, parseImpl, __str__, __init__, __init__, parseImpl, __str__, sub, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __init__, preParse, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, __getitem__, append, leaveWhitespace, ignore, __str__, streamline, setResultsName, validate, copy, _ErrorStop, __init__, streamline, parseImpl, __iadd__, checkRecursion, __str__, __init__, streamline, parseImpl, __ixor__, __str__, checkRecursion, __init__, streamline, parseImpl, __ior__, __str__, checkRecursion, __init__, streamline, parseImpl, __str__, checkRecursion, __init__, parseImpl, leaveWhitespace, ignore, streamline, checkRecursion, validate, __str__, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __bool__, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __lshift__, __ilshift__, leaveWhitespace, streamline, validate, __str__, copy, __str__, __init__, __init__, ignore, postParse, __init__, postParse, __init__, postParse, postParse, suppress, __init__, __call__, reset, z, countFieldParseAction, copyTokenToRepeater, copyTokenToRepeater, verifyCol, pa, pa, _FB, checkPeerIndent, checkSubIndent, checkUnindent, convertToDate, convertToDatetime, stripHTMLTags, __init__, __get__, _get_chars_for_ranges, printables, alphas, nums, alphanums, Latin1, LatinA, LatinB, Greek, Cyrillic, Chinese, Japanese, Korean, CJK, Thai, Arabic, Hebrew, Devanagari, SimpleNamespace, keys, values, items, toItem, extract_stack, extract_tb, __init__, _FifoCache, _FifoCache, __init__, mustMatchTheseTokens, extractText, parseImpl, cvt_fn, cvt_fn, Kanji, Hiragana, Katakana, breaker, pa, get, set, clear, cache_len, __init__, __init__, makeOptionalList, charsAsStr, pa, pa, get, set, clear, cache_len, get, set, clear, cache_len
-- venv/lib/python2.7/site-packages/pip/_vendor/retrying.py: retry, Retrying, Attempt, RetryError, __init__, stop_after_attempt, stop_after_delay, no_sleep, fixed_sleep, random_sleep, incrementing_sleep, exponential_sleep, never_reject, always_reject, should_reject, call, __init__, get, __repr__, __init__, __str__, wrap_simple, wrap, wrapped_f, wrapped_f
-- venv/lib/python2.7/site-packages/pip/_vendor/six.py: _add_doc, _import_module, _LazyDescr, MovedModule, _LazyModule, MovedAttribute, _SixMetaPathImporter, _MovedItems, Module_six_moves_urllib_parse, Module_six_moves_urllib_error, Module_six_moves_urllib_request, Module_six_moves_urllib_response, Module_six_moves_urllib_robotparser, Module_six_moves_urllib, add_move, remove_move, assertCountEqual, assertRaisesRegex, assertRegex, with_metaclass, add_metaclass, ensure_binary, ensure_str, ensure_text, python_2_unicode_compatible, __init__, __get__, __init__, _resolve, __getattr__, __init__, __dir__, __init__, _resolve, __init__, _add_module, _get_module, find_module, __get_module, load_module, is_package, get_code, __dir__, get_unbound_function, create_unbound_method, get_unbound_function, create_bound_method, create_unbound_method, Iterator, iterkeys, itervalues, iteritems, iterlists, iterkeys, itervalues, iteritems, iterlists, b, u, b, u, byte2int, indexbytes, reraise, exec_, print_, print_, wraps, metaclass, wrapper, X, advance_iterator, callable, next, raise_from, write, wrapper, __new__, __prepare__, __len__
-- venv/lib/python2.7/site-packages/pip/_vendor/__init__.py: vendored
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/adapter.py: CacheControlAdapter, __init__, send, build_response, close, _update_chunk_length
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/cache.py: BaseCache, DictCache, get, set, delete, close, __init__, get, set, delete
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/controller.py: parse_uri, CacheController, __init__, _urlnorm, cache_url, parse_cache_control, cached_request, conditional_headers, cache_response, update_cached_response
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/filewrapper.py: CallbackFileWrapper, __init__, __getattr__, __is_fp_closed, _close, read, _safe_read
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/heuristics.py: expire_after, datetime_to_header, BaseHeuristic, OneDayCache, ExpiresAfter, LastModified, warning, update_headers, apply, update_headers, __init__, update_headers, warning, update_headers, warning
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/serialize.py: _b64_decode_bytes, _b64_decode_str, Serializer, dumps, loads, prepare_response, _loads_v0, _loads_v1, _loads_v2, _loads_v3, _loads_v4
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/wrapper.py: CacheControl
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/_cmd.py: setup_logging, get_session, get_args, main
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py: _secure_open_write, FileCache, url_to_file_path, __init__, encode, _fn, get, set, delete
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py: RedisCache, __init__, get, set, delete, clear, close
-- venv/lib/python2.7/site-packages/pip/_vendor/certifi/core.py: where
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/big5prober.py: Big5Prober, __init__, charset_name, language
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/chardistribution.py: CharDistributionAnalysis, EUCTWDistributionAnalysis, EUCKRDistributionAnalysis, GB2312DistributionAnalysis, Big5DistributionAnalysis, SJISDistributionAnalysis, EUCJPDistributionAnalysis, __init__, reset, feed, get_confidence, got_enough_data, get_order, __init__, get_order, __init__, get_order, __init__, get_order, __init__, get_order, __init__, get_order, __init__, get_order
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/charsetgroupprober.py: CharSetGroupProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/charsetprober.py: CharSetProber, __init__, reset, charset_name, feed, state, get_confidence, filter_high_byte_only, filter_international_words, filter_with_english_letters
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/codingstatemachine.py: CodingStateMachine, __init__, reset, next_state, get_current_charlen, get_coding_state_machine, language
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/cp949prober.py: CP949Prober, __init__, charset_name, language
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/enums.py: InputState, LanguageFilter, ProbingState, MachineState, SequenceLikelihood, CharacterCategory, get_num_categories
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/escprober.py: EscCharSetProber, __init__, reset, charset_name, language, get_confidence, feed
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/eucjpprober.py: EUCJPProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/euckrprober.py: EUCKRProber, __init__, charset_name, language
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/euctwprober.py: EUCTWProber, __init__, charset_name, language
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/gb2312prober.py: GB2312Prober, __init__, charset_name, language
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/hebrewprober.py: HebrewProber, __init__, reset, set_model_probers, is_final, is_non_final, feed, charset_name, language, state
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/jpcntx.py: JapaneseContextAnalysis, SJISContextAnalysis, EUCJPContextAnalysis, __init__, reset, feed, got_enough_data, get_confidence, get_order, __init__, charset_name, get_order, get_order
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/latin1prober.py: Latin1Prober, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/mbcharsetprober.py: MultiByteCharSetProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/mbcsgroupprober.py: MBCSGroupProber, __init__
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/sbcharsetprober.py: SingleByteCharSetProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/sbcsgroupprober.py: SBCSGroupProber, __init__
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/sjisprober.py: SJISProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/universaldetector.py: UniversalDetector, __init__, reset, feed, close
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/utf8prober.py: UTF8Prober, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/__init__.py: detect
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/cli/chardetect.py: description_of, main
-- venv/lib/python2.7/site-packages/pip/_vendor/colorama/ansi.py: code_to_chars, set_title, clear_screen, clear_line, AnsiCodes, AnsiCursor, AnsiFore, AnsiBack, AnsiStyle, __init__, UP, DOWN, FORWARD, BACK, POS
-- venv/lib/python2.7/site-packages/pip/_vendor/colorama/ansitowin32.py: StreamWrapper, AnsiToWin32, __init__, __getattr__, __enter__, __exit__, write, isatty, closed, __init__, should_wrap, get_win32_calls, write, reset_all, write_and_convert, write_plain_text, convert_ansi, extract_params, call_win32, convert_osc
-- venv/lib/python2.7/site-packages/pip/_vendor/colorama/initialise.py: reset_all, init, deinit, colorama_text, reinit, wrap_stream
-- venv/lib/python2.7/site-packages/pip/_vendor/colorama/win32.py: CONSOLE_SCREEN_BUFFER_INFO, _winapi_test, winapi_test, GetConsoleScreenBufferInfo, SetConsoleTextAttribute, SetConsoleCursorPosition, FillConsoleOutputCharacter, FillConsoleOutputAttribute, SetConsoleTitle, __str__
-- venv/lib/python2.7/site-packages/pip/_vendor/colorama/winterm.py: WinColor, WinStyle, WinTerm, __init__, get_attrs, set_attrs, reset_all, fore, back, style, set_console, get_position, set_cursor_position, cursor_adjust, erase_screen, erase_line, set_title
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/compat.py: quote, splituser, ZipExtFile, ZipFile, CertificateError, _dnsname_match, match_hostname, Container, which, __init__, __enter__, __exit__, __enter__, __exit__, open, python_implementation, callable, fsencode, fsdecode, _get_normal_name, detect_encoding, ChainMap, OrderedDict, valid_ident, ConvertingDict, pop, ConvertingList, ConvertingTuple, BaseConfigurator, __init__, _access_check, read_or_stop, find_cookie, __init__, __missing__, __getitem__, get, __len__, __iter__, __contains__, __bool__, __repr__, fromkeys, copy, new_child, parents, __setitem__, __delitem__, popitem, pop, clear, __init__, __setitem__, __delitem__, __iter__, __reversed__, clear, popitem, keys, values, items, iterkeys, itervalues, iteritems, update, pop, setdefault, __repr__, __reduce__, copy, fromkeys, __eq__, __ne__, viewkeys, viewvalues, viewitems, __getitem__, get, __getitem__, pop, __getitem__, __init__, resolve, ext_convert, cfg_convert, convert, configure_custom, as_tuple, _recursive_repr, cache_from_source, decorating_function, wrapper
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/database.py: _Cache, DistributionPath, Distribution, BaseInstalledDistribution, InstalledDistribution, EggInfoDistribution, DependencyGraph, make_graph, get_dependent_dists, get_required_dists, make_dist, __init__, clear, add, __init__, _get_cache_enabled, _set_cache_enabled, clear_cache, _yield_distributions, _generate_cache, distinfo_dirname, get_distributions, get_distribution, provides_distribution, get_file_path, get_exported_entries, __init__, source_url, name_and_version, provides, _get_requirements, run_requires, meta_requires, build_requires, test_requires, dev_requires, matches_requirement, __repr__, __eq__, __hash__, __init__, get_hash, __init__, __repr__, __str__, _get_records, exports, read_exports, write_exports, get_resource_path, list_installed_files, write_installed_files, check_installed_files, shared_locations, write_shared_locations, get_distinfo_resource, get_distinfo_file, list_distinfo_files, __eq__, __init__, _get_metadata, __repr__, __str__, check_installed_files, list_installed_files, list_distinfo_files, __eq__, __init__, add_distribution, add_edge, add_missing, _repr_dist, repr_node, to_dot, topological_sort, __repr__, set_name_and_version, parse_requires_data, parse_requires_path, _md5, _size
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/index.py: PackageIndex, __init__, _get_pypirc_command, read_configuration, save_configuration, check_credentials, register, _reader, get_sign_command, run_command, sign_file, upload_file, upload_documentation, get_verify_command, verify_signature, download_file, send_request, encode_request, search
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/locators.py: get_all_distribution_names, RedirectHandler, Locator, PyPIRPCLocator, PyPIJSONLocator, Page, SimpleScrapingLocator, DirectoryLocator, JSONLocator, DistPathLocator, AggregatingLocator, DependencyFinder, http_error_302, __init__, get_errors, clear_errors, clear_cache, _get_scheme, _set_scheme, _get_project, get_distribution_names, get_project, score_url, prefer_url, split_filename, convert_url_to_download_info, _get_digest, _update_version_data, locate, __init__, get_distribution_names, _get_project, __init__, get_distribution_names, _get_project, __init__, links, __init__, _prepare_threads, _wait_threads, _get_project, _is_platform_dependent, _process_download, _should_queue, _fetch, get_page, get_distribution_names, __init__, should_include, _get_project, get_distribution_names, get_distribution_names, _get_project, __init__, _get_project, __init__, clear_cache, _set_scheme, _get_project, get_distribution_names, __init__, add_distribution, remove_distribution, get_matcher, find_providers, try_to_replace, find, same_project, clean
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/manifest.py: Manifest, __init__, findall, add, add_many, sorted, clear, process_directive, _parse_directive, _include_pattern, _exclude_pattern, _translate_pattern, _glob_to_re, add_dir
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/markers.py: _is_literal, Evaluator, default_context, interpret, evaluate, format_full_version
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/metadata.py: MetadataMissingError, MetadataConflictError, MetadataUnrecognizedVersionError, MetadataInvalidError, _version2fieldlist, _best_version, _get_name_and_version, LegacyMetadata, Metadata, _has_marker, __init__, set_metadata_version, _write_field, __getitem__, __setitem__, __delitem__, __contains__, _convert_name, _default_value, _remove_line_prefix, __getattr__, get_fullname, is_field, is_multi_field, read, read_file, write, write_file, update, set, get, check, todict, add_requirements, keys, __iter__, values, items, __repr__, __init__, __getattribute__, _validate_value, __setattr__, name_and_version, provides, provides, get_requirements, dictionary, dependencies, dependencies, _validate_mapping, validate, todict, _from_legacy, _to_legacy, write, add_requirements, __repr__, _set, are_valid_constraints, process_entries
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/resources.py: ResourceCache, ResourceBase, Resource, ResourceContainer, ResourceFinder, ZipResourceFinder, register_finder, finder, finder_for_path, __init__, is_stale, get, __init__, as_stream, file_path, bytes, size, resources, __init__, _adjust_path, _make_path, _find, get_cache_info, find, get_stream, get_bytes, get_size, get_resources, is_container, iterator, __init__, _adjust_path, _find, get_cache_info, get_bytes, get_stream, get_size, get_resources, _is_directory, allowed
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/scripts.py: _enquote_executable, ScriptMaker, __init__, _get_alternate_executable, _build_shebang, _get_shebang, _get_script_text, get_manifest, _write_script, _make_script, _copy_script, dry_run, dry_run, make, make_multiple, _is_shell, _fix_jython_executable, _get_launcher
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/util.py: parse_marker, parse_requirement, get_resources_dests, in_venv, get_executable, proceed, extract_by_key, read_exports, write_exports, tempdir, chdir, socket_timeout, cached_property, convert_path, FileOperator, resolve, ExportEntry, get_export_entry, get_cache_base, path_to_cache_dir, ensure_slash, parse_credentials, get_process_umask, is_string_sequence, split_filename, parse_name_and_version, get_extras, _get_external_data, get_project_data, get_package_data, Cache, EventMixin, Sequencer, unarchive, zip_dir, Progress, iglob, _iglob, Transport, ServerProxy, _csv_open, CSVBase, CSVReader, CSVWriter, Configurator, SubprocessMixin, normalize_name, marker_var, marker_expr, marker_and, marker, get_rel_path, read_stream, __init__, __get__, __init__, _init_record, record_as_written, newer, copy_file, copy_stream, write_binary_file, write_text_file, set_mode, ensure_dir, byte_compile, ensure_removed, is_writable, commit, rollback, __init__, value, __repr__, __eq__, __init__, prefix_to_dir, clear, __init__, add, remove, get_subscribers, publish, __init__, add_node, remove_node, add, remove, is_step, get_steps, strong_connections, dot, check_path, __init__, update, increment, start, stop, maximum, percentage, format_duration, ETA, speed, HTTPSConnection, HTTPSHandler, HTTPSOnlyHandler, HTTP, __init__, make_connection, SafeTransport, __init__, __enter__, __exit__, __init__, __iter__, next, __init__, writerow, __init__, configure_custom, __getitem__, inc_convert, __init__, reader, run_command, strongconnect, connect, __init__, _conn_maker, https_open, http_open, __init__, HTTPS, __init__, make_connection, convert, get_versions, __init__
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/version.py: UnsupportedVersionError, Version, Matcher, _pep_440_key, NormalizedVersion, _match_prefix, NormalizedMatcher, _suggest_semantic_version, _suggest_normalized_version, _legacy_key, LegacyVersion, LegacyMatcher, is_semver, _semantic_key, SemanticVersion, SemanticMatcher, VersionScheme, get_scheme, __init__, parse, _check_compatible, __eq__, __ne__, __lt__, __gt__, __le__, __ge__, __hash__, __repr__, __str__, is_prerelease, parse_requirement, __init__, match, exact_version, _check_compatible, __eq__, __ne__, __hash__, __repr__, __str__, parse, is_prerelease, _adjust_local, _match_lt, _match_gt, _match_le, _match_ge, _match_eq, _match_arbitrary, _match_ne, _match_compatible, get_parts, parse, is_prerelease, _match_compatible, make_tuple, parse, is_prerelease, __init__, is_valid_version, is_valid_matcher, is_valid_constraint_list, suggest
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/wheel.py: Mounter, Wheel, compatible_tags, is_compatible, _derive_abi, __init__, add, remove, find_module, load_module, __init__, filename, exists, tags, metadata, get_wheel_metadata, info, process_shebang, get_hash, write_record, write_records, build_zip, build, install, _get_dylib_cache, _get_extensions, is_compatible, is_mountable, mount, unmount, verify, update, get_version, update_version
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/__init__.py: DistlibException, NullHandler, handle, emit, createLock
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/misc.py: cache_from_source, callable, fsencode
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/shutil.py: Error, SpecialFileError, ExecError, ReadError, RegistryError, copyfileobj, _samefile, copyfile, copymode, copystat, copy, copy2, ignore_patterns, copytree, rmtree, _basename, move, _destinsrc, _get_gid, _get_uid, _make_tarball, _call_external_zip, _make_zipfile, get_archive_formats, register_archive_format, unregister_archive_format, make_archive, get_unpack_formats, _check_unpack_options, register_unpack_format, unregister_unpack_format, _ensure_directory, _unpack_zipfile, _unpack_tarfile, _find_unpack_format, unpack_archive, _ignore_patterns, _set_uid_gid, onerror, onerror
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/sysconfig.py: _safe_realpath, is_python_build, _ensure_cfg_read, _expand_globals, _subst_vars, _extend_dict, _expand_vars, format_value, _get_default_scheme, _getuserbase, _parse_makefile, get_makefile_filename, _init_posix, _init_non_posix, parse_config_h, get_config_h_filename, get_scheme_names, get_path_names, get_paths, get_path, get_config_vars, get_config_var, get_platform, get_python_version, _print_dict, _main, _replacer, _replacer, joinuser, _replacer
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/tarfile.py: stn, nts, nti, itn, calc_chksums, copyfileobj, filemode, TarError, ExtractError, ReadError, CompressionError, StreamError, HeaderError, EmptyHeaderError, TruncatedHeaderError, EOFHeaderError, InvalidHeaderError, SubsequentHeaderError, _LowLevelFile, _Stream, _StreamProxy, _BZ2Proxy, _FileInFile, ExFileObject, TarInfo, TarFile, TarIter, is_tarfile, __init__, close, read, write, __init__, __del__, _init_write_gz, write, __write, close, _init_read_gz, tell, seek, read, _read, __read, __init__, read, getcomptype, close, __init__, init, read, seek, tell, write, close, __init__, seekable, tell, seek, read, __init__, readable, writable, seekable, read, readline, readlines, tell, seek, close, __iter__, __init__, _getpath, _setpath, _getlinkpath, _setlinkpath, __repr__, get_info, tobuf, create_ustar_header, create_gnu_header, create_pax_header, create_pax_global_header, _posix_split_name, _create_header, _create_payload, _create_gnu_long_header, _create_pax_generic_header, frombuf, fromtarfile, _proc_member, _proc_builtin, _proc_gnulong, _proc_sparse, _proc_pax, _proc_gnusparse_00, _proc_gnusparse_01, _proc_gnusparse_10, _apply_pax_info, _decode_pax_field, _block, isreg, isfile, isdir, issym, islnk, ischr, isblk, isfifo, issparse, isdev, __init__, open, taropen, gzopen, bz2open, close, getmember, getmembers, getnames, gettarinfo, list, add, addfile, extractall, extract, extractfile, _extract_member, makedir, makefile, makeunknown, makefifo, makedev, makelink, chown, chmod, utime, next, _getmember, _load, _check, _find_link_target, __iter__, _dbg, __enter__, __exit__, __init__, __iter__, __next__
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py: DataLossWarning, _ReparseException
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/html5parser.py: parse, parseFragment, method_decorator_metaclass, HTMLParser, getPhases, adjust_attributes, impliedTagToken, ParseError, Decorated, __init__, _parse, reset, documentEncoding, isHTMLIntegrationPoint, isMathMLTextIntegrationPoint, mainLoop, normalizedTokens, parse, parseFragment, parseError, normalizeToken, adjustMathMLAttributes, adjustSVGAttributes, adjustForeignAttributes, reparseTokenNormal, resetInsertionMode, parseRCDataRawtext, log, getMetaclass, Phase, InitialPhase, BeforeHtmlPhase, BeforeHeadPhase, InHeadPhase, InHeadNoscriptPhase, AfterHeadPhase, InBodyPhase, TextPhase, InTablePhase, InTableTextPhase, InCaptionPhase, InColumnGroupPhase, InTableBodyPhase, InRowPhase, InCellPhase, InSelectPhase, InSelectInTablePhase, InForeignContentPhase, AfterBodyPhase, InFramesetPhase, AfterFramesetPhase, AfterAfterBodyPhase, AfterAfterFramesetPhase, __new__, wrapped, __init__, processEOF, processComment, processDoctype, processCharacters, processSpaceCharacters, processStartTag, startTagHtml, processEndTag, processSpaceCharacters, processComment, processDoctype, anythingElse, processCharacters, processStartTag, processEndTag, processEOF, insertHtmlElement, processEOF, processComment, processSpaceCharacters, processCharacters, processStartTag, processEndTag, __init__, processEOF, processSpaceCharacters, processCharacters, startTagHtml, startTagHead, startTagOther, endTagImplyHead, endTagOther, __init__, processEOF, processCharacters, startTagHtml, startTagHead, startTagBaseLinkCommand, startTagMeta, startTagTitle, startTagNoFramesStyle, startTagNoscript, startTagScript, startTagOther, endTagHead, endTagHtmlBodyBr, endTagOther, anythingElse, __init__, processEOF, processComment, processCharacters, processSpaceCharacters, startTagHtml, startTagBaseLinkCommand, startTagHeadNoscript, startTagOther, endTagNoscript, endTagBr, endTagOther, anythingElse, __init__, processEOF, processCharacters, startTagHtml, startTagBody, startTagFrameset, startTagFromHead, startTagHead, startTagOther, endTagHtmlBodyBr, endTagOther, anythingElse, __init__, isMatchingFormattingElement, addFormattingElement, processEOF, processSpaceCharactersDropNewline, processCharacters, processSpaceCharactersNonPre, startTagProcessInHead, startTagBody, startTagFrameset, startTagCloseP, startTagPreListing, startTagForm, startTagListItem, startTagPlaintext, startTagHeading, startTagA, startTagFormatting, startTagNobr, startTagButton, startTagAppletMarqueeObject, startTagXmp, startTagTable, startTagVoidFormatting, startTagInput, startTagParamSource, startTagHr, startTagImage, startTagIsIndex, startTagTextarea, startTagIFrame, startTagNoscript, startTagRawtext, startTagOpt, startTagSelect, startTagRpRt, startTagMath, startTagSvg, startTagMisplaced, startTagOther, endTagP, endTagBody, endTagHtml, endTagBlock, endTagForm, endTagListItem, endTagHeading, endTagFormatting, endTagAppletMarqueeObject, endTagBr, endTagOther, __init__, processCharacters, processEOF, startTagOther, endTagScript, endTagOther, __init__, clearStackToTableContext, processEOF, processSpaceCharacters, processCharacters, insertText, startTagCaption, startTagColgroup, startTagCol, startTagRowGroup, startTagImplyTbody, startTagTable, startTagStyleScript, startTagInput, startTagForm, startTagOther, endTagTable, endTagIgnore, endTagOther, __init__, flushCharacters, processComment, processEOF, processCharacters, processSpaceCharacters, processStartTag, processEndTag, __init__, ignoreEndTagCaption, processEOF, processCharacters, startTagTableElement, startTagOther, endTagCaption, endTagTable, endTagIgnore, endTagOther, __init__, ignoreEndTagColgroup, processEOF, processCharacters, startTagCol, startTagOther, endTagColgroup, endTagCol, endTagOther, __init__, clearStackToTableBodyContext, processEOF, processSpaceCharacters, processCharacters, startTagTr, startTagTableCell, startTagTableOther, startTagOther, endTagTableRowGroup, endTagTable, endTagIgnore, endTagOther, __init__, clearStackToTableRowContext, ignoreEndTagTr, processEOF, processSpaceCharacters, processCharacters, startTagTableCell, startTagTableOther, startTagOther, endTagTr, endTagTable, endTagTableRowGroup, endTagIgnore, endTagOther, __init__, closeCell, processEOF, processCharacters, startTagTableOther, startTagOther, endTagTableCell, endTagIgnore, endTagImply, endTagOther, __init__, processEOF, processCharacters, startTagOption, startTagOptgroup, startTagSelect, startTagInput, startTagScript, startTagOther, endTagOption, endTagOptgroup, endTagSelect, endTagOther, __init__, processEOF, processCharacters, startTagTable, startTagOther, endTagTable, endTagOther, __init__, adjustSVGTagNames, processCharacters, processStartTag, processEndTag, __init__, processEOF, processComment, processCharacters, startTagHtml, startTagOther, endTagHtml, endTagOther, __init__, processEOF, processCharacters, startTagFrameset, startTagFrame, startTagNoframes, startTagOther, endTagFrameset, endTagOther, __init__, processEOF, processCharacters, startTagNoframes, startTagOther, endTagHtml, endTagOther, __init__, processEOF, processComment, processSpaceCharacters, processCharacters, startTagHtml, startTagOther, processEndTag, __init__, processEOF, processComment, processSpaceCharacters, processCharacters, startTagHtml, startTagNoFrames, startTagOther, processEndTag
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/serializer.py: htmlentityreplace_errors, serialize, HTMLSerializer, SerializeError, __init__, encode, encodeStrict, serialize, render, serializeError
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_ihatexml.py: charStringToList, normaliseCharList, missingRanges, listToRegexpStr, hexToInt, escapeRegexp, InfosetFilter, __init__, coerceAttribute, coerceElement, coerceComment, coerceCharacters, coercePubid, toXmlName, getReplacementCharacter, fromXmlName, escapeChar, unescapeChar
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_inputstream.py: BufferedStream, HTMLInputStream, HTMLUnicodeInputStream, HTMLBinaryInputStream, EncodingBytes, EncodingParser, ContentAttrParser, lookupEncoding, __init__, tell, seek, read, _bufferedBytes, _readStream, _readFromBuffer, __init__, reset, openStream, _position, position, char, readChunk, characterErrorsUCS4, characterErrorsUCS2, charsUntil, unget, __init__, reset, openStream, determineEncoding, changeEncoding, detectBOM, detectEncodingMeta, __new__, __init__, __iter__, __next__, next, previous, setPosition, getPosition, getCurrentByte, skip, skipUntil, matchBytes, jumpTo, __init__, getEncoding, handleComment, handleMeta, handlePossibleStartTag, handlePossibleEndTag, handlePossibleTag, handleOther, getAttribute, __init__, parse
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_tokenizer.py: HTMLTokenizer, __init__, __iter__, consumeNumberEntity, consumeEntity, processEntityInAttribute, emitCurrentToken, dataState, entityDataState, rcdataState, characterReferenceInRcdata, rawtextState, scriptDataState, plaintextState, tagOpenState, closeTagOpenState, tagNameState, rcdataLessThanSignState, rcdataEndTagOpenState, rcdataEndTagNameState, rawtextLessThanSignState, rawtextEndTagOpenState, rawtextEndTagNameState, scriptDataLessThanSignState, scriptDataEndTagOpenState, scriptDataEndTagNameState, scriptDataEscapeStartState, scriptDataEscapeStartDashState, scriptDataEscapedState, scriptDataEscapedDashState, scriptDataEscapedDashDashState, scriptDataEscapedLessThanSignState, scriptDataEscapedEndTagOpenState, scriptDataEscapedEndTagNameState, scriptDataDoubleEscapeStartState, scriptDataDoubleEscapedState, scriptDataDoubleEscapedDashState, scriptDataDoubleEscapedDashDashState, scriptDataDoubleEscapedLessThanSignState, scriptDataDoubleEscapeEndState, beforeAttributeNameState, attributeNameState, afterAttributeNameState, beforeAttributeValueState, attributeValueDoubleQuotedState, attributeValueSingleQuotedState, attributeValueUnQuotedState, afterAttributeValueState, selfClosingStartTagState, bogusCommentState, markupDeclarationOpenState, commentStartState, commentStartDashState, commentState, commentEndDashState, commentEndState, commentEndBangState, doctypeState, beforeDoctypeNameState, doctypeNameState, afterDoctypeNameState, afterDoctypePublicKeywordState, beforeDoctypePublicIdentifierState, doctypePublicIdentifierDoubleQuotedState, doctypePublicIdentifierSingleQuotedState, afterDoctypePublicIdentifierState, betweenDoctypePublicAndSystemIdentifiersState, afterDoctypeSystemKeywordState, beforeDoctypeSystemIdentifierState, doctypeSystemIdentifierDoubleQuotedState, doctypeSystemIdentifierSingleQuotedState, afterDoctypeSystemIdentifierState, bogusDoctypeState, cdataSectionState
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_utils.py: MethodDispatcher, isSurrogatePair, surrogatePairToCodepoint, moduleFactoryFactory, memoize, __init__, __getitem__, moduleFactory, wrapped
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/alphabeticalattributes.py: _attr_key, Filter, __iter__
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/base.py: Filter, __init__, __iter__, __getattr__
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/inject_meta_charset.py: Filter, __init__, __iter__
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py: Filter, __init__, __iter__
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/optionaltags.py: Filter, slider, __iter__, is_optional_start, is_optional_end
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/sanitizer.py: Filter, __init__, __iter__, sanitize_token, allowed_token, disallowed_token, sanitize_css
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/whitespace.py: Filter, collapse_spaces, __iter__
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treeadapters/genshi.py: to_genshi
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treeadapters/sax.py: to_sax
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/base.py: Node, ActiveFormattingElements, TreeBuilder, __init__, __str__, __repr__, appendChild, insertText, insertBefore, removeChild, reparentChildren, cloneNode, hasContent, append, nodesEqual, __init__, reset, elementInScope, reconstructActiveFormattingElements, clearActiveFormattingElements, elementInActiveFormattingElements, insertRoot, insertDoctype, insertComment, createElement, _getInsertFromTable, _setInsertFromTable, insertElementNormal, insertElementTable, insertText, getTableMisnestedNodePosition, generateImpliedEndTags, getDocument, getFragment, testSerializer
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/dom.py: getDomBuilder, AttrList, NodeBuilder, TreeBuilder, testSerializer, __init__, __iter__, __setitem__, __len__, items, values, __getitem__, __delitem__, __init__, appendChild, insertText, insertBefore, removeChild, reparentChildren, getAttributes, setAttributes, cloneNode, hasContent, getNameTuple, documentClass, insertDoctype, elementClass, commentClass, fragmentClass, appendChild, testSerializer, getDocument, getFragment, insertText, serializeElement
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/etree.py: getETreeBuilder, Element, Comment, DocumentType, Document, DocumentFragment, testSerializer, tostring, TreeBuilder, __init__, _getETreeTag, _setName, _getName, _setNamespace, _getNamespace, _getAttributes, _setAttributes, _getChildNodes, _setChildNodes, hasContent, appendChild, insertBefore, removeChild, insertText, cloneNode, reparentChildren, __init__, _getData, _setData, __init__, _getPublicId, _setPublicId, _getSystemId, _setSystemId, __init__, __init__, serializeElement, serializeElement, testSerializer, getDocument, getFragment
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/etree_lxml.py: DocumentType, Document, testSerializer, tostring, TreeBuilder, __init__, __init__, appendChild, _getChildNodes, serializeElement, serializeElement, __init__, reset, testSerializer, getDocument, getFragment, insertDoctype, insertCommentInitial, insertCommentMain, insertRoot, Attributes, Element, Comment, __init__, __setitem__, __init__, _setName, _getName, _getAttributes, _setAttributes, insertText, appendChild, __init__, _setData, _getData
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/__init__.py: getTreeBuilder
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/base.py: TreeWalker, NonRecursiveTreeWalker, __init__, __iter__, error, emptyTag, startTag, endTag, text, comment, doctype, entity, unknown, getNodeDetails, getFirstChild, getNextSibling, getParentNode, __iter__
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/dom.py: TreeWalker, getNodeDetails, getFirstChild, getNextSibling, getParentNode
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/etree.py: getETreeBuilder, TreeWalker, getNodeDetails, getFirstChild, getNextSibling, getParentNode
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/etree_lxml.py: ensure_str, Root, Doctype, FragmentRoot, FragmentWrapper, TreeWalker, __init__, __getitem__, getnext, __len__, __init__, getnext, __init__, getnext, __init__, __getattr__, getnext, __getitem__, __bool__, getparent, __str__, __unicode__, __len__, __init__, getNodeDetails, getFirstChild, getNextSibling, getParentNode
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/genshi.py: TreeWalker, __iter__, tokens
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/__init__.py: getTreeWalker, concatenateCharacterTokens, pprint
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_trie/datrie.py: Trie, __init__, __contains__, __len__, __iter__, __getitem__, keys, has_keys_with_prefix, longest_prefix, longest_prefix_item
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_trie/py.py: Trie, __init__, __contains__, __len__, __iter__, __getitem__, keys, has_keys_with_prefix
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_trie/_base.py: Trie, keys, has_keys_with_prefix, longest_prefix, longest_prefix_item
-- venv/lib/python2.7/site-packages/pip/_vendor/idna/codec.py: Codec, IncrementalEncoder, IncrementalDecoder, StreamWriter, StreamReader, getregentry, encode, decode, _buffer_encode, _buffer_decode
-- venv/lib/python2.7/site-packages/pip/_vendor/idna/compat.py: ToASCII, ToUnicode, nameprep
-- venv/lib/python2.7/site-packages/pip/_vendor/idna/core.py: IDNAError, IDNABidiError, InvalidCodepoint, InvalidCodepointContext, _combining_class, _is_script, _punycode, _unot, valid_label_length, valid_string_length, check_bidi, check_initial_combiner, check_hyphen_ok, check_nfc, valid_contextj, valid_contexto, check_label, alabel, ulabel, uts46_remap, encode, decode
-- venv/lib/python2.7/site-packages/pip/_vendor/idna/intranges.py: intranges_from_list, _encode_range, _decode_range, intranges_contain
-- venv/lib/python2.7/site-packages/pip/_vendor/idna/uts46data.py: _seg_0, _seg_1, _seg_2, _seg_3, _seg_4, _seg_5, _seg_6, _seg_7, _seg_8, _seg_9, _seg_10, _seg_11, _seg_12, _seg_13, _seg_14, _seg_15, _seg_16, _seg_17, _seg_18, _seg_19, _seg_20, _seg_21, _seg_22, _seg_23, _seg_24, _seg_25, _seg_26, _seg_27, _seg_28, _seg_29, _seg_30, _seg_31, _seg_32, _seg_33, _seg_34, _seg_35, _seg_36, _seg_37, _seg_38, _seg_39, _seg_40, _seg_41, _seg_42, _seg_43, _seg_44, _seg_45, _seg_46, _seg_47, _seg_48, _seg_49, _seg_50, _seg_51, _seg_52, _seg_53, _seg_54, _seg_55, _seg_56, _seg_57, _seg_58, _seg_59, _seg_60, _seg_61, _seg_62, _seg_63, _seg_64, _seg_65, _seg_66, _seg_67, _seg_68, _seg_69, _seg_70, _seg_71, _seg_72, _seg_73, _seg_74, _seg_75, _seg_76, _seg_77, _seg_78
-- venv/lib/python2.7/site-packages/pip/_vendor/lockfile/linklockfile.py: LinkLockFile, acquire, release, is_locked, i_am_locking, break_lock
-- venv/lib/python2.7/site-packages/pip/_vendor/lockfile/mkdirlockfile.py: MkdirLockFile, __init__, acquire, release, is_locked, i_am_locking, break_lock
-- venv/lib/python2.7/site-packages/pip/_vendor/lockfile/pidlockfile.py: PIDLockFile, read_pid_from_pidfile, write_pid_to_pidfile, remove_existing_pidfile, __init__, read_pid, is_locked, i_am_locking, acquire, release, break_lock
-- venv/lib/python2.7/site-packages/pip/_vendor/lockfile/sqlitelockfile.py: SQLiteLockFile, __init__, acquire, release, _who_is_locking, is_locked, i_am_locking, break_lock
-- venv/lib/python2.7/site-packages/pip/_vendor/lockfile/symlinklockfile.py: SymlinkLockFile, __init__, acquire, release, is_locked, i_am_locking, break_lock
-- venv/lib/python2.7/site-packages/pip/_vendor/lockfile/__init__.py: Error, LockError, LockTimeout, AlreadyLocked, LockFailed, UnlockError, NotLocked, NotMyLock, _SharedBase, LockBase, _fl_helper, LinkFileLock, MkdirFileLock, SQLiteFileLock, locked, __init__, acquire, release, __enter__, __exit__, __repr__, __init__, is_locked, i_am_locking, break_lock, __repr__, decor, wrapper
-- venv/lib/python2.7/site-packages/pip/_vendor/msgpack/exceptions.py: UnpackException, BufferFull, OutOfData, UnpackValueError, ExtraData, PackException, PackValueError, PackOverflowError, __init__, __str__
-- venv/lib/python2.7/site-packages/pip/_vendor/msgpack/fallback.py: _check_type_strict, _get_data_from_buffer, unpack, unpackb, Unpacker, Packer, dict_iteritems, dict_iteritems, StringIO, __init__, feed, _consume, _got_extradata, _get_extradata, read_bytes, _read, _reserve, _read_header, _unpack, __iter__, __next__, skip, unpack, read_array_header, read_map_header, tell, __init__, _pack, pack, pack_map_pairs, pack_array_header, pack_map_header, pack_ext_type, _pack_array_header, _pack_map_header, _pack_map_pairs, _pack_raw_header, _pack_bin_header, bytes, reset, __init__, write, getvalue
-- venv/lib/python2.7/site-packages/pip/_vendor/msgpack/__init__.py: ExtType, pack, packb, unpack, __new__
-- venv/lib/python2.7/site-packages/pip/_vendor/packaging/markers.py: InvalidMarker, UndefinedComparison, UndefinedEnvironmentName, Node, Variable, Value, Op, _coerce_parse_result, _format_marker, _eval_op, _get_env, _evaluate_markers, format_full_version, default_environment, Marker, __init__, __str__, __repr__, serialize, serialize, serialize, serialize, __init__, __str__, __repr__, evaluate
-- venv/lib/python2.7/site-packages/pip/_vendor/packaging/requirements.py: InvalidRequirement, Requirement, __init__, __str__, __repr__
-- venv/lib/python2.7/site-packages/pip/_vendor/packaging/specifiers.py: InvalidSpecifier, BaseSpecifier, _IndividualSpecifier, LegacySpecifier, _require_version_compare, Specifier, _version_split, _pad_version, SpecifierSet, __str__, __hash__, __eq__, __ne__, prereleases, prereleases, contains, filter, __init__, __repr__, __str__, __hash__, __eq__, __ne__, _get_operator, _coerce_version, operator, version, prereleases, prereleases, __contains__, contains, filter, _coerce_version, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, wrapped, _compare_compatible, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, _compare_arbitrary, prereleases, prereleases, __init__, __repr__, __str__, __hash__, __and__, __eq__, __ne__, __len__, __iter__, prereleases, prereleases, __contains__, contains, filter
-- venv/lib/python2.7/site-packages/pip/_vendor/packaging/utils.py: canonicalize_name, canonicalize_version
-- venv/lib/python2.7/site-packages/pip/_vendor/packaging/version.py: parse, InvalidVersion, _BaseVersion, LegacyVersion, _parse_version_parts, _legacy_cmpkey, Version, _parse_letter_version, _parse_local_version, _cmpkey, __hash__, __lt__, __le__, __eq__, __ge__, __gt__, __ne__, _compare, __init__, __str__, __repr__, public, base_version, epoch, release, pre, post, dev, local, is_prerelease, is_postrelease, is_devrelease, __init__, __repr__, __str__, epoch, release, pre, post, dev, local, public, base_version, is_prerelease, is_postrelease, is_devrelease
-- venv/lib/python2.7/site-packages/pip/_vendor/packaging/_compat.py: with_metaclass, metaclass, __new__
-- venv/lib/python2.7/site-packages/pip/_vendor/packaging/_structures.py: Infinity, NegativeInfinity, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__
-- venv/lib/python2.7/site-packages/pip/_vendor/pep517/build.py: tempdir, _do_build, mkdir_p, build, main
-- venv/lib/python2.7/site-packages/pip/_vendor/pep517/check.py: check_build_sdist, check_build_wheel, check, main, ansi
-- venv/lib/python2.7/site-packages/pip/_vendor/pep517/colorlog.py: _stderr_supports_color, LogFormatter, enable_colourful_output, __init__, formatMessage
-- venv/lib/python2.7/site-packages/pip/_vendor/pep517/compat.py: write_json, read_json, write_json, read_json
-- venv/lib/python2.7/site-packages/pip/_vendor/pep517/envbuild.py: _load_pyproject, BuildEnvironment, build_wheel, build_sdist, __init__, __enter__, pip_install, __exit__
-- venv/lib/python2.7/site-packages/pip/_vendor/pep517/wrappers.py: tempdir, BackendUnavailable, UnsupportedOperation, default_subprocess_runner, Pep517HookCaller, __init__, subprocess_runner, get_requires_for_build_wheel, prepare_metadata_for_build_wheel, build_wheel, get_requires_for_build_sdist, build_sdist, _call_hook
-- venv/lib/python2.7/site-packages/pip/_vendor/pep517/_in_process.py: BackendUnavailable, _build_backend, get_requires_for_build_wheel, prepare_metadata_for_build_wheel, _dist_info_files, _get_wheel_metadata_from_wheel, _find_already_built_wheel, build_wheel, get_requires_for_build_sdist, _DummyException, GotUnsupportedOperation, build_sdist, main
-- venv/lib/python2.7/site-packages/pip/_vendor/pkg_resources/py31compat.py: _makedirs_31
-- venv/lib/python2.7/site-packages/pip/_vendor/pkg_resources/__init__.py: PEP440Warning, parse_version, _declare_state, __getstate__, __setstate__, _sget_dict, _sset_dict, _sget_object, _sset_object, get_supported_platform, ResolutionError, VersionConflict, ContextualVersionConflict, DistributionNotFound, UnknownExtra, register_loader_type, get_provider, _macosx_vers, _macosx_arch, get_build_platform, compatible_platforms, run_script, get_distribution, load_entry_point, get_entry_map, get_entry_info, IMetadataProvider, IResourceProvider, WorkingSet, _ReqExtras, Environment, ExtractionError, ResourceManager, get_default_cache, safe_name, safe_version, safe_extra, to_filename, invalid_marker, evaluate_marker, NullProvider, EggProvider, DefaultProvider, EmptyProvider, ZipManifests, MemoizedZipManifests, ZipProvider, FileMetadata, PathMetadata, EggMetadata, register_finder, find_distributions, find_eggs_in_zip, find_nothing, _by_version_descending, find_on_path, dist_factory, NoDists, safe_listdir, distributions_from_metadata, non_empty_lines, resolve_egg_link, register_namespace_handler, _handle_ns, _rebuild_mod_path, declare_namespace, fixup_namespace_packages, file_ns_handler, null_ns_handler, normalize_path, _cygwin_patch, _normalize_cached, _is_egg_path, _is_unpacked_egg, _set_parent_ns, yield_lines, EntryPoint, _remove_md5_fragment, _version_from_file, Distribution, EggInfoDistribution, DistInfoDistribution, issue_warning, RequirementParseError, parse_requirements, Requirement, _always_object, _find_adapter, ensure_directory, _bypass_ensure_directory, split_sections, _mkstemp, _call_aside, _initialize, _initialize_master_working_set, PkgResourcesDeprecationWarning, __repr__, dist, req, report, with_context, required_by, req, requirers, requirers_str, report, __str__, has_metadata, get_metadata, get_metadata_lines, metadata_isdir, metadata_listdir, run_script, get_resource_filename, get_resource_stream, get_resource_string, has_resource, resource_isdir, resource_listdir, __init__, _build_master, _build_from_requirements, add_entry, __contains__, find, iter_entry_points, run_script, __iter__, add, resolve, find_plugins, require, subscribe, _added_new, __getstate__, __setstate__, markers_pass, __init__, can_add, remove, scan, __getitem__, add, best_match, obtain, __iter__, __iadd__, __add__, __init__, resource_exists, resource_isdir, resource_filename, resource_stream, resource_string, resource_listdir, extraction_error, get_cache_path, _warn_unsafe_extraction_path, postprocess, set_extraction_path, cleanup_resources, __init__, get_resource_filename, get_resource_stream, get_resource_string, has_resource, has_metadata, get_metadata, get_metadata_lines, resource_isdir, metadata_isdir, resource_listdir, metadata_listdir, run_script, _has, _isdir, _listdir, _fn, _get, __init__, _setup_prefix, _has, _isdir, _listdir, get_resource_stream, _get, _register, _get, _listdir, __init__, build, load, __init__, _zipinfo_name, _parts, zipinfo, get_resource_filename, _get_date_and_size, _extract_resource, _is_current, _get_eager_resources, _index, _has, _isdir, _listdir, _eager_to_zip, _resource_to_zip, __init__, has_metadata, get_metadata, _warn_on_replacement, get_metadata_lines, __init__, __init__, _by_version, __bool__, __call__, safe_sys_path_index, position_in_sys_path, __init__, __str__, __repr__, load, resolve, require, parse, _parse_extras, parse_group, parse_map, is_version_line, __init__, from_location, _reload_version, hashcmp, __hash__, __lt__, __le__, __gt__, __ge__, __eq__, __ne__, key, parsed_version, _warn_legacy_version, version, _dep_map, _filter_extras, _build_dep_map, requires, _get_metadata, activate, egg_name, __repr__, __str__, __getattr__, __dir__, from_filename, as_requirement, load_entry_point, get_entry_map, get_entry_info, insert_on, check_version_conflict, has_version, clone, extras, _reload_version, _parsed_pkg_info, _dep_map, _compute_dependencies, __str__, __init__, __eq__, __ne__, __contains__, __hash__, __repr__, parse, reqs_for_extra
-- venv/lib/python2.7/site-packages/pip/_vendor/progress/bar.py: Bar, ChargingBar, FillingSquaresBar, FillingCirclesBar, IncrementalBar, PixelBar, ShadyBar, update, update
-- venv/lib/python2.7/site-packages/pip/_vendor/progress/counter.py: Counter, Countdown, Stack, Pie, update, update, update
-- venv/lib/python2.7/site-packages/pip/_vendor/progress/helpers.py: WriteMixin, WritelnMixin, SigIntMixin, __init__, write, finish, __init__, clearln, writeln, finish, __init__, _sigint_handler
-- venv/lib/python2.7/site-packages/pip/_vendor/progress/spinner.py: Spinner, PieSpinner, MoonSpinner, LineSpinner, PixelSpinner, update
-- venv/lib/python2.7/site-packages/pip/_vendor/progress/__init__.py: Infinite, Progress, __init__, __getitem__, elapsed, elapsed_td, update_avg, update, start, finish, next, iter, __init__, eta, eta_td, percent, progress, remaining, start, goto, iter
-- venv/lib/python2.7/site-packages/pip/_vendor/pytoml/core.py: TomlError, __init__, __str__, __repr__
-- venv/lib/python2.7/site-packages/pip/_vendor/pytoml/parser.py: load, loads, _Source, _p_ews, _p_ws, _p_basicstr_content, _p_key, _p_value, _p_stmt, _p_toml, error, process_value, merge_tables, __init__, last, pos, fail, consume_dot, expect_dot, consume_eof, expect_eof, consume, expect, consume_re, expect_re, __enter__, __exit__, commit, _expect, _advance
-- venv/lib/python2.7/site-packages/pip/_vendor/pytoml/test.py: translate_to_test
-- venv/lib/python2.7/site-packages/pip/_vendor/pytoml/utils.py: parse_rfc3339, parse_rfc3339_re, format_rfc3339, _TimeZone, __init__, utcoffset, dst, tzname
-- venv/lib/python2.7/site-packages/pip/_vendor/pytoml/writer.py: dumps, _escape_string, _escape_id, _format_value, dump, flush
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/adapters.py: BaseAdapter, HTTPAdapter, __init__, send, close, __init__, __getstate__, __setstate__, init_poolmanager, proxy_manager_for, cert_verify, build_response, get_connection, close, request_url, add_headers, proxy_headers, send, SOCKSProxyManager
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/api.py: request, get, options, head, post, put, patch, delete
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/auth.py: _basic_auth_str, AuthBase, HTTPBasicAuth, HTTPProxyAuth, HTTPDigestAuth, __call__, __init__, __eq__, __ne__, __call__, __call__, __init__, init_per_thread_state, build_digest_header, handle_redirect, handle_401, __call__, __eq__, __ne__, md5_utf8, sha_utf8, sha256_utf8, sha512_utf8
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/cookies.py: MockRequest, MockResponse, extract_cookies_to_jar, get_cookie_header, remove_cookie_by_name, CookieConflictError, RequestsCookieJar, _copy_cookie_jar, create_cookie, morsel_to_cookie, cookiejar_from_dict, merge_cookies, __init__, get_type, get_host, get_origin_req_host, get_full_url, is_unverifiable, has_header, get_header, add_header, add_unredirected_header, get_new_headers, unverifiable, origin_req_host, host, __init__, info, getheaders, get, set, iterkeys, keys, itervalues, values, iteritems, items, list_domains, list_paths, multiple_domains, get_dict, __contains__, __getitem__, __setitem__, __delitem__, set_cookie, update, _find, _find_no_duplicates, __getstate__, __setstate__, copy, get_policy
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/exceptions.py: RequestException, HTTPError, ConnectionError, ProxyError, SSLError, Timeout, ConnectTimeout, ReadTimeout, URLRequired, TooManyRedirects, MissingSchema, InvalidSchema, InvalidURL, InvalidHeader, InvalidProxyURL, ChunkedEncodingError, ContentDecodingError, StreamConsumedError, RetryError, UnrewindableBodyError, RequestsWarning, FileModeWarning, RequestsDependencyWarning, __init__
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/help.py: _implementation, info, main
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/hooks.py: default_hooks, dispatch_hook
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/models.py: RequestEncodingMixin, RequestHooksMixin, Request, PreparedRequest, Response, path_url, _encode_params, _encode_files, register_hook, deregister_hook, __init__, __repr__, prepare, __init__, prepare, __repr__, copy, prepare_method, _get_idna_encoded_host, prepare_url, prepare_headers, prepare_body, prepare_content_length, prepare_auth, prepare_cookies, prepare_hooks, __init__, __enter__, __exit__, __getstate__, __setstate__, __repr__, __bool__, __nonzero__, __iter__, ok, is_redirect, is_permanent_redirect, next, apparent_encoding, iter_content, iter_lines, content, text, json, links, raise_for_status, close, generate
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/sessions.py: merge_setting, merge_hooks, SessionRedirectMixin, Session, session, get_redirect_target, should_strip_auth, resolve_redirects, rebuild_auth, rebuild_proxies, rebuild_method, __init__, __enter__, __exit__, prepare_request, request, get, options, head, post, put, patch, delete, send, merge_environment_settings, get_adapter, close, mount, __getstate__, __setstate__
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/status_codes.py: _init, doc
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/structures.py: CaseInsensitiveDict, LookupDict, __init__, __setitem__, __getitem__, __delitem__, __iter__, __len__, lower_items, __eq__, copy, __repr__, __init__, __repr__, __getitem__, get
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/utils.py: dict_to_sequence, super_len, get_netrc_auth, guess_filename, extract_zipped_paths, from_key_val_list, to_key_val_list, parse_list_header, parse_dict_header, unquote_header_value, dict_from_cookiejar, add_dict_to_cookiejar, get_encodings_from_content, _parse_content_type_header, get_encoding_from_headers, stream_decode_response_unicode, iter_slices, get_unicode_from_response, unquote_unreserved, requote_uri, address_in_network, dotted_netmask, is_ipv4_address, is_valid_cidr, set_environ, should_bypass_proxies, get_environ_proxies, select_proxy, default_user_agent, default_headers, parse_header_links, guess_json_utf, prepend_scheme_if_needed, get_auth_from_url, check_header_validity, urldefragauth, rewind_body, proxy_bypass_registry, proxy_bypass
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/_internal_utils.py: to_native_string, unicode_is_ascii
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/__init__.py: check_compatibility, _check_cryptography
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/connection.py: DummyConnection, HTTPConnection, HTTPSConnection, VerifiedHTTPSConnection, _match_hostname, __init__, host, host, _new_conn, _prepare_conn, connect, request_chunked, __init__, connect, set_cert, connect, BaseSSLError, ConnectionError
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/connectionpool.py: ConnectionPool, HTTPConnectionPool, HTTPSConnectionPool, connection_from_url, _ipv6_host, __init__, __str__, __enter__, __exit__, close, __init__, _new_conn, _get_conn, _put_conn, _validate_conn, _prepare_proxy, _get_timeout, _raise_timeout, _make_request, _absolute_url, close, is_same_host, urlopen, __init__, _prepare_conn, _prepare_proxy, _new_conn, _validate_conn, drain_and_release_conn
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/exceptions.py: HTTPError, HTTPWarning, PoolError, RequestError, SSLError, ProxyError, DecodeError, ProtocolError, MaxRetryError, HostChangedError, TimeoutStateError, TimeoutError, ReadTimeoutError, ConnectTimeoutError, NewConnectionError, EmptyPoolError, ClosedPoolError, LocationValueError, LocationParseError, ResponseError, SecurityWarning, SubjectAltNameWarning, InsecureRequestWarning, SystemTimeWarning, InsecurePlatformWarning, SNIMissingWarning, DependencyWarning, ResponseNotChunked, BodyNotHttplibCompatible, IncompleteRead, InvalidHeader, ProxySchemeUnknown, HeaderParsingError, UnrewindableBodyError, __init__, __reduce__, __init__, __reduce__, __init__, __init__, __init__, __init__, __repr__, __init__, __init__
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/fields.py: guess_content_type, format_header_param, RequestField, __init__, from_tuples, _render_part, _render_parts, render_headers, make_multipart
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/filepost.py: choose_boundary, iter_field_objects, iter_fields, encode_multipart_formdata
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/poolmanager.py: _default_key_normalizer, PoolManager, ProxyManager, proxy_from_url, __init__, __enter__, __exit__, _new_pool, clear, connection_from_host, connection_from_context, connection_from_pool_key, connection_from_url, _merge_pool_kwargs, urlopen, __init__, connection_from_host, _set_proxy_headers, urlopen
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/request.py: RequestMethods, __init__, urlopen, request, request_encode_url, request_encode_body
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/response.py: DeflateDecoder, GzipDecoderState, GzipDecoder, MultiDecoder, _get_decoder, HTTPResponse, __init__, __getattr__, decompress, __init__, __getattr__, decompress, __init__, flush, decompress, __init__, get_redirect_location, release_conn, data, connection, isclosed, tell, _init_length, _init_decoder, _decode, _flush_decoder, _error_catcher, read, stream, from_httplib, getheaders, getheader, info, close, closed, fileno, flush, readable, readinto, supports_chunked_reads, _update_chunk_length, _handle_chunk, read_chunked, geturl
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/_collections.py: RecentlyUsedContainer, HTTPHeaderDict, __init__, __getitem__, __setitem__, __delitem__, __len__, __iter__, clear, keys, __init__, __setitem__, __getitem__, __delitem__, __contains__, __eq__, __ne__, __len__, __iter__, pop, discard, add, extend, getlist, __repr__, _copy_from, copy, iteritems, itermerged, items, from_httplib, RLock, __enter__, __exit__
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/__init__.py: add_stderr_logger, disable_warnings
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/appengine.py: AppEnginePlatformWarning, AppEnginePlatformError, AppEngineManager, __init__, __enter__, __exit__, urlopen, _urlfetch_response_to_http_response, _get_absolute_timeout, _get_retries
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/ntlmpool.py: NTLMConnectionPool, __init__, _new_conn, urlopen
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/pyopenssl.py: inject_into_urllib3, extract_from_urllib3, _validate_dependencies_met, _dnsname_to_stdlib, get_subj_alt_name, WrappedSocket, PyOpenSSLContext, _verify_callback, idna_encode, __init__, fileno, _decref_socketios, recv, recv_into, settimeout, _send_until_done, sendall, shutdown, close, getpeercert, _reuse, _drop, makefile, __init__, options, options, verify_mode, verify_mode, set_default_verify_paths, set_ciphers, load_verify_locations, load_cert_chain, wrap_socket, UnsupportedExtension
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/securetransport.py: inject_into_urllib3, extract_from_urllib3, _read_callback, _write_callback, WrappedSocket, SecureTransportContext, __init__, _raise_on_error, _set_ciphers, _custom_validate, handshake, fileno, _decref_socketios, recv, recv_into, settimeout, gettimeout, send, sendall, shutdown, close, getpeercert, _reuse, _drop, makefile, makefile, __init__, check_hostname, check_hostname, options, options, verify_mode, verify_mode, set_default_verify_paths, load_default_certs, set_ciphers, load_verify_locations, load_cert_chain, wrap_socket
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/socks.py: SOCKSConnection, SOCKSHTTPSConnection, SOCKSHTTPConnectionPool, SOCKSHTTPSConnectionPool, SOCKSProxyManager, __init__, _new_conn, __init__
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/_appengine_environ.py: is_appengine, is_appengine_sandbox, is_local_appengine, is_prod_appengine, is_prod_appengine_mvms
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py: CFConst, SecurityConst
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/_securetransport/low_level.py: _cf_data_from_bytes, _cf_dictionary_from_tuples, _cf_string_to_unicode, _assert_no_error, _cert_array_from_pem, _is_cert, _is_identity, _temporary_keychain, _load_items_from_file, _load_client_cert_chain
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/packages/six.py: _add_doc, _import_module, _LazyDescr, MovedModule, _LazyModule, MovedAttribute, _SixMetaPathImporter, _MovedItems, Module_six_moves_urllib_parse, Module_six_moves_urllib_error, Module_six_moves_urllib_request, Module_six_moves_urllib_response, Module_six_moves_urllib_robotparser, Module_six_moves_urllib, add_move, remove_move, assertCountEqual, assertRaisesRegex, assertRegex, with_metaclass, add_metaclass, python_2_unicode_compatible, __init__, __get__, __init__, _resolve, __getattr__, __init__, __dir__, __init__, _resolve, __init__, _add_module, _get_module, find_module, __get_module, load_module, is_package, get_code, __dir__, get_unbound_function, create_unbound_method, get_unbound_function, create_bound_method, create_unbound_method, Iterator, iterkeys, itervalues, iteritems, iterlists, iterkeys, itervalues, iteritems, iterlists, b, u, b, u, byte2int, indexbytes, reraise, exec_, print_, print_, wraps, metaclass, wrapper, X, advance_iterator, callable, next, raise_from, write, wrapper, __new__, __len__
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/packages/backports/makefile.py: backport_makefile
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py: CertificateError, _dnsname_match, _to_unicode, _ipaddress_match, match_hostname
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/connection.py: is_connection_dropped, create_connection, _set_socket_options, allowed_gai_family, _has_ipv6
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/queue.py: LifoQueue, _init, _qsize, _put, _get
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/request.py: make_headers, set_file_position, rewind_body
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/response.py: is_fp_closed, assert_header_parsing, is_response_to_head
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/retry.py: Retry, __init__, new, from_int, get_backoff_time, parse_retry_after, get_retry_after, sleep_for_retry, _sleep_backoff, sleep, _is_connection_error, _is_read_error, _is_method_retryable, is_retry, is_exhausted, increment, __repr__
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/ssl_.py: _const_compare_digest_backport, assert_fingerprint, resolve_cert_reqs, resolve_ssl_version, create_urllib3_context, ssl_wrap_socket, is_ipaddress, inet_pton, SSLContext, inet_pton, __init__, load_cert_chain, load_verify_locations, set_ciphers, wrap_socket
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/timeout.py: Timeout, __init__, __str__, _validate_timeout, from_float, clone, start_connect, get_connect_duration, connect_timeout, read_timeout
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/url.py: Url, split_first, parse_url, get_host, __new__, hostname, request_uri, netloc, url, __str__
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/wait.py: NoWayToWaitForSocketError, select_wait_for_socket, poll_wait_for_socket, null_wait_for_socket, _have_working_poll, wait_for_socket, wait_for_read, wait_for_write, _retry_on_intr, _retry_on_intr, do_poll
-- venv/lib/python2.7/site-packages/pip/_vendor/webencodings/mklabels.py: assert_lower, generate
-- venv/lib/python2.7/site-packages/pip/_vendor/webencodings/tests.py: assert_raises, test_labels, test_all_labels, test_invalid_label, test_decode, test_encode, test_iter_decode, test_iter_encode, test_x_user_defined, iter_decode_to_string
-- venv/lib/python2.7/site-packages/pip/_vendor/webencodings/x_user_defined.py: Codec, IncrementalEncoder, IncrementalDecoder, StreamWriter, StreamReader, encode, decode, encode, decode
-- venv/lib/python2.7/site-packages/pip/_vendor/webencodings/__init__.py: ascii_lower, lookup, _get_encoding, Encoding, decode, _detect_bom, encode, iter_decode, _iter_decode_generator, iter_encode, _iter_encode_generator, IncrementalDecoder, IncrementalEncoder, __init__, __repr__, __init__, decode, __init__
-- venv/lib/python2.7/site-packages/pkg_resources/py31compat.py: _makedirs_31
-- venv/lib/python2.7/site-packages/pkg_resources/__init__.py: PEP440Warning, parse_version, _declare_state, __getstate__, __setstate__, _sget_dict, _sset_dict, _sget_object, _sset_object, get_supported_platform, ResolutionError, VersionConflict, ContextualVersionConflict, DistributionNotFound, UnknownExtra, register_loader_type, get_provider, _macosx_vers, _macosx_arch, get_build_platform, compatible_platforms, run_script, get_distribution, load_entry_point, get_entry_map, get_entry_info, IMetadataProvider, IResourceProvider, WorkingSet, _ReqExtras, Environment, ExtractionError, ResourceManager, get_default_cache, safe_name, safe_version, safe_extra, to_filename, invalid_marker, evaluate_marker, NullProvider, EggProvider, DefaultProvider, EmptyProvider, ZipManifests, MemoizedZipManifests, ZipProvider, FileMetadata, PathMetadata, EggMetadata, register_finder, find_distributions, find_eggs_in_zip, find_nothing, _by_version_descending, find_on_path, dist_factory, NoDists, safe_listdir, distributions_from_metadata, non_empty_lines, resolve_egg_link, register_namespace_handler, _handle_ns, _rebuild_mod_path, declare_namespace, fixup_namespace_packages, file_ns_handler, null_ns_handler, normalize_path, _cygwin_patch, _normalize_cached, _is_egg_path, _is_unpacked_egg, _set_parent_ns, yield_lines, EntryPoint, _remove_md5_fragment, _version_from_file, Distribution, EggInfoDistribution, DistInfoDistribution, issue_warning, RequirementParseError, parse_requirements, Requirement, _always_object, _find_adapter, ensure_directory, _bypass_ensure_directory, split_sections, _mkstemp, _call_aside, _initialize, _initialize_master_working_set, PkgResourcesDeprecationWarning, __repr__, dist, req, report, with_context, required_by, req, requirers, requirers_str, report, __str__, has_metadata, get_metadata, get_metadata_lines, metadata_isdir, metadata_listdir, run_script, get_resource_filename, get_resource_stream, get_resource_string, has_resource, resource_isdir, resource_listdir, __init__, _build_master, _build_from_requirements, add_entry, __contains__, find, iter_entry_points, run_script, __iter__, add, resolve, find_plugins, require, subscribe, _added_new, __getstate__, __setstate__, markers_pass, __init__, can_add, remove, scan, __getitem__, add, best_match, obtain, __iter__, __iadd__, __add__, __init__, resource_exists, resource_isdir, resource_filename, resource_stream, resource_string, resource_listdir, extraction_error, get_cache_path, _warn_unsafe_extraction_path, postprocess, set_extraction_path, cleanup_resources, __init__, get_resource_filename, get_resource_stream, get_resource_string, has_resource, has_metadata, get_metadata, get_metadata_lines, resource_isdir, metadata_isdir, resource_listdir, metadata_listdir, run_script, _has, _isdir, _listdir, _fn, _validate_resource_path, _get, __init__, _setup_prefix, _has, _isdir, _listdir, get_resource_stream, _get, _register, _get, _listdir, __init__, build, load, __init__, _zipinfo_name, _parts, zipinfo, get_resource_filename, _get_date_and_size, _extract_resource, _is_current, _get_eager_resources, _index, _has, _isdir, _listdir, _eager_to_zip, _resource_to_zip, __init__, has_metadata, get_metadata, _warn_on_replacement, get_metadata_lines, __init__, __init__, _by_version, __bool__, __call__, safe_sys_path_index, position_in_sys_path, __init__, __str__, __repr__, load, resolve, require, parse, _parse_extras, parse_group, parse_map, is_version_line, __init__, from_location, _reload_version, hashcmp, __hash__, __lt__, __le__, __gt__, __ge__, __eq__, __ne__, key, parsed_version, _warn_legacy_version, version, _dep_map, _filter_extras, _build_dep_map, requires, _get_metadata, activate, egg_name, __repr__, __str__, __getattr__, __dir__, from_filename, as_requirement, load_entry_point, get_entry_map, get_entry_info, insert_on, check_version_conflict, has_version, clone, extras, _reload_version, _parsed_pkg_info, _dep_map, _compute_dependencies, __str__, __init__, __eq__, __ne__, __contains__, __hash__, __repr__, parse, reqs_for_extra
-- venv/lib/python2.7/site-packages/pkg_resources/extern/__init__.py: VendorImporter, __init__, search_path, find_module, load_module, install
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/appdirs.py: user_data_dir, site_data_dir, user_config_dir, site_config_dir, user_cache_dir, user_state_dir, user_log_dir, AppDirs, _get_win_folder_from_registry, _get_win_folder_with_pywin32, _get_win_folder_with_ctypes, _get_win_folder_with_jna, __init__, user_data_dir, site_data_dir, user_config_dir, site_config_dir, user_cache_dir, user_state_dir, user_log_dir
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/pyparsing.py: _xml_escape, _Constants, ParseBaseException, ParseException, ParseFatalException, ParseSyntaxException, RecursiveGrammarException, _ParseResultsWithOffset, ParseResults, col, lineno, line, _defaultStartDebugAction, _defaultSuccessDebugAction, _defaultExceptionDebugAction, nullDebugAction, _trim_arity, ParserElement, Token, Empty, NoMatch, Literal, Keyword, CaselessLiteral, CaselessKeyword, CloseMatch, Word, Regex, QuotedString, CharsNotIn, White, _PositionToken, GoToColumn, LineStart, LineEnd, StringStart, StringEnd, WordStart, WordEnd, ParseExpression, And, Or, MatchFirst, Each, ParseElementEnhance, FollowedBy, NotAny, _MultipleMatch, OneOrMore, ZeroOrMore, _NullToken, Optional, SkipTo, Forward, _ForwardNoRecurse, TokenConverter, Combine, Group, Dict, Suppress, OnlyOnce, traceParseAction, delimitedList, countedArray, _flatten, matchPreviousLiteral, matchPreviousExpr, _escapeRegexRangeChars, oneOf, dictOf, originalTextFor, ungroup, locatedExpr, srange, matchOnlyAtCol, replaceWith, removeQuotes, tokenMap, _makeTags, makeHTMLTags, makeXMLTags, withAttribute, withClass, infixNotation, nestedExpr, indentedBlock, replaceHTMLEntity, pyparsing_common, _ustr, __init__, _from_exception, __getattr__, __str__, __repr__, markInputline, __dir__, __init__, __str__, __init__, __getitem__, __repr__, setOffset, __new__, __init__, __getitem__, __setitem__, __delitem__, __contains__, __len__, __bool__, __iter__, __reversed__, _iterkeys, _itervalues, _iteritems, haskeys, pop, get, insert, append, extend, clear, __getattr__, __add__, __iadd__, __radd__, __repr__, __str__, _asStringList, asList, asDict, copy, asXML, __lookup, getName, dump, pprint, __getstate__, __setstate__, __getnewargs__, __dir__, wrapper, setDefaultWhitespaceChars, inlineLiteralsUsing, __init__, copy, setName, setResultsName, setBreak, setParseAction, addParseAction, addCondition, setFailAction, _skipIgnorables, preParse, parseImpl, postParse, _parseNoCache, tryParse, canParseNext, _UnboundedCache, _parseCache, resetCache, enablePackrat, parseString, scanString, transformString, searchString, split, __add__, __radd__, __sub__, __rsub__, __mul__, __rmul__, __or__, __ror__, __xor__, __rxor__, __and__, __rand__, __invert__, __call__, suppress, leaveWhitespace, setWhitespaceChars, parseWithTabs, ignore, setDebugActions, setDebug, __str__, __repr__, streamline, checkRecursion, validate, parseFile, __eq__, __ne__, __hash__, __req__, __rne__, matches, runTests, __init__, __init__, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, copy, setDefaultKeywordChars, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __init__, preParse, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, __getitem__, append, leaveWhitespace, ignore, __str__, streamline, setResultsName, validate, copy, _ErrorStop, __init__, parseImpl, __iadd__, checkRecursion, __str__, __init__, parseImpl, __ixor__, __str__, checkRecursion, __init__, parseImpl, __ior__, __str__, checkRecursion, __init__, parseImpl, __str__, checkRecursion, __init__, parseImpl, leaveWhitespace, ignore, streamline, checkRecursion, validate, __str__, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __bool__, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __lshift__, __ilshift__, leaveWhitespace, streamline, validate, __str__, copy, __str__, __init__, __init__, ignore, postParse, __init__, postParse, __init__, postParse, postParse, suppress, __init__, __call__, reset, z, countFieldParseAction, copyTokenToRepeater, copyTokenToRepeater, verifyCol, pa, pa, checkPeerIndent, checkSubIndent, checkUnindent, convertToDate, convertToDatetime, stripHTMLTags, keys, values, items, toItem, extract_stack, extract_tb, __init__, _FifoCache, _FifoCache, __init__, mustMatchTheseTokens, extractText, cvt_fn, cvt_fn, breaker, pa, get, set, clear, cache_len, __init__, __init__, makeOptionalList, charsAsStr, get, set, clear, cache_len, get, set, clear, cache_len
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/six.py: _add_doc, _import_module, _LazyDescr, MovedModule, _LazyModule, MovedAttribute, _SixMetaPathImporter, _MovedItems, Module_six_moves_urllib_parse, Module_six_moves_urllib_error, Module_six_moves_urllib_request, Module_six_moves_urllib_response, Module_six_moves_urllib_robotparser, Module_six_moves_urllib, add_move, remove_move, assertCountEqual, assertRaisesRegex, assertRegex, with_metaclass, add_metaclass, python_2_unicode_compatible, __init__, __get__, __init__, _resolve, __getattr__, __init__, __dir__, __init__, _resolve, __init__, _add_module, _get_module, find_module, __get_module, load_module, is_package, get_code, __dir__, get_unbound_function, create_unbound_method, get_unbound_function, create_bound_method, create_unbound_method, Iterator, iterkeys, itervalues, iteritems, iterlists, iterkeys, itervalues, iteritems, iterlists, b, u, b, u, byte2int, indexbytes, reraise, exec_, print_, print_, wraps, metaclass, wrapper, X, advance_iterator, callable, next, raise_from, write, wrapper, __new__, __len__
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/markers.py: InvalidMarker, UndefinedComparison, UndefinedEnvironmentName, Node, Variable, Value, Op, _coerce_parse_result, _format_marker, _eval_op, _get_env, _evaluate_markers, format_full_version, default_environment, Marker, __init__, __str__, __repr__, serialize, serialize, serialize, serialize, __init__, __str__, __repr__, evaluate
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/requirements.py: InvalidRequirement, Requirement, __init__, __str__, __repr__
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/specifiers.py: InvalidSpecifier, BaseSpecifier, _IndividualSpecifier, LegacySpecifier, _require_version_compare, Specifier, _version_split, _pad_version, SpecifierSet, __str__, __hash__, __eq__, __ne__, prereleases, prereleases, contains, filter, __init__, __repr__, __str__, __hash__, __eq__, __ne__, _get_operator, _coerce_version, operator, version, prereleases, prereleases, __contains__, contains, filter, _coerce_version, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, wrapped, _compare_compatible, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, _compare_arbitrary, prereleases, prereleases, __init__, __repr__, __str__, __hash__, __and__, __eq__, __ne__, __len__, __iter__, prereleases, prereleases, __contains__, contains, filter
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/utils.py: canonicalize_name
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/version.py: parse, InvalidVersion, _BaseVersion, LegacyVersion, _parse_version_parts, _legacy_cmpkey, Version, _parse_letter_version, _parse_local_version, _cmpkey, __hash__, __lt__, __le__, __eq__, __ge__, __gt__, __ne__, _compare, __init__, __str__, __repr__, public, base_version, local, is_prerelease, is_postrelease, __init__, __repr__, __str__, public, base_version, local, is_prerelease, is_postrelease
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/_compat.py: with_metaclass, metaclass, __new__
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/_structures.py: Infinity, NegativeInfinity, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__
-- venv/lib/python2.7/site-packages/setuptools/archive_util.py: UnrecognizedFormat, default_filter, unpack_archive, unpack_directory, unpack_zipfile, unpack_tarfile
-- venv/lib/python2.7/site-packages/setuptools/build_meta.py: SetupRequirementsError, Distribution, _to_str, _get_immediate_subdirectories, _file_with_extension, _BuildMetaBackend, _BuildMetaLegacyBackend, __init__, fetch_build_eggs, patch, _fix_config, _get_build_requires, run_setup, get_requires_for_build_wheel, get_requires_for_build_sdist, prepare_metadata_for_build_wheel, build_wheel, build_sdist, run_setup
-- venv/lib/python2.7/site-packages/setuptools/config.py: read_configuration, _get_option, configuration_to_dict, parse_configuration, ConfigHandler, ConfigMetadataHandler, ConfigOptionsHandler, __init__, parsers, __setitem__, _parse_list, _parse_dict, _parse_bool, _exclude_files_parser, _parse_file, _assert_local, _read_file, _parse_attr, _get_parser_compound, _parse_section_to_dict, parse_section, parse, _deprecated_config_handler, __init__, parsers, _parse_version, parsers, _parse_packages, parse_section_packages__find, parse_section_entry_points, _parse_package_data, parse_section_package_data, parse_section_exclude_package_data, parse_section_extras_require, parse_section_data_files, parser, parse, config_handler
-- venv/lib/python2.7/site-packages/setuptools/depends.py: Require, find_module, get_module_constant, extract_constant, _update_globals, __init__, full_name, version_ok, get_version, is_present, is_current
-- venv/lib/python2.7/site-packages/setuptools/dep_util.py: newer_pairwise_group
-- venv/lib/python2.7/site-packages/setuptools/dist.py: _get_unpatched, get_metadata_version, read_pkg_file, write_pkg_file, check_importable, assert_string_list, check_nsp, check_extras, _check_extra, assert_bool, check_requirements, check_specifier, check_entry_points, check_test_suite, check_package_data, check_packages, Distribution, Feature, DistDeprecationWarning, _read_field, _read_list, patch_missing_pkg_info, __init__, _finalize_requires, _convert_extras_requirements, _suffix_for, _move_install_requirements_markers, _clean_req, _parse_config_files, _try_str, _set_command_options, parse_config_files, parse_command_line, _feature_attrname, fetch_build_eggs, finalize_options, get_egg_cache_dir, fetch_build_egg, _set_global_opts_from_features, _finalize_features, get_command_class, print_commands, get_command_list, _set_feature, feature_is_included, include_feature, include, exclude_package, has_contents_for, _exclude_misc, _include_misc, exclude, _exclude_packages, _parse_command_opts, get_cmdline_options, iter_distribution_names, handle_display_options, warn_deprecated, __init__, include_by_default, include_in, exclude_from, validate, write_field, write_field, is_simple_req
-- venv/lib/python2.7/site-packages/setuptools/extension.py: _have_cython, Extension, Library, __init__, _convert_pyx_sources_to_lang
-- venv/lib/python2.7/site-packages/setuptools/glibc.py: glibc_version_string, check_glibc_version, have_compatible_glibc, libc_ver
-- venv/lib/python2.7/site-packages/setuptools/glob.py: glob, iglob, _iglob, glob1, glob0, glob2, _rlistdir, has_magic, _isrecursive, escape
-- venv/lib/python2.7/site-packages/setuptools/launch.py: run
-- venv/lib/python2.7/site-packages/setuptools/lib2to3_ex.py: DistutilsRefactoringTool, Mixin2to3, log_error, log_message, log_debug, run_2to3, __build_fixer_names, __exclude_fixers
-- venv/lib/python2.7/site-packages/setuptools/monkey.py: _get_mro, get_unpatched, get_unpatched_class, patch_all, _patch_distribution_metadata, patch_func, get_unpatched_function, patch_for_msvc_specialized_compiler, patch_params
-- venv/lib/python2.7/site-packages/setuptools/msvc.py: msvc9_find_vcvarsall, msvc9_query_vcvarsall, msvc14_get_vc_env, msvc14_gen_lib_options, _augment_exception, PlatformInfo, RegistryInfo, SystemInfo, EnvironmentInfo, winreg, __init__, target_cpu, target_is_x86, current_is_x86, current_dir, target_dir, cross_dir, __init__, visualstudio, sxs, vc, vs, vc_for_python, microsoft_sdk, windows_sdk, netfx_sdk, windows_kits_roots, microsoft, lookup, __init__, _find_latest_available_vc_ver, find_available_vc_vers, VSInstallDir, VCInstallDir, _guess_vc, _guess_vc_legacy, WindowsSdkVersion, WindowsSdkLastVersion, WindowsSdkDir, WindowsSDKExecutablePath, FSharpInstallDir, UniversalCRTSdkDir, UniversalCRTSdkLastVersion, NetFxSdkVersion, NetFxSdkDir, FrameworkDir32, FrameworkDir64, FrameworkVersion32, FrameworkVersion64, _find_dot_net_versions, _use_last_dir_name, __init__, vc_ver, VSTools, VCIncludes, VCLibraries, VCStoreRefs, VCTools, OSLibraries, OSIncludes, OSLibpath, SdkTools, _sdk_tools, _sdk_subdir, SdkSetup, FxTools, NetFxSDKLibraries, NetFxSDKIncludes, VsTDb, MSBuild, HTMLHelpWorkshop, UCRTLibraries, UCRTIncludes, _ucrt_subdir, FSharp, VCRuntimeRedist, return_env, _build_paths, _unique_everseen
-- venv/lib/python2.7/site-packages/setuptools/namespaces.py: Installer, DevelopInstaller, install_namespaces, uninstall_namespaces, _get_target, _get_root, _gen_nspkg_line, _get_all_ns_packages, _pkg_names, _get_root, _get_target
-- venv/lib/python2.7/site-packages/setuptools/package_index.py: parse_requirement_arg, parse_bdist_wininst, egg_info_for_url, distros_for_url, distros_for_location, distros_for_filename, interpret_distro_name, unique_everseen, unique_values, find_external_links, ContentChecker, HashChecker, PackageIndex, decode_entity, htmldecode, socket_timeout, _encode_auth, Credential, PyPIConfig, open_with_auth, _splituser, fix_sf_url, local_open, wrapper, feed, is_valid, report, __init__, from_url, feed, is_valid, report, __init__, process_url, process_filename, url_ok, scan_egg_links, scan_egg_link, process_index, need_version_info, scan_all, find_packages, obtain, check_hash, add_find_links, prescan, not_found_in_index, download, fetch_distribution, fetch, gen_setup, _download_to, reporthook, open_url, _download_url, scan_url, _attempt_download, _download_html, _download_svn, _vcs_split_rev_from_url, _download_git, _download_hg, debug, info, warn, _socket_timeout, __init__, __iter__, __str__, __init__, creds_by_repository, _get_repo_cred, find_credential, scan, find, _socket_timeout
-- venv/lib/python2.7/site-packages/setuptools/pep425tags.py: get_config_var, get_abbr_impl, get_impl_ver, get_impl_version_info, get_impl_tag, get_flag, get_abi_tag, _is_running_32bit, get_platform, is_manylinux1_compatible, get_darwin_arches, get_supported, _supports_arch
-- venv/lib/python2.7/site-packages/setuptools/py27compat.py: get_all_headers, get_all_headers
-- venv/lib/python2.7/site-packages/setuptools/py31compat.py: TemporaryDirectory, __init__, __enter__, __exit__
-- venv/lib/python2.7/site-packages/setuptools/py33compat.py: Bytecode_compat, __init__, __iter__
-- venv/lib/python2.7/site-packages/setuptools/sandbox.py: _execfile, save_argv, save_path, override_temp, pushd, UnpickleableException, ExceptionSaver, save_modules, _clear_modules, save_pkg_resources_state, setup_context, _needs_hiding, hide_setuptools, run_setup, AbstractSandbox, DirectorySandbox, SandboxViolation, dump, __enter__, __exit__, resume, __init__, _copy, __enter__, __exit__, run, _mk_dual_path_wrapper, _mk_single_path_wrapper, _mk_single_with_return, _mk_query, _validate_path, _remap_input, _remap_output, _remap_pair, __init__, _violation, _open, tmpnam, _ok, _exempted, _remap_input, _remap_pair, open, __str__, wrap, wrap, wrap, wrap, _file
-- venv/lib/python2.7/site-packages/setuptools/site-patch.py: __boot
-- venv/lib/python2.7/site-packages/setuptools/ssl_support.py: VerifyingHTTPSHandler, VerifyingHTTPSConn, opener_for, once, get_win_certfile, find_ca_bundle, _certifi_where, CertificateError, _dnsname_match, match_hostname, __init__, https_open, __init__, connect, wrapper, CertFile, __init__, close
-- venv/lib/python2.7/site-packages/setuptools/unicode_utils.py: decompose, filesys_decode, try_encode, detect_encoding
-- venv/lib/python2.7/site-packages/setuptools/wheel.py: unpack, Wheel, __init__, tags, is_compatible, egg_name, get_dist_info, install_as_egg, _install_as_egg, _convert_metadata, _move_data_entries, _fix_namespace_packages, get_metadata, raw_req
-- venv/lib/python2.7/site-packages/setuptools/windows_support.py: windows_only, hide_file
-- venv/lib/python2.7/site-packages/setuptools/_deprecation_warning.py: SetuptoolsDeprecationWarning
-- venv/lib/python2.7/site-packages/setuptools/__init__.py: PackageFinder, PEP420PackageFinder, _install_setup_requires, setup, Command, _find_all_simple, findall, find, _find_packages_iter, _looks_like_package, _build_filter, _looks_like_package, __init__, _ensure_stringlike, ensure_string_list, reinitialize_command
-- venv/lib/python2.7/site-packages/setuptools/command/alias.py: shquote, alias, format_alias, initialize_options, finalize_options, run
-- venv/lib/python2.7/site-packages/setuptools/command/bdist_egg.py: strip_module, sorted_walk, write_stub, bdist_egg, walk_egg, analyze_egg, write_safety_flag, scan_module, iter_symbols, can_scan, make_zipfile, _get_purelib, initialize_options, finalize_options, do_install_data, get_outputs, call_command, run, zap_pyfiles, zip_safe, gen_header, copy_metadata_to, get_ext_outputs, visit, _get_purelib
-- venv/lib/python2.7/site-packages/setuptools/command/bdist_rpm.py: bdist_rpm, run, _make_spec_file
-- venv/lib/python2.7/site-packages/setuptools/command/bdist_wininst.py: bdist_wininst, reinitialize_command, run
-- venv/lib/python2.7/site-packages/setuptools/command/build_clib.py: build_clib, build_libraries
-- venv/lib/python2.7/site-packages/setuptools/command/build_ext.py: _customize_compiler_for_shlib, get_abi3_suffix, build_ext, run, copy_extensions_to_source, get_ext_filename, initialize_options, finalize_options, setup_shlib_compiler, get_export_symbols, build_extension, links_to_dynamic, get_outputs, __get_stubs_outputs, __get_output_extensions, write_stub, link_shared_object, link_shared_object
-- venv/lib/python2.7/site-packages/setuptools/command/build_py.py: build_py, _unique_everseen, assert_relative, finalize_options, run, __getattr__, build_module, _get_data_files, _get_pkg_data_files, find_data_files, build_package_data, analyze_manifest, get_data_files, check_package, initialize_options, get_package_dir, exclude_data_files, _get_platform_patterns, Mixin2to3, run_2to3
-- venv/lib/python2.7/site-packages/setuptools/command/develop.py: develop, VersionlessRequirement, run, initialize_options, finalize_options, _resolve_setup_path, install_for_development, uninstall_link, install_egg_scripts, install_wrapper_scripts, __init__, __getattr__, as_requirement
-- venv/lib/python2.7/site-packages/setuptools/command/dist_info.py: dist_info, initialize_options, finalize_options, run
-- venv/lib/python2.7/site-packages/setuptools/command/easy_install.py: is_64bit, samefile, easy_install, _pythonpath, get_site_dirs, expand_paths, extract_wininst_cfg, get_exe_prefixes, PthDistributions, RewritePthDistributions, _first_line_re, auto_chmod, update_dist_caches, _collect_zipimporter_cache_entries, _update_zipimporter_cache, _uncache, _remove_and_clear_zip_directory_cache_data, is_python, is_sh, nt_quote_arg, is_python_script, chmod, CommandSpec, WindowsCommandSpec, ScriptWriter, WindowsScriptWriter, WindowsExecutableLauncherWriter, get_win_launcher, load_launcher_manifest, rmtree, current_umask, bootstrap, main, _patch_usage, EasyInstallDeprecationWarning, _to_bytes, isascii, _to_bytes, isascii, initialize_options, delete_blockers, _delete_path, _render_version, finalize_options, _fix_install_dir_for_user_site, _expand_attrs, expand_basedirs, expand_dirs, run, pseudo_tempname, warn_deprecated_options, check_site_dir, cant_write_to_target, check_pth_processing, install_egg_scripts, add_output, not_editable, check_editable, _tmpdir, easy_install, install_item, select_scheme, process_distribution, should_unzip, maybe_move, install_wrapper_scripts, install_script, _load_template, write_script, install_eggs, egg_distribution, install_egg, install_exe, exe_to_egg, install_wheel, installation_report, report_editable, run_setup, build_and_install, _set_fetcher_options, update_pth, unpack_progress, unpack_and_compile, byte_compile, no_default_version_msg, install_site_py, create_home_path, _expand, __init__, _load, save, _wrap_lines, add, remove, make_relative, _wrap_lines, clear_and_remove_cached_zip_archive_directory_data, _replace_zip_directory_cache_data, best, _sys_executable, from_param, from_environment, from_string, install_options, _extract_options, as_header, _strip_quotes, _render, get_script_args, get_script_header, get_args, _ensure_safe_name, get_writer, best, _get_script_args, get_header, get_writer, best, _get_script_args, _adjust_header, _use_header, _get_script_args, DistributionWithoutHelpCommands, gen_usage, process, pf, replace_cached_zip_archive_directory_data, _chmod, _show_help
-- venv/lib/python2.7/site-packages/setuptools/command/egg_info.py: translate_pattern, InfoCommon, egg_info, FileList, manifest_maker, write_file, write_pkg_info, warn_depends_obsolete, _write_requirements, write_requirements, write_setup_requirements, write_toplevel_names, overwrite_arg, write_arg, write_entries, get_pkg_info_revision, EggInfoDeprecationWarning, name, tagged_version, tags, initialize_options, tag_svn_revision, tag_svn_revision, save_version_info, finalize_options, write_or_delete_file, write_file, delete_file, run, find_sources, check_broken_egg_info, process_template_line, _remove_files, include, exclude, recursive_include, recursive_exclude, graft, prune, global_include, global_exclude, append, extend, _repair, _safe_path, initialize_options, finalize_options, run, _manifest_normalize, write_manifest, warn, _should_suppress_warning, add_defaults, prune_file_list
-- venv/lib/python2.7/site-packages/setuptools/command/install.py: install, initialize_options, finalize_options, handle_extra_path, run, _called_from_setup, do_egg_install
-- venv/lib/python2.7/site-packages/setuptools/command/install_egg_info.py: install_egg_info, initialize_options, finalize_options, run, get_outputs, copytree, skimmer
-- venv/lib/python2.7/site-packages/setuptools/command/install_lib.py: install_lib, run, get_exclusions, _exclude_pkg_path, _all_packages, _get_SVEM_NSPs, _gen_exclusion_paths, copy_tree, get_outputs, pf
-- venv/lib/python2.7/site-packages/setuptools/command/install_scripts.py: install_scripts, initialize_options, run, write_script
-- venv/lib/python2.7/site-packages/setuptools/command/py36compat.py: sdist_add_defaults, add_defaults, _cs_path_exists, _add_defaults_standards, _add_defaults_optional, _add_defaults_python, _add_defaults_data_files, _add_defaults_ext, _add_defaults_c_libs, _add_defaults_scripts, sdist_add_defaults
-- venv/lib/python2.7/site-packages/setuptools/command/register.py: register, run
-- venv/lib/python2.7/site-packages/setuptools/command/rotate.py: rotate, initialize_options, finalize_options, run
-- venv/lib/python2.7/site-packages/setuptools/command/saveopts.py: saveopts, run
-- venv/lib/python2.7/site-packages/setuptools/command/sdist.py: walk_revctrl, sdist, run, initialize_options, _default_to_gztar, make_distribution, _remove_os_link, __read_template_hack, _add_defaults_python, _add_defaults_data_files, check_readme, make_release_tree, _manifest_is_not_generated, read_manifest, check_license, NoValue
-- venv/lib/python2.7/site-packages/setuptools/command/setopt.py: config_file, edit_config, option_base, setopt, initialize_options, finalize_options, initialize_options, finalize_options, run
-- venv/lib/python2.7/site-packages/setuptools/command/test.py: ScanningLoader, NonDataProperty, test, __init__, loadTestsFromModule, __init__, __get__, initialize_options, finalize_options, test_args, _test_args, with_project_on_sys_path, project_on_sys_path, paths_on_pythonpath, install_dists, run, run_tests, _argv, _resolve_as_ep
-- venv/lib/python2.7/site-packages/setuptools/command/upload.py: upload, run, finalize_options, upload_file, _load_password_from_keyring, _prompt_for_password
-- venv/lib/python2.7/site-packages/setuptools/command/upload_docs.py: _encode, upload_docs, has_sphinx, initialize_options, finalize_options, create_zipfile, run, _build_part, _build_multipart, upload_file
-- venv/lib/python2.7/site-packages/setuptools/extern/__init__.py: VendorImporter, __init__, search_path, find_module, load_module, install
-- venv/lib/python2.7/site-packages/setuptools/_vendor/pyparsing.py: _xml_escape, _Constants, ParseBaseException, ParseException, ParseFatalException, ParseSyntaxException, RecursiveGrammarException, _ParseResultsWithOffset, ParseResults, col, lineno, line, _defaultStartDebugAction, _defaultSuccessDebugAction, _defaultExceptionDebugAction, nullDebugAction, _trim_arity, ParserElement, Token, Empty, NoMatch, Literal, Keyword, CaselessLiteral, CaselessKeyword, CloseMatch, Word, Regex, QuotedString, CharsNotIn, White, _PositionToken, GoToColumn, LineStart, LineEnd, StringStart, StringEnd, WordStart, WordEnd, ParseExpression, And, Or, MatchFirst, Each, ParseElementEnhance, FollowedBy, NotAny, _MultipleMatch, OneOrMore, ZeroOrMore, _NullToken, Optional, SkipTo, Forward, _ForwardNoRecurse, TokenConverter, Combine, Group, Dict, Suppress, OnlyOnce, traceParseAction, delimitedList, countedArray, _flatten, matchPreviousLiteral, matchPreviousExpr, _escapeRegexRangeChars, oneOf, dictOf, originalTextFor, ungroup, locatedExpr, srange, matchOnlyAtCol, replaceWith, removeQuotes, tokenMap, _makeTags, makeHTMLTags, makeXMLTags, withAttribute, withClass, infixNotation, nestedExpr, indentedBlock, replaceHTMLEntity, pyparsing_common, _ustr, __init__, _from_exception, __getattr__, __str__, __repr__, markInputline, __dir__, __init__, __str__, __init__, __getitem__, __repr__, setOffset, __new__, __init__, __getitem__, __setitem__, __delitem__, __contains__, __len__, __bool__, __iter__, __reversed__, _iterkeys, _itervalues, _iteritems, haskeys, pop, get, insert, append, extend, clear, __getattr__, __add__, __iadd__, __radd__, __repr__, __str__, _asStringList, asList, asDict, copy, asXML, __lookup, getName, dump, pprint, __getstate__, __setstate__, __getnewargs__, __dir__, wrapper, setDefaultWhitespaceChars, inlineLiteralsUsing, __init__, copy, setName, setResultsName, setBreak, setParseAction, addParseAction, addCondition, setFailAction, _skipIgnorables, preParse, parseImpl, postParse, _parseNoCache, tryParse, canParseNext, _UnboundedCache, _parseCache, resetCache, enablePackrat, parseString, scanString, transformString, searchString, split, __add__, __radd__, __sub__, __rsub__, __mul__, __rmul__, __or__, __ror__, __xor__, __rxor__, __and__, __rand__, __invert__, __call__, suppress, leaveWhitespace, setWhitespaceChars, parseWithTabs, ignore, setDebugActions, setDebug, __str__, __repr__, streamline, checkRecursion, validate, parseFile, __eq__, __ne__, __hash__, __req__, __rne__, matches, runTests, __init__, __init__, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, copy, setDefaultKeywordChars, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __init__, preParse, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, __getitem__, append, leaveWhitespace, ignore, __str__, streamline, setResultsName, validate, copy, _ErrorStop, __init__, parseImpl, __iadd__, checkRecursion, __str__, __init__, parseImpl, __ixor__, __str__, checkRecursion, __init__, parseImpl, __ior__, __str__, checkRecursion, __init__, parseImpl, __str__, checkRecursion, __init__, parseImpl, leaveWhitespace, ignore, streamline, checkRecursion, validate, __str__, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __bool__, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __lshift__, __ilshift__, leaveWhitespace, streamline, validate, __str__, copy, __str__, __init__, __init__, ignore, postParse, __init__, postParse, __init__, postParse, postParse, suppress, __init__, __call__, reset, z, countFieldParseAction, copyTokenToRepeater, copyTokenToRepeater, verifyCol, pa, pa, checkPeerIndent, checkSubIndent, checkUnindent, convertToDate, convertToDatetime, stripHTMLTags, keys, values, items, toItem, extract_stack, extract_tb, __init__, _FifoCache, _FifoCache, __init__, mustMatchTheseTokens, extractText, cvt_fn, cvt_fn, breaker, pa, get, set, clear, cache_len, __init__, __init__, makeOptionalList, charsAsStr, get, set, clear, cache_len, get, set, clear, cache_len
-- venv/lib/python2.7/site-packages/setuptools/_vendor/six.py: _add_doc, _import_module, _LazyDescr, MovedModule, _LazyModule, MovedAttribute, _SixMetaPathImporter, _MovedItems, Module_six_moves_urllib_parse, Module_six_moves_urllib_error, Module_six_moves_urllib_request, Module_six_moves_urllib_response, Module_six_moves_urllib_robotparser, Module_six_moves_urllib, add_move, remove_move, assertCountEqual, assertRaisesRegex, assertRegex, with_metaclass, add_metaclass, python_2_unicode_compatible, __init__, __get__, __init__, _resolve, __getattr__, __init__, __dir__, __init__, _resolve, __init__, _add_module, _get_module, find_module, __get_module, load_module, is_package, get_code, __dir__, get_unbound_function, create_unbound_method, get_unbound_function, create_bound_method, create_unbound_method, Iterator, iterkeys, itervalues, iteritems, iterlists, iterkeys, itervalues, iteritems, iterlists, b, u, b, u, byte2int, indexbytes, reraise, exec_, print_, print_, wraps, metaclass, wrapper, X, advance_iterator, callable, next, raise_from, write, wrapper, __new__, __len__
-- venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/markers.py: InvalidMarker, UndefinedComparison, UndefinedEnvironmentName, Node, Variable, Value, Op, _coerce_parse_result, _format_marker, _eval_op, _get_env, _evaluate_markers, format_full_version, default_environment, Marker, __init__, __str__, __repr__, serialize, serialize, serialize, serialize, __init__, __str__, __repr__, evaluate
-- venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/requirements.py: InvalidRequirement, Requirement, __init__, __str__, __repr__
-- venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/specifiers.py: InvalidSpecifier, BaseSpecifier, _IndividualSpecifier, LegacySpecifier, _require_version_compare, Specifier, _version_split, _pad_version, SpecifierSet, __str__, __hash__, __eq__, __ne__, prereleases, prereleases, contains, filter, __init__, __repr__, __str__, __hash__, __eq__, __ne__, _get_operator, _coerce_version, operator, version, prereleases, prereleases, __contains__, contains, filter, _coerce_version, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, wrapped, _compare_compatible, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, _compare_arbitrary, prereleases, prereleases, __init__, __repr__, __str__, __hash__, __and__, __eq__, __ne__, __len__, __iter__, prereleases, prereleases, __contains__, contains, filter
-- venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/utils.py: canonicalize_name
-- venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/version.py: parse, InvalidVersion, _BaseVersion, LegacyVersion, _parse_version_parts, _legacy_cmpkey, Version, _parse_letter_version, _parse_local_version, _cmpkey, __hash__, __lt__, __le__, __eq__, __ge__, __gt__, __ne__, _compare, __init__, __str__, __repr__, public, base_version, local, is_prerelease, is_postrelease, __init__, __repr__, __str__, public, base_version, local, is_prerelease, is_postrelease
-- venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/_compat.py: with_metaclass, metaclass, __new__
-- venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/_structures.py: Infinity, NegativeInfinity, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__
-- venv/lib/python2.7/site-packages/wheel/bdist_wheel.py: safer_name, safer_version, bdist_wheel, initialize_options, finalize_options, wheel_dist_name, get_tag, run, write_wheelfile, _ensure_relative, license_paths, egg2dist, adios
-- venv/lib/python2.7/site-packages/wheel/metadata.py: requires_to_requires_dist, convert_requirements, generate_requirements, pkginfo_to_metadata, pkginfo_unicode, dedent_description
-- venv/lib/python2.7/site-packages/wheel/pep425tags.py: get_config_var, get_abbr_impl, get_impl_ver, get_impl_version_info, get_flag, get_abi_tag, get_platform, get_supported
-- venv/lib/python2.7/site-packages/wheel/pkginfo.py: read_pkg_info_bytes, read_pkg_info, write_pkg_info, read_pkg_info_bytes, read_pkg_info, write_pkg_info
-- venv/lib/python2.7/site-packages/wheel/util.py: urlsafe_b64encode, urlsafe_b64decode, as_unicode, as_bytes, native, native
-- venv/lib/python2.7/site-packages/wheel/wheelfile.py: get_zipinfo_datetime, WheelFile, __init__, open, write_files, write, writestr, close, _update_crc
-- venv/lib/python2.7/site-packages/wheel/__main__.py: main
-- venv/lib/python2.7/site-packages/wheel/cli/convert.py: _bdist_wheel_tag, egg2wheel, parse_wininst_info, wininst2wheel, convert, get_tag
-- venv/lib/python2.7/site-packages/wheel/cli/pack.py: pack
-- venv/lib/python2.7/site-packages/wheel/cli/unpack.py: unpack
-- venv/lib/python2.7/site-packages/wheel/cli/__init__.py: require_pkgresources, WheelError, unpack_f, pack_f, convert_f, version_f, parser, main
-
-Repository: makemore_Samik (Jupyter Notebook)
-GitHub URL: https://github.com/samik1986/makemore_Samik
-Extracted Functions by File:
-- bigram_samik.py: get_batch, estimate_loss, BigramLanguageModel, __init__, forward, generate
-- makemore.py: ModelConfig, NewGELU, CausalSelfAttention, Block, Transformer, CausalBoW, BoWBlock, BoW, RNNCell, GRUCell, RNN, MLP, Bigram, generate, print_samples, evaluate, CharDataset, create_datasets, InfiniteDataLoader, forward, __init__, forward, __init__, forward, __init__, get_block_size, forward, __init__, forward, __init__, forward, __init__, get_block_size, forward, __init__, forward, __init__, forward, __init__, get_block_size, forward, __init__, get_block_size, forward, __init__, get_block_size, forward, __init__, __len__, contains, get_vocab_size, get_output_length, encode, decode, __getitem__, __init__, next
-
-Repository: MakeUPMirror (Python)
-GitHub URL: https://github.com/samik1986/MakeUPMirror
-Extracted Functions by File:
-- LRN.py: LRN, __init__, call, get_config
-
-Repository: Mediar_4_devBrain (Python)
-GitHub URL: https://github.com/samik1986/Mediar_4_devBrain
-Extracted Functions by File:
-- evaluate.py: main
-- generate_mapping.py: public_paths_labeled, official_paths_labeled, official_paths_tuning, add_mapping_to_json, natural_sort_key
-- main.py: _get_setups, main
-- predict.py: main
-- core/BasePredictor.py: BasePredictor, __init__, conduct_prediction, write_pred_mask, _setups, _get_img_data, _inference, _post_process
-- core/BaseTrainer.py: BaseTrainer, __init__, train, _epoch_phase, _tuningset_evaluation, _update_results, _update_best_model, _inference, _post_process, _get_f1_metric
-- core/utils.py: print_learning_device, print_with_logging
-- core/Baseline/Predictor.py: Predictor, __init__, _inference, _post_process
-- core/Baseline/Trainer.py: Trainer, __init__, _epoch_phase, _post_process, _get_f1_metric
-- core/Baseline/utils.py: identify_instances_from_classmap, create_interior_onehot
-- core/MEDIAR/EnsemblePredictor.py: EnsemblePredictor, __init__, _inference
-- core/MEDIAR/Predictor.py: Predictor, hflip, vflip, DualTransform, HorizontalFlip, VerticalFlip, __init__, _inference, _window_inference, _post_process, _sigmoid, __init__, apply_aug_image, apply_deaug_mask, __init__, apply_aug_image, apply_deaug_mask, __init__, apply_aug_image, apply_deaug_mask
-- core/MEDIAR/Trainer.py: Trainer, __init__, mediar_criterion, _epoch_phase, _inference, _post_process, _sigmoid
-- core/MEDIAR/utils.py: labels_to_flows, compute_masks, _extend_centers_gpu, diameters, masks_to_flows_gpu, masks_to_flows, steps2D_interp, follow_flows, flow_error, remove_bad_flow_masks, get_masks
-- train_tools/measures.py: evaluate_f1_score_cellseg, evaluate_f1_score, _remove_boundary_cells, get_confusion, _get_true_positive, _get_iou, _label_overlap
-- train_tools/utils.py: ConfLoader, directory_setter, random_seeder, pprint_config, DictWithAttributeAccess, __init__, __load_conf, __get_opt, __getattr__, __setattr__
-- train_tools/data_utils/datasetter.py: get_dataloaders_labeled, get_dataloaders_public, get_dataloaders_unlabeled, get_dataloaders_unlabeled_psuedo
-- train_tools/data_utils/transforms.py: get_pred_transforms
-- train_tools/data_utils/utils.py: split_train_valid, path_decoder
-- train_tools/data_utils/custom/CellAware.py: BoundaryExclusion, IntensityDiversification, __init__, __call__, __init__, __call__
-- train_tools/data_utils/custom/LoadImage.py: CustomLoadImage, CustomLoadImaged, UnifiedITKReader, __init__, __init__, __init__, verify_suffix, read
-- train_tools/data_utils/custom/NormalizeImage.py: CustomNormalizeImage, CustomNormalizeImaged, __init__, _normalize, __call__, __init__, __call__
-- train_tools/models/MEDIARFormer.py: MEDIARFormer, DeepSegmentationHead, _convert_activations, __init__, forward, __init__
-
-Repository: ML_Semantic-Segmenation-2020 (Python)
-GitHub URL: https://github.com/samik1986/ML_Semantic-Segmenation-2020
-Extracted Functions by File:
-- createData.py: readImagesTwice
-- createData1.py: readImagesTwice
-- createData255.py: readImagesTwice
-- createDataTest.py: readImagesTwice
-- createNetR.py: soft_dice_loss, dice_loss, comb_loss, dmnet
-- data.py: adjustData, trainGenerator, validateGenerator, testGenerator, geneTrainNpy, labelVisualize, saveResult
-- tsting.py: sigmoid, testImages
-- tsting_PS.py: sigmoid, testImages
-- tsting_single.py: sigmoid, testImages
-
-Repository: ML_Semantic_Segmenation_NMI (Jupyter Notebook)
-GitHub URL: https://github.com/samik1986/ML_Semantic_Segmenation_NMI
-Extracted Functions by File:
-- bouton_code/src/ComputeGraphReconstruction.cpp: bfs, retrieve_path, main
-- ComputeScore/cal_connectivity.py: cal_connectivity
-- ComputeScore/cal_F1.py: cal_fp_tp
-- ComputeScore/main_180405.py: cal_fp_tp
-- ComputeScore/main_backup.py: cal_fp_tp
-- ComputeScore/dk_metric/image_metrics.py: __get_image_point_gt, __get_image_point, get_TP_FP_FN, get_mod_TP_FP_FN, __get_neighbor_graph, get_connectivity
-- ComputeScore/dk_metric/__pycache__/image_metrics.py: __get_image_point_gt, __get_image_point, get_TP_FP_FN, get_mod_TP_FP_FN
-- DM_base/createData.py: readImagesTwice
-- DM_base/createData1.py: readImagesTwice
-- DM_base/createData255.py: readImagesTwice
-- DM_base/createDataTest.py: readImagesTwice
-- DM_base/createNetR.py: soft_dice_loss, dice_loss, comb_loss, dmnet
-- DM_base/data.py: adjustData, trainGenerator, validateGenerator, testGenerator, geneTrainNpy, labelVisualize, saveResult
-- DM_base/modelUnet.py: jaccard_distance, unet
-- DM_base/tsting.py: sigmoid, testImages
-- DM_base/tsting_PS.py: sigmoid, testImages
-- DM_base/tsting_single.py: sigmoid, testImages
-- Mask_RCNN/setup.py: _parse_requirements
-- Mask_RCNN/build/lib/mrcnn/config.py: Config, __init__, display
-- Mask_RCNN/build/lib/mrcnn/model.py: log, BatchNorm, compute_backbone_shapes, identity_block, conv_block, resnet_graph, apply_box_deltas_graph, clip_boxes_graph, ProposalLayer, log2_graph, PyramidROIAlign, overlaps_graph, detection_targets_graph, DetectionTargetLayer, refine_detections_graph, DetectionLayer, rpn_graph, build_rpn_model, fpn_classifier_graph, build_fpn_mask_graph, smooth_l1_loss, rpn_class_loss_graph, rpn_bbox_loss_graph, mrcnn_class_loss_graph, mrcnn_bbox_loss_graph, mrcnn_mask_loss_graph, load_image_gt, build_detection_targets, build_rpn_targets, generate_random_rois, data_generator, MaskRCNN, compose_image_meta, parse_image_meta, parse_image_meta_graph, mold_image, unmold_image, trim_zeros_graph, batch_pack_graph, norm_boxes_graph, denorm_boxes_graph, call, __init__, call, compute_output_shape, __init__, call, compute_output_shape, __init__, call, compute_output_shape, compute_mask, nms_keep_map, __init__, call, compute_output_shape, __init__, build, find_last, load_weights, get_imagenet_weights, compile, set_trainable, set_log_dir, train, mold_inputs, unmold_detections, detect, detect_molded, get_anchors, ancestor, find_trainable_layer, get_trainable_layers, run_graph, nms, hook
-- Mask_RCNN/build/lib/mrcnn/parallel_model.py: ParallelModel, __init__, __getattribute__, summary, make_parallel, build_model
-- Mask_RCNN/build/lib/mrcnn/utils.py: extract_bboxes, compute_iou, compute_overlaps, compute_overlaps_masks, non_max_suppression, apply_box_deltas, box_refinement_graph, box_refinement, Dataset, resize_image, resize_mask, minimize_mask, expand_mask, mold_mask, unmold_mask, generate_anchors, generate_pyramid_anchors, trim_zeros, compute_matches, compute_ap, compute_ap_range, compute_recall, batch_slice, download_trained_weights, norm_boxes, denorm_boxes, resize, __init__, add_class, add_image, image_reference, prepare, map_source_class_id, get_source_class_id, image_ids, source_image_link, load_image, load_mask, clean_name
-- Mask_RCNN/build/lib/mrcnn/visualize.py: display_images, random_colors, apply_mask, display_instances, display_differences, draw_rois, draw_box, display_top_masks, plot_precision_recall, plot_overlaps, draw_boxes, display_table, display_weight_stats
-- Mask_RCNN/mrcnn/config.py: Config, __init__, display
-- Mask_RCNN/mrcnn/model.py: log, BatchNorm, compute_backbone_shapes, identity_block, conv_block, resnet_graph, apply_box_deltas_graph, clip_boxes_graph, ProposalLayer, log2_graph, PyramidROIAlign, overlaps_graph, detection_targets_graph, DetectionTargetLayer, refine_detections_graph, DetectionLayer, rpn_graph, build_rpn_model, fpn_classifier_graph, build_fpn_mask_graph, smooth_l1_loss, rpn_class_loss_graph, rpn_bbox_loss_graph, mrcnn_class_loss_graph, mrcnn_bbox_loss_graph, mrcnn_mask_loss_graph, load_image_gt, build_detection_targets, build_rpn_targets, generate_random_rois, data_generator, MaskRCNN, compose_image_meta, parse_image_meta, parse_image_meta_graph, mold_image, unmold_image, trim_zeros_graph, batch_pack_graph, norm_boxes_graph, denorm_boxes_graph, call, __init__, call, compute_output_shape, __init__, call, compute_output_shape, __init__, call, compute_output_shape, compute_mask, nms_keep_map, __init__, call, compute_output_shape, __init__, build, find_last, load_weights, get_imagenet_weights, compile, set_trainable, set_log_dir, train, mold_inputs, unmold_detections, detect, detect_molded, get_anchors, ancestor, find_trainable_layer, get_trainable_layers, run_graph, nms, hook
-- Mask_RCNN/mrcnn/parallel_model.py: ParallelModel, __init__, __getattribute__, summary, make_parallel, build_model
-- Mask_RCNN/mrcnn/utils.py: extract_bboxes, compute_iou, compute_overlaps, compute_overlaps_masks, non_max_suppression, apply_box_deltas, box_refinement_graph, box_refinement, Dataset, resize_image, resize_mask, minimize_mask, expand_mask, mold_mask, unmold_mask, generate_anchors, generate_pyramid_anchors, trim_zeros, compute_matches, compute_ap, compute_ap_range, compute_recall, batch_slice, download_trained_weights, norm_boxes, denorm_boxes, resize, __init__, add_class, add_image, image_reference, prepare, map_source_class_id, get_source_class_id, image_ids, source_image_link, load_image, load_mask, clean_name
-- Mask_RCNN/mrcnn/visualize.py: display_images, random_colors, apply_mask, display_instances, display_differences, draw_rois, draw_box, display_top_masks, plot_precision_recall, plot_overlaps, draw_boxes, display_table, display_weight_stats
-- Mask_RCNN/samples/nucleus/nucleus.py: NucleusConfig, NucleusInferenceConfig, NucleusDataset, train, rle_encode, rle_decode, mask_to_rle, detect, load_nucleus, load_mask, image_reference
-- Mask_RCNN/samples/nucleus/nucleus0.py: NucleusConfig, NucleusInferenceConfig, NucleusDataset, train, rle_encode, rle_decode, mask_to_rle, detect, load_nucleus, load_mask, image_reference
-- Mask_RCNN/samples/nucleus/nucleus1.py: NucleusConfig, NucleusInferenceConfig, NucleusDataset, train, rle_encode, rle_decode, mask_to_rle, detect, load_nucleus, load_mask, image_reference
-- Mask_RCNN/samples/nucleus/nucleus2.py: NucleusConfig, NucleusInferenceConfig, NucleusDataset, train, rle_encode, rle_decode, mask_to_rle, detect, load_nucleus, load_mask, image_reference
-- Mask_RCNN/samples/nucleus/nucleus_axonarbors.py: NucleusConfig, NucleusInferenceConfig, NucleusDataset, train, rle_encode, rle_decode, mask_to_rle, detect, load_nucleus, load_mask, image_reference
-- Mask_RCNN/samples/nucleus/nucleus_dendrites.py: NucleusConfig, NucleusInferenceConfig, NucleusDataset, train, rle_encode, rle_decode, mask_to_rle, detect, load_nucleus, load_mask, image_reference
-- Mask_RCNN/samples/nucleus/nucleus_passAxons.py: NucleusConfig, NucleusInferenceConfig, NucleusDataset, train, rle_encode, rle_decode, mask_to_rle, detect, load_nucleus, load_mask, image_reference
-- morse_code/albu_dingkang.py: flip_tensor_lr, flip_tensor_ud, to_numpy, _8bitGray2Input, _16bitGray2Input, _8bitRGB2Input, _12bitRGB2Input, img_to_tensor, read_model, predict
-- morse_code/createNetR.py: soft_dice_loss, dice_loss, comb_loss, dmnet
-- morse_code/dm.py: build_vert_by_th, buildTriFromTetra, builEdgeFromTri, outBinary, cmp_dm_img_tri2D, make_png, dm_cal
-- morse_code/gray_scale_simp.py: compute_abs_cos_angle, compute_tangents, dist, line_function, length, make_png
-- morse_code/GSIMPg2i.py: make_png
-- morse_code/jp2compare.py: imread_fast
-- morse_code/new_dm.py: output_edge_scores, dist, line_function, length, cmp_dm_img_tri2D, make_png, dm_cal
-- morse_code/new_dm_mba.py: output_edge_scores, dist, line_function, length, cmp_dm_img_tri2D, make_png, dm_cal
-- morse_code/new_dm_mba1.py: output_edge_scores, dist, line_function, length, cmp_dm_img_tri2D, make_png, dm_cal
-- morse_code/tsting_single.py: sigmoid, testImages
-- morse_code/tsting_single_cal.py: testImages
-- morse_code/wrapper.py: imread_fast, dm_fn, testImages
-- morse_code/wrapperALBU.py: testImages
-- morse_code/wrapperALBU_PS.py: testImages
-- morse_code/wrapperDM1.py: bytescale, toimage, dm_fn, testImages
-- morse_code/wrapperDMPP.py: dm_fn, testImages
-- morse_code/wrapperDMPP_MBA.py: dm_fn, testImages
-- morse_code/paths_src/ComputePaths.cpp: println, ReadInEdge, output_paths, dfs, get_paths, main
-- morse_code/pytorch_zoo/abstract_model.py: ConvBottleneck, PlusBottleneck, UnetDecoderBlock, AbstractModel, _get_layers_params, EncoderDecoder, __init__, forward, __init__, forward, __init__, forward, _initialize_weights, initialize_encoder, __init__, forward, get_decoder, make_final_classifier, get_encoder, first_layer_params_names
-- morse_code/pytorch_zoo/inception.py: inception_v3, Inception3, InceptionA, InceptionB, InceptionC, InceptionD, InceptionE, BasicConv2d, __init__, forward, __init__, forward, __init__, forward, __init__, forward, __init__, forward, __init__, forward, __init__, forward
-- morse_code/pytorch_zoo/resnet.py: conv3x3, BasicBlock, Bottleneck, ResNet, resnet18, resnet34, resnet50, resnet101, resnet152, __init__, forward, __init__, forward, __init__, _make_layer, forward
-- morse_code/pytorch_zoo/unet.py: Resnet, Resnet34_upsample, __init__, get_encoder, __init__
-- morse_code/src/base_triangulation_2d.py: build_vert_by_th, buildTriFromTetra, builEdgeFromTri, outBinary
-- morse_code/src/ComputeGraphReconstruction.cpp: bfs, retrieve_path, main
-- morse_code/src/DIMOgraph2image.py: make_png
-- src/albu_dingkang.py: flip_tensor_lr, flip_tensor_ud, to_numpy, _8bitGray2Input, _16bitGray2Input, _8bitRGB2Input, _12bitRGB2Input, img_to_tensor, read_model, predict
-- src/create_spacenet_masks.py: calc_rescale, main
-- src/merge_preds.py: merge_tiffs, merge_tiffs_defferent_folders
-- src/skeleton.py: pairwise, remove_sequential_duplicates, remove_duplicate_segments, flatten, get_angle, preprocess, graph2lines, visualize, line_points_dist, remove_small_terminal, make_skeleton, add_small_segments, add_direction_change_nodes, build_graph
-- src/train_eval.py: train_roads, RawImageTypePad, eval_roads, finalyze
-- src/utils.py: get_csv_folds, update_config
-- src/wrapperALBU.py: testImages
-- src/wrapperALBU_PS.py: testImages
-- src/augmentations/composition.py: Compose, OneOf, __init__, __call__, __init__, __call__
-- src/augmentations/functional.py: clip, clipped, fix_shift_values, vflip, hflip, flip, transpose, rot90, rotate, shift_scale_rotate, center_crop, shift_hsv, shift_channels, clahe, blur, invert, channel_shuffle, img_to_tensor, mask_to_tensor, wrapped_function
-- src/augmentations/transforms.py: BasicTransform, DualTransform, ImageOnlyTransform, VerticalFlip, HorizontalFlip, RandomFlip, Transpose, RandomRotate90, RandomRotate, RandomShiftScaleRotate, CenterCrop, Jitter_HSV, Jitter_channels, RandomBlur, RandomCLAHE, ChannelShuffle, InvertImg, ToTensor, get_flips_colors_augmentation, __init__, __call__, apply, get_params, targets, targets, targets, apply, apply, apply, get_params, apply, apply, get_params, __init__, apply, get_params, __init__, apply, get_params, __init__, apply, __init__, apply, get_params, __init__, apply, get_params, __init__, apply, get_params, __init__, apply, get_params, apply, apply, __init__, __call__
-- src/dataset/abstract_image_provider.py: AbstractImageProvider, __init__, __getitem__, __len__
-- src/dataset/abstract_image_type.py: AlphaNotAvailableException, AbstractImageType, __init__, image, mask, alpha, read_alpha, read_image, read_mask, reflect_border, pad_image, finalyze
-- src/dataset/image_cropper.py: ImageCropper, starts_to_mpl, calc_starts_and_visualize, __init__, random_crop_coords, crop_image, sequential_crops, sequential_starts
-- src/dataset/neural_dataset.py: Dataset, TrainDataset, SequentialDataset, ValDataset, __init__, __getitem__, get_cropper, __init__, __getitem__, __len__, __init__, init_good_tiles, prepare_image, __getitem__, __len__, __init__, __getitem__
-- src/dataset/raw_image.py: RawImageType, __init__, read_image, read_mask, read_alpha, finalyze
-- src/dataset/reading_image_provider.py: ReadingImageProvider, __init__, get_indexes_by_names, __getitem__, __len__
-- src/other_tools/all_dems_min_max.py: minmax
-- src/other_tools/apls_tools.py: plot_metric, ring_coding, pathify, plot_buff, plot_node_ids, get_graph_extent, convert_to_8Bit, load_multiband_im, latlon2pixel, create_buffer_geopandas, gdf_to_array, get_road_buffer
-- src/other_tools/make_submission.py: rlencode, rldecode, rle_to_string, my_watershed, make_submission
-- src/other_tools/merge_preds.py: merge_tiffs, merge_tiffs_defferent_folders, all_dice
-- src/other_tools/sknw.py: neighbors, mark, idx2rc, fill, trace, parse_struc, build_graph, buffer, build_sknw, draw_graph
-- src/pre_processing/scratch_maskBase64.py: imread_fast
-- src/pre_processing/scratch_redWeb.py: imread_fast
-- src/pytorch_utils/callbacks.py: Callback, Callbacks, ModelSaver, save_checkpoint, CheckpointSaver, LRDropCheckpointSaver, ModelFreezer, EarlyStopper, TensorBoard, TelegramSender, __init__, set_trainer, on_batch_begin, on_batch_end, on_epoch_begin, on_epoch_end, on_train_begin, on_train_end, __init__, set_trainer, on_batch_begin, on_batch_end, on_epoch_begin, on_epoch_end, on_train_begin, on_train_end, __init__, on_epoch_end, __init__, on_epoch_end, __init__, on_epoch_end, on_epoch_begin, __init__, on_epoch_end, __init__, on_train_begin, on_epoch_end, on_train_end, on_train_end
-- src/pytorch_utils/concrete_eval.py: FullImageEvaluator, CropEvaluator, __init__, process_batch, save, __init__, process_batch, parse_geometry, construct_big_image, save, post_predict_action
-- src/pytorch_utils/eval.py: flip, flip_tensor_lr, flip_tensor_ud, to_numpy, predict, read_model, Evaluator, __init__, predict, cut_border, on_image_constructed, save, process_batch, post_predict_action
-- src/pytorch_utils/loss.py: dice_round, dice
-- src/pytorch_utils/transforms.py: DualCompose, OneOf, OneOrOther, ImageOnly, VerticalFlip, HorizontalFlip, RandomFlip, Transpose, RandomRotate90, Rotate, Shift, ShiftScale, ShiftScaleRotate, CenterCrop, Distort1, Distort2, clip, RandomFilter, RandomHueSaturationValue, CLAHE, ToTensor, augment_flips_color, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__, __init__, __call__
-- src/pytorch_zoo/abstract_model.py: ConvBottleneck, PlusBottleneck, UnetDecoderBlock, AbstractModel, _get_layers_params, EncoderDecoder, __init__, forward, __init__, forward, __init__, forward, _initialize_weights, initialize_encoder, __init__, forward, get_decoder, make_final_classifier, get_encoder, first_layer_params_names
-- src/pytorch_zoo/alexnet.py: AlexNet, alexnet, __init__, forward
-- src/pytorch_zoo/densenet.py: _DenseLayer, _DenseBlock, _Transition, DenseNet, _load_state_dict, _densenet, densenet121, densenet161, densenet169, densenet201, __init__, bn_function, any_requires_grad, call_checkpoint_bottleneck, forward, forward, forward, __init__, forward, __init__, __init__, forward, closure
-- src/pytorch_zoo/googlenet.py: googlenet, GoogLeNet, Inception, InceptionAux, BasicConv2d, __init__, _initialize_weights, _transform_input, _forward, eager_outputs, forward, __init__, _forward, forward, __init__, forward, __init__, forward
-- src/pytorch_zoo/inception.py: inception_v3, Inception3, InceptionA, InceptionB, InceptionC, InceptionD, InceptionE, InceptionAux, BasicConv2d, __init__, _transform_input, _forward, eager_outputs, forward, __init__, _forward, forward, __init__, _forward, forward, __init__, _forward, forward, __init__, _forward, forward, __init__, _forward, forward, __init__, forward, __init__, forward
-- src/pytorch_zoo/mnasnet.py: _InvertedResidual, _stack, _round_to_multiple_of, _get_depths, MNASNet, _load_pretrained, mnasnet0_5, mnasnet0_75, mnasnet1_0, mnasnet1_3, __init__, forward, __init__, forward, _initialize_weights, _load_from_state_dict
-- src/pytorch_zoo/mobilenet.py: _make_divisible, ConvBNReLU, InvertedResidual, MobileNetV2, mobilenet_v2, __init__, __init__, forward, __init__, _forward
-- src/pytorch_zoo/resnet.py: conv3x3, conv1x1, BasicBlock, Bottleneck, ResNet, _resnet, resnet18, resnet34, resnet50, resnet101, resnet152, resnext50_32x4d, resnext101_32x8d, wide_resnet50_2, wide_resnet101_2, __init__, forward, __init__, forward, __init__, _make_layer, _forward
-- src/pytorch_zoo/shufflenetv2.py: channel_shuffle, InvertedResidual, ShuffleNetV2, _shufflenetv2, shufflenet_v2_x0_5, shufflenet_v2_x1_0, shufflenet_v2_x1_5, shufflenet_v2_x2_0, __init__, depthwise_conv, forward, __init__, _forward
-- src/pytorch_zoo/squeezenet.py: Fire, SqueezeNet, _squeezenet, squeezenet1_0, squeezenet1_1, __init__, forward, __init__, forward
-- src/pytorch_zoo/unet.py: Resnet, Resnet34_upsample, __init__, get_encoder, __init__
-- src/pytorch_zoo/vgg.py: VGG, make_layers, _vgg, vgg11, vgg11_bn, vgg13, vgg13_bn, vgg16, vgg16_bn, vgg19, vgg19_bn, __init__, forward, _initialize_weights
-- src/pytorch_zoo/_utils.py: IntermediateLayerGetter, __init__, forward
-- src/pytorch_zoo/detection/backbone_utils.py: BackboneWithFPN, resnet_fpn_backbone, __init__
-- src/pytorch_zoo/detection/faster_rcnn.py: FasterRCNN, TwoMLPHead, FastRCNNPredictor, fasterrcnn_resnet50_fpn, __init__, __init__, forward, __init__, forward
-- src/pytorch_zoo/detection/generalized_rcnn.py: GeneralizedRCNN, __init__, forward
-- src/pytorch_zoo/detection/image_list.py: ImageList, __init__, to
-- src/pytorch_zoo/detection/keypoint_rcnn.py: KeypointRCNN, KeypointRCNNHeads, KeypointRCNNPredictor, keypointrcnn_resnet50_fpn, __init__, __init__, __init__, forward
-- src/pytorch_zoo/detection/mask_rcnn.py: MaskRCNN, MaskRCNNHeads, MaskRCNNPredictor, maskrcnn_resnet50_fpn, __init__, __init__, __init__
-- src/pytorch_zoo/detection/roi_heads.py: fastrcnn_loss, maskrcnn_inference, project_masks_on_boxes, maskrcnn_loss, keypoints_to_heatmap, heatmaps_to_keypoints, keypointrcnn_loss, keypointrcnn_inference, _onnx_expand_boxes, expand_boxes, expand_masks, paste_mask_in_image, _onnx_paste_mask_in_image, _onnx_paste_masks_in_image_loop, paste_masks_in_image, RoIHeads, __init__, has_mask, has_keypoint, assign_targets_to_proposals, subsample, add_gt_proposals, check_targets, select_training_samples, postprocess_detections, forward
-- src/pytorch_zoo/detection/rpn.py: _onnx_get_num_anchors_and_pre_nms_top_n, AnchorGenerator, RPNHead, permute_and_flatten, concat_box_prediction_layers, RegionProposalNetwork, __init__, generate_anchors, set_cell_anchors, num_anchors_per_location, grid_anchors, cached_grid_anchors, forward, __init__, forward, __init__, pre_nms_top_n, post_nms_top_n, assign_targets_to_anchors, _get_top_n_idx, filter_proposals, compute_loss, forward
-- src/pytorch_zoo/detection/transform.py: GeneralizedRCNNTransform, resize_keypoints, resize_boxes, __init__, forward, normalize, resize, _onnx_batch_images, batch_images, postprocess
-- src/pytorch_zoo/detection/_utils.py: BalancedPositiveNegativeSampler, encode_boxes, BoxCoder, Matcher, __init__, __call__, __init__, encode, encode_single, decode, decode_single, __init__, __call__, set_low_quality_matches_
-- src/pytorch_zoo/quantization/googlenet.py: googlenet, QuantizableBasicConv2d, QuantizableInception, QuantizableInceptionAux, QuantizableGoogLeNet, __init__, forward, fuse_model, __init__, forward, __init__, forward, __init__, forward, fuse_model
-- src/pytorch_zoo/quantization/inception.py: inception_v3, QuantizableBasicConv2d, QuantizableInceptionA, QuantizableInceptionB, QuantizableInceptionC, QuantizableInceptionD, QuantizableInceptionE, QuantizableInceptionAux, QuantizableInception3, __init__, forward, fuse_model, __init__, forward, __init__, forward, __init__, forward, __init__, forward, __init__, _forward, forward, __init__, __init__, forward, fuse_model
-- src/pytorch_zoo/quantization/mobilenet.py: QuantizableInvertedResidual, QuantizableMobileNetV2, mobilenet_v2, __init__, forward, fuse_model, __init__, forward, fuse_model
-- src/pytorch_zoo/quantization/resnet.py: QuantizableBasicBlock, QuantizableBottleneck, QuantizableResNet, _resnet, resnet18, resnet50, resnext101_32x8d, __init__, forward, fuse_model, __init__, forward, fuse_model, __init__, forward, fuse_model
-- src/pytorch_zoo/quantization/shufflenetv2.py: QuantizableInvertedResidual, QuantizableShuffleNetV2, _shufflenetv2, shufflenet_v2_x0_5, shufflenet_v2_x1_0, shufflenet_v2_x1_5, shufflenet_v2_x2_0, __init__, forward, __init__, forward, fuse_model
-- src/pytorch_zoo/quantization/utils.py: _replace_relu, quantize_model
-- src/pytorch_zoo/segmentation/deeplabv3.py: DeepLabV3, DeepLabHead, ASPPConv, ASPPPooling, ASPP, __init__, __init__, __init__, forward, __init__, forward
-- src/pytorch_zoo/segmentation/fcn.py: FCN, FCNHead, __init__
-- src/pytorch_zoo/segmentation/segmentation.py: _segm_resnet, _load_model, fcn_resnet50, fcn_resnet101, deeplabv3_resnet50, deeplabv3_resnet101
-- src/pytorch_zoo/segmentation/_utils.py: _SimpleSegmentationModel, __init__, forward
-- src/pytorch_zoo/video/resnet.py: Conv3DSimple, Conv2Plus1D, Conv3DNoTemporal, BasicBlock, Bottleneck, BasicStem, R2Plus1dStem, VideoResNet, _video_resnet, r3d_18, mc3_18, r2plus1d_18, __init__, get_downsample_stride, __init__, get_downsample_stride, __init__, get_downsample_stride, __init__, forward, __init__, forward, __init__, __init__, __init__, forward, _make_layer, _initialize_weights
-
-Repository: MoP_boundary (MATLAB)
-GitHub URL: https://github.com/samik1986/MoP_boundary
-Extracted Functions by File:
-- borderDet.m: borderDet
-- calculate_cortical_normal.m: calculate_cortical_normal
-- d_runline.m: d_runline
-- get_medial_axis.m: get_medial_axis
-- runline1.m: runline1
-
-Repository: MultiStreamCellSeg_4_devBrain (Python)
-GitHub URL: https://github.com/samik1986/MultiStreamCellSeg_4_devBrain
-Extracted Functions by File:
-- classifiers.py: conv3x3, conv1x1, BasicBlock, Bottleneck, ResNet, resnet18, resnet10, __init__, forward, __init__, forward, __init__, _make_layer, _forward_impl, forward
-- compute_metric.py: _intersection_over_union, _label_overlap, _true_positive, eval_tp_fp_fn, remove_boundary_cells, main
-- overlay.py: get_bounding_box, colorize, random_colors, visualize_instances_map
-- predict.py: normalize_channel
-- predict_unet_convnext.py: normalize_channel, main
-- train_convnext_hover..py: rm_n_mkdir, HoverDataset, valid_step, proc_valid_step_output, main, __init__, __len__, _transform, __getitem__, _dice_info, load_img, load_ann
-- train_convnext_stardist.py: main
-- utils.py: normalize, fix_mirror_padding, get_bounding_box, cropping_center, gen_instance_hv_map, remove_small_objects, gen_targets, xentropy_loss, dice_loss, mse_loss, msge_loss, __proc_np_hv, __proc_np_hv_2, colorize, random_colors, visualize_instances_map, sliding_window_inference, _get_scan_interval, get_sobel_kernel, get_gradient_hv
-- utils_modify.py: normalize, fix_mirror_padding, get_bounding_box, cropping_center, gen_instance_hv_map, remove_small_objects, gen_targets, __proc_np_hv, colorize, random_colors, visualize_instances_map, sliding_window_inference_large, sliding_window_inference, _get_scan_interval
-- fintune_on_newdataset/classifiers.py: conv3x3, conv1x1, BasicBlock, Bottleneck, ResNet, resnet18, resnet10, __init__, forward, __init__, forward, __init__, _make_layer, _forward_impl, forward
-- fintune_on_newdataset/compute_metric.py: _intersection_over_union, _label_overlap, _true_positive, eval_tp_fp_fn, remove_boundary_cells, main
-- fintune_on_newdataset/overlay.py: get_bounding_box, colorize, random_colors, visualize_instances_map
-- fintune_on_newdataset/models/convnext.py: Block, ConvNeXt, LayerNorm, convnext_tiny, convnext_small, convnext_base, convnext_large, convnext_xlarge, __init__, forward, __init__, _init_weights, forward_features, forward, __init__, forward
-- fintune_on_newdataset/models/flexible_unet.py: _get_encoder_channels_by_backbone, UNetDecoder, SegmentationHead, FlexibleUNet, __init__, forward, __init__, __init__, forward
-- fintune_on_newdataset/models/flexible_unet_convext.py: _get_encoder_channels_by_backbone, UNetDecoder, SegmentationHead, FlexibleUNetConvext, FlexibleUNet_hv, __init__, forward, __init__, __init__, forward, __init__, forward
-- fintune_on_newdataset/models/flexible_unet_convnext.py: _get_encoder_channels_by_backbone, UNetDecoder, SegmentationHead, FlexibleUNet_star, FlexibleUNet_hv, __init__, forward, __init__, __init__, forward, __init__, forward
-- fintune_on_newdataset/stardist_pkg/big.py: Block, BlockND, Polygon, Polyhedron, predict_big, NotFullyVisible, _grid_divisible, __init__, start, end, succ_start, add_succ, decrease_stride, freeze, slice_read, slice_crop_context, slice_write, is_responsible, frozen, at_begin, at_end, overlap, context_start, context_end, __repr__, chain, __iter__, cover, __init__, blocks_for_axes, slice_read, slice_crop_context, slice_write, read, crop_context, write, is_responsible, __repr__, __iter__, filter_objects, translate_coordinates, cover, __init__, coords_bbox, __init__, coords_bbox
-- fintune_on_newdataset/stardist_pkg/bioimageio_utils.py: _import, _create_stardist_dependencies, _create_stardist_doc, _get_stardist_metadata, _predict_tf, _get_weights_and_model_metadata, export_bioimageio, import_bioimageio
-- fintune_on_newdataset/stardist_pkg/matching.py: label_are_sequential, is_array_of_integers, _check_label_array, label_overlap, _label_overlap, _safe_divide, intersection_over_union, intersection_over_true, intersection_over_pred, precision, recall, accuracy, f1, matching, matching_dataset, matching_dataset_lazy, relabel_sequential, group_matching_labels, _shuffle_labels, _single, _match_single
-- fintune_on_newdataset/stardist_pkg/nms.py: _ind_prob_thresh, _non_maximum_suppression_old, non_maximum_suppression, non_maximum_suppression_sparse, non_maximum_suppression_inds, non_maximum_suppression_3d, non_maximum_suppression_3d_sparse, non_maximum_suppression_3d_inds, _prep, _prep
-- fintune_on_newdataset/stardist_pkg/rays3d.py: Rays_Base, rays_from_json, Rays_Explicit, Rays_Cartesian, Rays_SubDivide, Rays_Tetra, Rays_Octo, reorder_faces, Rays_GoldenSpiral, __init__, setup_vertices_faces, vertices, faces, __getitem__, __len__, __repr__, to_json, dist_loss_weights, volume, surface, copy, __init__, setup_vertices_faces, __init__, setup_vertices_faces, __init__, base_polyhedron, setup_vertices_faces, _recursive_split, split, base_polyhedron, base_polyhedron, _single, __init__, setup_vertices_faces, _conv, _ind, _add
-- fintune_on_newdataset/stardist_pkg/sample_patches.py: sample_patches, get_valid_inds
-- fintune_on_newdataset/stardist_pkg/utils.py: gputools_available, path_absolute, _is_power_of_2, _normalize_grid, edt_prob, _edt_prob_edt, _edt_prob_scipy, _fill_label_holes, fill_label_holes, sample_points, calculate_extents, polyroi_bytearray, export_imagej_rois, optimize_threshold, _invert_dict, mask_to_categorical, _is_floatarray, abspath, grow, shrink, grow, shrink, _int16, _uint16, _int32, _float, fn
-- fintune_on_newdataset/stardist_pkg/__init__.py: format_warning, _py_deprecation
-- fintune_on_newdataset/stardist_pkg/geometry/geom2d.py: _ocl_star_dist, _cpp_star_dist, _py_star_dist, star_dist, _dist_to_coord_old, _polygons_to_label_old, dist_to_coord, polygons_to_label_coord, polygons_to_label, relabel_image_stardist, ray_angles
-- fintune_on_newdataset/stardist_pkg/models/base.py: generic_masked_loss, masked_loss, masked_loss_mae, masked_loss_mse, masked_metric_mae, masked_metric_mse, kld, masked_loss_iou, masked_metric_iou, weighted_categorical_crossentropy, StarDistDataBase, StarDistBase, StarDistPadAndCropResizer, _tf_version_at_least, _loss, relevant_mae, relevant_mse, iou_loss, iou_metric, weighted_cce, __init__, get_valid_inds, channels_as_tuple, __init__, thresholds, _is_multiclass, _parse_classes_arg, thresholds, prepare_for_training, _predict_setup, _predict_generator, predict, _predict_sparse_generator, predict_sparse, _predict_instances_generator, predict_instances, predict_instances_big, optimize_thresholds, _guess_n_tiles, _normalize_axes, _compute_receptive_field, _axes_tile_overlap, export_TF, __init__, before, after, filter_points, split_dist_true_mask, dist_loss, dist_iou_metric, relevant_mae, relevant_mse, predict_direct, tiling_setup, _prep, _predict_kwargs, _split, create_empty_output
-- fintune_on_newdataset/stardist_pkg/models/model2d.py: StarDistData2D, Config2D, StarDist2D, __init__, __getitem__, __init__, __init__, _build, train, _instances_from_prediction, _axes_div_by, _config_class
-- models/convnext.py: Block, ConvNeXt, LayerNorm, convnext_tiny, convnext_small, convnext_base, convnext_large, convnext_xlarge, __init__, forward, __init__, _init_weights, forward_features, forward, __init__, forward
-- models/flexible_unet.py: _get_encoder_channels_by_backbone, UNetDecoder, SegmentationHead, FlexibleUNet, __init__, forward, __init__, __init__, forward
-- models/flexible_unet_convext.py: _get_encoder_channels_by_backbone, UNetDecoder, SegmentationHead, FlexibleUNetConvext, FlexibleUNet_hv, __init__, forward, __init__, __init__, forward, __init__, forward
-- models/flexible_unet_convnext.py: _get_encoder_channels_by_backbone, UNetDecoder, SegmentationHead, FlexibleUNet_star, FlexibleUNet_hv, __init__, forward, __init__, __init__, forward, __init__, forward
-- stardist_pkg/big.py: Block, BlockND, Polygon, Polyhedron, predict_big, NotFullyVisible, _grid_divisible, __init__, start, end, succ_start, add_succ, decrease_stride, freeze, slice_read, slice_crop_context, slice_write, is_responsible, frozen, at_begin, at_end, overlap, context_start, context_end, __repr__, chain, __iter__, cover, __init__, blocks_for_axes, slice_read, slice_crop_context, slice_write, read, crop_context, write, is_responsible, __repr__, __iter__, filter_objects, translate_coordinates, cover, __init__, coords_bbox, __init__, coords_bbox
-- stardist_pkg/bioimageio_utils.py: _import, _create_stardist_dependencies, _create_stardist_doc, _get_stardist_metadata, _predict_tf, _get_weights_and_model_metadata, export_bioimageio, import_bioimageio
-- stardist_pkg/matching.py: label_are_sequential, is_array_of_integers, _check_label_array, label_overlap, _label_overlap, _safe_divide, intersection_over_union, intersection_over_true, intersection_over_pred, precision, recall, accuracy, f1, matching, matching_dataset, matching_dataset_lazy, relabel_sequential, group_matching_labels, _shuffle_labels, _single, _match_single
-- stardist_pkg/nms.py: _ind_prob_thresh, _non_maximum_suppression_old, non_maximum_suppression, non_maximum_suppression_sparse, non_maximum_suppression_inds, non_maximum_suppression_3d, non_maximum_suppression_3d_sparse, non_maximum_suppression_3d_inds, _prep, _prep
-- stardist_pkg/rays3d.py: Rays_Base, rays_from_json, Rays_Explicit, Rays_Cartesian, Rays_SubDivide, Rays_Tetra, Rays_Octo, reorder_faces, Rays_GoldenSpiral, __init__, setup_vertices_faces, vertices, faces, __getitem__, __len__, __repr__, to_json, dist_loss_weights, volume, surface, copy, __init__, setup_vertices_faces, __init__, setup_vertices_faces, __init__, base_polyhedron, setup_vertices_faces, _recursive_split, split, base_polyhedron, base_polyhedron, _single, __init__, setup_vertices_faces, _conv, _ind, _add
-- stardist_pkg/sample_patches.py: sample_patches, get_valid_inds
-- stardist_pkg/utils.py: gputools_available, path_absolute, _is_power_of_2, _normalize_grid, edt_prob, _edt_prob_edt, _edt_prob_scipy, _fill_label_holes, fill_label_holes, sample_points, calculate_extents, polyroi_bytearray, export_imagej_rois, optimize_threshold, _invert_dict, mask_to_categorical, _is_floatarray, abspath, grow, shrink, grow, shrink, _int16, _uint16, _int32, _float, fn
-- stardist_pkg/__init__.py: format_warning, _py_deprecation
-- stardist_pkg/geometry/geom2d.py: _ocl_star_dist, _cpp_star_dist, _py_star_dist, star_dist, _dist_to_coord_old, _polygons_to_label_old, dist_to_coord, polygons_to_label_coord, polygons_to_label, relabel_image_stardist, ray_angles
-- stardist_pkg/models/base.py: generic_masked_loss, masked_loss, masked_loss_mae, masked_loss_mse, masked_metric_mae, masked_metric_mse, kld, masked_loss_iou, masked_metric_iou, weighted_categorical_crossentropy, StarDistDataBase, StarDistBase, StarDistPadAndCropResizer, _tf_version_at_least, _loss, relevant_mae, relevant_mse, iou_loss, iou_metric, weighted_cce, __init__, get_valid_inds, channels_as_tuple, __init__, thresholds, _is_multiclass, _parse_classes_arg, thresholds, prepare_for_training, _predict_setup, _predict_generator, predict, _predict_sparse_generator, predict_sparse, _predict_instances_generator, predict_instances, predict_instances_big, optimize_thresholds, _guess_n_tiles, _normalize_axes, _compute_receptive_field, _axes_tile_overlap, export_TF, __init__, before, after, filter_points, split_dist_true_mask, dist_loss, dist_iou_metric, relevant_mae, relevant_mse, predict_direct, tiling_setup, _prep, _predict_kwargs, _split, create_empty_output
-- stardist_pkg/models/model2d.py: StarDistData2D, Config2D, StarDist2D, __init__, __getitem__, __init__, __init__, _build, train, _instances_from_prediction, _axes_div_by, _config_class
-
-Repository: myBio (JavaScript)
-GitHub URL: https://github.com/samik1986/myBio
-Extracted Functions by File:
-- apply_categories.py: get_cat
-- apply_categories_arrays.py: get_cat
-- build_image_db.py: get_largest_image
-- extract_figures.py: find_pdf, find_fig_bbox
-- fix_posix.py: get_largest_image
-- fix_pubs.py: replace_image
-- generate_options.py: get_images
-- match_all_images.py: get_import_var, clean_str
-- update_from_tex.py: get_or_create_import
-
-Repository: Myelin-Conversion (MATLAB)
-GitHub URL: https://github.com/samik1986/Myelin-Conversion
-Extracted Functions by File:
-- trfm2processDet.m: trfm2processDet
-
-Repository: neetcode-gpt (Python)
-GitHub URL: https://github.com/samik1986/neetcode-gpt
-Extracted Functions by File:
-- data/nlp_preprocessing.py: Solution, get_dataset
-- foundations/activations.py: Solution, sigmoid, relu
-- foundations/backprop.py: Solution, backward
-- foundations/digit_classifier.py: Solution, __init__, forward
-- foundations/gradient_descent.py: Solution, get_minimizer
-- foundations/linear_regression.py: Solution, get_model_prediction, get_error
-- foundations/linear_regression_training.py: Solution, get_derivative, get_model_prediction, train_model
-- foundations/loss.py: Solution, binary_cross_entropy, categorical_cross_entropy
-- foundations/mlp.py: Solution, forward
-- foundations/multi_layer_backprop.py: Solution, forward_and_backward
-- foundations/neuron.py: Solution, forward
-- foundations/pytorch_basics.py: Solution, reshape, average, concatenate, get_loss
-- foundations/sentiment.py: Solution, __init__, forward
-- foundations/softmax.py: Solution, softmax
-- foundations/training_loop.py: Solution, train
-- foundations/weight_init.py: Solution, xavier_init, kaiming_init, check_activations
-- model/batch_normalization.py: Solution, batch_norm
-- model/embeddings.py: Solution, lookup
-- model/normalization.py: Solution, forward
-
-Repository: neetcode-submissions-samik1986 (Python)
-GitHub URL: https://github.com/samik1986/neetcode-submissions-samik1986
-Extracted Functions by File:
-- Data Structures & Algorithms/add-two-numbers/submission-0.py: Solution, addTwoNumbers
-- Data Structures & Algorithms/anagram-groups/submission-0.py: Solution, groupAnagrams
-- Data Structures & Algorithms/buy-and-sell-crypto/submission-2.py: Solution, maxProfit
-- Data Structures & Algorithms/climbing-stairs/submission-0.py: Solution, climbStairs
-- Data Structures & Algorithms/count-paths/submission-0.py: Solution, uniquePaths, dfs
-- Data Structures & Algorithms/daily-temperatures/submission-0.cpp: dailyTemperatures
-- Data Structures & Algorithms/depth-of-binary-tree/submission-0.py: Solution, maxDepth
-- Data Structures & Algorithms/depth-of-binary-tree/submission-1.cpp: maxDepth
-- Data Structures & Algorithms/duplicate-integer/submission-0.py: Solution, hasDuplicate
-- Data Structures & Algorithms/evaluate-reverse-polish-notation/submission-0.cpp: evalRPN
-- Data Structures & Algorithms/find-minimum-in-rotated-sorted-array/submission-0.py: Solution, findMin
-- Data Structures & Algorithms/find-target-in-rotated-sorted-array/submission-1.py: Solution, search, binary_search
-- Data Structures & Algorithms/house-robber/submission-0.py: Solution, rob
-- Data Structures & Algorithms/house-robber-ii/submission-0.py: Solution, rob, lin_rob
-- Data Structures & Algorithms/implement-prefix-tree/submission-0.py: PrefixTreeNode, PrefixTree, __init__, __init__, insert, search, startsWith
-- Data Structures & Algorithms/invert-a-binary-tree/submission-0.py: Solution, invertTree
-- Data Structures & Algorithms/is-anagram/submission-0.py: Solution, isAnagram
-- Data Structures & Algorithms/is-palindrome/submission-0.py: Solution, alphaNum, isPalindrome
-- Data Structures & Algorithms/level-order-traversal-of-binary-tree/submission-0.py: Solution, levelOrder
-- Data Structures & Algorithms/linked-list-cycle-detection/submission-0.py: ListNode, Solution, __init__, hasCycle
-- Data Structures & Algorithms/longest-common-prefix/submission-0.py: Solution, longestCommonPrefix
-- Data Structures & Algorithms/longest-common-subsequence/submission-0.py: Solution, longestCommonSubsequence
-- Data Structures & Algorithms/longest-consecutive-sequence/submission-2.py: Solution, longestConsecutive
-- Data Structures & Algorithms/longest-repeating-substring-with-replacement/submission-2.py: Solution, characterReplacement
-- Data Structures & Algorithms/longest-substring-without-duplicates/submission-8.py: Solution, lengthOfLongestSubstring
-- Data Structures & Algorithms/longest-substring-without-duplicates/submission-9.py: Solution, lengthOfLongestSubstring
-- Data Structures & Algorithms/lowest-common-ancestor-in-binary-search-tree/submission-0.py: Solution, lowestCommonAncestor
-- Data Structures & Algorithms/max-water-container/submission-1.py: Solution, maxArea
-- Data Structures & Algorithms/median-of-two-sorted-arrays/submission-0.py: Solution, findMedianSortedArrays
-- Data Structures & Algorithms/merge-k-sorted-linked-lists/submission-0.py: ListNode, Solution, __init__, mergeKLists
-- Data Structures & Algorithms/merge-two-sorted-linked-lists/submission-0.py: ListNode, Solution, __init__, mergeTwoLists
-- Data Structures & Algorithms/minimum-path-sum/submission-0.py: Solution, minPathSum
-- Data Structures & Algorithms/minimum-stack/submission-0.cpp: push, pop, top, getMin
-- Data Structures & Algorithms/number-of-one-bits/submission-0.cpp: hammingWeight
-- Data Structures & Algorithms/palindrome-number/submission-0.py: Solution, isPalindrome
-- Data Structures & Algorithms/permutation-string/submission-0.cpp: checkInclusion
-- Data Structures & Algorithms/pow-x-n/submission-0.cpp: myPow
-- Data Structures & Algorithms/products-of-array-discluding-self/submission-0.py: Solution, productExceptSelf
-- Data Structures & Algorithms/remove-node-from-end-of-linked-list/submission-0.py: Solution, removeNthFromEnd
-- Data Structures & Algorithms/reorder-linked-list/submission-0.py: Solution, reorderList
-- Data Structures & Algorithms/reorder-linked-list/submission-1.py: Solution, reorderList
-- Data Structures & Algorithms/reverse-a-linked-list/submission-0.py: ListNode, Solution, __init__, reverseList
-- Data Structures & Algorithms/reverse-bits/submission-0.cpp: reverseBits
-- Data Structures & Algorithms/reverse-integer/submission-1.py: Solution, reverse
-- Data Structures & Algorithms/reverse-string/submission-0.cpp: reverseString
-- Data Structures & Algorithms/rotate-matrix/submission-0.cpp: rotate
-- Data Structures & Algorithms/same-binary-tree/submission-0.py: Solution, isSameTree
-- Data Structures & Algorithms/same-binary-tree/submission-1.py: Solution, isSameTree
-- Data Structures & Algorithms/search-in-rotated-sorted-array-ii/submission-0.py: Solution, search
-- Data Structures & Algorithms/single-number/submission-0.cpp: singleNumber
-- Data Structures & Algorithms/string-encode-and-decode/submission-0.py: Solution, encode, decode
-- Data Structures & Algorithms/subtree-of-a-binary-tree/submission-0.py: Solution, isSubtree, isSameTree
-- Data Structures & Algorithms/top-k-elements-in-list/submission-0.py: Solution, topKFrequent
-- Data Structures & Algorithms/trapping-rain-water/submission-0.py: Solution, trap
-- Data Structures & Algorithms/trapping-rain-water/submission-1.py: Solution, trap
-- Data Structures & Algorithms/trapping-rain-water/submission-2.py: Solution, trap
-- Data Structures & Algorithms/triangle/submission-0.py: Solution, minimumTotal
-- Data Structures & Algorithms/two-integer-sum/submission-0.py: Solution, twoSum
-- Data Structures & Algorithms/valid-binary-search-tree/submission-0.py: Solution, isValidBST
-- Data Structures & Algorithms/validate-parentheses/submission-4.py: Solution, isValid
-
-Repository: siamDA (Python)
-GitHub URL: https://github.com/samik1986/siamDA
-Extracted Functions by File:
-- newLayer.py: MyLayer, __init__, build, call, compute_output_shape
-- siamese.py: euclidean_distance, contrastive_loss, create_pairs, create_base_network, compute_accuracy
-
-Repository: tf_lddmm (Python)
-GitHub URL: https://github.com/samik1986/tf_lddmm
-Extracted Functions by File:
-- transform2atlas.py: main, read_from_pickle
-
-Repository: um1_3d_volume (JavaScript)
-GitHub URL: https://github.com/samik1986/um1_3d_volume
-Extracted Functions by File:
-- create_line_volume.m: create_line_volume
-- create_point_volume.m: create_point_volume
-- create_reconstructed_line_volume.m: create_reconstructed_line_volume
-- detect_3d_cells_blob.m: detect_3d_cells_blob, load_tiff_volume, visualize_detections
-- detect_3d_cells_centroids.m: detect_3d_cells_centroids
-- detect_neurons_napari.py: detect_neurons_napari
-- divide_tiff.py: divide_tiff_into_quadrants
-- downsample_volumes.m: downsample_volumes, save_nrrd_volume
-- eval_full_volume_line_endpoints.m: find_extremes_2d, rotate_and_unpad, crop_volume
-- extract_endpoints_from_stereo.m: extract_endpoints_from_stereo
-- extract_subset.m: extract_subset
-- fp_pipeline_smoketest.m: compute_mip_pictures, compute_skeleton, save_overlay, extract_endpoints_silent, backproject_skeletons, display_volume_skeleton, save_multipage_tiff
-- fp_volume_pipeline.m: fp_volume_pipeline
-- generate_ppt.py: get_flowchart_image, create_presentation
-- overlay_lines.m: overlay_lines
-- process_vesselness_3d.m: process_vesselness_3d, compute_mip_angle, backproject_to_3d, save_multipage_tiff
-- reconstruct_endpoints_stereo.m: reconstruct_endpoints_stereo
-- reconstruct_single_point.m: reconstruct_single_point
-- reconstruct_volume.m: reconstruct_volume
-- take_volume_pictures.m: take_volume_pictures
-- test_single_point_stereo.m: test_single_point_stereo, create_point_volume, reconstruct_single_point, add_overlay_visualization
-- visualize_3d_cells.m: visualize_3d_cells
-- visualize_full_cells_subset.m: visualize_full_cells_subset
-- visualize_napari_csv.py: load_csv_points, visualize_napari_csv
-- visualize_subvol_napari.py: visualize_subvol
-- volshow_cells_subset.m: volshow_cells_subset
-- centroid_cw_processing/process_centroids.py: main
-- centroid_cw_processing/utils.py: parse_slice_num, parse_swc_files, serialize_to_cw_complex
-- cloud_proofreading/napari_stream/unified_viewer.py: parse_swc_skeleton, save_swc_skeleton, color_connected_components, run_viewer, save_state, snap_to_intensity
-- cw_graph_tools/add_tree.m: add_tree
-- cw_graph_tools/create_forest_from_json.m: create_forest_from_json
-- cw_graph_tools/delete_tree.m: delete_tree
-- cw_graph_tools/edit_cw_json.m: edit_cw_json
-- cw_graph_tools/edit_graph.m: edit_graph
-- cw_graph_tools/export_forest_to_json.m: export_forest_to_json
-- cw_graph_tools/find_loops.m: find_loops
-- cw_graph_tools/find_mst.m: find_mst, find_dt, union_dt
-- cw_graph_tools/load_cw_json.m: load_cw_json
-- cw_graph_tools/plot_cw_complex.m: plot_cw_complex
-- cw_graph_tools/save_cw_json.m: save_cw_json
-- django_webapp/manage.py: main
-- django_webapp/viewer/apps.py: ViewerConfig
-- django_webapp/viewer/dash_apps.py: parse_swc, load_data, toggle_slider, update_styles, render_3d, render_2d
-- django_webapp/viewer/views.py: parse_swc, index, load_volume
-- docker_cell_detection/run_centroids.py: process_volume
-- docker_cell_detection/run_centroids_DAPI.py: process_volume
-- docker_cell_detection/run_centroids_FP.py: process_volume
-- docker_cell_detection/run_pipeline.py: load_swc, save_swc, save_scaled_swc, main
-- docker_cell_detection/run_pipeline_parallel.py: process_block, detect_centroids_parallel, save_swc, save_scaled_swc, main
-- docker_cell_detection/scale_swc.py: scale_swc
-- docker_cell_detection/visualize_3d.py: load_swc, visualize
-- docker_cell_detection/visualize_napari.py: load_swc, visualize_napari
-- fp_cpp_pipeline/main.cpp: main
-- fp_pipeline_modules/backproject_skeletons.m: backproject_skeletons
-- fp_pipeline_modules/compute_mip_pictures.m: compute_mip_pictures
-- fp_pipeline_modules/compute_skeleton.m: compute_skeleton
-- fp_pipeline_modules/display_subvolume_overlay.m: display_subvolume_overlay
-- fp_pipeline_modules/display_volume_skeleton.m: display_volume_skeleton
-- fp_pipeline_modules/export_cw_complex_2d.m: export_cw_complex_2d
-- fp_pipeline_modules/export_cw_complex_json.m: export_cw_complex_json
-- fp_pipeline_modules/extract_endpoints_silent.m: extract_endpoints_silent
-- fp_pipeline_modules/save_multipage_tiff.m: save_multipage_tiff
-- fp_pipeline_modules/save_nrrd_volume.m: save_nrrd_volume
-- fp_pipeline_modules/save_overlay.m: save_overlay
-- fp_pipeline_modules/skel_to_graph_2d.m: skel_to_graph_2d
-- fp_pipeline_modules/swap_pts.m: swap_pts
-- fp_pipeline_modules/triangulate_endpoints_fast.m: triangulate_endpoints_fast
-- frangi_filter_version2a/eig2image.m: eig2image
-- frangi_filter_version2a/eig3volume.c: eigen_decomposition, mexFunction
-- frangi_filter_version2a/FrangiFilter2D.m: FrangiFilter2D
-- frangi_filter_version2a/FrangiFilter3D.m: FrangiFilter3D
-- frangi_filter_version2a/Hessian2D.m: Hessian2D
-- frangi_filter_version2a/Hessian3D.m: Hessian3D, gradient3
-- frangi_filter_version2a/imgaussian.c: imfilter1D_double, imfilter2D_double, imfilter3D_double, imfilter1D_float, imfilter2D_float, imfilter3D_float, imfilter2Dcolor_double, imfilter2Dcolor_float, GaussianFiltering3D_float, GaussianFiltering2Dcolor_float, GaussianFiltering2D_float, GaussianFiltering1D_float, GaussianFiltering3D_double, GaussianFiltering2Dcolor_double, GaussianFiltering2D_double, GaussianFiltering1D_double, mexFunction
-- frangi_filter_version2a/imgaussian.m: imgaussian
-- neurite_detection/create_synthetic_data.py: create_synthetic_data
-- neurite_detection/create_tutorial_data.py: create_crop
-- neurite_detection/cw_extraction.py: binary_to_cw_complex
-- neurite_detection/detect_somas.py: process_tile_soma_gpu, detect_somas
-- neurite_detection/generate_gif.py: generate_neurite_gif, generate_centroid_gif
-- neurite_detection/process_neurites.py: cupy_frangi_3d, process_tile_gpu, detect_neurites_volume
-- neurite_detection/run_pipeline.py: run_pipeline, main
-- neurite_detection/tutorial.py: load_cw_complex, run_neurite_tutorial, run_centroid_tutorial, advance_tutorial, save_state, advance_tutorial, save_state
-- neurite_detection/pipeline/main.py: main
-- neurite_detection/pipeline/test_frangi.py: eigh_3x3_analytical, frangi_3d
-- neurite_detection/pipeline/core/cell_detection.py: process_tile_soma_gpu, detect_cells_488
-- neurite_detection/pipeline/core/graph_export.py: export_graphs
-- neurite_detection/pipeline/core/neurite_detection.py: eigh_3x3_analytical, process_tile_frangi_gpu, detect_neurites, skel_chunk
-- neurite_detection/pipeline/visualization/flex_visualizer.py: main
-- neurite_detection/pipeline/visualization/proofreader.py: run_proofreader
-- neurite_detection/utils/viewer.py: load_cw_complex, save_cw_complex, run_viewer, save_state
-- neuron_detection/graph_utils.py: stitch_graphs, graph_to_cw_complex, graph_to_swc
-- neuron_detection/io_utils.py: load_tiff_memmap, extract_subvolume
-- neuron_detection/main.py: main
-- neuron_detection/processing.py: preprocess_volume, apply_frangi_3d, extract_skeleton, process_subvolume_to_graph
-- neuron_detection/visualization.py: launch_napari
-- neuron_detection/visualize_swc_volume.py: load_swc_segments, main
-- neuron_processing/zernike_pipeline/cluster_ch03_zernike.py: compute_invariants, main
-- neuron_processing/zernike_pipeline/napari_viewer.py: load_centroids_from_json, load_cw_complex, build_edge_lines, ProofreadState, create_proofread_widget, _do_proofread_action, _setup_console_proofreading, launch_napari_viewer, main, __init__, approve, delete, split, save, summary, approve_key, delete_key, save_key, approve_btn, delete_btn, split_btn, save_btn, on_click
-- proofreading/launcher.py: install_and_import, main
-- proofreading/napari_proofreader.py: read_swc, save_swc, LoadingWorker, ProofreaderDockWidget, main, __init__, run, __init__, _on_layer_inserted, connect_points_layer, load_volume_dialog, load_centroids_dialog, load_baseline_dialog, start_loading_thread, on_loading_finished, on_loading_error, calculate_metrics, update_voxel_spacing, update_marker_size, save_edits_dialog, on_data_changed
-- webapp/app.py: load_swc, close_volume, index, load_local, upload_files, get_slice, get_points, get_progress, get_volume3d, get_points_all
-- zarr_viewer/launch.py: main
-- zarr_viewer/serve_zarr.py: CORSRequestHandler, end_headers, do_OPTIONS
-- zernike_feature_pipeline_package/batch_process_zernike.py: compute_invariants, main
-- zernike_feature_pipeline_package/build_zernike_filter_gpu.py: ZernikeFilterBank, main, __init__, _build_filter_matrix, extract, reconstruct
-- zernike_feature_pipeline_package/launcher.py: install_package, main
-- zernike_feature_pipeline_package/zernike_basis.py: zernike_3d_basis_physical
-- zernike_feature_pipeline_package/zernike_basis_gpu.py: _q_coeff, zernike_radial_gpu, zernike_spherical_gpu, zernike_3d_basis_physical_gpu, zernike_3d_basis_precomputed_gpu
-- zernike_feature_pipeline_package/zernike_radial.py: _q_coeff, zernike_radial
-- zernike_feature_pipeline_package/zernike_spherical.py: zernike_spherical
-
-Repository: wiNN (Python)
-GitHub URL: https://github.com/samik1986/wiNN
-Extracted Functions by File:
-- wiNN.py: wt, y_hat
-- venv/lib/python2.7/site.py: makepath, abs__file__, removeduppaths, addbuilddir, _init_pathinfo, addpackage, addsitedir, addsitepackages, check_enableusersite, addusersitepackages, setBEGINLIBPATH, setquit, _Printer, setcopyright, _Helper, sethelper, aliasmbcs, setencoding, execsitecustomize, virtual_install_main_packages, force_global_eggs_after_local_site_packages, virtual_addsitepackages, fixclasspath, execusercustomize, main, _script, joinuser, Quitter, __init__, __setup, __repr__, __call__, __repr__, __call__, __init__, __repr__, __call__, exists
-- venv/lib/python2.7/distutils/__init__.py: find_config_files, sysconfig_get_python_inc, sysconfig_get_python_lib, sysconfig_get_config_vars, build_ext, finalize_options
-- venv/lib/python2.7/site-packages/pip/_internal/build_env.py: BuildEnvironment, NoOpBuildEnvironment, __init__, path, __enter__, __exit__, cleanup, missing_requirements, install_requirements, __init__, __enter__, __exit__, cleanup, install_requirements, restore_var
-- venv/lib/python2.7/site-packages/pip/_internal/cache.py: Cache, SimpleWheelCache, EphemWheelCache, WheelCache, __init__, _get_cache_path_parts, _get_candidates, get_path_for_link, get, _link_for_candidate, cleanup, __init__, get_path_for_link, get, __init__, cleanup, __init__, get_path_for_link, get_ephem_path_for_link, get, cleanup
-- venv/lib/python2.7/site-packages/pip/_internal/configuration.py: _normalize_name, _disassemble_key, Configuration, __init__, load, get_file_to_edit, items, get_value, set_value, unset_value, save, _ensure_have_load_only, _dictionary, _load_config_files, _load_file, _construct_parser, _load_environment_vars, _normalized_keys, _get_environ_vars, _iter_config_files, _get_parser_to_modify, _mark_as_modified
-- venv/lib/python2.7/site-packages/pip/_internal/download.py: user_agent, MultiDomainBasicAuth, LocalFSAdapter, SafeFileCache, InsecureHTTPAdapter, PipSession, get_file_content, is_url, url_to_path, path_to_url, is_archive_file, unpack_vcs_link, _get_used_vcs_backend, is_vcs_url, is_file_url, is_dir_url, _progress_indicator, _download_url, _copy_file, unpack_http_url, unpack_file_url, _copy_dist_from_dir, PipXmlrpcTransport, unpack_url, _download_http_url, _check_download_dir, __init__, __call__, handle_401, parse_credentials, send, close, __init__, get, set, delete, cert_verify, __init__, request, resp_read, written_chunks, __init__, request
-- venv/lib/python2.7/site-packages/pip/_internal/exceptions.py: PipError, ConfigurationError, InstallationError, UninstallationError, DistributionNotFound, RequirementsFileParseError, BestVersionAlreadyInstalled, BadCommand, CommandError, PreviousBuildDirError, InvalidWheelFilename, UnsupportedWheel, HashErrors, HashError, VcsHashUnsupported, DirectoryUrlHashUnsupported, HashMissing, HashUnpinned, HashMismatch, UnsupportedPythonVersion, ConfigurationFileCouldNotBeLoaded, __init__, append, __str__, __nonzero__, __bool__, body, __str__, _requirement_name, __init__, body, __init__, body, _hash_comparison, __init__, __str__, hash_then_or
-- venv/lib/python2.7/site-packages/pip/_internal/index.py: _get_content_type, _handle_get_page_fail, _get_html_page, PackageFinder, egg_info_matches, _determine_base_url, _get_encoding_from_headers, _clean_link, HTMLPage, __init__, get_formatted_locations, add_dependency_links, _sort_locations, _candidate_sort_key, _validate_secure_origin, _get_index_urls_locations, find_all_candidates, find_requirement, _get_pages, _sort_links, _package_versions, _log_skipped_link, _link_package_versions, _get_page, __init__, __str__, iter_links, sort_path, mkurl_pypi_url
-- venv/lib/python2.7/site-packages/pip/_internal/locations.py: write_delete_marker_file, running_under_virtualenv, virtualenv_no_global, distutils_scheme
-- venv/lib/python2.7/site-packages/pip/_internal/pep425tags.py: get_config_var, get_abbr_impl, get_impl_ver, get_impl_version_info, get_impl_tag, get_flag, get_abi_tag, _is_running_32bit, get_platform, is_manylinux1_compatible, get_darwin_arches, get_supported, _supports_arch
-- venv/lib/python2.7/site-packages/pip/_internal/pyproject.py: _is_list_of_str, load_pyproject_toml
-- venv/lib/python2.7/site-packages/pip/_internal/resolve.py: Resolver, __init__, resolve, _is_upgrade_allowed, _set_req_to_reinstall, _check_skip_installed, _get_abstract_dist_for, _resolve_one, get_installation_order, add_req, schedule
-- venv/lib/python2.7/site-packages/pip/_internal/wheel.py: rehash, open_for_csv, fix_script, root_is_purelib, get_entrypoints, message_about_scripts_not_on_PATH, move_wheel_files, wheel_version, check_compatibility, Wheel, WheelBuilder, _split_ep, normpath, record_installed, clobber, is_entrypoint_wrapper, _get_script_text, __init__, support_index_min, supported, __init__, _build_one, _build_one_inside_env, _base_setup_args, __build_one, _clean_one, build
-- venv/lib/python2.7/site-packages/pip/_internal/__init__.py: main
-- venv/lib/python2.7/site-packages/pip/_internal/cli/autocompletion.py: autocomplete, get_path_completion_type, auto_complete_paths
-- venv/lib/python2.7/site-packages/pip/_internal/cli/base_command.py: Command, RequirementCommand, __init__, _build_session, parse_args, main, populate_requirement_set, _build_package_finder
-- venv/lib/python2.7/site-packages/pip/_internal/cli/cmdoptions.py: make_option_group, check_install_build_global, check_dist_restriction, exists_action, extra_index_url, find_links, trusted_host, constraints, requirements, editable, _get_format_control, _handle_no_binary, _handle_only_binary, no_binary, only_binary, prefer_binary, _merge_hash, getname
-- venv/lib/python2.7/site-packages/pip/_internal/cli/main_parser.py: create_main_parser, parse_command
-- venv/lib/python2.7/site-packages/pip/_internal/cli/parser.py: PrettyHelpFormatter, UpdatingDefaultsHelpFormatter, CustomOptionParser, ConfigOptionParser, invalid_config_error_message, __init__, format_option_strings, _format_option_strings, format_heading, format_usage, format_description, format_epilog, indent_lines, expand_default, insert_option_group, option_list_all, __init__, check_default, _get_ordered_configuration_items, _update_defaults, get_default_values, error
-- venv/lib/python2.7/site-packages/pip/_internal/commands/check.py: CheckCommand, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/completion.py: CompletionCommand, __init__, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/configuration.py: ConfigurationCommand, __init__, run, _determine_file, list_values, get_name, set_name_value, unset_name, open_in_editor, _get_n_args, _save_configuration, _determine_editor
-- venv/lib/python2.7/site-packages/pip/_internal/commands/download.py: DownloadCommand, __init__, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/freeze.py: FreezeCommand, __init__, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/hash.py: HashCommand, _hash_of_file, __init__, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/help.py: HelpCommand, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/install.py: InstallCommand, get_lib_location_guesses, create_env_error_message, __init__, run, _handle_target_dir, _warn_about_conflicts
-- venv/lib/python2.7/site-packages/pip/_internal/commands/list.py: ListCommand, tabulate, format_for_columns, format_for_json, __init__, _build_package_finder, run, get_outdated, get_uptodate, get_not_required, iter_packages_latest_infos, output_package_listing, output_package_listing_columns
-- venv/lib/python2.7/site-packages/pip/_internal/commands/search.py: SearchCommand, transform_hits, print_results, highest_version, __init__, run, search
-- venv/lib/python2.7/site-packages/pip/_internal/commands/show.py: ShowCommand, search_packages_info, print_results, __init__, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/uninstall.py: UninstallCommand, __init__, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/wheel.py: WheelCommand, __init__, run
-- venv/lib/python2.7/site-packages/pip/_internal/commands/__init__.py: get_summaries, get_similar_commands, _sort_commands, keyfn
-- venv/lib/python2.7/site-packages/pip/_internal/models/candidate.py: InstallationCandidate, __init__, __repr__
-- venv/lib/python2.7/site-packages/pip/_internal/models/format_control.py: FormatControl, __init__, __eq__, __ne__, __repr__, handle_mutual_excludes, get_allowed_formats, disallow_binaries
-- venv/lib/python2.7/site-packages/pip/_internal/models/index.py: PackageIndex, __init__, _url_for_path
-- venv/lib/python2.7/site-packages/pip/_internal/models/link.py: Link, __init__, __str__, __repr__, filename, scheme, netloc, path, splitext, ext, url_without_fragment, egg_fragment, subdirectory_fragment, hash, hash_name, show_url, is_wheel, is_artifact
-- venv/lib/python2.7/site-packages/pip/_internal/operations/check.py: create_package_set_from_installed, check_package_set, check_install_conflicts, _simulate_installation_of, _create_whitelist, should_ignore
-- venv/lib/python2.7/site-packages/pip/_internal/operations/freeze.py: freeze, FrozenRequirement, __init__, _init_args_from_dist, from_dist, egg_name, __str__
-- venv/lib/python2.7/site-packages/pip/_internal/operations/prepare.py: make_abstract_dist, DistAbstraction, IsWheel, IsSDist, Installed, RequirementPreparer, __init__, dist, prep_for_dist, dist, prep_for_dist, dist, prep_for_dist, dist, prep_for_dist, __init__, _download_should_save, prepare_linked_requirement, prepare_editable_requirement, prepare_installed_requirement
-- venv/lib/python2.7/site-packages/pip/_internal/req/constructors.py: _strip_extras, parse_editable, deduce_helpful_msg, install_req_from_editable, install_req_from_line, install_req_from_req
-- venv/lib/python2.7/site-packages/pip/_internal/req/req_file.py: parse_requirements, preprocess, process_line, break_args_options, build_parser, join_lines, ignore_comments, skip_regex, expand_env_variables, parser_exit
-- venv/lib/python2.7/site-packages/pip/_internal/req/req_install.py: InstallRequirement, __init__, __str__, __repr__, populate_link, name, specifier, is_pinned, installed_version, match_markers, has_hash_options, hashes, from_path, build_location, _correct_build_location, remove_temporary_source, check_if_exists, is_wheel, move_wheel_files, setup_py_dir, setup_py, pyproject_toml, load_pyproject_toml, run_egg_info, egg_info_path, metadata, get_dist, assert_source_matches_version, ensure_has_source_dir, install_editable, update_editable, uninstall, _clean_zip_name, archive, install, get_install_args, prepend_root
-- venv/lib/python2.7/site-packages/pip/_internal/req/req_set.py: RequirementSet, __init__, __str__, __repr__, add_requirement, has_requirement, has_requirements, get_requirement, cleanup_files
-- venv/lib/python2.7/site-packages/pip/_internal/req/req_tracker.py: RequirementTracker, __init__, __enter__, __exit__, _entry_path, add, remove, cleanup, track
-- venv/lib/python2.7/site-packages/pip/_internal/req/req_uninstall.py: _script_names, _unique, uninstallation_paths, compact, compress_for_output_listing, UninstallPathSet, UninstallPthEntries, unique, __init__, _permitted, add, add_pth, _stash, remove, _allowed_to_proceed, rollback, commit, from_dist, __init__, add, remove, rollback, _display
-- venv/lib/python2.7/site-packages/pip/_internal/req/__init__.py: install_given_reqs
-- venv/lib/python2.7/site-packages/pip/_internal/utils/appdirs.py: user_cache_dir, user_data_dir, user_config_dir, site_config_dirs, _get_win_folder_from_registry, _get_win_folder_with_ctypes, _win_path_to_bytes
-- venv/lib/python2.7/site-packages/pip/_internal/utils/compat.py: console_to_str, get_path_uid, expanduser, samefile, backslashreplace_decode_fn, native_str, native_str, get_extension_suffixes, get_extension_suffixes, get_terminal_size, get_terminal_size, ioctl_GWINSZ
-- venv/lib/python2.7/site-packages/pip/_internal/utils/deprecation.py: PipDeprecationWarning, _showwarning, install_warning_logger, deprecated
-- venv/lib/python2.7/site-packages/pip/_internal/utils/encoding.py: auto_decode
-- venv/lib/python2.7/site-packages/pip/_internal/utils/filesystem.py: check_path_owner
-- venv/lib/python2.7/site-packages/pip/_internal/utils/glibc.py: glibc_version_string, check_glibc_version, have_compatible_glibc, libc_ver
-- venv/lib/python2.7/site-packages/pip/_internal/utils/hashes.py: Hashes, MissingHashes, __init__, check_against_chunks, _raise, check_against_file, check_against_path, __nonzero__, __bool__, __init__, _raise
-- venv/lib/python2.7/site-packages/pip/_internal/utils/logging.py: indent_log, get_indentation, IndentingFormatter, _color_wrap, ColorizedStreamHandler, BetterRotatingFileHandler, MaxLevelFilter, setup_logging, format, wrapped, __init__, should_color, format, _open, __init__, filter
-- venv/lib/python2.7/site-packages/pip/_internal/utils/misc.py: import_or_raise, ensure_dir, get_prog, rmtree, rmtree_errorhandler, display_path, backup_dir, ask_path_exists, ask, format_size, is_installable_dir, is_svn_page, file_contents, read_chunks, split_leading_dir, has_leading_dir, normalize_path, splitext, renames, is_local, dist_is_local, dist_in_usersite, dist_in_site_packages, dist_is_editable, get_installed_distributions, egg_link_path, dist_location, current_umask, unzip_file, untar_file, unpack_file, call_subprocess, read_text_file, _make_build_dir, FakeFile, StreamWrapper, captured_output, captured_stdout, cached_property, get_installed_version, consume, enum, make_vcs_requirement_url, split_auth_from_netloc, remove_auth_from_url, protect_pip_from_modification_on_windows, __init__, readline, __iter__, from_stream, encoding, __init__, __get__, local_test, editable_test, editable_test, editables_only_test, editables_only_test, user_test
-- venv/lib/python2.7/site-packages/pip/_internal/utils/models.py: KeyBasedCompareMixin, __init__, __hash__, __lt__, __le__, __gt__, __ge__, __eq__, __ne__, _compare
-- venv/lib/python2.7/site-packages/pip/_internal/utils/outdated.py: SelfCheckState, was_installed_by_pip, pip_version_check, __init__, save
-- venv/lib/python2.7/site-packages/pip/_internal/utils/packaging.py: check_requires_python, get_metadata, check_dist_requires_python, get_installer
-- venv/lib/python2.7/site-packages/pip/_internal/utils/temp_dir.py: TempDirectory, __init__, __repr__, __enter__, __exit__, create, cleanup
-- venv/lib/python2.7/site-packages/pip/_internal/utils/ui.py: _select_progress_class, InterruptibleMixin, SilentBar, BlueEmojiBar, DownloadProgressMixin, WindowsMixin, BaseDownloadProgressBar, DefaultDownloadProgressBar, DownloadSilentBar, DownloadIncrementalBar, DownloadChargingBar, DownloadShadyBar, DownloadFillingSquaresBar, DownloadFillingCirclesBar, DownloadBlueEmojiProgressBar, DownloadProgressSpinner, DownloadProgressProvider, hidden_cursor, RateLimiter, InteractiveSpinner, NonInteractiveSpinner, open_spinner, __init__, finish, handle_sigint, update, __init__, downloaded, download_speed, pretty_eta, iter, __init__, next_phase, update, __init__, ready, reset, __init__, _write, spin, finish, __init__, _update, spin, finish
-- venv/lib/python2.7/site-packages/pip/_internal/vcs/bazaar.py: Bazaar, __init__, get_base_rev_args, export, fetch_new, switch, update, get_url_rev_and_auth, get_url, get_revision, get_src_requirement, is_commit_id_equal
-- venv/lib/python2.7/site-packages/pip/_internal/vcs/git.py: looks_like_hash, Git, __init__, get_base_rev_args, get_git_version, get_branch, export, get_revision_sha, resolve_revision, is_commit_id_equal, fetch_new, switch, update, get_url, get_revision, _get_subdirectory, get_src_requirement, get_url_rev_and_auth, update_submodules, controls_location
-- venv/lib/python2.7/site-packages/pip/_internal/vcs/mercurial.py: Mercurial, get_base_rev_args, export, fetch_new, switch, update, get_url, get_revision, get_revision_hash, get_src_requirement, is_commit_id_equal
-- venv/lib/python2.7/site-packages/pip/_internal/vcs/subversion.py: Subversion, get_base_rev_args, export, fetch_new, switch, update, get_location, get_revision, get_netloc_and_auth, get_url_rev_and_auth, make_rev_args, get_url, _get_svn_url_rev, get_src_requirement, is_commit_id_equal
-- venv/lib/python2.7/site-packages/pip/_internal/vcs/__init__.py: RevOptions, VcsSupport, VersionControl, get_src_requirement, __init__, __repr__, arg_rev, to_args, to_display, make_new, __init__, __iter__, backends, dirnames, all_schemes, register, unregister, get_backend_name, get_backend, get_backend_from_location, __init__, get_base_rev_args, make_rev_options, _is_local_repository, export, get_netloc_and_auth, get_url_rev_and_auth, make_rev_args, get_url_rev_options, normalize_url, compare_urls, fetch_new, switch, update, is_commit_id_equal, obtain, unpack, get_src_requirement, get_url, get_revision, run_command, is_repository_directory, controls_location
-- venv/lib/python2.7/site-packages/pip/_vendor/appdirs.py: user_data_dir, site_data_dir, user_config_dir, site_config_dir, user_cache_dir, user_state_dir, user_log_dir, AppDirs, _get_win_folder_from_registry, _get_win_folder_with_pywin32, _get_win_folder_with_ctypes, _get_win_folder_with_jna, __init__, user_data_dir, site_data_dir, user_config_dir, site_config_dir, user_cache_dir, user_state_dir, user_log_dir
-- venv/lib/python2.7/site-packages/pip/_vendor/distro.py: linux_distribution, id, name, version, version_parts, major_version, minor_version, build_number, like, codename, info, os_release_info, lsb_release_info, distro_release_info, uname_info, os_release_attr, lsb_release_attr, distro_release_attr, uname_attr, cached_property, LinuxDistribution, main, __init__, __get__, __init__, __repr__, linux_distribution, id, name, version, version_parts, major_version, minor_version, build_number, like, codename, info, os_release_info, lsb_release_info, distro_release_info, uname_info, os_release_attr, lsb_release_attr, distro_release_attr, uname_attr, _os_release_info, _parse_os_release_content, _lsb_release_info, _parse_lsb_release_content, _uname_info, _parse_uname_content, _distro_release_info, _parse_distro_release_file, _parse_distro_release_content, normalize
-- venv/lib/python2.7/site-packages/pip/_vendor/ipaddress.py: _compat_to_bytes, _compat_range, _TotalOrderingMixin, AddressValueError, NetmaskValueError, ip_address, ip_network, ip_interface, v4_int_to_packed, v6_int_to_packed, _split_optional_netmask, _find_address_range, _count_righthand_zero_bits, summarize_address_range, _collapse_addresses_internal, collapse_addresses, get_mixed_type_key, _IPAddressBase, _BaseAddress, _BaseNetwork, _BaseV4, IPv4Address, IPv4Interface, IPv4Network, _IPv4Constants, _BaseV6, IPv6Address, IPv6Interface, IPv6Network, _IPv6Constants, _compat_bytes_to_byte_vals, _compat_bytes_to_byte_vals, _compat_bit_length, _compat_bit_length, __eq__, __ne__, __lt__, __le__, __gt__, __ge__, exploded, compressed, reverse_pointer, version, _check_int_address, _check_packed_address, _ip_int_from_prefix, _prefix_from_ip_int, _report_invalid_netmask, _prefix_from_prefix_string, _prefix_from_ip_string, __reduce__, __int__, __eq__, __lt__, __add__, __sub__, __repr__, __str__, __hash__, _get_address_key, __reduce__, __init__, __repr__, __str__, hosts, __iter__, __getitem__, __lt__, __eq__, __hash__, __contains__, overlaps, broadcast_address, hostmask, with_prefixlen, with_netmask, with_hostmask, num_addresses, _address_class, prefixlen, address_exclude, compare_networks, _get_networks_key, subnets, supernet, is_multicast, _is_subnet_of, subnet_of, supernet_of, is_reserved, is_link_local, is_private, is_global, is_unspecified, is_loopback, _explode_shorthand_ip_string, _make_netmask, _ip_int_from_string, _parse_octet, _string_from_ip_int, _is_hostmask, _reverse_pointer, max_prefixlen, version, __init__, packed, is_reserved, is_private, is_global, is_multicast, is_unspecified, is_loopback, is_link_local, __init__, __str__, __eq__, __lt__, __hash__, ip, with_prefixlen, with_netmask, with_hostmask, __init__, is_global, _make_netmask, _ip_int_from_string, _parse_hextet, _compress_hextets, _string_from_ip_int, _explode_shorthand_ip_string, _reverse_pointer, max_prefixlen, version, __init__, packed, is_multicast, is_reserved, is_link_local, is_site_local, is_private, is_global, is_unspecified, is_loopback, ipv4_mapped, teredo, sixtofour, __init__, __str__, __eq__, __lt__, __hash__, ip, with_prefixlen, with_netmask, with_hostmask, is_unspecified, is_loopback, __init__, hosts, is_site_local, _compat_int_from_byte_vals
-- venv/lib/python2.7/site-packages/pip/_vendor/pyparsing.py: _xml_escape, _Constants, ParseBaseException, ParseException, ParseFatalException, ParseSyntaxException, RecursiveGrammarException, _ParseResultsWithOffset, ParseResults, col, lineno, line, _defaultStartDebugAction, _defaultSuccessDebugAction, _defaultExceptionDebugAction, nullDebugAction, _trim_arity, ParserElement, Token, Empty, NoMatch, Literal, Keyword, CaselessLiteral, CaselessKeyword, CloseMatch, Word, Regex, QuotedString, CharsNotIn, White, _PositionToken, GoToColumn, LineStart, LineEnd, StringStart, StringEnd, WordStart, WordEnd, ParseExpression, And, Or, MatchFirst, Each, ParseElementEnhance, FollowedBy, NotAny, _MultipleMatch, OneOrMore, ZeroOrMore, _NullToken, Optional, SkipTo, Forward, _ForwardNoRecurse, TokenConverter, Combine, Group, Dict, Suppress, OnlyOnce, traceParseAction, delimitedList, countedArray, _flatten, matchPreviousLiteral, matchPreviousExpr, _escapeRegexRangeChars, oneOf, dictOf, originalTextFor, ungroup, locatedExpr, srange, matchOnlyAtCol, replaceWith, removeQuotes, tokenMap, _makeTags, makeHTMLTags, makeXMLTags, withAttribute, withClass, infixNotation, nestedExpr, indentedBlock, replaceHTMLEntity, pyparsing_common, _ustr, __init__, _from_exception, __getattr__, __str__, __repr__, markInputline, __dir__, __init__, __str__, __init__, __getitem__, __repr__, setOffset, __new__, __init__, __getitem__, __setitem__, __delitem__, __contains__, __len__, __bool__, __iter__, __reversed__, _iterkeys, _itervalues, _iteritems, haskeys, pop, get, insert, append, extend, clear, __getattr__, __add__, __iadd__, __radd__, __repr__, __str__, _asStringList, asList, asDict, copy, asXML, __lookup, getName, dump, pprint, __getstate__, __setstate__, __getnewargs__, __dir__, wrapper, setDefaultWhitespaceChars, inlineLiteralsUsing, __init__, copy, setName, setResultsName, setBreak, setParseAction, addParseAction, addCondition, setFailAction, _skipIgnorables, preParse, parseImpl, postParse, _parseNoCache, tryParse, canParseNext, _UnboundedCache, _parseCache, resetCache, enablePackrat, parseString, scanString, transformString, searchString, split, __add__, __radd__, __sub__, __rsub__, __mul__, __rmul__, __or__, __ror__, __xor__, __rxor__, __and__, __rand__, __invert__, __call__, suppress, leaveWhitespace, setWhitespaceChars, parseWithTabs, ignore, setDebugActions, setDebug, __str__, __repr__, streamline, checkRecursion, validate, parseFile, __eq__, __ne__, __hash__, __req__, __rne__, matches, runTests, __init__, __init__, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, copy, setDefaultKeywordChars, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __init__, preParse, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, __getitem__, append, leaveWhitespace, ignore, __str__, streamline, setResultsName, validate, copy, _ErrorStop, __init__, parseImpl, __iadd__, checkRecursion, __str__, __init__, parseImpl, __ixor__, __str__, checkRecursion, __init__, parseImpl, __ior__, __str__, checkRecursion, __init__, parseImpl, __str__, checkRecursion, __init__, parseImpl, leaveWhitespace, ignore, streamline, checkRecursion, validate, __str__, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __bool__, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __lshift__, __ilshift__, leaveWhitespace, streamline, validate, __str__, copy, __str__, __init__, __init__, ignore, postParse, __init__, postParse, __init__, postParse, postParse, suppress, __init__, __call__, reset, z, countFieldParseAction, copyTokenToRepeater, copyTokenToRepeater, verifyCol, pa, pa, checkPeerIndent, checkSubIndent, checkUnindent, convertToDate, convertToDatetime, stripHTMLTags, keys, values, items, toItem, extract_stack, extract_tb, __init__, _FifoCache, _FifoCache, __init__, mustMatchTheseTokens, extractText, cvt_fn, cvt_fn, breaker, pa, get, set, clear, cache_len, __init__, __init__, makeOptionalList, charsAsStr, get, set, clear, cache_len, get, set, clear, cache_len
-- venv/lib/python2.7/site-packages/pip/_vendor/retrying.py: retry, Retrying, Attempt, RetryError, __init__, stop_after_attempt, stop_after_delay, no_sleep, fixed_sleep, random_sleep, incrementing_sleep, exponential_sleep, never_reject, always_reject, should_reject, call, __init__, get, __repr__, __init__, __str__, wrap_simple, wrap, wrapped_f, wrapped_f
-- venv/lib/python2.7/site-packages/pip/_vendor/six.py: _add_doc, _import_module, _LazyDescr, MovedModule, _LazyModule, MovedAttribute, _SixMetaPathImporter, _MovedItems, Module_six_moves_urllib_parse, Module_six_moves_urllib_error, Module_six_moves_urllib_request, Module_six_moves_urllib_response, Module_six_moves_urllib_robotparser, Module_six_moves_urllib, add_move, remove_move, assertCountEqual, assertRaisesRegex, assertRegex, with_metaclass, add_metaclass, python_2_unicode_compatible, __init__, __get__, __init__, _resolve, __getattr__, __init__, __dir__, __init__, _resolve, __init__, _add_module, _get_module, find_module, __get_module, load_module, is_package, get_code, __dir__, get_unbound_function, create_unbound_method, get_unbound_function, create_bound_method, create_unbound_method, Iterator, iterkeys, itervalues, iteritems, iterlists, iterkeys, itervalues, iteritems, iterlists, b, u, b, u, byte2int, indexbytes, reraise, exec_, print_, print_, wraps, metaclass, wrapper, X, advance_iterator, callable, next, raise_from, write, wrapper, __new__, __prepare__, __len__
-- venv/lib/python2.7/site-packages/pip/_vendor/__init__.py: vendored
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/adapter.py: CacheControlAdapter, __init__, send, build_response, close, _update_chunk_length
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/cache.py: BaseCache, DictCache, get, set, delete, close, __init__, get, set, delete
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/controller.py: parse_uri, CacheController, __init__, _urlnorm, cache_url, parse_cache_control, cached_request, conditional_headers, cache_response, update_cached_response
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/filewrapper.py: CallbackFileWrapper, __init__, __getattr__, __is_fp_closed, _close, read, _safe_read
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/heuristics.py: expire_after, datetime_to_header, BaseHeuristic, OneDayCache, ExpiresAfter, LastModified, warning, update_headers, apply, update_headers, __init__, update_headers, warning, update_headers, warning
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/serialize.py: _b64_decode_bytes, _b64_decode_str, Serializer, dumps, loads, prepare_response, _loads_v0, _loads_v1, _loads_v2, _loads_v3, _loads_v4
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/wrapper.py: CacheControl
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/_cmd.py: setup_logging, get_session, get_args, main
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py: _secure_open_write, FileCache, url_to_file_path, __init__, encode, _fn, get, set, delete
-- venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py: RedisCache, __init__, get, set, delete, clear, close
-- venv/lib/python2.7/site-packages/pip/_vendor/certifi/core.py: DeprecatedBundleWarning, where, old_where
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/big5prober.py: Big5Prober, __init__, charset_name, language
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/chardistribution.py: CharDistributionAnalysis, EUCTWDistributionAnalysis, EUCKRDistributionAnalysis, GB2312DistributionAnalysis, Big5DistributionAnalysis, SJISDistributionAnalysis, EUCJPDistributionAnalysis, __init__, reset, feed, get_confidence, got_enough_data, get_order, __init__, get_order, __init__, get_order, __init__, get_order, __init__, get_order, __init__, get_order, __init__, get_order
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/charsetgroupprober.py: CharSetGroupProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/charsetprober.py: CharSetProber, __init__, reset, charset_name, feed, state, get_confidence, filter_high_byte_only, filter_international_words, filter_with_english_letters
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/codingstatemachine.py: CodingStateMachine, __init__, reset, next_state, get_current_charlen, get_coding_state_machine, language
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/cp949prober.py: CP949Prober, __init__, charset_name, language
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/enums.py: InputState, LanguageFilter, ProbingState, MachineState, SequenceLikelihood, CharacterCategory, get_num_categories
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/escprober.py: EscCharSetProber, __init__, reset, charset_name, language, get_confidence, feed
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/eucjpprober.py: EUCJPProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/euckrprober.py: EUCKRProber, __init__, charset_name, language
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/euctwprober.py: EUCTWProber, __init__, charset_name, language
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/gb2312prober.py: GB2312Prober, __init__, charset_name, language
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/hebrewprober.py: HebrewProber, __init__, reset, set_model_probers, is_final, is_non_final, feed, charset_name, language, state
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/jpcntx.py: JapaneseContextAnalysis, SJISContextAnalysis, EUCJPContextAnalysis, __init__, reset, feed, got_enough_data, get_confidence, get_order, __init__, charset_name, get_order, get_order
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/latin1prober.py: Latin1Prober, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/mbcharsetprober.py: MultiByteCharSetProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/mbcsgroupprober.py: MBCSGroupProber, __init__
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/sbcharsetprober.py: SingleByteCharSetProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/sbcsgroupprober.py: SBCSGroupProber, __init__
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/sjisprober.py: SJISProber, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/universaldetector.py: UniversalDetector, __init__, reset, feed, close
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/utf8prober.py: UTF8Prober, __init__, reset, charset_name, language, feed, get_confidence
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/__init__.py: detect
-- venv/lib/python2.7/site-packages/pip/_vendor/chardet/cli/chardetect.py: description_of, main
-- venv/lib/python2.7/site-packages/pip/_vendor/colorama/ansi.py: code_to_chars, set_title, clear_screen, clear_line, AnsiCodes, AnsiCursor, AnsiFore, AnsiBack, AnsiStyle, __init__, UP, DOWN, FORWARD, BACK, POS
-- venv/lib/python2.7/site-packages/pip/_vendor/colorama/ansitowin32.py: is_stream_closed, is_a_tty, StreamWrapper, AnsiToWin32, __init__, __getattr__, write, __init__, should_wrap, get_win32_calls, write, reset_all, write_and_convert, write_plain_text, convert_ansi, extract_params, call_win32, convert_osc
-- venv/lib/python2.7/site-packages/pip/_vendor/colorama/initialise.py: reset_all, init, deinit, colorama_text, reinit, wrap_stream
-- venv/lib/python2.7/site-packages/pip/_vendor/colorama/win32.py: CONSOLE_SCREEN_BUFFER_INFO, _winapi_test, winapi_test, GetConsoleScreenBufferInfo, SetConsoleTextAttribute, SetConsoleCursorPosition, FillConsoleOutputCharacter, FillConsoleOutputAttribute, SetConsoleTitle, __str__
-- venv/lib/python2.7/site-packages/pip/_vendor/colorama/winterm.py: WinColor, WinStyle, WinTerm, __init__, get_attrs, set_attrs, reset_all, fore, back, style, set_console, get_position, set_cursor_position, cursor_adjust, erase_screen, erase_line, set_title
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/compat.py: quote, splituser, ZipExtFile, ZipFile, CertificateError, _dnsname_match, match_hostname, Container, which, __init__, __enter__, __exit__, __enter__, __exit__, open, python_implementation, callable, fsencode, fsdecode, _get_normal_name, detect_encoding, ChainMap, OrderedDict, valid_ident, ConvertingDict, pop, ConvertingList, ConvertingTuple, BaseConfigurator, __init__, _access_check, read_or_stop, find_cookie, __init__, __missing__, __getitem__, get, __len__, __iter__, __contains__, __bool__, __repr__, fromkeys, copy, new_child, parents, __setitem__, __delitem__, popitem, pop, clear, __init__, __setitem__, __delitem__, __iter__, __reversed__, clear, popitem, keys, values, items, iterkeys, itervalues, iteritems, update, pop, setdefault, __repr__, __reduce__, copy, fromkeys, __eq__, __ne__, viewkeys, viewvalues, viewitems, __getitem__, get, __getitem__, pop, __getitem__, __init__, resolve, ext_convert, cfg_convert, convert, configure_custom, as_tuple, _recursive_repr, cache_from_source, decorating_function, wrapper
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/database.py: _Cache, DistributionPath, Distribution, BaseInstalledDistribution, InstalledDistribution, EggInfoDistribution, DependencyGraph, make_graph, get_dependent_dists, get_required_dists, make_dist, __init__, clear, add, __init__, _get_cache_enabled, _set_cache_enabled, clear_cache, _yield_distributions, _generate_cache, distinfo_dirname, get_distributions, get_distribution, provides_distribution, get_file_path, get_exported_entries, __init__, source_url, name_and_version, provides, _get_requirements, run_requires, meta_requires, build_requires, test_requires, dev_requires, matches_requirement, __repr__, __eq__, __hash__, __init__, get_hash, __init__, __repr__, __str__, _get_records, exports, read_exports, write_exports, get_resource_path, list_installed_files, write_installed_files, check_installed_files, shared_locations, write_shared_locations, get_distinfo_resource, get_distinfo_file, list_distinfo_files, __eq__, __init__, _get_metadata, __repr__, __str__, check_installed_files, list_installed_files, list_distinfo_files, __eq__, __init__, add_distribution, add_edge, add_missing, _repr_dist, repr_node, to_dot, topological_sort, __repr__, set_name_and_version, parse_requires_data, parse_requires_path, _md5, _size
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/index.py: PackageIndex, __init__, _get_pypirc_command, read_configuration, save_configuration, check_credentials, register, _reader, get_sign_command, run_command, sign_file, upload_file, upload_documentation, get_verify_command, verify_signature, download_file, send_request, encode_request, search
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/locators.py: get_all_distribution_names, RedirectHandler, Locator, PyPIRPCLocator, PyPIJSONLocator, Page, SimpleScrapingLocator, DirectoryLocator, JSONLocator, DistPathLocator, AggregatingLocator, DependencyFinder, http_error_302, __init__, get_errors, clear_errors, clear_cache, _get_scheme, _set_scheme, _get_project, get_distribution_names, get_project, score_url, prefer_url, split_filename, convert_url_to_download_info, _get_digest, _update_version_data, locate, __init__, get_distribution_names, _get_project, __init__, get_distribution_names, _get_project, __init__, links, __init__, _prepare_threads, _wait_threads, _get_project, _is_platform_dependent, _process_download, _should_queue, _fetch, get_page, get_distribution_names, __init__, should_include, _get_project, get_distribution_names, get_distribution_names, _get_project, __init__, _get_project, __init__, clear_cache, _set_scheme, _get_project, get_distribution_names, __init__, add_distribution, remove_distribution, get_matcher, find_providers, try_to_replace, find, same_project, clean
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/manifest.py: Manifest, __init__, findall, add, add_many, sorted, clear, process_directive, _parse_directive, _include_pattern, _exclude_pattern, _translate_pattern, _glob_to_re, add_dir
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/markers.py: _is_literal, Evaluator, default_context, interpret, evaluate, format_full_version
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/metadata.py: MetadataMissingError, MetadataConflictError, MetadataUnrecognizedVersionError, MetadataInvalidError, _version2fieldlist, _best_version, _get_name_and_version, LegacyMetadata, Metadata, _has_marker, __init__, set_metadata_version, _write_field, __getitem__, __setitem__, __delitem__, __contains__, _convert_name, _default_value, _remove_line_prefix, __getattr__, get_fullname, is_field, is_multi_field, read, read_file, write, write_file, update, set, get, check, todict, add_requirements, keys, __iter__, values, items, __repr__, __init__, __getattribute__, _validate_value, __setattr__, name_and_version, provides, provides, get_requirements, dictionary, dependencies, dependencies, _validate_mapping, validate, todict, _from_legacy, _to_legacy, write, add_requirements, __repr__, _set, are_valid_constraints, process_entries
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/resources.py: ResourceCache, ResourceBase, Resource, ResourceContainer, ResourceFinder, ZipResourceFinder, register_finder, finder, finder_for_path, __init__, is_stale, get, __init__, as_stream, file_path, bytes, size, resources, __init__, _adjust_path, _make_path, _find, get_cache_info, find, get_stream, get_bytes, get_size, get_resources, is_container, iterator, __init__, _adjust_path, _find, get_cache_info, get_bytes, get_stream, get_size, get_resources, _is_directory, allowed
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/scripts.py: _enquote_executable, ScriptMaker, __init__, _get_alternate_executable, _build_shebang, _get_shebang, _get_script_text, get_manifest, _write_script, _make_script, _copy_script, dry_run, dry_run, make, make_multiple, _is_shell, _fix_jython_executable, _get_launcher
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/util.py: parse_marker, parse_requirement, get_resources_dests, in_venv, get_executable, proceed, extract_by_key, read_exports, write_exports, tempdir, chdir, socket_timeout, cached_property, convert_path, FileOperator, resolve, ExportEntry, get_export_entry, get_cache_base, path_to_cache_dir, ensure_slash, parse_credentials, get_process_umask, is_string_sequence, split_filename, parse_name_and_version, get_extras, _get_external_data, get_project_data, get_package_data, Cache, EventMixin, Sequencer, unarchive, zip_dir, Progress, iglob, _iglob, Transport, ServerProxy, _csv_open, CSVBase, CSVReader, CSVWriter, Configurator, SubprocessMixin, normalize_name, marker_var, marker_expr, marker_and, marker, get_rel_path, read_stream, __init__, __get__, __init__, _init_record, record_as_written, newer, copy_file, copy_stream, write_binary_file, write_text_file, set_mode, ensure_dir, byte_compile, ensure_removed, is_writable, commit, rollback, __init__, value, __repr__, __eq__, __init__, prefix_to_dir, clear, __init__, add, remove, get_subscribers, publish, __init__, add_node, remove_node, add, remove, is_step, get_steps, strong_connections, dot, check_path, __init__, update, increment, start, stop, maximum, percentage, format_duration, ETA, speed, HTTPSConnection, HTTPSHandler, HTTPSOnlyHandler, HTTP, __init__, make_connection, SafeTransport, __init__, __enter__, __exit__, __init__, __iter__, next, __init__, writerow, __init__, configure_custom, __getitem__, inc_convert, __init__, reader, run_command, strongconnect, connect, __init__, _conn_maker, https_open, http_open, __init__, HTTPS, __init__, make_connection, convert, get_versions, __init__
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/version.py: UnsupportedVersionError, Version, Matcher, _pep_440_key, NormalizedVersion, _match_prefix, NormalizedMatcher, _suggest_semantic_version, _suggest_normalized_version, _legacy_key, LegacyVersion, LegacyMatcher, is_semver, _semantic_key, SemanticVersion, SemanticMatcher, VersionScheme, get_scheme, __init__, parse, _check_compatible, __eq__, __ne__, __lt__, __gt__, __le__, __ge__, __hash__, __repr__, __str__, is_prerelease, parse_requirement, __init__, match, exact_version, _check_compatible, __eq__, __ne__, __hash__, __repr__, __str__, parse, is_prerelease, _adjust_local, _match_lt, _match_gt, _match_le, _match_ge, _match_eq, _match_arbitrary, _match_ne, _match_compatible, get_parts, parse, is_prerelease, _match_compatible, make_tuple, parse, is_prerelease, __init__, is_valid_version, is_valid_matcher, is_valid_constraint_list, suggest
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/wheel.py: Mounter, Wheel, compatible_tags, is_compatible, _derive_abi, __init__, add, remove, find_module, load_module, __init__, filename, exists, tags, metadata, get_wheel_metadata, info, process_shebang, get_hash, write_record, write_records, build_zip, build, install, _get_dylib_cache, _get_extensions, is_compatible, is_mountable, mount, unmount, verify, update, get_version, update_version
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/__init__.py: DistlibException, NullHandler, handle, emit, createLock
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/misc.py: cache_from_source, callable, fsencode
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/shutil.py: Error, SpecialFileError, ExecError, ReadError, RegistryError, copyfileobj, _samefile, copyfile, copymode, copystat, copy, copy2, ignore_patterns, copytree, rmtree, _basename, move, _destinsrc, _get_gid, _get_uid, _make_tarball, _call_external_zip, _make_zipfile, get_archive_formats, register_archive_format, unregister_archive_format, make_archive, get_unpack_formats, _check_unpack_options, register_unpack_format, unregister_unpack_format, _ensure_directory, _unpack_zipfile, _unpack_tarfile, _find_unpack_format, unpack_archive, _ignore_patterns, _set_uid_gid, onerror, onerror
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/sysconfig.py: _safe_realpath, is_python_build, _ensure_cfg_read, _expand_globals, _subst_vars, _extend_dict, _expand_vars, format_value, _get_default_scheme, _getuserbase, _parse_makefile, get_makefile_filename, _init_posix, _init_non_posix, parse_config_h, get_config_h_filename, get_scheme_names, get_path_names, get_paths, get_path, get_config_vars, get_config_var, get_platform, get_python_version, _print_dict, _main, _replacer, _replacer, joinuser, _replacer
-- venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/tarfile.py: stn, nts, nti, itn, calc_chksums, copyfileobj, filemode, TarError, ExtractError, ReadError, CompressionError, StreamError, HeaderError, EmptyHeaderError, TruncatedHeaderError, EOFHeaderError, InvalidHeaderError, SubsequentHeaderError, _LowLevelFile, _Stream, _StreamProxy, _BZ2Proxy, _FileInFile, ExFileObject, TarInfo, TarFile, TarIter, is_tarfile, __init__, close, read, write, __init__, __del__, _init_write_gz, write, __write, close, _init_read_gz, tell, seek, read, _read, __read, __init__, read, getcomptype, close, __init__, init, read, seek, tell, write, close, __init__, seekable, tell, seek, read, __init__, readable, writable, seekable, read, readline, readlines, tell, seek, close, __iter__, __init__, _getpath, _setpath, _getlinkpath, _setlinkpath, __repr__, get_info, tobuf, create_ustar_header, create_gnu_header, create_pax_header, create_pax_global_header, _posix_split_name, _create_header, _create_payload, _create_gnu_long_header, _create_pax_generic_header, frombuf, fromtarfile, _proc_member, _proc_builtin, _proc_gnulong, _proc_sparse, _proc_pax, _proc_gnusparse_00, _proc_gnusparse_01, _proc_gnusparse_10, _apply_pax_info, _decode_pax_field, _block, isreg, isfile, isdir, issym, islnk, ischr, isblk, isfifo, issparse, isdev, __init__, open, taropen, gzopen, bz2open, close, getmember, getmembers, getnames, gettarinfo, list, add, addfile, extractall, extract, extractfile, _extract_member, makedir, makefile, makeunknown, makefifo, makedev, makelink, chown, chmod, utime, next, _getmember, _load, _check, _find_link_target, __iter__, _dbg, __enter__, __exit__, __init__, __iter__, __next__
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py: DataLossWarning, _ReparseException
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/html5parser.py: parse, parseFragment, method_decorator_metaclass, HTMLParser, getPhases, adjust_attributes, impliedTagToken, ParseError, Decorated, __init__, _parse, reset, documentEncoding, isHTMLIntegrationPoint, isMathMLTextIntegrationPoint, mainLoop, normalizedTokens, parse, parseFragment, parseError, normalizeToken, adjustMathMLAttributes, adjustSVGAttributes, adjustForeignAttributes, reparseTokenNormal, resetInsertionMode, parseRCDataRawtext, log, getMetaclass, Phase, InitialPhase, BeforeHtmlPhase, BeforeHeadPhase, InHeadPhase, InHeadNoscriptPhase, AfterHeadPhase, InBodyPhase, TextPhase, InTablePhase, InTableTextPhase, InCaptionPhase, InColumnGroupPhase, InTableBodyPhase, InRowPhase, InCellPhase, InSelectPhase, InSelectInTablePhase, InForeignContentPhase, AfterBodyPhase, InFramesetPhase, AfterFramesetPhase, AfterAfterBodyPhase, AfterAfterFramesetPhase, __new__, wrapped, __init__, processEOF, processComment, processDoctype, processCharacters, processSpaceCharacters, processStartTag, startTagHtml, processEndTag, processSpaceCharacters, processComment, processDoctype, anythingElse, processCharacters, processStartTag, processEndTag, processEOF, insertHtmlElement, processEOF, processComment, processSpaceCharacters, processCharacters, processStartTag, processEndTag, __init__, processEOF, processSpaceCharacters, processCharacters, startTagHtml, startTagHead, startTagOther, endTagImplyHead, endTagOther, __init__, processEOF, processCharacters, startTagHtml, startTagHead, startTagBaseLinkCommand, startTagMeta, startTagTitle, startTagNoFramesStyle, startTagNoscript, startTagScript, startTagOther, endTagHead, endTagHtmlBodyBr, endTagOther, anythingElse, __init__, processEOF, processComment, processCharacters, processSpaceCharacters, startTagHtml, startTagBaseLinkCommand, startTagHeadNoscript, startTagOther, endTagNoscript, endTagBr, endTagOther, anythingElse, __init__, processEOF, processCharacters, startTagHtml, startTagBody, startTagFrameset, startTagFromHead, startTagHead, startTagOther, endTagHtmlBodyBr, endTagOther, anythingElse, __init__, isMatchingFormattingElement, addFormattingElement, processEOF, processSpaceCharactersDropNewline, processCharacters, processSpaceCharactersNonPre, startTagProcessInHead, startTagBody, startTagFrameset, startTagCloseP, startTagPreListing, startTagForm, startTagListItem, startTagPlaintext, startTagHeading, startTagA, startTagFormatting, startTagNobr, startTagButton, startTagAppletMarqueeObject, startTagXmp, startTagTable, startTagVoidFormatting, startTagInput, startTagParamSource, startTagHr, startTagImage, startTagIsIndex, startTagTextarea, startTagIFrame, startTagNoscript, startTagRawtext, startTagOpt, startTagSelect, startTagRpRt, startTagMath, startTagSvg, startTagMisplaced, startTagOther, endTagP, endTagBody, endTagHtml, endTagBlock, endTagForm, endTagListItem, endTagHeading, endTagFormatting, endTagAppletMarqueeObject, endTagBr, endTagOther, __init__, processCharacters, processEOF, startTagOther, endTagScript, endTagOther, __init__, clearStackToTableContext, processEOF, processSpaceCharacters, processCharacters, insertText, startTagCaption, startTagColgroup, startTagCol, startTagRowGroup, startTagImplyTbody, startTagTable, startTagStyleScript, startTagInput, startTagForm, startTagOther, endTagTable, endTagIgnore, endTagOther, __init__, flushCharacters, processComment, processEOF, processCharacters, processSpaceCharacters, processStartTag, processEndTag, __init__, ignoreEndTagCaption, processEOF, processCharacters, startTagTableElement, startTagOther, endTagCaption, endTagTable, endTagIgnore, endTagOther, __init__, ignoreEndTagColgroup, processEOF, processCharacters, startTagCol, startTagOther, endTagColgroup, endTagCol, endTagOther, __init__, clearStackToTableBodyContext, processEOF, processSpaceCharacters, processCharacters, startTagTr, startTagTableCell, startTagTableOther, startTagOther, endTagTableRowGroup, endTagTable, endTagIgnore, endTagOther, __init__, clearStackToTableRowContext, ignoreEndTagTr, processEOF, processSpaceCharacters, processCharacters, startTagTableCell, startTagTableOther, startTagOther, endTagTr, endTagTable, endTagTableRowGroup, endTagIgnore, endTagOther, __init__, closeCell, processEOF, processCharacters, startTagTableOther, startTagOther, endTagTableCell, endTagIgnore, endTagImply, endTagOther, __init__, processEOF, processCharacters, startTagOption, startTagOptgroup, startTagSelect, startTagInput, startTagScript, startTagOther, endTagOption, endTagOptgroup, endTagSelect, endTagOther, __init__, processEOF, processCharacters, startTagTable, startTagOther, endTagTable, endTagOther, __init__, adjustSVGTagNames, processCharacters, processStartTag, processEndTag, __init__, processEOF, processComment, processCharacters, startTagHtml, startTagOther, endTagHtml, endTagOther, __init__, processEOF, processCharacters, startTagFrameset, startTagFrame, startTagNoframes, startTagOther, endTagFrameset, endTagOther, __init__, processEOF, processCharacters, startTagNoframes, startTagOther, endTagHtml, endTagOther, __init__, processEOF, processComment, processSpaceCharacters, processCharacters, startTagHtml, startTagOther, processEndTag, __init__, processEOF, processComment, processSpaceCharacters, processCharacters, startTagHtml, startTagNoFrames, startTagOther, processEndTag
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/serializer.py: htmlentityreplace_errors, serialize, HTMLSerializer, SerializeError, __init__, encode, encodeStrict, serialize, render, serializeError
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_ihatexml.py: charStringToList, normaliseCharList, missingRanges, listToRegexpStr, hexToInt, escapeRegexp, InfosetFilter, __init__, coerceAttribute, coerceElement, coerceComment, coerceCharacters, coercePubid, toXmlName, getReplacementCharacter, fromXmlName, escapeChar, unescapeChar
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_inputstream.py: BufferedStream, HTMLInputStream, HTMLUnicodeInputStream, HTMLBinaryInputStream, EncodingBytes, EncodingParser, ContentAttrParser, lookupEncoding, __init__, tell, seek, read, _bufferedBytes, _readStream, _readFromBuffer, __init__, reset, openStream, _position, position, char, readChunk, characterErrorsUCS4, characterErrorsUCS2, charsUntil, unget, __init__, reset, openStream, determineEncoding, changeEncoding, detectBOM, detectEncodingMeta, __new__, __init__, __iter__, __next__, next, previous, setPosition, getPosition, getCurrentByte, skip, skipUntil, matchBytes, jumpTo, __init__, getEncoding, handleComment, handleMeta, handlePossibleStartTag, handlePossibleEndTag, handlePossibleTag, handleOther, getAttribute, __init__, parse
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_tokenizer.py: HTMLTokenizer, __init__, __iter__, consumeNumberEntity, consumeEntity, processEntityInAttribute, emitCurrentToken, dataState, entityDataState, rcdataState, characterReferenceInRcdata, rawtextState, scriptDataState, plaintextState, tagOpenState, closeTagOpenState, tagNameState, rcdataLessThanSignState, rcdataEndTagOpenState, rcdataEndTagNameState, rawtextLessThanSignState, rawtextEndTagOpenState, rawtextEndTagNameState, scriptDataLessThanSignState, scriptDataEndTagOpenState, scriptDataEndTagNameState, scriptDataEscapeStartState, scriptDataEscapeStartDashState, scriptDataEscapedState, scriptDataEscapedDashState, scriptDataEscapedDashDashState, scriptDataEscapedLessThanSignState, scriptDataEscapedEndTagOpenState, scriptDataEscapedEndTagNameState, scriptDataDoubleEscapeStartState, scriptDataDoubleEscapedState, scriptDataDoubleEscapedDashState, scriptDataDoubleEscapedDashDashState, scriptDataDoubleEscapedLessThanSignState, scriptDataDoubleEscapeEndState, beforeAttributeNameState, attributeNameState, afterAttributeNameState, beforeAttributeValueState, attributeValueDoubleQuotedState, attributeValueSingleQuotedState, attributeValueUnQuotedState, afterAttributeValueState, selfClosingStartTagState, bogusCommentState, markupDeclarationOpenState, commentStartState, commentStartDashState, commentState, commentEndDashState, commentEndState, commentEndBangState, doctypeState, beforeDoctypeNameState, doctypeNameState, afterDoctypeNameState, afterDoctypePublicKeywordState, beforeDoctypePublicIdentifierState, doctypePublicIdentifierDoubleQuotedState, doctypePublicIdentifierSingleQuotedState, afterDoctypePublicIdentifierState, betweenDoctypePublicAndSystemIdentifiersState, afterDoctypeSystemKeywordState, beforeDoctypeSystemIdentifierState, doctypeSystemIdentifierDoubleQuotedState, doctypeSystemIdentifierSingleQuotedState, afterDoctypeSystemIdentifierState, bogusDoctypeState, cdataSectionState
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_utils.py: MethodDispatcher, isSurrogatePair, surrogatePairToCodepoint, moduleFactoryFactory, memoize, __init__, __getitem__, moduleFactory, wrapped
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/alphabeticalattributes.py: _attr_key, Filter, __iter__
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/base.py: Filter, __init__, __iter__, __getattr__
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/inject_meta_charset.py: Filter, __init__, __iter__
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py: Filter, __init__, __iter__
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/optionaltags.py: Filter, slider, __iter__, is_optional_start, is_optional_end
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/sanitizer.py: Filter, __init__, __iter__, sanitize_token, allowed_token, disallowed_token, sanitize_css
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/whitespace.py: Filter, collapse_spaces, __iter__
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treeadapters/genshi.py: to_genshi
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treeadapters/sax.py: to_sax
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/base.py: Node, ActiveFormattingElements, TreeBuilder, __init__, __str__, __repr__, appendChild, insertText, insertBefore, removeChild, reparentChildren, cloneNode, hasContent, append, nodesEqual, __init__, reset, elementInScope, reconstructActiveFormattingElements, clearActiveFormattingElements, elementInActiveFormattingElements, insertRoot, insertDoctype, insertComment, createElement, _getInsertFromTable, _setInsertFromTable, insertElementNormal, insertElementTable, insertText, getTableMisnestedNodePosition, generateImpliedEndTags, getDocument, getFragment, testSerializer
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/dom.py: getDomBuilder, AttrList, NodeBuilder, TreeBuilder, testSerializer, __init__, __iter__, __setitem__, __len__, items, values, __getitem__, __delitem__, __init__, appendChild, insertText, insertBefore, removeChild, reparentChildren, getAttributes, setAttributes, cloneNode, hasContent, getNameTuple, documentClass, insertDoctype, elementClass, commentClass, fragmentClass, appendChild, testSerializer, getDocument, getFragment, insertText, serializeElement
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/etree.py: getETreeBuilder, Element, Comment, DocumentType, Document, DocumentFragment, testSerializer, tostring, TreeBuilder, __init__, _getETreeTag, _setName, _getName, _setNamespace, _getNamespace, _getAttributes, _setAttributes, _getChildNodes, _setChildNodes, hasContent, appendChild, insertBefore, removeChild, insertText, cloneNode, reparentChildren, __init__, _getData, _setData, __init__, _getPublicId, _setPublicId, _getSystemId, _setSystemId, __init__, __init__, serializeElement, serializeElement, testSerializer, getDocument, getFragment
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/etree_lxml.py: DocumentType, Document, testSerializer, tostring, TreeBuilder, __init__, __init__, appendChild, _getChildNodes, serializeElement, serializeElement, __init__, reset, testSerializer, getDocument, getFragment, insertDoctype, insertCommentInitial, insertCommentMain, insertRoot, Attributes, Element, Comment, __init__, __setitem__, __init__, _setName, _getName, _getAttributes, _setAttributes, insertText, appendChild, __init__, _setData, _getData
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/__init__.py: getTreeBuilder
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/base.py: TreeWalker, NonRecursiveTreeWalker, __init__, __iter__, error, emptyTag, startTag, endTag, text, comment, doctype, entity, unknown, getNodeDetails, getFirstChild, getNextSibling, getParentNode, __iter__
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/dom.py: TreeWalker, getNodeDetails, getFirstChild, getNextSibling, getParentNode
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/etree.py: getETreeBuilder, TreeWalker, getNodeDetails, getFirstChild, getNextSibling, getParentNode
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/etree_lxml.py: ensure_str, Root, Doctype, FragmentRoot, FragmentWrapper, TreeWalker, __init__, __getitem__, getnext, __len__, __init__, getnext, __init__, getnext, __init__, __getattr__, getnext, __getitem__, __bool__, getparent, __str__, __unicode__, __len__, __init__, getNodeDetails, getFirstChild, getNextSibling, getParentNode
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/genshi.py: TreeWalker, __iter__, tokens
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/__init__.py: getTreeWalker, concatenateCharacterTokens, pprint
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_trie/datrie.py: Trie, __init__, __contains__, __len__, __iter__, __getitem__, keys, has_keys_with_prefix, longest_prefix, longest_prefix_item
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_trie/py.py: Trie, __init__, __contains__, __len__, __iter__, __getitem__, keys, has_keys_with_prefix
-- venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_trie/_base.py: Trie, keys, has_keys_with_prefix, longest_prefix, longest_prefix_item
-- venv/lib/python2.7/site-packages/pip/_vendor/idna/codec.py: Codec, IncrementalEncoder, IncrementalDecoder, StreamWriter, StreamReader, getregentry, encode, decode, _buffer_encode, _buffer_decode
-- venv/lib/python2.7/site-packages/pip/_vendor/idna/compat.py: ToASCII, ToUnicode, nameprep
-- venv/lib/python2.7/site-packages/pip/_vendor/idna/core.py: IDNAError, IDNABidiError, InvalidCodepoint, InvalidCodepointContext, _combining_class, _is_script, _punycode, _unot, valid_label_length, valid_string_length, check_bidi, check_initial_combiner, check_hyphen_ok, check_nfc, valid_contextj, valid_contexto, check_label, alabel, ulabel, uts46_remap, encode, decode
-- venv/lib/python2.7/site-packages/pip/_vendor/idna/intranges.py: intranges_from_list, _encode_range, _decode_range, intranges_contain
-- venv/lib/python2.7/site-packages/pip/_vendor/idna/uts46data.py: _seg_0, _seg_1, _seg_2, _seg_3, _seg_4, _seg_5, _seg_6, _seg_7, _seg_8, _seg_9, _seg_10, _seg_11, _seg_12, _seg_13, _seg_14, _seg_15, _seg_16, _seg_17, _seg_18, _seg_19, _seg_20, _seg_21, _seg_22, _seg_23, _seg_24, _seg_25, _seg_26, _seg_27, _seg_28, _seg_29, _seg_30, _seg_31, _seg_32, _seg_33, _seg_34, _seg_35, _seg_36, _seg_37, _seg_38, _seg_39, _seg_40, _seg_41, _seg_42, _seg_43, _seg_44, _seg_45, _seg_46, _seg_47, _seg_48, _seg_49, _seg_50, _seg_51, _seg_52, _seg_53, _seg_54, _seg_55, _seg_56, _seg_57, _seg_58, _seg_59, _seg_60, _seg_61, _seg_62, _seg_63, _seg_64, _seg_65, _seg_66, _seg_67, _seg_68, _seg_69, _seg_70, _seg_71, _seg_72, _seg_73, _seg_74, _seg_75, _seg_76, _seg_77
-- venv/lib/python2.7/site-packages/pip/_vendor/lockfile/linklockfile.py: LinkLockFile, acquire, release, is_locked, i_am_locking, break_lock
-- venv/lib/python2.7/site-packages/pip/_vendor/lockfile/mkdirlockfile.py: MkdirLockFile, __init__, acquire, release, is_locked, i_am_locking, break_lock
-- venv/lib/python2.7/site-packages/pip/_vendor/lockfile/pidlockfile.py: PIDLockFile, read_pid_from_pidfile, write_pid_to_pidfile, remove_existing_pidfile, __init__, read_pid, is_locked, i_am_locking, acquire, release, break_lock
-- venv/lib/python2.7/site-packages/pip/_vendor/lockfile/sqlitelockfile.py: SQLiteLockFile, __init__, acquire, release, _who_is_locking, is_locked, i_am_locking, break_lock
-- venv/lib/python2.7/site-packages/pip/_vendor/lockfile/symlinklockfile.py: SymlinkLockFile, __init__, acquire, release, is_locked, i_am_locking, break_lock
-- venv/lib/python2.7/site-packages/pip/_vendor/lockfile/__init__.py: Error, LockError, LockTimeout, AlreadyLocked, LockFailed, UnlockError, NotLocked, NotMyLock, _SharedBase, LockBase, _fl_helper, LinkFileLock, MkdirFileLock, SQLiteFileLock, locked, __init__, acquire, release, __enter__, __exit__, __repr__, __init__, is_locked, i_am_locking, break_lock, __repr__, decor, wrapper
-- venv/lib/python2.7/site-packages/pip/_vendor/msgpack/exceptions.py: UnpackException, BufferFull, OutOfData, UnpackValueError, ExtraData, PackException, PackValueError, PackOverflowError, __init__, __str__
-- venv/lib/python2.7/site-packages/pip/_vendor/msgpack/fallback.py: _check_type_strict, _get_data_from_buffer, unpack, unpackb, Unpacker, Packer, dict_iteritems, dict_iteritems, StringIO, __init__, feed, _consume, _got_extradata, _get_extradata, read_bytes, _read, _reserve, _read_header, _unpack, __iter__, __next__, skip, unpack, read_array_header, read_map_header, tell, __init__, _pack, pack, pack_map_pairs, pack_array_header, pack_map_header, pack_ext_type, _pack_array_header, _pack_map_header, _pack_map_pairs, _pack_raw_header, _pack_bin_header, bytes, reset, __init__, write, getvalue
-- venv/lib/python2.7/site-packages/pip/_vendor/msgpack/__init__.py: ExtType, pack, packb, unpack, __new__
-- venv/lib/python2.7/site-packages/pip/_vendor/packaging/markers.py: InvalidMarker, UndefinedComparison, UndefinedEnvironmentName, Node, Variable, Value, Op, _coerce_parse_result, _format_marker, _eval_op, _get_env, _evaluate_markers, format_full_version, default_environment, Marker, __init__, __str__, __repr__, serialize, serialize, serialize, serialize, __init__, __str__, __repr__, evaluate
-- venv/lib/python2.7/site-packages/pip/_vendor/packaging/requirements.py: InvalidRequirement, Requirement, __init__, __str__, __repr__
-- venv/lib/python2.7/site-packages/pip/_vendor/packaging/specifiers.py: InvalidSpecifier, BaseSpecifier, _IndividualSpecifier, LegacySpecifier, _require_version_compare, Specifier, _version_split, _pad_version, SpecifierSet, __str__, __hash__, __eq__, __ne__, prereleases, prereleases, contains, filter, __init__, __repr__, __str__, __hash__, __eq__, __ne__, _get_operator, _coerce_version, operator, version, prereleases, prereleases, __contains__, contains, filter, _coerce_version, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, wrapped, _compare_compatible, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, _compare_arbitrary, prereleases, prereleases, __init__, __repr__, __str__, __hash__, __and__, __eq__, __ne__, __len__, __iter__, prereleases, prereleases, __contains__, contains, filter
-- venv/lib/python2.7/site-packages/pip/_vendor/packaging/utils.py: canonicalize_name, canonicalize_version
-- venv/lib/python2.7/site-packages/pip/_vendor/packaging/version.py: parse, InvalidVersion, _BaseVersion, LegacyVersion, _parse_version_parts, _legacy_cmpkey, Version, _parse_letter_version, _parse_local_version, _cmpkey, __hash__, __lt__, __le__, __eq__, __ge__, __gt__, __ne__, _compare, __init__, __str__, __repr__, public, base_version, epoch, release, pre, post, dev, local, is_prerelease, is_postrelease, is_devrelease, __init__, __repr__, __str__, epoch, release, pre, post, dev, local, public, base_version, is_prerelease, is_postrelease, is_devrelease
-- venv/lib/python2.7/site-packages/pip/_vendor/packaging/_compat.py: with_metaclass, metaclass, __new__
-- venv/lib/python2.7/site-packages/pip/_vendor/packaging/_structures.py: Infinity, NegativeInfinity, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__
-- venv/lib/python2.7/site-packages/pip/_vendor/pep517/check.py: check_build_sdist, check_build_wheel, check, main, ansi
-- venv/lib/python2.7/site-packages/pip/_vendor/pep517/colorlog.py: _stderr_supports_color, LogFormatter, enable_colourful_output, __init__, formatMessage
-- venv/lib/python2.7/site-packages/pip/_vendor/pep517/compat.py: write_json, read_json, write_json, read_json
-- venv/lib/python2.7/site-packages/pip/_vendor/pep517/envbuild.py: _load_pyproject, BuildEnvironment, build_wheel, build_sdist, __init__, __enter__, pip_install, __exit__
-- venv/lib/python2.7/site-packages/pip/_vendor/pep517/wrappers.py: tempdir, UnsupportedOperation, Pep517HookCaller, __init__, get_requires_for_build_wheel, prepare_metadata_for_build_wheel, build_wheel, get_requires_for_build_sdist, build_sdist, _call_hook
-- venv/lib/python2.7/site-packages/pip/_vendor/pep517/_in_process.py: _build_backend, get_requires_for_build_wheel, prepare_metadata_for_build_wheel, _dist_info_files, _get_wheel_metadata_from_wheel, _find_already_built_wheel, build_wheel, get_requires_for_build_sdist, _DummyException, GotUnsupportedOperation, build_sdist, main
-- venv/lib/python2.7/site-packages/pip/_vendor/pkg_resources/py31compat.py: _makedirs_31
-- venv/lib/python2.7/site-packages/pip/_vendor/pkg_resources/__init__.py: PEP440Warning, parse_version, _declare_state, __getstate__, __setstate__, _sget_dict, _sset_dict, _sget_object, _sset_object, get_supported_platform, ResolutionError, VersionConflict, ContextualVersionConflict, DistributionNotFound, UnknownExtra, register_loader_type, get_provider, _macosx_vers, _macosx_arch, get_build_platform, compatible_platforms, run_script, get_distribution, load_entry_point, get_entry_map, get_entry_info, IMetadataProvider, IResourceProvider, WorkingSet, _ReqExtras, Environment, ExtractionError, ResourceManager, get_default_cache, safe_name, safe_version, safe_extra, to_filename, invalid_marker, evaluate_marker, NullProvider, EggProvider, DefaultProvider, EmptyProvider, ZipManifests, MemoizedZipManifests, ZipProvider, FileMetadata, PathMetadata, EggMetadata, register_finder, find_distributions, find_eggs_in_zip, find_nothing, _by_version_descending, find_on_path, dist_factory, NoDists, safe_listdir, distributions_from_metadata, non_empty_lines, resolve_egg_link, register_namespace_handler, _handle_ns, _rebuild_mod_path, declare_namespace, fixup_namespace_packages, file_ns_handler, null_ns_handler, normalize_path, _normalize_cached, _is_egg_path, _is_unpacked_egg, _set_parent_ns, yield_lines, EntryPoint, _remove_md5_fragment, _version_from_file, Distribution, EggInfoDistribution, DistInfoDistribution, issue_warning, RequirementParseError, parse_requirements, Requirement, _always_object, _find_adapter, ensure_directory, _bypass_ensure_directory, split_sections, _mkstemp, _call_aside, _initialize, _initialize_master_working_set, __repr__, dist, req, report, with_context, required_by, req, requirers, requirers_str, report, __str__, has_metadata, get_metadata, get_metadata_lines, metadata_isdir, metadata_listdir, run_script, get_resource_filename, get_resource_stream, get_resource_string, has_resource, resource_isdir, resource_listdir, __init__, _build_master, _build_from_requirements, add_entry, __contains__, find, iter_entry_points, run_script, __iter__, add, resolve, find_plugins, require, subscribe, _added_new, __getstate__, __setstate__, markers_pass, __init__, can_add, remove, scan, __getitem__, add, best_match, obtain, __iter__, __iadd__, __add__, __init__, resource_exists, resource_isdir, resource_filename, resource_stream, resource_string, resource_listdir, extraction_error, get_cache_path, _warn_unsafe_extraction_path, postprocess, set_extraction_path, cleanup_resources, __init__, get_resource_filename, get_resource_stream, get_resource_string, has_resource, has_metadata, get_metadata, get_metadata_lines, resource_isdir, metadata_isdir, resource_listdir, metadata_listdir, run_script, _has, _isdir, _listdir, _fn, _get, __init__, _setup_prefix, _has, _isdir, _listdir, get_resource_stream, _get, _register, _get, _listdir, __init__, build, load, __init__, _zipinfo_name, _parts, zipinfo, get_resource_filename, _get_date_and_size, _extract_resource, _is_current, _get_eager_resources, _index, _has, _isdir, _listdir, _eager_to_zip, _resource_to_zip, __init__, has_metadata, get_metadata, _warn_on_replacement, get_metadata_lines, __init__, __init__, _by_version, __bool__, __call__, safe_sys_path_index, position_in_sys_path, __init__, __str__, __repr__, load, resolve, require, parse, _parse_extras, parse_group, parse_map, is_version_line, __init__, from_location, _reload_version, hashcmp, __hash__, __lt__, __le__, __gt__, __ge__, __eq__, __ne__, key, parsed_version, _warn_legacy_version, version, _dep_map, _filter_extras, _build_dep_map, requires, _get_metadata, activate, egg_name, __repr__, __str__, __getattr__, __dir__, from_filename, as_requirement, load_entry_point, get_entry_map, get_entry_info, insert_on, check_version_conflict, has_version, clone, extras, _reload_version, _parsed_pkg_info, _dep_map, _compute_dependencies, __str__, __init__, __eq__, __ne__, __contains__, __hash__, __repr__, parse, reqs_for_extra
-- venv/lib/python2.7/site-packages/pip/_vendor/progress/bar.py: Bar, ChargingBar, FillingSquaresBar, FillingCirclesBar, IncrementalBar, PixelBar, ShadyBar, update, update
-- venv/lib/python2.7/site-packages/pip/_vendor/progress/counter.py: Counter, Countdown, Stack, Pie, update, update, update
-- venv/lib/python2.7/site-packages/pip/_vendor/progress/helpers.py: WriteMixin, WritelnMixin, SigIntMixin, __init__, write, finish, __init__, clearln, writeln, finish, __init__, _sigint_handler
-- venv/lib/python2.7/site-packages/pip/_vendor/progress/spinner.py: Spinner, PieSpinner, MoonSpinner, LineSpinner, PixelSpinner, update
-- venv/lib/python2.7/site-packages/pip/_vendor/progress/__init__.py: Infinite, Progress, __init__, __getitem__, elapsed, elapsed_td, update_avg, update, start, finish, next, iter, __init__, eta, eta_td, percent, progress, remaining, start, goto, iter
-- venv/lib/python2.7/site-packages/pip/_vendor/pytoml/core.py: TomlError, __init__, __str__, __repr__
-- venv/lib/python2.7/site-packages/pip/_vendor/pytoml/parser.py: load, loads, _Source, _p_ews, _p_ws, _p_basicstr_content, _p_key, _p_value, _p_stmt, _p_toml, _TimeZone, error, process_value, merge_tables, __init__, last, pos, fail, consume_dot, expect_dot, consume_eof, expect_eof, consume, expect, consume_re, expect_re, __enter__, __exit__, commit, _expect, _advance, __init__, utcoffset, dst, tzname
-- venv/lib/python2.7/site-packages/pip/_vendor/pytoml/writer.py: dumps, _escape_string, _escape_id, _format_list, _total_seconds, _format_value, dump, flush
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/adapters.py: BaseAdapter, HTTPAdapter, __init__, send, close, __init__, __getstate__, __setstate__, init_poolmanager, proxy_manager_for, cert_verify, build_response, get_connection, close, request_url, add_headers, proxy_headers, send, SOCKSProxyManager
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/api.py: request, get, options, head, post, put, patch, delete
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/auth.py: _basic_auth_str, AuthBase, HTTPBasicAuth, HTTPProxyAuth, HTTPDigestAuth, __call__, __init__, __eq__, __ne__, __call__, __call__, __init__, init_per_thread_state, build_digest_header, handle_redirect, handle_401, __call__, __eq__, __ne__, md5_utf8, sha_utf8, sha256_utf8, sha512_utf8
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/cookies.py: MockRequest, MockResponse, extract_cookies_to_jar, get_cookie_header, remove_cookie_by_name, CookieConflictError, RequestsCookieJar, _copy_cookie_jar, create_cookie, morsel_to_cookie, cookiejar_from_dict, merge_cookies, __init__, get_type, get_host, get_origin_req_host, get_full_url, is_unverifiable, has_header, get_header, add_header, add_unredirected_header, get_new_headers, unverifiable, origin_req_host, host, __init__, info, getheaders, get, set, iterkeys, keys, itervalues, values, iteritems, items, list_domains, list_paths, multiple_domains, get_dict, __contains__, __getitem__, __setitem__, __delitem__, set_cookie, update, _find, _find_no_duplicates, __getstate__, __setstate__, copy, get_policy
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/exceptions.py: RequestException, HTTPError, ConnectionError, ProxyError, SSLError, Timeout, ConnectTimeout, ReadTimeout, URLRequired, TooManyRedirects, MissingSchema, InvalidSchema, InvalidURL, InvalidHeader, InvalidProxyURL, ChunkedEncodingError, ContentDecodingError, StreamConsumedError, RetryError, UnrewindableBodyError, RequestsWarning, FileModeWarning, RequestsDependencyWarning, __init__
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/help.py: _implementation, info, main
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/hooks.py: default_hooks, dispatch_hook
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/models.py: RequestEncodingMixin, RequestHooksMixin, Request, PreparedRequest, Response, path_url, _encode_params, _encode_files, register_hook, deregister_hook, __init__, __repr__, prepare, __init__, prepare, __repr__, copy, prepare_method, _get_idna_encoded_host, prepare_url, prepare_headers, prepare_body, prepare_content_length, prepare_auth, prepare_cookies, prepare_hooks, __init__, __enter__, __exit__, __getstate__, __setstate__, __repr__, __bool__, __nonzero__, __iter__, ok, is_redirect, is_permanent_redirect, next, apparent_encoding, iter_content, iter_lines, content, text, json, links, raise_for_status, close, generate
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/sessions.py: merge_setting, merge_hooks, SessionRedirectMixin, Session, session, get_redirect_target, resolve_redirects, rebuild_auth, rebuild_proxies, rebuild_method, __init__, __enter__, __exit__, prepare_request, request, get, options, head, post, put, patch, delete, send, merge_environment_settings, get_adapter, close, mount, __getstate__, __setstate__
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/status_codes.py: _init, doc
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/structures.py: CaseInsensitiveDict, LookupDict, __init__, __setitem__, __getitem__, __delitem__, __iter__, __len__, lower_items, __eq__, copy, __repr__, __init__, __repr__, __getitem__, get
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/utils.py: dict_to_sequence, super_len, get_netrc_auth, guess_filename, extract_zipped_paths, from_key_val_list, to_key_val_list, parse_list_header, parse_dict_header, unquote_header_value, dict_from_cookiejar, add_dict_to_cookiejar, get_encodings_from_content, _parse_content_type_header, get_encoding_from_headers, stream_decode_response_unicode, iter_slices, get_unicode_from_response, unquote_unreserved, requote_uri, address_in_network, dotted_netmask, is_ipv4_address, is_valid_cidr, set_environ, should_bypass_proxies, get_environ_proxies, select_proxy, default_user_agent, default_headers, parse_header_links, guess_json_utf, prepend_scheme_if_needed, get_auth_from_url, check_header_validity, urldefragauth, rewind_body, proxy_bypass_registry, proxy_bypass
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/_internal_utils.py: to_native_string, unicode_is_ascii
-- venv/lib/python2.7/site-packages/pip/_vendor/requests/__init__.py: check_compatibility, _check_cryptography, NullHandler, emit
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/connection.py: DummyConnection, HTTPConnection, HTTPSConnection, VerifiedHTTPSConnection, _match_hostname, __init__, host, host, _new_conn, _prepare_conn, connect, request_chunked, __init__, connect, set_cert, connect, BaseSSLError, ConnectionError
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/connectionpool.py: ConnectionPool, HTTPConnectionPool, HTTPSConnectionPool, connection_from_url, _ipv6_host, __init__, __str__, __enter__, __exit__, close, __init__, _new_conn, _get_conn, _put_conn, _validate_conn, _prepare_proxy, _get_timeout, _raise_timeout, _make_request, _absolute_url, close, is_same_host, urlopen, __init__, _prepare_conn, _prepare_proxy, _new_conn, _validate_conn, drain_and_release_conn
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/exceptions.py: HTTPError, HTTPWarning, PoolError, RequestError, SSLError, ProxyError, DecodeError, ProtocolError, MaxRetryError, HostChangedError, TimeoutStateError, TimeoutError, ReadTimeoutError, ConnectTimeoutError, NewConnectionError, EmptyPoolError, ClosedPoolError, LocationValueError, LocationParseError, ResponseError, SecurityWarning, SubjectAltNameWarning, InsecureRequestWarning, SystemTimeWarning, InsecurePlatformWarning, SNIMissingWarning, DependencyWarning, ResponseNotChunked, BodyNotHttplibCompatible, IncompleteRead, InvalidHeader, ProxySchemeUnknown, HeaderParsingError, UnrewindableBodyError, __init__, __reduce__, __init__, __reduce__, __init__, __init__, __init__, __init__, __repr__, __init__, __init__
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/fields.py: guess_content_type, format_header_param, RequestField, __init__, from_tuples, _render_part, _render_parts, render_headers, make_multipart
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/filepost.py: choose_boundary, iter_field_objects, iter_fields, encode_multipart_formdata
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/poolmanager.py: _default_key_normalizer, PoolManager, ProxyManager, proxy_from_url, __init__, __enter__, __exit__, _new_pool, clear, connection_from_host, connection_from_context, connection_from_pool_key, connection_from_url, _merge_pool_kwargs, urlopen, __init__, connection_from_host, _set_proxy_headers, urlopen
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/request.py: RequestMethods, __init__, urlopen, request, request_encode_url, request_encode_body
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/response.py: DeflateDecoder, GzipDecoderState, GzipDecoder, _get_decoder, HTTPResponse, __init__, __getattr__, decompress, __init__, __getattr__, decompress, __init__, get_redirect_location, release_conn, data, connection, isclosed, tell, _init_length, _init_decoder, _decode, _flush_decoder, _error_catcher, read, stream, from_httplib, getheaders, getheader, info, close, closed, fileno, flush, readable, readinto, supports_chunked_reads, _update_chunk_length, _handle_chunk, read_chunked, geturl
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/_collections.py: RecentlyUsedContainer, HTTPHeaderDict, __init__, __getitem__, __setitem__, __delitem__, __len__, __iter__, clear, keys, __init__, __setitem__, __getitem__, __delitem__, __contains__, __eq__, __ne__, __len__, __iter__, pop, discard, add, extend, getlist, __repr__, _copy_from, copy, iteritems, itermerged, items, from_httplib, RLock, __enter__, __exit__
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/__init__.py: add_stderr_logger, disable_warnings, NullHandler, emit
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/appengine.py: AppEnginePlatformWarning, AppEnginePlatformError, AppEngineManager, is_appengine, is_appengine_sandbox, is_local_appengine, is_prod_appengine, is_prod_appengine_mvms, __init__, __enter__, __exit__, urlopen, _urlfetch_response_to_http_response, _get_absolute_timeout, _get_retries
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/ntlmpool.py: NTLMConnectionPool, __init__, _new_conn, urlopen
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/pyopenssl.py: inject_into_urllib3, extract_from_urllib3, _validate_dependencies_met, _dnsname_to_stdlib, get_subj_alt_name, WrappedSocket, PyOpenSSLContext, _verify_callback, idna_encode, __init__, fileno, _decref_socketios, recv, recv_into, settimeout, _send_until_done, sendall, shutdown, close, getpeercert, _reuse, _drop, makefile, __init__, options, options, verify_mode, verify_mode, set_default_verify_paths, set_ciphers, load_verify_locations, load_cert_chain, wrap_socket, UnsupportedExtension
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/securetransport.py: inject_into_urllib3, extract_from_urllib3, _read_callback, _write_callback, WrappedSocket, SecureTransportContext, __init__, _raise_on_error, _set_ciphers, _custom_validate, handshake, fileno, _decref_socketios, recv, recv_into, settimeout, gettimeout, send, sendall, shutdown, close, getpeercert, _reuse, _drop, makefile, makefile, __init__, check_hostname, check_hostname, options, options, verify_mode, verify_mode, set_default_verify_paths, load_default_certs, set_ciphers, load_verify_locations, load_cert_chain, wrap_socket
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/socks.py: SOCKSConnection, SOCKSHTTPSConnection, SOCKSHTTPConnectionPool, SOCKSHTTPSConnectionPool, SOCKSProxyManager, __init__, _new_conn, __init__
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py: CFConst, SecurityConst
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/_securetransport/low_level.py: _cf_data_from_bytes, _cf_dictionary_from_tuples, _cf_string_to_unicode, _assert_no_error, _cert_array_from_pem, _is_cert, _is_identity, _temporary_keychain, _load_items_from_file, _load_client_cert_chain
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/packages/ordered_dict.py: OrderedDict, __init__, __setitem__, __delitem__, __iter__, __reversed__, clear, popitem, keys, values, items, iterkeys, itervalues, iteritems, update, pop, setdefault, __repr__, __reduce__, copy, fromkeys, __eq__, __ne__, viewkeys, viewvalues, viewitems
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/packages/six.py: _add_doc, _import_module, _LazyDescr, MovedModule, _LazyModule, MovedAttribute, _SixMetaPathImporter, _MovedItems, Module_six_moves_urllib_parse, Module_six_moves_urllib_error, Module_six_moves_urllib_request, Module_six_moves_urllib_response, Module_six_moves_urllib_robotparser, Module_six_moves_urllib, add_move, remove_move, assertCountEqual, assertRaisesRegex, assertRegex, with_metaclass, add_metaclass, python_2_unicode_compatible, __init__, __get__, __init__, _resolve, __getattr__, __init__, __dir__, __init__, _resolve, __init__, _add_module, _get_module, find_module, __get_module, load_module, is_package, get_code, __dir__, get_unbound_function, create_unbound_method, get_unbound_function, create_bound_method, create_unbound_method, Iterator, iterkeys, itervalues, iteritems, iterlists, iterkeys, itervalues, iteritems, iterlists, b, u, b, u, byte2int, indexbytes, reraise, exec_, print_, print_, wraps, metaclass, wrapper, X, advance_iterator, callable, next, raise_from, write, wrapper, __new__, __len__
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/packages/backports/makefile.py: backport_makefile
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py: CertificateError, _dnsname_match, _to_unicode, _ipaddress_match, match_hostname
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/connection.py: is_connection_dropped, create_connection, _set_socket_options, allowed_gai_family, _has_ipv6
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/queue.py: LifoQueue, _init, _qsize, _put, _get
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/request.py: make_headers, set_file_position, rewind_body
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/response.py: is_fp_closed, assert_header_parsing, is_response_to_head
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/retry.py: Retry, __init__, new, from_int, get_backoff_time, parse_retry_after, get_retry_after, sleep_for_retry, _sleep_backoff, sleep, _is_connection_error, _is_read_error, _is_method_retryable, is_retry, is_exhausted, increment, __repr__
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/ssl_.py: _const_compare_digest_backport, assert_fingerprint, resolve_cert_reqs, resolve_ssl_version, create_urllib3_context, ssl_wrap_socket, is_ipaddress, inet_pton, SSLContext, inet_pton, __init__, load_cert_chain, load_verify_locations, set_ciphers, wrap_socket
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/timeout.py: Timeout, __init__, __str__, _validate_timeout, from_float, clone, start_connect, get_connect_duration, connect_timeout, read_timeout
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/url.py: Url, split_first, parse_url, get_host, __new__, hostname, request_uri, netloc, url, __str__
-- venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/wait.py: NoWayToWaitForSocketError, select_wait_for_socket, poll_wait_for_socket, null_wait_for_socket, _have_working_poll, wait_for_socket, wait_for_read, wait_for_write, _retry_on_intr, _retry_on_intr, do_poll
-- venv/lib/python2.7/site-packages/pip/_vendor/webencodings/mklabels.py: assert_lower, generate
-- venv/lib/python2.7/site-packages/pip/_vendor/webencodings/tests.py: assert_raises, test_labels, test_all_labels, test_invalid_label, test_decode, test_encode, test_iter_decode, test_iter_encode, test_x_user_defined, iter_decode_to_string
-- venv/lib/python2.7/site-packages/pip/_vendor/webencodings/x_user_defined.py: Codec, IncrementalEncoder, IncrementalDecoder, StreamWriter, StreamReader, encode, decode, encode, decode
-- venv/lib/python2.7/site-packages/pip/_vendor/webencodings/__init__.py: ascii_lower, lookup, _get_encoding, Encoding, decode, _detect_bom, encode, iter_decode, _iter_decode_generator, iter_encode, _iter_encode_generator, IncrementalDecoder, IncrementalEncoder, __init__, __repr__, __init__, decode, __init__
-- venv/lib/python2.7/site-packages/pkg_resources/py31compat.py: _makedirs_31
-- venv/lib/python2.7/site-packages/pkg_resources/__init__.py: PEP440Warning, parse_version, _declare_state, __getstate__, __setstate__, _sget_dict, _sset_dict, _sget_object, _sset_object, get_supported_platform, ResolutionError, VersionConflict, ContextualVersionConflict, DistributionNotFound, UnknownExtra, register_loader_type, get_provider, _macosx_vers, _macosx_arch, get_build_platform, compatible_platforms, run_script, get_distribution, load_entry_point, get_entry_map, get_entry_info, IMetadataProvider, IResourceProvider, WorkingSet, _ReqExtras, Environment, ExtractionError, ResourceManager, get_default_cache, safe_name, safe_version, safe_extra, to_filename, invalid_marker, evaluate_marker, NullProvider, EggProvider, DefaultProvider, EmptyProvider, ZipManifests, MemoizedZipManifests, ZipProvider, FileMetadata, PathMetadata, EggMetadata, register_finder, find_distributions, find_eggs_in_zip, find_nothing, _by_version_descending, find_on_path, dist_factory, NoDists, safe_listdir, distributions_from_metadata, non_empty_lines, resolve_egg_link, register_namespace_handler, _handle_ns, _rebuild_mod_path, declare_namespace, fixup_namespace_packages, file_ns_handler, null_ns_handler, normalize_path, _cygwin_patch, _normalize_cached, _is_egg_path, _is_unpacked_egg, _set_parent_ns, yield_lines, EntryPoint, _remove_md5_fragment, _version_from_file, Distribution, EggInfoDistribution, DistInfoDistribution, issue_warning, RequirementParseError, parse_requirements, Requirement, _always_object, _find_adapter, ensure_directory, _bypass_ensure_directory, split_sections, _mkstemp, _call_aside, _initialize, _initialize_master_working_set, PkgResourcesDeprecationWarning, __repr__, dist, req, report, with_context, required_by, req, requirers, requirers_str, report, __str__, has_metadata, get_metadata, get_metadata_lines, metadata_isdir, metadata_listdir, run_script, get_resource_filename, get_resource_stream, get_resource_string, has_resource, resource_isdir, resource_listdir, __init__, _build_master, _build_from_requirements, add_entry, __contains__, find, iter_entry_points, run_script, __iter__, add, resolve, find_plugins, require, subscribe, _added_new, __getstate__, __setstate__, markers_pass, __init__, can_add, remove, scan, __getitem__, add, best_match, obtain, __iter__, __iadd__, __add__, __init__, resource_exists, resource_isdir, resource_filename, resource_stream, resource_string, resource_listdir, extraction_error, get_cache_path, _warn_unsafe_extraction_path, postprocess, set_extraction_path, cleanup_resources, __init__, get_resource_filename, get_resource_stream, get_resource_string, has_resource, has_metadata, get_metadata, get_metadata_lines, resource_isdir, metadata_isdir, resource_listdir, metadata_listdir, run_script, _has, _isdir, _listdir, _fn, _get, __init__, _setup_prefix, _has, _isdir, _listdir, get_resource_stream, _get, _register, _get, _listdir, __init__, build, load, __init__, _zipinfo_name, _parts, zipinfo, get_resource_filename, _get_date_and_size, _extract_resource, _is_current, _get_eager_resources, _index, _has, _isdir, _listdir, _eager_to_zip, _resource_to_zip, __init__, has_metadata, get_metadata, _warn_on_replacement, get_metadata_lines, __init__, __init__, _by_version, __bool__, __call__, safe_sys_path_index, position_in_sys_path, __init__, __str__, __repr__, load, resolve, require, parse, _parse_extras, parse_group, parse_map, is_version_line, __init__, from_location, _reload_version, hashcmp, __hash__, __lt__, __le__, __gt__, __ge__, __eq__, __ne__, key, parsed_version, _warn_legacy_version, version, _dep_map, _filter_extras, _build_dep_map, requires, _get_metadata, activate, egg_name, __repr__, __str__, __getattr__, __dir__, from_filename, as_requirement, load_entry_point, get_entry_map, get_entry_info, insert_on, check_version_conflict, has_version, clone, extras, _reload_version, _parsed_pkg_info, _dep_map, _compute_dependencies, __str__, __init__, __eq__, __ne__, __contains__, __hash__, __repr__, parse, reqs_for_extra
-- venv/lib/python2.7/site-packages/pkg_resources/extern/__init__.py: VendorImporter, __init__, search_path, find_module, load_module, install
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/appdirs.py: user_data_dir, site_data_dir, user_config_dir, site_config_dir, user_cache_dir, user_state_dir, user_log_dir, AppDirs, _get_win_folder_from_registry, _get_win_folder_with_pywin32, _get_win_folder_with_ctypes, _get_win_folder_with_jna, __init__, user_data_dir, site_data_dir, user_config_dir, site_config_dir, user_cache_dir, user_state_dir, user_log_dir
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/pyparsing.py: _xml_escape, _Constants, ParseBaseException, ParseException, ParseFatalException, ParseSyntaxException, RecursiveGrammarException, _ParseResultsWithOffset, ParseResults, col, lineno, line, _defaultStartDebugAction, _defaultSuccessDebugAction, _defaultExceptionDebugAction, nullDebugAction, _trim_arity, ParserElement, Token, Empty, NoMatch, Literal, Keyword, CaselessLiteral, CaselessKeyword, CloseMatch, Word, Regex, QuotedString, CharsNotIn, White, _PositionToken, GoToColumn, LineStart, LineEnd, StringStart, StringEnd, WordStart, WordEnd, ParseExpression, And, Or, MatchFirst, Each, ParseElementEnhance, FollowedBy, NotAny, _MultipleMatch, OneOrMore, ZeroOrMore, _NullToken, Optional, SkipTo, Forward, _ForwardNoRecurse, TokenConverter, Combine, Group, Dict, Suppress, OnlyOnce, traceParseAction, delimitedList, countedArray, _flatten, matchPreviousLiteral, matchPreviousExpr, _escapeRegexRangeChars, oneOf, dictOf, originalTextFor, ungroup, locatedExpr, srange, matchOnlyAtCol, replaceWith, removeQuotes, tokenMap, _makeTags, makeHTMLTags, makeXMLTags, withAttribute, withClass, infixNotation, nestedExpr, indentedBlock, replaceHTMLEntity, pyparsing_common, _ustr, __init__, _from_exception, __getattr__, __str__, __repr__, markInputline, __dir__, __init__, __str__, __init__, __getitem__, __repr__, setOffset, __new__, __init__, __getitem__, __setitem__, __delitem__, __contains__, __len__, __bool__, __iter__, __reversed__, _iterkeys, _itervalues, _iteritems, haskeys, pop, get, insert, append, extend, clear, __getattr__, __add__, __iadd__, __radd__, __repr__, __str__, _asStringList, asList, asDict, copy, asXML, __lookup, getName, dump, pprint, __getstate__, __setstate__, __getnewargs__, __dir__, wrapper, setDefaultWhitespaceChars, inlineLiteralsUsing, __init__, copy, setName, setResultsName, setBreak, setParseAction, addParseAction, addCondition, setFailAction, _skipIgnorables, preParse, parseImpl, postParse, _parseNoCache, tryParse, canParseNext, _UnboundedCache, _parseCache, resetCache, enablePackrat, parseString, scanString, transformString, searchString, split, __add__, __radd__, __sub__, __rsub__, __mul__, __rmul__, __or__, __ror__, __xor__, __rxor__, __and__, __rand__, __invert__, __call__, suppress, leaveWhitespace, setWhitespaceChars, parseWithTabs, ignore, setDebugActions, setDebug, __str__, __repr__, streamline, checkRecursion, validate, parseFile, __eq__, __ne__, __hash__, __req__, __rne__, matches, runTests, __init__, __init__, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, copy, setDefaultKeywordChars, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __init__, preParse, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, __getitem__, append, leaveWhitespace, ignore, __str__, streamline, setResultsName, validate, copy, _ErrorStop, __init__, parseImpl, __iadd__, checkRecursion, __str__, __init__, parseImpl, __ixor__, __str__, checkRecursion, __init__, parseImpl, __ior__, __str__, checkRecursion, __init__, parseImpl, __str__, checkRecursion, __init__, parseImpl, leaveWhitespace, ignore, streamline, checkRecursion, validate, __str__, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __bool__, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __lshift__, __ilshift__, leaveWhitespace, streamline, validate, __str__, copy, __str__, __init__, __init__, ignore, postParse, __init__, postParse, __init__, postParse, postParse, suppress, __init__, __call__, reset, z, countFieldParseAction, copyTokenToRepeater, copyTokenToRepeater, verifyCol, pa, pa, checkPeerIndent, checkSubIndent, checkUnindent, convertToDate, convertToDatetime, stripHTMLTags, keys, values, items, toItem, extract_stack, extract_tb, __init__, _FifoCache, _FifoCache, __init__, mustMatchTheseTokens, extractText, cvt_fn, cvt_fn, breaker, pa, get, set, clear, cache_len, __init__, __init__, makeOptionalList, charsAsStr, get, set, clear, cache_len, get, set, clear, cache_len
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/six.py: _add_doc, _import_module, _LazyDescr, MovedModule, _LazyModule, MovedAttribute, _SixMetaPathImporter, _MovedItems, Module_six_moves_urllib_parse, Module_six_moves_urllib_error, Module_six_moves_urllib_request, Module_six_moves_urllib_response, Module_six_moves_urllib_robotparser, Module_six_moves_urllib, add_move, remove_move, assertCountEqual, assertRaisesRegex, assertRegex, with_metaclass, add_metaclass, python_2_unicode_compatible, __init__, __get__, __init__, _resolve, __getattr__, __init__, __dir__, __init__, _resolve, __init__, _add_module, _get_module, find_module, __get_module, load_module, is_package, get_code, __dir__, get_unbound_function, create_unbound_method, get_unbound_function, create_bound_method, create_unbound_method, Iterator, iterkeys, itervalues, iteritems, iterlists, iterkeys, itervalues, iteritems, iterlists, b, u, b, u, byte2int, indexbytes, reraise, exec_, print_, print_, wraps, metaclass, wrapper, X, advance_iterator, callable, next, raise_from, write, wrapper, __new__, __len__
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/markers.py: InvalidMarker, UndefinedComparison, UndefinedEnvironmentName, Node, Variable, Value, Op, _coerce_parse_result, _format_marker, _eval_op, _get_env, _evaluate_markers, format_full_version, default_environment, Marker, __init__, __str__, __repr__, serialize, serialize, serialize, serialize, __init__, __str__, __repr__, evaluate
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/requirements.py: InvalidRequirement, Requirement, __init__, __str__, __repr__
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/specifiers.py: InvalidSpecifier, BaseSpecifier, _IndividualSpecifier, LegacySpecifier, _require_version_compare, Specifier, _version_split, _pad_version, SpecifierSet, __str__, __hash__, __eq__, __ne__, prereleases, prereleases, contains, filter, __init__, __repr__, __str__, __hash__, __eq__, __ne__, _get_operator, _coerce_version, operator, version, prereleases, prereleases, __contains__, contains, filter, _coerce_version, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, wrapped, _compare_compatible, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, _compare_arbitrary, prereleases, prereleases, __init__, __repr__, __str__, __hash__, __and__, __eq__, __ne__, __len__, __iter__, prereleases, prereleases, __contains__, contains, filter
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/utils.py: canonicalize_name
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/version.py: parse, InvalidVersion, _BaseVersion, LegacyVersion, _parse_version_parts, _legacy_cmpkey, Version, _parse_letter_version, _parse_local_version, _cmpkey, __hash__, __lt__, __le__, __eq__, __ge__, __gt__, __ne__, _compare, __init__, __str__, __repr__, public, base_version, local, is_prerelease, is_postrelease, __init__, __repr__, __str__, public, base_version, local, is_prerelease, is_postrelease
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/_compat.py: with_metaclass, metaclass, __new__
-- venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/_structures.py: Infinity, NegativeInfinity, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__
-- venv/lib/python2.7/site-packages/setuptools/archive_util.py: UnrecognizedFormat, default_filter, unpack_archive, unpack_directory, unpack_zipfile, unpack_tarfile
-- venv/lib/python2.7/site-packages/setuptools/build_meta.py: SetupRequirementsError, Distribution, _to_str, _run_setup, _fix_config, _get_build_requires, _get_immediate_subdirectories, get_requires_for_build_wheel, get_requires_for_build_sdist, prepare_metadata_for_build_wheel, build_wheel, build_sdist, __init__, fetch_build_eggs, patch
-- venv/lib/python2.7/site-packages/setuptools/config.py: read_configuration, _get_option, configuration_to_dict, parse_configuration, ConfigHandler, ConfigMetadataHandler, ConfigOptionsHandler, __init__, parsers, __setitem__, _parse_list, _parse_dict, _parse_bool, _parse_file, _assert_local, _read_file, _parse_attr, _get_parser_compound, _parse_section_to_dict, parse_section, parse, _deprecated_config_handler, __init__, parsers, _parse_version, parsers, _parse_packages, parse_section_packages__find, parse_section_entry_points, _parse_package_data, parse_section_package_data, parse_section_exclude_package_data, parse_section_extras_require, parse_section_data_files, parse, config_handler
-- venv/lib/python2.7/site-packages/setuptools/depends.py: Require, find_module, get_module_constant, extract_constant, _update_globals, __init__, full_name, version_ok, get_version, is_present, is_current
-- venv/lib/python2.7/site-packages/setuptools/dep_util.py: newer_pairwise_group
-- venv/lib/python2.7/site-packages/setuptools/dist.py: _get_unpatched, get_metadata_version, read_pkg_file, write_pkg_file, check_importable, assert_string_list, check_nsp, check_extras, _check_extra, assert_bool, check_requirements, check_specifier, check_entry_points, check_test_suite, check_package_data, check_packages, Distribution, Feature, DistDeprecationWarning, _read_field, _read_list, patch_missing_pkg_info, __init__, _finalize_requires, _convert_extras_requirements, _suffix_for, _move_install_requirements_markers, _clean_req, parse_config_files, parse_command_line, _feature_attrname, fetch_build_eggs, finalize_options, get_egg_cache_dir, fetch_build_egg, _set_global_opts_from_features, _finalize_features, get_command_class, print_commands, get_command_list, _set_feature, feature_is_included, include_feature, include, exclude_package, has_contents_for, _exclude_misc, _include_misc, exclude, _exclude_packages, _parse_command_opts, get_cmdline_options, iter_distribution_names, handle_display_options, warn_deprecated, __init__, include_by_default, include_in, exclude_from, validate, write_field, write_field, is_simple_req
-- venv/lib/python2.7/site-packages/setuptools/extension.py: _have_cython, Extension, Library, __init__, _convert_pyx_sources_to_lang
-- venv/lib/python2.7/site-packages/setuptools/glibc.py: glibc_version_string, check_glibc_version, have_compatible_glibc, libc_ver
-- venv/lib/python2.7/site-packages/setuptools/glob.py: glob, iglob, _iglob, glob1, glob0, glob2, _rlistdir, has_magic, _isrecursive, escape
-- venv/lib/python2.7/site-packages/setuptools/launch.py: run
-- venv/lib/python2.7/site-packages/setuptools/lib2to3_ex.py: DistutilsRefactoringTool, Mixin2to3, log_error, log_message, log_debug, run_2to3, __build_fixer_names, __exclude_fixers
-- venv/lib/python2.7/site-packages/setuptools/monkey.py: _get_mro, get_unpatched, get_unpatched_class, patch_all, _patch_distribution_metadata, patch_func, get_unpatched_function, patch_for_msvc_specialized_compiler, patch_params
-- venv/lib/python2.7/site-packages/setuptools/msvc.py: msvc9_find_vcvarsall, msvc9_query_vcvarsall, msvc14_get_vc_env, msvc14_gen_lib_options, _augment_exception, PlatformInfo, RegistryInfo, SystemInfo, EnvironmentInfo, winreg, __init__, target_cpu, target_is_x86, current_is_x86, current_dir, target_dir, cross_dir, __init__, visualstudio, sxs, vc, vs, vc_for_python, microsoft_sdk, windows_sdk, netfx_sdk, windows_kits_roots, microsoft, lookup, __init__, _find_latest_available_vc_ver, find_available_vc_vers, VSInstallDir, VCInstallDir, _guess_vc, _guess_vc_legacy, WindowsSdkVersion, WindowsSdkLastVersion, WindowsSdkDir, WindowsSDKExecutablePath, FSharpInstallDir, UniversalCRTSdkDir, UniversalCRTSdkLastVersion, NetFxSdkVersion, NetFxSdkDir, FrameworkDir32, FrameworkDir64, FrameworkVersion32, FrameworkVersion64, _find_dot_net_versions, _use_last_dir_name, __init__, vc_ver, VSTools, VCIncludes, VCLibraries, VCStoreRefs, VCTools, OSLibraries, OSIncludes, OSLibpath, SdkTools, _sdk_tools, _sdk_subdir, SdkSetup, FxTools, NetFxSDKLibraries, NetFxSDKIncludes, VsTDb, MSBuild, HTMLHelpWorkshop, UCRTLibraries, UCRTIncludes, _ucrt_subdir, FSharp, VCRuntimeRedist, return_env, _build_paths, _unique_everseen
-- venv/lib/python2.7/site-packages/setuptools/namespaces.py: Installer, DevelopInstaller, install_namespaces, uninstall_namespaces, _get_target, _get_root, _gen_nspkg_line, _get_all_ns_packages, _pkg_names, _get_root, _get_target
-- venv/lib/python2.7/site-packages/setuptools/package_index.py: parse_requirement_arg, parse_bdist_wininst, egg_info_for_url, distros_for_url, distros_for_location, distros_for_filename, interpret_distro_name, unique_everseen, unique_values, find_external_links, ContentChecker, HashChecker, PackageIndex, decode_entity, htmldecode, socket_timeout, _encode_auth, Credential, PyPIConfig, open_with_auth, fix_sf_url, local_open, wrapper, feed, is_valid, report, __init__, from_url, feed, is_valid, report, __init__, process_url, process_filename, url_ok, scan_egg_links, scan_egg_link, process_index, need_version_info, scan_all, find_packages, obtain, check_hash, add_find_links, prescan, not_found_in_index, download, fetch_distribution, fetch, gen_setup, _download_to, reporthook, open_url, _download_url, scan_url, _attempt_download, _download_html, _download_svn, _vcs_split_rev_from_url, _download_git, _download_hg, debug, info, warn, _socket_timeout, __init__, __iter__, __str__, __init__, creds_by_repository, _get_repo_cred, find_credential, scan, find, _socket_timeout
-- venv/lib/python2.7/site-packages/setuptools/pep425tags.py: get_config_var, get_abbr_impl, get_impl_ver, get_impl_version_info, get_impl_tag, get_flag, get_abi_tag, _is_running_32bit, get_platform, is_manylinux1_compatible, get_darwin_arches, get_supported, _supports_arch
-- venv/lib/python2.7/site-packages/setuptools/py27compat.py: get_all_headers, get_all_headers
-- venv/lib/python2.7/site-packages/setuptools/py31compat.py: TemporaryDirectory, __init__, __enter__, __exit__
-- venv/lib/python2.7/site-packages/setuptools/py33compat.py: Bytecode_compat, __init__, __iter__
-- venv/lib/python2.7/site-packages/setuptools/py36compat.py: Distribution_parse_config_files, parse_config_files, Distribution_parse_config_files, Distribution_parse_config_files
-- venv/lib/python2.7/site-packages/setuptools/sandbox.py: _execfile, save_argv, save_path, override_temp, pushd, UnpickleableException, ExceptionSaver, save_modules, _clear_modules, save_pkg_resources_state, setup_context, _needs_hiding, hide_setuptools, run_setup, AbstractSandbox, DirectorySandbox, SandboxViolation, dump, __enter__, __exit__, resume, __init__, _copy, __enter__, __exit__, run, _mk_dual_path_wrapper, _mk_single_path_wrapper, _mk_single_with_return, _mk_query, _validate_path, _remap_input, _remap_output, _remap_pair, __init__, _violation, _open, tmpnam, _ok, _exempted, _remap_input, _remap_pair, open, __str__, wrap, wrap, wrap, wrap, _file
-- venv/lib/python2.7/site-packages/setuptools/site-patch.py: __boot
-- venv/lib/python2.7/site-packages/setuptools/ssl_support.py: VerifyingHTTPSHandler, VerifyingHTTPSConn, opener_for, once, get_win_certfile, find_ca_bundle, _certifi_where, CertificateError, _dnsname_match, match_hostname, __init__, https_open, __init__, connect, wrapper, CertFile, __init__, close
-- venv/lib/python2.7/site-packages/setuptools/unicode_utils.py: decompose, filesys_decode, try_encode
-- venv/lib/python2.7/site-packages/setuptools/wheel.py: unpack, Wheel, __init__, tags, is_compatible, egg_name, get_dist_info, install_as_egg, _install_as_egg, _convert_metadata, _move_data_entries, _fix_namespace_packages, get_metadata, raw_req
-- venv/lib/python2.7/site-packages/setuptools/windows_support.py: windows_only, hide_file
-- venv/lib/python2.7/site-packages/setuptools/_deprecation_warning.py: SetuptoolsDeprecationWarning
-- venv/lib/python2.7/site-packages/setuptools/__init__.py: PackageFinder, PEP420PackageFinder, _install_setup_requires, setup, Command, _find_all_simple, findall, find, _find_packages_iter, _looks_like_package, _build_filter, _looks_like_package, __init__, reinitialize_command
-- venv/lib/python2.7/site-packages/setuptools/command/alias.py: shquote, alias, format_alias, initialize_options, finalize_options, run
-- venv/lib/python2.7/site-packages/setuptools/command/bdist_egg.py: strip_module, sorted_walk, write_stub, bdist_egg, walk_egg, analyze_egg, write_safety_flag, scan_module, iter_symbols, can_scan, make_zipfile, _get_purelib, initialize_options, finalize_options, do_install_data, get_outputs, call_command, run, zap_pyfiles, zip_safe, gen_header, copy_metadata_to, get_ext_outputs, visit, _get_purelib
-- venv/lib/python2.7/site-packages/setuptools/command/bdist_rpm.py: bdist_rpm, run, _make_spec_file
-- venv/lib/python2.7/site-packages/setuptools/command/bdist_wininst.py: bdist_wininst, reinitialize_command, run
-- venv/lib/python2.7/site-packages/setuptools/command/build_clib.py: build_clib, build_libraries
-- venv/lib/python2.7/site-packages/setuptools/command/build_ext.py: _customize_compiler_for_shlib, get_abi3_suffix, build_ext, run, copy_extensions_to_source, get_ext_filename, initialize_options, finalize_options, setup_shlib_compiler, get_export_symbols, build_extension, links_to_dynamic, get_outputs, __get_stubs_outputs, __get_output_extensions, write_stub, link_shared_object, link_shared_object
-- venv/lib/python2.7/site-packages/setuptools/command/build_py.py: build_py, _unique_everseen, assert_relative, finalize_options, run, __getattr__, build_module, _get_data_files, _get_pkg_data_files, find_data_files, build_package_data, analyze_manifest, get_data_files, check_package, initialize_options, get_package_dir, exclude_data_files, _get_platform_patterns, Mixin2to3, run_2to3
-- venv/lib/python2.7/site-packages/setuptools/command/develop.py: develop, VersionlessRequirement, run, initialize_options, finalize_options, _resolve_setup_path, install_for_development, uninstall_link, install_egg_scripts, install_wrapper_scripts, __init__, __getattr__, as_requirement
-- venv/lib/python2.7/site-packages/setuptools/command/dist_info.py: dist_info, initialize_options, finalize_options, run
-- venv/lib/python2.7/site-packages/setuptools/command/easy_install.py: is_64bit, samefile, easy_install, _pythonpath, get_site_dirs, expand_paths, extract_wininst_cfg, get_exe_prefixes, PthDistributions, RewritePthDistributions, _first_line_re, auto_chmod, update_dist_caches, _collect_zipimporter_cache_entries, _update_zipimporter_cache, _uncache, _remove_and_clear_zip_directory_cache_data, is_python, is_sh, nt_quote_arg, is_python_script, chmod, CommandSpec, WindowsCommandSpec, ScriptWriter, WindowsScriptWriter, WindowsExecutableLauncherWriter, get_win_launcher, load_launcher_manifest, rmtree, current_umask, bootstrap, main, _patch_usage, EasyInstallDeprecationWarning, _to_bytes, isascii, _to_bytes, isascii, initialize_options, delete_blockers, _delete_path, _render_version, finalize_options, _fix_install_dir_for_user_site, _expand_attrs, expand_basedirs, expand_dirs, run, pseudo_tempname, warn_deprecated_options, check_site_dir, cant_write_to_target, check_pth_processing, install_egg_scripts, add_output, not_editable, check_editable, _tmpdir, easy_install, install_item, select_scheme, process_distribution, should_unzip, maybe_move, install_wrapper_scripts, install_script, _load_template, write_script, install_eggs, egg_distribution, install_egg, install_exe, exe_to_egg, install_wheel, installation_report, report_editable, run_setup, build_and_install, _set_fetcher_options, update_pth, unpack_progress, unpack_and_compile, byte_compile, no_default_version_msg, install_site_py, create_home_path, _expand, __init__, _load, save, _wrap_lines, add, remove, make_relative, _wrap_lines, clear_and_remove_cached_zip_archive_directory_data, _replace_zip_directory_cache_data, best, _sys_executable, from_param, from_environment, from_string, install_options, _extract_options, as_header, _strip_quotes, _render, get_script_args, get_script_header, get_args, _ensure_safe_name, get_writer, best, _get_script_args, get_header, get_writer, best, _get_script_args, _adjust_header, _use_header, _get_script_args, DistributionWithoutHelpCommands, gen_usage, process, pf, replace_cached_zip_archive_directory_data, _chmod, _show_help
-- venv/lib/python2.7/site-packages/setuptools/command/egg_info.py: translate_pattern, InfoCommon, egg_info, FileList, manifest_maker, write_file, write_pkg_info, warn_depends_obsolete, _write_requirements, write_requirements, write_setup_requirements, write_toplevel_names, overwrite_arg, write_arg, write_entries, get_pkg_info_revision, EggInfoDeprecationWarning, name, tagged_version, tags, initialize_options, tag_svn_revision, tag_svn_revision, save_version_info, finalize_options, write_or_delete_file, write_file, delete_file, run, find_sources, check_broken_egg_info, process_template_line, _remove_files, include, exclude, recursive_include, recursive_exclude, graft, prune, global_include, global_exclude, append, extend, _repair, _safe_path, initialize_options, finalize_options, run, _manifest_normalize, write_manifest, warn, _should_suppress_warning, add_defaults, prune_file_list
-- venv/lib/python2.7/site-packages/setuptools/command/install.py: install, initialize_options, finalize_options, handle_extra_path, run, _called_from_setup, do_egg_install
-- venv/lib/python2.7/site-packages/setuptools/command/install_egg_info.py: install_egg_info, initialize_options, finalize_options, run, get_outputs, copytree, skimmer
-- venv/lib/python2.7/site-packages/setuptools/command/install_lib.py: install_lib, run, get_exclusions, _exclude_pkg_path, _all_packages, _get_SVEM_NSPs, _gen_exclusion_paths, copy_tree, get_outputs, pf
-- venv/lib/python2.7/site-packages/setuptools/command/install_scripts.py: install_scripts, initialize_options, run, write_script
-- venv/lib/python2.7/site-packages/setuptools/command/py36compat.py: sdist_add_defaults, add_defaults, _cs_path_exists, _add_defaults_standards, _add_defaults_optional, _add_defaults_python, _add_defaults_data_files, _add_defaults_ext, _add_defaults_c_libs, _add_defaults_scripts, sdist_add_defaults
-- venv/lib/python2.7/site-packages/setuptools/command/register.py: register, run
-- venv/lib/python2.7/site-packages/setuptools/command/rotate.py: rotate, initialize_options, finalize_options, run
-- venv/lib/python2.7/site-packages/setuptools/command/saveopts.py: saveopts, run
-- venv/lib/python2.7/site-packages/setuptools/command/sdist.py: walk_revctrl, sdist, run, initialize_options, _default_to_gztar, make_distribution, _remove_os_link, __read_template_hack, _add_defaults_python, _add_defaults_data_files, check_readme, make_release_tree, _manifest_is_not_generated, read_manifest, NoValue
-- venv/lib/python2.7/site-packages/setuptools/command/setopt.py: config_file, edit_config, option_base, setopt, initialize_options, finalize_options, initialize_options, finalize_options, run
-- venv/lib/python2.7/site-packages/setuptools/command/test.py: ScanningLoader, NonDataProperty, test, __init__, loadTestsFromModule, __init__, __get__, initialize_options, finalize_options, test_args, _test_args, with_project_on_sys_path, project_on_sys_path, paths_on_pythonpath, install_dists, run, run_tests, _argv, _resolve_as_ep
-- venv/lib/python2.7/site-packages/setuptools/command/upload.py: upload, run, finalize_options, upload_file, _load_password_from_keyring, _prompt_for_password
-- venv/lib/python2.7/site-packages/setuptools/command/upload_docs.py: _encode, upload_docs, has_sphinx, initialize_options, finalize_options, create_zipfile, run, _build_part, _build_multipart, upload_file
-- venv/lib/python2.7/site-packages/setuptools/extern/__init__.py: VendorImporter, __init__, search_path, find_module, load_module, install
-- venv/lib/python2.7/site-packages/setuptools/_vendor/pyparsing.py: _xml_escape, _Constants, ParseBaseException, ParseException, ParseFatalException, ParseSyntaxException, RecursiveGrammarException, _ParseResultsWithOffset, ParseResults, col, lineno, line, _defaultStartDebugAction, _defaultSuccessDebugAction, _defaultExceptionDebugAction, nullDebugAction, _trim_arity, ParserElement, Token, Empty, NoMatch, Literal, Keyword, CaselessLiteral, CaselessKeyword, CloseMatch, Word, Regex, QuotedString, CharsNotIn, White, _PositionToken, GoToColumn, LineStart, LineEnd, StringStart, StringEnd, WordStart, WordEnd, ParseExpression, And, Or, MatchFirst, Each, ParseElementEnhance, FollowedBy, NotAny, _MultipleMatch, OneOrMore, ZeroOrMore, _NullToken, Optional, SkipTo, Forward, _ForwardNoRecurse, TokenConverter, Combine, Group, Dict, Suppress, OnlyOnce, traceParseAction, delimitedList, countedArray, _flatten, matchPreviousLiteral, matchPreviousExpr, _escapeRegexRangeChars, oneOf, dictOf, originalTextFor, ungroup, locatedExpr, srange, matchOnlyAtCol, replaceWith, removeQuotes, tokenMap, _makeTags, makeHTMLTags, makeXMLTags, withAttribute, withClass, infixNotation, nestedExpr, indentedBlock, replaceHTMLEntity, pyparsing_common, _ustr, __init__, _from_exception, __getattr__, __str__, __repr__, markInputline, __dir__, __init__, __str__, __init__, __getitem__, __repr__, setOffset, __new__, __init__, __getitem__, __setitem__, __delitem__, __contains__, __len__, __bool__, __iter__, __reversed__, _iterkeys, _itervalues, _iteritems, haskeys, pop, get, insert, append, extend, clear, __getattr__, __add__, __iadd__, __radd__, __repr__, __str__, _asStringList, asList, asDict, copy, asXML, __lookup, getName, dump, pprint, __getstate__, __setstate__, __getnewargs__, __dir__, wrapper, setDefaultWhitespaceChars, inlineLiteralsUsing, __init__, copy, setName, setResultsName, setBreak, setParseAction, addParseAction, addCondition, setFailAction, _skipIgnorables, preParse, parseImpl, postParse, _parseNoCache, tryParse, canParseNext, _UnboundedCache, _parseCache, resetCache, enablePackrat, parseString, scanString, transformString, searchString, split, __add__, __radd__, __sub__, __rsub__, __mul__, __rmul__, __or__, __ror__, __xor__, __rxor__, __and__, __rand__, __invert__, __call__, suppress, leaveWhitespace, setWhitespaceChars, parseWithTabs, ignore, setDebugActions, setDebug, __str__, __repr__, streamline, checkRecursion, validate, parseFile, __eq__, __ne__, __hash__, __req__, __rne__, matches, runTests, __init__, __init__, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, copy, setDefaultKeywordChars, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __init__, preParse, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, parseImpl, __init__, __getitem__, append, leaveWhitespace, ignore, __str__, streamline, setResultsName, validate, copy, _ErrorStop, __init__, parseImpl, __iadd__, checkRecursion, __str__, __init__, parseImpl, __ixor__, __str__, checkRecursion, __init__, parseImpl, __ior__, __str__, checkRecursion, __init__, parseImpl, __str__, checkRecursion, __init__, parseImpl, leaveWhitespace, ignore, streamline, checkRecursion, validate, __str__, __init__, parseImpl, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __str__, __bool__, __str__, __init__, parseImpl, __str__, __init__, parseImpl, __init__, __lshift__, __ilshift__, leaveWhitespace, streamline, validate, __str__, copy, __str__, __init__, __init__, ignore, postParse, __init__, postParse, __init__, postParse, postParse, suppress, __init__, __call__, reset, z, countFieldParseAction, copyTokenToRepeater, copyTokenToRepeater, verifyCol, pa, pa, checkPeerIndent, checkSubIndent, checkUnindent, convertToDate, convertToDatetime, stripHTMLTags, keys, values, items, toItem, extract_stack, extract_tb, __init__, _FifoCache, _FifoCache, __init__, mustMatchTheseTokens, extractText, cvt_fn, cvt_fn, breaker, pa, get, set, clear, cache_len, __init__, __init__, makeOptionalList, charsAsStr, get, set, clear, cache_len, get, set, clear, cache_len
-- venv/lib/python2.7/site-packages/setuptools/_vendor/six.py: _add_doc, _import_module, _LazyDescr, MovedModule, _LazyModule, MovedAttribute, _SixMetaPathImporter, _MovedItems, Module_six_moves_urllib_parse, Module_six_moves_urllib_error, Module_six_moves_urllib_request, Module_six_moves_urllib_response, Module_six_moves_urllib_robotparser, Module_six_moves_urllib, add_move, remove_move, assertCountEqual, assertRaisesRegex, assertRegex, with_metaclass, add_metaclass, python_2_unicode_compatible, __init__, __get__, __init__, _resolve, __getattr__, __init__, __dir__, __init__, _resolve, __init__, _add_module, _get_module, find_module, __get_module, load_module, is_package, get_code, __dir__, get_unbound_function, create_unbound_method, get_unbound_function, create_bound_method, create_unbound_method, Iterator, iterkeys, itervalues, iteritems, iterlists, iterkeys, itervalues, iteritems, iterlists, b, u, b, u, byte2int, indexbytes, reraise, exec_, print_, print_, wraps, metaclass, wrapper, X, advance_iterator, callable, next, raise_from, write, wrapper, __new__, __len__
-- venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/markers.py: InvalidMarker, UndefinedComparison, UndefinedEnvironmentName, Node, Variable, Value, Op, _coerce_parse_result, _format_marker, _eval_op, _get_env, _evaluate_markers, format_full_version, default_environment, Marker, __init__, __str__, __repr__, serialize, serialize, serialize, serialize, __init__, __str__, __repr__, evaluate
-- venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/requirements.py: InvalidRequirement, Requirement, __init__, __str__, __repr__
-- venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/specifiers.py: InvalidSpecifier, BaseSpecifier, _IndividualSpecifier, LegacySpecifier, _require_version_compare, Specifier, _version_split, _pad_version, SpecifierSet, __str__, __hash__, __eq__, __ne__, prereleases, prereleases, contains, filter, __init__, __repr__, __str__, __hash__, __eq__, __ne__, _get_operator, _coerce_version, operator, version, prereleases, prereleases, __contains__, contains, filter, _coerce_version, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, wrapped, _compare_compatible, _compare_equal, _compare_not_equal, _compare_less_than_equal, _compare_greater_than_equal, _compare_less_than, _compare_greater_than, _compare_arbitrary, prereleases, prereleases, __init__, __repr__, __str__, __hash__, __and__, __eq__, __ne__, __len__, __iter__, prereleases, prereleases, __contains__, contains, filter
-- venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/utils.py: canonicalize_name
-- venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/version.py: parse, InvalidVersion, _BaseVersion, LegacyVersion, _parse_version_parts, _legacy_cmpkey, Version, _parse_letter_version, _parse_local_version, _cmpkey, __hash__, __lt__, __le__, __eq__, __ge__, __gt__, __ne__, _compare, __init__, __str__, __repr__, public, base_version, local, is_prerelease, is_postrelease, __init__, __repr__, __str__, public, base_version, local, is_prerelease, is_postrelease
-- venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/_compat.py: with_metaclass, metaclass, __new__
-- venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/_structures.py: Infinity, NegativeInfinity, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__, __repr__, __hash__, __lt__, __le__, __eq__, __ne__, __gt__, __ge__, __neg__
-- venv/lib/python2.7/site-packages/wheel/bdist_wheel.py: safer_name, safer_version, bdist_wheel, initialize_options, finalize_options, wheel_dist_name, get_tag, run, write_wheelfile, _ensure_relative, license_paths, egg2dist, adios
-- venv/lib/python2.7/site-packages/wheel/metadata.py: requires_to_requires_dist, convert_requirements, generate_requirements, pkginfo_to_metadata, pkginfo_unicode, dedent_description
-- venv/lib/python2.7/site-packages/wheel/pep425tags.py: get_config_var, get_abbr_impl, get_impl_ver, get_impl_version_info, get_flag, get_abi_tag, get_platform, get_supported
-- venv/lib/python2.7/site-packages/wheel/pkginfo.py: read_pkg_info_bytes, read_pkg_info, write_pkg_info, read_pkg_info_bytes, read_pkg_info, write_pkg_info
-- venv/lib/python2.7/site-packages/wheel/util.py: urlsafe_b64encode, urlsafe_b64decode, as_unicode, as_bytes, native, native
-- venv/lib/python2.7/site-packages/wheel/wheelfile.py: get_zipinfo_datetime, WheelFile, __init__, open, write_files, write, writestr, close, _update_crc
-- venv/lib/python2.7/site-packages/wheel/__main__.py: main
-- venv/lib/python2.7/site-packages/wheel/cli/convert.py: _bdist_wheel_tag, egg2wheel, parse_wininst_info, wininst2wheel, convert, get_tag
-- venv/lib/python2.7/site-packages/wheel/cli/pack.py: pack
-- venv/lib/python2.7/site-packages/wheel/cli/unpack.py: unpack
-- venv/lib/python2.7/site-packages/wheel/cli/__init__.py: require_pkgresources, WheelError, unpack_f, pack_f, convert_f, version_f, parser, main
-
-`;
+export const repoData = {
+  "2D-Skeletonization": {
+    "description": "",
+    "insight": "",
+    "gpu_enabled": false,
+    "files": []
+  },
+  "3d-centroid-proofreader": {
+    "description": "**Codebase Intelligence:** This Python codebase contains 20 extracted functions across 2 files. Key extracted functionality includes: install_and_import, read_swc, save_swc, LoadingWorker, ProofreaderDockWidget, and more.",
+    "insight": "The 3d-centroid-proofreader project is a specialized Python-based tool designed for the interactive visualization and corrective editing (proofreading) of 3D neuronal or similar tree-like structures, commonly represented in the SWC (Standard Wavefront Coordinate) file format. Its holistic capability lies in providing neuroscientists and researchers with an intuitive platform to refine and validate automatically or manually traced morphological reconstructions, leveraging the powerful 3D rendering and extensibility of the napari scientific image viewer. The repository is intended to be used by launching the provided 'run_proofreader.sh' script or executing 'launcher.py', which will open a napari instance with the 'ProofreaderDockWidget' activated. Users then load SWC files, visualize the 3D structures, and utilize the dock widget's tools to perform critical proofreading tasks such as correcting misconnections, removing spurious branches, adding missing segments, or adjusting node positions, with the ability to save the modified structures back into the SWC format. Architecturally, the project is structured as a napari plugin, with 'napari_proofreader.py' serving as the core component that defines the 'ProofreaderDockWidget' and orchestrates the user interface with the underlying data. Key algorithmic highlights include robust 'read_swc' and 'save_swc' functions for managing the domain-specific data format, a 'LoadingWorker' to handle potentially large datasets asynchronously, ensuring UI responsiveness, and implicitly, a suite of interactive 3D editing algorithms for manipulating the centroid-based tree structures directly within the napari environment.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "launcher.py",
+        "summary": "Key capabilities: install_and_import",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "napari_proofreader.py",
+        "summary": "Key capabilities: read_swc, save_swc, LoadingWorker, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "run_proofreader.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "3D_Developing_brain": {
+    "description": "Code for Comparison of Cell Detection in 3D Histological Developing Brain",
+    "insight": "The '3D_Developing_brain' repository offers a comprehensive computational framework for comparing different cell detection methodologies within complex 3D histological images of developing brain tissue, serving a vital role in the domain of bioimage informatics and developmental neuroscience. Its holistic capability is to benchmark and assess the efficacy of various algorithms for accurately identifying and localizing cells in volumetric microscopy data, which is fundamental for understanding neurogenesis, cell migration patterns, and disease progression in brain development. The intended usage involves users first engaging with the two provided Jupyter notebooks, MEDIAR_(model1).ipynb and MultiStreamCellSeg_(model_2).ipynb, which serve as executable pipelines to apply and generate cell detection results using two distinct computational models on their 3D image datasets. Following the generation of these detections, the eval1.m MATLAB script is designed to load the model outputs alongside ground truth data to perform a rigorous, quantitative evaluation and comparison of the models' performance, likely calculating metrics such as precision, recall, and F1-score. Architecturally, the project highlights the implementation of two sophisticated cell detection algorithms\u2014one named MEDIAR and the other, MultiStreamCellSeg, which strongly suggests a multi-stream neural network designed for robust segmentation\u2014with their development and application orchestrated within the interactive and iterative Python-based Jupyter environment. The separation of model execution in Python notebooks and the dedicated evaluation in a MATLAB script underscores a common research practice where advanced deep learning methods are built in Python while robust, often standardized, quantitative analysis and reporting are performed using MATLAB's scientific computing capabilities.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "MEDIAR_(model1).ipynb",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "MultiStreamCellSeg_(model_2).ipynb",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "eval1.m",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "3_MET_TCNN": {
+    "description": "For Paper in NeuroComputing 2018",
+    "insight": "The 3_MET_TCNN repository presents a sophisticated, multi-stage deep learning pipeline primarily developed for neurocomputing research, likely accompanying a 2018 paper on applying Temporal Convolutional Neural Networks (TCNNs) to analyze specific neurophysiological time-series data, where \"MET\" likely denotes a domain-specific signal or experimental condition such as metabolic data, motor evoked potentials, or other neural measurements. The project's holistic capability lies in its ability to process complex neural data, learn intricate temporal patterns using TCNNs, and arrive at a specific classification or prediction relevant to neuroscience. Intended usage involves a sequential execution flow: first, dataPrep.py is used to preprocess raw neurophysiological data into a suitable format; subsequently, stage1.py trains an initial model or extracts preliminary features; then, stage2Data.py prepares specific inputs for the second stage, potentially utilizing outputs from stage 1; stage2.py proceeds with further training or representation learning; finally, stage3.py completes the model training or makes final predictions, with test.py providing comprehensive evaluation of the entire system's performance. Key architectural and algorithmic highlights include the strategic application of TCNNs for effective temporal sequence modeling, crucial for neuroscience time-series, and a distinct three-stage processing architecture that implies a hierarchical or cascading model design. This multi-stage approach allows for progressive feature learning, refined data representation, or handling different aspects of the neurocomputing task, underscoring a robust and modular methodology for tackling challenging problems in brain data analysis.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "dataPrep.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stage1.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stage2.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stage2Data.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stage3.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "atlas_free_slice_alignment": {
+    "description": "",
+    "insight": "",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "docs/conf.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "source/notebooks/example.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "source/notebooks/slice_alignment_parallel Telescope a=0.25 c=0.25 deform only-Copy1.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "source/scripts/slice_alignment.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "source/scripts/slice_alignment_help.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "Cropping_NZ": {
+    "description": "**Codebase Intelligence:** This MATLAB codebase contains 27 extracted functions across 18 files. Key extracted functionality includes: crop_1, crop_2, crop_3, crop_4, crop_Brains, and more.",
+    "insight": "The Cropping_NZ MATLAB codebase is a specialized image processing utility primarily focused on automated or semi-automated region-of-interest extraction (cropping) from biological and medical image data, particularly neuroimaging scans from various species like mice, marmosets, and potentially human brains. Its holistic capability revolves around streamlining the pre-processing step of isolating relevant anatomical structures from larger image volumes or series, often within a research or diagnostic context where consistent and precise cropping is essential. This repository is intended to be used by researchers or technicians to batch process a collection of images; a typical workflow involves converting raw image data from a specific NGR format to TIFF using ngr2tif.m, then preparing a list of target files or directories for processing, likely managed by scripts like crop_list.m or crop_list_rescan.m. The core 'crop_X' functions (e.g., crop_Brains, crop_marmoset, crop_mouse_single, crop_sagital_quad) are then invoked to perform highly tailored cropping operations, selecting optimal regions based on species, anatomical plane, or specific acquisition protocol. The process includes robust logging via crop_logs.m for tracking operations, errors, and successful processing. Architecturally, the project employs a modular design with distinct functions for various cropping scenarios, indicating the use of highly specialized algorithms or predefined parameters for region identification. A key algorithmic highlight is the integration of natural-order file sorting through the 'natsortfiles' module, which is crucial for ensuring correct sequential processing of multi-slice or time-series image data where filenames contain numerical components. The system also features dedicated modules for robust batch processing and initial file format conversion, making it a comprehensive tool for efficient, high-throughput image data preparation in a scientific research setting.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "crop_1.m",
+        "summary": "Key capabilities: crop_1",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "crop_2.m",
+        "summary": "Key capabilities: crop_2",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "crop_3.m",
+        "summary": "Key capabilities: crop_3",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "crop_4.m",
+        "summary": "Key capabilities: crop_4",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "crop_Brains.m",
+        "summary": "Key capabilities: crop_Brains",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "crop_list.m",
+        "summary": "Key capabilities: crop_list",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "crop_list_rescan.m",
+        "summary": "Key capabilities: crop_list_rescan",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "crop_logs.m",
+        "summary": "Key capabilities: crop_logs",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "crop_marmoset.m",
+        "summary": "Key capabilities: crop_marmoset",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "crop_mouse_double.m",
+        "summary": "Key capabilities: crop_mouse_double",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "crop_mouse_double_inv.m",
+        "summary": "Key capabilities: crop_mouse_double_inv",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "crop_mouse_single.m",
+        "summary": "Key capabilities: crop_mouse_single",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "crop_sagital_quad.m",
+        "summary": "Key capabilities: crop_sagital_quad",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "natsortfiles/html/natsortfiles_doc.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "natsortfiles/natsort.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "natsortfiles/natsortfiles.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "natsortfiles/natsortfiles_doc.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "natsortfiles/natsortfiles_test.m",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "natsortfiles/testfun.m",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "ngr2tif.m",
+        "summary": "Key capabilities: ngr2tif, checkfileexists",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "cw_graph_tools": {
+    "description": "**Codebase Intelligence:** This MATLAB codebase contains 13 extracted functions across 11 files. Key extracted functionality includes: add_tree, create_forest_from_json, delete_tree, edit_cw_json, edit_graph, and more.",
+    "insight": "The 'cw_graph_tools' MATLAB repository provides a specialized toolkit for the computational manipulation, analysis, and visualization of structures related to CW complexes, a concept from algebraic topology, or a similar graph-theoretic framework denoted by the \"cw\" prefix. Its holistic capability centers on managing complex topological data, likely representing the 0- and 1-skeletons (vertices and edges) of such structures, through a robust set of functions for creation, modification, analysis, and persistence. Users are intended to interact with this repository by first loading or generating a CW complex structure, typically from a JSON file using functions like create_forest_from_json or load_cw_json, indicating a data-driven approach. They would then proceed to modify these structures using dedicated functions such as add_tree, delete_tree, and edit_graph, which allow for granular control over the constituent components, likely trees within a larger forest or graph. Analytical insights can be derived through algorithms like find_loops for cycle detection and find_mst for identifying minimum spanning trees, highlighting a strong reliance on graph theory principles for structural understanding. Finally, visualization is facilitated by plot_cw_complex, providing a graphical representation of the complex, and the results or modified structures can be persistently stored back to JSON format via export_forest_to_json or save_cw_json. Architecturally, the repository emphasizes JSON as its core data serialization format, ensuring interoperability and data persistence, and leverages a modular design for its graph and tree operations. Key algorithmic highlights include the integration of standard graph theory algorithms (e.g., MST, loop detection) within a specialized \"cw\" context, suggesting optimized or tailored implementations for this specific domain, alongside an essential visualization component to aid user comprehension.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "add_tree.m",
+        "summary": "Key capabilities: add_tree",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "create_forest_from_json.m",
+        "summary": "Key capabilities: create_forest_from_json",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "delete_tree.m",
+        "summary": "Key capabilities: delete_tree",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "edit_cw_json.m",
+        "summary": "Key capabilities: edit_cw_json",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "edit_graph.m",
+        "summary": "Key capabilities: edit_graph",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "export_forest_to_json.m",
+        "summary": "Key capabilities: export_forest_to_json",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "find_loops.m",
+        "summary": "Key capabilities: find_loops",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "find_mst.m",
+        "summary": "Key capabilities: find_mst, find_dt, union_dt",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "load_cw_json.m",
+        "summary": "Key capabilities: load_cw_json",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "plot_cw_complex.m",
+        "summary": "Key capabilities: plot_cw_complex",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "save_cw_json.m",
+        "summary": "Key capabilities: save_cw_json",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "DKCell": {
+    "description": "**Codebase Intelligence:** This Python codebase contains 296 extracted functions across 72 files. Key extracted functionality includes: Config, Config, augment, union, intersection, and more.",
+    "insight": "The DKCell repository provides a comprehensive, hybrid language solution for biomedical image analysis, primarily focused on cell detection, segmentation, or classification tasks using a deep learning approach grounded in meticulous data annotation. This project is intended to be used by first employing the substantial collection of MATLAB/Octave scripts, such as genCellTrainData.m and getDataTrain.m, to generate, process, and manage training data and annotations, often involving visualization and verification via scripts like viewAnnot.m and verifyDK_csv.m. This annotation-centric preprocessing leverages the included jsonlab library for robust handling of structured data in various formats (JSON, MessagePack, UBJSON) with compression. Following data preparation, the project transitions to its Python components, where a powerful Inception-ResNet-V2 convolutional neural network, likely benefiting from transfer learning with ImageNet pre-training as suggested by export_imagenet.py, is adapted or fine-tuned for the specific cell analysis task, potentially incorporating specialized layers like FixedBatchNormalization.py. Key architectural and algorithmic highlights include this unique hybrid strategy that combines MATLAB's strengths in image processing and rapid prototyping with Python's deep learning capabilities, the sophisticated and versatile data serialization and compression provided by the jsonlab library for managing complex annotations, and the effective application of transfer learning with a high-performance deep neural network architecture to address challenges in biomedical imaging.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "Annotation_TrainingData_Cells/genCellTrainData.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/getDataTrain.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/getDataTrain_RGB_Sep2021.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/Contents.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/base64decode.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/base64encode.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/decodevarname.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/encodevarname.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/examples/demo_jsonlab_basic.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/examples/demo_msgpack_basic.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/examples/demo_ubjson_basic.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/examples/jsonlab_selftest.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/examples/jsonlab_speedtest.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/fast_match_bracket.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/gendocs.sh",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/genlog.sh",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/gzipdecode.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/gzipencode.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/isoctavemesh.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/jdatadecode.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/jdataencode.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/jsonopt.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/loadjson.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/loadmsgpack.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/loadubjson.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/lz4decode.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/lz4encode.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/lz4hcdecode.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/lz4hcencode.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/lzipdecode.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/lzipencode.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/lzmadecode.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/lzmaencode.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/match_bracket.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/mergestruct.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/nestbracket2dim.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/savejson.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/savemsgpack.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/saveubjson.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/varargin2struct.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/zlibdecode.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/jsonlab/jsonlab/zlibencode.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/normal.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/parseXML.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/scratch.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/verifyDK_csv.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/viewAnnot.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Annotation_TrainingData_Cells/visCells_dist.m",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "FixedBatchNormalization.py",
+        "summary": "Key capabilities: FixedBatchNormalization, build, call, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Transper/inception_resnet_v2/export_imagenet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Transper/inception_resnet_v2/inception_resnet_v2.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "config.py",
+        "summary": "Key capabilities: Config",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "configDK.py",
+        "summary": "Key capabilities: Config",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "data_augment.py",
+        "summary": "Key capabilities: augment",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "data_generators.py",
+        "summary": "Key capabilities: union, intersection, iou, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "getRegMask.py",
+        "summary": "Key capabilities: getRegMask",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "getRegMask_DK39.py",
+        "summary": "Key capabilities: getRegMask",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "img_overlay.py",
+        "summary": "Key capabilities: imread_fast, imwrite_fast",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "inception_resnet_v2.py",
+        "summary": "Key capabilities: get_weight_path, get_img_output_length, conv2d_bn, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "keras_frcnn/FixedBatchNormalization.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "keras_frcnn/RoiPoolingConv.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "keras_frcnn/config.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "keras_frcnn/configDK.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "keras_frcnn/data_augment.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "keras_frcnn/data_generators.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "keras_frcnn/inception_resnet_v2.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "keras_frcnn/losses.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "keras_frcnn/pascal_voc_parser.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "keras_frcnn/resnet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "keras_frcnn/roi_helpers.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "keras_frcnn/simple_parser.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "keras_frcnn/vgg.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "keras_frcnn/xception.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "measure_map.py",
+        "summary": "Key capabilities: get_map, format_img",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "run_DK_cellDet.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "splitCode/split.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test_frcnn_full_DK39.py",
+        "summary": "Key capabilities: imread_fast, imwrite_fast, format_img_size, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test_frcnn_full_DK39_0.py",
+        "summary": "Key capabilities: imread_fast, imwrite_fast, format_img_size, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test_frcnn_full_DK39_1.py",
+        "summary": "Key capabilities: imread_fast, imwrite_fast, format_img_size, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test_frcnn_full_DK55_trainset.py",
+        "summary": "Key capabilities: imread_fast, imwrite_fast, format_img_size, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test_frcnn_full_DK_May_2021.py",
+        "summary": "Key capabilities: imread_fast, imwrite_fast, format_img_size, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test_frcnn_full_DK_May_2021_GPU0.py",
+        "summary": "Key capabilities: imread_fast, imwrite_fast, pre_proc, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test_frcnn_full_DK_May_2021_GPU0_utest.py",
+        "summary": "Key capabilities: imread_fast, imwrite_fast, pre_proc, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test_frcnn_full_DK_May_2021_GPU1.py",
+        "summary": "Key capabilities: imread_fast, imwrite_fast, pre_proc, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test_frcnn_full_G_DK39.py",
+        "summary": "Key capabilities: imread_fast, format_img_size, format_img_channels, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test_frcnn_full_rev_DK39.py",
+        "summary": "Key capabilities: imread_fast, format_img_size, format_img_channels, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_frcnn_DK.py",
+        "summary": "Key capabilities: write_log",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_frcnn_DK_May21.py",
+        "summary": "Key capabilities: write_log",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "DM_2D": {
+    "description": "**Codebase Intelligence:** This C++ codebase contains 185 extracted functions across 55 files. Key extracted functionality includes: load_persistence_diagram, test_2d_func, save_image_data, get_date, __remove_dups, and more.",
+    "insight": "This DM_2D repository is a sophisticated, high-performance computational topology project primarily focused on calculating persistent homology, particularly for two-dimensional data, likely leveraging Discrete Morse Theory for simplification. Its core capability lies in a distributed persistent homology algorithm (DIPHA), implemented in C++ and designed for parallel execution using MPI, making it suitable for analyzing large-scale datasets such as images or grid-based structures for feature extraction and topological data analysis. Users are intended to generate or prepare 2D input data, potentially using the provided Matlab scripts for synthetic data creation (e.g., ramp images, spheres, noisy data), and then feed this into the compiled C++ DIPHA engine to compute persistence diagrams, typically executed on a parallel computing environment. The Python files likely serve as a high-level interface or wrapper, orchestrating data input, execution of the C++ binary, and initial post-processing, while the Matlab scripts further aid in visualizing the computed persistence diagrams and analyzing intermediate results like discrete Morse edge information. Architecturally, the project's highlights include its C++ core with a strong emphasis on distributed computing through MPI, incorporating advanced column reduction algorithms (e.g., compute_reduced_columns, reduction_kernel) and custom, optimized data structures (like flat column stacks, heap columns, and write-once arrays) to efficiently process various complex types, notably weighted cubical complexes. The integration of the psort-1.0 library underscores its commitment to high-performance parallel sorting, critical for large-scale distributed computations, and the comprehensive Matlab utilities provide essential tooling for data preparation, testing, and result interpretation, forming a complete workflow for topological data analysis.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "DiMo2d/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/__init__func.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/build/CMakeFiles/FindMPI/test_mpi.cpp",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/externals/mem_usage/mem_usage.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/driver/MersenneTwister.h",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/driver/psort_bench.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/funnel.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/funnel.timpl.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_alltoall.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_merge.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_samplesort.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_seqsort.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_splitters.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/psort_util.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/sort.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/externals/psort-1.0/src/sort.timpl.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/compute_reduced_columns.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/dualize_explicit_complex.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/generate_unreduced_columns.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/get_cell_to_filtration_map.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/get_filtration_to_cell_map.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/algorithms/reduction_kernel.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/distributed_vector.h",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/flat_column_stack.h",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/heap_column.h",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/write_once_array_of_arrays.h",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/data_structures/write_once_column_array.h",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/element_distribution.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/file_types.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/globals.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/includes.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/abstract_weighted_cell_complex.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/full_rips_complex.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/sparse_rips_complex.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/weighted_cubical_complex.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/inputs/weighted_explicit_complex.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/macros.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/mpi_utils.h",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/include/dipha/outputs/save_persistence_diagram.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/matlab/create_noise_image_data.m",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/matlab/create_noisy_ramp_image_data.m",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/matlab/create_ramp_image_data.m",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/matlab/create_smooth_image_data.m",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/matlab/create_sphere.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/matlab/load_discrete_morse_edge_info.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/matlab/load_persistence_diagram.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/matlab/plot_midlife_persistence_diagram.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/matlab/plot_persistence_diagram.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/matlab/plot_persistence_diagram_density.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/matlab/save_distance_matrix.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/matlab/save_image_data.m",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/matlab/save_weighted_triangle_surface.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/src/create_phat_filtration.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/src/dipha.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/src/dualize.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-2d-thresh/src/full_to_sparse_distance_matrix.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/dipha-output-2d-ve-et-thresh/ComputeGraphReconstruction.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/matlab/load_persistence_diagram.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/matlab/save_image_data.m",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/paths_src/ComputePaths.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo2d/code/paths_src/Point.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "load_persistence_diagram.m",
+        "summary": "Key capabilities: load_persistence_diagram",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "package_testing.py",
+        "summary": "Key capabilities: test_2d_func",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "save_image_data.m",
+        "summary": "Key capabilities: save_image_data",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "DM_3D": {
+    "description": "**Codebase Intelligence:** This C++ codebase contains 282 extracted functions across 48 files. Key extracted functionality includes: load_persistence_diagram, test_3d_func, parallel_dipha_input, save_3d_image_data, split_domain, and more.",
+    "insight": "The DM_3D repository is a sophisticated codebase designed for distributed and parallel topological data analysis (TDA) of 3D volumetric image data, primarily focusing on persistent homology. Its holistic capability is to extract robust topological features\u2014such as connected components, loops, and voids\u2014from complex 3D datasets by constructing and analyzing their underlying topological structures, represented as persistence diagrams. This project operates in the domain of scientific computing, image analysis, and advanced data exploration, likely for applications in fields like medical imaging, materials science, or astrophysics, where understanding the intrinsic shape and connectivity of data is critical. The repository is intended to be used as a hybrid system where MATLAB scripts (e.g., dipha_input_gen.m, parallel_dipha_input.m) serve as the primary user interface for data preparation, orchestrating distributed computations, and loading/visualizing persistence diagrams, while the heavy-duty computational tasks are handled by highly optimized C++ executables. Users would typically prepare their 3D image data in MATLAB, use provided scripts to generate input suitable for distributed persistent homology computation (possibly using a 'split-compute-merge' paradigm for large datasets, indicated by functions like split_domain and the merge module), execute the C++ components (e.g., DiMoSC.cpp, ComputeGraphReconstruction.cpp which might integrate with the PHAT library), and then return to MATLAB for post-processing and analysis of the resulting persistence diagrams and reconstructed graph structures. Key architectural and algorithmic highlights include a strong reliance on Persistent Homology (via the integrated PHAT library, offering various reduction algorithms and pivot column representations for efficiency), a clear design for distributed and parallel processing to scale to large 3D volumes (evidenced by 'dipha' integration and explicit 'merge' functionality), and the systematic construction and manipulation of simplicial complexes and discrete vector fields for accurately representing and analyzing the topology of the input data. The combination of efficient C++ for core algorithms and MATLAB for ease of use provides a powerful platform for advanced topological data analysis.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "DiMo3d/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/dipha-output/ComputeGraphReconstruction.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/matlab/dipha_input_gen.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/matlab/load_persistence_diagram.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/matlab/parallel_dipha_input.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/matlab/save_3d_image_data.m",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/merge/combine.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/merge/hash.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/merge/hash.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/merge/merge.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/merge/merge_graph.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/DiMoSC.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/DiscreteVField.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/Simplex.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/Simplicial2Complex.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/graph_spt.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/graph_spt_list.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/persistence.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/addons/alpha_3.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/addons/rips.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/fps.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/fps.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/algorithms/chunk_reduction.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/algorithms/row_reduction.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/algorithms/spectral_sequence_reduction.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/algorithms/standard_reduction.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/algorithms/twist_reduction.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/boundary_matrix.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/compute_persistence_pairs.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/helpers/dualize.h",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/helpers/misc.h",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/helpers/thread_local_storage.h",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/persistence_pairs.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/representations/abstract_pivot_column.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/representations/bit_tree_pivot_column.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/representations/full_pivot_column.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/representations/heap_pivot_column.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/representations/sparse_pivot_column.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/representations/vector_heap.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/representations/vector_list.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/representations/vector_set.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/include/phat/representations/vector_vector.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/src/benchmark.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/src/convert.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/src/info.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/src/phat.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/src/relative_example.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/src/self_test.cpp",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/phat/src/simple_example.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DiMo3d/code/spt_cpp/spt.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "dipha_input_gen.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "load_persistence_diagram.m",
+        "summary": "Key capabilities: load_persistence_diagram",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "package_testing.py",
+        "summary": "Key capabilities: test_3d_func",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "parallel_dipha_input.m",
+        "summary": "Key capabilities: parallel_dipha_input",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "save_3d_image_data.m",
+        "summary": "Key capabilities: save_3d_image_data",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "DM_Lucas": {
+    "description": "**Codebase Intelligence:** This C++ codebase contains 364 extracted functions across 129 files. Key extracted functionality includes: parallel_dipha_input, function, function, function, func, and more.",
+    "insight": "DM_Lucas is a sophisticated C++ codebase primarily focused on the scalable computation of persistent homology, a key tool in computational topology for analyzing the shape and structure of data. Its holistic capability lies in providing robust and efficient algorithms for extracting topological features from large datasets, addressing the significant computational challenges often associated with such analyses, particularly through its emphasis on parallel processing as indicated by functionality like \"parallel_dipha_input.\" This repository is intended to be used by researchers and practitioners in data science, scientific computing, and related fields to process complex data \u2013 such as point clouds or geometric structures \u2013 and derive topological insights like persistence diagrams. Users would likely compile and execute the project's tools, providing their data in a suitable format, possibly converting it to a structure compatible with the DIPHA algorithm, to leverage its parallel capabilities for high-performance topological data analysis. Architecturally, the project highlights a strong emphasis on parallel and distributed algorithms, underpinning its ability to handle large-scale computations. This suggests the implementation of optimized data structures for simplicial complexes, efficient boundary matrix computations, and reduction algorithms specifically adapted for parallel execution, likely supporting paradigms like message passing to facilitate distributed processing across multiple computational nodes, all contributing to its comprehensive and scalable approach to persistent homology.",
+    "gpu_enabled": false,
+    "files": []
+  },
+  "DM_MG": {
+    "description": "Morse GAN",
+    "insight": "This \"Morse GAN\" project represents a fascinating application of deep generative models to the domain of Morse code, likely aiming to synthesize or transform Morse signal representations. Its holistic capability revolves around leveraging Generative Adversarial Networks, specifically the Pix2Pix architecture, for image-to-image translation within the context of Morse code. This could involve tasks such as generating realistic Morse code waveforms or spectrograms from abstract representations, denoising noisy Morse signals, or translating between different visual or spectral forms of Morse code. The project is intended to be used in a two-stage process. First, the MATLAB scripts (create_dm_patches.m, create_dm_patches_p.m, create_dm_patches_p16.m) are executed to prepare the dataset. These scripts are crucial for converting raw Morse code data (which might be audio, text, or some other digital signal) into standardized \"patches\"\u2014likely image representations such as spectrogram snippets\u2014suitable for training a deep learning model. The different patch scripts likely correspond to variations in patch size or preprocessing techniques. Once these image patches are generated, the 'pix2pix.py' script is then employed to train a conditional GAN model using this prepared dataset. This Python script embodies the core deep learning component, defining the Pix2Pix network architecture, managing the training loop, and enabling the generation or translation capabilities. Key architectural and algorithmic highlights include the central role of Generative Adversarial Networks (GANs), specifically the Pix2Pix model, which is renowned for its efficacy in diverse image-to-image translation tasks. The use of MATLAB for intricate data preprocessing to create \"patches\" underscores the importance of domain-specific feature engineering, transforming abstract Morse code data into a visual format consumable by image-based neural networks. This combination of robust data preparation and a powerful generative model allows the project to explore the creation and manipulation of Morse code signals through a deep learning paradigm.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "create_dm_patches.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "create_dm_patches_p.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "create_dm_patches_p16.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "pix2pix.py",
+        "summary": "Key capabilities: structural_loss, imageLoader, imageLoaderReturn, and more",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "DM_net": {
+    "description": "**Codebase Intelligence:** This Python codebase contains 10111 extracted functions across 465 files. Key extracted functionality includes: readImagesTwice, readImagesTwice, clipped_zoom, imageLoader, readImagesTwice, and more.",
+    "insight": "The 'DM_net' repository presents a sophisticated, hybrid Python and MATLAB codebase engineered for advanced deep learning-based image processing and computer vision tasks, especially those requiring the analysis or transformation of multiple image inputs. Its holistic capability is centered around the development, training, rigorous evaluation, and deployment of neural network models, particularly emphasizing the UNet architecture, for applications such as image segmentation, comparison, or feature extraction within domains like medical imaging, remote sensing change detection, or image enhancement, where precise image-to-image mapping or comparative analysis is critical. This repository is intended to be used as a complete workflow: initially, users would employ the `createData*.py` scripts to generate and preprocess image datasets, potentially incorporating augmentation techniques like `clipped_zoom`; subsequently, various deep learning models, including specialized UNet and multi-input configurations (e.g., `fullModel_2Img.py`), would be defined via `createNET*.py` and trained using the `fullModel*.py` scripts; post-training, model performance is quantitatively assessed through the MATLAB-based `eval_metric.m` and `thresh4eval.m` scripts for comprehensive evaluation; finally, the trained models are deployed for inference on new image data using `tsting.py` or `tsting_singleIP.py`. Key architectural and algorithmic highlights include a modular design that clearly separates network definition from full model implementations, robust support for multi-input image processing (evidenced by functions like `readImagesTwice`), and a comprehensive data pipeline that emphasizes augmentation and precise data preparation, all underpinned by a hybrid evaluation strategy that leverages both Python's deep learning capabilities and MATLAB's analytical tools for thorough quantitative assessment.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "createBlack.py",
+        "summary": "Key capabilities: readImagesTwice",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "createData.py",
+        "summary": "Key capabilities: readImagesTwice, clipped_zoom, imageLoader",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "createDataA.py",
+        "summary": "Key capabilities: readImagesTwice",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "createDataFT.py",
+        "summary": "Key capabilities: readImagesTwice",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "createDataTest.py",
+        "summary": "Key capabilities: readImagesTwice, imageLoader",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "createNETa.py",
+        "summary": "Key capabilities: jaccard_distance, dmnet",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "createNEt.py",
+        "summary": "Key capabilities: jaccard_distance, dmnet",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "createNEt_U.py",
+        "summary": "Key capabilities: jaccard_distance, dmnetU",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "createNEt_long.py",
+        "summary": "Key capabilities: jaccard_distance, dmnetLong",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "data.py",
+        "summary": "Key capabilities: adjustData, trainGenerator, validateGenerator, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "eval_metric.m",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fullModel.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fullModelA.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fullModelFT.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fullModelLong.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fullModel_2Img.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fullModel_U.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "modelUnet.py",
+        "summary": "Key capabilities: jaccard_distance, unet",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "new_tst.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "thresh4eval.m",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "tsting.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "tsting_singleIP.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "emlddmm": {
+    "description": "Expectation maximization algorithm for deformable registration with contrast prediction and optional slice positioning",
+    "insight": "",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "curve_annotator.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/2D_metadata_setup.html",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/Mouse_Serial_Section_Example.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_modules/emlddmm.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_modules/histsetup.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_modules/index.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_modules/test_emlddmm.html",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_modules/transformation_graph.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_modules/transformation_graph_v01.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/_sphinx_javascript_frameworks_compat.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/basic.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/css/badge_only.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/css/theme.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/doctools.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/documentation_options.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/graphviz.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/jquery-3.6.0.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/jquery.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/js/badge_only.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/js/html5shiv-printshiv.min.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/js/html5shiv.min.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/js/theme.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/language_data.js",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/nbsphinx-code-cells.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/nbsphinx-gallery.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/pygments.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/searchtools.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/sphinx_highlight.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/underscore-1.13.1.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/_static/underscore.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/coordinate_systems.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/curve_annotator.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/documentation.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/emlddmm.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/example_rat_registration.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/examples.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/file_formats.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/genindex.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/histsetup.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/human_mri_example.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/index.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/input_specification.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/installation.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/introduction.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/modules.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/output_specification.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/py-modindex.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/search.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/searchindex.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/test_emlddmm.html",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/todo.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/transformation_graph.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/build/html/transformation_graph_v01.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/prepare_docs.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/source/Mouse_Serial_Section_Example.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/source/conf.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/source/human_mri_example.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "emlddmm.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "examples/human_mri_example/human_mri_example.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "examples/mouse_fmost_example/example_mouse_atlas_to_fmost_registration.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "examples/mouse_serial_section_example/Mouse_Serial_Section_Example.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "examples/rat_iDISCO_hemisphere_example/example_rat_registration.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "histsetup.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "manual_point_align.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "point_mapper.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scratch/scratch.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "tests/test_emlddmm.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "transformation_graph_v01.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "unsorted_examples/hackathon_fmost_demo_v00.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "unsorted_examples/hackathon_fmost_demo_v01_daniel.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "unsorted_examples/json_input_generator.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "unsorted_examples/point_mapping_script.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "unsorted_examples/run_emlddmm_marmoset_v02.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "unsorted_examples/run_emlddmm_marmoset_v03.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "unsorted_examples/run_emlddmm_mouse_787small_v00.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "unsorted_examples/run_emlddmm_mouse_skull_3d_atlas_v00.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "unsorted_examples/run_emlddmm_mouse_skull_3d_v00.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "unsorted_examples/run_emlddmm_mricloud.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "unsorted_examples/run_emlddmm_v00.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "unsorted_examples/run_emlddmm_v01.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "unsorted_examples/test_transformation_graph.ipynb",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "unsorted_examples/transformation_graph.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "vtkreader.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "GFP-Cell-Detection": {
+    "description": "**Codebase Intelligence:** This MATLAB codebase contains 47 extracted functions across 29 files. Key extracted functionality includes: cell_filling, circfit, cluster, edge_layers, Euclidean_Signature, and more.",
+    "insight": "This GFP-Cell-Detection repository offers a holistic biomedical image analysis capability, primarily focused on the robust detection and segmentation of GFP-labeled cells or vascular structures within microscopy images, operating within the domain of computational bioimaging. It is intended to be used as a multi-stage MATLAB pipeline for processing fluorescent microscopy data: users would typically initiate the process via 'main.m', 'gfp_main.m', or 'main_bam.m', potentially leveraging 'run_script.sh' for batch processing. The workflow begins with 'pre_proc.m' for initial image preparation, followed by sequential phases, such as 'phase1.m' and 'phase2.m', which orchestrate feature extraction, cell/vessel detection, and refinement. Subsequently, the system allows for rigorous performance evaluation using 'pr_recall.m' and 'weighted_pr_recall.m' against 'Ground_truth_labelling.m', enabling quantitative assessment of detection accuracy. Architecturally, the project highlights include a sophisticated Frangi filtering module ('frangi_filter_version2a') for enhancing ridge-like (vessel) or blob-like (cell) structures, offering both 2D and 3D capabilities with performance-optimized MEX files for Gaussian blurring and eigenvalue computation. Key algorithmic components further encompass 'circfit.m' and 'fit_circles.m' for identifying circular cell-like objects, 'cell_filling.m' for creating solid masks, 'cluster.m' for grouping detections, and 'Euclidean_Signature.m' for shape description, all contributing to a comprehensive system for automated biological object detection and analysis.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "GFP_Cell_Detection/Euclidean_Signature.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/Evaluation/Ground_truth_labelling.m",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/Evaluation/pr_recall.m",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/Evaluation/weighted_pr_recall.m",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/Vessels.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/cell_filling.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/circfit.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/cluster.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/edge_layers.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/eval_pts.m",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/fit_circles.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/frangi_filter_version2a/FrangiFilter2D.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/frangi_filter_version2a/FrangiFilter3D.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/frangi_filter_version2a/Hessian2D.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/frangi_filter_version2a/Hessian3D.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/frangi_filter_version2a/eig2image.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/frangi_filter_version2a/eig3volume.c",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/frangi_filter_version2a/imgaussian.c",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/frangi_filter_version2a/imgaussian.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/frangi_filter_version2a/main_ridge.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/frangi_filter_version2a/nonmaxsup.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/gaussFun.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/gfp_main.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/main.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/main_bam.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/normal.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/phase1.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/phase2.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/pre_proc.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/residue.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/residue1.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/run_script.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/swap.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/weighted_pr_recall_gfp.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "GFP_Cell_Detection/zcc.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "run_script.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "Github_test": {
+    "description": "",
+    "insight": "This 'Github_test' repository, containing only a 'test.py' file, appears to serve as a foundational or experimental project, primarily designed for demonstrating, validating, or exploring basic functionalities within a GitHub ecosystem using Python. Its holistic capability, given the names, points towards a domain centered around software development lifecycle, CI/CD pipeline testing, or simply as a sandbox for learning GitHub features like repositories, commits, pushes, and potentially GitHub Actions. The repository is most likely intended to be used as a simple executable Python script, where 'test.py' would be run either locally from the command line (e.g., 'python test.py') or within a GitHub Actions workflow to observe its output or behavior. Its primary purpose would be to confirm environmental setups, test basic Python script execution within a given context, or serve as a minimalist example project for new GitHub users or contributors to understand repository mechanics. Without the specific content of 'test.py', it is impossible to identify any key architectural patterns or algorithmic highlights; the project's design is likely very straightforward, possibly involving simple print statements, basic logic, or calls to standard Python libraries, serving as a lightweight testbed rather than a complex application with sophisticated algorithms or a multi-tiered architecture.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "test.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "github_test2": {
+    "description": "Just for Test",
+    "insight": "This repository, named 'github_test2' and described as \"Just for Test\", serves primarily as an experimental sandbox for developers, demonstrating no specific holistic capability or domain beyond that of a general programming testbed. Its core capability lies in facilitating ad-hoc code development, testing, and potentially serving as a practice ground for Git and GitHub workflows. The project is intended to be used by developers for internal experimentation, writing and running small Python scripts to test ideas, features, or to observe the behavior of Git operations, such as how new files like 'new_file_after_pull.py' integrate after a pull. It is not designed for production deployment, end-user interaction, or integration into larger systems as a functional component. Architecturally, the repository appears to be a flat collection of independent Python scripts ('test.py', 'test1.py') rather than a structured application, suggesting a minimal or absent architectural pattern. Algorithmic highlights are undefined without code content, but given its testing nature, the files likely contain simple procedural logic, basic function definitions, or experimental code snippets for various small tasks or unit-like tests, without indicating any complex data structures or sophisticated algorithms.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "new_file_after_pull.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test1.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "HF_learn": {
+    "description": "",
+    "insight": "The HF_learn repository serves as an introductory, hands-on learning resource focused on the Hugging Face Transformers library, deeply entrenched in the domain of Natural Language Processing (NLP) and modern deep learning architectures. Its holistic capability is to demystify and provide practical application experience with state-of-the-art Transformer models for various NLP tasks, making complex AI accessible for learners and practitioners. The repository is intended to be used interactively, with users executing the provided Jupyter notebooks, Test_HF.ipynb and Transformer_HF_Tut.ipynb, as guided tutorials and executable code examples. This approach allows learners to progressively understand core concepts such as model loading, tokenization, pipeline usage, and potentially fine-tuning, thereby gaining direct, practical experience with the Hugging Face ecosystem in a step-by-step manner. From an architectural and algorithmic perspective, the project primarily highlights the efficient deployment and utilization of pre-trained Transformer models (like those from the BERT, GPT, or T5 families) via the Hugging Face library's high-level API. It emphasizes understanding how to leverage these complex deep learning architectures for practical NLP applications rather than focusing on the intricate low-level implementation details of the Transformer algorithm itself, making advanced NLP accessible for rapid experimentation and learning by abstracting away much of the underlying complexity.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "Test_HF.ipynb",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Transformer_HF_Tut.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "HG2PD": {
+    "description": "**Codebase Intelligence:** This Python codebase contains 5043 extracted functions across 227 files. Key extracted functionality includes: Command, RequirementCommand, _build_session, parse_args, populate_requirement_set, and more.",
+    "insight": "This 'HG2PD' repository is a sophisticated Python framework primarily focused on the orchestration and management of machine learning training processes, placing its core capability within the domain of MLOps and experimental ML development, as evidenced by the critical files train.py and train_prot.py. Its holistic capability lies in providing a comprehensive, programmatic environment for data scientists and ML engineers to define, execute, and oversee complex training workflows, likely encompassing various datasets, model architectures, hyperparameter configurations, and resource allocations. The repository is intended to be used predominantly through a robust command-line interface, leveraging functions like parse_args, Command, and RequirementCommand to enable users to precisely initiate training runs, configure experimental parameters, and manage intricate dependencies or specific operational requirements for their models and environments. The presence of a _build_session function further suggests a design capable of managing persistent connections, remote resources, or distributed training contexts, facilitating scalable and reproducible ML experiments. Architecturally, the project features a highly modular command-line framework for command dispatch and task execution, a dedicated system for explicit dependency or requirement management (illustrated by populate_requirement_set for defining environmental or data prerequisites), and sophisticated session management capabilities crucial for handling the lifecycle of training jobs. The inclusion of 'train_prot.py' points towards a structured, algorithmic approach to defining training protocols or experimental prototypes, allowing for advanced definition and execution of repeatable and controlled machine learning experiments, all within a substantial and feature-rich codebase.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "train.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_prot.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "Human_Tissue_Dev": {
+    "description": "Development projects related to wet lab processing of human tissue",
+    "insight": "",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "3_Staining/Code/Legacy/LegacyStainer.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "3_Staining/Code/Legacy/csViewer.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "3_Staining/Code/Legacy/radioButtonTest.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "3_Staining/Code/Legacy/size_test.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "3_Staining/Code/Legacy/widgetTime.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "3_Staining/Code/Stainer.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "3_Staining/Code/stainerControl.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/AISLER-2Layer/meta/info.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/AISLER-4Layer/meta/info.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Alchitry_Au/meta/info.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/JLCPCB_1-2Layer/meta/info.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/JLCPCB_Multilayer/meta/info.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/OshPark-2Layer/meta/info.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/OshPark-4Layer/meta/info.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/PCBWay/meta/info.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 10 layer Board/meta/info.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 12 layer Board/meta/info.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 2 layer Board/meta/info.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 4 layer Board/meta/info.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 6 layer Board/meta/info.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/Sierra 8 layer Board/meta/info.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "4_Coverslipping/PCB/coverslipper_board/lib/kicad_templates-master/UCDavis/meta/info.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "injDet": {
+    "description": "**Codebase Intelligence:** This Python codebase contains 7660 extracted functions across 333 files. Key extracted functionality includes: makepath, abs__file__, removeduppaths, addbuilddir, _init_pathinfo, and more.",
+    "insight": "The 'injDet' repository, short for \"Injection Detection,\" is a sophisticated Python codebase dedicated to identifying and mitigating code injection vulnerabilities within software systems. Its holistic capability centers around static or potentially dynamic analysis of code or a running environment to detect common injection flaws such as SQL injection, command injection, or cross-site scripting (XSS). The presence of numerous functions related to path manipulation and build system interaction, including makepath, abs__file__, removeduppaths, addbuilddir, and _init_pathinfo, suggests a strong emphasis on preparing and analyzing a codebase or development environment, implying a tool designed to integrate into a CI/CD pipeline or for dedicated security audits, focusing on the security domain of vulnerability assessment. Intended usage of this repository would involve pointing it at a target codebase or project to perform a deep, automated security analysis, likely configured through a build-like process to resolve dependencies and project structure, with the expectation of receiving a comprehensive report detailing potential injection vulnerabilities, their locations, and possibly severity. Architecturally, the project appears to follow a multi-stage analysis pipeline: 'phase1.py' likely handles the initial setup, environment preparation, source code ingestion, and preliminary parsing, utilizing the path-related utility functions to correctly resolve and access files. 'phase2_G.py' then probably implements a core analytical engine, focusing on graph-based analysis (e.g., Control Flow Graphs or Data Flow Graphs) to trace data propagation and identify potential taint sources and sinks within the code. Following this, 'phase2_R.py' would likely apply specific detection rules, heuristics, or a refinement process to the findings from 'phase2_G', potentially filtering false positives or categorizing vulnerabilities based on predefined patterns, leading to the final, actionable detection results. This staged approach allows for modularity, complexity management, and potentially different analytical strategies for various vulnerability types.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "phase1.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "phase2_G.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "phase2_R.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "makemore_Samik": {
+    "description": "**Codebase Intelligence:** This Jupyter Notebook codebase contains 63 extracted functions across 2 files. Key extracted functionality includes: get_batch, estimate_loss, BigramLanguageModel, forward, generate, and more.",
+    "insight": "The 'makemore_Samik' repository functions as a comprehensive, educational deep learning project primarily focused on character-level language modeling, drawing inspiration from Andrej Karpathy's popular 'makemore' series. Its holistic capability lies in providing a hands-on platform for understanding fundamental neural network concepts, from basic language model architectures to advanced training techniques and modern generative models within the domain of Natural Language Processing. Users are intended to engage with this repository primarily through its rich collection of Jupyter Notebooks, such as 'build_makemore_samik.ipynb' and 'gpt_dev_samik.ipynb', executing them sequentially to explore, learn, and experiment with different model implementations, observe the training process, and generate new character sequences. The 'Samik' suffix on many files suggests a personalized exploration and modification of the original educational series. Key architectural and algorithmic highlights include the implementation of Bigram Language Models as a foundational step, progression to Multi-Layer Perceptrons (MLP) for more complex pattern recognition, a deep dive into manual Backpropagation for understanding gradient flow, the integration of Batch Normalization for training stability, and the exploration of more advanced concepts like Wavenet-style architectures for sequence generation and foundational elements leading towards GPT-like transformer models, all demonstrated through core functions like get_batch for data loading, estimate_loss for evaluation, and forward/generate for model execution and inference.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "bigram_samik.py",
+        "summary": "Key capabilities: get_batch, estimate_loss, BigramLanguageModel, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "build_makemore_backprop_ninja.ipynb",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "build_makemore_backprop_ninja_samik.ipynb",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "build_makemore_batchnorm.ipynb",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "build_makemore_batchnorm_Samik.ipynb",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "build_makemore_mlp.ipynb",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "build_makemore_mlp_samik.ipynb",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "build_makemore_samik.ipynb",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "gpt_dev.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "gpt_dev_samik.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "makemore.py",
+        "summary": "Key capabilities: ModelConfig, NewGELU, CausalSelfAttention, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "makemore_part5_wavenet.ipynb",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "makemore_part5_wavenet_samik.ipynb",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "MakeUPMirror": {
+    "description": "**Codebase Intelligence:** This Python codebase contains 4 extracted functions across 1 files. Key extracted functionality includes: LRN, call, get_config.",
+    "insight": "The 'MakeUPMirror' project is a specialized computer vision codebase primarily focused on facial image processing, likely for virtual makeup application, facial attribute manipulation, or aesthetic transformation analysis. Its holistic capability revolves around deep learning for understanding and altering facial features, particularly in the context of makeup. The repository is intended to be used by researchers or developers to prepare facial image datasets using 'dataPrep.py' scripts (found in 'VMU' and 'YMU' directories for different configurations), train deep neural networks defined in 'network.py' (which incorporate techniques like Local Response Normalization, or LRN), and potentially employ metric learning strategies using 'tripletData.py' to learn robust feature embeddings. The 'discriminate.py' file suggests the possible involvement of a Generative Adversarial Network (GAN) for realistic image synthesis, allowing the system to apply or remove makeup, or transform facial attributes virtually. The training and evaluation workflow is supported by 'test.py', with configurable parameters managed via 'get_config'. Key architectural highlights include its reliance on deep learning (evidenced by LRN and network structures) combined with metric learning via triplet data generation, facilitating tasks requiring similarity-aware embeddings. The modular design, with separate data preparation scripts for VMU and YMU, indicates a flexible and organized approach to handling different datasets or experimental setups. Furthermore, the presence of 'image_save.m' suggests potential integration with MATLAB for specific image processing, analysis, or visualization tasks.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "LRN.py",
+        "summary": "Key capabilities: LRN, call, get_config",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "VMU/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "VMU/dataPrep.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "VMU/tripletData.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "YMU/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "YMU/dataPrep.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "YMU/tripletData.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "custom_merge.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "dataPrep.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "discriminate.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "image_save.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "network.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "tetsing.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "tripletData.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "Marmoset-Brain-Atlas": {
+    "description": "",
+    "insight": "",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "src/ontology/run.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/scripts/run-command.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "Mediar_4_devBrain": {
+    "description": "**Codebase Intelligence:** This Python codebase contains 132 extracted functions across 23 files. Key extracted functionality includes: public_paths_labeled, official_paths_labeled, official_paths_tuning, add_mapping_to_json, natural_sort_key, and more.",
+    "insight": "This project is a sophisticated machine learning framework primarily designed for advanced image analysis, strongly suggesting applications in the biomedical domain, such as cellular imaging or medical diagnostics, given modules like 'CellAware' and specific image processing utilities. Its holistic capability lies in providing a comprehensive platform to develop, train, evaluate, and deploy deep learning models, particularly focusing on custom Transformer-based architectures named 'MEDIARFormer', alongside baseline models and ensemble prediction capabilities. Users are intended to engage with this repository by first preparing and organizing their labeled image datasets using utilities like 'generate_mapping.py' to establish path mappings; then, configuring their experiments through a `SetupDict.py` system; subsequently, initiating training runs via `main.py` or similar entry points, leveraging `core/MEDIAR/Trainer.py` or `core/Baseline/Trainer.py` with custom data transformations; evaluating model performance with `evaluate.py` using defined measures; and finally, performing predictions on new data via `predict.py`. Key architectural highlights include a modular design separating base trainers and predictors from their specific implementations, enabling flexible experimentation with models like the specialized 'MEDIARFormer' and robust ensemble methods. The data pipeline is highly customized, featuring domain-specific transformations (e.g., 'CellAware', 'LoadImage', 'NormalizeImage') within `train_tools/data_utils/custom`, supported by strong data management utilities for handling labeled paths and dataset splits effectively, all contributing to a robust and extensible system for image-based deep learning.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "SetupDict.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "core/BasePredictor.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "core/BaseTrainer.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "core/Baseline/Predictor.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "core/Baseline/Trainer.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "core/Baseline/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "core/Baseline/utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "core/MEDIAR/EnsemblePredictor.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "core/MEDIAR/Predictor.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "core/MEDIAR/Trainer.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "core/MEDIAR/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "core/MEDIAR/utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "core/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "core/utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "evaluate.py",
+        "summary": "Key capabilities: main",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "generate_mapping.py",
+        "summary": "Key capabilities: public_paths_labeled, official_paths_labeled, official_paths_tuning, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "main.py",
+        "summary": "Key capabilities: _get_setups",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "predict.py",
+        "summary": "Key capabilities: main",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_tools/__init__.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_tools/data_utils/__init__.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_tools/data_utils/custom/CellAware.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_tools/data_utils/custom/LoadImage.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_tools/data_utils/custom/NormalizeImage.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_tools/data_utils/custom/__init__.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_tools/data_utils/datasetter.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_tools/data_utils/transforms.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_tools/data_utils/utils.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_tools/measures.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_tools/models/MEDIARFormer.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_tools/models/__init__.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_tools/utils.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "ML_Semantic-Segmenation-2020": {
+    "description": "**Codebase Intelligence:** This Python codebase contains 21 extracted functions across 9 files. Key extracted functionality includes: readImagesTwice, readImagesTwice, readImagesTwice, readImagesTwice, soft_dice_loss, and more.",
+    "insight": "The repository 'ML_Semantic-Segmenation-2020' is a Python-based machine learning project primarily focused on Semantic Segmentation, a computer vision task that involves classifying each pixel in an image to a corresponding class. The presence of 'soft_dice_loss' immediately signals its likely application in medical image segmentation or scenarios with significant class imbalance, where precise boundary detection and handling of foreground/background representation are critical. The multiple 'createDataX.py' files (e.g., createData.py, createData1.py, createData255.py, createDataTest.py) indicate a robust and potentially complex data preprocessing pipeline, likely dealing with different data formats, normalization techniques (like scaling to 0-1 or 0-255), and separate preparation for training and testing datasets. The repeated appearance of 'readImagesTwice' across functions suggests a common pattern of loading both input images and their corresponding ground-truth segmentation masks. 'createNetR.py' clearly houses the definition of the neural network architecture, which, for semantic segmentation, would typically be an encoder-decoder type like a U-Net. 'fullModel.py' integrates these components, responsible for the complete model training process. Finally, the 'tsting.py', 'tsting_PS.py', and 'tsting_single.py' files denote various scripts for evaluating the trained model, likely covering batch inference, performance scoring (PS), and individual image prediction, confirming a full development lifecycle from data to deployment.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "createData.py",
+        "summary": "Key capabilities: readImagesTwice",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "createData1.py",
+        "summary": "Key capabilities: readImagesTwice",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "createData255.py",
+        "summary": "Key capabilities: readImagesTwice",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "createDataTest.py",
+        "summary": "Key capabilities: readImagesTwice",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "createNetR.py",
+        "summary": "Key capabilities: soft_dice_loss, dice_loss, comb_loss, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "data.py",
+        "summary": "Key capabilities: adjustData, trainGenerator, validateGenerator, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fullModel.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "tsting.py",
+        "summary": "Key capabilities: sigmoid, testImages",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "tsting_PS.py",
+        "summary": "Key capabilities: sigmoid, testImages",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "tsting_single.py",
+        "summary": "Key capabilities: sigmoid, testImages",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "ML_Semantic_Segmenation_NMI": {
+    "description": "**Codebase Intelligence:** This Jupyter Notebook codebase contains 1296 extracted functions across 123 files. Key extracted functionality includes: bfs, retrieve_path, cal_connectivity, cal_fp_tp, cal_fp_tp, and more.",
+    "insight": "The ML_Semantic_Segmenation_NMI repository presents a comprehensive machine learning framework primarily dedicated to advanced semantic and instance segmentation within biomedical imaging, particularly targeting structures like cell nuclei and neuronal boutons, suggesting applications in neuroscience or cell biology research. This project's holistic capability encompasses the entire lifecycle of deep learning-based image analysis, from dataset generation and model training to sophisticated evaluation of segmentation quality. It is intended for researchers to develop, train, and benchmark deep learning models by first preparing specialized datasets using scripts like `createData*.py`, followed by training segmentation networks such as U-Net (`modelUnet.py`) or Mask R-CNN (`Mask_RCNN/mrcnn/model.py`). Inference and subsequent rigorous evaluation are performed using scripts like `tsting_*.py` and a dedicated suite of metric calculation modules, including `cal_F1.py`, `cal_connectivity.py`, and `dk_metric/image_metrics.py`, with `demo.ipynb` facilitating interactive exploration. Key architectural and algorithmic highlights include the deployment of established deep learning architectures like U-Net and Mask R-CNN, alongside robust image processing utilities for managing large image tiles (`Splitter.py`, `merge_tiles.py`). The project emphasizes advanced evaluation metrics, exemplified by graph-based connectivity analysis (`cal_connectivity.py` utilizing `bfs` and `retrieve_path`) and pixel-level true/false positive calculations (`cal_fp_tp`). Furthermore, the inclusion of C++ optimized components like `bouton_code/src/ComputeGraphReconstruction.cpp` and directories like \"DM_base\" and \"morse_code\" suggests an exploration of performance-critical graph algorithms or diffusion-map-based feature extraction, enriching the project's analytical depth for complex biological image understanding.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "ComputeScore/Injection Removal/ImageDiff.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "ComputeScore/Injection Removal/Splitter.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "ComputeScore/Injection Removal/merge_tiles.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "ComputeScore/cal_F1.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "ComputeScore/cal_connectivity.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "ComputeScore/dk_metric/__pycache__/image_metrics.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "ComputeScore/dk_metric/image_metrics.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "ComputeScore/main_180405.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "ComputeScore/main_backup.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DM_base/createData.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DM_base/createData1.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DM_base/createData255.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DM_base/createDataTest.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DM_base/createNetR.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DM_base/data.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DM_base/fullModel.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DM_base/modelUnet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DM_base/tsting.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DM_base/tsting_PS.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "DM_base/tsting_single.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/build/lib/mrcnn/__init__.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/build/lib/mrcnn/config.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/build/lib/mrcnn/model.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/build/lib/mrcnn/parallel_model.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/build/lib/mrcnn/utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/build/lib/mrcnn/visualize.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/mrcnn/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/mrcnn/config.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/mrcnn/model.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/mrcnn/parallel_model.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/mrcnn/utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/mrcnn/visualize.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/samples/demo.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/samples/nucleus/area_det.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/samples/nucleus/nucleus.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/samples/nucleus/nucleus0.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/samples/nucleus/nucleus1.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/samples/nucleus/nucleus2.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/samples/nucleus/nucleus_axonarbors.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/samples/nucleus/nucleus_dendrites.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/samples/nucleus/nucleus_passAxons.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Mask_RCNN/setup.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "bouton_code/bouton.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "bouton_code/bouton_x_process.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "bouton_code/gaussian.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "bouton_code/src/ComputeGraphReconstruction.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/GSIMPg2i.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/albu_dingkang.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/createNetR.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/dm.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/fullModel.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/gray_scale_simp.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/jp2compare.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/new_dm.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/new_dm_mba.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/new_dm_mba1.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/paths_src/ComputePaths.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/paths_src/Point.h",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/pytorch_zoo/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/pytorch_zoo/abstract_model.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/pytorch_zoo/inception.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/pytorch_zoo/resnet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/pytorch_zoo/unet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/remove_dup_edges.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/src/ComputeGraphReconstruction.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/src/DIMOgraph2image.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/src/base_triangulation_2d.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/tsting_single.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/tsting_single_cal.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/wrapper.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/wrapperALBU.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/wrapperALBU_PS.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/wrapperDM1.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/wrapperDMPP.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "morse_code/wrapperDMPP_MBA.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/albu_dingkang.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/augmentations/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/augmentations/composition.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/augmentations/functional.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/augmentations/transforms.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/config.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/create_spacenet_masks.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/dataset/__init__.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/dataset/abstract_image_provider.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/dataset/abstract_image_type.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/dataset/image_cropper.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/dataset/neural_dataset.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/dataset/raw_image.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/dataset/reading_image_provider.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/merge_preds.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/other_tools/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/other_tools/all_dems_min_max.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/other_tools/apls_tools.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/other_tools/gen_folds.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/other_tools/make_submission.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/other_tools/merge_preds.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/other_tools/sknw.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pre_processing/fold4_gen.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pre_processing/renamer.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pre_processing/renamer1.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pre_processing/scratch.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pre_processing/scratch1.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pre_processing/scratch_bw.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pre_processing/scratch_dmIP.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pre_processing/scratch_maskBase64.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pre_processing/scratch_maskCopy.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pre_processing/scratch_redWeb.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pre_processing/tif2rgb.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_utils/__init__.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_utils/callbacks.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_utils/concrete_eval.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_utils/eval.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_utils/loss.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_utils/train.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_utils/transforms.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/_utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/abstract_model.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/alexnet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/densenet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/detection/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/detection/_utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/detection/backbone_utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/detection/faster_rcnn.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/detection/generalized_rcnn.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/detection/image_list.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/detection/keypoint_rcnn.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/detection/mask_rcnn.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/detection/roi_heads.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/detection/rpn.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/detection/transform.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/googlenet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/inception.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/mnasnet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/mobilenet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/quantization/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/quantization/googlenet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/quantization/inception.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/quantization/mobilenet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/quantization/resnet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/quantization/shufflenetv2.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/quantization/utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/resnet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/segmentation/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/segmentation/_utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/segmentation/deeplabv3.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/segmentation/fcn.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/segmentation/segmentation.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/shufflenetv2.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/squeezenet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/unet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/vgg.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/video/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/pytorch_zoo/video/resnet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/run_training.sh",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/skeleton.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/train.sh",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/train_4folds.sh",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/train_eval.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/wrapperALBU.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/wrapperALBU_PS.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "MoP_boundary": {
+    "description": "**Codebase Intelligence:** This MATLAB codebase contains 5 extracted functions across 5 files. Key extracted functionality includes: borderDet, calculate_cortical_normal, d_runline, get_medial_axis, runline1.",
+    "insight": "The MoP_boundary repository is a specialized MATLAB-based computational neuroanatomy pipeline designed for the automated segmentation and morphological analysis of cortical boundaries in brain histology, specifically targeting regions like the primary motor cortex (MoP) in Nissl-stained tissue sections. This toolset operates within the domain of neuroinformatics and biomedical image processing, allowing researchers to precisely map cortical thickness, trace laminar boundaries, and analyze structural transitions in brain slices. To use this repository, a researcher typically runs the master orchestration script, script_mopBorder_SB_May24.m, or utilizes Unsup_nissl_seg_old.m for unsupervised segmentation workflows, feeding in high-resolution histological images to output quantified cortical profiles. Structurally, the codebase is highly modular, relying on key geometric algorithms where borderDet.m first isolates the region of interest, get_medial_axis.m identifies the central topological skeleton of the cortical ribbon, calculate_cortical_normal.m computes perpendicular vectors across the cortical thickness to establish spatial trajectories, and runline1.m alongside d_runline.m performs directional line-scanning to sample staining intensities and detect layer transitions. By combining these geometric modeling techniques with intensity profiling, the pipeline delivers a robust framework for reconstructing cortical geometry and streamlining quantitative neuroanatomical studies.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "Unsup_nissl_seg_old.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "borderDet.m",
+        "summary": "Key capabilities: borderDet",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "calculate_cortical_normal.m",
+        "summary": "Key capabilities: calculate_cortical_normal",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "d_runline.m",
+        "summary": "Key capabilities: d_runline",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "get_medial_axis.m",
+        "summary": "Key capabilities: get_medial_axis",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "runline1.m",
+        "summary": "Key capabilities: runline1",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "script_mopBorder_SB_May24.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "mouse-marmoset-comparison-app": {
+    "description": "",
+    "insight": "The mouse-marmoset-comparison-app is a specialized bioinformatics web platform engineered to facilitate comparative analysis between mouse and marmoset model organisms, bridging the gap between rodent and non-human primate research domains. It serves as an interactive explorer for visualizing and analyzing orthologous genes, brain regions, or physiological data points, leveraging a reactive Angular architecture coupled with high-performance Server-Side Rendering (SSR) driven by Express and Vite. To use this system, researchers browse and query specific biological entities through the frontend user interface, while developers run, test, and deploy the application using the integrated Angular CLI, utilizing the data service to fetch and process comparative datasets from external APIs or local stores. Architecturally, the repository represents a modern Angular setup featuring a hybrid or transitionary module-to-standalone layout, optimized with custom routing configurations, server-side bootloaders, and a dedicated HTTP data service layer that abstracts complex cross-species mappings to deliver fast, SEO-optimized, and performant comparisons directly to the user's browser.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_common.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_common_http.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_core.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_forms.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_platform-browser.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/@angular_router.js",
+        "summary": "API routes and backend controllers.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/chunk-D6PF24LJ.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/chunk-HNZBTQQY.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/chunk-I3APFXH3.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/chunk-RDHXSB74.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps/chunk-Z44F37CK.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_common.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_common_http.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_core.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_forms.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_platform-browser.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_platform-server_init.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_router.js",
+        "summary": "API routes and backend controllers.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_ssr.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/@angular_ssr_node.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-6DU2HRTW.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-6XPXFVTG.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-BTYALREI.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-FITUF5IC.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-NFBLRUPM.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-T7ZA3WRX.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-WXMOVWUU.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/chunk-YQZF7T32.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/express.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": ".angular/cache/20.3.9/mouse-marmoset-comparison-app/vite/deps_ssr/xhr2-E5RTESSH.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/app/app.component.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/app/app.component.html",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/app/app.component.ts",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/app/app.config.server.ts",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/app/app.config.ts",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/app/app.module.ts",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/app/app.routes.server.ts",
+        "summary": "API routes and backend controllers.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/app/app.routes.ts",
+        "summary": "API routes and backend controllers.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/app/app.spec.ts",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/app/data.service.ts",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/index.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/main.server.ts",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/main.ts",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/server.ts",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/styles.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "mouse-muscle-atlas": {
+    "description": "",
+    "insight": "",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "docs/ontology-tree.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/owl_to_tree.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/ontology/run.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/scripts/run-command.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "MultiStreamCellSeg_4_devBrain": {
+    "description": "**Codebase Intelligence:** This Python codebase contains 668 extracted functions across 42 files. Key extracted functionality includes: conv3x3, conv1x1, BasicBlock, Bottleneck, ResNet, and more.",
+    "insight": "The MultiStreamCellSeg_4_devBrain repository is a specialized deep learning suite designed for high-throughput cell segmentation and classification in developmental brain imaging, offering robust tools to analyze complex cellular morphology and spatial distribution in dense tissue environments. To use this repository, researchers can run inference pipelines like predict.py or predict_unet_convnext.py to segment raw images, employ the comprehensive finetuning modules located in the fintune_on_newdataset directory to adapt pre-trained models to novel cell types, evaluate segmentation accuracy using compute_metric.py, and classify segmented cell populations through supervised and unsupervised classifiers. Architecturally, the framework stands out by blending modern ConvNeXt backbones with flexible UNet decoders and embedding a customized implementation of StarDist, which models cells as star-convex polygons and leverages non-maximum suppression alongside robust multi-ray geometric representations to achieve state-of-the-art segmentation in highly clustered cell populations.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "cellseg_time_eval.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "classification/train_classification.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "classification/unsup_classification.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "classifiers.py",
+        "summary": "Key capabilities: conv3x3, conv1x1, BasicBlock, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "compute_metric.py",
+        "summary": "Key capabilities: _intersection_over_union, _label_overlap, _true_positive, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "finetune_convnext_stardist.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/classifiers.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/compute_metric.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/fintune.ipynb",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/models/__init__.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/models/convnext.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/models/flexible_unet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/models/flexible_unet_convext.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/models/flexible_unet_convnext.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/overlay.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/stardist_pkg/__init__.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/stardist_pkg/big.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/stardist_pkg/bioimageio_utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/stardist_pkg/geometry/__init__.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/stardist_pkg/geometry/geom2d.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/stardist_pkg/matching.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/stardist_pkg/models/__init__.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/stardist_pkg/models/base.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/stardist_pkg/models/model2d.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/stardist_pkg/nms.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/stardist_pkg/rays3d.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/stardist_pkg/sample_patches.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/stardist_pkg/utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fintune_on_newdataset/stardist_pkg/version.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "models/__init__.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "models/convnext.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "models/flexible_unet.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "models/flexible_unet_convext.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "models/flexible_unet_convnext.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "overlay.py",
+        "summary": "Key capabilities: get_bounding_box, colorize, random_colors, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "predict.py",
+        "summary": "Key capabilities: normalize_channel",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "predict_unet_convnext.py",
+        "summary": "Key capabilities: normalize_channel",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "run.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stardist_pkg/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stardist_pkg/big.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stardist_pkg/bioimageio_utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stardist_pkg/geometry/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stardist_pkg/geometry/geom2d.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stardist_pkg/matching.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stardist_pkg/models/__init__.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stardist_pkg/models/base.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stardist_pkg/models/model2d.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stardist_pkg/nms.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stardist_pkg/rays3d.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stardist_pkg/sample_patches.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stardist_pkg/utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "stardist_pkg/version.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_convnext_hover..py",
+        "summary": "Key capabilities: rm_n_mkdir, HoverDataset, valid_step, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "train_convnext_stardist.py",
+        "summary": "Key capabilities: main",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "utils.py",
+        "summary": "Key capabilities: normalize, fix_mirror_padding, get_bounding_box, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "utils_modify.py",
+        "summary": "Key capabilities: normalize, fix_mirror_padding, get_bounding_box, and more",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "myBio": {
+    "description": "**Codebase Intelligence:** This JavaScript codebase contains 11 extracted functions across 9 files. Key extracted functionality includes: get_cat, get_cat, get_largest_image, find_pdf, find_fig_bbox, and more.",
+    "insight": "The myBio repository is a highly sophisticated, data-driven academic and professional portfolio platform designed to automatically compile, enrich, and present an individual's career achievements, research publications, and GitHub metrics. This codebase is intended to be used as a self-updating personal website; developers or researchers execute the extensive suite of Python utility scripts to fetch scholarly citations from Google Scholar, extract high-quality figures and layout bounding boxes from publication PDFs, build localized image databases, and categorize assets, while the React-based frontend serves an interactive timeline, experience log, and education profile to end-users. Key architectural and algorithmic highlights of this system include its dual-layer structure\u2014combining a rich preprocessing pipeline of Python scripts for heavy-duty PDF and metadata parsing with a lightweight React SPA\u2014and its integration of advanced image harvesting algorithms like find_fig_bbox and get_largest_image alongside a Gemini-powered serverless chat API that allows visitors to converse naturally with the portfolio data.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "api/chat.js",
+        "summary": "API routes and backend controllers.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "api/repo_data.js",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "append_css.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "apply_categories.py",
+        "summary": "Key capabilities: get_cat",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "apply_categories_arrays.py",
+        "summary": "Key capabilities: get_cat",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "apply_choices.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "apply_hardware_images.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "build_image_db.py",
+        "summary": "Key capabilities: get_largest_image",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "eslint.config.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "extract_figures.py",
+        "summary": "Key capabilities: find_pdf, find_fig_bbox",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "extract_more_images.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "extract_neuro.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "extract_pdf_images.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fetch_scholar.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fix_build.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fix_data_final.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fix_posix.py",
+        "summary": "Key capabilities: get_largest_image",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fix_pub_images.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fix_pubs.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fix_pubs.py",
+        "summary": "Key capabilities: replace_image",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "gemini_search.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "generate_options.py",
+        "summary": "Key capabilities: get_images",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "get_cites.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "index.html",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "match_all_images.py",
+        "summary": "Key capabilities: get_import_var, clean_str",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "parse_local_scholar.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "parse_scholar.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "refactor_imports.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "refactor_projects.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scratch_update.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/App.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/App.jsx",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/About/About.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/About/About.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/CareerTimeline/CareerTimeline.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/CareerTimeline/CareerTimeline.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Education/Education.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Education/Education.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Education/EducationDetail.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Education/EducationDetail.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Experience/Experience.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Experience/Experience.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Experience/ExperienceDetail.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Experience/ExperienceDetail.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Footer/Footer.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Footer/Footer.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/GeminiAssistant/GeminiAssistant.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/GeminiAssistant/GeminiAssistant.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/GitHubStats/GitHubStats.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/GitHubStats/GitHubStats.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/GithubRepos/GithubRepos.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/GithubRepos/GithubRepos.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/GithubRepos/RepoFunctions.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/GithubRepos/RepoFunctions.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Hero/Hero.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Hero/Hero.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Navbar/Navbar.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Navbar/Navbar.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Projects/ProjectDetail.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Projects/ProjectDetail.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Projects/Projects.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Projects/Projects.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Publications/PublicationDetail.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Publications/PublicationDetail.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Publications/Publications.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Publications/Publications.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/ResearchGraph/ResearchGraph.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/ResearchGraph/ResearchGraph.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Skills/Skills.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/components/Skills/Skills.jsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/data/educationData.js",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/data/experienceData.js",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/data/imageDatabase.js",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/data/projectsData.js",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/data/projectsImageDatabase.js",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/data/publicationsData.js",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/data/skillsData.js",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/data/timelineData.js",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/index.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "src/main.jsx",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "update_db.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "update_db_names.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "update_from_tex.py",
+        "summary": "Key capabilities: get_or_create_import",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "update_publications.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "update_pubs_from_resume.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "vite.config.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "Myelin-Conversion": {
+    "description": "**Codebase Intelligence:** This MATLAB codebase contains 1 extracted functions across 1 files. Key extracted functionality includes: trfm2processDet.",
+    "insight": "The Myelin-Conversion repository is a specialized MATLAB-based computational toolkit designed for the biomedical and neuroimaging domains, specifically focusing on the translation and processing of myelin-related structural metrics. The holistic capability of this codebase centers on converting raw anatomical transformation matrices or quantitative myelin signals into standardized, deterministic process detections, which are crucial for assessing axonal health, g-ratio calculations, and white matter integrity. In practice, this repository is intended to be used as a modular step within larger neuroimaging or histological analysis pipelines, where researchers can feed raw transform parameters or structural image tensors into the primary function, trfm2processDet, to output refined, processed data ready for deterministic modeling or morphological analysis. Architecturally, the project favors a lean, single-function design encapsulated in trfm2processDet.m, which optimizes algorithmic efficiency by focusing on the mathematical mappings, coordinate transformations, or thresholding steps required to convert raw acquisition or simulation outputs into actionable myelin process detection maps, facilitating seamless integration with existing MATLAB neuroimaging toolboxes.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "trfm2processDet.m",
+        "summary": "Key capabilities: trfm2processDet",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "neetcode-gpt": {
+    "description": "GPT built from scratch \u2014 assembled from my NeetCode ML course submissions",
+    "insight": "The neetcode-gpt repository serves as a highly structured, educational codebase that systematically constructs the foundational blocks of deep learning and Generative Pre-trained Transformer models entirely from first-principles machine learning concepts. To use this repository effectively, a developer or student should progress sequentially through its three distinct tiers: beginning with the foundations directory to understand low-level mathematical implementations such as manual backpropagation, custom activation functions, and gradient descent algorithms using basic arrays; moving onto the data preprocessing utilities to grasp tokenization and text preparation; and finally, utilizing the modular implementations in the model directory, such as custom embeddings, batch normalization, and layer normalization layers, to construct and run training loops for neural networks. Architecturally, the project is brilliant in its incremental complexity, highlighting how basic mathematical models like linear regression and single-neuron classifiers scale into multi-layer perceptrons with custom weight initialization schemes, which are then combined with PyTorch abstractions and sophisticated normalization mechanisms crucial for the stability of modern attention-based architectures. By studying and executing these modular scripts, users gain an intimate, white-box understanding of how the foundational building blocks of deep learning transition from raw mathematical formulas into high-performance, deep generative architectures.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "data/__init__.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "data/nlp_preprocessing.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "foundations/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "foundations/activations.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "foundations/backprop.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "foundations/digit_classifier.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "foundations/gradient_descent.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "foundations/linear_regression.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "foundations/linear_regression_training.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "foundations/loss.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "foundations/mlp.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "foundations/multi_layer_backprop.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "foundations/neuron.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "foundations/pytorch_basics.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "foundations/sentiment.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "foundations/softmax.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "foundations/training_loop.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "foundations/weight_init.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "model/__init__.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "model/batch_normalization.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "model/embeddings.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "model/normalization.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "neetcode-submissions-samik1986": {
+    "description": "My NeetCode.io problem submissions",
+    "insight": "The neetcode-submissions-samik1986 repository represents a comprehensive personal reference suite and educational archive designed to master technical coding interviews through highly optimized solutions to core computer science problems. Covering essential domains like dynamic programming, tree traversals, linked list manipulation, and bitwise operations, the repository is primarily intended to be used as a learning companion and benchmark tool where developers can study, compare, and test implementations in both Python and C++ to build systemic algorithmic intuition. By exploring files like merge-k-sorted-linked-lists, longest-substring-without-duplicates, and implement-prefix-tree, users can analyze critical architectural patterns, including the use of divide-and-conquer strategies, optimized sliding window sliding boundaries, explicit memory management in C++, and modular tree node designs. Ultimately, this collection serves as a practical, multi-language guide that showcases how to transition from brute-force approaches to optimal time and space complexities, making it an invaluable asset for anyone refining their problem-solving and software engineering capabilities.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "Data Structures & Algorithms/add-two-numbers/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/anagram-groups/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/buy-and-sell-crypto/submission-2.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/climbing-stairs/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/count-paths/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/daily-temperatures/submission-0.cpp",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/depth-of-binary-tree/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/depth-of-binary-tree/submission-1.cpp",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/duplicate-integer/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/evaluate-reverse-polish-notation/submission-0.cpp",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/find-minimum-in-rotated-sorted-array/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/find-target-in-rotated-sorted-array/submission-1.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/house-robber-ii/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/house-robber/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/implement-prefix-tree/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/invert-a-binary-tree/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/is-anagram/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/is-palindrome/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/level-order-traversal-of-binary-tree/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/linked-list-cycle-detection/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/longest-common-prefix/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/longest-common-subsequence/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/longest-consecutive-sequence/submission-2.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/longest-repeating-substring-with-replacement/submission-2.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/longest-substring-without-duplicates/submission-8.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/longest-substring-without-duplicates/submission-9.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/lowest-common-ancestor-in-binary-search-tree/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/max-water-container/submission-1.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/median-of-two-sorted-arrays/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/merge-k-sorted-linked-lists/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/merge-two-sorted-linked-lists/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/middle-of-the-linked-list/submission-4.cpp",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/minimum-path-sum/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/minimum-stack/submission-0.cpp",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/number-of-one-bits/submission-0.cpp",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/palindrome-number/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/permutation-string/submission-0.cpp",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/pow-x-n/submission-0.cpp",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/products-of-array-discluding-self/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/remove-node-from-end-of-linked-list/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/reorder-linked-list/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/reorder-linked-list/submission-1.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/reverse-a-linked-list/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/reverse-bits/submission-0.cpp",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/reverse-integer/submission-1.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/reverse-string/submission-0.cpp",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/rotate-matrix/submission-0.cpp",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/same-binary-tree/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/same-binary-tree/submission-1.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/search-in-rotated-sorted-array-ii/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/single-number/submission-0.cpp",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/string-encode-and-decode/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/subtree-of-a-binary-tree/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/top-k-elements-in-list/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/trapping-rain-water/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/trapping-rain-water/submission-1.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/trapping-rain-water/submission-2.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/triangle/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/two-integer-sum/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/valid-binary-search-tree/submission-0.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "Data Structures & Algorithms/validate-parentheses/submission-4.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "NeuronBrowser": {
+    "description": "",
+    "insight": "",
+    "gpu_enabled": false,
+    "files": []
+  },
+  "ontology-editor": {
+    "description": "",
+    "insight": "",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "scripts/add_parent_relationships.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/ai_context.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/ai_create_changes.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/ai_create_changes_v2.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/ai_enhanced_prompt.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/ai_process_request.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/ai_query.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/bootstrap_species.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/generate_changelog.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/generate_embeddings.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/generate_owl.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/generate_tree.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/generate_wiki.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/import_brain_nomenclature.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/lateralize_relationships.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/lateralize_structures.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/move_structure.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/parse_ai_response_from_issue.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/parse_reorganization_request.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/process_batch_reorg.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/process_relationship_issue.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/process_removal_issue.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/process_structure_issue.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/qc_check.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/remove_lateralized_parents.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/semantic_search.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/sync_to_db.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/test_ai_process.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/test_enhanced_ai.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/validate.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/verify_relationship_consistency.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scripts/yaml_utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "samik1986": {
+    "description": "Config files for my GitHub profile.",
+    "insight": "The samik1986 repository is a specialized GitHub profile configuration project designed to serve as a dynamic, personalized digital portfolio and landing page that showcases the developer's technical skill set, open-source contributions, and professional background. Operating within the domain of personal branding and developer identity curation, its primary utility is realized when GitHub automatically renders the repository's contents directly on the owner's public profile page, providing a visually compelling overview for recruiters, collaborators, and the broader tech community. Architecturally, the repository leverages a lightweight, declarative structure centered around a Markdown document, which is often enriched with custom HTML, dynamic SVGs, and status badges from external APIs such as Shields.io or GitHub Readme Stats to pull real-time metrics. Furthermore, it may integrate automated continuous integration workflows via GitHub Actions that run on scheduled cron jobs to dynamically update content, such as recent blog posts, coding hours, or live repository statistics, ensuring the profile remains a fresh and accurate reflection of the developer's active contributions without requiring manual intervention.",
+    "gpu_enabled": false,
+    "files": []
+  },
+  "siamDA": {
+    "description": "**Codebase Intelligence:** This Python codebase contains 10 extracted functions across 2 files. Key extracted functionality includes: MyLayer, build, call, compute_output_shape, euclidean_distance, and more.",
+    "insight": "The siamDA repository provides a comprehensive deep learning framework for domain-adaptive face recognition and metric learning, specifically targeting Face Recognition Systems (FRS) through the integration of Siamese neural networks and Autoencoders. Operating in the domain of transfer learning, computer vision, and representation learning, the codebase enables researchers to learn domain-invariant and highly discriminative feature representations, which is particularly useful for challenging datasets like the IITM face database. To utilize this repository, a user first prepares and pre-processes face image datasets using data preparation scripts such as prepareDataFRS.py and siamDataIITM.py, then configures and builds the joint deep learning architecture via modelBuild.py, trains the model using the specialized training logic in siamese.py and ae.py (supported by data loaders in aeData.py), and finally evaluates performance and visualizes high-dimensional embeddings or reconstructed inputs through test.py and showFig.py. Architecturally, the project is characterized by its use of custom TensorFlow/Keras layers (such as MyLayer in customLayer.py and newLayer.py) which define specialized forward passes (call), weight initializations (build), and shape computations (compute_output_shape) to calculate customized distance metrics like Euclidean distance directly within the computational graph. By coupling unsupervised reconstruction objectives from autoencoders with supervised contrastive or distance-based losses from Siamese networks, the system enforces a latent space that is robust to domain shifts (such as variations in lighting, pose, or sensor quality) while maintaining high class separability, making it an advanced pipeline for robust, domain-adapted biometric verification.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "ae.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "aeData.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "customLayer.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "modelBuild.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "newLayer.py",
+        "summary": "Key capabilities: MyLayer, build, call, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "prepareDataFRS.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "showFig.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "siamDataIITM.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "siamese.py",
+        "summary": "Key capabilities: euclidean_distance, contrastive_loss, create_pairs, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "spine_registration": {
+    "description": "registration for spine data from dong lab",
+    "insight": "",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "docs/conf.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "source/notebooks/example.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "source/notebooks/register_spine_v04_spinal_cord_4_atlas_to_reflection_points_lines.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "source/scripts/spine_reg.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "source/scripts/spine_reg_pipeline.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "tf_lddmm": {
+    "description": "**Codebase Intelligence:** This Python codebase contains 2 extracted functions across 1 files. Key extracted functionality includes: read_from_pickle.",
+    "insight": "The tf_lddmm repository is a specialized suite designed for computational anatomy and medical image registration, focusing on Large Deformation Diffeomorphic Metric Mapping (LDDMM) implemented using TensorFlow. Its primary holistic capability is to facilitate diffeomorphic (topology-preserving and invertible) transformations of medical images or geometric data into a common reference or atlas space, which is crucial for group-level statistical analysis in neuroimaging and digital anatomy. To use this repository, a practitioner typically executes the main script transform2atlas.py or integrates its utilities into their pipeline, passing source datasets along with pre-computed deformation maps or velocity fields that are seamlessly loaded using the read_from_pickle function. Architecturally, the project relies on TensorFlow to accelerate computationally intensive tensor operations, including spatial grid generation, differential warping, and high-dimensional interpolation. Algorithmically, it highlights the power of LDDMM by mapping source structures to target templates along a geodesic flow, ensuring that the structural transformations remain physically realistic, smooth, and mathematically invertible.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "transform2atlas.py",
+        "summary": "Key capabilities: read_from_pickle",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "um1_3d_volume": {
+    "description": "**Codebase Intelligence:** This JavaScript codebase contains 266 extracted functions across 111 files. Key extracted functionality includes: create_line_volume, create_point_volume, create_reconstructed_line_volume, detect_3d_cells_blob, load_tiff_volume, and more.",
+    "insight": "The 'um1_3d_volume' repository offers a sophisticated, polyglot suite of tools for advanced 3D volumetric data processing, analysis, and interactive visualization, primarily targeted at complex biological imaging applications, such as neurobiology, indicated by functionalities for neuronal detection and tracing. Its holistic capability encompasses the entire pipeline from raw TIFF volume ingestion and division, through intricate 3D reconstruction of lines, points, and entire volumes, to precise feature detection of cells and centroids within these volumes. The repository is intended to be used by researchers or image analysis professionals to process large-scale 3D microscopy datasets, reconstruct biological structures, model them as complex graphs (e.g., neuronal trees), perform topological analysis on these graphs using specialized MATLAB tools (cw_graph_tools), and then interactively visualize and proofread the results using a Napari-based viewer. Furthermore, the inclusion of robust deployment scripts for both cloud and on-premise GPU-accelerated environments, alongside a Django web application, suggests an intention for scalable, collaborative data management and a web-accessible platform for initiating analyses or reviewing outcomes. Key architectural highlights include a powerful MATLAB core for computationally intensive 3D image processing, blob detection, and graph-theoretic algorithms like Minimum Spanning Tree for complex structure analysis; a Python layer leveraging Napari for interactive multi-dimensional data visualization and real-time streaming, and Django for a full-fledged web interface providing a collaborative front-end. The reliance on JSON for graph data interchange between MATLAB and potentially other components, coupled with shell scripts for bare-metal GPU server setup and cloud/on-premise deployment, underlines a design for high-performance, distributed processing and a deployable, production-ready system for managing and exploring extensive 3D biological datasets.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "centroid_cw_processing/process_centroids.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "centroid_cw_processing/utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "cloud_proofreading/bare_metal_setup/bootstrap_ubuntu_gpu.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "cloud_proofreading/deploy_cloud.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "cloud_proofreading/deploy_on_premise.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "cloud_proofreading/napari_stream/entrypoint.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "cloud_proofreading/napari_stream/unified_viewer.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "create_3d_lines.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "create_line_volume.m",
+        "summary": "Key capabilities: create_line_volume",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "create_point_volume.m",
+        "summary": "Key capabilities: create_point_volume",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "create_reconstructed_line_volume.m",
+        "summary": "Key capabilities: create_reconstructed_line_volume",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "cw_graph_tools/add_tree.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "cw_graph_tools/create_forest_from_json.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "cw_graph_tools/delete_tree.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "cw_graph_tools/edit_cw_json.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "cw_graph_tools/edit_graph.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "cw_graph_tools/export_forest_to_json.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "cw_graph_tools/find_loops.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "cw_graph_tools/find_mst.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "cw_graph_tools/load_cw_json.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "cw_graph_tools/plot_cw_complex.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "cw_graph_tools/save_cw_json.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "detect_3d_cells_blob.m",
+        "summary": "Key capabilities: detect_3d_cells_blob, load_tiff_volume, visualize_detections",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "detect_3d_cells_centroids.m",
+        "summary": "Key capabilities: detect_3d_cells_centroids",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "detect_neurons_napari.py",
+        "summary": "Key capabilities: detect_neurons_napari",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "divide_tiff.py",
+        "summary": "Key capabilities: divide_tiff_into_quadrants",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/django_webapp/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/django_webapp/asgi.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/django_webapp/settings.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/django_webapp/urls.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/django_webapp/wsgi.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/manage.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/css/autocomplete.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/css/base.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/css/changelists.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/css/dark_mode.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/css/dashboard.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/css/forms.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/css/login.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/css/nav_sidebar.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/css/responsive.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/css/responsive_rtl.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/css/rtl.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/css/unusable_password_field.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/css/vendor/select2/select2.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/css/vendor/select2/select2.min.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/css/widgets.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/SelectBox.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/SelectFilter2.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/actions.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/admin/DateTimeShortcuts.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/admin/RelatedObjectLookups.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/autocomplete.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/calendar.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/cancel.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/change_form.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/core.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/filters.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/inlines.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/jquery.init.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/nav_sidebar.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/popup_response.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/prepopulate.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/prepopulate_init.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/theme.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/urlify.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/jquery/jquery.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/jquery/jquery.min.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/af.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ar.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/az.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/bg.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/bn.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/bs.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ca.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/cs.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/da.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/de.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/dsb.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/el.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/en.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/es.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/et.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/eu.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/fa.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/fi.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/fr.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/gl.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/he.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/hi.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/hr.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/hsb.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/hu.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/hy.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/id.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/is.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/it.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ja.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ka.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/km.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ko.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/lt.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/lv.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/mk.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ms.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/nb.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ne.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/nl.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/pl.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ps.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/pt-BR.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/pt.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ro.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/ru.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sk.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sl.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sq.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sr.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/sv.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/th.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/tk.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/tr.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/uk.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/vi.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/zh-CN.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/i18n/zh-TW.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/select2.full.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/select2/select2.full.min.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/xregexp/xregexp.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/admin/js/vendor/xregexp/xregexp.min.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/dash_table/async-export.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/dash_table/async-highlight.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/dash_table/async-table.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/dash_table/bundle.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/dash_table/demo.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/dcc/async-datepicker.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/dcc/async-dropdown.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/dcc/async-graph.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/dcc/async-highlight.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/dcc/async-markdown.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/dcc/async-mathjax.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/dcc/async-slider.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/dcc/async-upload.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/dcc/dash_core_components-shared.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/dcc/dash_core_components.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/dcc/proptypes.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/deps/polyfill@7.12.1.min.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/deps/prop-types@15.8.1.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/deps/prop-types@15.8.1.min.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/deps/react-dom@16.14.0.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/deps/react-dom@16.14.0.min.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/deps/react-dom@18.2.0.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/deps/react-dom@18.2.0.min.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/deps/react-dom@18.3.1.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/deps/react-dom@18.3.1.min.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/deps/react@16.14.0.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/deps/react@16.14.0.min.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/deps/react@18.2.0.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/deps/react@18.2.0.min.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/deps/react@18.3.1.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/deps/react@18.3.1.min.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/dash/html/dash_html_components.min.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/staticfiles/dash/component/plotly/package_data/plotly.min.js",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/viewer/__init__.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/viewer/admin.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/viewer/apps.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/viewer/dash_apps.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/viewer/migrations/__init__.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/viewer/models.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/viewer/tests.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/viewer/urls.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "django_webapp/viewer/views.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docker_cell_detection/run_centroids.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docker_cell_detection/run_centroids_DAPI.py",
+        "summary": "API routes and backend controllers.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docker_cell_detection/run_centroids_FP.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docker_cell_detection/run_pipeline.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docker_cell_detection/run_pipeline_parallel.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docker_cell_detection/scale_swc.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docker_cell_detection/visualize_3d.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docker_cell_detection/visualize_napari.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "downsample_volumes.m",
+        "summary": "Key capabilities: downsample_volumes, save_nrrd_volume",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "eval_full_volume_line_endpoints.m",
+        "summary": "Key capabilities: find_extremes_2d, rotate_and_unpad, crop_volume",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "extract_endpoints_from_stereo.m",
+        "summary": "Key capabilities: extract_endpoints_from_stereo",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "extract_subset.m",
+        "summary": "Key capabilities: extract_subset",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_cpp_pipeline/Filters2D.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_cpp_pipeline/Filters2D.hpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_cpp_pipeline/Geometry3D.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_cpp_pipeline/Geometry3D.hpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_cpp_pipeline/TiffIO.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_cpp_pipeline/TiffIO.hpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_cpp_pipeline/main.cpp",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_pipeline_modules/backproject_skeletons.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_pipeline_modules/compute_mip_pictures.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_pipeline_modules/compute_skeleton.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_pipeline_modules/display_subvolume_overlay.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_pipeline_modules/display_volume_skeleton.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_pipeline_modules/export_cw_complex_2d.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_pipeline_modules/export_cw_complex_json.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_pipeline_modules/extract_endpoints_silent.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_pipeline_modules/save_multipage_tiff.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_pipeline_modules/save_nrrd_volume.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_pipeline_modules/save_overlay.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_pipeline_modules/skel_to_graph_2d.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_pipeline_modules/swap_pts.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_pipeline_modules/triangulate_endpoints_fast.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_pipeline_smoketest.m",
+        "summary": "Key capabilities: compute_mip_pictures, compute_skeleton, save_overlay, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "fp_volume_pipeline.m",
+        "summary": "Key capabilities: fp_volume_pipeline",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "frangi_filter_version2a/FrangiFilter2D.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "frangi_filter_version2a/FrangiFilter3D.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "frangi_filter_version2a/Hessian2D.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "frangi_filter_version2a/Hessian3D.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "frangi_filter_version2a/eig2image.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "frangi_filter_version2a/eig3volume.c",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "frangi_filter_version2a/eig3volume.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "frangi_filter_version2a/imgaussian.c",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "frangi_filter_version2a/imgaussian.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "generate_ppt.py",
+        "summary": "Key capabilities: get_flowchart_image, create_presentation",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "master_eval_modular.m",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "master_pipeline_q1.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "master_pipeline_short.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/create_synthetic_data.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/create_tutorial_data.py",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/cw_extraction.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/detect_somas.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/generate_gif.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/pipeline/config.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/pipeline/core/cell_detection.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/pipeline/core/graph_export.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/pipeline/core/neurite_detection.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/pipeline/main.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/pipeline/run_pipeline.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/pipeline/test_frangi.py",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/pipeline/visualization/flex_visualizer.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/pipeline/visualization/proofreader.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/process_neurites.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/run_linux.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/run_pipeline.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/tutorial.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/utils/__init__.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neurite_detection/utils/viewer.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neuron_detection/__init__.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neuron_detection/graph_utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neuron_detection/io_utils.py",
+        "summary": "Utility and helper functions.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neuron_detection/main.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neuron_detection/processing.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neuron_detection/visualization.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neuron_detection/visualize_swc_volume.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neuron_processing/zernike_pipeline/cluster_ch03_zernike.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "neuron_processing/zernike_pipeline/napari_viewer.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "overlay_lines.m",
+        "summary": "Key capabilities: overlay_lines",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "overlay_volumes.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "process_vesselness_3d.m",
+        "summary": "Key capabilities: process_vesselness_3d, compute_mip_angle, backproject_to_3d, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "proofreading/launcher.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "proofreading/napari_proofreader.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "proofreading/run_proofreader.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "reconstruct_endpoints_stereo.m",
+        "summary": "Key capabilities: reconstruct_endpoints_stereo",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "reconstruct_line_from_endpoints.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "reconstruct_single_point.m",
+        "summary": "Key capabilities: reconstruct_single_point",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "reconstruct_volume.m",
+        "summary": "Key capabilities: reconstruct_volume",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "run_script.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "scratch.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "show_geom.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "show_geom2.m",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "skel_master_eval_modular.m",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "take_volume_pictures.m",
+        "summary": "Key capabilities: take_volume_pictures",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test_info.m",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test_json_export.m",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test_plot.m",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test_single_point_stereo.m",
+        "summary": "Key capabilities: test_single_point_stereo, create_point_volume, reconstruct_single_point, and more",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test_skel_to_graph.m",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "test_stereo_line_cv_toolbox.m",
+        "summary": "Contains testing or evaluation scripts.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "visualize_3d_cells.m",
+        "summary": "Key capabilities: visualize_3d_cells",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "visualize_full_cells_subset.m",
+        "summary": "Key capabilities: visualize_full_cells_subset",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "visualize_napari_csv.py",
+        "summary": "Key capabilities: load_csv_points, visualize_napari_csv",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "visualize_subvol_napari.py",
+        "summary": "Key capabilities: visualize_subvol",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "volshow_cells_subset.m",
+        "summary": "Key capabilities: volshow_cells_subset",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "webapp/app.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "webapp/static/main.js",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "webapp/static/style.css",
+        "summary": "Frontend layout and styling templates.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zarr_viewer/convert_tiff_to_ome_zarr.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zarr_viewer/frontend/eslint.config.js",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zarr_viewer/frontend/src/App.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zarr_viewer/frontend/src/App.tsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zarr_viewer/frontend/src/index.css",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zarr_viewer/frontend/src/main.tsx",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zarr_viewer/frontend/vite.config.ts",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zarr_viewer/launch.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zarr_viewer/serve_zarr.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zernike_feature_pipeline_package/batch_process_zernike.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zernike_feature_pipeline_package/build_zernike_filter_gpu.py",
+        "summary": "User interface components and rendering logic.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zernike_feature_pipeline_package/launcher.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zernike_feature_pipeline_package/run_pipeline.sh",
+        "summary": "Shell script for automation or deployment.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zernike_feature_pipeline_package/zernike_basis.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zernike_feature_pipeline_package/zernike_basis_gpu.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zernike_feature_pipeline_package/zernike_radial.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "zernike_feature_pipeline_package/zernike_spherical.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "wiNN": {
+    "description": "Initial Commit",
+    "insight": "The 'wiNN' project, characterized by its 'Initial Commit' and core files model.py, trainData.py, and wiNN.py, holistically represents a foundational machine learning initiative squarely within the domain of deep learning and neural networks. The name 'wiNN' itself subtly suggests a specialized focus, potentially indicating a \"Windowed Neural Network\" for sequential data processing, a \"Weighted Neural Network\" emphasizing particular features or connections, or even a system designed for competitive \"winning\" in a particular context like game AI. This repository is intended to be used by first leveraging trainData.py to generate, load, and preprocess the specific dataset required for the model. Following data preparation, wiNN.py acts as the primary orchestrator, initiating the training process. It instantiates the neural network architecture meticulously defined within model.py, feeds it the prepared data from trainData.py, manages hyperparameters, executes the optimization algorithm, and ultimately trains the model, likely saving its state for future inference or further analysis. Architecturally, model.py is the cornerstone, encapsulating the entire neural network's design, including its layers, activation functions, and overall topology. trainData.py emphasizes the crucial role of data engineering, ensuring the model receives appropriately structured and cleaned input. Finally, wiNN.py serves as the operational hub, tying these components together by implementing the training loop, defining the loss function, and managing the chosen optimization strategy to facilitate the learning process.",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "model.py",
+        "summary": "Defines deep learning model architectures or networks.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "trainData.py",
+        "summary": "Handles model training routines and loops.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "wiNN.py",
+        "summary": "Key capabilities: wt, y_hat",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  },
+  "yolo_model": {
+    "description": "Object segmentation + quantification from microscopy images",
+    "insight": "",
+    "gpu_enabled": false,
+    "files": [
+      {
+        "path": "docs/conf.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/notebooks/load_h5_data.ipynb",
+        "summary": "Data loading and preprocessing pipeline.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/notebooks/yolo_3d.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/notebooks/yolo_3d_scratch.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/notebooks/yolo_example.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/notebooks/yolo_example_3D.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/notebooks/yolo_extra_comp.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/notebooks/yolo_pipeline.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/notebooks/yolo_preprocessing.ipynb",
+        "summary": "Jupyter Notebook for exploratory data analysis or experiments.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/scripts/ds_yolo_output.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/scripts/yolo_avg_prec.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/scripts/yolo_help.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/scripts/yolo_help_3D.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/scripts/yolo_post_help.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      },
+      {
+        "path": "docs/scripts/yolo_tiles.py",
+        "summary": "Core application logic or configuration.",
+        "is_gpu": false,
+        "functions": []
+      }
+    ]
+  }
+};

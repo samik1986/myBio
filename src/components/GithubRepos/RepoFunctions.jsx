@@ -203,9 +203,16 @@ const RepoFunctions = () => {
                 const summary = fileData.summary || meta.summary || '';
                 const updatedAt = meta.updated_at || fileData.updated_at || '';
                 
+                const displayFilepath = cleanFilepath.split('/').pop().replace(/\.[^/.]+$/, "");
+                const isGpu = fileData.is_gpu || meta.is_gpu || false;
+                
                 const fileSubtitle = (
                   <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-                    {functions.length > 0 && <span>{functions.length} functions</span>}
+                    {isGpu && (
+                      <span style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#ecc94b', fontWeight: 'bold', fontSize: '0.85rem' }}>
+                        ⚡ GPU
+                      </span>
+                    )}
                     {updatedAt && (
                       <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                         <Clock size={12}/> {new Date(updatedAt).toLocaleDateString()}
@@ -218,7 +225,7 @@ const RepoFunctions = () => {
                   <Collapsible 
                     key={filepath} 
                     level={2} 
-                    title={cleanFilepath} 
+                    title={displayFilepath} 
                     icon={<FileCode size={20} color="var(--primary)" />}
                     subtitle={fileSubtitle}
                   >
@@ -228,91 +235,17 @@ const RepoFunctions = () => {
                       </div>
                     )}
                     
-                    {functions.length > 0 ? (
-                      <div className="functions-list">
-                        {functions.map((fn, idx) => (
-                          <Collapsible 
-                            key={idx} 
-                            level={3} 
-                            title={fn.name} 
-                            icon={<Code size={16} />}
-                            subtitle={fn.type || 'function'}
-                          >
-                            <div className="function-details" style={{ padding: '1rem', background: 'rgba(0,0,0,0.3)', borderRadius: '6px' }}>
-                              {fn.docstring && (
-                                <div className="function-docstring" style={{ marginBottom: '1rem', whiteSpace: 'pre-wrap', fontFamily: 'monospace', fontSize: '0.85rem', color: '#a0aec0' }}>
-                                  {fn.docstring}
-                                </div>
-                              )}
-
-                              {fn.ai_summary && (
-                                <div className="function-ai-summary" style={{ 
-                                  marginBottom: '1.5rem', 
-                                  padding: '1rem', 
-                                  background: 'linear-gradient(145deg, rgba(30,50,90,0.4), rgba(10,20,40,0.3))', 
-                                  borderLeft: '3px solid #4a90e2', 
-                                  borderRadius: '0 6px 6px 0', 
-                                  fontSize: '0.95rem', 
-                                  lineHeight: '1.6', 
-                                  color: '#e2e8f0' 
-                                }}>
-                                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px', color: '#63b3ed', fontWeight: 'bold', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-                                    ✨ AI Insight
-                                  </div>
-                                  {fn.ai_summary}
-                                </div>
-                              )}
-
-                              {fn.args && fn.args.length > 0 && (
-                                <div className="function-params mb-3">
-                                  <strong style={{color: 'var(--text-primary)'}}>Parameters:</strong>
-                                  <ul style={{ margin: '0.5rem 0 0 1.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-                                    {fn.args.map((arg, i) => (
-                                      <li key={i}>{arg}</li>
-                                    ))}
-                                  </ul>
-                                </div>
-                              )}
-                              
-                              {fn.returns && fn.returns.length > 0 && (
-                                <div className="function-params mb-3">
-                                  <strong style={{color: 'var(--text-primary)'}}>Returns:</strong>
-                                  <ul style={{ margin: '0.5rem 0 0 1.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-                                    {fn.returns.map((ret, i) => (
-                                      <li key={i}>{ret}</li>
-                                    ))}
-                                  </ul>
-                                </div>
-                              )}
-
-                              <div className="mt-3 pt-3" style={{ borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-                                <a 
-                                  href={`${data.url}/blob/master/${cleanFilepath}`} 
-                                  target="_blank" 
-                                  rel="noopener noreferrer"
-                                  className="btn-github"
-                                  style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '0.4rem 0.8rem', background: '#24292e', color: 'white', textDecoration: 'none', borderRadius: '4px', fontSize: '0.85rem' }}
-                                >
-                                  <FaGithub size={14} /> View Source Code
-                                </a>
-                              </div>
-                            </div>
-                          </Collapsible>
-                        ))}
-                      </div>
-                    ) : (
-                      <div className="mt-2 mb-2">
-                         <a 
-                            href={`${data.url}/blob/master/${cleanFilepath}`} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="btn-github"
-                            style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '0.4rem 0.8rem', background: 'rgba(255,255,255,0.1)', color: 'white', textDecoration: 'none', borderRadius: '4px', fontSize: '0.85rem' }}
-                          >
-                            <FaGithub size={14} /> View File on GitHub
-                          </a>
-                      </div>
-                    )}
+                    <div className="mt-2 mb-2">
+                       <a 
+                          href={`${data.url}/blob/master/${cleanFilepath}`} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="btn-github"
+                          style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '0.4rem 0.8rem', background: 'rgba(255,255,255,0.1)', color: 'white', textDecoration: 'none', borderRadius: '4px', fontSize: '0.85rem' }}
+                        >
+                          <FaGithub size={14} /> View File on GitHub
+                        </a>
+                    </div>
                   </Collapsible>
                 );
               })}
