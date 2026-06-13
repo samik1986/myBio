@@ -33,7 +33,7 @@ const Hero = () => {
                  <span className="keyword">const</span> <span className="variable">profile</span> = {'{'} <br/>
                  &nbsp;&nbsp;role: <span className="string">"Computational Science Analyst"</span>,<br/>
                  &nbsp;&nbsp;expertise: [<span className="string">"AI"</span>, <span className="string">"Computer Vision"</span>, <span className="string">"Neuroscience"</span>],<br/>
-                 &nbsp;&nbsp;focus: <span className="string">"3D Multimodal Cell Census"</span>,<br/>
+                 &nbsp;&nbsp;focus: <span className="string">"Deep Learning, 3D Medical Image Analysis"</span>,<br/>
                  &nbsp;&nbsp;status: <span className="string">"Building Scalable Pipelines"</span><br/>
                  {'}'};
                </code>
