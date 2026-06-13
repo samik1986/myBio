@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ExternalLink, Star, GitFork, ArrowRight, ArrowDown } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import { githubProjects } from '../../data/projectsData';
@@ -82,29 +83,37 @@ const RepoGroup = ({ title, repos }) => {
   );
 };
 
+
 const RepoCard = ({ repo, featured }) => (
-  <a href={repo.githubUrl} target="_blank" rel="noopener noreferrer" className={`glass project-card repo-card ${featured ? 'repo-featured' : 'repo-standard'}`}>
+  <Link to={`/repo/${repo.name}/functions`} className={`glass project-card repo-card ${featured ? 'repo-featured' : 'repo-standard'}`} style={{ textDecoration: 'none', color: 'inherit' }}>
     <div className="project-header">
       <FaGithub size={featured ? 28 : 20} className="project-icon" />
       <div className="project-links">
-        <ExternalLink size={18} />
+        <a href={repo.githubUrl} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ color: 'inherit' }}>
+          <ExternalLink size={18} />
+        </a>
       </div>
     </div>
     
     <h3 className="project-title">{repo.name}</h3>
     <p className="project-desc">{repo.description || 'No description provided.'}</p>
     
-    <div className="project-footer">
-      <span className="project-lang">
-        <span className={`lang-dot ${repo.language ? repo.language.toLowerCase().replace(' ', '-') : 'unknown'}`}></span>
-        {repo.language || 'Unknown'}
-      </span>
-      <div className="project-stats">
-        <span><Star size={14} /> {repo.stars}</span>
-        <span><GitFork size={14} /> {repo.forks}</span>
+    <div className="project-footer mt-2" style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
+        <span className="project-lang">
+          <span className={`lang-dot ${repo.language ? repo.language.toLowerCase().replace(' ', '-') : 'unknown'}`}></span>
+          {repo.language || 'Unknown'}
+        </span>
+        <div className="project-stats">
+          <span><Star size={14} /> {repo.stars}</span>
+          <span><GitFork size={14} /> {repo.forks}</span>
+        </div>
+      </div>
+      <div className="view-functions-badge" style={{ alignSelf: 'flex-start', fontSize: '0.8rem', background: 'rgba(var(--primary-rgb), 0.1)', color: 'var(--primary)', padding: '0.3rem 0.6rem', borderRadius: '4px', fontWeight: '500' }}>
+        View API / Functions <ArrowRight size={14} style={{verticalAlign: 'middle', marginLeft: '4px'}}/>
       </div>
     </div>
-  </a>
+  </Link>
 );
 
 export default GithubRepos;

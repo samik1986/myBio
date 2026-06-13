@@ -16,6 +16,7 @@ import EducationDetail from './components/Education/EducationDetail';
 import CareerTimeline from './components/CareerTimeline/CareerTimeline';
 import GitHubStats from './components/GitHubStats/GitHubStats';
 import GithubRepos from './components/GithubRepos/GithubRepos';
+import RepoFunctions from './components/GithubRepos/RepoFunctions';
 import GeminiAssistant from './components/GeminiAssistant/GeminiAssistant';
 import Footer from './components/Footer/Footer';
 import { SpeedInsights } from '@vercel/speed-insights/react';
@@ -63,6 +64,7 @@ function App() {
           <Route path="/education/:id" element={<EducationDetail />} />
           <Route path="/timeline" element={<CareerTimeline />} />
           <Route path="/github" element={<GithubRepos />} />
+          <Route path="/repo/:repoName/functions" element={<RepoFunctions />} />
         </Routes>
       </main>
       <GeminiAssistant />

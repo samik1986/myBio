@@ -1,0 +1,1 @@
+{"name":"MakeUPMirror","url":"https://github.com/samik1986/MakeUPMirror","description":null,"language":"Python","functions_extracted":{"LRN.py":[{"type":"class","name":"LRN","docstring":""},{"type":"function","name":"__init__","docstring":""},{"type":"function","name":"call","docstring":""},{"type":"function","name":"get_config","docstring":""}]}}
