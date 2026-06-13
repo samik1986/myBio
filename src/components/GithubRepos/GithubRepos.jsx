@@ -8,37 +8,44 @@ import './GithubRepos.css';
 const GithubRepos = () => {
   // 1. Group the repos logically WITH overlapping categories
   const bionformatics = githubProjects.filter(p => {
+    if (p.name === 'myBio') return false;
     const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
     return text.includes('brain') || text.includes('cell') || text.includes('bio') || text.includes('tissue') || text.includes('muscle');
   });
   
   const imaging3D = githubProjects.filter(p => {
+    if (p.name === 'myBio') return false;
     const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
     return text.includes('3d') || text.includes('volume') || text.includes('dm_');
   });
   
   const imageProcessing = githubProjects.filter(p => {
+    if (p.name === 'myBio') return false;
     const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
     return text.includes('seg') || text.includes('crop') || text.includes('detect') || text.includes('image') || text.includes('registration') || text.includes('alignment') || text.includes('skeleton');
   });
   
   const deepLearning = githubProjects.filter(p => {
+    if (p.name === 'myBio') return false;
     const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
     return text.includes('gan') || text.includes('tcnn') || text.includes('ml_') || text.includes('net') || text.includes('deep learning') || text.includes('yolo') || text.includes('model');
   });
   
   const webPlatforms = githubProjects.filter(p => {
+    if (p.name === 'myBio') return false;
     const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
     const lang = (p.language || '').toLowerCase();
-    return lang.includes('javascript') || lang.includes('typescript') || text.includes('app') || text.includes('mybio') || text.includes('browser') || text.includes('editor');
+    return lang.includes('javascript') || lang.includes('typescript') || text.includes('app') || text.includes('browser') || text.includes('editor');
   });
   
   const misc = githubProjects.filter(p => 
-    !bionformatics.includes(p) && 
-    !imaging3D.includes(p) && 
-    !imageProcessing.includes(p) && 
-    !deepLearning.includes(p) && 
-    !webPlatforms.includes(p)
+    p.name === 'myBio' || (
+      !bionformatics.includes(p) && 
+      !imaging3D.includes(p) && 
+      !imageProcessing.includes(p) && 
+      !deepLearning.includes(p) && 
+      !webPlatforms.includes(p)
+    )
   );
 
   const groups = [
