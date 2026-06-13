@@ -6,32 +6,40 @@ import { githubProjects } from '../../data/projectsData';
 import './GithubRepos.css';
 
 const GithubRepos = () => {
-  // 1. Group the repos logically without overlapping categories
-  const bionformatics = [];
-  const imaging3D = [];
-  const imageProcessing = [];
-  const deepLearning = [];
-  const webPlatforms = [];
-  const misc = [];
-
-  githubProjects.forEach(p => {
+  // 1. Group the repos logically WITH overlapping categories
+  const bionformatics = githubProjects.filter(p => {
+    const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
+    return text.includes('brain') || text.includes('cell') || text.includes('bio') || text.includes('tissue') || text.includes('muscle');
+  });
+  
+  const imaging3D = githubProjects.filter(p => {
+    const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
+    return text.includes('3d') || text.includes('volume') || text.includes('dm_');
+  });
+  
+  const imageProcessing = githubProjects.filter(p => {
+    const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
+    return text.includes('seg') || text.includes('crop') || text.includes('detect') || text.includes('image') || text.includes('registration') || text.includes('alignment') || text.includes('skeleton');
+  });
+  
+  const deepLearning = githubProjects.filter(p => {
+    const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
+    return text.includes('gan') || text.includes('tcnn') || text.includes('ml_') || text.includes('net') || text.includes('deep learning') || text.includes('yolo') || text.includes('model');
+  });
+  
+  const webPlatforms = githubProjects.filter(p => {
     const text = ((p.name || '') + ' ' + (p.description || '')).toLowerCase();
     const lang = (p.language || '').toLowerCase();
-    
-    if (text.includes('brain') || text.includes('cell') || text.includes('bio') || text.includes('tissue') || text.includes('muscle')) {
-      bionformatics.push(p);
-    } else if (text.includes('3d') || text.includes('volume') || text.includes('dm_')) {
-      imaging3D.push(p);
-    } else if (text.includes('seg') || text.includes('crop') || text.includes('detect') || text.includes('image') || text.includes('registration') || text.includes('alignment') || text.includes('skeleton')) {
-      imageProcessing.push(p);
-    } else if (text.includes('gan') || text.includes('tcnn') || text.includes('ml_') || text.includes('net') || text.includes('deep learning') || text.includes('yolo') || text.includes('model')) {
-      deepLearning.push(p);
-    } else if (lang.includes('javascript') || lang.includes('typescript') || text.includes('app') || text.includes('mybio') || text.includes('browser') || text.includes('editor')) {
-      webPlatforms.push(p);
-    } else {
-      misc.push(p);
-    }
+    return lang.includes('javascript') || lang.includes('typescript') || text.includes('app') || text.includes('mybio') || text.includes('browser') || text.includes('editor');
   });
+  
+  const misc = githubProjects.filter(p => 
+    !bionformatics.includes(p) && 
+    !imaging3D.includes(p) && 
+    !imageProcessing.includes(p) && 
+    !deepLearning.includes(p) && 
+    !webPlatforms.includes(p)
+  );
 
   const groups = [
     { title: "Bioinformatics & Neuroscience", repos: bionformatics },
@@ -42,6 +50,27 @@ const GithubRepos = () => {
     { title: "Miscellaneous", repos: misc }
   ];
 
+  // Pre-calculate highlights to avoid duplicates
+  const highlightedRepoIds = new Set();
+  const processedGroups = groups.map(group => {
+    const sortedRepos = [...group.repos].sort((a, b) => b.stars - a.stars);
+    
+    // Find up to 2 top repos that haven't been highlighted yet
+    const topRepos = [];
+    const remainingRepos = [];
+    
+    for (const repo of sortedRepos) {
+      if (topRepos.length < 2 && !highlightedRepoIds.has(repo.id)) {
+        topRepos.push(repo);
+        highlightedRepoIds.add(repo.id);
+      } else {
+        remainingRepos.push(repo);
+      }
+    }
+    
+    return { ...group, topRepos, remainingRepos };
+  });
+
   return (
     <div className="github-repos-page section">
       <div className="container">
@@ -50,23 +79,18 @@ const GithubRepos = () => {
           <p className="section-subtitle">Categorized collection of {githubProjects.length} GitHub repositories</p>
         </div>
         
-        {groups.map((group, index) => (
-          <RepoGroup key={index} title={group.title} repos={group.repos} />
+        {processedGroups.map((group, index) => (
+          <RepoGroup key={index} title={group.title} repos={group.repos} topRepos={group.topRepos} remainingRepos={group.remainingRepos} />
         ))}
       </div>
     </div>
   );
 };
 
-const RepoGroup = ({ title, repos }) => {
+const RepoGroup = ({ title, repos, topRepos, remainingRepos }) => {
   const [expanded, setExpanded] = useState(false);
   
   if (!repos || repos.length === 0) return null;
-  
-  // Sort by stars descending
-  const sortedRepos = [...repos].sort((a, b) => b.stars - a.stars);
-  const topRepos = sortedRepos.slice(0, 2);
-  const remainingRepos = sortedRepos.slice(2);
 
   return (
     <div className="repo-group-container">
