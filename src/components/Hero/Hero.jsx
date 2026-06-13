@@ -30,10 +30,11 @@ const Hero = () => {
           <div className="glass card-mockup">
              <div className="code-snippet">
                <code>
-                 <span className="keyword">const</span> <span className="variable">researcher</span> = {'{'} <br/>
-                 &nbsp;&nbsp;name: <span className="string">"Samik"</span>,<br/>
-                 &nbsp;&nbsp;skills: [<span className="string">"ML"</span>, <span className="string">"CV"</span>, <span className="string">"Bioinformatics"</span>],<br/>
-                 &nbsp;&nbsp;passion: <span className="string">"Deep Learning"</span><br/>
+                 <span className="keyword">const</span> <span className="variable">profile</span> = {'{'} <br/>
+                 &nbsp;&nbsp;role: <span className="string">"Computational Science Analyst"</span>,<br/>
+                 &nbsp;&nbsp;expertise: [<span className="string">"AI"</span>, <span className="string">"Computer Vision"</span>, <span className="string">"Neuroscience"</span>],<br/>
+                 &nbsp;&nbsp;focus: <span className="string">"3D Multimodal Cell Census"</span>,<br/>
+                 &nbsp;&nbsp;status: <span className="string">"Building Scalable Pipelines"</span><br/>
                  {'}'};
                </code>
              </div>
