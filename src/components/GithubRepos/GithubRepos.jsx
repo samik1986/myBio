@@ -60,7 +60,11 @@ const GithubRepos = () => {
   // Pre-calculate highlights to avoid duplicates
   const highlightedRepoIds = new Set();
   const processedGroups = groups.map(group => {
-    const availableRepos = group.repos.filter(r => !highlightedRepoIds.has(r.id));
+    // Exclude 'neetcode-submissions-samik1986' from being highlighted
+    const availableRepos = group.repos.filter(r => 
+      !highlightedRepoIds.has(r.id) && 
+      r.name !== 'neetcode-submissions-samik1986'
+    );
     
     // Sort available by recency and stars
     const recentAvailable = [...availableRepos].sort((a, b) => new Date(b.updatedAt || 0) - new Date(a.updatedAt || 0));
