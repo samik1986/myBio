@@ -53,20 +53,32 @@ const GithubRepos = () => {
   // Pre-calculate highlights to avoid duplicates
   const highlightedRepoIds = new Set();
   const processedGroups = groups.map(group => {
-    const sortedRepos = [...group.repos].sort((a, b) => b.stars - a.stars);
+    const availableRepos = group.repos.filter(r => !highlightedRepoIds.has(r.id));
     
-    // Find up to 2 top repos that haven't been highlighted yet
+    // Sort available by recency and stars
+    const recentAvailable = [...availableRepos].sort((a, b) => new Date(b.updatedAt || 0) - new Date(a.updatedAt || 0));
+    const starredAvailable = [...availableRepos].sort((a, b) => b.stars - a.stars);
+    
     const topRepos = [];
-    const remainingRepos = [];
     
-    for (const repo of sortedRepos) {
-      if (topRepos.length < 2 && !highlightedRepoIds.has(repo.id)) {
-        topRepos.push(repo);
-        highlightedRepoIds.add(repo.id);
-      } else {
-        remainingRepos.push(repo);
-      }
+    // 1. Pick the most recently updated
+    if (recentAvailable.length > 0) {
+      const mostRecent = recentAvailable[0];
+      topRepos.push(mostRecent);
+      highlightedRepoIds.add(mostRecent.id);
     }
+    
+    // 2. Pick the highest starred from the remaining available
+    const remainingForStar = starredAvailable.filter(r => !highlightedRepoIds.has(r.id));
+    if (remainingForStar.length > 0) {
+      const topStarred = remainingForStar[0];
+      topRepos.push(topStarred);
+      highlightedRepoIds.add(topStarred.id);
+    }
+    
+    // The rest of the repos in the group (excluding the ones highlighted for THIS group)
+    const remainingRepos = group.repos.filter(r => !topRepos.some(tr => tr.id === r.id));
+    remainingRepos.sort((a, b) => b.stars - a.stars);
     
     return { ...group, topRepos, remainingRepos };
   });
