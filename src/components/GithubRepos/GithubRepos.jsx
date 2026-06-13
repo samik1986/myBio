@@ -5,7 +5,7 @@ import { FaGithub } from 'react-icons/fa';
 import { githubProjects } from '../../data/projectsData';
 import './GithubRepos.css';
 
-const GithubRepos = () => {
+const GithubRepos = ({ limit }) => {
   const excludedRepos = new Set(['myBio', 'neetcode-gpt', 'DM_Lucas', 'makemore_Samik', 'neetcode-submissions-samik1986']);
   const validProjects = githubProjects.filter(p => !excludedRepos.has(p.name));
 
@@ -98,17 +98,31 @@ const GithubRepos = () => {
     return { ...group, topRepos, remainingRepos };
   });
 
+  const displayGroups = limit ? processedGroups.slice(0, limit) : processedGroups;
+
   return (
     <div className="github-repos-page section">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Open Source Repositories</h2>
-          <p className="section-subtitle">Categorized collection of {validProjects.length} GitHub repositories</p>
+          <h2 className="section-title">{limit ? "Featured Open Source" : "Open Source Repositories"}</h2>
+          <p className="section-subtitle">
+            {limit 
+              ? `Highlighting top categories from ${validProjects.length} GitHub repositories` 
+              : `Categorized collection of ${validProjects.length} GitHub repositories`}
+          </p>
         </div>
         
-        {processedGroups.map((group, index) => (
+        {displayGroups.map((group, index) => (
           <RepoGroup key={index} title={group.title} repos={group.repos} topRepos={group.topRepos} remainingRepos={group.remainingRepos} />
         ))}
+        
+        {limit && (
+          <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+            <Link to="/github" className="btn btn-outline">
+              View All Repositories <ArrowRight size={18} style={{marginLeft: '8px', verticalAlign: 'middle'}}/>
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

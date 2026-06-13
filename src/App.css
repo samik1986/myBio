@@ -17,3 +17,22 @@ main {
 .animate-fade-in {
   animation: fadeIn 0.8s ease-out forwards;
 }
+
+.homepage-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .homepage-row {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .homepage-col {
+    flex: 1;
+    min-width: 0;
+  }
+}
