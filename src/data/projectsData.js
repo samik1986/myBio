@@ -190,7 +190,8 @@ export const githubProjects = [
       {
         name: "Python",
         percentage: 96
-      },
+        repo_insight: "The 3d-centroid-proofreader project is a specialized Python-based tool designed for the interactive visualization and corrective editing (proofreading) of 3D neuronal or similar tree-like structures, commonly represented in the SWC (Standard Wavefront Coordinate) file format. Its holistic capability lies in providing neuroscientists and researchers with an intuitive platform to refine and validate automatically or manually traced morphological reconstructions, leveraging the powerful 3D rendering and extensibility of the napari scientific image viewer. The repository is intended to be used by launching the provided 'run_proofreader.sh' script or executing 'launcher.py', which will open a napari instance with the 'ProofreaderDockWidget' activated. Users then load SWC files, visualize the 3D structures, and utilize the dock widget's tools to perform critical proofreading tasks such as correcting misconnections, removing spurious branches, adding missing segments, or adjusting node positions, with the ability to save the modified structures back into the SWC format. Architecturally, the project is structured as a napari plugin, with 'napari_proofreader.py' serving as the core component that defines the 'ProofreaderDockWidget' and orchestrates the user interface with the underlying data. Key algorithmic highlights include robust 'read_swc' and 'save_swc' functions for managing the domain-specific data format, a 'LoadingWorker' to handle potentially large datasets asynchronously, ensuring UI responsiveness, and implicitly, a suite of interactive 3D editing algorithms for manipulating the centroid-based tree structures directly within the napari environment.",
+},
       {
         name: "Shell",
         percentage: 2.9
@@ -216,7 +217,8 @@ export const githubProjects = [
       {
         name: "Jupyter Notebook",
         percentage: 100
-      },
+        repo_insight: "The '3D_Developing_brain' repository offers a comprehensive computational framework for comparing different cell detection methodologies within complex 3D histological images of developing brain tissue, serving a vital role in the domain of bioimage informatics and developmental neuroscience. Its holistic capability is to benchmark and assess the efficacy of various algorithms for accurately identifying and localizing cells in volumetric microscopy data, which is fundamental for understanding neurogenesis, cell migration patterns, and disease progression in brain development. The intended usage involves users first engaging with the two provided Jupyter notebooks, MEDIAR_(model1).ipynb and MultiStreamCellSeg_(model_2).ipynb, which serve as executable pipelines to apply and generate cell detection results using two distinct computational models on their 3D image datasets. Following the generation of these detections, the eval1.m MATLAB script is designed to load the model outputs alongside ground truth data to perform a rigorous, quantitative evaluation and comparison of the models' performance, likely calculating metrics such as precision, recall, and F1-score. Architecturally, the project highlights the implementation of two sophisticated cell detection algorithms—one named MEDIAR and the other, MultiStreamCellSeg, which strongly suggests a multi-stream neural network designed for robust segmentation—with their development and application orchestrated within the interactive and iterative Python-based Jupyter environment. The separation of model execution in Python notebooks and the dedicated evaluation in a MATLAB script underscores a common research practice where advanced deep learning methods are built in Python while robust, often standardized, quantitative analysis and reporting are performed using MATLAB's scientific computing capabilities.",
+},
       {
         name: "MATLAB",
         percentage: 0
